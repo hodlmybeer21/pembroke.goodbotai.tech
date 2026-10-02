@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fafaf9;
+  --fg: #1c1917;
+  --muted: #57534e;
+  --border: #e7e5e4;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+}
+
+.tag-pill {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  background: #f5f5f4;
+  color: #44403c;
+}
