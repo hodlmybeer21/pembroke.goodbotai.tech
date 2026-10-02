@@ -1,5 +1,8 @@
 // lib/agenda-center.ts — Parse the CivicEngage agenda center HTML for
-// recent agenda/minutes postings.
+// recent agenda/minutes postings. Server-only (consumed by Server Components).
+
+import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 
 export interface AgendaDoc {
   committee: string;
@@ -126,4 +129,37 @@ export async function fetchAgendaCenter(timeoutMs = 15000): Promise<AgendaDoc[]>
   if (!res.ok) return [];
   const html = await res.text();
   return parseAgendaCenter(html).filter((d) => WANT_COMMITTEES.has(d.committee));
+}
+
+// OCR summaries are produced by Tyler's Mac cron (`pembroke_town_brief.py`)
+// and exported to data/ocr-summaries.json in the repo. The site reads this
+// at ISR time and shows summaries inline on /agendas.
+
+export interface OcrSummary {
+  ocr_text: string;
+  summary: string;
+  url: string;
+  ts: string;
+}
+
+export interface OcrExport {
+  generated_at: string;
+  source: string;
+  seen_guids: string[];
+  summaries: Record<string, OcrSummary>;
+}
+
+export function loadOcrExport(): OcrExport | null {
+  try {
+    const p = join(process.cwd(), "data", "ocr-summaries.json");
+    if (!existsSync(p)) return null;
+    return JSON.parse(readFileSync(p, "utf-8")) as OcrExport;
+  } catch {
+    return null;
+  }
+}
+
+export function findSummary(doc: AgendaDoc, ocr: OcrExport | null): string | null {
+  if (!ocr) return null;
+  return ocr.summaries[doc.guid]?.summary ?? null;
 }
