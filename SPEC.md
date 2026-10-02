@@ -2,36 +2,42 @@
 
 A public-facing website for residents of Pembroke, NH that surfaces what's happening in town government. Companion to the personal cron bot, but generic (works for any resident from 7 to 99).
 
-## What it does (v1)
+## What it does (current build)
 
 **Landing page (`/`)**
 - Today's daily brief: wallet/commute/kids/property/family grouped
 - This week's upcoming meetings
-- "🆕 New postings" callout for new agendas/minutes with PDF links
+- "🆕 New postings" callout for new agendas/minutes with OCR summaries + PDF links
 
 **Calendar (`/calendar`)**
 - Next 90 days of Select Board, Planning Board, Budget, CIP, Roads, Recreation, Conservation meetings
 - Pulled from CivicEngage iCal feeds
 
 **Agendas (`/agendas`)**
-- List of all recent agenda/minutes postings
-- Each entry: committee, date, title, link to PDF
-- PDF link opens the scanned file for the resident to read directly
+- List of recent agenda/minutes postings, each with an OCR auto-summary + PDF link
+- OCR summaries refreshed daily from Tyler's Mac cron
 
-**Ask the bot (`/ask`)** — placeholder UI in v1
-- Search-style input
-- Will route through a Hermes Cloud LLM once a key is wired
-- v1 returns "feature coming next sprint" with an explanation
+**Ask the bot (`/ask`)**
+- Chat widget. If `NOUS_API_KEY` env var is set on Vercel, routes to Nous Research inference API with live calendar + agenda context. Otherwise a context-aware stub matches keywords against upcoming meetings.
+
+**Settings (`/settings`, `protected`)**
+- Pick alert categories: parent / homeowner / renter / commuter / senior / business / voter
+- One-click unsubscribe, delete-profile button
+- Email-only delivery is one click away at the bottom of every alert
+
+**Privacy (`/privacy`)**
+- Plain-English disclosure: what's stored, why, third parties (Clerk / Resend / Vercel)
+- Data minimization: email + categories + opaque unsubscribe token; nothing else
 
 **About (`/about`)**
-- What this is, who built it, how to contact the town
+- What this is, who's behind it, contact info
 
 ## What it does NOT do (yet)
 
-- **No OCR on this site.** PDFs are linked, not auto-summarized. OCR is done by the personal cron bot (`pembroke_town_brief.py`); porting OCR to the public site is v2 work.
-- **No login / profiles.** Anyone can read. Personalized alerts by life-situation is v2.
-- **No ads / sponsorships.** v1 is informational only.
-- **No multi-town.** Pembroke only. Multi-tenant expansion is gated on v1 traction.
+- **Multi-town.** Pembroke only. Multi-tenant expansion is gated on v1+ traction.
+- **Telegram delivery for alerts.** Email only in v3. Telegram comes if asked.
+- **Custom alert categories.** Hardcoded 7 categories — no freeform tag picker.
+- **Webhook alerts to your own Slack/Discord/etc.** Email only.
 
 ## Data sources (all public, free)
 
