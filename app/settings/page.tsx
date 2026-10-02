@@ -7,7 +7,30 @@ import { SettingsForm } from "@/components/SettingsForm";
 
 export const dynamic = "force-dynamic";
 
+function clerkConfigured(): boolean {
+  const key = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
+  if (!key) return false;
+  if (key.startsWith("pk_test_local")) return false;
+  if (key.includes("local_only")) return false;
+  return true;
+}
+
 export default async function SettingsPage() {
+  if (!clerkConfigured()) {
+    return (
+      <div className="container-page">
+        <h1 className="text-2xl font-semibold mb-2">Alert preferences</h1>
+        <p className="text-sm text-stone-600">
+          Authentication isn't configured yet. Add{" "}
+          <code className="px-1 py-0.5 bg-stone-100 rounded text-xs">NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY</code>{" "}
+          and{" "}
+          <code className="px-1 py-0.5 bg-stone-100 rounded text-xs">CLERK_SECRET_KEY</code>{" "}
+          to Vercel project env, redeploy, then come back here.
+        </p>
+      </div>
+    );
+  }
+
   const { userId } = await auth();
   if (!userId) redirect("/sign-in");
 
