@@ -78,14 +78,25 @@ export default async function SettingsPage() {
   const email = user?.primaryEmailAddress?.emailAddress;
   if (!email) redirect("/sign-in");
 
-  const profile = await getProfile(userId);
+  // Load each piece independently so a single failure doesn't take down
+  // the whole page. Log the error so we can debug from Vercel runtime
+  // logs, and render whatever subset of features did load.
+  let profile: Awaited<ReturnType<typeof getProfile>> = null;
+  try {
+    profile = await getProfile(userId);
+  } catch (ex) {
+    console.error(`[settings] getProfile failed for userId=${userId.slice(0, 12)}: ${String(ex).slice(0, 400)}`);
+  }
   const initialCategories = profile?.categories ?? [];
   const initialTelegramEnabled = profile?.telegram_enabled ?? false;
   const unsubscribeToken = profile?.unsubscribe_token ?? "";
 
-  // Load watches from Postgres (live) and merge with the cron-computed
-  // match counts from data/watches.json.
-  const liveWatches = await listWatches(userId);
+  let liveWatches: Awaited<ReturnType<typeof listWatches>> = [];
+  try {
+    liveWatches = await listWatches(userId);
+  } catch (ex) {
+    console.error(`[settings] listWatches failed for userId=${userId.slice(0, 12)}: ${String(ex).slice(0, 400)}`);
+  }
   const matchCounts = loadMatchCounts();
   const initialWatches = liveWatches.map((w) => ({
     street: w.street,
