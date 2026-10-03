@@ -126,12 +126,12 @@ export type TelegramCreds = {
 export async function getTelegramCreds(clerkId: string): Promise<TelegramCreds | null> {
   await ensureSchema();
   const r = await sql<{
-    chat_id_ct: Buffer | null;
-    chat_id_nonce: Buffer | null;
-    chat_id_tag: Buffer | null;
-    bot_ct: Buffer | null;
-    bot_nonce: Buffer | null;
-    bot_tag: Buffer | null;
+    chat_id_ct: string | null;
+    chat_id_nonce: string | null;
+    chat_id_tag: string | null;
+    bot_ct: string | null;
+    bot_nonce: string | null;
+    bot_tag: string | null;
     enabled: boolean;
   }>`
     SELECT
@@ -149,10 +149,17 @@ export async function getTelegramCreds(clerkId: string): Promise<TelegramCreds |
   if (!row.chat_id_ct || !row.chat_id_nonce || !row.chat_id_tag) return null;
   if (!row.bot_ct || !row.bot_nonce || !row.bot_tag) return null;
 
+  // Postgres returns bytea as '\\x...' hex strings when parameterized.
+  // @vercel/postgres' sql.tagged template handles the conversion; we just
+  // need to turn those hex strings back into Buffers.
+  const toBuf = (s: string): Buffer => {
+    const hex = s.startsWith("\\x") ? s.slice(2) : s;
+    return Buffer.from(hex, "hex");
+  };
   const { open } = await import("./crypto");
   return {
-    chatId: open(row.chat_id_ct, row.chat_id_nonce, row.chat_id_tag),
-    botToken: open(row.bot_ct, row.bot_nonce, row.bot_tag),
+    chatId: open(toBuf(row.chat_id_ct), toBuf(row.chat_id_nonce), toBuf(row.chat_id_tag)),
+    botToken: open(toBuf(row.bot_ct), toBuf(row.bot_nonce), toBuf(row.bot_tag)),
   };
 }
 
@@ -191,17 +198,25 @@ export async function setTelegramCreds(
     return { telegram_enabled: false };
   }
   const { seal } = await import("./crypto");
+  // @vercel/postgres expects primitive parameters; convert Buffers to
+  // hex strings (these are bytea columns, sent as '\\xDEADBEEF...' literals).
   const chat = seal(creds.chatId);
   const bot = seal(creds.botToken);
+  const chatCt = "\\x" + chat.ct.toString("hex");
+  const chatNonce = "\\x" + chat.nonce.toString("hex");
+  const chatTag = "\\x" + chat.tag.toString("hex");
+  const botCt = "\\x" + bot.ct.toString("hex");
+  const botNonce = "\\x" + bot.nonce.toString("hex");
+  const botTag = "\\x" + bot.tag.toString("hex");
   await sql`
     UPDATE profiles SET
       telegram_enabled = true,
-      telegram_chat_id_encrypted = ${chat.ct},
-      telegram_chat_id_nonce     = ${chat.nonce},
-      telegram_chat_id_tag       = ${chat.tag},
-      telegram_bot_token_encrypted = ${bot.ct},
-      telegram_bot_token_nonce   = ${bot.nonce},
-      telegram_bot_token_tag     = ${bot.tag},
+      telegram_chat_id_encrypted = ${chatCt},
+      telegram_chat_id_nonce     = ${chatNonce},
+      telegram_chat_id_tag       = ${chatTag},
+      telegram_bot_token_encrypted = ${botCt},
+      telegram_bot_token_nonce   = ${botNonce},
+      telegram_bot_token_tag     = ${botTag},
       updated_at = now()
     WHERE clerk_id = ${clerkId}
   `;
