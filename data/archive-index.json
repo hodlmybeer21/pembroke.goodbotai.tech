@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-10-03T10:46:10.364004+00:00",
+  "count": 9,
+  "committees": [
+    "Board of Selectmen",
+    "Conservation Commission",
+    "Planning Board",
+    "Planning Board Public Hearing",
+    "Planning Board Workshop",
+    "Recreation Commission",
+    "Roads Committee",
+    "Select Board",
+    "Water Works"
+  ],
+  "months": [
+    {
+      "month": "2026-05",
+      "label": "May 2026",
+      "count": 9,
+      "entries": [
+        {
+          "guid": "Planning Board|Agenda|May 26, 2026|_05262026-323",
+          "committee": "Planning Board",
+          "doc_type": "Agenda",
+          "meeting_date": "May 26, 2026",
+          "title": "Planning Board Meeting",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05262026-323",
+          "summary": "Public hearings that are continued will not be re-noticed, so please contact the Planning Office if you have · New Business · 1. Special Use Permit Applications SUP-WP #26-302, Joseph E. DeVuono II, · 2. Conditional Approval Extension Request, Site Plan #25-103 and Special Use · Minutes · 1. Correspondence · 2. Committee Reports · 3. Other Business · 4. Planner Items · 5. Board Member Items · T:\\ TownAdmin\\<Williams\\My Documents|Recycling Info\\Planning and Zoning| WEB PAGE D…",
+          "first_archived": "2026-10-03T06:45:49.729600-04:00"
+        },
+        {
+          "guid": "Planning Board Public Hearing|Agenda|May 26, 2026|_05262026-324",
+          "committee": "Planning Board Public Hearing",
+          "doc_type": "Agenda",
+          "meeting_date": "May 26, 2026",
+          "title": "Planning Board Public Hearing Meeting",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05262026-324",
+          "summary": "NOTICE OF PUBLIC HEARING · Board will hold a Public Hearing on Tuesday, May 26, 2026 at a meeting beginning at · 6:30 PM in the Pembroke Town Hall, 311 Pembroke Street, Pembroke, NH, to review · the following application(s). The public hearing may immediately follow if the · review at Pembroke Town Hall, 311 Pembroke Street, during normal business hours.",
+          "first_archived": "2026-10-03T06:45:49.729600-04:00"
+        },
+        {
+          "guid": "Water Works|Agenda|May 21, 2026|_05212026-341",
+          "committee": "Water Works",
+          "doc_type": "Agenda",
+          "meeting_date": "May 21, 2026",
+          "title": "5/21/2026 Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05212026-341",
+          "summary": "Review of the Minutes and Financial Reports for December 2025 & May 2026. · Old Business: · New Business:",
+          "first_archived": "2026-10-03T06:45:49.729600-04:00"
+        },
+        {
+          "guid": "Select Board|Agenda|May 20, 2026|_05202026-288",
+          "committee": "Select Board",
+          "doc_type": "Agenda",
+          "meeting_date": "May 20, 2026",
+          "title": "Select Board Meeting",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05202026-288",
+          "summary": "CALL TO ORDER · CITIZEN COMMENT · SCHEDULED MEETINGS: · a. Public Hearing Town Code Chapter 160 · b. DPW Director Ranfos - Vehicle Purchase · c. Energy Committee - Community Power · IV. OLD BUSINESS: · a. Tax Deeds · b. Stage and Roof Updates · c. Borough Road Traffic · NEW BUSINESS: · a. Appointments · b. Manifest/Abatements · c. Minutes 4/15/26; 5/6/26 · VI. TOWN ADMINISTRATOR REPORT · VII. COMMITTEE REPORTS · VIII. OTHER/CITIZEN COMMENT · IX. ADJOURN · Updated schedule of…",
+          "first_archived": "2026-10-03T06:45:49.729600-04:00"
+        },
+        {
+          "guid": "Recreation Commission|Agenda|May 18, 2026|_05182026-322",
+          "committee": "Recreation Commission",
+          "doc_type": "Agenda",
+          "meeting_date": "May 18, 2026",
+          "title": "Recreation Commission Meeting",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05182026-322",
+          "summary": "B. Leagues - porta potties delivered · C. Playground Inspection / Infields completed · D. Stage Project - Update · E. Summer Rec · F. Tennis courts · H. Other Business · NEW BUSINESS · A. Use of Park · B. Water Leak/ building / repair - rec building · C. Bi-annual Perimeter Ant Treatment JP Pest · E. Review of Commission's Paperwork · F. BOS Updates - · G. Community Service - L. Larson & O. Foster - leaf pick up, cleaning up flower beds, gazebo, raking · H. Other Business -",
+          "first_archived": "2026-10-03T06:45:49.729600-04:00"
+        },
+        {
+          "guid": "Planning Board Workshop|Agenda|May 12, 2026|_05122026-400",
+          "committee": "Planning Board Workshop",
+          "doc_type": "Agenda",
+          "meeting_date": "May 12, 2026",
+          "title": "Planning Board Workshop Meeting",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05122026-400",
+          "summary": "Public hearings that are continued will not be re-noticed, so please contact the Planning Office if you have · Old Business · 1. Election of Vice Chair · 2. 65-Day Review Limit Policy/Planning Board Rules of Procedure · New Business · Minutes · 1. Correspondence · 2. Committee Reports · 3. Other Business · 4. Planner Items · 5. Board Member Items · 6. Audience Items",
+          "first_archived": "2026-10-03T06:45:49.729600-04:00"
+        },
+        {
+          "guid": "Conservation Commission|Agenda|May 11, 2026|_05112026-298",
+          "committee": "Conservation Commission",
+          "doc_type": "Agenda",
+          "meeting_date": "May 11, 2026",
+          "title": "Conservation Commission Meeting",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05112026-298",
+          "summary": "2. Planning Board Applications · a. Special Use Permit Application SUP-WP #26-302, Joseph E. DeVuono II, 101 Smith Ave, · 3. DES Letters and Applications · 4. Zoning Board Applications · 5. Acquisitions · b. Jeff Evans, Five Rivers Conservation Trust, Gelinas Farm · c. Other acquisitions · 6. Conservation Lands · Beck conservation parcel granite marker update, abutter structures · b. Monitoring status updates · c. Truck Cap removal on Range Rd. · d. Other · 7. Review and App…",
+          "first_archived": "2026-10-03T06:45:49.729600-04:00"
+        },
+        {
+          "guid": "Roads Committee|Agenda|May 11, 2026|_05112026-296",
+          "committee": "Roads Committee",
+          "doc_type": "Agenda",
+          "meeting_date": "May 11, 2026",
+          "title": "Roads Committee Meeting",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05112026-296",
+          "summary": "1. Attendance: · 2. Citizens Comments: · 3. Old Business: · a. 2026 Road Projects Update · 4. Any Old Business: · 5. New Business: · a. TRC Plans · b. Discuss Roads Rules and Regulations for updating · 6. Any New Business: · 7. Accept Minutes: · a. March 9, 2026 · b. April 13, 2026 · 8. Adjourn",
+          "first_archived": "2026-10-03T06:45:49.729600-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|May 6, 2026|_05062026-287",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "May 6, 2026",
+          "title": "Board of Selectmen Meeting",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05062026-287",
+          "summary": "CALL TO ORDER · CITIZEN COMMENT · SCHEDULED MEETINGS: · b. Chief Paulsen - Forest Fire Warden/Federal · c. VJ Ranfos - Crack Sealing Bids · d. Sgt. Pihl - Public Hearing Purchasing procedures Central NH Special · e. Chief Shea - Cruiser purchase · OLD BUSINESS: · a. Finalize 2026 Tax Deeds · NEW BUSINESS: · a. Resignation · b. Disposition of Town Property · c. Appointments · 2026 Budget V Actual Reports · *. Minutes 3/18/26; 4/1/26; 4/15/26 · TOWN ADMINISTRATOR REPORT · COMM…",
+          "first_archived": "2026-10-03T06:45:49.729600-04:00"
+        }
+      ]
+    }
+  ]
+}
