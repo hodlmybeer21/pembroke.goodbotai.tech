@@ -64,3 +64,62 @@ a:hover { text-decoration: underline; }
   background: var(--brand);
   color: white;
 }
+
+/* Print styles — when a resident prints an agenda, the page should
+   look like a clean document, not a website. Hide nav, footer, share
+   buttons. Drop borders. Black on white. */
+@media print {
+  html, body {
+    background: white !important;
+    color: black !important;
+  }
+  /* Hide chrome */
+  header.surface-header,
+  footer,
+  nav[aria-label="Quick access"],
+  .surface-header,
+  [class*="snow"],
+  button[aria-label*="menu" i],
+  button[aria-label*="Open menu" i],
+  button[aria-label*="Close menu" i] {
+    display: none !important;
+  }
+  /* Show URLs after links (helps printed references) */
+  a[href^="http"]:not([href*="pembroke-nh.com"])::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75em;
+    color: #555;
+  }
+  /* Cards: no border, no shadow, no background, just text */
+  .surface {
+    background: white !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+  /* Tighter spacing on print */
+  .container-page {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+  /* Don't break cards across pages */
+  .surface,
+  article,
+  section,
+  li {
+    page-break-inside: avoid;
+  }
+  /* Always show the URL on the next page after a heading */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+  /* Make sure the print renders in dark text on white */
+  * {
+    color: black !important;
+  }
+  a {
+    color: black !important;
+    text-decoration: underline;
+  }
+}

@@ -1,4 +1,5 @@
 import { fetchAgendaCenter, loadOcrExport, findSummary } from "@/lib/agenda-center";
+import { NewSinceLastVisit } from "./NewSinceLastVisit";
 
 export const revalidate = 3600;
 
@@ -24,6 +25,10 @@ export default async function AgendasPage() {
           . PDFs are scanned images; on-device OCR auto-summaries appear when available.
         </p>
       </header>
+
+      <div className="mb-6">
+        <NewSinceLastVisit totalCount={docs.length} />
+      </div>
 
       {docs.length === 0 ? (
         <p className="text-stone-500">No agenda postings available right now.</p>

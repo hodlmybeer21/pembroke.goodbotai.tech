@@ -6,6 +6,7 @@
 
 import type { Metadata } from "next";
 import { ShareButton } from "@/components/ShareButton";
+import { RelatedPages } from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
   title: "New resident guide — Pembroke, NH",
@@ -225,6 +226,8 @@ export default function WelcomePage() {
         and direct calls to town offices. If something has changed, let us
         know and we'll update this page.
       </p>
+
+      <RelatedPages page="welcome" />
 
       <section className="mt-8 surface p-5">
         <h2 className="font-serif text-lg font-semibold text-stone-900 mb-2">

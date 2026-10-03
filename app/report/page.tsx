@@ -8,6 +8,7 @@
 // All routing info is verified from pembroke-nh.com as of Oct 2026.
 
 import type { Metadata } from "next";
+import { RelatedPages } from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
   title: "Report an issue — Pembroke, NH",
@@ -274,6 +275,8 @@ export default function ReportPage() {
         to each department. If something has changed, let us know and we'll
         update this page.
       </p>
+
+      <RelatedPages page="report" />
     </div>
   );
 }

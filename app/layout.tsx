@@ -9,6 +9,7 @@ import { NavLink } from "@/components/NavLink";
 import { NavAuth } from "@/components/NavAuth";
 import { MobileMenu } from "@/components/MobileMenu";
 import { SnowBanner } from "@/components/SnowBanner";
+import { Wordmark } from "@/components/Wordmark";
 import { getActiveSnowNotice } from "@/lib/snow";
 import "./globals.css";
 
@@ -32,9 +33,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             <div className="max-w-site mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
               <Link
                 href="/"
-                className="font-serif text-xl font-semibold tracking-tight text-white shrink-0"
+                className="font-serif text-xl font-semibold tracking-tight text-white shrink-0 flex items-center gap-2"
               >
-                Pembroke, NH
+                <Wordmark className="w-6 h-6" />
+                <span>Pembroke, NH</span>
               </Link>
               <nav className="hidden lg:flex gap-5 text-white items-center text-sm">
                 <NavLink href="/calendar">Calendar</NavLink>

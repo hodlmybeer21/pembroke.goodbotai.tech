@@ -6,6 +6,7 @@
 // and not easily scrapable — we link out rather than embed.
 
 import type { Metadata } from "next";
+import { RelatedPages } from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
   title: "Schools — Pembroke, NH",
@@ -127,6 +128,8 @@ export default function SchoolsPage() {
         School URLs verified from sau53.org. Calendar links may shift when
         the district redesigns their site; let us know if a link breaks.
       </p>
+
+      <RelatedPages page="schools" />
     </div>
   );
 }

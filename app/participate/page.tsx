@@ -5,6 +5,8 @@
 // Select Board's public-comment rules (City Hall 5 PM day-of, 3-min limit,
 // sign in with the clerk first) and from Pembroke's Charter on town meeting.
 
+import { RelatedPages } from "@/components/RelatedPages";
+
 export const metadata = {
   title: "Participate — Pembroke, NH",
   description:
@@ -184,6 +186,8 @@ export default function ParticipatePage() {
         the Pembroke Town Charter. When in doubt, call the Town Clerk at
         603-485-4747 — they're the most helpful person in town government.
       </p>
+
+      <RelatedPages page="participate" />
     </div>
   );
 }

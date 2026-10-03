@@ -36,15 +36,16 @@ export default async function HomePage() {
   return (
     <div className="container-page">
       {/* Lede */}
-      <div className="mb-8">
-        <h1 className="font-serif text-3xl font-semibold text-stone-900 tracking-tight">
-          Pembroke, NH
+      <div className="mb-10">
+        <p className="font-serif text-2xl sm:text-3xl text-stone-700 leading-snug max-w-2xl">
+          Pembroke&rsquo;s town government, in plain English.
+        </p>
+        <h1 className="font-serif text-base text-stone-500 mt-3 font-normal tracking-wide uppercase">
+          This week in town
         </h1>
         <p className="text-stone-600 mt-2 text-base">
-          The week ahead in town government.
-          {thisWeekCount > 0 && (
+          {thisWeekCount > 0 ? (
             <>
-              {" "}
               <strong className="text-stone-900">
                 {thisWeekCount} meeting{thisWeekCount === 1 ? "" : "s"}
               </strong>
@@ -53,13 +54,15 @@ export default async function HomePage() {
                   , <strong className="text-stone-900">{newDocsCount} new agenda packet{newDocsCount === 1 ? "" : "s"}</strong>
                 </>
               )}
-              .
+              {" "}in the next 7 days.
             </>
+          ) : (
+            <>Nothing on the calendar this week. Quiet stretch.</>
           )}
         </p>
-        <p className="text-xs text-stone-500 mt-2">
+        <p className="text-xs text-stone-500 mt-3">
           Refreshed {lastRefresh.toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" })}{" "}
-          · every hour from{" "}
+          &middot; every hour from{" "}
           <a href="https://www.pembroke-nh.com" className="underline">
             pembroke-nh.com
           </a>
