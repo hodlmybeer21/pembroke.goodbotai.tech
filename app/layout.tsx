@@ -9,6 +9,7 @@ import { NavLink } from "@/components/NavLink";
 import { NavAuth } from "@/components/NavAuth";
 import { MobileMenu } from "@/components/MobileMenu";
 import { SnowBanner } from "@/components/SnowBanner";
+import { SnowTestMode } from "@/components/SnowTestMode";
 import { Wordmark } from "@/components/Wordmark";
 import { getActiveSnowNotice } from "@/lib/snow";
 import "./globals.css";
@@ -19,33 +20,17 @@ export const metadata: Metadata = {
     "What Pembroke NH town government is doing — meetings, agendas, decisions. Daily brief for residents.",
 };
 
-export default async function RootLayout({
-  children,
-  searchParams,
-}: {
-  children: React.ReactNode;
-  searchParams?: { snow?: string };
-}) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   // Snow emergency banner sits above the navy header. The fetch is
   // best-effort — if the iCal feed is slow or down, we render nothing
   // rather than blocking the whole page.
-  //
-  // For testing: ?snow=test forces a fake notice. Used by Tyler before
-  // the first real storm to verify the layout, dismiss behavior, and
-  // mobile rendering. Not exposed in any UI.
-  const isSnowTest = searchParams?.snow === "test";
-  const snow = isSnowTest
-    ? {
-        title: "Snow emergency parking ban in effect",
-        until: new Date(Date.now() + 12 * 3600 * 1000),
-        url: "https://www.pembroke-nh.com/1303/Winter-Parking-and-Snow-Emergency-Info",
-      }
-    : await getActiveSnowNotice().catch(() => null);
+  const snow = await getActiveSnowNotice().catch(() => null);
   return (
     <ClerkProviderWrapper>
       <html lang="en">
         <body className="min-h-screen flex flex-col">
           {snow && <SnowBanner notice={snow} />}
+          <SnowTestMode />
           <header className="surface-header sticky top-0 z-10 shadow-[0_1px_0_rgba(0,0,0,0.06)]">
             <div className="max-w-site mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
               <Link
