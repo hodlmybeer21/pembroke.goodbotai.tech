@@ -86,26 +86,29 @@ export function selectRelevantPages(
   // very end, after all keyword-specific matches.
   scores.set("town_info", scores.get("town_info") ?? 0);
 
-  // Sort slugs: highest score first; ties broken by data insertion order.
-  // town_info (score 0 unless matched) always ends up at the end.
+  // Sort slugs: positive scores first (highest first), then zero-score
+  // slugs in data order. town_info ends up last among zero-score unless
+  // it also got a positive match.
   const ranked = [...slugs].sort((a, b) => {
     const sa = scores.get(a) ?? 0;
     const sb = scores.get(b) ?? 0;
     if (sa !== sb) return sb - sa;
+    if (a === "town_info") return 1;
+    if (b === "town_info") return -1;
     return 0;
   });
 
-  // Pick pages in score order, until we hit the cap. town_info is the
-  // very last thing added so it gets dropped if we run out of room.
+  // Pick pages in score order, until we hit the cap. Skip zero-score
+  // slugs unless we have nothing better.
   const out: { slug: string; text: string }[] = [];
   let totalChars = 0;
   for (const slug of ranked) {
-    if (slug === "town_info" && out.length === 0) continue;  // never return only town_info
     const page = info.pages[slug];
     if (!page) continue;
+    const score = scores.get(slug) ?? 0;
+    if (score === 0 && out.length > 0) continue;  // skip zero-score once we have matches
+    if (slug === "town_info" && out.length === 0) continue;  // never return only town_info
     if (totalChars + page.text.length > cap) {
-      // If this is the catch-all town_info, skip and keep looking for
-      // tighter matches; otherwise stop — we already have enough.
       if (slug === "town_info") continue;
       break;
     }
