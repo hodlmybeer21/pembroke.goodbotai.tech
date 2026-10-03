@@ -42,6 +42,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 <NavLink href="/trash">Trash</NavLink>
                 <NavLink href="/officials">Officials</NavLink>
                 <NavLink href="/ask">Ask</NavLink>
+                <NavLink href="/participate">Participate</NavLink>
                 <NavLink href="/about">About</NavLink>
                 <span className="border-l border-white/20 pl-4 ml-2">
                   <NavAuth />
