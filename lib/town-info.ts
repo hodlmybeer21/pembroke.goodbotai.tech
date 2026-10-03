@@ -53,7 +53,7 @@ export function selectRelevantPages(
   // slugs are relevant. Order within a bucket is irrelevant — we sort by
   // score (matched count) at the end.
   const keywordMap: Array<[RegExp, string[]]> = [
-    [/library|book|read|catalo/, ["library", "library_catalog", "library_trustees", "library_website"]],
+    [/library|book|read|catalo/, ["library", "library_trustees", "library_website"]],
     [/paint|recycl|trash|rubbish|garbage|pickup|transfer.*station|curbside|compost|hazard.*waste|mercury/, ["recycling", "mercury_disposal", "public_works", "transfer_station_facility", "solid_waste_collection", "construction_demolition", "recycling_textiles", "medical_waste"]],
     [/snow|plow|ice|winter|parking|sand.*salt/, ["winter_parking_snow", "public_works"]],
     [/fire|department|burn.*permit|smoke.alarm/, ["fire_department"]],
@@ -78,6 +78,20 @@ export function selectRelevantPages(
     if (pattern.test(qLow)) {
       for (const s of slugsForMatch) {
         if (scores.has(s)) scores.set(s, (scores.get(s) ?? 0) + 1);
+      }
+    }
+  }
+
+  // Bonus: if a slug's NAME contains a keyword from the question, bump it.
+  // e.g. "paint" question → paint_disposal would score higher. Or
+  // "recycling" question → recycling page scores higher than public_works.
+  const qWords = qLow.split(/\W+/).filter((w) => w.length >= 4);
+  for (const slug of slugs) {
+    const slugLow = slug.toLowerCase();
+    for (const w of qWords) {
+      if (slugLow.includes(w)) {
+        scores.set(slug, (scores.get(slug) ?? 0) + 2);
+        break;  // one boost per slug is enough
       }
     }
   }

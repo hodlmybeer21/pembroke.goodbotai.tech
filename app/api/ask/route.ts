@@ -104,7 +104,29 @@ const BOILERPLATE_PATTERNS = [
   /view map/i,
   /physical address/i,
   /view full/i,
-  /^[a-z\s]+ - [a-z\s]+ - [a-z\s]+ - /i,  // sequences like "Foo - Bar - Baz -"
+  /our new website is here/i,    // Pembroke site-wide banner on every page
+  /^mission statement/i,         // sub-heading on every department page
+  /^staff contacts/i,            // contact section header
+  /^\d+ [a-z\s]+ street/i,      // street address lines
+  /phone:?\s*\d/i,              // phone number lines
+  /^email us:/i,                // library catalog UI text
+  /refine search/i,             // library catalog UI text
+  /my library account/i,         // library catalog UI text
+  /advanced search/i,            // library catalog UI text
+  /account info/i,
+  /items out/i,
+  /reserves \/ requests/i,
+  /bookmarks/i,
+  /password change/i,
+  /more search options/i,
+  /series search/i,
+  /subject search/i,
+  /field keywords/i,
+  /accelerated reader/i,
+  /lexile/i,
+  /attraction pass/i,
+  /^\d+\s*—\s*[a-z]/i,           // catalog classification lines
+  /^[a-z\s]+ - [a-z\s]+ - [a-z\s]+ - /i,
 ];
 
 function isBoilerplate(sentence: string): boolean {
@@ -210,11 +232,30 @@ async function buildContext(q: string): Promise<AskContext> {
 }
 
 function stubAnswer(q: string, ctx: AskContext): string {
-  // If the most-relevant town-info page has extractable content, lead with it.
-  // Otherwise lead with the meeting list (for meeting-style questions).
   const lines: string[] = [];
 
-  if (ctx.townPages.length > 0) {
+  // If the question names a committee directly, lead with the meeting
+  // schedule for that committee (not a town-info page about something
+  // unrelated). The user wants the next meeting, not a department page.
+  const namedCommittee = findNamedCommittee(q, ctx.meetings);
+
+  if (namedCommittee) {
+    const matches = ctx.meetings.filter((m) => m.committee === namedCommittee).slice(0, 3);
+    if (matches.length > 0) {
+      lines.push(`Upcoming ${namedCommittee} meeting${matches.length > 1 ? "s" : ""}:`);
+      for (const m of matches) {
+        const when = m.when.toLocaleString("en-US", {
+          weekday: "short",
+          month: "short",
+          day: "numeric",
+          hour: "numeric",
+          minute: "2-digit",
+        });
+        lines.push(`- ${when} — ${m.title}`);
+      }
+    }
+  } else if (ctx.townPages.length > 0) {
+    // Otherwise, lead with the answer from the most-relevant town-info page.
     const top = ctx.townPages[0];
     const answer = extractAnswer(top.text, q);
     if (answer) {
@@ -225,7 +266,6 @@ function stubAnswer(q: string, ctx: AskContext): string {
         lines.push(`Source: ${url}`);
       }
     } else {
-      // Fallback: just point to the page.
       const url = top.url ?? PAGE_URL[top.slug];
       if (url) {
         lines.push(`See ${url} for the most up-to-date info.`);
@@ -233,31 +273,32 @@ function stubAnswer(q: string, ctx: AskContext): string {
     }
   }
 
-  // Only surface meetings that are topically related to the question.
-  // If no specific topic matches, surface nothing (the town-info page is
-  // a better answer than a list of unrelated meetings).
-  const relevantCommittees = topicCommittees(q);
-  let meetingHits: Meeting[] = [];
-  if (relevantCommittees.length > 0) {
-    meetingHits = ctx.meetings
-      .filter((m) => relevantCommittees.some((c) => m.committee === c))
-      .slice(0, 3);
-  } else if (ctx.townPages.length === 0) {
-    // No town-info, no topic. Fall back to the next 3 upcoming meetings.
-    meetingHits = ctx.meetings.slice(0, 3);
-  }
-  if (meetingHits.length > 0) {
-    if (lines.length > 0) lines.push("");
-    lines.push("Next related meeting" + (meetingHits.length > 1 ? "s" : "") + ":");
-    for (const m of meetingHits) {
-      const when = m.when.toLocaleString("en-US", {
-        weekday: "short",
-        month: "short",
-        day: "numeric",
-        hour: "numeric",
-        minute: "2-digit",
-      });
-      lines.push(`- ${m.committee} — ${when}`);
+  // Also surface topically-related meetings (only if we didn't already lead
+  // with meetings). For example, a "vote" question gets a town-info page
+  // AND a "next Select Board meeting" line.
+  if (!namedCommittee) {
+    const relevantCommittees = topicCommittees(q);
+    let meetingHits: Meeting[] = [];
+    if (relevantCommittees.length > 0) {
+      meetingHits = ctx.meetings
+        .filter((m) => relevantCommittees.some((c) => m.committee === c))
+        .slice(0, 3);
+    } else if (ctx.townPages.length === 0) {
+      meetingHits = ctx.meetings.slice(0, 3);
+    }
+    if (meetingHits.length > 0) {
+      if (lines.length > 0) lines.push("");
+      lines.push("Next related meeting" + (meetingHits.length > 1 ? "s" : "") + ":");
+      for (const m of meetingHits) {
+        const when = m.when.toLocaleString("en-US", {
+          weekday: "short",
+          month: "short",
+          day: "numeric",
+          hour: "numeric",
+          minute: "2-digit",
+        });
+        lines.push(`- ${m.committee} — ${when}`);
+      }
     }
   }
 
@@ -267,6 +308,27 @@ function stubAnswer(q: string, ctx: AskContext): string {
     );
   }
   return lines.join("\n");
+}
+
+/**
+ * If the question names a specific committee (e.g. "When is the next
+ * Select Board meeting?"), return the canonical committee name. Returns
+ * null if no committee is named.
+ */
+function findNamedCommittee(q: string, meetings: Meeting[]): string | null {
+  const qLow = q.toLowerCase();
+  const known = new Set(meetings.map((m) => m.committee));
+  // Match the question against each known committee's lowercase name. Pick
+  // the longest match to avoid "Board" matching "Planning Board" before
+  // "Board" has a chance to be tested.
+  let best: { name: string; len: number } | null = null;
+  for (const name of known) {
+    const low = name.toLowerCase();
+    if (qLow.includes(low) && (!best || low.length > best.len)) {
+      best = { name, len: low.length };
+    }
+  }
+  return best?.name ?? null;
 }
 
 async function callLlm(q: string, ctx: AskContext): Promise<string> {
