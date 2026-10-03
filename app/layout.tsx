@@ -31,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <nav className="hidden sm:flex gap-6 text-white items-center">
                 <NavLink href="/calendar">Calendar</NavLink>
                 <NavLink href="/agendas">Agendas</NavLink>
+                <NavLink href="/archive">Archive</NavLink>
                 <NavLink href="/ask">Ask</NavLink>
                 <NavLink href="/about">About</NavLink>
                 <span className="border-l border-white/20 pl-4 ml-2">
