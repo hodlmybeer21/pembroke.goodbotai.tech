@@ -100,7 +100,7 @@ export default async function SettingsPage() {
       <h1 className="text-2xl font-semibold mb-1">Alert preferences</h1>
       <p className="text-sm text-stone-500 mb-6">
         Pick the topics you care about. New postings matching any of them will
-        arrive in your inbox (and Telegram, if you set it up below).
+        arrive in your inbox. You can also add a street watch below.
       </p>
       <SettingsForm
         email={email}
