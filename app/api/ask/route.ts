@@ -135,6 +135,13 @@ function isBoilerplate(sentence: string): boolean {
   for (const p of BOILERPLATE_PATTERNS) {
     if (p.test(trimmed)) return true;
   }
+  // Drop sentences that are mostly numbers / data table rows. e.g.
+  // "JANUARY 176.11 53.48 23.29% $154.32 ($1,946.14)".
+  const digits = (trimmed.match(/\d/g) ?? []).length;
+  if (digits > trimmed.length * 0.2) return true;
+  // Drop sentences that are mostly uppercase abbreviations (table headers).
+  const upper = (trimmed.match(/[A-Z]{2,}/g) ?? []).join("").length;
+  if (upper > trimmed.length * 0.4 && trimmed.length < 80) return true;
   return false;
 }
 
@@ -147,7 +154,7 @@ function isBoilerplate(sentence: string): boolean {
  *   3. Score remaining sentences by how many question keywords they contain.
  *   4. Take the top 2-3 sentences, preserve original order.
  */
-function extractAnswer(pageText: string, question: string, maxSentences = 3): string {
+function extractAnswer(pageText: string, question: string, maxSentences = 2, maxChars = 500): string {
   const text = pageText.replace(/\s+/g, " ").trim();
   // Split on sentence terminators (.!?) followed by space + capital letter.
   // Keep things simple — we're summarizing civic-page prose.
@@ -180,7 +187,11 @@ function extractAnswer(pageText: string, question: string, maxSentences = 3): st
     .slice(0, maxSentences)
     .sort((a, b) => a.index - b.index);
 
-  return top.map((s) => s.sentence).join(" ");
+  let out = top.map((s) => s.sentence).join(" ");
+  if (out.length > maxChars) {
+    out = out.slice(0, maxChars - 1).trimEnd() + "…";
+  }
+  return out;
 }
 
 const STOPWORDS = new Set([
