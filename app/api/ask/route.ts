@@ -1,13 +1,21 @@
 // app/api/ask/route.ts — Ask-the-bot endpoint.
 //
-// v1.1: routes to a real LLM if NOUS_API_KEY env var is set; falls back to a
-// context-aware deterministic stub otherwise. The site is fully functional
-// without an LLM key — the stub returns useful context (recent + upcoming
-// meetings) so visitors see something real.
+// Routes to a real LLM (Nous Research inference API) if NOUS_API_KEY is set;
+// otherwise returns a deterministic stub that surfaces relevant town-info
+// pages and upcoming meetings.
+//
+// Context sources:
+//   - iCal feeds (upcoming meetings, 90d horizon)
+//   - agenda center HTML (new postings)
+//   - data/ocr-summaries.json (Tyler's Mac OCR cache, refreshed daily)
+//   - data/town-info.json (Tyler's Mac scrape of pembroke-nh.com service pages,
+//     refreshed daily) — this is the "where is the library / how does trash
+//     pickup work" source
 
 import { NextResponse } from "next/server";
 import { fetchAgendaCenter, loadOcrExport } from "@/lib/agenda-center";
 import { fetchAllFeeds, filterHorizon } from "@/lib/ical";
+import { loadTownInfo, selectRelevantPages } from "@/lib/town-info";
 
 export const runtime = "nodejs";
 export const maxDuration = 10; // seconds
@@ -19,12 +27,19 @@ interface Meeting {
   url?: string;
 }
 
-async function buildContext(): Promise<{ meetings: Meeting[]; summaries: string[] }> {
+interface AskContext {
+  meetings: Meeting[];
+  summaries: string[];
+  townPages: { slug: string; text: string }[];
+}
+
+async function buildContext(q: string): Promise<AskContext> {
   const now = new Date();
   const horizonEnd = new Date(now.getTime() + 90 * 24 * 3600 * 1000);
-  const [events, docs] = await Promise.all([
+  const [events, docs, townInfo] = await Promise.all([
     fetchAllFeeds().catch(() => []),
     fetchAgendaCenter().catch(() => []),
+    Promise.resolve(loadTownInfo()),
   ]);
   const upcoming = filterHorizon(events, now, horizonEnd)
     .sort((a, b) => a.start.getTime() - b.start.getTime())
@@ -39,75 +54,99 @@ async function buildContext(): Promise<{ meetings: Meeting[]; summaries: string[
     .map((s) => s.summary)
     .filter((s): s is string => Boolean(s))
     .slice(0, 6);
-  return { meetings, summaries };
+  const townPages = townInfo ? selectRelevantPages(q, townInfo) : [];
+  return { meetings, summaries, townPages };
 }
 
-function stubAnswer(q: string, ctx: { meetings: Meeting[]; summaries: string[] }): string {
+function isGeneralTownQuestion(q: string): boolean {
   const qLow = q.toLowerCase();
-  const hits = ctx.meetings.filter(
+  return /(library|book|trash|rubbish|garbage|pickup|recycl|transfer.*station|curbside|snow|plow|fire|department|police|cemeter|stormwater|vital.record|marriage|death|birth|vot|elect|assess|tax|zoning|build.*permit|permit)/.test(
+    qLow,
+  );
+}
+
+function stubAnswer(q: string, ctx: AskContext): string {
+  const lines: string[] = [];
+
+  // 1) Town-info pages (general questions about services / how-to)
+  if (ctx.townPages.length > 0) {
+    lines.push(
+      "Here's what the town's website says about that (excerpted from pembroke-nh.com):",
+    );
+    lines.push("");
+    for (const p of ctx.townPages.slice(0, 3)) {
+      const snippet = p.text.replace(/\s+/g, " ").trim().slice(0, 700);
+      lines.push(`[${p.slug}] ${snippet}${p.text.length > 700 ? "…" : ""}`);
+      lines.push("");
+    }
+  }
+
+  // 2) Meeting matches if relevant
+  const qLow = q.toLowerCase();
+  const meetingHits = ctx.meetings.filter(
     (m) =>
       qLow.includes(m.committee.toLowerCase()) ||
       m.title.toLowerCase().split(/\s+/).some((w) => w.length > 3 && qLow.includes(w)),
   );
-  const lines: string[] = [];
-  if (hits.length > 0) {
-    lines.push(
-      `Based on the town calendar, here are the most relevant upcoming meetings for "${q}":`,
-    );
-    for (const m of hits.slice(0, 5)) {
+  if (meetingHits.length > 0) {
+    if (lines.length > 0) lines.push("");
+    lines.push("Related upcoming meetings:");
+    for (const m of meetingHits.slice(0, 4)) {
       const when = m.when.toLocaleString("en-US", {
         weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit",
       });
       lines.push(`- ${m.committee} — ${m.title} — ${when}`);
     }
-    lines.push("");
+  }
+
+  if (lines.length === 0) {
     lines.push(
-      "Note: ask-the-bot answers are part of v2 (LLM endpoint not wired yet). This stub returns meeting matches from the live calendar. Real natural-language answers ship once a model API key is added.",
-    );
-  } else if (ctx.meetings.length > 0) {
-    lines.push(`I don't have a specific answer for "${q}", but here are the next few meetings:`);
-    for (const m of ctx.meetings.slice(0, 5)) {
-      const when = m.when.toLocaleString("en-US", {
-        weekday: "short", month: "short", day: "numeric",
-      });
-      lines.push(`- ${when} — ${m.committee} — ${m.title}`);
-    }
-    lines.push("");
-    lines.push(
-      "Full natural-language answers ship in v2 (no LLM API key configured yet). Browse the daily brief and the agenda list for the same underlying data.",
-    );
-  } else {
-    lines.push(
-      "The town calendar is empty for the next 90 days. Try the agenda list or come back tomorrow when fresh meetings get posted.",
+      `I don't have a specific answer for "${q}" yet. Try browsing the daily brief or the agenda list.`,
     );
   }
   return lines.join("\n");
 }
 
-async function callLlm(q: string, ctx: { meetings: Meeting[]; summaries: string[] }): Promise<string> {
+async function callLlm(q: string, ctx: AskContext): Promise<string> {
   const apiKey = process.env.NOUS_API_KEY;
   const apiUrl = process.env.NOUS_API_URL ?? "https://inference-api.nousresearch.com/v1/chat/completions";
   const model = process.env.NOUS_MODEL ?? "Hermes-4-405B";
-  const system = [
-    "You are the Pembroke NH town bot. Answer the user's question using ONLY the",
-    "context below (recent + upcoming meetings, OCR'd agenda summaries). Be brief,",
-    "conversational, and specific. If you don't know, say so. Don't invent details.",
+  const isGeneral = isGeneralTownQuestion(q);
+  const systemLines = [
+    "You are the Pembroke NH town bot — a helpful assistant for Pembroke, NH residents.",
+    `The user asked: "${q}".`,
+    "Answer using ONLY the context below. Sources are:",
+    "  - Town-info pages scraped from pembroke-nh.com (general how-to / hours / fees / services)",
+    "  - Upcoming town-board meetings (next 90 days)",
+    "  - OCR'd agenda + minutes summaries (most recent postings)",
+    "",
+    `The user's question is about: ${isGeneral ? "general town services (prioritize town-info pages)" : "town meetings or decisions (prioritize meeting / agenda context)"}.`,
+    "Be brief, conversational, and specific. Cite the source where appropriate (e.g., 'pembroke-nh.com/library').",
+    "If you don't know, say so — don't invent hours, phone numbers, fees, or dates.",
     "Format: short prose, optionally a bulleted list of 1-5 items.",
-  ].join(" ");
-  const userParts: string[] = [`Question: ${q}\n\nContext:`];
-  if (ctx.meetings.length) {
-    userParts.push("Upcoming meetings:");
+  ];
+
+  const userParts: string[] = [];
+  if (ctx.townPages.length > 0) {
+    userParts.push("Town-info pages (excerpted from pembroke-nh.com):");
+    for (const p of ctx.townPages) {
+      userParts.push(`\n[${p.slug}]\n${p.text}\n`);
+    }
+  }
+  if (ctx.meetings.length > 0) {
+    userParts.push("\nUpcoming meetings (next 90 days):");
     for (const m of ctx.meetings) {
       const when = m.when.toISOString();
       userParts.push(`- ${when}  ${m.committee} — ${m.title}`);
     }
   }
-  if (ctx.summaries.length) {
-    userParts.push("\nRecent agenda summaries:");
+  if (ctx.summaries.length > 0) {
+    userParts.push("\nRecent agenda + minutes summaries:");
     for (const s of ctx.summaries) {
       userParts.push(`- ${s}`);
     }
   }
+
   const res = await fetch(apiUrl, {
     method: "POST",
     headers: {
@@ -117,10 +156,10 @@ async function callLlm(q: string, ctx: { meetings: Meeting[]; summaries: string[
     body: JSON.stringify({
       model,
       messages: [
-        { role: "system", content: system },
-        { role: "user", content: userParts.join("\n") },
+        { role: "system", content: systemLines.join(" ") },
+        { role: "user", content: userParts.join("\n") || "(no context available)" },
       ],
-      max_tokens: 400,
+      max_tokens: 500,
       temperature: 0.3,
     }),
     signal: AbortSignal.timeout(8000),
@@ -147,7 +186,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "q too long" }, { status: 400 });
   }
 
-  const ctx = await buildContext();
+  const ctx = await buildContext(q);
   let answer: string;
   let mode: "llm" | "stub" = "stub";
 
@@ -169,13 +208,14 @@ export async function POST(req: Request) {
     mode,
     meetings_in_context: ctx.meetings.length,
     summaries_in_context: ctx.summaries.length,
+    town_pages_in_context: ctx.townPages.map((p) => p.slug),
   });
 }
 
 export async function GET() {
-  // Health probe so we can verify the route is live without POSTing.
   return NextResponse.json({
     ok: true,
     llm_configured: Boolean(process.env.NOUS_API_KEY),
+    town_info_loaded: Boolean(loadTownInfo()),
   });
 }

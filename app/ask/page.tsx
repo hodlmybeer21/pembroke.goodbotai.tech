@@ -64,12 +64,12 @@ export default function AskPage() {
       )}
 
       <div className="mt-8 p-4 bg-stone-100 border border-stone-200 rounded-md text-xs text-stone-600">
-        <strong>Note on what's available right now.</strong> Ask-the-bot answers
-        are part of v2 — the LLM endpoint isn't live yet. For now, browse the
-        <a href="/" className="underline mx-1">daily brief</a>
-        and the
-        <a href="/agendas" className="underline mx-1">agenda list</a>
-        for the same data the bot will read.
+        <strong>What this answers.</strong> Two kinds of questions: town-meeting
+        stuff (when is the next Select Board, what's on tomorrow's agenda)
+        and general how-to (where is the library, how does trash pickup work,
+        what are transfer station fees). Answers come from the town's own
+        website and the daily-brief data. Add an LLM key in Vercel env vars for
+        more natural phrasing.
       </div>
     </div>
   );
