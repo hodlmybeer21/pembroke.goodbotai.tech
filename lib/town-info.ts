@@ -75,8 +75,10 @@ export function selectRelevantPages(
   const scores = new Map<string, number>();
   for (const slug of slugs) scores.set(slug, 0);
 
+  let anyPatternMatched = false;
   for (const [pattern, slugsForMatch] of keywordMap) {
     if (pattern.test(qLow)) {
+      anyPatternMatched = true;
       for (const s of slugsForMatch) {
         if (scores.has(s)) scores.set(s, (scores.get(s) ?? 0) + 1);
       }
@@ -86,15 +88,28 @@ export function selectRelevantPages(
   // Bonus: if a slug's NAME contains a keyword from the question, bump it.
   // e.g. "paint" question → paint_disposal would score higher. Or
   // "recycling" question → recycling page scores higher than public_works.
-  const qWords = qLow.split(/\W+/).filter((w) => w.length >= 4);
-  for (const slug of slugs) {
-    const slugLow = slug.toLowerCase();
-    for (const w of qWords) {
-      if (slugLow.includes(w)) {
-        scores.set(slug, (scores.get(slug) ?? 0) + 2);
-        break;  // one boost per slug is enough
+  // Only applies if a pattern already matched — otherwise the boost
+  // produces noise (e.g. "What happened" got routed to library because
+  // "happened" loosely fuzz-matched nothing but the first slug won by
+  // data-order tiebreak).
+  if (anyPatternMatched) {
+    const qWords = qLow.split(/\W+/).filter((w) => w.length >= 4);
+    for (const slug of slugs) {
+      const slugLow = slug.toLowerCase();
+      for (const w of qWords) {
+        if (slugLow.includes(w)) {
+          scores.set(slug, (scores.get(slug) ?? 0) + 2);
+          break;  // one boost per slug is enough
+        }
       }
     }
+  }
+
+  // If no pattern matched at all, return empty — let the caller route to
+  // archive or a different source. We never want a zero-confidence town-info
+  // page to masquerade as an answer.
+  if (!anyPatternMatched) {
+    return [];
   }
 
   // town_info is the background-context page. Always include but at the

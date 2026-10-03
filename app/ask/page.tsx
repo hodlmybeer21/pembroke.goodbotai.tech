@@ -3,6 +3,8 @@
 import { useState } from "react";
 
 const EXAMPLES = [
+  "What happened at the last Select Board meeting?",
+  "What happened at the last meeting?",
   "When is the next Select Board meeting?",
   "How do I get rid of paint?",
   "Where is the library and what are the hours?",
@@ -18,6 +20,7 @@ export default function AskPage() {
   const [answer, setAnswer] = useState<string | null>(null);
   const [sources, setSources] = useState<Source[]>([]);
   const [townPages, setTownPages] = useState<string[]>([]);
+  const [archiveCount, setArchiveCount] = useState(0);
 
   async function submit(text?: string) {
     const query = (text ?? q).trim();
@@ -26,6 +29,7 @@ export default function AskPage() {
     setAnswer(null);
     setSources([]);
     setTownPages([]);
+    setArchiveCount(0);
     try {
       const res = await fetch("/api/ask", {
         method: "POST",
@@ -36,6 +40,7 @@ export default function AskPage() {
       setAnswer(data.answer ?? "No answer.");
       setSources(data.sources ?? []);
       setTownPages(data.town_pages_in_context ?? []);
+      setArchiveCount(data.archive_entries_in_context ?? 0);
       if (text) setQ(text);
     } catch (err) {
       setAnswer("Couldn't reach the bot right now. Try again in a minute.");
@@ -117,8 +122,13 @@ export default function AskPage() {
           )}
           {townPages.length > 0 && (
             <div className="mt-3 text-xs text-stone-500">
-              Read from: {townPages.slice(0, 4).join(", ")}
+              Read from town-info: {townPages.slice(0, 4).join(", ")}
               {townPages.length > 4 && ` +${townPages.length - 4} more`}
+            </div>
+          )}
+          {archiveCount > 0 && (
+            <div className="mt-1 text-xs text-stone-500">
+              Read from archive: {archiveCount} meeting summary record{archiveCount === 1 ? "" : "s"}
             </div>
           )}
         </article>

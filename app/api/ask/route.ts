@@ -17,6 +17,7 @@ import { NextResponse } from "next/server";
 import { fetchAgendaCenter, loadOcrExport } from "@/lib/agenda-center";
 import { fetchAllFeeds, filterHorizon } from "@/lib/ical";
 import { loadTownInfo, selectRelevantPages } from "@/lib/town-info";
+import { loadArchive, selectArchiveEntries, isPastMeetingQuestion, type ArchiveEntry } from "@/lib/archive";
 
 export const runtime = "nodejs";
 export const maxDuration = 10; // seconds
@@ -32,6 +33,7 @@ interface AskContext {
   meetings: Meeting[];
   summaries: string[];
   townPages: { slug: string; text: string; url?: string }[];
+  archiveEntries: ArchiveEntry[];
 }
 
 const PAGE_URL: Record<string, string> = {
@@ -218,10 +220,11 @@ function topicCommittees(q: string): string[] {
 async function buildContext(q: string): Promise<AskContext> {
   const now = new Date();
   const horizonEnd = new Date(now.getTime() + 90 * 24 * 3600 * 1000);
-  const [events, docs, townInfo] = await Promise.all([
+  const [events, docs, townInfo, archive] = await Promise.all([
     fetchAllFeeds().catch(() => []),
     fetchAgendaCenter().catch(() => []),
     Promise.resolve(loadTownInfo()),
+    Promise.resolve(loadArchive()),
   ]);
   const upcoming = filterHorizon(events, now, horizonEnd)
     .sort((a, b) => a.start.getTime() - b.start.getTime())
@@ -239,7 +242,8 @@ async function buildContext(q: string): Promise<AskContext> {
   const townPages = townInfo
     ? selectRelevantPages(q, townInfo).map((p) => ({ ...p, url: PAGE_URL[p.slug] }))
     : [];
-  return { meetings, summaries, townPages };
+  const archiveEntries = archive ? selectArchiveEntries(q, archive) : [];
+  return { meetings, summaries, townPages, archiveEntries };
 }
 
 function stubAnswer(q: string, ctx: AskContext): string {
@@ -250,7 +254,26 @@ function stubAnswer(q: string, ctx: AskContext): string {
   // unrelated). The user wants the next meeting, not a department page.
   const namedCommittee = findNamedCommittee(q, ctx.meetings);
 
-  if (namedCommittee) {
+  // If the question is about a past meeting (what happened, last meeting,
+  // etc.) and we have archive entries, lead with them.
+  const showArchive = ctx.archiveEntries.length > 0 && (
+    isPastMeetingQuestion(q) ||
+    (ctx.townPages.length === 0 && !namedCommittee)
+  );
+
+  if (showArchive) {
+    lines.push("Recent from the meeting archive:");
+    for (const e of ctx.archiveEntries.slice(0, 4)) {
+      lines.push("");
+      lines.push(`**${e.committee} — ${e.meeting_date}** (${e.doc_type})`);
+      // Trim summary to a single line if it has separators.
+      const summary = e.summary.length > 400
+        ? e.summary.slice(0, 399).trimEnd() + "…"
+        : e.summary;
+      lines.push(summary);
+      lines.push(`Read the full ${e.doc_type.toLowerCase()}: ${e.url}`);
+    }
+  } else if (namedCommittee) {
     const matches = ctx.meetings.filter((m) => m.committee === namedCommittee).slice(0, 3);
     if (matches.length > 0) {
       lines.push(`Upcoming ${namedCommittee} meeting${matches.length > 1 ? "s" : ""}:`);
@@ -287,7 +310,7 @@ function stubAnswer(q: string, ctx: AskContext): string {
   // Also surface topically-related meetings (only if we didn't already lead
   // with meetings). For example, a "vote" question gets a town-info page
   // AND a "next Select Board meeting" line.
-  if (!namedCommittee) {
+  if (!namedCommittee && !showArchive) {
     const relevantCommittees = topicCommittees(q);
     let meetingHits: Meeting[] = [];
     if (relevantCommittees.length > 0) {
@@ -366,6 +389,12 @@ async function callLlm(q: string, ctx: AskContext): Promise<string> {
       userParts.push(`\n[${p.slug}]\n${p.text}\n`);
     }
   }
+  if (ctx.archiveEntries.length > 0) {
+    userParts.push("\nPast meeting summaries from the archive (most recent first):");
+    for (const e of ctx.archiveEntries) {
+      userParts.push(`\n[${e.committee} ${e.doc_type}, ${e.meeting_date}]\n${e.summary}\n`);
+    }
+  }
   if (ctx.meetings.length > 0) {
     userParts.push("\nUpcoming meetings (next 90 days):");
     for (const m of ctx.meetings) {
@@ -442,6 +471,7 @@ export async function POST(req: Request) {
     meetings_in_context: ctx.meetings.length,
     summaries_in_context: ctx.summaries.length,
     town_pages_in_context: ctx.townPages.map((p) => p.slug),
+    archive_entries_in_context: ctx.archiveEntries.length,
   });
 }
 
