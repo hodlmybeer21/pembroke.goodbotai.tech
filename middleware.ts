@@ -13,7 +13,9 @@ import type { NextRequest } from "next/server";
 
 const isProtected = createRouteMatcher([
   "/settings(.*)",
-  "/api/alerts/(.*)",
+  // /api/alerts/* uses HMAC auth in the route handler itself, not Clerk.
+  // Putting it under auth.protect() would break the cron webhook because the
+  // cron doesn't have a Clerk session.
 ]);
 
 function clerkConfigured(): boolean {
