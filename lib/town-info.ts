@@ -54,7 +54,8 @@ export function selectRelevantPages(
   // score (matched count) at the end.
   const keywordMap: Array<[RegExp, string[]]> = [
     [/library|book|read|catalo/, ["library", "library_trustees", "library_website"]],
-    [/paint|recycl|trash|rubbish|garbage|pickup|transfer.*station|curbside|compost|hazard.*waste|mercury/, ["recycling", "mercury_disposal", "public_works", "transfer_station_facility", "solid_waste_collection", "construction_demolition", "recycling_textiles", "medical_waste"]],
+    [/paint|hazard.*waste|mercury/, ["recycling", "recycling_textiles", "mercury_disposal", "transfer_station_facility", "medical_waste"]],
+    [/recycl|trash|rubbish|garbage|pickup|transfer.*station|curbside|compost/, ["recycling", "recycling_textiles", "public_works", "transfer_station_facility", "solid_waste_collection", "construction_demolition", "medical_waste"]],
     [/snow|plow|ice|winter|parking|sand.*salt/, ["winter_parking_snow", "public_works"]],
     [/fire|department|burn.*permit|smoke.alarm/, ["fire_department"]],
     [/police|cop|law.enforce|crime|emergency.*911/, ["police_department"]],
