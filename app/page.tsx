@@ -2,6 +2,7 @@ import { fetchAllFeeds, dedupeByDateTitle, filterHorizon } from "@/lib/ical";
 import { fetchAgendaCenter, loadOcrExport, findSummary } from "@/lib/agenda-center";
 import { buildBrief } from "@/lib/brief";
 import { Brief } from "@/components/Brief";
+import Link from "next/link";
 import { TAG_LABEL } from "@/lib/impact";
 
 export const revalidate = 3600;
@@ -65,6 +66,33 @@ export default async function HomePage() {
         </p>
       </div>
 
+      {/* Quick access — high-traffic pages surfaced on the home page so
+          visitors find them without scanning the top nav. */}
+      <nav aria-label="Quick access" className="mb-10">
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <QuickCard
+            href="/trash"
+            title="Trash day lookup"
+            body="Type your street — find your pickup day and recycling rules."
+          />
+          <QuickCard
+            href="/officials"
+            title="Your officials"
+            body="Select Board, Planning Board, state reps — names, emails, terms."
+          />
+          <QuickCard
+            href="/participate"
+            title="How to participate"
+            body="Speak at a meeting, get on the warrant, run for office."
+          />
+          <QuickCard
+            href="/archive"
+            title="Past meetings"
+            body="Browse 90+ meeting summaries going back to January 2026."
+          />
+        </ul>
+      </nav>
+
       {items.length === 0 ? (
         <p className="text-stone-500">
           Nothing on the town calendar in the next 90 days. Check back later.
@@ -116,5 +144,23 @@ export default async function HomePage() {
         </section>
       )}
     </div>
+  );
+}
+
+function QuickCard({ href, title, body }: { href: string; title: string; body: string }) {
+  return (
+    <li>
+      <Link
+        href={href}
+        className="block surface p-4 h-full hover:border-brand-500 transition-colors"
+      >
+        <div className="font-serif text-base font-semibold text-stone-900">
+          {title} →
+        </div>
+        <div className="mt-1 text-xs text-stone-600 leading-relaxed">
+          {body}
+        </div>
+      </Link>
+    </li>
   );
 }
