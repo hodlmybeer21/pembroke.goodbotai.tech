@@ -69,20 +69,25 @@ export default async function HomePage() {
       {/* Quick access — high-traffic pages surfaced on the home page so
           visitors find them without scanning the top nav. */}
       <nav aria-label="Quick access" className="mb-10">
-        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
           <QuickCard
             href="/trash"
-            title="Trash day lookup"
+            title="Trash day"
             body="Type your street — find your pickup day and recycling rules."
           />
           <QuickCard
+            href="/report"
+            title="Report an issue"
+            body="Pothole, missed trash, streetlight, barking dog — who to call."
+          />
+          <QuickCard
             href="/officials"
-            title="Your officials"
+            title="Officials"
             body="Select Board, Planning Board, state reps — names, emails, terms."
           />
           <QuickCard
             href="/participate"
-            title="How to participate"
+            title="Participate"
             body="Speak at a meeting, get on the warrant, run for office."
           />
           <QuickCard
