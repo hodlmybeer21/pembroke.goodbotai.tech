@@ -1,8 +1,9 @@
 // app/api/ask/route.ts — Ask-the-bot endpoint.
 //
 // Routes to a real LLM (Nous Research inference API) if NOUS_API_KEY is set;
-// otherwise returns a deterministic stub that surfaces relevant town-info
-// pages and upcoming meetings.
+// otherwise returns a deterministic stub that pulls answerable sentences
+// out of the relevant town-info pages and only surfaces meetings that are
+// topically related to the question.
 //
 // Context sources:
 //   - iCal feeds (upcoming meetings, 90d horizon)
@@ -30,7 +31,155 @@ interface Meeting {
 interface AskContext {
   meetings: Meeting[];
   summaries: string[];
-  townPages: { slug: string; text: string }[];
+  townPages: { slug: string; text: string; url?: string }[];
+}
+
+const PAGE_URL: Record<string, string> = {
+  library: "https://www.pembroke-nh.com/1236/Library",
+  library_catalog: "https://www.pembroke-nh.com/1238/Library-Catalog",
+  library_trustees: "https://www.pembroke-nh.com/1239/Library-Trustees",
+  public_works: "https://www.pembroke-nh.com/1277/Public-Works",
+  recycling: "https://www.pembroke-nh.com/1291/Recycling",
+  planning_building: "https://www.pembroke-nh.com/1242/Planning-and-Building-Department",
+  fire_department: "https://www.pembroke-nh.com/1207/Fire-Department",
+  police_department: "https://www.pembroke-nh.com/1251/Police-Department",
+  town_info: "https://www.pembroke-nh.com/1470/Pembroke-Town-Information",
+  vital_records: "https://www.pembroke-nh.com/1334/Vital-Records",
+  voter_registration: "https://www.pembroke-nh.com/1335/Voter-Registration",
+  assessing: "https://www.pembroke-nh.com/1193/Assessing-Department",
+  cemetery: "https://www.pembroke-nh.com/1306/Cemetery",
+  mercury_disposal: "https://www.pembroke-nh.com/1281/Disposing-of-Mercury",
+  transfer_station_facility: "https://www.pembroke-nh.com/1299/Solid-Waste-Transfer-Facility",
+  solid_waste_collection: "https://www.pembroke-nh.com/1298/Solid-Waste-Collection",
+  spring_cleanup: "https://www.pembroke-nh.com/1300/Spring-Cleanup",
+  winter_parking_snow: "https://www.pembroke-nh.com/1303/Winter-Parking-and-Snow-Emergency-Info",
+  construction_demolition: "https://www.pembroke-nh.com/1280/Construction-and-Demolition-Debris",
+  recycling_textiles: "https://www.pembroke-nh.com/1292/Recycling-Textiles",
+  medical_waste: "https://www.pembroke-nh.com/1288/Medical-Waste-Disposal",
+  facility_permit: "https://www.pembroke-nh.com/1284/Facility-Permit",
+  roads_committee: "https://www.pembroke-nh.com/1415/Roads-Committee",
+  roadwork_crews: "https://www.pembroke-nh.com/1294/Roadwork-Crews",
+};
+
+// Map question topic → committee names that are likely relevant.
+// A "vote" question is relevant to Select Board (elections) and Budget
+// Committee (town meeting). A "library" question is relevant to Library
+// Trustees. A "recycling" question is relevant to Solid Waste Advisory
+// Committee. Etc.
+const TOPIC_COMMITTEES: Array<[RegExp, string[]]> = [
+  [/vot|elect|ballot|absentee|polling|town.clerk/, ["Select Board", "Budget Committee"]],
+  [/library|book|read/, ["Library Trustees"]],
+  [/recycl|trash|rubbish|garbage|pickup|transfer.*station|curbside|compost|paint|mercury|hazard/, ["Solid Waste Advisory Committee", "Roads Committee"]],
+  [/snow|plow|ice|winter|parking/, ["Roads Committee", "Select Board"]],
+  [/fire|burn|smoke/, ["Select Board"]],
+  [/police|crime|emergency|911/, ["Select Board"]],
+  [/zoning|build.*permit|setback|easement|subdivision/, ["Planning Board", "Zoning Board"]],
+  [/tax|assess|prop.*valu|abatement/, ["Select Board", "Budget Committee"]],
+  [/cemetery|burial|grave/, ["Cemetery Commission"]],
+  [/road|bridge|culvert|pothole/, ["Roads Committee"]],
+  [/budget|spending|town meeting|appropriation/, ["Budget Committee", "Select Board"]],
+  [/water|sewer/, ["Water Works", "Sewer Commission"]],
+  [/recreation|park|playground|field/, ["Recreation Commission"]],
+  [/conservation|trail|wetland|forest/, ["Conservation Commission"]],
+  [/plan|zoning/, ["Planning Board", "Planning Board Workshop"]],
+];
+
+// Common boilerplate phrases that show up in CivicEngage page nav and
+// should never appear in a stub answer.
+const BOILERPLATE_PATTERNS = [
+  /skip to main content/i,
+  /create a website account/i,
+  /manage notification subscriptions/i,
+  /website sign in/i,
+  /agendas & minutes/i,
+  /contact us/i,
+  /sign up for e-alerts/i,
+  /e-reg/i,
+  /dog licenses/i,
+  /forms & documents/i,
+  /departments? government/i,
+  /recorded meetings/i,
+  /town code/i,
+  /find it fast/i,
+  /view map/i,
+  /physical address/i,
+  /view full/i,
+  /^[a-z\s]+ - [a-z\s]+ - [a-z\s]+ - /i,  // sequences like "Foo - Bar - Baz -"
+];
+
+function isBoilerplate(sentence: string): boolean {
+  const trimmed = sentence.trim();
+  if (trimmed.length < 20) return true;  // too short, probably a label
+  for (const p of BOILERPLATE_PATTERNS) {
+    if (p.test(trimmed)) return true;
+  }
+  return false;
+}
+
+/**
+ * Pull the most answerable 1-3 sentences out of a page's text.
+ *
+ * Strategy:
+ *   1. Split the page into sentences.
+ *   2. Drop boilerplate (nav, contact, "skip to...").
+ *   3. Score remaining sentences by how many question keywords they contain.
+ *   4. Take the top 2-3 sentences, preserve original order.
+ */
+function extractAnswer(pageText: string, question: string, maxSentences = 3): string {
+  const text = pageText.replace(/\s+/g, " ").trim();
+  // Split on sentence terminators (.!?) followed by space + capital letter.
+  // Keep things simple — we're summarizing civic-page prose.
+  const sentences = text.split(/(?<=[.!?])\s+(?=[A-Z])/);
+
+  const qWords = question
+    .toLowerCase()
+    .split(/\W+/)
+    .filter((w) => w.length >= 3 && !STOPWORDS.has(w));
+
+  const scored = sentences
+    .map((s, i) => {
+      if (isBoilerplate(s)) return null;
+      const sLow = s.toLowerCase();
+      let score = 0;
+      for (const w of qWords) {
+        if (sLow.includes(w)) score++;
+      }
+      // Prefer early sentences a little (they tend to be the lede).
+      score += Math.max(0, 1 - i / 8) * 0.3;
+      return { sentence: s.trim(), score, index: i };
+    })
+    .filter((x): x is { sentence: string; score: number; index: number } => x !== null);
+
+  if (scored.length === 0) return "";
+
+  // Take top N by score, then re-sort by original position to preserve flow.
+  const top = scored
+    .sort((a, b) => b.score - a.score)
+    .slice(0, maxSentences)
+    .sort((a, b) => a.index - b.index);
+
+  return top.map((s) => s.sentence).join(" ");
+}
+
+const STOPWORDS = new Set([
+  "the", "and", "for", "are", "but", "not", "you", "all", "any", "can",
+  "her", "was", "one", "our", "out", "day", "get", "has", "him", "his",
+  "how", "its", "may", "new", "now", "old", "see", "way", "who", "did",
+  "let", "say", "she", "too", "use", "what", "when", "why", "how", "can",
+  "i", "me", "my", "we", "us", "to", "of", "in", "on", "at", "by", "is",
+  "this", "that", "with", "from", "have", "had",
+]);
+
+/** Which committees are topically relevant to this question? */
+function topicCommittees(q: string): string[] {
+  const qLow = q.toLowerCase();
+  const matched = new Set<string>();
+  for (const [pat, names] of TOPIC_COMMITTEES) {
+    if (pat.test(qLow)) {
+      for (const n of names) matched.add(n);
+    }
+  }
+  return [...matched];
 }
 
 async function buildContext(q: string): Promise<AskContext> {
@@ -54,54 +203,67 @@ async function buildContext(q: string): Promise<AskContext> {
     .map((s) => s.summary)
     .filter((s): s is string => Boolean(s))
     .slice(0, 6);
-  const townPages = townInfo ? selectRelevantPages(q, townInfo) : [];
+  const townPages = townInfo
+    ? selectRelevantPages(q, townInfo).map((p) => ({ ...p, url: PAGE_URL[p.slug] }))
+    : [];
   return { meetings, summaries, townPages };
 }
 
-function isGeneralTownQuestion(q: string): boolean {
-  const qLow = q.toLowerCase();
-  return /(library|book|trash|rubbish|garbage|pickup|recycl|transfer.*station|curbside|snow|plow|fire|department|police|cemeter|stormwater|vital.record|marriage|death|birth|vot|elect|assess|tax|zoning|build.*permit|permit)/.test(
-    qLow,
-  );
-}
-
 function stubAnswer(q: string, ctx: AskContext): string {
+  // If the most-relevant town-info page has extractable content, lead with it.
+  // Otherwise lead with the meeting list (for meeting-style questions).
   const lines: string[] = [];
 
-  // 1) Town-info pages (general questions about services / how-to)
   if (ctx.townPages.length > 0) {
-    lines.push(
-      "Here's what the town's website says about that (excerpted from pembroke-nh.com):",
-    );
-    lines.push("");
-    for (const p of ctx.townPages.slice(0, 3)) {
-      const snippet = p.text.replace(/\s+/g, " ").trim().slice(0, 700);
-      lines.push(`[${p.slug}] ${snippet}${p.text.length > 700 ? "…" : ""}`);
-      lines.push("");
+    const top = ctx.townPages[0];
+    const answer = extractAnswer(top.text, q);
+    if (answer) {
+      lines.push(answer);
+      const url = top.url ?? PAGE_URL[top.slug];
+      if (url) {
+        lines.push("");
+        lines.push(`Source: ${url}`);
+      }
+    } else {
+      // Fallback: just point to the page.
+      const url = top.url ?? PAGE_URL[top.slug];
+      if (url) {
+        lines.push(`See ${url} for the most up-to-date info.`);
+      }
     }
   }
 
-  // 2) Meeting matches if relevant
-  const qLow = q.toLowerCase();
-  const meetingHits = ctx.meetings.filter(
-    (m) =>
-      qLow.includes(m.committee.toLowerCase()) ||
-      m.title.toLowerCase().split(/\s+/).some((w) => w.length > 3 && qLow.includes(w)),
-  );
+  // Only surface meetings that are topically related to the question.
+  // If no specific topic matches, surface nothing (the town-info page is
+  // a better answer than a list of unrelated meetings).
+  const relevantCommittees = topicCommittees(q);
+  let meetingHits: Meeting[] = [];
+  if (relevantCommittees.length > 0) {
+    meetingHits = ctx.meetings
+      .filter((m) => relevantCommittees.some((c) => m.committee === c))
+      .slice(0, 3);
+  } else if (ctx.townPages.length === 0) {
+    // No town-info, no topic. Fall back to the next 3 upcoming meetings.
+    meetingHits = ctx.meetings.slice(0, 3);
+  }
   if (meetingHits.length > 0) {
     if (lines.length > 0) lines.push("");
-    lines.push("Related upcoming meetings:");
-    for (const m of meetingHits.slice(0, 4)) {
+    lines.push("Next related meeting" + (meetingHits.length > 1 ? "s" : "") + ":");
+    for (const m of meetingHits) {
       const when = m.when.toLocaleString("en-US", {
-        weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit",
+        weekday: "short",
+        month: "short",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
       });
-      lines.push(`- ${m.committee} — ${m.title} — ${when}`);
+      lines.push(`- ${m.committee} — ${when}`);
     }
   }
 
   if (lines.length === 0) {
     lines.push(
-      `I don't have a specific answer for "${q}" yet. Try browsing the daily brief or the agenda list.`,
+      `I don't have a specific answer for that yet. Try browsing the daily brief or the agenda list.`,
     );
   }
   return lines.join("\n");
@@ -111,7 +273,6 @@ async function callLlm(q: string, ctx: AskContext): Promise<string> {
   const apiKey = process.env.NOUS_API_KEY;
   const apiUrl = process.env.NOUS_API_URL ?? "https://inference-api.nousresearch.com/v1/chat/completions";
   const model = process.env.NOUS_MODEL ?? "Hermes-4-405B";
-  const isGeneral = isGeneralTownQuestion(q);
   const systemLines = [
     "You are the Pembroke NH town bot — a helpful assistant for Pembroke, NH residents.",
     `The user asked: "${q}".`,
@@ -120,10 +281,9 @@ async function callLlm(q: string, ctx: AskContext): Promise<string> {
     "  - Upcoming town-board meetings (next 90 days)",
     "  - OCR'd agenda + minutes summaries (most recent postings)",
     "",
-    `The user's question is about: ${isGeneral ? "general town services (prioritize town-info pages)" : "town meetings or decisions (prioritize meeting / agenda context)"}.`,
     "Be brief, conversational, and specific. Cite the source where appropriate (e.g., 'pembroke-nh.com/library').",
     "If you don't know, say so — don't invent hours, phone numbers, fees, or dates.",
-    "Format: short prose, optionally a bulleted list of 1-5 items.",
+    "Format: short prose, optionally a bulleted list of 1-5 items. No preamble, no 'Here is what...' — just the answer.",
   ];
 
   const userParts: string[] = [];
