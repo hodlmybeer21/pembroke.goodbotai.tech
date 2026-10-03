@@ -1,10 +1,11 @@
-// app/layout.tsx — Root layout. ClerkProviderWrapper mounts the Clerk SDK
-// only when NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY is configured, so `next build`
-// prerenders cleanly without a real key in the local env.
+// app/layout.tsx — Root layout. Dark navy header with serif wordmark + amber
+// accent underline on the active nav link. Body is the warm-stone background
+// from the design system.
 
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ClerkProviderWrapper } from "@/components/ClerkProviderWrapper";
+import { NavLink } from "@/components/NavLink";
 import { NavAuth } from "@/components/NavAuth";
 import "./globals.css";
 
@@ -18,30 +19,45 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <ClerkProviderWrapper>
       <html lang="en">
-        <body>
-          <header className="border-b border-stone-200 bg-white">
-            <div className="container-page py-3 flex items-center justify-between">
-              <Link href="/" className="font-semibold text-stone-900">
-                📍 Pembroke, NH
+        <body className="min-h-screen flex flex-col">
+          <header className="surface-header sticky top-0 z-10 shadow-[0_1px_0_rgba(0,0,0,0.06)]">
+            <div className="max-w-site mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+              <Link
+                href="/"
+                className="font-serif text-xl font-semibold tracking-tight text-white"
+              >
+                Pembroke, NH
               </Link>
-              <nav className="flex gap-4 text-sm text-stone-600 items-center">
-                <Link href="/calendar">Calendar</Link>
-                <Link href="/agendas">Agendas</Link>
-                <Link href="/ask">Ask</Link>
-                <Link href="/about">About</Link>
-                <NavAuth />
+              <nav className="hidden sm:flex gap-6 text-white items-center">
+                <NavLink href="/calendar">Calendar</NavLink>
+                <NavLink href="/agendas">Agendas</NavLink>
+                <NavLink href="/ask">Ask</NavLink>
+                <NavLink href="/about">About</NavLink>
+                <span className="border-l border-white/20 pl-4 ml-2">
+                  <NavAuth />
+                </span>
+              </nav>
+              <nav className="flex sm:hidden gap-4 text-sm text-white/90 items-center">
+                <NavLink href="/calendar">Calendar</NavLink>
+                <NavLink href="/agendas">Agendas</NavLink>
+                <NavLink href="/ask">Ask</NavLink>
               </nav>
             </div>
           </header>
-          <main>{children}</main>
+          <main className="flex-1">{children}</main>
           <footer className="border-t border-stone-200 bg-white">
-            <div className="container-page py-6 text-xs text-stone-500">
-              Built for Pembroke, NH residents · data from{" "}
-              <a href="https://www.pembroke-nh.com" className="underline">
-                pembroke-nh.com
-              </a>
-              {" "}· refreshes hourly ·{" "}
-              <Link href="/privacy" className="underline">privacy</Link>
+            <div className="max-w-site mx-auto px-4 sm:px-6 py-5 text-xs text-stone-500 flex flex-col sm:flex-row sm:justify-between gap-2">
+              <div>
+                Built for Pembroke, NH residents · data from{" "}
+                <a href="https://www.pembroke-nh.com" className="underline">
+                  pembroke-nh.com
+                </a>
+              </div>
+              <div className="flex items-center gap-4">
+                <span>Refreshes hourly</span>
+                <NavAuth />
+                <Link href="/privacy" className="underline">Privacy</Link>
+              </div>
             </div>
           </footer>
         </body>

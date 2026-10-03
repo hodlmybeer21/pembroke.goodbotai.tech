@@ -2,8 +2,8 @@ import { fetchAllFeeds, dedupeByDateTitle, filterHorizon } from "@/lib/ical";
 import { fetchAgendaCenter, loadOcrExport, findSummary } from "@/lib/agenda-center";
 import { buildBrief } from "@/lib/brief";
 import { Brief } from "@/components/Brief";
+import { TAG_LABEL } from "@/lib/impact";
 
-// Revalidate hourly. Fresh within the hour; cache hit for repeated visitors.
 export const revalidate = 3600;
 
 export default async function HomePage() {
@@ -15,13 +15,10 @@ export default async function HomePage() {
 
   const now = new Date();
   const horizonEnd = new Date(now.getTime() + 90 * 24 * 3600 * 1000);
-  const dedupedEvents = dedupeByDateTitle(
-    filterHorizon(events, now, horizonEnd),
-  );
+  const dedupedEvents = dedupeByDateTitle(filterHorizon(events, now, horizonEnd));
 
   const brief = buildBrief(dedupedEvents, docs, { now });
 
-  // Reformat for the Brief component (it expects ImpactTag keys).
   const items = [...brief.thisWeek, ...brief.later].map((it) => ({
     kind: it.kind,
     committee: it.committee,
@@ -32,16 +29,39 @@ export default async function HomePage() {
   }));
 
   const newDocsCount = brief.newDocs.length;
-  const ocrCount = ocr ? Object.keys(ocr.summaries).length : 0;
+  const thisWeekCount = brief.thisWeek.length;
+  const lastRefresh = brief.generatedAt;
 
   return (
     <div className="container-page">
-      <div className="mb-6">
-        <h1 className="text-2xl font-semibold">Pembroke, NH — daily brief</h1>
-        <p className="text-sm text-stone-500 mt-1">
-          {now.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" })}
-          {newDocsCount > 0 && ` · 🆕 ${newDocsCount} new agenda/minutes`}
-          {ocrCount > 0 && ` · ✨ ${ocrCount} OCR'd summaries`}
+      {/* Lede */}
+      <div className="mb-8">
+        <h1 className="font-serif text-3xl font-semibold text-stone-900 tracking-tight">
+          Pembroke, NH
+        </h1>
+        <p className="text-stone-600 mt-2 text-base">
+          The week ahead in town government.
+          {thisWeekCount > 0 && (
+            <>
+              {" "}
+              <strong className="text-stone-900">
+                {thisWeekCount} meeting{thisWeekCount === 1 ? "" : "s"}
+              </strong>
+              {newDocsCount > 0 && (
+                <>
+                  , <strong className="text-stone-900">{newDocsCount} new agenda packet{newDocsCount === 1 ? "" : "s"}</strong>
+                </>
+              )}
+              .
+            </>
+          )}
+        </p>
+        <p className="text-xs text-stone-500 mt-2">
+          Refreshed {lastRefresh.toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" })}{" "}
+          · every hour from{" "}
+          <a href="https://www.pembroke-nh.com" className="underline">
+            pembroke-nh.com
+          </a>
         </p>
       </div>
 
@@ -50,49 +70,44 @@ export default async function HomePage() {
           Nothing on the town calendar in the next 90 days. Check back later.
         </p>
       ) : (
-        <Brief
-          items={items}
-          weekEnd={brief.weekEnd}
-          laterCap={brief.laterCap}
-          generatedAt={brief.generatedAt}
-        />
+        <Brief items={items} weekEnd={brief.weekEnd} laterCap={brief.laterCap} generatedAt={brief.generatedAt} />
       )}
 
       {brief.newDocs.length > 0 && (
-        <section className="mt-8 pt-6 border-t border-stone-200">
-          <h2 className="text-xs font-semibold tracking-wider text-stone-500 uppercase mb-3">
-            Newest postings (click to read)
+        <section className="mt-12 pt-8 border-t border-stone-200">
+          <h2 className="font-serif text-sm text-stone-500 uppercase tracking-wider pb-2 mb-4 border-b border-stone-200">
+            Newest postings
           </h2>
-          <ul className="space-y-3 text-sm">
+          <ul className="grid gap-4 sm:grid-cols-2">
             {brief.newDocs.slice(0, 6).map((d, idx) => {
               const summary = findSummary(
                 { ...d, docType: d.docType as "Agenda" | "Minutes" } as never,
                 ocr,
               );
               return (
-                <li key={idx}>
-                  <div>
-                    <span className="text-stone-500 mr-2">
+                <li key={idx} className="surface p-4">
+                  <div className="flex items-baseline gap-2 text-xs text-stone-500">
+                    <time>
                       {d.when.toLocaleDateString("en-US", { month: "short", day: "numeric" })}
-                    </span>
-                    <span className="font-medium">{d.committee}</span>
-                    <span className="mx-1">—</span>
-                    <span>{d.title}</span>
-                    {d.url && (
-                      <>
-                        {" "}
-                        <a className="text-brand-600 underline" href={d.url}>
-                          [pdf]
-                        </a>
-                      </>
-                    )}
+                    </time>
+                    <span className="font-medium text-stone-700">{d.committee}</span>
+                    <span className="tag-pill ml-auto">{d.docType}</span>
                   </div>
+                  <div className="mt-1 text-sm font-medium text-stone-900">{d.title}</div>
                   {summary && (
-                    <div className="mt-1 ml-10 text-xs text-stone-600 leading-relaxed">
+                    <p className="mt-2 text-xs text-stone-600 leading-relaxed">
                       {summary.length > 220
                         ? summary.slice(0, 219).trimEnd() + "…"
                         : summary}
-                    </div>
+                    </p>
+                  )}
+                  {d.url && (
+                    <a
+                      className="mt-2 inline-block text-xs text-brand-700 underline"
+                      href={d.url}
+                    >
+                      Read full document →
+                    </a>
                   )}
                 </li>
               );

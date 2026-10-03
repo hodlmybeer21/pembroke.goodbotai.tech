@@ -7,6 +7,8 @@
   --fg: #1c1917;
   --muted: #57534e;
   --border: #e7e5e4;
+  --brand: #1e3a8a;
+  --accent: #d97706;
 }
 
 html, body {
@@ -14,20 +16,51 @@ html, body {
   color: var(--fg);
 }
 
+body {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-serif { font-family: var(--font-serif), Georgia, ui-serif, serif; }
+
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+/* Universal focus ring — applies to every focusable element via the
+   global selector, so we don't have to remember per-component. */
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px var(--accent);
+  border-radius: 2px;
+}
+
 .container-page {
-  max-width: 880px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 1.5rem 1rem 4rem;
 }
 
+@media (min-width: 640px) {
+  .container-page { padding: 2rem 1.5rem 4rem; }
+}
+
 .tag-pill {
   display: inline-block;
-  padding: 0.125rem 0.5rem;
+  padding: 0.125rem 0.625rem;
   font-size: 0.75rem;
   border-radius: 999px;
   background: #f5f5f4;
   color: #44403c;
+}
+
+/* Card primitive — used by the home brief, agendas list, settings form. */
+.surface {
+  background: white;
+  border: 1px solid #e7e5e4;
+  border-radius: 0.5rem;
+}
+
+/* Header chrome — used by /, /calendar, /agendas, etc. */
+.surface-header {
+  background: var(--brand);
+  color: white;
 }

@@ -65,3 +65,13 @@ export const TAG_ICON: Record<ImpactTag, string> = {
   property: "🏡",
   family: "🏛️",
 };
+
+// Plain-English labels for the impact groups. Use these in the UI; the
+// tag IDs (wallet/commute/kids/property/family) are for storage & matching.
+export const TAG_LABEL: Record<ImpactTag, string> = {
+  wallet:   "Your wallet",
+  commute:  "Your commute",
+  kids:     "Your kids",
+  property: "Your property",
+  family:   "Community",
+};

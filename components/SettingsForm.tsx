@@ -71,11 +71,12 @@ export function SettingsForm({ email, initialCategories, unsubscribeToken }: Set
           return (
             <label
               key={cat.id}
-              className={`block border rounded-md p-3 cursor-pointer transition-colors ${
-                isOn
+              className={
+                "block border rounded-md p-3 cursor-pointer transition-colors " +
+                (isOn
                   ? "border-brand-500 bg-brand-50"
-                  : "border-stone-200 bg-white hover:border-stone-400"
-              }`}
+                  : "border-stone-200 bg-white hover:border-stone-400")
+              }
             >
               <div className="flex items-center gap-2 mb-1">
                 <input
@@ -101,37 +102,42 @@ export function SettingsForm({ email, initialCategories, unsubscribeToken }: Set
           {saving ? "Saving…" : "Save preferences"}
         </button>
         {savedAt && (
-          <span className="text-sm text-green-700">Saved at {savedAt}</span>
+          <span className="text-sm text-success">Saved at {savedAt}</span>
         )}
         {error && <span className="text-sm text-red-700">Error: {error}</span>}
       </div>
 
-      <div className="pt-6 border-t border-stone-200 text-sm text-stone-600">
-        <h3 className="font-medium text-stone-800 mb-2">Privacy</h3>
-        <p className="mb-2">
-          We store only your email + selected categories + an unsubscribe token.
-          No name, no address, no tracking pixels.
-        </p>
-        <p className="mb-2">
-          One-click unsubscribe is at the bottom of every alert.
-        </p>
-        <p className="mb-4">
-          <a
-            className="text-red-700 underline"
-            href={`/api/alerts/unsubscribe?token=${unsubscribeToken}`}
+      <details className="pt-2 border-t border-stone-200 text-sm text-stone-600 group">
+        <summary className="cursor-pointer text-stone-700 font-medium list-none flex items-center gap-2 py-2">
+          <span className="text-stone-400 group-open:rotate-90 transition-transform">▸</span>
+          Privacy & account
+        </summary>
+        <div className="pt-3 pb-2 pl-5">
+          <p className="mb-2">
+            We store only your email + selected categories + an unsubscribe token.
+            No name, no address, no tracking pixels.
+          </p>
+          <p className="mb-2">
+            One-click unsubscribe is at the bottom of every alert.
+          </p>
+          <p className="mb-4">
+            <a
+              className="text-red-700 underline"
+              href={`/api/alerts/unsubscribe?token=${unsubscribeToken}`}
+            >
+              Unsubscribe and delete profile
+            </a>
+            {" — or use the button below."}
+          </p>
+          <button
+            onClick={deleteAccount}
+            disabled={saving}
+            className="px-3 py-1.5 border border-red-300 text-red-700 text-sm rounded-md hover:bg-red-50"
           >
-            Unsubscribe and delete profile
-          </a>
-          {" — or use the button below."}
-        </p>
-        <button
-          onClick={deleteAccount}
-          disabled={saving}
-          className="px-3 py-1.5 border border-red-300 text-red-700 text-sm rounded-md hover:bg-red-50"
-        >
-          Delete my profile
-        </button>
-      </div>
+            Delete my profile
+          </button>
+        </div>
+      </details>
     </div>
   );
 }
