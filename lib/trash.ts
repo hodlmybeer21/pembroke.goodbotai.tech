@@ -58,8 +58,10 @@ export function loadTrashRoutes(): TrashRoutes | null {
 }
 
 /** Return all streets whose name contains the query (case-insensitive).
- *  Sorted by where the match starts (earlier = better), then by length
- *  (shorter = better, more specific).
+ *  Tries the full query first (so "Buck Street" beats "Buck" for
+ *  shorter / more specific matches), then falls back to per-word
+ *  matches if the full query found nothing. Sorted by where the match
+ *  starts (earlier = better), then by length (shorter = better).
  */
 export function searchStreets(
   query: string,
@@ -68,22 +70,51 @@ export function searchStreets(
 ): TrashRouteEntry[] {
   const q = query.trim().toLowerCase();
   if (!q) return [];
-  const hits: Array<{ entry: TrashRouteEntry; pos: number; len: number }> = [];
+  const hits: Array<{ entry: TrashRouteEntry; pos: number; len: number; matchLen: number }> = [];
+  // First, try the full query as a substring (case-insensitive).
   for (const [street, day] of Object.entries(routes.byStreet)) {
     const low = street.toLowerCase();
     const pos = low.indexOf(q);
-    if (pos < 0) continue;
-    hits.push({ entry: { street, day }, pos, len: street.length });
+    if (pos >= 0) hits.push({ entry: { street, day }, pos, len: low.length, matchLen: q.length });
   }
-  // No-pickup streets are useful to surface too (so users can see "this
-  // street is in town but has no curbside service").
   for (const street of routes.noPickup) {
     const low = street.toLowerCase();
     const pos = low.indexOf(q);
-    if (pos < 0) continue;
-    hits.push({ entry: { street, day: "No pickup" }, pos, len: street.length });
+    if (pos >= 0) hits.push({ entry: { street, day: "No pickup" }, pos, len: low.length, matchLen: q.length });
   }
-  hits.sort((a, b) => a.pos - b.pos || a.len - b.len);
+  // If the full query didn't find anything, try per-word matches.
+  // Skip common stopwords so "what is my trash day on Buck Street"
+  // extracts "Buck" and "Street" rather than "what"/"is"/"my".
+  if (hits.length === 0) {
+    const STOPWORDS = new Set([
+      "the", "a", "an", "is", "are", "was", "were", "my", "i", "you", "we",
+      "what", "when", "where", "why", "how", "which", "do", "does", "did",
+      "on", "in", "at", "for", "to", "of", "and", "or", "but", "if", "with",
+      "trash", "rubbish", "garbage", "pickup", "recycl", "curbside", "pick",
+      "day", "week", "today", "tomorrow", "monday", "tuesday", "wednesday",
+      "thursday", "friday", "saturday", "sunday",
+      "street", "st", "road", "rd", "lane", "ln", "drive", "dr", "ave", "avenue",
+      "court", "ct", "place", "pl", "circle", "cir", "way",
+    ]);
+    const words = q.split(/\W+/).filter((w) => w.length >= 2 && !STOPWORDS.has(w));
+    for (const w of words) {
+      for (const [street, day] of Object.entries(routes.byStreet)) {
+        const low = street.toLowerCase();
+        const pos = low.indexOf(w);
+        if (pos >= 0 && !hits.some((h) => h.entry.street === street)) {
+          hits.push({ entry: { street, day }, pos, len: low.length, matchLen: w.length });
+        }
+      }
+      for (const street of routes.noPickup) {
+        const low = street.toLowerCase();
+        const pos = low.indexOf(w);
+        if (pos >= 0 && !hits.some((h) => h.entry.street === street)) {
+          hits.push({ entry: { street, day: "No pickup" }, pos, len: low.length, matchLen: w.length });
+        }
+      }
+    }
+  }
+  hits.sort((a, b) => a.pos - b.pos || a.len - b.len || b.matchLen - a.matchLen);
   return hits.slice(0, limit).map((h) => h.entry);
 }
 
