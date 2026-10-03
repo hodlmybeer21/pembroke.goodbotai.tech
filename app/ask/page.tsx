@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ShareButton } from "@/components/ShareButton";
 
 const EXAMPLES = [
   "What happened at the last Select Board meeting?",
@@ -131,6 +132,13 @@ export default function AskPage() {
               Read from archive: {archiveCount} meeting summary record{archiveCount === 1 ? "" : "s"}
             </div>
           )}
+          <div className="mt-4 pt-4 border-t border-stone-200">
+            <ShareButton
+              url="https://pembroke-goodbotai-tech.vercel.app/ask"
+              title="Pembroke town bot — ask it anything"
+              body="Hey — pembroke-goodbotai-tech.vercel.app/ask answers plain-English questions about Pembroke. I just asked it about [whatever]."
+            />
+          </div>
         </article>
       )}
     </div>

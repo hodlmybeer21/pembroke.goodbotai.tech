@@ -5,6 +5,7 @@
 // resident through the first 30 days.
 
 import type { Metadata } from "next";
+import { ShareButton } from "@/components/ShareButton";
 
 export const metadata: Metadata = {
   title: "New resident guide — Pembroke, NH",
@@ -224,6 +225,21 @@ export default function WelcomePage() {
         and direct calls to town offices. If something has changed, let us
         know and we'll update this page.
       </p>
+
+      <section className="mt-8 surface p-5">
+        <h2 className="font-serif text-lg font-semibold text-stone-900 mb-2">
+          Know someone moving to Pembroke?
+        </h2>
+        <p className="text-sm text-stone-700 leading-relaxed mb-3">
+          Send them this page. It's the one thing every new resident needs
+          in their first month — vote, trash, library, dog license, school.
+        </p>
+        <ShareButton
+          url="https://pembroke-goodbotai-tech.vercel.app/welcome"
+          title="New to Pembroke? Start here."
+          body="Hey — I use pembroke.goodbotai.tech/welcome for the new-resident checklist. If you're moving to Pembroke, this is the one page you need in your first month (voter registration, trash, library, schools)."
+        />
+      </section>
     </div>
   );
 }

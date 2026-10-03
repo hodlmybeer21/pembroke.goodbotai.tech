@@ -3,6 +3,7 @@
 
 import { loadTrashRoutes } from "@/lib/trash";
 import { TrashLookup } from "@/components/TrashLookup";
+import { ShareButton } from "@/components/ShareButton";
 
 export const revalidate = 3600;
 
@@ -54,6 +55,20 @@ export default function TrashPage() {
         sourceByDay={routes.sourceUrls.byDay}
         sourceByStreet={routes.sourceUrls.byStreet}
       />
+
+      <section className="mt-10 surface p-5">
+        <h2 className="font-serif text-base font-semibold text-stone-900 mb-2">
+          Found your street?
+        </h2>
+        <p className="text-sm text-stone-700 leading-relaxed mb-3">
+          Send this to a neighbor who keeps asking "is today pickup day?"
+        </p>
+        <ShareButton
+          url="https://pembroke-goodbotai-tech.vercel.app/trash"
+          title="Pembroke trash & recycling day lookup"
+          body="Hey — pembroke-goodbotai-tech.vercel.app/trash tells you which day your street gets picked up. Type your street, get the day. Carts out by 6:45 AM."
+        />
+      </section>
     </div>
   );
 }
