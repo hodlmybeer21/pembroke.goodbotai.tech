@@ -3,6 +3,12 @@
 import { useState } from "react";
 import { CATEGORIES } from "@/lib/categories";
 
+// Feature flag for the per-user Telegram opt-in. Set to true (and set
+// TELEGRAM_COLUMN_KEY on Vercel) to re-enable the Telegram section in
+// /settings. The schema, encryption, and dispatch code stay compiled
+// in the meantime so flipping this on is a one-line change.
+const TELEGRAM_ENABLED = false;
+
 interface SettingsFormProps {
   email: string;
   initialCategories: string[];
@@ -166,7 +172,13 @@ export function SettingsForm({
         {error && <span className="text-sm text-red-700">Error: {error}</span>}
       </div>
 
-      {/* Telegram opt-in */}
+      {/* Telegram opt-in — disabled per Tyler's call (email is enough).
+          The schema + crypto + dispatch code stays in place so this can
+          be re-enabled later by flipping the flag below. To re-enable:
+          - Set TELEGRAM_COLUMN_KEY on Vercel
+          - Flip the flag below to true
+          - Users will see the "Telegram alerts" section. */}
+      {TELEGRAM_ENABLED && (
       <section className="pt-4 border-t border-stone-200">
         <div className="flex items-baseline justify-between mb-2">
           <h3 className="font-medium text-stone-800 text-sm">Telegram alerts</h3>
@@ -273,6 +285,7 @@ export function SettingsForm({
           logged, never shared, and never sent back to your browser.
         </p>
       </section>
+      )}
 
       <details className="pt-2 border-t border-stone-200 text-sm text-stone-600 group">
         <summary className="cursor-pointer text-stone-700 font-medium list-none flex items-center gap-2 py-2">
