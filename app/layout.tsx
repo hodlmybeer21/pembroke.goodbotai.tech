@@ -7,6 +7,7 @@ import Link from "next/link";
 import { ClerkProviderWrapper } from "@/components/ClerkProviderWrapper";
 import { NavLink } from "@/components/NavLink";
 import { NavAuth } from "@/components/NavAuth";
+import { MobileMenu } from "@/components/MobileMenu";
 import { SnowBanner } from "@/components/SnowBanner";
 import { getActiveSnowNotice } from "@/lib/snow";
 import "./globals.css";
@@ -31,32 +32,39 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             <div className="max-w-site mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
               <Link
                 href="/"
-                className="font-serif text-xl font-semibold tracking-tight text-white"
+                className="font-serif text-xl font-semibold tracking-tight text-white shrink-0"
               >
                 Pembroke, NH
               </Link>
-              <nav className="hidden sm:flex gap-6 text-white items-center">
+              <nav className="hidden lg:flex gap-5 text-white items-center text-sm">
                 <NavLink href="/calendar">Calendar</NavLink>
                 <NavLink href="/agendas">Agendas</NavLink>
                 <NavLink href="/archive">Archive</NavLink>
+                <NavLink href="/ask">Ask</NavLink>
                 <NavLink href="/trash">Trash</NavLink>
                 <NavLink href="/officials">Officials</NavLink>
-                <NavLink href="/ask">Ask</NavLink>
-                <NavLink href="/participate">Participate</NavLink>
                 <NavLink href="/report">Report</NavLink>
-                <NavLink href="/schools">Schools</NavLink>
+                <NavLink href="/participate">Participate</NavLink>
                 <NavLink href="/welcome">Welcome</NavLink>
+                <NavLink href="/schools">Schools</NavLink>
                 <NavLink href="/about">About</NavLink>
-                <span className="border-l border-white/20 pl-4 ml-2">
+                <span className="border-l border-white/20 pl-3 ml-1">
                   <NavAuth />
                 </span>
               </nav>
-              <nav className="flex sm:hidden gap-4 text-sm text-white/90 items-center">
+              {/* Medium screens (sm-lg) — show a trimmed inline nav of
+                  the four highest-traffic pages plus a hamburger for the rest. */}
+              <nav className="hidden sm:flex lg:hidden gap-4 text-white text-sm items-center">
                 <NavLink href="/calendar">Calendar</NavLink>
                 <NavLink href="/agendas">Agendas</NavLink>
-                <NavLink href="/trash">Trash</NavLink>
                 <NavLink href="/ask">Ask</NavLink>
+                <NavLink href="/trash">Trash</NavLink>
               </nav>
+              {/* Small screens — just the wordmark + hamburger. */}
+              <div className="flex sm:hidden items-center gap-3 text-white">
+                <NavAuth />
+                <MobileMenu />
+              </div>
             </div>
           </header>
           <main className="flex-1">{children}</main>
@@ -70,7 +78,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               </div>
               <div className="flex items-center gap-4">
                 <span>Refreshes hourly</span>
-                <NavAuth />
                 <Link href="/privacy" className="underline">Privacy</Link>
               </div>
             </div>
