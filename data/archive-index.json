@@ -1,8 +1,10 @@
 {
-  "generated_at": "2026-10-03T11:00:41.366944+00:00",
-  "count": 9,
+  "generated_at": "2026-10-03T11:27:50.020572+00:00",
+  "count": 93,
   "committees": [
     "Board of Selectmen",
+    "Capital Improvement Program",
+    "Cemetery Commission",
     "Conservation Commission",
     "Planning Board",
     "Planning Board Public Hearing",
@@ -10,13 +12,510 @@
     "Recreation Commission",
     "Roads Committee",
     "Select Board",
-    "Water Works"
+    "Sewer Commission",
+    "Water Works",
+    "Zoning Board"
   ],
   "months": [
     {
+      "month": "2026-10",
+      "label": "October 2026",
+      "count": 2,
+      "entries": [
+        {
+          "guid": "Roads Committee|Agenda|Oct 19, 2026|_10192026-406",
+          "committee": "Roads Committee",
+          "doc_type": "Agenda",
+          "meeting_date": "Oct 19, 2026",
+          "title": "Roads Committee Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_10192026-406",
+          "summary": "1. Attendance: · 2. Citizens Comments: · 3. Old Business: · a. 2026 Road Projects Update · 4. Any Old Business: · 5. New Business: · a. TRC Plans · 6. Any New Business: · 7. Accept Minutes: · a. September 14, 2026 · 8. Adjourn",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Oct 07, 2026|_10072026-408",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Oct 07, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_10072026-408",
+          "summary": "CALL TO ORDER · CITIZEN COMMENT · III. SCHEDULED MEETINGS: · a. Public Hearing - Request to Withdraw funds from the Energy Savings · b. Public Hearing Solid Waste Chapter 133 proposed changes · c. Erin Freeman Sheard - Fireworks Complaint · e. VJ Ranfos - Snow Policy · f. VJ Ranfos - Review 2027 Proposed Budget · g. Review any other small budget if time allows · OLD BUSINESS: · a. Stage/Roof Update · NEW BUSINESS: · a. Manifest/Abatements · b. Minutes 9/8/26; 9/16/26; Non Pu…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "label": "September 2026",
+      "count": 9,
+      "entries": [
+        {
+          "guid": "Zoning Board|Agenda|Sep 28, 2026|_09282026-402",
+          "committee": "Zoning Board",
+          "doc_type": "Agenda",
+          "meeting_date": "Sep 28, 2026",
+          "title": "Zoning Board Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_09282026-402",
+          "summary": "ZONING BOARD OF ADJUSTMENT · I. Call to Order · Il. Attendance · III. Public Hearings · lose its grandfathered status as a result of the proposed subdivision. There are · IV. Approval of Minutes · V. Other Business / Correspondence · VI. Adjournment · Pembroke Zoning Board of Adjustment",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Sep 23, 2026|_09232026-391",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Sep 23, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_09232026-391",
+          "summary": "CALL TO ORDER · If time permits the Board may also review some of the smaller proposed 2027 · ADJOURN",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Planning Board|Agenda|Sep 22, 2026|_09222026-398",
+          "committee": "Planning Board",
+          "doc_type": "Agenda",
+          "meeting_date": "Sep 22, 2026",
+          "title": "Planning Board Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_09222026-398",
+          "summary": "Public hearings that are continued will not be re-noticed, so please contact the Planning Office if you have · New Business · 1. ***APPLICANT REQUESTED TO CONTINUE TO · Minutes · 1. Correspondence · 2. Committee Reports · 3. Other Business · 4. Planner Items · 5. Board Member Items · 6. Audience Items",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Agenda|Sep 21, 2026|_09212026-401",
+          "committee": "Sewer Commission",
+          "doc_type": "Agenda",
+          "meeting_date": "Sep 21, 2026",
+          "title": "Sewer Commission Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_09212026-401",
+          "summary": "Call to Order: Attendance · Il. Citizens Comments: · Scheduled Meetings: · IV. Old Business: · a. Light Cleaning/Camera Bids- Awarded to Vortex-Sealed Bid · b. Wastewater License- Spring courses to be taken by both Laura and Corey at the · Any Old Business: · a. Spraying Knotweed on Easement · New Business: · a. Review and Sign Manifest · b. Review and Sign Warrant 3 Zone 3 · c. Abatements: · d. Correspondences: · e. Accept Minutes of August 17, 2026 · Any New Business: · a.…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Sep 16, 2026|_09162026-394",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Sep 16, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_09162026-394",
+          "summary": "CALL TO ORDER · CITIZEN COMMENT · SCHEDULED MEETINGS: · a. Jocelyn Carlucci - Meet Me In Suncook Donation for the Town Clock · Other 2027 Budget reviews if time is available · OLD BUSINESS: · Stage/Roof Update · NEW BUSINESS: · a. Partial Release of Bond for San Ken Homes Phase III · Minutes 9/2/26 · TOWN ADMINISTRATOR REPORT · COMMITTEE REPORTS · OTHER/CITIZEN COMMENT · ADJOURN · 1. Why is Concord Hospital outsourcing equipment purchases to municipalities & what is the reas…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Roads Committee|Agenda|Sep 14, 2026|_09142026-385",
+          "committee": "Roads Committee",
+          "doc_type": "Agenda",
+          "meeting_date": "Sep 14, 2026",
+          "title": "Roads Committee Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_09142026-385",
+          "summary": "1. Attendance: · 2. Citizens Comments: · 3. Old Business: · a. 2026 Road Projects Update · 4. Any Old Business: · 5. New Business: · a. TRC Plans · 6. Any New Business: · 7. Accept Minutes: · a. August 10, 2026 · 8. Adjourn",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Roads Committee|Minutes|Sep 14, 2026|_09142026-385",
+          "committee": "Roads Committee",
+          "doc_type": "Minutes",
+          "meeting_date": "Sep 14, 2026",
+          "title": "Roads Committee Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09142026-385",
+          "summary": "MINUTES · 1. Attendance: Tom Gallo, Brent Edmunds, VJ Ranfos, Vincent Greco, Sandy Goulet, Adam · 2. Citizens Comments: None · 3. Old Business: · a. 2026 Road Projects Update · a. VJ said they are pretty much wrapped up for the year. Public Works has had · 4. Any Old Business: None · 5. New Business: · a. TRC Plans · a. VJ did not bring the plans but there was mention of a pole barn which doesn't · 6. Any New Business: · a. VJ brought to the Roads Committee the concerns of a…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Sep 08, 2026|_09082026-388",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Sep 08, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_09082026-388",
+          "summary": "Budget Review · CALL TO ORDER · Review of 2027 Proposed Police Budget · ADJOURN",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Sep 02, 2026|_09022026-383",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Sep 02, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_09022026-383",
+          "summary": "CALL TO ORDER · CITIZEN COMMENT · III. SCHEDULED MEETINGS: · a. Public Hearing Town Code changes Chapter 191 Section 11 · b. Gateway sub-committee and Library fencing · OLD BUSINESS: · a. Stage/Roof Update · NEW BUSINESS: · a. Manifest/Abatements · b. Minutes 8/5/26 (Tabled); 8/19/26 · TOWN ADMINISTRATOR REPORT · COMMITTEE REPORTS · VIII. OTHER/CITIZEN COMMENT · ADJOURN · Town Administrator David Jodoin, Members of the Pembroke Board of Selectmen · A. Any vehicle which is pa…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "label": "August 2026",
+      "count": 7,
+      "entries": [
+        {
+          "guid": "Planning Board|Agenda|Aug 25, 2026|_08252026-375",
+          "committee": "Planning Board",
+          "doc_type": "Agenda",
+          "meeting_date": "Aug 25, 2026",
+          "title": "Planning Board Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_08252026-375",
+          "summary": "FRAMAA · TOWN OF PEMBROKE · Town Hall ~ 311 Pembroke Street, Pembroke, New Hampshire 03275 · Tel: 603-485-4747 · Pembroke Planning Board",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Capital Improvement Program|Agenda|Aug 20, 2026|_08202026-381",
+          "committee": "Capital Improvement Program",
+          "doc_type": "Agenda",
+          "meeting_date": "Aug 20, 2026",
+          "title": "Capital Improvement Program Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_08202026-381",
+          "summary": "1. Attendance: · 2. Approval of Minutes August 13, 2026 · 3. Public Hearing 2027 CIP Requests · 4. Ranking of 2027 CIP Requests · 5. Other Business · 6. Adjourn",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Capital Improvement Program|Minutes|Aug 20, 2026|_08202026-381",
+          "committee": "Capital Improvement Program",
+          "doc_type": "Minutes",
+          "meeting_date": "Aug 20, 2026",
+          "title": "Capital Improvement Program Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08202026-381",
+          "summary": "Town Administrator · Approval of Minutes · Motion by Gene Gauss to approve the minutes of August 13th, seconded by Michael Rodney. Select Board · Public Hearing - 2027 CIP Requests · Rosemarie Michaud opened the public hearing on the 2021 CIP requests at 6:05 p.m. Rosemarie called to · ublic comment and questions. There were no members of the public so Rosemarie closed the public hearing a · David Jodoin reported that the Energy Committee had reviewed the Library solar propo…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Agenda|Aug 17, 2026|_08172026-378",
+          "committee": "Sewer Commission",
+          "doc_type": "Agenda",
+          "meeting_date": "Aug 17, 2026",
+          "title": "Sewer Commission Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_08172026-378",
+          "summary": "Call to Order: Attendance · Il. Citizens Comments: · Scheduled Meetings: · IV. Old Business: a. Light Cleaning/Camera Bids · V. Any Old Business: License updates · VI. New Business: · a. Review and Sign Manifest · b. Review and Sign Late Notice Registry Zone 3 · c. Review and Sign Warrant 3 Zone 2 · d. Abatements: · e. Correspondences: · f. Accept Minutes of July 20, 2026 · g. Close out from Allenstown 2025 · h. Bill for Allenstown for final design · Any New Business: a. Spr…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Minutes|Aug 17, 2026|_08172026-378",
+          "committee": "Sewer Commission",
+          "doc_type": "Minutes",
+          "meeting_date": "Aug 17, 2026",
+          "title": "Sewer Commission Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08172026-378",
+          "summary": "I. Meeting Called to Order: 7:00 pm · II. Citizen's Comments: None · III. Scheduled Meetings: None · IV. Old Business: · a. Light Cleaning and CCTV: Corey resent bids to Bellemore, Wind River and Vortex. Vortex sent · V. Any Old Business: · a. Wastewater License: Action Item: Andy asked for any information regarding any prep courses · VI. New Business: · a. Review and Sign Manifest: Manifest was reviewed and signed · b. Review and Sign Late Notice Register Zone 3: The Late N…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Roads Committee|Agenda|Aug 10, 2026|_08102026-366",
+          "committee": "Roads Committee",
+          "doc_type": "Agenda",
+          "meeting_date": "Aug 10, 2026",
+          "title": "Roads Committee Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_08102026-366",
+          "summary": "1. Attendance: · 2. Citizens Comments: · 3. Old Business: · a. 2026 Road Projects Update · 4. Any Old Business: · 5. New Business: · a. TRC Plans · b. 2027 Road Projects · c. Elect Chair and Vice Chair · 6. Any New Business: · 7. Accept Minutes: · a. May 11, 2026 · b. June 8, 2026 · 8. Adjourn",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Roads Committee|Minutes|Aug 10, 2026|_08102026-366",
+          "committee": "Roads Committee",
+          "doc_type": "Minutes",
+          "meeting_date": "Aug 10, 2026",
+          "title": "Roads Committee Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08102026-366",
+          "summary": "MINUTES · 2. Old Business: · a. 2026 Road Projects Update · a. Fourth Range Road, $50,000.00 on hold · 3. Any Old Business: None · 4. New Business: · a. TRC Plans · b. 2027 Road Projects · c. Elect Chair and Vice Chair · a. TRC cancelled for tomorrow so no information · b. Looked over proposed list, roads list is fluid, VJ did not ask for more for the · c. Chair, Paulette Recommended: Tom · 5. Any New Business: Range Roads are open to travel. New State regulations allow buil…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "label": "July 2026",
+      "count": 13,
+      "entries": [
+        {
+          "guid": "Capital Improvement Program|Agenda|Jul 23, 2026|_07232026-346",
+          "committee": "Capital Improvement Program",
+          "doc_type": "Agenda",
+          "meeting_date": "Jul 23, 2026",
+          "title": "Capital Improvement Program Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_07232026-346",
+          "summary": "1. Attendance: · 2. Approval of Minutes July 16 2026 · 3. Cemetery, Roads, Public Works 2027 CIP Requests · 4. Other Business · 5. Adjourn · 1. Grave marker repairs in Old North Pembroke, Pembroke Street and Evergreen · 2. 100 Aluminum lot corner markers $1000,00 · 1. Grave marker repairs in Old North Pembroke, Pembroke Street and · 2. 100 Aluminum lot corner markers",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Capital Improvement Program|Minutes|Jul 23, 2026|_07232026-346",
+          "committee": "Capital Improvement Program",
+          "doc_type": "Minutes",
+          "meeting_date": "Jul 23, 2026",
+          "title": "Capital Improvement Program Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07232026-346",
+          "summary": "Town Administrator · Michael Rodney made a motion to approve the meeting minutes of July 16, 2026. Kathy Cruson seconded the · The minutes were approved on a 4-0 vote. Matt Miller abstained. · Rosemarie Michaud read a statement from the 2025 Capital Improvement report on the process of the · out to bid in the fall so that we would have good numbers for the public Hearing. · Matt Miller brought up a past discussion that was whether or not we buy a new truck or look at privati…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Agenda|Jul 20, 2026|_07202026-355",
+          "committee": "Sewer Commission",
+          "doc_type": "Agenda",
+          "meeting_date": "Jul 20, 2026",
+          "title": "Sewer Commission Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_07202026-355",
+          "summary": "Call to Order: Attendance · Il. Citizens Comments: · Scheduled Meetings: · IV. Old Business: a. Light Cleaning/Camera Bids · V. Any Old Business: Generator Bids · New Business: · a. Review and Sign Manifest · b. Review and Sign Late Notice Registry Zone 2 · c. Abatements: · d. Correspondences: · e. Accept Minutes of June 16, 2026 · VII. Any New Business: a. New Postage Rates · Adjourn:",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Minutes|Jul 20, 2026|_07202026-355",
+          "committee": "Sewer Commission",
+          "doc_type": "Minutes",
+          "meeting_date": "Jul 20, 2026",
+          "title": "Sewer Commission Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07202026-355",
+          "summary": "I. Meeting Called to Order: 7:05 pm · II. Citizen's Comments: None · III. Scheduled Meetings: None · IV. Old Business: a. Generator Maintenance Bids: A discussion about not receiving 3 bids as needed · b. Light Cleaning and CCTV: Corey sent bids to Wind River and Vortex. Wind River replied that they · V. Any Old Business: a. Follow-up to proposed escrow accounts for upcoming Projects · Wastewater License: Nothing to report back. · VI. New Business: a. Review and Sign Manifes…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Capital Improvement Program|Agenda|Jul 16, 2026|_07162026-345",
+          "committee": "Capital Improvement Program",
+          "doc_type": "Agenda",
+          "meeting_date": "Jul 16, 2026",
+          "title": "Capital Improvement Program Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_07162026-345",
+          "summary": "1. Attendance: · 2. Organization: Election of a Chair and Vice Chair for the coming year. · 3. EMS, Police Department, Fire Department Pembroke 2027 CIP Requests · 4. Other Business · 5. Adjourn · David Jodoin, Pembroke Town Administrator · 1. SERVICE REQUESTS FOR 2027 · 2. SERVICE DESCRIPTION · 1) Pembroke Emergency Medical Service (hereafter \"Pembroke EMS\" or \"PEMS\") is the municipal ambulance · 2) Pembroke EMS staffs one (1) ambulance, with at least one (1) Paramedic and…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Capital Improvement Program|Minutes|Jul 16, 2026|_07162026-345",
+          "committee": "Capital Improvement Program",
+          "doc_type": "Minutes",
+          "meeting_date": "Jul 16, 2026",
+          "title": "Capital Improvement Program Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-345",
+          "summary": "Town Administrator · Karen thanked Chief Paulsen for his detailed presentation. She went on to talk about the discussion at Town · meeting where the deposits to Capital Reserve can be seen as low lying fruit for cuts but detailed presentations · Rosemarie asked about leasing. David explained that this is a discussion that was brought up to the Board last · There being no further business to come before the Committee, Karen Yeaton made a motion to adjourn, the · motion was se…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Jul 15, 2026|_07152026-335",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Jul 15, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_07152026-335",
+          "summary": "CALL TO ORDER · CITIZEN COMMENT · III. SCHEDULED MEETINGS: · a. Public Hearing Town Code Updates Chapter 138, 152, 154, 165, 167 · b. Energy Committee - Discussion on electric rate renewal · c. Public Works Director - Update on Vehicle and new purchase · OLD BUSINESS: · a. Stage/Roof Update · NEW BUSINESS: · a. Appointments · c. Large Gathering Permit Amoskeag Rowing Regatta · d. Budget to Actual Reports · f. Minutes 6/17/26; Non Public Minutes of 6/17/26 · TOWN ADMINISTRATO…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|Jul 15, 2026|_07152026-335",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "Jul 15, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07152026-335",
+          "summary": "Staff: Town Administrator David Jodoin · Call to Order: · Scheduled Meetings · Public Hearing Town Code Updates Chapter 138, 152, 154, 165, 167 · The Board opened the public hearing at 6:03 PM to consider updates to Chapters 138, · 132, 134, 163, and 16/ ot the Town Code. The Chair reviewed that Chapter 138 · at Town Meeting; Chapter 152 updated Selectmen bylaws, including committee · representation and recording of meetings; and Chapters 154, 165, and 167 contained · housek…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Roads Committee|Agenda|Jul 13, 2026|_07132026-334",
+          "committee": "Roads Committee",
+          "doc_type": "Agenda",
+          "meeting_date": "Jul 13, 2026",
+          "title": "Roads Committee Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_07132026-334",
+          "summary": "1. Attendance: · 2. Citizens Comments: · 3. Old Business: · a. 2026 Road Projects Update · 4. Any Old Business: · 5. New Business: · a. TRC Plans · b. 2027 Road Projects · c. Elect Chair and Vice Chair · 6. Any New Business: · 7. Accept Minutes: · a. May 11, 2026 · b. June 8, 2026 · 8. Adjourn",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Roads Committee|Minutes|Jul 13, 2026|_07132026-334",
+          "committee": "Roads Committee",
+          "doc_type": "Minutes",
+          "meeting_date": "Jul 13, 2026",
+          "title": "Roads Committee Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07132026-334",
+          "summary": "MINUTES · 1. Attendance: Brent Edmunds, Sandy Goulet VJ Ranfos, Paulette Malo, · 2. Citizens Comments: · 3. Old Business: · a. 2026 Road Projects Update · 4. Any Old Business: · 5. New Business: · a. TRC Plans · b. 2027 Road Projects · 6. Any New Business: None · 7. Accept Minutes: · a. May 11, 2026 · b. June 8, 2026 · 8. Adjourn:",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Cemetery Commission|Minutes|Jul 09, 2026|_07092026-353",
+          "committee": "Cemetery Commission",
+          "doc_type": "Minutes",
+          "meeting_date": "Jul 09, 2026",
+          "title": "Cemetery Commission Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07092026-353",
+          "summary": "Minutes · 1. Chair Ellen Paulsen called the meeting to order at 6:00 p.m. · 2. On a motion by Fleda Young, seconded by Zachary Sawyer, the minutes of the meeting of June · New business: · 3. By a letter dated June 21, 2026, Jane Bates, holder with her husband of burial licenses for Lots · 4. The Commission discussed the ownership of the French Cemetery on North Pembroke Road. · Zachary Sawyer reported that he had heard that the town had assumed ownership of the formerly · 5.…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Jul 06, 2026|_07062026-333",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Jul 06, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_07062026-333",
+          "summary": "1. EDC Facebook Page Business Spotlight Posts · 2. Discussion of Community Organizations on Website · 3. Bike Rack in Village · 4. Pembroke Bike Tour Discussion · 5. Promotion and Outreach Plan for Economic Revitalization Zones · 6. Review and Update EDC Website · a. Commercial Areas · 7. Update on Business Survey Results Analysis & Outreach Plan · 8. Other Business · 9. Meeting Minutes · a. June 1, 2026 · 10. Next Meeting - August 3, 2026 · Adjournment",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|Jul 06, 2026|_07062026-333",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "Jul 06, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07062026-333",
+          "summary": "Meeting Minutes · 1. EDC Facebook Page Business Spotlight Posts · The Committee reviewed responses to its Facebook outreach inviting local businesses to · ID. Majestic Moonbeam Farm was noted as not yet having one, and members supported · 1) Where are you from and what brought your business to Pembroke? · 2) Where do your customers come from? · 3) How many employees do you have? · 4) What do you enjoy most about your job? · 5) What piece of advice would you give someone tryi…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        }
+      ]
+    },
+    {
+      "month": "2026-06",
+      "label": "June 2026",
+      "count": 15,
+      "entries": [
+        {
+          "guid": "Board of Selectmen|Agenda|Jun 24, 2026|_06242026-325",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Jun 24, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_06242026-325",
+          "summary": "1. Call to order & attendance · 2. Discussion with Jackson Kaspari from CPCNH · 3. Review and acceptance of June 1st meeting minutes · a. action item review · 4. Open Discussion · a. Municipal electricity supplier discussion · b. Solar Project Proposal for CIP · 5. Next Meeting Date and agenda items · 6. Adjournment",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Zoning Board|Agenda|Jun 22, 2026|_06222026-307",
+          "committee": "Zoning Board",
+          "doc_type": "Agenda",
+          "meeting_date": "Jun 22, 2026",
+          "title": "Zoning Board Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_06222026-307",
+          "summary": "ZONING BOARD OF ADJUSTMENT · I. Call to Order · Il. Attendance · II. Public Hearings · IV. Approval of Minutes · V. Other Business / Correspondence · VI. Adjournment · Pembroke Zoning Board of Adjustment",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Zoning Board|Minutes|Jun 22, 2026|_06222026-307",
+          "committee": "Zoning Board",
+          "doc_type": "Minutes",
+          "meeting_date": "Jun 22, 2026",
+          "title": "Zoning Board Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06222026-307",
+          "summary": "Chairman Kudrick called the public hearing to order at 7:00 p.m. · to everyone's comments and was prepared by having reviewed the Zoning Regulations as · 1. The variance will not be contrary to the public interest. The requested variance · Pembroke Zoning Board · Meeting Minutes (Adopted) · 2. The spirit of the ordinance is observed. The new home will be built within a · 4. The values of surrounding properties are not diminished. The values of · 5. Literal enforcement of the…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Jun 17, 2026|_06172026-291",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Jun 17, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_06172026-291",
+          "summary": "CALL TO ORDER · CITIZEN COMMENT · SCHEDULED MEETINGS: · a. Public Hearing - Request to remove finding from Roadway and · b. Water Department - Discussion of PFAS and remediation · OLD BUSINESS: · NEW BUSINESS: · a. Adoption of EDC Rules of procedure · b. Review of Town Code updates Chapter 138, 152,154,165,167,172 · c. Manifest/Abatements · d. Minutes 6/3/26; Release of Non Public Minutes of 3/18/26; 4/1/26; · TOWN ADMINISTRATOR REPORT · COMMITTEE REPORTS · VIII. OTHER/CITIZ…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|Jun 17, 2026|_06172026-291",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "Jun 17, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06172026-291",
+          "summary": "Staff: Town Administrator David Jodoin · Call to Order: · listed on the agenda. No public comments were offered. The Chair then summarized · the evening's agenda, including the public hearing on engineering funds for culvert · work, the Water Department discussion on PFAS remediation, adoption of the · Economic Development Committee Rules of Procedure, town code updates, · manifests, minutes, and reports. Selectman Miller was noted absent. · No citizen comments were received…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Agenda|Jun 16, 2026|_06162026-338",
+          "committee": "Sewer Commission",
+          "doc_type": "Agenda",
+          "meeting_date": "Jun 16, 2026",
+          "title": "Sewer Commission Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_06162026-338",
+          "summary": "Call to Order: Attendance · Il. Citizens Comments: · Scheduled Meetings: · IV. Old Business: a. Station 5 update about issues · V. Any Old Business: · New Business: · a. Review and Sign Manifest · b. Review and Sign Warrant 2 Zone 3 · c. Abatements: 270 Pembroke St · d. Correspondences: · e. Accept Minutes of May 18, 2026 · VII. Any New Business: a. Open Escrow Accounts as needed for Projects · Adjourn:",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Minutes|Jun 16, 2026|_06162026-338",
+          "committee": "Sewer Commission",
+          "doc_type": "Minutes",
+          "meeting_date": "Jun 16, 2026",
+          "title": "Sewer Commission Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162026-338",
+          "summary": "I. Meeting Called to Order: 7:05 pm · II. Citizen's Comments: None · III. Scheduled Meetings: None · IV. Old Business: a. Sheep Davis Rd. Station 5 Update: AAA Pump came in to change the seals and · V. Any Old Business: a. Wastewater License: A discussion took place about the commission wanting · VI. New Business: a. Review and Sign Manifest: Manifest was reviewed and signed · b. Review and Sign Warrant 2 Zone 3: The Warrant was reviewed and signed. · c. Abatements: 270 Pemb…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Roads Committee|Agenda|Jun 08, 2026|_06082026-309",
+          "committee": "Roads Committee",
+          "doc_type": "Agenda",
+          "meeting_date": "Jun 08, 2026",
+          "title": "Roads Committee Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_06082026-309",
+          "summary": "1. Attendance: · 2. Citizens Comments: · 3. Old Business: · a. 2026 Road Projects Update · 4. Any Old Business: · 5. New Business: · a. TRC Plans · 6. Any New Business: · 7. Accept Minutes: · a. May 11, 2026 · 8. Adjourn",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Roads Committee|Minutes|Jun 08, 2026|_06082026-309",
+          "committee": "Roads Committee",
+          "doc_type": "Minutes",
+          "meeting_date": "Jun 08, 2026",
+          "title": "Roads Committee Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06082026-309",
+          "summary": "MINUTES · 2. Citizens Comments: None · 3. Old Business: · a. 2026 Road Projects Update · a. VJ said Robinson Road was discussed last meeting, it is complete for this year, · 4. Any Old Business: A discussion took place about needing feedback from the Selectmen · 5. New Business: · a. TRC Plans · a. No new TRC. · Housing authority because they were denied at the Zoning Board · 6. Any New Business: None · 7. Accept Minutes: · a. May 11, 2026 · 8. Adjourn: · Adjourned: 5:59 p.m.",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Conservation Commission|Agenda|Jun 08, 2026|_06082026-347",
+          "committee": "Conservation Commission",
+          "doc_type": "Agenda",
+          "meeting_date": "Jun 08, 2026",
+          "title": "Conservation Commission Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_06082026-347",
+          "summary": "a. Major Site Plan Application #26-102, Tim Bradley, Cordwood Yard, LLC acting as Applicant on · b. Conceptual Plan, Matthew Peterson, Keach-Nordstrom Associates, Inc. acting as Applicant on · 3. DES Letters and Applications · 4. Zoning Board Applications · a. Expansion of Pembroke Sand and Gravel operations at 774 Silver Hills Dr. partially in aquifer · 5. Acquisitions · a. Potential Phipps, Pembroke Pines, DeStefano and Plourde acquisitions · b. Other acquisitions · 6. Con…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Conservation Commission|Minutes|Jun 08, 2026|_06082026-347",
+          "committee": "Conservation Commission",
+          "doc_type": "Minutes",
+          "meeting_date": "Jun 08, 2026",
+          "title": "Conservation Commission Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06082026-347",
+          "summary": "Call to Order: Meeting called to order at 7:03 PM. · Zoning Board Applications: None · Concord share many objectives, including: updating zoning and wetland ordinances, the identification · 1. Gelinas Farm. The CC met again with representatives of FRCT and the owners of the Gelinas Farm · 2. DeStefano/Phipps. Ammy contacted Stephen DeStefano about the family's interest in selling · Review and Approve Minutes of April 11, 2026 Meeting: Wendy moved to accept the minutes, as ·…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Jun 03, 2026|_06032026-289",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Jun 03, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_06032026-289",
+          "summary": "CALL TO ORDER · CITIZEN COMMENT · SCHEDULED MEETINGS: · a. Public Hearing - Removal of $312,250 from the Town Equipment Capital · b. Library Trustees - Discussion on potential fencing or landscaping for · c. Ayn Whytemare - conceptual discussion on the Whittemore Homestead · d. Chief Paulsen - Hazard Mitigation Contract with CNHRPC · OLD BUSINESS: · a. Stage and Roof Updates · b. Tax Deed Waiver 266-85-40 · NEW BUSINESS: · a. Trust Fund discussion · b. Manifest/Abatements ·…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|Jun 03, 2026|_06032026-289",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "Jun 03, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06032026-289",
+          "summary": "Staff: Town Administrator David Jodoin · Call to Order: · Public Hearing removal of funds from the Town Equipment Capital Reserve Fund · Chair Yeaton opened the public hearing at 6:07 PM · Being no audience discussions, the Chair closed the hearing at 6:10 PM. · with a 7 year warranty that will start when the vehicle is put into service. · Commission and to authorize the Town Administrator and Fire Chief to sign the · Chair Yeaton asked what the points of discussion are for…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Jun 01, 2026|_06012026-321",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Jun 01, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_06012026-321",
+          "summary": "1. Updates · b. SBA Event at Hartley Transportation on 4/22 · 2. Promotion and Outreach Plan for Economic Revitalization Zones · 3. EDC Facebook Page · a. Guidelines · b. Business Spotlight Posts · 4. Review and Update EDC Website · a. Commercial Areas · 5. Draft EDC Rules of Procedure · 6. Update on Business Survey Results Analysis & Outreach Plan · 7. Other Business · 8. Meeting Minutes · a. April 6, 2026 · 9. Next Meeting - July 6, 2026 · Adjournment",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|Jun 01, 2026|_06012026-321",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "Jun 01, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06012026-321",
+          "summary": "Meeting Minutes · 1. Updates · a. Community Conversations Event on 4/22 · S. Morris reported that she attended and it went very well. She sent a thank you letter to · update it once a year, or add it to the EDC webpage. · C. Cronin stated that the EDC is advisory to the Selectboard, so that is something you can · S. Morris brought up the farmers market at the Pembroke Park and there was a discussion · b. SBA Event at Hartley Transportation on 4/22 · S. Morris reported that t…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        }
+      ]
+    },
+    {
       "month": "2026-05",
       "label": "May 2026",
-      "count": 9,
+      "count": 18,
       "entries": [
         {
           "guid": "Planning Board|Agenda|May 26, 2026|_05262026-323",
@@ -59,6 +558,26 @@
           "first_archived": "2026-10-03T06:45:49.729600-04:00"
         },
         {
+          "guid": "Board of Selectmen|Agenda|May 20, 2026|_05202026-288",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "May 20, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05202026-288",
+          "summary": "CALL TO ORDER · CITIZEN COMMENT · SCHEDULED MEETINGS: · a. Public Hearing Town Code Chapter 160 · b. DPW Director Ranfos - Vehicle Purchase · c. Energy Committee - Community Power · IV. OLD BUSINESS: · a. Tax Deeds · b. Stage and Roof Updates · c. Borough Road Traffic · NEW BUSINESS: · a. Appointments · b. Manifest/Abatements · c. Minutes 4/15/26; 5/6/26 · VI. TOWN ADMINISTRATOR REPORT · VII. COMMITTEE REPORTS · VIII. OTHER/CITIZEN COMMENT · IX. ADJOURN · Updated schedule of…",
+          "first_archived": "2026-10-03T07:22:50.778383-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|May 20, 2026|_05202026-288",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "May 20, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05202026-288",
+          "summary": "Staff: Town Administrator David Jodoin · Call to Order: · Public Hearing Chapter 160 Fees · The Cemetery Commission is requesting that the Fees be updated to coincide with the · updated fees from our vendor Dignified Cemeteries. · Chair Yeaton opened the Public Hearing at 6:14 PM. · D. Jodoin reminded the Board that there would also be a trade in. · to Public Hearing, seconded by Selectman Christiansen. Motion passed 5-0. · Transfer Station Discussion · Energy Committee disc…",
+          "first_archived": "2026-10-03T07:22:50.778383-04:00"
+        },
+        {
           "guid": "Recreation Commission|Agenda|May 18, 2026|_05182026-322",
           "committee": "Recreation Commission",
           "doc_type": "Agenda",
@@ -67,6 +586,36 @@
           "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05182026-322",
           "summary": "B. Leagues - porta potties delivered · C. Playground Inspection / Infields completed · D. Stage Project - Update · E. Summer Rec · F. Tennis courts · H. Other Business · NEW BUSINESS · A. Use of Park · B. Water Leak/ building / repair - rec building · C. Bi-annual Perimeter Ant Treatment JP Pest · E. Review of Commission's Paperwork · F. BOS Updates - · G. Community Service - L. Larson & O. Foster - leaf pick up, cleaning up flower beds, gazebo, raking · H. Other Business -",
           "first_archived": "2026-10-03T06:45:49.729600-04:00"
+        },
+        {
+          "guid": "Recreation Commission|Minutes|May 18, 2026|_05182026-322",
+          "committee": "Recreation Commission",
+          "doc_type": "Minutes",
+          "meeting_date": "May 18, 2026",
+          "title": "Recreation Commission Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05182026-322",
+          "summary": "OLD BUSINESS · Approval of Aug & March Minutes / March Financials · Sandy made a motion to approve minutes & financials. Rob seconded. Motion passe · C. Playground Inspection / Infields completed · D. Stage Project Update · Sandy said the stage kit was approved. There will be a public hearing on April 15 for the voters · E. Summer Rec · F. Tennis Courts · G. Other Business · NEW BUSINESS · A. Use of Park · B. Water Leak / Building Repair rec building · C. Bi Annual Ant Treat…",
+          "first_archived": "2026-10-03T07:22:50.778383-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Agenda|May 18, 2026|_05182026-337",
+          "committee": "Sewer Commission",
+          "doc_type": "Agenda",
+          "meeting_date": "May 18, 2026",
+          "title": "Sewer Commission Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05182026-337",
+          "summary": "Call to Order: Attendance · Il. Citizens Comments: · Scheduled Meetings: Pembroke Meadows · IV. Old Business: a. Station 5 update about issues · Any Old Business: · New Business: · a. Review and Sign Manifest · b. Review and Sign Warrant 2 Zone 2 · c. Abatements: · d. Correspondences: · e. Accept Minutes of April 21, 2026 · VII. Any New Business: a. · Adjourn:",
+          "first_archived": "2026-10-03T07:22:50.778383-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Minutes|May 18, 2026|_05182026-337",
+          "committee": "Sewer Commission",
+          "doc_type": "Minutes",
+          "meeting_date": "May 18, 2026",
+          "title": "Sewer Commission Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05182026-337",
+          "summary": "I. Meeting Called to Order: 7:02 pm · II. Citizen's Comments: None · III. Scheduled Meetings: Pembroke Meadows (Broadway & Pembroke St.); Matt Peterson from · be a 55+ community. A discussion took place that Pembroke allows up to 3 bedrooms per single family · 4. The deposit shall be placed in an escrow account and returned to the owner should the project be · IV. Old Business: a. Sheep Davis Rd. Station 5 Update: AAA Pump came in to change the flappers · V. Any Old Business…",
+          "first_archived": "2026-10-03T07:22:50.778383-04:00"
         },
         {
           "guid": "Planning Board Workshop|Agenda|May 12, 2026|_05122026-400",
@@ -99,6 +648,16 @@
           "first_archived": "2026-10-03T06:45:49.729600-04:00"
         },
         {
+          "guid": "Roads Committee|Minutes|May 11, 2026|_05112026-296",
+          "committee": "Roads Committee",
+          "doc_type": "Minutes",
+          "meeting_date": "May 11, 2026",
+          "title": "Roads Committee Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05112026-296",
+          "summary": "MINUTES · 1. Attendance: Buddy Curley, Vincent Greco, Sandy Goulet, Tom Gallo, Adam Mendozza, · 2. Citizens Comments: None · 3. Old Business: · a. 2026 Road Projects Update · a. Robinson Road. The base of 2.5 inches has been put down. The road has been · 4. Any Old Business: · 5. New Business: · a. TRC Plans · b. Discuss Roads Rules and Regulations · a. Adam mentioned from a conversation with J that not much new on the Smith · b. Jason Menard had brought up to Board of Selec…",
+          "first_archived": "2026-10-03T07:22:50.778383-04:00"
+        },
+        {
           "guid": "Board of Selectmen|Agenda|May 6, 2026|_05062026-287",
           "committee": "Board of Selectmen",
           "doc_type": "Agenda",
@@ -107,6 +666,354 @@
           "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05062026-287",
           "summary": "CALL TO ORDER · CITIZEN COMMENT · SCHEDULED MEETINGS: · b. Chief Paulsen - Forest Fire Warden/Federal · c. VJ Ranfos - Crack Sealing Bids · d. Sgt. Pihl - Public Hearing Purchasing procedures Central NH Special · e. Chief Shea - Cruiser purchase · OLD BUSINESS: · a. Finalize 2026 Tax Deeds · NEW BUSINESS: · a. Resignation · b. Disposition of Town Property · c. Appointments · 2026 Budget V Actual Reports · *. Minutes 3/18/26; 4/1/26; 4/15/26 · TOWN ADMINISTRATOR REPORT · COMM…",
           "first_archived": "2026-10-03T06:45:49.729600-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|May 6, 2026|_05062026-287",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "May 6, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287",
+          "summary": "Staff: Town Administrator David Jodoin, Excused, Jenn Miskovic Account Clerk (Covering) · Call to Order: · Scheduled Meetings: · With the discussion taking place about upgrading the middle field there is concern · Chairman Yeaton opened the public hearing at 6:35 PM. · The Public Hearing was closed at 6:36 PM. · Old Business: · The Board reviewed the 2023 Tax Deeds. The Board decided to wait for David to · New Business:",
+          "first_archived": "2026-10-03T07:22:50.778383-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|May 06, 2026|_05062026-287",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "May 06, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_05062026-287",
+          "summary": "CALL TO ORDER · CITIZEN COMMENT · SCHEDULED MEETINGS: · b. Chief Paulsen - Forest Fire Warden/Federal · c. VJ Ranfos - Crack Sealing Bids · d. Sgt. Pihl - Public Hearing Purchasing procedures Central NH Special · e. Chief Shea - Cruiser purchase · OLD BUSINESS: · a. Finalize 2026 Tax Deeds · NEW BUSINESS: · a. Resignation · b. Disposition of Town Property · c. Appointments · 2026 Budget V Actual Reports · *. Minutes 3/18/26; 4/1/26; 4/15/26 · TOWN ADMINISTRATOR REPORT · COMM…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|May 06, 2026|_05062026-287",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "May 06, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287",
+          "summary": "Staff: Town Administrator David Jodoin, Excused, Jenn Miskovic Account Clerk (Covering) · Call to Order: · Scheduled Meetings: · With the discussion taking place about upgrading the middle field there is concern · Chairman Yeaton opened the public hearing at 6:35 PM. · The Public Hearing was closed at 6:36 PM. · Old Business: · The Board reviewed the 2023 Tax Deeds. The Board decided to wait for David to · New Business:",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        }
+      ]
+    },
+    {
+      "month": "2026-04",
+      "label": "April 2026",
+      "count": 6,
+      "entries": [
+        {
+          "guid": "Sewer Commission|Agenda|Apr 21, 2026|_04212026-336",
+          "committee": "Sewer Commission",
+          "doc_type": "Agenda",
+          "meeting_date": "Apr 21, 2026",
+          "title": "Sewer Commission Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_04212026-336",
+          "summary": "Call to Order: Attendance · Il. Citizens Comments: · Scheduled Meetings: · IV. Old Business: a. Update on Generator for Rt. 3 Station · V. Any Old Business: 307 Pembroke St. · New Business: · a. Review and Sign Manifest · b. Review and Sign Late Notice Register Zone 2 &3 · c. Abatements: 21 Sherwood Meadows · d. Correspondences: · e. Accept Minutes of March 17, 2026 · Any New Business: a. Operators Field Day · Adjourn:",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Minutes|Apr 21, 2026|_04212026-336",
+          "committee": "Sewer Commission",
+          "doc_type": "Minutes",
+          "meeting_date": "Apr 21, 2026",
+          "title": "Sewer Commission Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212026-336",
+          "summary": "I. Meeting Called to Order: 7:00 pm · II. Citizen's Comments: None · III. Scheduled Meetings: None · IV. Old Business: a. Generator for Rt. 3 Station: Artie explained that the generator is on line and · V. Any Old Business: a. 307 Pembroke St. The owner of this property informed the Town that he · b. Bow Lane: AAA Pump came in removed the grease from the wet well. While there the replaced the · VI. New Business: a. Review and Sign Manifest: Manifest was reviewed and signed ·…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Apr 15, 2026|_04152026-293",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Apr 15, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_04152026-293",
+          "summary": "CALL TO ORDER · CITIZEN COMMENT · SCHEDULED MEETINGS: · a. Dean Tsagaris - Food pop Ups · c. Public Hearing in accordance with RSA 31:95-b III (a) - Acceptance of · d. Public Hearing - Stage and Roof discussion on purchase and removal of · OLD BUSINESS: · a. 2026 Tax Deeds · V. NEW BUSINESS: · a. Manifest/Abatements · Minutes 3/18/26, 4/1/26 · TOWN ADMINISTRATOR REPORT · COMMITTEE REPORTS · VIII. OTHER/CITIZEN COMMENT · ADJOURN",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|Apr 15, 2026|_04152026-293",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "Apr 15, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04152026-293",
+          "summary": "Staff: Town Administrator David Jodoin, Excused, Jenn Miskovic Account Clerk (Covering) · Call to Order: · Scheduled Meetings: · Public Hearing - Stage and Roof discussion on purchase and removal of funds from · Selectman Goulet opened the public hearing at 6:03 PM. · be given to the building committee so that they could review them. · Selectman Goulet closed the public hearing at 6:11PM. · Matt asked what was the discussion amongst the Trustees on that concept. · Ryan respo…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Roads Committee|Agenda|Apr 13, 2026|_04132026-295",
+          "committee": "Roads Committee",
+          "doc_type": "Agenda",
+          "meeting_date": "Apr 13, 2026",
+          "title": "Roads Committee Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_04132026-295",
+          "summary": "1. Attendance: · 2. Citizens Comments: · 3. Old Business: · a. Crack Sealing Bids / recommendation · 4. Any Old Business: · 5. New Business: · a. TRC Plans · b. Discuss Roads Standards Sub-Committee · c. CNHRPC Traffic Count · d. 2026 Road Construction Schedule · 6. Any New Business: · 7. Accept Minutes: · a. March 9, 2026 · 8. Adjourn",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Roads Committee|Minutes|Apr 13, 2026|_04132026-295",
+          "committee": "Roads Committee",
+          "doc_type": "Minutes",
+          "meeting_date": "Apr 13, 2026",
+          "title": "Roads Committee Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04132026-295",
+          "summary": "MINUTES · 1. Attendance: Buddy Curley, Paulette Malo, Adam Mendozza, VJ Ranfos, Tom Gallo, Brent · 2. Citizens Comments: None · 3. Old Business: · a. Crack Sealing Bids / Recommendation · a. The committee reviewed the bids and recommend to the Board of Selectmen · 4. Any Old Business: · 5. New Business: · a. TRC Plans · b. Discuss Roads Standards Sub-Committee · c. CNHRPC Traffic Count · d. 2026 Road Construction Schedule · a. VJ said there was one applicant at TRC proposing…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        }
+      ]
+    },
+    {
+      "month": "2026-03",
+      "label": "March 2026",
+      "count": 8,
+      "entries": [
+        {
+          "guid": "Recreation Commission|Minutes|Mar 30, 2026|_03302026-360",
+          "committee": "Recreation Commission",
+          "doc_type": "Minutes",
+          "meeting_date": "Mar 30, 2026",
+          "title": "Recreation Commission Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03302026-360",
+          "summary": "OLD BUSINESS · A. Approval of Sept Minutes / Financials · Last meeting minutes were placed on hold to be approved at our next meeting. · Further discussion amongst the RC and LL, indicates this offer was never made, · NEW BUSINESS · A. Use of Park · B. Review of League's Paperwork · C. Tennis Courts · D. Playground Inspection · E. MTM - Fertilize/weed control / soil sample (free) · F. Donation to Rod and Gun · F. BOS Updates - · Sandy gave an update of the stage project. · G…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Agenda|Mar 17, 2026|_03172026-106",
+          "committee": "Sewer Commission",
+          "doc_type": "Agenda",
+          "meeting_date": "Mar 17, 2026",
+          "title": "Sewer Commission Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_03172026-106",
+          "summary": "Call to Order: Attendance · Il. Citizens Comments: · Scheduled Meetings: · IV. Old Business: a. Update on Generator for Rt. 3 Station · V. Any Old Business: · New Business: · a. Review and Sign Manifest · b. Review and Sign Warrant 1 Zone 3 · c. Abatements: 162 A Tina Dr. · d. Correspondences: · e. Accept Minutes of February 17, 2026 · Any New Business: a. 216 Buck St. Town Homes · Adjourn:",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Minutes|Mar 17, 2026|_03172026-106",
+          "committee": "Sewer Commission",
+          "doc_type": "Minutes",
+          "meeting_date": "Mar 17, 2026",
+          "title": "Sewer Commission Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172026-106",
+          "summary": "I. Meeting Called to Order: 7:03 pm · II. Citizen's Comments: None · III. Scheduled Meetings: None · IV. Old Business: a. Generator for Rt. 3 Station: Artie explained that the generator will be load tested · power the station under load. He will update the commission more at the next meeting. · V. Any Old Business: a. None · VI. New Business: a. Review and Sign Manifest: Manifest was reviewed and signed · b. Review and Sign Warrant 1 Zone 3: The Warrant 1 Zone 3 was reviewed…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Roads Committee|Agenda|Mar 09, 2026|_03092026-274",
+          "committee": "Roads Committee",
+          "doc_type": "Agenda",
+          "meeting_date": "Mar 09, 2026",
+          "title": "Roads Committee Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_03092026-274",
+          "summary": "1. Attendance: · 2. Citizens Comments: · 3. Old Business: · 4. Any Old Business: · 5. New Business: · a. Crack Sealing Bid / 2026 Priority List · b. TRC Plans · 6. Any New Business: · 7. Accept Minutes: · a. December 8, 2025 · 8. Adjourn",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Roads Committee|Minutes|Mar 09, 2026|_03092026-274",
+          "committee": "Roads Committee",
+          "doc_type": "Minutes",
+          "meeting_date": "Mar 09, 2026",
+          "title": "Roads Committee Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03092026-274",
+          "summary": "MINUTES · 2. Citizens Comments: · 3. Old Business: · 4. Any Old Business: · a. Paving Bids 2026 · a. Paulette expressed concern about being transparent regarding bids. VJ said the · New Business: · a. Crack Sealing Bid / 2026 Priority List · b. TRC Plans · a. The bid package was discussed and approved to be sent out. · b. Poor Town Road conceptual plan on a class VI road was discussed. It is proposed · 6. Any New Business: · a. Annual Traffic Count · 7. Accept Minutes: · a.…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|Mar 05, 2026|_03052026-7",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "Mar 05, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03052026-7",
+          "summary": "1. Review Draft Final Report · a. Discuss how to Present Public Feedback · b. Discuss Recommendations for Report · Carolyn Cronin updated the subcommittee since the last time they met at the public forum · been working on the bulk of the draft report. She had typed up all the public comments · from the forum and emails. She and CHRPC went back and forth on the report. She · to plan it. A lot of the report is public comments and information from the PowerPoint · presentation…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Mar 02, 2026|_03022026-173",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Mar 02, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_03022026-173",
+          "summary": "1. Promotion and Outreach Plan for Economic Revitalization Zones · 2. Review and Update EDC Website · 3. Update on Business Survey Results Analysis & Outreach Plan · 4. Meeting Minutes · a. February 2, 2026 · 5. Next Meeting - April 6, 2026 · Adjournment",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|Mar 02, 2026|_03022026-173",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "Mar 02, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03022026-173",
+          "summary": "Meeting Minutes · 1. Promotion and Outreach Plan for Economic Revitalization Zones · C. Cronin reviewed that the last meeting was focused on getting an email to all businesses · She reviewed the To Do List from the last meeting. Emails were sent to business, she · Maps, and Sharon drafted an EDC Facebook page to review. · K. Castaldo-Rice and S. Morris noted that information about the ERZs was shared in · K. Castaldo-Rice mentioned using the ERZ flyer for Town Voting Day, Ma…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        }
+      ]
+    },
+    {
+      "month": "2026-02",
+      "label": "February 2026",
+      "count": 9,
+      "entries": [
+        {
+          "guid": "Board of Selectmen|Agenda|Feb 18, 2026|_02182026-144",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Feb 18, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_02182026-144",
+          "summary": "CALL TO ORDER · CITIZEN COMMENT · SCHEDULED MEETINGS: · a. Rob Azevedo/Jacques Despres - Yearly dump fee · IV. OLD BUSINESS: · a. 2026 Tax Deeds · NEW BUSINESS: · a. Acceptance of State MS737 · b. Sign 2026 Town Warrant · Department reports · g. Release non public minutes 12/17/25; 1/7/26; 1/21/26 · h. Minutes 2/4/26 · TOWN ADMINISTRATOR REPORT · COMMITTEE REPORTS · VIll. OTHER/CITIZEN COMMENT · ADJOURN",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|Feb 18, 2026|_02182026-144",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "Feb 18, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182026-144",
+          "summary": "Staff: Town Administrator David Jodoin · Call to Order: · Citizen Comment: · Scheduled Meetings: · quarterly basis as opposed to on a yearly basis. He also requested a review of the fee amount. He · $1,800. There was some discussion about actual usage trends. · After review of the current pricing structure by VJ, Selectman Goulet expressed concern based · further discussion on the safety issue. · David Jodoin, Town Administrator, suggested tracking and billing by usage in th…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Agenda|Feb 17, 2026|_02172026-118",
+          "committee": "Sewer Commission",
+          "doc_type": "Agenda",
+          "meeting_date": "Feb 17, 2026",
+          "title": "Sewer Commission Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_02172026-118",
+          "summary": "Call to Order: Attendance · Il. Citizens Comments: · Scheduled Meetings: · IV. Old Business: a. Update on Generator for Rt. 3 Station · V. Any Old Business: New Sewer Meeting Schedule for 2026 · New Business: · a. Review and Sign Manifest · b. Review and Sign Warrant 1 Zone 2 · c. Abatements: · d. Correspondences: · e. Accept Minutes of January 20, 2026 · Any New Business: a. Wastewater/Collection System Certifications · Adjourn:",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Minutes|Feb 17, 2026|_02172026-118",
+          "committee": "Sewer Commission",
+          "doc_type": "Minutes",
+          "meeting_date": "Feb 17, 2026",
+          "title": "Sewer Commission Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02172026-118",
+          "summary": "I. Meeting Called to Order: 7:01 pm · II. Citizen's Comments: None · III. Scheduled Meetings: None · IV. Old Business: a. Generator for Rt. 3 Station: Artie explained that the generator has been fired up. · V. Any Old Business: a. New Sewer Meeting Schedule: Paulette handed out the new schedule for the · VI. New Business: a. Review and Sign Manifest: Manifest was reviewed and signed · b. Review and Sign Warrant 1 Zone 2: The Warrant 1 Zone 2 was reviewed and signed. · c. Aba…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Planning Board|Agenda|Feb 10, 2026|_02102026-67",
+          "committee": "Planning Board",
+          "doc_type": "Agenda",
+          "meeting_date": "Feb 10, 2026",
+          "title": "Planning Board Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_02102026-67",
+          "summary": "Public hearings that are continued will not be re-noticed, so please contact the Planning Office if you have · New Business · 1. Member Resignation Letter · a. Recommendation of appointment to full member position · b. Appointment of representative to Range Roads Subcommittee · 2. Strategy Discussion on Year Ahead Projects · a. New Projects · i. Wetlands Ordinance Review with Conservation Commission · ii. Open Space Development/Cluster Zoning · b. Resumed Projects · i. Site…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Planning Board|Minutes|Feb 10, 2026|_02102026-67",
+          "committee": "Planning Board",
+          "doc_type": "Minutes",
+          "meeting_date": "Feb 10, 2026",
+          "title": "Planning Board Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02102026-67",
+          "summary": "New Business · 1. Member Resignation Letter · a. Recommendation of appointment to full member position · B. Seaworth - Y · C. Hanson - Y · J. Bursey - Abstain · B. Edmonds - Y · K. Cruson - Y · R. Frederickson - Y · B. Bourque - Y · T:\\Town Planner \\PLANNING BOARD\\MEETING MINUTES|2026\\02-10-2026 Minutes (Approved).docx · February 10, 2026 Planning Board Minutes · b. Appointment of Representative to Range Roads Subcommittee · 2. Strategy Discussion on Year Ahead Projects · a.…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Feb 03, 2026|_02032026-311",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Feb 03, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_02032026-311",
+          "summary": "1. Approval of Minutes · January 2026 minutes were read and accepted. · 2. Treasurer's Report - Glorie Jacob. · Treasurer's report was read and approved. · 3. Correspondence - · 4. Projects · a. Fundraisers - Sophia Raymond presentation · b. Christmas Wreaths Removal - how it went - banners. · Adopted Minutes · Suncook Minutes #210 · c. MMIS shirts - Update from Katie · d. Facebook/website entries · Discussion focused on what should/can be put on our FB page. There was some…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Feb 02, 2026|_02022026-171",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Feb 02, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_02022026-171",
+          "summary": "1. Promotion and Outreach Plan for Economic Revitalization Zones · 2. Update on Business Survey Results Analysis & Outreach Plan · 3. Meeting Minutes · a. December 1, 2025 · 4. Next Meeting - March 2, 2026 · Adjournment",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|Feb 02, 2026|_02022026-171",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "Feb 02, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02022026-171",
+          "summary": "Meeting Minutes · 1. Promotion and Outreach Plan for Economic Revitalization Zones · K. Castaldo-Rice announced that the Selectboard and the State approved the Economic · S. Goulet said she has been telling businesses in the Village about the tax credit. She has · K. Castaldo-Rice wanted to talk about a way to promote the ERZs to all businesses. She · C. Therrien suggested the EDC set up a Facebook page to share information and links. K · S. Morris said the library has a Fac…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        }
+      ]
+    },
+    {
+      "month": "2026-01",
+      "label": "January 2026",
+      "count": 6,
+      "entries": [
+        {
+          "guid": "Sewer Commission|Agenda|Jan 20, 2026|_01202026-116",
+          "committee": "Sewer Commission",
+          "doc_type": "Agenda",
+          "meeting_date": "Jan 20, 2026",
+          "title": "Sewer Commission Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_01202026-116",
+          "summary": "Call to Order: Attendance · Il. Citizens Comments: · Scheduled Meetings: · IV. Old Business: a. Update on Generator for Rt. 3 Station · Any Old Business: · New Business: · a. Review and Sign Manifest · b. Review and Sign Late Penalty Register Zone 3 · c. Review and Sign Adjustment Journal for Tax Collector · d. Abatements: · e. Correspondences: · f. Accept Minutes of December 15, 2025 · Any New Business: a. Approve Sewer Meeting Schedule for 2026 · b. Election Filing Period…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Sewer Commission|Minutes|Jan 20, 2026|_01202026-116",
+          "committee": "Sewer Commission",
+          "doc_type": "Minutes",
+          "meeting_date": "Jan 20, 2026",
+          "title": "Sewer Commission Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01202026-116",
+          "summary": "I. Meeting Called to Order: 7:01 pm · II. Citizen's Comments: None · III. Scheduled Meetings: None · IV. Old Business: a. Generator for Rt. 3 Station: Artie explained that the generator is in Concord. He · A discussion took place about what to do with the old generators. Artie will look into what the potential · V. Any Old Business: a. Credit Card through Bank: Paulette explained that she did apply for a credit · VI. New Business: a. Review and Sign Manifest: Manifest was re…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Jan 07, 2026|_01072026-147",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Jan 07, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_01072026-147",
+          "summary": "CALL TO ORDER · CITIZEN COMMENT · SCHEDULED MEETINGS: · a. James Colorusso 477 Fourth Range Road · b. Kate Castaldo-Rice - Potential Grant Memorial Park · c. Chief Paulsen Emergency Managemant · d. VJ Ranfos - Request to waive paving bids · IV. OLD BUSINESS: · a. 2026 Final Budget Numbers · V. NEW BUSINESS: · a. Approval of Website contract · b. Manifest/Abatements · c. Minutes 12/17/25; Non Public 12/17/25 · d. Release Non Public Minutes 8/1/25; 9/17/25; 10/1 25; 10/8/25; ·…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|Jan 07, 2026|_01072026-147",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "Jan 07, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01072026-147",
+          "summary": "Staff: Town Administrator David Jodoin · Call to Order: · Citizen Comment: · Scheduled Meetings: · ordinance states that \"the water supply requirement can be met by using a municipal water · Town Administrator David Jodoin explained that the ordinance was provided to legal counsel. · Legal counsel was asked if the ordinance is still valid and if such a waiver was granted, if there · would be any liability to the Town. She reviewed the ordinance in its entirety and explained…",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Agenda|Jan 05, 2026|_01052026-168",
+          "committee": "Board of Selectmen",
+          "doc_type": "Agenda",
+          "meeting_date": "Jan 05, 2026",
+          "title": "Board of Selectmen Agenda",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Agenda/_01052026-168",
+          "summary": "1. Promotion and Outreach Plan for Economic Revitalization Zones · 2. Town Report · 3. Update on Business Survey Results Analysis & Outreach Plan · 4. Meeting Minutes · a. December 1, 2025 · 5. Next Meeting - February 2, 2026 · Adjournment",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
+        },
+        {
+          "guid": "Board of Selectmen|Minutes|Jan 05, 2026|_01052026-168",
+          "committee": "Board of Selectmen",
+          "doc_type": "Minutes",
+          "meeting_date": "Jan 05, 2026",
+          "title": "Board of Selectmen Minutes",
+          "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01052026-168",
+          "summary": "C. Cronin will draft an EDC page for the Town Report and email it to the members for · comment. The deadline for Town Report submittals is January 16th, so it is a time sensitive · T: \\Town Planner\\EDC\\Minutes\\2026\\01-05-2026 Notes.docx",
+          "first_archived": "2026-10-03T07:24:21.294353-04:00"
         }
       ]
     }
