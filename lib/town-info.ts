@@ -48,31 +48,28 @@ export function selectRelevantPages(
   // is relevant. Otherwise we drop the page from context to keep it tight.
   const keywordMap: Array<[RegExp, string[]]> = [
     [/library|book|read|catalo/, ["library", "library_catalog", "library_trustees", "library_website"]],
-    [/trash|rubbish|garbage|pickup|recycl|transfer.*station|curbside/, ["recycling", "public_works", "transfer_station_fees", "rubbish_pickup"]],
-    [/snow|plow|ice|winter|parking/, ["snow_policy", "public_works"]],
-    [/fire|department|burn/, ["fire_department"]],
-    [/police|cop|law.enforce|crime/, ["police_department"]],
-    [/plan|zoning|build.*permit|setback|easement/, ["planning_building"]],
+    [/paint|recycl|trash|rubbish|garbage|pickup|transfer.*station|curbside|compost|hazard.*waste|mercury/, ["recycling", "paint_disposal", "mercury_disposal", "household_hazardous_waste", "public_works", "transfer_station_facility", "transfer_station_fees", "rubbish_pickup", "solid_waste_collection", "holiday_curbside_schedule", "spring_cleanup", "construction_demolition", "recycling_textiles", "medical_waste"]],
+    [/snow|plow|ice|winter|parking|sand.*salt/, ["snow_policy", "public_works"]],
+    [/fire|department|burn.*permit|smoke.alarm/, ["fire_department"]],
+    [/police|cop|law.enforce|crime|emergency.*911/, ["police_department"]],
+    [/plan|zoning|build.*permit|setback|easement|subdivision/, ["planning_building"]],
     [/vital.record|marriage|death|birth|certif/, ["vital_records"]],
-    [/vot|elect|register|polling/, ["voter_registration"]],
-    [/tax|assess|prop.*valu/, ["assessing"]],
-    [/cemetery|burial|grave/, ["cemetery"]],
+    [/vot|elect|register|polling|absentee.ballot/, ["voter_registration"]],
+    [/tax|assess|prop.*valu|abatement/, ["assessing"]],
+    [/cemetery|burial|grave|monument/, ["cemetery"]],
     [/storm.*water|drainage|runoff/, ["stormwater"]],
+    [/town.hall|hours.*clerk|government|admin/, ["town_info"]],
   ];
 
   const matchedSlugs = new Set<string>();
+
+  // Always include the general town_info page as background context.
+  matchedSlugs.add("town_info");
+
   for (const [pattern, slugsForMatch] of keywordMap) {
     if (pattern.test(qLow)) {
       for (const s of slugsForMatch) matchedSlugs.add(s);
     }
-  }
-
-  // If nothing matched, fall back to a few of the most-likely-useful pages.
-  if (matchedSlugs.size === 0) {
-    matchedSlugs.add("town_info");
-    matchedSlugs.add("recycling");
-    matchedSlugs.add("library");
-    matchedSlugs.add("public_works");
   }
 
   const out: { slug: string; text: string }[] = [];
