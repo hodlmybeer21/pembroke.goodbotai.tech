@@ -1,0 +1,676 @@
+{
+  "generated_at": "2026-10-03T16:30:49.390040+00:00",
+  "count": 134,
+  "streets": [
+    {
+      "street": "Academy Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Alexander Drive",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Appleton Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Ashley Drive",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Bachelder Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Beacon Hill Road (206 - 223 Lower - off Route 3)",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Beacon Hill Road (241 - 352 Upper - off Fourth Range Road)",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Bean Hill Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Belfry Court",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Berry Brook Lane",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Borough Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Bow Lane",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Brickett Hill Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Bridge Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Bridge Street Ext.",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Brittany Circle",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Broadway",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Brush Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Buck Street from 151 - 302",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Buck Street from 310 - 640",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Carrie Avenue",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Center Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Central Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Chapelle Street",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Church Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Church Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Church Street Ext.",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Clough Mill Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Colonial Drive",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Commerce Way",
+      "pickup_day": null,
+      "match_count_90d": 0
+    },
+    {
+      "street": "Crescent",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Cross Country Ext.",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Cross Country Road (402 - 855 Lower)",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Cross Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Dearborn Road to Route 3",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Deerpath Lane",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Donald Ave.",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Donna Drive",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Dover Road (Route 4)",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Dudley Hill Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Dutcher Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "East Meadow Lane",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "East View Drive",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Eley Lane",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Elm Street",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Exchange Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Fairview Avenue",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Fairway Drive",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Fifth Range Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Fourth Range Road (201 - 242)",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Fourth Range Road (373 - 671)",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Friendship Ave.",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Front Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Girard Ave.",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Glass Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Gooses Way",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Grandview Road",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Haleighs Court",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Hardy Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Harold Ave.",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "High Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Hillcrest Ave.",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Horse Corner Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Howard Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Jacks Drive",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Keith Ave",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Kimball Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Lindy Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Main Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Maple Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Martin Hill Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Mason Ave.",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Meadow Lark Lane",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Melissa Drive",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Micol Road",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Middle Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Mill Falls",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Millard Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Nadine Road",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Nixon Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "No. Pembroke Road (303 - 823/Route 106 to Epsom TL)",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "No. Pembroke Road (7 - 128/Epsom TL to Route 28)",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Noyes Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Old Bear Brook Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Old Borough Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Part of Fourth Range Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Peaslee Drive",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Pembroke Hill 301 - 357/Upper Half",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Pembroke Hill Road from 202 to 255",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Pembroke Hill Road from 301 to 357",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Pembroke Street (Route 3)",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Perley Ave.",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Pheasant Run",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Pine Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Pinewood Road (Route 28, Suncook Valley Highway)",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Plausawa Hill Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Pleasant Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Poor Town Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Preve Lane",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Prospect Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Rebecca Way",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Renarl Ave.",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Ricker Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Robinson Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Rosedale Lane",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Ross Road",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Route 28 (Pinewood Road, Suncook Valley Highway)",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Route 3 (Pembroke Street)",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Route 4 (Dover Road)",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Rowe Ave.",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Ryan Drive",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Sand Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Sheep Davis Road (Route 106)",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Sherwood Meadows",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Simpson Ave.",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Sixth Range Road (Quinsany)",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Skyview Terrace",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Smith Ave.",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Staniels Road",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Suncook Valley Highway (Route 28, Pinewood Road)",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Terrace Lane",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Terrie Drive",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Third Range Road (340 - 496)",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Third Range Road (562 - 566)",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Thompson Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Tina Drive",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Turnpike Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Union Street",
+      "pickup_day": "Wednesday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Wellington Way",
+      "pickup_day": "Friday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "West View Terrace",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Whittemore Road",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Wilkins Ave.",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Winchester Court",
+      "pickup_day": "Monday",
+      "match_count_90d": 0
+    },
+    {
+      "street": "Woodlawn Ridge",
+      "pickup_day": "Thursday",
+      "match_count_90d": 0
+    }
+  ]
+}

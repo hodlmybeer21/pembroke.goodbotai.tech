@@ -17,6 +17,13 @@
 //       updated_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 //     )
 //
+//   street_watches (
+//       clerk_id      TEXT NOT NULL REFERENCES profiles(clerk_id) ON DELETE CASCADE
+//       street        TEXT NOT NULL  -- case-insensitive (normalized to lowercase)
+//       created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
+//       PRIMARY KEY (clerk_id, street)
+//     )
+//
 // The encrypted columns are ciphertext + nonce + auth tag (not a single
 // encrypted column) because AES-GCM needs all three. Encryption key
 // (TELEGRAM_COLUMN_KEY) lives in Vercel env vars, never in the repo or
@@ -60,6 +67,20 @@ export async function ensureSchema(): Promise<void> {
       created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
       updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
     )
+  `;
+  await sql`
+    CREATE TABLE IF NOT EXISTS street_watches (
+      clerk_id TEXT NOT NULL REFERENCES profiles(clerk_id) ON DELETE CASCADE,
+      street TEXT NOT NULL,
+      created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+      PRIMARY KEY (clerk_id, street)
+    )
+  `;
+  // Index on the street column so the cron can quickly find all users
+  // watching a given street when a new doc is archived.
+  await sql`
+    CREATE INDEX IF NOT EXISTS street_watches_street_idx
+      ON street_watches (lower(street))
   `;
 }
 
@@ -238,4 +259,87 @@ export function fingerprint(email: string): string {
 
 export function randomSecret(bytes = 32): string {
   return randomBytes(bytes).toString("hex");
+}
+
+// Street watches — a user can subscribe to alerts when any meeting
+// summary mentions a specific street. Stored in a separate table so
+// the categories-driven email path and the street-watch path stay
+// independent (a user can have zero categories and still get street
+// alerts, or vice versa).
+//
+// Streets are stored lowercased and trimmed for case-insensitive
+// matching. The matching itself is done by the cron when new
+// summaries land in the archive.
+
+export interface StreetWatch {
+  clerk_id: string;
+  street: string;
+  created_at: Date;
+  // Match count is computed by the cron-side pembroke_street_match.py
+  // and stored in data/watches.json. We expose it through the cron
+  // pipeline rather than doing it server-side on every request.
+  match_count_90d?: number;
+}
+
+function normalizeStreet(s: string): string {
+  return s.trim().toLowerCase().replace(/\s+/g, " ");
+}
+
+export async function listWatches(clerkId: string): Promise<StreetWatch[]> {
+  await ensureSchema();
+  const r = await sql<StreetWatch>`
+    SELECT clerk_id, street, created_at
+      FROM street_watches
+      WHERE clerk_id = ${clerkId}
+      ORDER BY created_at DESC
+  `;
+  return r.rows;
+}
+
+export async function addWatch(clerkId: string, street: string): Promise<StreetWatch> {
+  await ensureSchema();
+  const norm = normalizeStreet(street);
+  if (!norm || norm.length < 3 || norm.length > 80) {
+    throw new Error("street name must be 3-80 characters");
+  }
+  // Reject obvious garbage: control chars, HTML tags, etc.
+  if (!/^[\w\s.'-]+$/.test(norm)) {
+    throw new Error("street name contains invalid characters");
+  }
+  const r = await sql<StreetWatch>`
+    INSERT INTO street_watches (clerk_id, street, created_at)
+    VALUES (${clerkId}, ${norm}, now())
+    ON CONFLICT (clerk_id, street) DO UPDATE
+      SET created_at = street_watches.created_at  -- no-op, keeps original time
+    RETURNING clerk_id, street, created_at
+  `;
+  return r.rows[0];
+}
+
+export async function removeWatch(clerkId: string, street: string): Promise<boolean> {
+  await ensureSchema();
+  const norm = normalizeStreet(street);
+  const r = await sql`
+    DELETE FROM street_watches
+      WHERE clerk_id = ${clerkId} AND street = ${norm}
+  `;
+  return (r.rowCount ?? 0) > 0;
+}
+
+// Find every user who watches a street mentioned in `text`. Returns
+// the clerk_id + email of each match so the dispatch can email them.
+// `text` is the meeting summary or document title.
+export async function findWatchesMentioned(text: string): Promise<{ clerk_id: string; email: string; street: string }[]> {
+  if (!text) return [];
+  await ensureSchema();
+  // Lowercase the input for case-insensitive matching, then query the
+  // watches table. We do a fuzzy substring check: any watch whose
+  // stored street appears in the lowercased text.
+  const r = await sql<{ clerk_id: string; email: string; street: string }>`
+    SELECT w.clerk_id, p.email, w.street
+      FROM street_watches w
+      JOIN profiles p ON p.clerk_id = w.clerk_id
+      WHERE ${text.toLowerCase()} LIKE '%' || w.street || '%'
+  `;
+  return r.rows;
 }
