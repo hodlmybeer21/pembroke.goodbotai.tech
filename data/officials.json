@@ -1,0 +1,868 @@
+{
+  "generated_at": "2026-10-03T12:36:36.996991+00:00",
+  "source_directory": "https://www.pembroke-nh.com/m/directory",
+  "source_select_board": "https://www.pembroke-nh.com/1342/Board-of-Selectmen",
+  "source_planning_board": "https://www.pembroke-nh.com/1397/Planning-Board",
+  "source_budget_committee": "https://www.pembroke-nh.com/1349/Budget-Committee",
+  "source_state_reps": [
+    "https://gc.nh.gov/Senate/members/webpages/district17.aspx",
+    "https://www.nhha.org/wp-content/uploads/2025/06/CON_ENC-Legislator-List-06.26.25.pdf"
+  ],
+  "committees": [
+    {
+      "name": "Board of Selectmen",
+      "slug": "select-board",
+      "url": "https://www.pembroke-nh.com/1342/Board-of-Selectmen",
+      "members": [
+        {
+          "name": "Sandy Goulet",
+          "title": "Vice Chair",
+          "term_ends": "2028",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Peter Gagyi",
+          "title": "Member",
+          "term_ends": "2029",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Karen Yeaton",
+          "title": "Chair",
+          "term_ends": "2029",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Matt Miller",
+          "title": "Member",
+          "term_ends": "2027",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Bryan Christiansen",
+          "title": "Member",
+          "term_ends": "2028",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rick Frederickson",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": null,
+      "next_meeting": null
+    },
+    {
+      "name": "Planning Board",
+      "slug": "planning-board",
+      "url": "https://www.pembroke-nh.com/1397/Planning-Board",
+      "members": [
+        {
+          "name": "Brian Seaworth",
+          "title": "Chair",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Kathy Cruson",
+          "title": "Member",
+          "term_ends": "2028",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Brent Edmonds",
+          "title": "Member",
+          "term_ends": "2027",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Clinton Hanson, Jr.",
+          "title": "Member",
+          "term_ends": "2029",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Angela Delaney",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Joshua Bursey",
+          "title": "Alternate",
+          "term_ends": "2028",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Stephanie Cravotta",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": "Second and fourth Tuesday of the month, 6:30 pm at Town Hall",
+      "next_meeting": null
+    },
+    {
+      "name": "Budget Committe",
+      "slug": "budget-committee",
+      "url": "https://www.pembroke-nh.com/1349/Budget-Committee",
+      "members": [
+        {
+          "name": "Gerry Fleury",
+          "title": "Vice Chairman",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Brian Seaworth",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Gene Gauss",
+          "title": "School Board Rep.",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Clint Hanson",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Mark LePage",
+          "title": "Chairman",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Louis Caron",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jason Mayeu",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Kristopher DeLorme",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Susanne Whitbeck",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Kerri Dean",
+          "title": "School Board Alt",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Mariana Beer",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": "Meets in January and February leading up to Town Meeting; public hearings in February",
+      "next_meeting": null
+    },
+    {
+      "name": "Capital Improvement Program Committee",
+      "slug": "cip-committee",
+      "url": "https://www.pembroke-nh.com/agendacenter",
+      "members": [
+        {
+          "name": "Gerry Fleury",
+          "title": "Budget Committee Rep.",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rosemarie Michaud",
+          "title": "Resident",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Gene Gauss",
+          "title": "School Board Rep.",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Andrew Yonchak",
+          "title": "Resident",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Matt Miller",
+          "title": "Board of Selectmen Representative",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Karen Yeaton",
+          "title": "Board of Selectmen Alt.",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": null,
+      "next_meeting": null
+    },
+    {
+      "name": "Conservation Commission",
+      "slug": "conservation-commission",
+      "url": "https://www.pembroke-nh.com/agendacenter",
+      "members": [
+        {
+          "name": "Ammy Heiser",
+          "title": "Chair",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Carol Bertsimas",
+          "title": "Vice Chair",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Ayn Whytemare",
+          "title": "Secretary",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Wendy Weisiger",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Brian Mrazik",
+          "title": "Alternate",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Tom Gallo",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Karen Yeaton",
+          "title": "Board of Selectmen Representative",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Brent Edmonds",
+          "title": "Planning Board Rep.",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Erin Insley",
+          "title": "Co-Chair",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rick Frederickson",
+          "title": "Board of Selectmen Alt.",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": "Meets monthly at Town Hall (check the agenda center for the date)",
+      "next_meeting": null
+    },
+    {
+      "name": "Cemetery Commission",
+      "slug": "cemetery-commission",
+      "url": "https://www.pembroke-nh.com/agendacenter",
+      "members": [
+        {
+          "name": "James Garvin",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Fleda Young",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Ellen Paulsen",
+          "title": "Chair",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Daniel Chase",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Zachary Sawyer",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": "Meets as needed; contact the Town Clerk's office for the next date",
+      "next_meeting": null
+    },
+    {
+      "name": "Energy Committee",
+      "slug": "energy-committee",
+      "url": "https://www.pembroke-nh.com/agendacenter",
+      "members": [
+        {
+          "name": "Pentti Aalto",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Richard Wengenroth",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jackie Wengenroth",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Karen Yeaton",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Matt Miller",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": null,
+      "next_meeting": null
+    },
+    {
+      "name": "Recreation Commission",
+      "slug": "recreation-commission",
+      "url": "https://www.pembroke-nh.com/agendacenter",
+      "members": [
+        {
+          "name": "Rose Galligan",
+          "title": "Chair",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Steve Fowler",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Sandy Goulet",
+          "title": "Board of Selectmen Representative",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Rob Azevedo",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Taylor Caron",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Bryan Christiansen",
+          "title": "Board of Selectmen Alt.",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": null,
+      "next_meeting": null
+    },
+    {
+      "name": "Roads Committee",
+      "slug": "roads-committee",
+      "url": "https://www.pembroke-nh.com/agendacenter",
+      "members": [
+        {
+          "name": "Burton Curley",
+          "title": "Chairman",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Paulette Malo",
+          "title": "Vice Chair",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Thomas Gallo",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Adam Mendozza",
+          "title": "Public Works Rep.",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Brent Edmonds",
+          "title": "Planning Board Representative",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": null,
+      "next_meeting": null
+    },
+    {
+      "name": "Sewer Commission",
+      "slug": "sewer-commission",
+      "url": "https://www.pembroke-nh.com/agendacenter",
+      "members": [
+        {
+          "name": "Paulette Malo",
+          "title": "Office Manager",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": null,
+      "next_meeting": null
+    },
+    {
+      "name": "Water Works",
+      "slug": "water-works",
+      "url": "https://www.pembroke-nh.com/agendacenter",
+      "members": [
+        {
+          "name": "Matthew Gagne",
+          "title": "Superintendent",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Lynne Bledsoe Saint Coeur",
+          "title": "Administrative Bookkeeper",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Thomas Petit",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Edward Lavallee",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Bruce Kudrick",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Lawrence Plourde",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Kevin Brasley",
+          "title": "Chair",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": "Meets monthly at the Water Works office on Union Street",
+      "next_meeting": null
+    },
+    {
+      "name": "Zoning Board of Adjustment",
+      "slug": "zoning-board-of-adjustment",
+      "url": "https://www.pembroke-nh.com/agendacenter",
+      "members": [
+        {
+          "name": "Bruce Kudrick",
+          "title": "Chair",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Dana Carlucci",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Thomas Hebert",
+          "title": "Vice Chair",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Natalie Glisson",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Blakely V. Miner III",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Safiya Wazir",
+          "title": "Alternate",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": "Meets as needed when applications are received",
+      "next_meeting": null
+    },
+    {
+      "name": "Library Trustees",
+      "slug": "library-trustees",
+      "url": "https://www.pembroke-nh.com/agendacenter",
+      "members": [
+        {
+          "name": "Susanne Whitbeck",
+          "title": "Vice Chair",
+          "term_ends": "2026",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Shelley Fowler",
+          "title": "Treasurer",
+          "term_ends": "2027",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Kaitlin Camidge",
+          "title": "Chair;",
+          "term_ends": "2026",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Judy Mitchell",
+          "title": "Alternate",
+          "term_ends": "2026",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Paul Baldwin",
+          "title": "Trustee",
+          "term_ends": "2028",
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Sharon Morris",
+          "title": "Trustee",
+          "term_ends": "2028",
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": "Meets monthly at the library",
+      "next_meeting": null
+    },
+    {
+      "name": "Economic Development Committee",
+      "slug": "economic-development-committee",
+      "url": "https://www.pembroke-nh.com/agendacenter",
+      "members": [
+        {
+          "name": "Carolyn Cronin",
+          "title": "Town Planner",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Clint Hanson",
+          "title": "Planning Board Representative",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Kate Castaldo-Rice",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Sandy Goulet",
+          "title": "Board of Selectmen Alt",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Bryan Christiansen",
+          "title": "Board of Selectmen Representative",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Charles Therrien",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Sharon Morris",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Jessica Stevenson",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": null,
+      "next_meeting": null
+    },
+    {
+      "name": "Trustees of Trust Funds",
+      "slug": "trustees-of-trust-funds",
+      "url": "https://www.pembroke-nh.com/agendacenter",
+      "members": [
+        {
+          "name": "Courtney Eschbach",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Gerry Fleury",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Zephan Wood",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": null,
+      "next_meeting": null
+    },
+    {
+      "name": "Range Roads Subcommittee",
+      "slug": "range-roads-subcommittee",
+      "url": "https://www.pembroke-nh.com/agendacenter",
+      "members": [
+        {
+          "name": "Carolyn Cronin",
+          "title": "Member",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Matt Miller",
+          "title": "Selectmen Representative",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Stephanie Cravotta",
+          "title": "Planning Board Representative",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Carol Bertsimas",
+          "title": "Conservation Commission Representative",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        },
+        {
+          "name": "Burton Curley",
+          "title": "Roads Committee Representative",
+          "term_ends": null,
+          "email": null,
+          "photo_url": null
+        }
+      ],
+      "meeting_when": null,
+      "next_meeting": null
+    }
+  ],
+  "state_reps": [
+    {
+      "chamber": "senate",
+      "district": "17",
+      "name": "Howard Pearl",
+      "party": "R",
+      "towns": "Allenstown, Barnstead, Canterbury, Chichester, Deerfield, Epsom, Loudon, Northfield, Northwood, Nottingham, Pembroke, Pittsfield",
+      "email": "Howard.Pearl@gc.nh.gov",
+      "phone": "603-271-4151",
+      "url": "https://gc.nh.gov/Senate/members/webpages/district17.aspx"
+    },
+    {
+      "chamber": "house",
+      "district": "Merrimack 12",
+      "name": "Dianne Schuett",
+      "party": "D",
+      "towns": "Pembroke",
+      "email": "Dianne.Schuett@gc.nh.gov",
+      "phone": null,
+      "url": "https://gc.nh.gov/house/members/webpages/member.aspx?pid=1194"
+    },
+    {
+      "chamber": "house",
+      "district": "Merrimack 12",
+      "name": "Brian Seaworth",
+      "party": "R",
+      "towns": "Pembroke",
+      "email": "brian.seaworth@gc.nh.gov",
+      "phone": "603-722-0807",
+      "url": "https://gc.nh.gov/house/members/webpages/member.aspx?pid=1107"
+    }
+  ]
+}
