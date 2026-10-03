@@ -1,16 +1,22 @@
 // app/api/alerts/send/route.ts — Webhook endpoint hit by Tyler's Mac cron
 // when new docs are detected. Fans out to subscribers by tag intersection,
-// sends via Resend.
+// sends via Resend (email) + per-user Telegram bots.
 //
-// Auth: shared secret in `Authorization: Bearer <ALERT_WEBHOOK_SECRET>`.
+// Auth: shared secret in `Authorization: Bearer <ALERT...T>`.
 // The cron script reads the same env var on Tyler's Mac.
 
 import { NextResponse } from "next/server";
 import { createHmac, timingSafeEqual } from "node:crypto";
-import { findSubscribersByTag, fingerprint } from "@/lib/db";
+import {
+  findRecipientsByTag,
+  getTelegramCreds,
+  getUnsubscribeToken,
+  fingerprint,
+} from "@/lib/db";
 import { tagForDoc } from "@/lib/categories";
 import { sendAlert } from "@/lib/email";
 import { loadOcrExport } from "@/lib/agenda-center";
+import { sendTelegramMessage, type TelegramDoc } from "@/lib/telegram";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -53,36 +59,88 @@ export async function POST(req: Request) {
     return NextResponse.json({ skipped: "no category match" });
   }
 
-  const subs = await findSubscribersByTag(categoryIds);
+  const recipients = await findRecipientsByTag(categoryIds);
   const ocr = loadOcrExport();
   const summary =
     ocr?.summaries?.[payload.guid]?.summary?.slice(0, 800) ?? "(no summary available)";
 
-  let sent = 0;
-  let failed = 0;
+  // Telegram doc shape is shared between the email and telegram senders.
+  const telegramDoc: TelegramDoc = {
+    committee: payload.committee,
+    docType: payload.docType,
+    meetingDate: payload.meetingDate,
+    title: payload.title,
+    url: payload.url,
+    summary,
+  };
+
+  let emailSent = 0;
+  let emailFailed = 0;
+  let telegramSent = 0;
+  let telegramFailed = 0;
+  let telegramSkipped = 0;
   const errors: string[] = [];
-  for (const sub of subs) {
-    const result = await sendAlert({
-      to: sub.email,
-      unsubscribeToken: sub.unsubscribe_token,
-      committee: payload.committee,
-      docType: payload.docType,
-      meetingDate: payload.meetingDate,
-      title: payload.title,
-      url: payload.url,
-      summary,
-    });
-    if (result.ok) {
-      sent += 1;
+
+  for (const sub of recipients) {
+    // Email: needs the user's unsubscribe_token, fetched per-recipient.
+    // We never include this token in any HTTP response that leaves the
+    // server.
+    const token = await getUnsubscribeToken(sub.clerk_id);
+    if (token) {
+      const result = await sendAlert({
+        to: sub.email,
+        unsubscribeToken: token,
+        committee: payload.committee,
+        docType: payload.docType,
+        meetingDate: payload.meetingDate,
+        title: payload.title,
+        url: payload.url,
+        summary,
+      });
+      if (result.ok) {
+        emailSent += 1;
+      } else {
+        emailFailed += 1;
+        errors.push(`email ${fingerprint(sub.email)}: ${result.error ?? "?"}`);
+      }
     } else {
-      failed += 1;
-      errors.push(`${fingerprint(sub.email)}: ${result.error ?? "?"}`);
+      // No profile row — should not happen for a tagged subscriber,
+      // but log defensively.
+      emailFailed += 1;
+      errors.push(`email ${fingerprint(sub.email)}: no profile row`);
+    }
+
+    // Telegram: per-user, fetched + decrypted on demand. Skipped silently
+    // for users who have not enabled Telegram. The bot token and chat_id
+    // are NEVER logged.
+    try {
+      const creds = await getTelegramCreds(sub.clerk_id);
+      if (!creds) {
+        telegramSkipped += 1;
+      } else {
+        const tg = await sendTelegramMessage(
+          creds.botToken,
+          creds.chatId,
+          telegramDoc,
+        );
+        if (tg.ok) {
+          telegramSent += 1;
+        } else {
+          telegramFailed += 1;
+          // tg.error is already redacted by lib/telegram.ts.
+          errors.push(`telegram ${fingerprint(sub.email)}: ${tg.error ?? "?"}`);
+        }
+      }
+    } catch (ex) {
+      telegramFailed += 1;
+      errors.push(`telegram ${fingerprint(sub.email)}: ${String(ex).slice(0, 200)}`);
     }
   }
 
   console.log(
     `[alert] guid=${payload.guid} categories=[${categoryIds.join(",")}] ` +
-      `subscribers=${subs.length} sent=${sent} failed=${failed}`,
+      `subscribers=${recipients.length} email=sent:${emailSent}/failed:${emailFailed} ` +
+      `telegram=sent:${telegramSent}/failed:${telegramFailed}/skipped:${telegramSkipped}`,
   );
   if (errors.length > 0 && errors.length <= 5) {
     for (const e of errors) console.log(`  - ${e}`);
@@ -91,8 +149,8 @@ export async function POST(req: Request) {
   return NextResponse.json({
     ok: true,
     matched_categories: categoryIds,
-    subscribers: subs.length,
-    sent,
-    failed,
+    subscribers: recipients.length,
+    email: { sent: emailSent, failed: emailFailed },
+    telegram: { sent: telegramSent, failed: telegramFailed, skipped: telegramSkipped },
   });
 }

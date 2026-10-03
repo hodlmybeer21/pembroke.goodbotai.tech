@@ -6,9 +6,22 @@
 //       email         TEXT UNIQUE NOT NULL
 //       categories    TEXT[] NOT NULL DEFAULT '{}'   -- selected category IDs
 //       unsubscribe_token UUID NOT NULL DEFAULT gen_random_uuid()
+//       telegram_chat_id_encrypted    BYTEA  -- AES-256-GCM ciphertext
+//       telegram_chat_id_nonce         BYTEA  -- 12-byte IV
+//       telegram_chat_id_tag           BYTEA  -- 16-byte GCM auth tag
+//       telegram_bot_token_encrypted   BYTEA  -- bot tokens are secrets
+//       telegram_bot_token_nonce        BYTEA
+//       telegram_bot_token_tag          BYTEA
+//       telegram_enabled  BOOLEAN NOT NULL DEFAULT false
 //       created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 //       updated_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 //     )
+//
+// The encrypted columns are ciphertext + nonce + auth tag (not a single
+// encrypted column) because AES-GCM needs all three. Encryption key
+// (TELEGRAM_COLUMN_KEY) lives in Vercel env vars, never in the repo or
+// in any user's data. Decryption happens only inside the dispatch loop
+// and the plaintext is dropped immediately after use.
 
 import { sql } from "@vercel/postgres";
 import { createHash, randomBytes, randomUUID } from "node:crypto";
@@ -19,9 +32,16 @@ export type Profile = {
   email: string;
   categories: string[];
   unsubscribe_token: string;
+  telegram_enabled: boolean;
   created_at: Date;
   updated_at: Date;
 };
+
+// Public profile shape — what the settings page can return to the user.
+// Never includes telegram_*_encrypted columns or unsubscribe_token (the
+// unsubscribe token is only used to build unsubscribe URLs in emails
+// and never needs to leave the server).
+export type PublicProfile = Pick<Profile, "email" | "categories" | "telegram_enabled">;
 
 export async function ensureSchema(): Promise<void> {
   await sql`
@@ -30,6 +50,13 @@ export async function ensureSchema(): Promise<void> {
       email TEXT UNIQUE NOT NULL,
       categories TEXT[] NOT NULL DEFAULT '{}',
       unsubscribe_token UUID NOT NULL,
+      telegram_chat_id_encrypted BYTEA,
+      telegram_chat_id_nonce BYTEA,
+      telegram_chat_id_tag BYTEA,
+      telegram_bot_token_encrypted BYTEA,
+      telegram_bot_token_nonce BYTEA,
+      telegram_bot_token_tag BYTEA,
+      telegram_enabled BOOLEAN NOT NULL DEFAULT false,
       created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
       updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
     )
@@ -39,7 +66,7 @@ export async function ensureSchema(): Promise<void> {
 export async function getProfile(clerkId: string): Promise<Profile | null> {
   await ensureSchema();
   const r = await sql<Profile>`
-    SELECT clerk_id, email, categories, unsubscribe_token, created_at, updated_at
+    SELECT clerk_id, email, categories, unsubscribe_token, telegram_enabled, created_at, updated_at
       FROM profiles WHERE clerk_id = ${clerkId}
   `;
   return r.rows[0] ?? null;
@@ -61,7 +88,7 @@ export async function upsertProfile(
       SET email = EXCLUDED.email,
           categories = EXCLUDED.categories,
           updated_at = now()
-    RETURNING clerk_id, email, categories, unsubscribe_token, created_at, updated_at
+    RETURNING clerk_id, email, categories, unsubscribe_token, telegram_enabled, created_at, updated_at
   `;
   return r.rows[0];
 }
@@ -73,17 +100,112 @@ function toPgTextArray(values: string[]): string {
   return `{${escaped.join(",")}}`;
 }
 
-export async function findSubscribersByTag(tags: string[]): Promise<Profile[]> {
+// Minimal recipient shape for dispatch — never include the unsubscribe
+// token or any encrypted columns. We do a second per-recipient query
+// to fetch the encrypted creds only when actually sending.
+export type DispatchRecipient = { clerk_id: string; email: string };
+
+export async function findRecipientsByTag(tags: string[]): Promise<DispatchRecipient[]> {
   await ensureSchema();
-  // Postgres array overlap: `categories && $1::text[]`
-  // We pass a TEXT[] literal because @vercel/postgres doesn't auto-serialize JS arrays.
   const pgArray = toPgTextArray(tags);
-  const r = await sql<Profile>`
-    SELECT clerk_id, email, categories, unsubscribe_token, created_at, updated_at
+  const r = await sql<DispatchRecipient>`
+    SELECT clerk_id, email
       FROM profiles
       WHERE categories && ${pgArray}::text[]
   `;
   return r.rows;
+}
+
+export type TelegramCreds = {
+  chatId: string;
+  botToken: string;
+};
+
+// Fetch + decrypt a single user's Telegram creds. Returns null if the
+// user has not enabled Telegram or has not provided creds.
+export async function getTelegramCreds(clerkId: string): Promise<TelegramCreds | null> {
+  await ensureSchema();
+  const r = await sql<{
+    chat_id_ct: Buffer | null;
+    chat_id_nonce: Buffer | null;
+    chat_id_tag: Buffer | null;
+    bot_ct: Buffer | null;
+    bot_nonce: Buffer | null;
+    bot_tag: Buffer | null;
+    enabled: boolean;
+  }>`
+    SELECT
+      telegram_chat_id_encrypted AS chat_id_ct,
+      telegram_chat_id_nonce     AS chat_id_nonce,
+      telegram_chat_id_tag       AS chat_id_tag,
+      telegram_bot_token_encrypted AS bot_ct,
+      telegram_bot_token_nonce   AS bot_nonce,
+      telegram_bot_token_tag     AS bot_tag,
+      telegram_enabled           AS enabled
+    FROM profiles WHERE clerk_id = ${clerkId}
+  `;
+  const row = r.rows[0];
+  if (!row || !row.enabled) return null;
+  if (!row.chat_id_ct || !row.chat_id_nonce || !row.chat_id_tag) return null;
+  if (!row.bot_ct || !row.bot_nonce || !row.bot_tag) return null;
+
+  const { open } = await import("./crypto");
+  return {
+    chatId: open(row.chat_id_ct, row.chat_id_nonce, row.chat_id_tag),
+    botToken: open(row.bot_ct, row.bot_nonce, row.bot_tag),
+  };
+}
+
+// Fetch the unsubscribe token for a single user. Used by the alert
+// dispatch loop to build per-recipient unsubscribe URLs. Never include
+// this in any JSON response that leaves the server.
+export async function getUnsubscribeToken(clerkId: string): Promise<string | null> {
+  await ensureSchema();
+  const r = await sql<{ unsubscribe_token: string }>`
+    SELECT unsubscribe_token FROM profiles WHERE clerk_id = ${clerkId}
+  `;
+  return r.rows[0]?.unsubscribe_token ?? null;
+}
+
+// Store or clear a user's Telegram creds. `enabled=false` + empty creds
+// disables Telegram for the user; `enabled=true` + valid creds enables it.
+// Ciphertext / nonce / tag come from lib/crypto.seal() (AES-256-GCM).
+export async function setTelegramCreds(
+  clerkId: string,
+  creds: { chatId: string; botToken: string; enabled: boolean } | null,
+): Promise<{ telegram_enabled: boolean }> {
+  await ensureSchema();
+  if (!creds || !creds.enabled) {
+    await sql`
+      UPDATE profiles SET
+        telegram_enabled = false,
+        telegram_chat_id_encrypted = NULL,
+        telegram_chat_id_nonce = NULL,
+        telegram_chat_id_tag = NULL,
+        telegram_bot_token_encrypted = NULL,
+        telegram_bot_token_nonce = NULL,
+        telegram_bot_token_tag = NULL,
+        updated_at = now()
+      WHERE clerk_id = ${clerkId}
+    `;
+    return { telegram_enabled: false };
+  }
+  const { seal } = await import("./crypto");
+  const chat = seal(creds.chatId);
+  const bot = seal(creds.botToken);
+  await sql`
+    UPDATE profiles SET
+      telegram_enabled = true,
+      telegram_chat_id_encrypted = ${chat.ct},
+      telegram_chat_id_nonce     = ${chat.nonce},
+      telegram_chat_id_tag       = ${chat.tag},
+      telegram_bot_token_encrypted = ${bot.ct},
+      telegram_bot_token_nonce   = ${bot.nonce},
+      telegram_bot_token_tag     = ${bot.tag},
+      updated_at = now()
+    WHERE clerk_id = ${clerkId}
+  `;
+  return { telegram_enabled: true };
 }
 
 export async function unsubscribeByToken(token: string): Promise<boolean> {

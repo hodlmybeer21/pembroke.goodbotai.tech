@@ -40,6 +40,7 @@ export default async function SettingsPage() {
 
   const profile = await getProfile(userId);
   const initialCategories = profile?.categories ?? [];
+  const initialTelegramEnabled = profile?.telegram_enabled ?? false;
   const unsubscribeToken = profile?.unsubscribe_token ?? "";
 
   return (
@@ -47,11 +48,12 @@ export default async function SettingsPage() {
       <h1 className="text-2xl font-semibold mb-1">Alert preferences</h1>
       <p className="text-sm text-stone-500 mb-6">
         Pick the topics you care about. New postings matching any of them will
-        arrive in your inbox.
+        arrive in your inbox (and Telegram, if you set it up below).
       </p>
       <SettingsForm
         email={email}
         initialCategories={initialCategories}
+        initialTelegramEnabled={initialTelegramEnabled}
         unsubscribeToken={unsubscribeToken}
       />
     </div>

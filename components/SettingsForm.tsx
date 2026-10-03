@@ -6,14 +6,26 @@ import { CATEGORIES } from "@/lib/categories";
 interface SettingsFormProps {
   email: string;
   initialCategories: string[];
+  initialTelegramEnabled: boolean;
   unsubscribeToken: string;
 }
 
-export function SettingsForm({ email, initialCategories, unsubscribeToken }: SettingsFormProps) {
+export function SettingsForm({
+  email,
+  initialCategories,
+  initialTelegramEnabled,
+  unsubscribeToken,
+}: SettingsFormProps) {
   const [selected, setSelected] = useState<Set<string>>(new Set(initialCategories));
   const [saving, setSaving] = useState(false);
   const [savedAt, setSavedAt] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [tgEnabled, setTgEnabled] = useState(initialTelegramEnabled);
+  const [tgToken, setTgToken] = useState("");
+  const [tgChatId, setTgChatId] = useState("");
+  const [tgSaving, setTgSaving] = useState(false);
+  const [tgStatus, setTgStatus] = useState<null | { ok: boolean; msg: string }>(null);
+  const [tgExpanded, setTgExpanded] = useState(false);
 
   function toggle(id: string) {
     setSelected((prev) => {
@@ -44,6 +56,53 @@ export function SettingsForm({ email, initialCategories, unsubscribeToken }: Set
       setError(String(ex));
     } finally {
       setSaving(false);
+    }
+  }
+
+  async function saveTelegram() {
+    setTgSaving(true);
+    setTgStatus(null);
+    try {
+      const res = await fetch("/api/profile/telegram", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          botToken: tgToken,
+          chatId: tgChatId,
+          enabled: true,
+        }),
+      });
+      const j = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        throw new Error(j.error ?? `HTTP ${res.status}`);
+      }
+      setTgStatus({ ok: true, msg: "Telegram alerts enabled. New postings will land in your chat." });
+      setTgEnabled(true);
+      setTgToken("");
+      setTgChatId("");
+    } catch (ex) {
+      setTgStatus({ ok: false, msg: String(ex) });
+    } finally {
+      setTgSaving(false);
+    }
+  }
+
+  async function disableTelegram() {
+    if (!confirm("Stop getting Telegram alerts? You'll still get emails if you pick categories.")) return;
+    setTgSaving(true);
+    setTgStatus(null);
+    try {
+      const res = await fetch("/api/profile/telegram", { method: "DELETE" });
+      const j = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        throw new Error(j.error ?? `HTTP ${res.status}`);
+      }
+      setTgStatus({ ok: true, msg: "Telegram alerts disabled." });
+      setTgEnabled(false);
+    } catch (ex) {
+      setTgStatus({ ok: false, msg: String(ex) });
+    } finally {
+      setTgSaving(false);
     }
   }
 
@@ -106,6 +165,114 @@ export function SettingsForm({ email, initialCategories, unsubscribeToken }: Set
         )}
         {error && <span className="text-sm text-red-700">Error: {error}</span>}
       </div>
+
+      {/* Telegram opt-in */}
+      <section className="pt-4 border-t border-stone-200">
+        <div className="flex items-baseline justify-between mb-2">
+          <h3 className="font-medium text-stone-800 text-sm">Telegram alerts</h3>
+          {tgEnabled && (
+            <span className="text-xs text-success font-medium">Enabled</span>
+          )}
+        </div>
+        {!tgExpanded && !tgEnabled && (
+          <p className="text-sm text-stone-600 mb-2">
+            Get new-posting summaries in your Telegram, not just email.
+            You'll need to make your own bot (takes 2 minutes) —{" "}
+            <button
+              type="button"
+              onClick={() => setTgExpanded(true)}
+              className="underline text-brand-700"
+            >
+              show me how
+            </button>
+            .
+          </p>
+        )}
+        {tgExpanded && (
+          <ol className="text-xs text-stone-600 list-decimal pl-5 space-y-1 mb-3">
+            <li>
+              In Telegram, message <strong>@BotFather</strong>. Send{" "}
+              <code className="bg-stone-100 px-1 rounded">/newbot</code>, name it, and copy
+              the HTTP API token.
+            </li>
+            <li>
+              Message your new bot (search for it by username). Send{" "}
+              <code className="bg-stone-100 px-1 rounded">/start</code>.
+            </li>
+            <li>
+              Visit{" "}
+              <code className="bg-stone-100 px-1 rounded text-[10px]">
+                https://api.telegram.org/bot&lt;TOKEN&gt;/getUpdates
+              </code>{" "}
+              and find the <code className="bg-stone-100 px-1 rounded">chat.id</code> number.
+            </li>
+            <li>Paste the token and chat.id below.</li>
+          </ol>
+        )}
+        {tgEnabled ? (
+          <div className="flex items-center gap-2">
+            <button
+              onClick={disableTelegram}
+              disabled={tgSaving}
+              className="px-3 py-1.5 border border-stone-300 rounded-md text-sm text-stone-700 hover:bg-stone-50 disabled:opacity-50"
+            >
+              {tgSaving ? "Disabling…" : "Disable Telegram alerts"}
+            </button>
+          </div>
+        ) : tgExpanded ? (
+          <div className="space-y-2">
+            <input
+              type="password"
+              value={tgToken}
+              onChange={(e) => setTgToken(e.target.value)}
+              placeholder="Bot token (from @BotFather)"
+              aria-label="Telegram bot token"
+              className="w-full px-3 py-2 border border-stone-300 rounded-md text-sm bg-white"
+              autoComplete="off"
+              spellCheck={false}
+            />
+            <input
+              type="text"
+              value={tgChatId}
+              onChange={(e) => setTgChatId(e.target.value)}
+              placeholder="Your chat.id (a number)"
+              aria-label="Telegram chat id"
+              className="w-full px-3 py-2 border border-stone-300 rounded-md text-sm bg-white"
+              autoComplete="off"
+            />
+            <div className="flex items-center gap-2">
+              <button
+                onClick={saveTelegram}
+                disabled={tgSaving || !tgToken || !tgChatId}
+                className="px-4 py-2 bg-brand-600 text-white text-sm font-medium rounded-md hover:bg-brand-700 disabled:bg-stone-300"
+              >
+                {tgSaving ? "Saving…" : "Enable Telegram alerts"}
+              </button>
+              <button
+                onClick={() => setTgExpanded(false)}
+                className="text-xs text-stone-500 underline"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        ) : null}
+        {tgStatus && (
+          <div
+            className={
+              "mt-2 text-xs " +
+              (tgStatus.ok ? "text-success" : "text-red-700")
+            }
+          >
+            {tgStatus.msg}
+          </div>
+        )}
+        <p className="text-[11px] text-stone-500 mt-2">
+          Your bot token and chat.id are stored encrypted on our server
+          (AES-256-GCM) and only used to send you alerts. They're never
+          logged, never shared, and never sent back to your browser.
+        </p>
+      </section>
 
       <details className="pt-2 border-t border-stone-200 text-sm text-stone-600 group">
         <summary className="cursor-pointer text-stone-700 font-medium list-none flex items-center gap-2 py-2">
