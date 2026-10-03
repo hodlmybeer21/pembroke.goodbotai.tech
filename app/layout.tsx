@@ -19,11 +19,28 @@ export const metadata: Metadata = {
     "What Pembroke NH town government is doing — meetings, agendas, decisions. Daily brief for residents.",
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({
+  children,
+  searchParams,
+}: {
+  children: React.ReactNode;
+  searchParams?: { snow?: string };
+}) {
   // Snow emergency banner sits above the navy header. The fetch is
   // best-effort — if the iCal feed is slow or down, we render nothing
   // rather than blocking the whole page.
-  const snow = await getActiveSnowNotice().catch(() => null);
+  //
+  // For testing: ?snow=test forces a fake notice. Used by Tyler before
+  // the first real storm to verify the layout, dismiss behavior, and
+  // mobile rendering. Not exposed in any UI.
+  const isSnowTest = searchParams?.snow === "test";
+  const snow = isSnowTest
+    ? {
+        title: "Snow emergency parking ban in effect",
+        until: new Date(Date.now() + 12 * 3600 * 1000),
+        url: "https://www.pembroke-nh.com/1303/Winter-Parking-and-Snow-Emergency-Info",
+      }
+    : await getActiveSnowNotice().catch(() => null);
   return (
     <ClerkProviderWrapper>
       <html lang="en">
