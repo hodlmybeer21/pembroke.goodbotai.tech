@@ -18,6 +18,19 @@ export const metadata: Metadata = {
   title: "Pembroke, NH — town brief",
   description:
     "What Pembroke NH town government is doing — meetings, agendas, decisions. Daily brief for residents.",
+  openGraph: {
+    title: "Pembroke, NH — town brief",
+    description:
+      "Pembroke's town government, in plain English. Meetings, agendas, trash day, who to call. Refreshed every hour.",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Pembroke, NH" }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pembroke, NH — town brief",
+    description: "Pembroke's town government, in plain English.",
+    images: ["/og-default.svg"],
+  },
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

@@ -52,6 +52,19 @@ export default function AskPage() {
 
   return (
     <div className="container-page">
+      <head>
+        <title>Ask the bot — Pembroke, NH</title>
+        <meta name="description" content="Plain-language questions about Pembroke town government. Answers from the town's own data." />
+        <meta property="og:title" content="Ask the Pembroke town bot" />
+        <meta property="og:description" content="Plain-English questions about meetings, services, hours, fees. Answers from the town's own data." />
+        <meta property="og:image" content="https://pembroke-goodbotai-tech.vercel.app/og-ask.svg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ask the Pembroke town bot" />
+        <meta name="twitter:description" content="Plain-English questions about meetings, services, hours, fees." />
+        <meta name="twitter:image" content="https://pembroke-goodbotai-tech.vercel.app/og-ask.svg" />
+      </head>
       <header className="mb-8">
         <h1 className="font-serif text-3xl font-semibold text-stone-900 tracking-tight">
           Ask the bot
