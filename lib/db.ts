@@ -11,7 +11,7 @@
 //     )
 
 import { sql } from "@vercel/postgres";
-import { createHash, randomBytes } from "node:crypto";
+import { createHash, randomBytes, randomUUID } from "node:crypto";
 import "server-only";
 
 export type Profile = {
@@ -29,7 +29,7 @@ export async function ensureSchema(): Promise<void> {
       clerk_id TEXT PRIMARY KEY,
       email TEXT UNIQUE NOT NULL,
       categories TEXT[] NOT NULL DEFAULT '{}',
-      unsubscribe_token UUID NOT NULL DEFAULT gen_random_uuid(),
+      unsubscribe_token UUID NOT NULL,
       created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
       updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
     )
@@ -51,9 +51,12 @@ export async function upsertProfile(
   categories: string[],
 ): Promise<Profile> {
   await ensureSchema();
+  // Generate UUID in app code — avoids needing pgcrypto / uuid-ossp extensions
+  // on the serverless Postgres database.
+  const token = randomUUID();
   const r = await sql<Profile>`
-    INSERT INTO profiles (clerk_id, email, categories, updated_at)
-    VALUES (${clerkId}, ${email}, ${categories as unknown as string}, now())
+    INSERT INTO profiles (clerk_id, email, categories, unsubscribe_token, updated_at)
+    VALUES (${clerkId}, ${email}, ${categories as unknown as string}, ${token}, now())
     ON CONFLICT (clerk_id) DO UPDATE
       SET email = EXCLUDED.email,
           categories = EXCLUDED.categories,
@@ -63,13 +66,22 @@ export async function upsertProfile(
   return r.rows[0];
 }
 
+function toPgTextArray(values: string[]): string {
+  // Escape backslashes + double quotes, then wrap in {}.
+  // Postgres TEXT[] literal: {val1,val2,"esc\,ape"}
+  const escaped = values.map((v) => v.replace(/\\/g, "\\\\").replace(/"/g, '\\"'));
+  return `{${escaped.join(",")}}`;
+}
+
 export async function findSubscribersByTag(tags: string[]): Promise<Profile[]> {
   await ensureSchema();
-  // Postgres array overlap: `categories && tags`
+  // Postgres array overlap: `categories && $1::text[]`
+  // We pass a TEXT[] literal because @vercel/postgres doesn't auto-serialize JS arrays.
+  const pgArray = toPgTextArray(tags);
   const r = await sql<Profile>`
     SELECT clerk_id, email, categories, unsubscribe_token, created_at, updated_at
       FROM profiles
-      WHERE categories && ${tags as unknown as string}
+      WHERE categories && ${pgArray}::text[]
   `;
   return r.rows;
 }
