@@ -39,6 +39,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 <NavLink href="/calendar">Calendar</NavLink>
                 <NavLink href="/agendas">Agendas</NavLink>
                 <NavLink href="/archive">Archive</NavLink>
+                <NavLink href="/trash">Trash</NavLink>
+                <NavLink href="/officials">Officials</NavLink>
                 <NavLink href="/ask">Ask</NavLink>
                 <NavLink href="/about">About</NavLink>
                 <span className="border-l border-white/20 pl-4 ml-2">
@@ -48,6 +50,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               <nav className="flex sm:hidden gap-4 text-sm text-white/90 items-center">
                 <NavLink href="/calendar">Calendar</NavLink>
                 <NavLink href="/agendas">Agendas</NavLink>
+                <NavLink href="/trash">Trash</NavLink>
                 <NavLink href="/ask">Ask</NavLink>
               </nav>
             </div>

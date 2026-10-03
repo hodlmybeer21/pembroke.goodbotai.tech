@@ -18,6 +18,7 @@ import { fetchAgendaCenter, loadOcrExport } from "@/lib/agenda-center";
 import { fetchAllFeeds, filterHorizon } from "@/lib/ical";
 import { loadTownInfo, selectRelevantPages } from "@/lib/town-info";
 import { loadArchive, selectArchiveEntries, isPastMeetingQuestion, type ArchiveEntry } from "@/lib/archive";
+import { loadTrashRoutes, searchStreets, curbsideReminder } from "@/lib/trash";
 
 export const runtime = "nodejs";
 export const maxDuration = 10; // seconds
@@ -34,6 +35,8 @@ interface AskContext {
   summaries: string[];
   townPages: { slug: string; text: string; url?: string }[];
   archiveEntries: ArchiveEntry[];
+  trashRoutes: ReturnType<typeof loadTrashRoutes>;
+  trashHits: ReturnType<typeof searchStreets>;
 }
 
 const PAGE_URL: Record<string, string> = {
@@ -243,7 +246,13 @@ async function buildContext(q: string): Promise<AskContext> {
     ? selectRelevantPages(q, townInfo).map((p) => ({ ...p, url: PAGE_URL[p.slug] }))
     : [];
   const archiveEntries = archive ? selectArchiveEntries(q, archive) : [];
-  return { meetings, summaries, townPages, archiveEntries };
+  // Trash lookup. Only run if the question is plausibly about trash
+  // pickup day — keeps the no-op path fast.
+  const trashRoutes = loadTrashRoutes();
+  const trashHits = /trash|rubbish|garbage|pickup|recycl/i.test(q) && trashRoutes
+    ? searchStreets(q, trashRoutes, 3)
+    : [];
+  return { meetings, summaries, townPages, archiveEntries, trashRoutes, trashHits };
 }
 
 function stubAnswer(q: string, ctx: AskContext): string {
@@ -261,7 +270,33 @@ function stubAnswer(q: string, ctx: AskContext): string {
     (ctx.townPages.length === 0 && !namedCommittee)
   );
 
-  if (showArchive) {
+  // Trash lookup: if the question is about a specific street's trash
+  // day and we found a match, lead with the day. This is the highest
+  // signal answer the user can get — they're asking "when does my
+  // street get picked up".
+  const showTrash =
+    ctx.trashHits.length > 0 &&
+    /trash|rubbish|garbage|pickup|recycl|when.*(does|is|do)/i.test(q) &&
+    !namedCommittee &&
+    !showArchive;
+
+  if (showTrash) {
+    const hits = ctx.trashHits.slice(0, 3);
+    lines.push(
+      hits.length === 1
+        ? `**${hits[0].street}** — pickup is on **${hits[0].day}**.`
+        : `Closest matches in the town's route list:`,
+    );
+    if (hits.length > 1) {
+      for (const h of hits) {
+        lines.push(`- **${h.street}** — ${h.day}`);
+      }
+    }
+    lines.push("");
+    lines.push(curbsideReminder(hits[0].day));
+    lines.push("");
+    lines.push("Search the full route list at pembroke.goodbotai.tech/trash.");
+  } else if (showArchive) {
     lines.push("Recent from the meeting archive:");
     for (const e of ctx.archiveEntries.slice(0, 4)) {
       lines.push("");

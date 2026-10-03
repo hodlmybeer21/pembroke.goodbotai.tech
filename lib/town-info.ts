@@ -67,6 +67,7 @@ export function selectRelevantPages(
     [/storm.*water|drainage|runoff/, ["stormwater"]],
     [/road|bridge|culvert|pothole/, ["roads_committee", "roadwork_crews", "public_works"]],
     [/town.hall|hours.*clerk|government|admin/, ["town_info"]],
+    [/when.*(trash|rubbish|garbage|pickup|recycl)|trash.*day|rubbish.*day|pickup.*day/, ["solid_waste_collection"]], // direct "when is my trash" → answerable via /trash page
   ];
 
   // Score each slug by how many patterns matched it. Slugs that matched
