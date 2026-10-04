@@ -270,19 +270,20 @@ function stubAnswer(q: string, ctx: AskContext): string {
   );
   const namedCommittee = findNamedCommittee(q, ctx.meetings, archiveCommittees);
 
-  // If the question is about a past meeting (what happened, last meeting,
-  // etc.) and we have archive entries, lead with them. Also trigger when
-  // a committee is named in the question but we have no upcoming meeting
-  // for it — the user is likely asking about historical action.
-  const committeeButNoUpcoming =
+  // If the question is about a past meeting, lead with the archive
+  // NO MATTER WHAT. This is the highest-signal answer for past-meeting
+  // questions and we never want it deprioritized to a town-info page.
+  // The user is asking what happened, not where something is.
+  const showArchive =
+    ctx.archiveEntries.length > 0 && isPastMeetingQuestion(q);
+  // If not a past-meeting question but the question names a committee
+  // with no upcoming meeting (and we have archive for it), still
+  // surface archive as a historical fallback.
+  const showArchiveFallback =
+    !showArchive &&
     namedCommittee !== null &&
     ctx.meetings.filter((m) => m.committee === namedCommittee).length === 0 &&
     ctx.archiveEntries.some((e) => e.committee === namedCommittee);
-  const showArchive =
-    ctx.archiveEntries.length > 0 &&
-    (isPastMeetingQuestion(q) ||
-      (ctx.townPages.length === 0 && !namedCommittee) ||
-      committeeButNoUpcoming);
 
   // Trash lookup: if the question is about a specific street's trash
   // day and we found a match, lead with the day. This is the highest
@@ -292,7 +293,8 @@ function stubAnswer(q: string, ctx: AskContext): string {
     ctx.trashHits.length > 0 &&
     /trash|rubbish|garbage|pickup|recycl|when.*(does|is|do)/i.test(q) &&
     !namedCommittee &&
-    !showArchive;
+    !showArchive &&
+    !showArchiveFallback;
 
   if (showTrash) {
     const hits = ctx.trashHits.slice(0, 3);
@@ -321,6 +323,32 @@ function stubAnswer(q: string, ctx: AskContext): string {
         : e.summary;
       lines.push(summary);
       lines.push(`Read the full ${e.doc_type.toLowerCase()}: ${e.url}`);
+    }
+  } else if (showArchiveFallback && namedCommittee) {
+    // Committee was named in the question but no upcoming meeting
+    // exists. Surface the most recent archive entries for that
+    // committee specifically, then offer the next-meeting
+    // fallback if the page exists.
+    const committeeEntries = ctx.archiveEntries
+      .filter((e) => e.committee === namedCommittee)
+      .slice(0, 4);
+    if (committeeEntries.length > 0) {
+      lines.push(
+        `No upcoming ${namedCommittee} meeting is on the calendar. Most recent in the archive:`,
+      );
+      for (const e of committeeEntries) {
+        lines.push("");
+        lines.push(`**${e.committee} — ${e.meeting_date}** (${e.doc_type})`);
+        const summary = e.summary.length > 400
+          ? e.summary.slice(0, 399).trimEnd() + "…"
+          : e.summary;
+        lines.push(summary);
+        lines.push(`Read the full ${e.doc_type.toLowerCase()}: ${e.url}`);
+      }
+    } else {
+      lines.push(
+        `No upcoming or archived ${namedCommittee} meetings found.`,
+      );
     }
   } else if (namedCommittee) {
     const matches = ctx.meetings.filter((m) => m.committee === namedCommittee).slice(0, 3);
@@ -359,7 +387,7 @@ function stubAnswer(q: string, ctx: AskContext): string {
   // Also surface topically-related meetings (only if we didn't already lead
   // with meetings). For example, a "vote" question gets a town-info page
   // AND a "next Select Board meeting" line.
-  if (!namedCommittee && !showArchive) {
+  if (!namedCommittee && !showArchive && !showArchiveFallback) {
     const relevantCommittees = topicCommittees(q);
     let meetingHits: Meeting[] = [];
     if (relevantCommittees.length > 0) {
@@ -431,29 +459,16 @@ interface HistoryMessage {
 
 function resolvePronouns(
   q: string,
-  history: HistoryMessage[],
+  _history: HistoryMessage[],
 ): string {
-  // For stub-mode pronoun / context resolution. The real LLM handles
-  // this natively, but the stub needs to expand "what about the
-  // budget" to something the keyword map can match.
-  if (history.length === 0) return q;
-  const ql = q.toLowerCase().trim();
-  // Only rewrite short follow-up-style questions.
-  if (q.length > 120) return q;
-  const looksLikeFollowup =
-    /^(what|when|where|how|who|why|did|do|does|is|are|can|could|would|should|tell|show|more|else|also|and|but|so|then)\b/i.test(
-      ql,
-    ) ||
-    /\b(that|this|it|those|these|they|their|them)\b/i.test(ql) ||
-    /\b(about|regarding|on)\s+\w+\s*$/i.test(ql);
-  if (!looksLikeFollowup) return q;
-  // Find the most recent user message and prepend the topic.
-  for (let i = history.length - 1; i >= 0; i--) {
-    const m = history[i];
-    if (m.role === "user" && m.content.trim() && m.content !== q) {
-      return `${q} (continuing from: ${m.content})`;
-    }
-  }
+  // The LLM handles pronoun resolution natively via the real history
+  // array we pass it. The stub does NOT benefit from expanding the
+  // question with prior context — that just leaks unrelated keywords
+  // (e.g. "library" from an earlier question) into the keyword map
+  // and routes the answer to the wrong page. So we return q unchanged
+  // for both paths; the stub will still use history for things like
+  // "what was the previous answer" if we add that later, but the
+  // keyword map operates on the literal current question.
   return q;
 }
 

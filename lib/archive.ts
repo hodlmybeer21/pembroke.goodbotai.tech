@@ -135,7 +135,7 @@ function findNamedCommittee(qLow: string, known: string[]): string | null {
  */
 export function isPastMeetingQuestion(q: string): boolean {
   const qLow = q.toLowerCase();
-  return /(what happened|what did (they|the).*(do|decide|vote|approve|pass)|last meeting|recent meeting|previous meeting|past meeting|meeting minutes|meeting summary|recap|wrap.?up|what was discussed)/.test(
+  return /(what happened|what did (they|the).*(do|decide|vote|approve|pass)|last meeting|recent meeting|previous meeting|past meeting|meeting minutes|meeting summary|recap|wrap.?up|what was discussed|what was the last|what was the most recent|what was the previous|what('?s| was) the last|what('?s| was) the most recent|summary of|recap of|tell me about the (last|recent|previous)|give me a (recap|summary)|what('?s| is) (happening|happened)|what('?s| is) (new|coming up))/i.test(
     qLow,
   );
 }
