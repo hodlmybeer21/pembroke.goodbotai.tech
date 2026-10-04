@@ -11,12 +11,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ShareButton } from "@/components/ShareButton";
 
-interface Source {
-  slug: string;
-  title: string;
-  url: string;
-}
-
 interface AskResponse {
   answer: string;
   q: string;
@@ -31,7 +25,6 @@ interface ChatMessage {
   id: string;
   role: "user" | "bot";
   content: string;
-  sources?: Source[];
   townPages?: string[];
   archiveCount?: number;
   mode?: "llm" | "stub";
@@ -151,7 +144,6 @@ export default function AskPage() {
         id: genId(),
         role: "bot",
         content: data.answer ?? "No answer came back.",
-        sources: data.sources,
         townPages: data.town_pages_in_context,
         archiveCount: data.archive_entries_in_context,
         mode: data.mode,
