@@ -26,8 +26,10 @@ export const FEEDS: ICalFeed[] = [
   { committee: "Budget Committee", catId: 36 },
 ];
 
-const BASE_URL =
-  "https://www.pembroke-nh.com/common/modules/iCalendar/iCalendar.aspx";
+// The town's iCal feed endpoint. CivicEngage's actual feed lives at
+// /ical.ics?catID=N — the older /common/modules/iCalendar/iCalendar.aspx
+// path now 404s, so use the working endpoint.
+const BASE_URL = "https://www.pembroke-nh.com/ical.ics";
 
 const HOLIDAY_KEYWORDS = [
   "columbus", "indigenous peoples", "veterans day", "thanksgiving",
