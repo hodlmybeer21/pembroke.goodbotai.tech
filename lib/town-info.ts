@@ -61,7 +61,10 @@ export function selectRelevantPages(
     [/police|cop|law.enforce|crime|emergency.*911/, ["police_department"]],
     [/plan|zoning|build.*permit|setback|easement|subdivision/, ["planning_building", "facility_permit"]],
     [/vital.record|marriage|death|birth|certif/, ["vital_records"]],
-    [/vot|elect|register|polling|absentee.ballot/, ["voter_registration"]],
+    // "vote" alone is too broad — it matches "Did they vote on the
+    // road project?" and routes to voter_registration. Require the
+    // fuller word "voter" or related election terms instead.
+    [/voter|election|polling|absentee|ballot|register.to.vote/, ["voter_registration"]],
     [/tax|assess|prop.*valu|abatement/, ["assessing"]],
     [/cemetery|burial|grave|monument/, ["cemetery"]],
     [/storm.*water|drainage|runoff/, ["stormwater"]],
