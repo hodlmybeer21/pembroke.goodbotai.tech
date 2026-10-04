@@ -14,6 +14,7 @@ import {
   fingerprint,
 } from "@/lib/db";
 import { tagForDoc } from "@/lib/categories";
+import { tag as tagImpact } from "@/lib/impact";
 import { sendAlert } from "@/lib/email";
 import { loadOcrExport } from "@/lib/agenda-center";
 import { sendTelegramMessage, type TelegramDoc } from "@/lib/telegram";
@@ -54,7 +55,14 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "invalid json" }, { status: 400 });
   }
 
-  const categoryIds = tagForDoc(payload.tags);
+  // If the client didn't compute impact tags (e.g. an older cron or
+  // a payload that pre-dates the tagger), do it here from the title +
+  // committee. Same logic as lib/impact.ts; lives server-side so the
+  // client doesn't need to mirror the keyword list.
+  const impactTags = payload.tags.length
+    ? payload.tags
+    : Array.from(tagImpact(payload.title ?? "", payload.committee ?? ""));
+  const categoryIds = tagForDoc(impactTags);
   if (categoryIds.length === 0) {
     return NextResponse.json({ skipped: "no category match" });
   }
