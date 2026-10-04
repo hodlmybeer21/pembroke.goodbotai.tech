@@ -19,6 +19,7 @@ import { fetchAllFeeds, filterHorizon } from "@/lib/ical";
 import { loadTownInfo, selectRelevantPages } from "@/lib/town-info";
 import { loadArchive, selectArchiveEntries, isPastMeetingQuestion, type ArchiveEntry } from "@/lib/archive";
 import { loadTrashRoutes, searchStreets, curbsideReminder } from "@/lib/trash";
+import { recordInterest } from "@/lib/interests";
 
 export const runtime = "nodejs";
 export const maxDuration = 10; // seconds
@@ -545,6 +546,7 @@ async function callLlm(
 export async function POST(req: Request) {
   let q = "";
   let history: HistoryMessage[] = [];
+  let sessionId = "";
   try {
     const body = await req.json();
     q = typeof body?.q === "string" ? body.q.trim() : "";
@@ -564,6 +566,12 @@ export async function POST(req: Request) {
             (m as HistoryMessage).content.length <= 1000,
         )
         .slice(-20);
+    }
+    // sessionId is an opaque random string from the visitor's localStorage.
+    // Used to track interest vectors so the bot can proactively surface
+    // matching new docs on their next visit. No PII.
+    if (typeof body?.sessionId === "string") {
+      sessionId = body.sessionId.trim().slice(0, 64);
     }
   } catch {
     // fall through
@@ -594,6 +602,48 @@ export async function POST(req: Request) {
     }
   } else {
     answer = stubAnswer(resolvedQ, ctx);
+  }
+
+  // Best-effort: record this question against the visitor's interest
+  // vector so future visits can surface matching new docs. Skip if
+  // no sessionId was provided.
+  if (sessionId) {
+    try {
+      const matchedCommittees = Array.from(
+        new Set(ctx.archiveEntries.map((e) => e.committee)),
+      );
+      // Extract a few keywords from the question. The full keyword
+      // map is in lib/town-info.ts but we just need rough topic
+      // signals for proactive matching — tokenize on word boundaries
+      // and skip stopwords.
+      const STOP = new Set([
+        "the", "a", "an", "and", "or", "but", "is", "are", "was", "were",
+        "be", "been", "do", "does", "did", "what", "when", "where", "how",
+        "why", "who", "i", "you", "we", "they", "he", "she", "it", "this",
+        "that", "these", "those", "my", "your", "our", "their", "to", "of",
+        "in", "on", "at", "for", "with", "from", "by", "about", "into",
+        "out", "up", "down", "as", "if", "so", "than", "then", "there",
+        "here", "any", "all", "some", "no", "not", "can", "could", "would",
+        "should", "will", "shall", "may", "might", "must", "do", "does",
+        "did", "have", "has", "had", "last", "next", "first", "second",
+        "third", "get", "got", "tell", "show", "find", "see", "know",
+      ]);
+      const words = q
+        .toLowerCase()
+        .split(/\W+/)
+        .filter((w) => w.length >= 4 && !STOP.has(w));
+      // De-dup and cap.
+      const matchedKeywords = Array.from(new Set(words)).slice(0, 8);
+      await recordInterest(
+        sessionId,
+        q,
+        matchedCommittees,
+        matchedKeywords,
+      );
+    } catch (ex) {
+      // Interests are best-effort; never block the answer.
+      console.error("recordInterest failed:", ex);
+    }
   }
 
   return NextResponse.json({

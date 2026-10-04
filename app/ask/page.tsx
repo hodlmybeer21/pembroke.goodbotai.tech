@@ -28,6 +28,7 @@ interface ChatMessage {
   townPages?: string[];
   archiveCount?: number;
   mode?: "llm" | "stub";
+  proactive?: boolean;
   ts: number;
 }
 
@@ -42,7 +43,17 @@ const EXAMPLES: string[] = [
 ];
 
 const STORAGE_KEY = "pembroke-ask-history-v1";
+const SESSION_KEY = "pembroke-ask-session-v1";
 const MAX_HISTORY = 20;
+
+interface ProactiveHit {
+  guid: string;
+  committee: string;
+  meetingDate: string;
+  title: string;
+  url: string;
+  score: number;
+}
 
 function loadHistory(): ChatMessage[] {
   if (typeof window === "undefined") return [];
@@ -66,6 +77,25 @@ function saveHistory(messages: ChatMessage[]) {
   }
 }
 
+function getOrCreateSessionId(): string {
+  if (typeof window === "undefined") return "";
+  try {
+    let id = localStorage.getItem(SESSION_KEY);
+    if (!id) {
+      // 16 hex chars from crypto.getRandomValues; opaque, no PII.
+      const buf = new Uint8Array(8);
+      crypto.getRandomValues(buf);
+      id = Array.from(buf)
+        .map((b) => b.toString(16).padStart(2, "0"))
+        .join("");
+      localStorage.setItem(SESSION_KEY, id);
+    }
+    return id;
+  } catch {
+    return "";
+  }
+}
+
 function genId() {
   return Math.random().toString(36).slice(2, 10);
 }
@@ -75,12 +105,15 @@ export default function AskPage() {
   const [pending, setPending] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [hydrated, setHydrated] = useState(false);
+  const [sessionId, setSessionId] = useState("");
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
 
-  // Load conversation from localStorage on mount.
+  // Load conversation from localStorage on mount + init sessionId.
   useEffect(() => {
     const loaded = loadHistory();
+    const sid = getOrCreateSessionId();
+    setSessionId(sid);
     if (loaded.length > 0) {
       setMessages(loaded);
     } else {
@@ -97,6 +130,76 @@ export default function AskPage() {
     }
     setHydrated(true);
   }, []);
+
+  // On mount + after each answer, ask the server if there are any
+  // new archive entries that match this visitor's recorded interests.
+  // Inject the result as a proactive bot message (if any) at the end
+  // of the thread, but only if it has been more than an hour since
+  // the last proactive message (avoids spamming on every page load).
+  const lastProactiveRef = useRef<number>(0);
+  useEffect(() => {
+    if (!hydrated || !sessionId) return;
+    // Throttle: skip if we just asked in the last 60s.
+    const now = Date.now();
+    if (now - lastProactiveRef.current < 60 * 1000) return;
+    lastProactiveRef.current = now;
+    let cancelled = false;
+    void (async () => {
+      try {
+        const res = await fetch(
+          `/api/interests?sessionId=${encodeURIComponent(sessionId)}`,
+        );
+        if (!res.ok) return;
+        const data = (await res.json()) as { hits: ProactiveHit[] };
+        if (cancelled) return;
+        if (data.hits.length === 0) return;
+        const lines: string[] = [
+          `Based on what you've been asking about, ${data.hits.length} new thing${data.hits.length === 1 ? "" : "s"} in the meeting archive may be relevant:`,
+          "",
+        ];
+        for (const h of data.hits) {
+          lines.push(
+            `- **${h.committee} — ${h.meetingDate}** — [${h.title}](${h.url})`,
+          );
+        }
+        lines.push("");
+        lines.push("Ask me about any of them if you want more.");
+        const proactive: ChatMessage = {
+          id: genId(),
+          role: "bot",
+          content: lines.join("\n"),
+          proactive: true,
+          ts: Date.now(),
+        };
+        setMessages((m) => {
+          // De-dup: if the most recent message is already the same
+          // proactive content, skip.
+          const last = m[m.length - 1];
+          if (
+            last?.role === "bot" &&
+            last.proactive &&
+            last.content === proactive.content
+          ) {
+            return m;
+          }
+          // Also de-dup across the last 5 messages (so a reload
+          // within the throttle window doesn't re-inject).
+          for (let i = Math.max(0, m.length - 5); i < m.length; i++) {
+            const prev = m[i];
+            if (prev.proactive && prev.content === proactive.content) {
+              return m;
+            }
+          }
+          return [...m, proactive];
+        });
+      } catch {
+        // Best-effort; no UI error.
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [hydrated, sessionId, messages.length]);
 
   // Persist on every change.
   useEffect(() => {
@@ -137,7 +240,7 @@ export default function AskPage() {
       const res = await fetch("/api/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ q: query, history }),
+        body: JSON.stringify({ q: query, history, sessionId }),
       });
       const data = (await res.json()) as AskResponse;
       const botMsg: ChatMessage = {
