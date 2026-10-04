@@ -68,6 +68,20 @@ export async function ensureSchema(): Promise<void> {
       updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
     )
   `;
+  // Idempotent column additions for profiles that was created before
+  // the multi-user Telegram feature shipped. CREATE TABLE IF NOT EXISTS
+  // is a no-op when the table already exists, so we need explicit ALTER
+  // statements to add columns to a pre-existing table.
+  //
+  // Each ALTER runs only if the column is missing. Cheaper than dropping
+  // and re-creating the table (which would lose the existing user data).
+  await ensureColumn("profiles", "telegram_chat_id_encrypted", "BYTEA");
+  await ensureColumn("profiles", "telegram_chat_id_nonce", "BYTEA");
+  await ensureColumn("profiles", "telegram_chat_id_tag", "BYTEA");
+  await ensureColumn("profiles", "telegram_bot_token_encrypted", "BYTEA");
+  await ensureColumn("profiles", "telegram_bot_token_nonce", "BYTEA");
+  await ensureColumn("profiles", "telegram_bot_token_tag", "BYTEA");
+  await ensureColumn("profiles", "telegram_enabled", "BOOLEAN NOT NULL DEFAULT false");
   await sql`
     CREATE TABLE IF NOT EXISTS street_watches (
       clerk_id TEXT NOT NULL REFERENCES profiles(clerk_id) ON DELETE CASCADE,
@@ -82,6 +96,36 @@ export async function ensureSchema(): Promise<void> {
     CREATE INDEX IF NOT EXISTS street_watches_street_idx
       ON street_watches (lower(street))
   `;
+}
+
+// Idempotent column adder. Checks information_schema first to avoid
+// "column already exists" errors on subsequent boots. Safe to call on
+// every ensureSchema run — it's a no-op if the column is present.
+//
+// We can't parameterize table/column names in a template literal (those
+// are identifiers, not values), so we build the SQL string and pass the
+// three pieces as values to a single parameterless query. The table
+// and column are hardcoded by callers (no user input), so this is safe.
+async function ensureColumn(
+  table: string,
+  column: string,
+  definition: string,
+): Promise<void> {
+  const r = await sql<{ exists: boolean }>`
+    SELECT EXISTS (
+      SELECT 1 FROM information_schema.columns
+      WHERE table_schema = 'public'
+        AND table_name = ${table}
+        AND column_name = ${column}
+    ) AS exists
+  `;
+  if (r.rows[0]?.exists) return;
+  // Build the DDL with template strings; identifiers are not values
+  // so they can't be parameterized, but they're hardcoded by callers
+  // above and never contain user input.
+  await sql.query(
+    `ALTER TABLE "${table}" ADD COLUMN "${column}" ${definition}`,
+  );
 }
 
 export async function getProfile(clerkId: string): Promise<Profile | null> {
