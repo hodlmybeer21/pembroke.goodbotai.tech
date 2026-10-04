@@ -1,53 +1,191 @@
 "use client";
 
-import { useState } from "react";
+// app/ask/page.tsx — Ask-the-bot chat interface.
+//
+// The bot is a persistent Pembroke town guide. Conversations live in
+// localStorage so they survive page reloads. Each new question can
+// reference prior context — the server gets the last 10 exchanges
+// and uses them for pronoun resolution (stub) or as conversation
+// history (LLM mode).
+
+import { useEffect, useRef, useState } from "react";
 import { ShareButton } from "@/components/ShareButton";
 
-const EXAMPLES = [
+interface Source {
+  slug: string;
+  title: string;
+  url: string;
+}
+
+interface AskResponse {
+  answer: string;
+  q: string;
+  mode: "llm" | "stub";
+  meetings_in_context?: number;
+  summaries_in_context?: number;
+  town_pages_in_context?: string[];
+  archive_entries_in_context?: number;
+}
+
+interface ChatMessage {
+  id: string;
+  role: "user" | "bot";
+  content: string;
+  sources?: Source[];
+  townPages?: string[];
+  archiveCount?: number;
+  mode?: "llm" | "stub";
+  ts: number;
+}
+
+const EXAMPLES: string[] = [
   "What happened at the last Select Board meeting?",
-  "What happened at the last meeting?",
-  "When is the next Select Board meeting?",
   "How do I get rid of paint?",
-  "Where is the library and what are the hours?",
-  "What does trash pickup cost?",
+  "When is the next trash day on Pembroke Street?",
   "Is there a snow emergency tonight?",
+  "When did the Cemetery Commission last raise burial fees?",
+  "What does the Conservation Commission do?",
+  "Where is the library and what are the hours?",
 ];
 
-interface Source { slug: string; title: string; url: string }
+const STORAGE_KEY = "pembroke-ask-history-v1";
+const MAX_HISTORY = 20;
+
+function loadHistory(): ChatMessage[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw) as unknown;
+    if (!Array.isArray(parsed)) return [];
+    return parsed as ChatMessage[];
+  } catch {
+    return [];
+  }
+}
+
+function saveHistory(messages: ChatMessage[]) {
+  if (typeof window === "undefined") return;
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(messages.slice(-MAX_HISTORY)));
+  } catch {
+    // localStorage may be full or disabled; silently degrade.
+  }
+}
+
+function genId() {
+  return Math.random().toString(36).slice(2, 10);
+}
 
 export default function AskPage() {
   const [q, setQ] = useState("");
   const [pending, setPending] = useState(false);
-  const [answer, setAnswer] = useState<string | null>(null);
-  const [sources, setSources] = useState<Source[]>([]);
-  const [townPages, setTownPages] = useState<string[]>([]);
-  const [archiveCount, setArchiveCount] = useState(0);
+  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const [hydrated, setHydrated] = useState(false);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+  const inputRef = useRef<HTMLInputElement | null>(null);
+
+  // Load conversation from localStorage on mount.
+  useEffect(() => {
+    const loaded = loadHistory();
+    if (loaded.length > 0) {
+      setMessages(loaded);
+    } else {
+      // Seed with a greeting message so the chat doesn't look empty.
+      setMessages([
+        {
+          id: genId(),
+          role: "bot",
+          content:
+            "Hi — I'm Pembroke, the town bot. Ask me about meetings, services, hours, fees, or anything else about how the town works. I'll pull from the town's own data and the meeting archive.",
+          ts: Date.now(),
+        },
+      ]);
+    }
+    setHydrated(true);
+  }, []);
+
+  // Persist on every change.
+  useEffect(() => {
+    if (hydrated) saveHistory(messages);
+  }, [messages, hydrated]);
+
+  // Auto-scroll to the latest message.
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+  }, [messages, pending]);
 
   async function submit(text?: string) {
     const query = (text ?? q).trim();
     if (!query || pending) return;
     setPending(true);
-    setAnswer(null);
-    setSources([]);
-    setTownPages([]);
-    setArchiveCount(0);
+    setQ("");
+    // Append the user message immediately.
+    const userMsg: ChatMessage = {
+      id: genId(),
+      role: "user",
+      content: query,
+      ts: Date.now(),
+    };
+    setMessages((m) => [...m, userMsg]);
     try {
+      // Build the history payload (only user/assistant role + content).
+      const history = [...messages, userMsg]
+        .filter((m) => m.role === "user" || m.role === "bot")
+        .slice(-MAX_HISTORY)
+        .map((m) => ({
+          role: (m.role === "bot" ? "assistant" : "user") as
+            | "user"
+            | "assistant",
+          content: m.content,
+        }));
       const res = await fetch("/api/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ q: query }),
+        body: JSON.stringify({ q: query, history }),
       });
-      const data = await res.json();
-      setAnswer(data.answer ?? "No answer.");
-      setSources(data.sources ?? []);
-      setTownPages(data.town_pages_in_context ?? []);
-      setArchiveCount(data.archive_entries_in_context ?? 0);
-      if (text) setQ(text);
-    } catch (err) {
-      setAnswer("Couldn't reach the bot right now. Try again in a minute.");
+      const data = (await res.json()) as AskResponse;
+      const botMsg: ChatMessage = {
+        id: genId(),
+        role: "bot",
+        content: data.answer ?? "No answer came back.",
+        sources: data.sources,
+        townPages: data.town_pages_in_context,
+        archiveCount: data.archive_entries_in_context,
+        mode: data.mode,
+        ts: Date.now(),
+      };
+      setMessages((m) => [...m, botMsg]);
+    } catch {
+      setMessages((m) => [
+        ...m,
+        {
+          id: genId(),
+          role: "bot",
+          content: "Couldn't reach the bot right now. Try again in a minute.",
+          ts: Date.now(),
+        },
+      ]);
     } finally {
       setPending(false);
+      // Re-focus the input for fast follow-ups.
+      setTimeout(() => inputRef.current?.focus(), 0);
     }
+  }
+
+  function clearChat() {
+    if (!confirm("Clear the conversation? This can't be undone.")) return;
+    setMessages([
+      {
+        id: genId(),
+        role: "bot",
+        content:
+          "Cleared. Ask me anything about Pembroke — meetings, services, hours, fees, votes.",
+        ts: Date.now(),
+      },
+    ]);
   }
 
   return (
@@ -65,26 +203,85 @@ export default function AskPage() {
         <meta name="twitter:description" content="Plain-English questions about meetings, services, hours, fees." />
         <meta name="twitter:image" content="https://pembroke-goodbotai-tech.vercel.app/og-ask.svg" />
       </head>
-      <header className="mb-8">
-        <h1 className="font-serif text-3xl font-semibold text-stone-900 tracking-tight">
-          Ask the bot
-        </h1>
-        <p className="text-stone-600 mt-2">
-          Plain-language questions about Pembroke town government. Two flavors:
-          what the town is doing (meetings, votes, agendas) and how-to
-          (library hours, trash pickup, paint disposal).
-        </p>
+
+      <header className="mb-6 flex items-baseline justify-between gap-4 flex-wrap">
+        <div>
+          <h1 className="font-serif text-3xl font-semibold text-stone-900 tracking-tight">
+            Pembroke
+          </h1>
+          <p className="text-stone-600 mt-1 text-sm">
+            Town bot. Remembers this conversation. Answers from the town's own
+            data and the meeting archive.
+          </p>
+        </div>
+        <button
+          onClick={clearChat}
+          className="text-xs px-3 py-1.5 rounded-md border border-stone-300 bg-white text-stone-600 hover:border-rose-400 hover:text-rose-600 transition-colors"
+        >
+          Clear chat
+        </button>
       </header>
 
-      <form onSubmit={(e) => { e.preventDefault(); submit(); }} className="mb-4">
+      {/* Chat thread */}
+      <div
+        ref={scrollRef}
+        className="surface p-4 mb-4 max-h-[60vh] overflow-y-auto"
+        aria-live="polite"
+        aria-label="Conversation with the town bot"
+      >
+        {messages.map((m) => (
+          <ChatBubble key={m.id} message={m} />
+        ))}
+        {pending && (
+          <div className="flex justify-start mb-3">
+            <div className="bg-stone-100 text-stone-500 text-sm rounded-2xl rounded-tl-sm px-4 py-2.5 inline-flex items-center gap-1.5">
+              <span className="inline-block w-1.5 h-1.5 bg-stone-400 rounded-full animate-pulse" />
+              <span className="inline-block w-1.5 h-1.5 bg-stone-400 rounded-full animate-pulse" style={{ animationDelay: "120ms" }} />
+              <span className="inline-block w-1.5 h-1.5 bg-stone-400 rounded-full animate-pulse" style={{ animationDelay: "240ms" }} />
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Examples — only show on the first turn (before the user has asked anything) */}
+      {messages.filter((m) => m.role === "user").length === 0 && (
+        <div className="mb-4">
+          <div className="text-xs text-stone-500 font-medium uppercase tracking-wider mb-2">
+            Try one of these
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {EXAMPLES.map((ex) => (
+              <button
+                key={ex}
+                onClick={() => submit(ex)}
+                disabled={pending}
+                className="text-xs px-3 py-1.5 rounded-full border border-stone-300 bg-white text-stone-700 hover:border-brand-500 hover:text-brand-700 transition-colors"
+              >
+                {ex}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Input */}
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          submit();
+        }}
+        className="mb-6"
+      >
         <div className="flex gap-2">
           <input
+            ref={inputRef}
             type="text"
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="What do you want to know?"
+            placeholder="Ask the town bot…"
             disabled={pending}
             aria-label="Your question"
+            autoFocus
             className="flex-1 px-3 py-2 border border-stone-300 rounded-md text-sm bg-white"
           />
           <button
@@ -92,68 +289,70 @@ export default function AskPage() {
             disabled={pending || !q.trim()}
             className="px-4 py-2 bg-brand-600 text-white text-sm font-medium rounded-md hover:bg-brand-700 disabled:bg-stone-300 disabled:cursor-not-allowed"
           >
-            {pending ? "Thinking…" : "Ask"}
+            {pending ? "…" : "Send"}
           </button>
         </div>
       </form>
 
-      <div className="mb-8 flex flex-wrap gap-2">
-        {EXAMPLES.map((ex) => (
-          <button
-            key={ex}
-            onClick={() => submit(ex)}
-            disabled={pending}
-            className="text-xs px-3 py-1.5 rounded-full border border-stone-300 bg-white text-stone-700 hover:border-brand-500 hover:text-brand-700 transition-colors"
-          >
-            {ex}
-          </button>
-        ))}
+      <div className="text-xs text-stone-500 mb-8">
+        <ShareButton
+          url="https://pembroke-goodbotai.tech/ask"
+          title="Pembroke town bot — ask it anything"
+          body="Hey — pembroke-goodbotai.tech/ask answers plain-English questions about Pembroke. I just asked it about [whatever]."
+        />
       </div>
+    </div>
+  );
+}
 
-      {answer && (
-        <article className="surface p-5">
-          <div className="text-xs text-stone-500 mb-3 font-medium uppercase tracking-wider">
-            Answer
-          </div>
-          <div className="whitespace-pre-wrap text-sm text-stone-800 leading-relaxed">
-            {answer}
-          </div>
-          {sources.length > 0 && (
-            <div className="mt-5 pt-4 border-t border-stone-200">
-              <div className="text-xs text-stone-500 font-medium uppercase tracking-wider mb-2">
-                Sources
-              </div>
-              <ul className="text-xs space-y-1">
-                {sources.map((s, i) => (
-                  <li key={i}>
-                    <a className="text-brand-700 underline" href={s.url}>
-                      {s.title || s.url}
+function ChatBubble({ message }: { message: ChatMessage }) {
+  if (message.role === "user") {
+    return (
+      <div className="flex justify-end mb-3">
+        <div className="max-w-[80%] bg-brand-600 text-white text-sm rounded-2xl rounded-tr-sm px-4 py-2.5 shadow-sm">
+          {message.content}
+        </div>
+      </div>
+    );
+  }
+  return (
+    <div className="flex justify-start mb-3">
+      <div className="max-w-[85%] bg-stone-100 text-stone-900 text-sm rounded-2xl rounded-tl-sm px-4 py-2.5 shadow-sm">
+        <div className="whitespace-pre-wrap leading-relaxed">
+          {message.content}
+        </div>
+        {/* Context footer — what the bot read to answer */}
+        {(message.townPages?.length || (message.archiveCount ?? 0) > 0) ? (
+          <div className="mt-3 pt-2.5 border-t border-stone-200 space-y-1.5">
+            {message.townPages && message.townPages.length > 0 && (
+              <div className="text-xs text-stone-500">
+                Read from {message.townPages.length} town-info page
+                {message.townPages.length === 1 ? "" : "s"}
+                {message.townPages.slice(0, 4).map((p, i) => (
+                  <span key={i}>
+                    {i === 0 ? ": " : ", "}
+                    <a className="text-brand-700 underline" href={`https://pembroke.goodbotai.tech/?q=${encodeURIComponent(p)}`}>
+                      {p}
                     </a>
-                  </li>
+                  </span>
                 ))}
-              </ul>
-            </div>
-          )}
-          {townPages.length > 0 && (
-            <div className="mt-3 text-xs text-stone-500">
-              Read from town-info: {townPages.slice(0, 4).join(", ")}
-              {townPages.length > 4 && ` +${townPages.length - 4} more`}
-            </div>
-          )}
-          {archiveCount > 0 && (
-            <div className="mt-1 text-xs text-stone-500">
-              Read from archive: {archiveCount} meeting summary record{archiveCount === 1 ? "" : "s"}
-            </div>
-          )}
-          <div className="mt-4 pt-4 border-t border-stone-200">
-            <ShareButton
-              url="https://pembroke-goodbotai-tech.vercel.app/ask"
-              title="Pembroke town bot — ask it anything"
-              body="Hey — pembroke-goodbotai-tech.vercel.app/ask answers plain-English questions about Pembroke. I just asked it about [whatever]."
-            />
+              </div>
+            )}
+            {message.archiveCount && message.archiveCount > 0 && (
+              <div className="text-xs text-stone-500">
+                Read from {message.archiveCount} meeting summary record
+                {message.archiveCount === 1 ? "" : "s"} in the{" "}
+                <a className="text-brand-700 underline" href="/archive">
+                  archive
+                </a>
+                {message.mode === "stub" ? (
+                  <span className="ml-1 text-stone-400">(keyword match)</span>
+                ) : null}
+              </div>
+            )}
           </div>
-        </article>
-      )}
+        ) : null}
+      </div>
     </div>
   );
 }

@@ -423,7 +423,44 @@ function findNamedCommittee(
   return best?.name ?? null;
 }
 
-async function callLlm(q: string, ctx: AskContext): Promise<string> {
+interface HistoryMessage {
+  role: "user" | "assistant";
+  content: string;
+}
+
+function resolvePronouns(
+  q: string,
+  history: HistoryMessage[],
+): string {
+  // For stub-mode pronoun / context resolution. The real LLM handles
+  // this natively, but the stub needs to expand "what about the
+  // budget" to something the keyword map can match.
+  if (history.length === 0) return q;
+  const ql = q.toLowerCase().trim();
+  // Only rewrite short follow-up-style questions.
+  if (q.length > 120) return q;
+  const looksLikeFollowup =
+    /^(what|when|where|how|who|why|did|do|does|is|are|can|could|would|should|tell|show|more|else|also|and|but|so|then)\b/i.test(
+      ql,
+    ) ||
+    /\b(that|this|it|those|these|they|their|them)\b/i.test(ql) ||
+    /\b(about|regarding|on)\s+\w+\s*$/i.test(ql);
+  if (!looksLikeFollowup) return q;
+  // Find the most recent user message and prepend the topic.
+  for (let i = history.length - 1; i >= 0; i--) {
+    const m = history[i];
+    if (m.role === "user" && m.content.trim() && m.content !== q) {
+      return `${q} (continuing from: ${m.content})`;
+    }
+  }
+  return q;
+}
+
+async function callLlm(
+  q: string,
+  ctx: AskContext,
+  history: HistoryMessage[] = [],
+): Promise<string> {
   const apiKey = process.env.NOUS_API_KEY;
   const apiUrl = process.env.NOUS_API_URL ?? "https://inference-api.nousresearch.com/v1/chat/completions";
   const model = process.env.NOUS_MODEL ?? "Hermes-4-405B";
@@ -467,6 +504,23 @@ async function callLlm(q: string, ctx: AskContext): Promise<string> {
     }
   }
 
+  const messages: { role: "system" | "user" | "assistant"; content: string }[] = [
+    { role: "system", content: systemLines.join(" ") },
+  ];
+  // Append prior conversation turns (if any) so the model has memory.
+  // Cap to last 6 turns (3 exchanges) to keep tokens bounded.
+  const recent = history.slice(-6);
+  for (const m of recent) {
+    if (m.content && m.content.trim()) {
+      messages.push({ role: m.role, content: m.content });
+    }
+  }
+  // The current user turn = the context block (so the model sees
+  // town-info + archive + meetings) plus the question.
+  const currentUserContent =
+    (userParts.join("\n") || "(no context available)") + `\n\nQuestion: ${q}`;
+  messages.push({ role: "user", content: currentUserContent });
+
   const res = await fetch(apiUrl, {
     method: "POST",
     headers: {
@@ -475,10 +529,7 @@ async function callLlm(q: string, ctx: AskContext): Promise<string> {
     },
     body: JSON.stringify({
       model,
-      messages: [
-        { role: "system", content: systemLines.join(" ") },
-        { role: "user", content: userParts.join("\n") || "(no context available)" },
-      ],
+      messages,
       max_tokens: 500,
       temperature: 0.3,
     }),
@@ -493,9 +544,27 @@ async function callLlm(q: string, ctx: AskContext): Promise<string> {
 
 export async function POST(req: Request) {
   let q = "";
+  let history: HistoryMessage[] = [];
   try {
     const body = await req.json();
     q = typeof body?.q === "string" ? body.q.trim() : "";
+    // History is an array of {role, content} messages from prior turns.
+    // Cap to 20 entries (10 exchanges) — anything more is likely abuse
+    // or a runaway tab. The LLM call further caps to the last 6.
+    if (Array.isArray(body?.history)) {
+      history = body.history
+        .filter(
+          (m: unknown): m is HistoryMessage =>
+            typeof m === "object" &&
+            m !== null &&
+            typeof (m as HistoryMessage).role === "string" &&
+            typeof (m as HistoryMessage).content === "string" &&
+            ((m as HistoryMessage).role === "user" ||
+              (m as HistoryMessage).role === "assistant") &&
+            (m as HistoryMessage).content.length <= 1000,
+        )
+        .slice(-20);
+    }
   } catch {
     // fall through
   }
@@ -506,20 +575,25 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "q too long" }, { status: 400 });
   }
 
-  const ctx = await buildContext(q);
+  // Resolve pronouns / fill in context for the stub. The LLM handles
+  // this natively but the stub-mode keyword map needs the resolved
+  // form to match the right town-info page.
+  const resolvedQ = resolvePronouns(q, history);
+
+  const ctx = await buildContext(resolvedQ);
   let answer: string;
   let mode: "llm" | "stub" = "stub";
 
   if (process.env.NOUS_API_KEY) {
     try {
-      answer = await callLlm(q, ctx);
+      answer = await callLlm(q, ctx, history);
       mode = "llm";
     } catch (ex) {
       console.error("LLM call failed, falling back to stub:", ex);
-      answer = stubAnswer(q, ctx);
+      answer = stubAnswer(resolvedQ, ctx);
     }
   } else {
-    answer = stubAnswer(q, ctx);
+    answer = stubAnswer(resolvedQ, ctx);
   }
 
   return NextResponse.json({
