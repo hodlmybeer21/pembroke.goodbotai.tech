@@ -90,6 +90,17 @@ export async function ensureSchema(): Promise<void> {
       PRIMARY KEY (clerk_id, street)
     )
   `;
+  // Proactive suggestions for the /ask bot. One row per opaque
+  // sessionId (no PII, random 16-hex stored in visitor's localStorage).
+  // committees and topics are stored as JSONB maps of name -> weight.
+  await sql`
+    CREATE TABLE IF NOT EXISTS ask_interests (
+      session_id TEXT PRIMARY KEY,
+      committees JSONB NOT NULL DEFAULT '{}'::jsonb,
+      topics JSONB NOT NULL DEFAULT '{}'::jsonb,
+      last_updated TIMESTAMPTZ NOT NULL DEFAULT now()
+    )
+  `;
   // Index on the street column so the cron can quickly find all users
   // watching a given street when a new doc is archived.
   await sql`
