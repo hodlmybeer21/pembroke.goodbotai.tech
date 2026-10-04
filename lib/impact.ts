@@ -26,6 +26,9 @@ export const IMPACT_KEYWORDS: Record<ImpactTag, string[]> = {
   family: [
     "blood drive", "holiday", "fireworks", "community event", "village days",
     "old home days", "town fair", "halloween", "trick or treat", "parade",
+    "columbus", "indigenous", "veterans", "thanksgiving", "memorial day",
+    "mlk", "labor day", "presidents day", "independence", "july 4",
+    "new year", "election day", "town meeting",
   ],
 };
 

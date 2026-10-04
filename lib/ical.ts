@@ -116,14 +116,31 @@ export function filterHorizon(
 }
 
 export function dedupeByDateTitle(events: CalendarEvent[]): CalendarEvent[] {
-  const seen = new Set<string>();
-  const out: CalendarEvent[] = [];
+  // The iCal feeds share events. Columbus Day shows up under 4 different
+  // committee names (Select Board, Planning Board, etc.) because the
+  // town publishes the same event in every committee's calendar. The
+  // dedupe key used to include committee which let the duplicates
+  // through. Use just dayKey + summary (event identity is the date +
+  // title, not the committee that listed it).
+  //
+  // When duplicates exist, prefer the "Main Calendar" version because
+  // it's the authoritative source for shared events like town holidays,
+  // committee meetings, etc. If no Main Calendar version exists, keep
+  // whichever version came first.
+  const byKey = new Map<string, CalendarEvent>();
   for (const e of events) {
     const dayKey = e.start.toISOString().slice(0, 10);
-    const key = `${dayKey}|${e.committee}|${e.summary}`;
-    if (seen.has(key)) continue;
-    seen.add(key);
-    out.push(e);
+    const key = `${dayKey}|${e.summary}`;
+    const existing = byKey.get(key);
+    if (!existing) {
+      byKey.set(key, e);
+      continue;
+    }
+    // Prefer Main Calendar; otherwise keep the earlier one (we keep
+    // existing).
+    if (existing.committee !== "Main Calendar" && e.committee === "Main Calendar") {
+      byKey.set(key, e);
+    }
   }
-  return out;
+  return Array.from(byKey.values());
 }
