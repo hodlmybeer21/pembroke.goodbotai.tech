@@ -55,7 +55,11 @@ export function SettingsForm({
       });
       if (!res.ok) {
         const j = await res.json().catch(() => ({}));
-        throw new Error(j.error ?? `HTTP ${res.status}`);
+        // Include the server's `detail` field if present — that has the
+        // real error message from the server (constraint violation, type
+        // mismatch, etc.) which is what we need to debug.
+        const detail = j.detail ? ` (${j.detail})` : "";
+        throw new Error(`${j.error ?? `HTTP ${res.status}`}${detail}`);
       }
       setSavedAt(new Date().toLocaleTimeString("en-US", { timeStyle: "short" }));
     } catch (ex) {
