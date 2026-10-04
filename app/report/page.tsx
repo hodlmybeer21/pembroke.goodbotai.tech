@@ -33,8 +33,8 @@ const ROUTES: ReportRoute[] = [
     what: "Pothole, road damage, downed tree, sign down",
     action: "form",
     destination:
-      "https://www.pembroke-nh.com/FormCenter/Public-Works-Department-5/Report-a-Concern-58",
-    destinationLabel: "Public Works Report a Concern form",
+      "https://www.pembroke-nh.com/FormCenter/General-Forms-4/Report-a-Concern-46",
+    destinationLabel: "Report a Concern form (town's general form)",
     hours: "Public Works: weekdays 7 AM – 3:30 PM",
     notes: "After-hours emergency: 603-485-9173 (PD dispatch).",
   },
@@ -43,8 +43,8 @@ const ROUTES: ReportRoute[] = [
     what: "Street not plowed, mailbox damaged by plow, ice on road",
     action: "form",
     destination:
-      "https://www.pembroke-nh.com/FormCenter/Public-Works-Department-5/Report-a-Concern-58",
-    destinationLabel: "Public Works Report a Concern form",
+      "https://www.pembroke-nh.com/FormCenter/General-Forms-4/Report-a-Concern-46",
+    destinationLabel: "Report a Concern form (town's general form)",
     hours: "Snow desk active during winter storms",
   },
   {
