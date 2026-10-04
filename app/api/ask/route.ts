@@ -261,14 +261,27 @@ function stubAnswer(q: string, ctx: AskContext): string {
   // If the question names a committee directly, lead with the meeting
   // schedule for that committee (not a town-info page about something
   // unrelated). The user wants the next meeting, not a department page.
-  const namedCommittee = findNamedCommittee(q, ctx.meetings);
+  // Match committee names from BOTH the iCal meetings list and the
+  // archive — the archive covers past committees that may not be on
+  // the upcoming calendar.
+  const archiveCommittees = Array.from(
+    new Set(ctx.archiveEntries.map((e) => e.committee)),
+  );
+  const namedCommittee = findNamedCommittee(q, ctx.meetings, archiveCommittees);
 
   // If the question is about a past meeting (what happened, last meeting,
-  // etc.) and we have archive entries, lead with them.
-  const showArchive = ctx.archiveEntries.length > 0 && (
-    isPastMeetingQuestion(q) ||
-    (ctx.townPages.length === 0 && !namedCommittee)
-  );
+  // etc.) and we have archive entries, lead with them. Also trigger when
+  // a committee is named in the question but we have no upcoming meeting
+  // for it — the user is likely asking about historical action.
+  const committeeButNoUpcoming =
+    namedCommittee !== null &&
+    ctx.meetings.filter((m) => m.committee === namedCommittee).length === 0 &&
+    ctx.archiveEntries.some((e) => e.committee === namedCommittee);
+  const showArchive =
+    ctx.archiveEntries.length > 0 &&
+    (isPastMeetingQuestion(q) ||
+      (ctx.townPages.length === 0 && !namedCommittee) ||
+      committeeButNoUpcoming);
 
   // Trash lookup: if the question is about a specific street's trash
   // day and we found a match, lead with the day. This is the highest
@@ -384,12 +397,22 @@ function stubAnswer(q: string, ctx: AskContext): string {
  * Select Board meeting?"), return the canonical committee name. Returns
  * null if no committee is named.
  */
-function findNamedCommittee(q: string, meetings: Meeting[]): string | null {
+function findNamedCommittee(
+  q: string,
+  meetings: Meeting[],
+  archiveCommittees: string[] = [],
+): string | null {
   const qLow = q.toLowerCase();
-  const known = new Set(meetings.map((m) => m.committee));
   // Match the question against each known committee's lowercase name. Pick
   // the longest match to avoid "Board" matching "Planning Board" before
-  // "Board" has a chance to be tested.
+  // "Board" has a chance to be tested. Pull from both the iCal meetings
+  // list (upcoming only) and the archive (historical), so a question like
+  // "When did the Cemetery Commission last raise burial fees" still
+  // resolves to a known committee even if there's no upcoming meeting.
+  const known = new Set([
+    ...meetings.map((m) => m.committee),
+    ...archiveCommittees,
+  ]);
   let best: { name: string; len: number } | null = null;
   for (const name of known) {
     const low = name.toLowerCase();
