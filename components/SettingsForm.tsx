@@ -35,6 +35,49 @@ export function SettingsForm({
   const [tgSaving, setTgSaving] = useState(false);
   const [tgStatus, setTgStatus] = useState<null | { ok: boolean; msg: string }>(null);
   const [tgExpanded, setTgExpanded] = useState(false);
+  // Weekly digest preview — fetch a draft digest to show the user
+  // what Sunday morning's email would look like. Doesn't send.
+  const [digestPreview, setDigestPreview] = useState<null | {
+    weekStart: string;
+    weekEnd: string;
+    personaLabel: string | null;
+    snow: { title: string; until: string; url?: string } | null;
+    thisWeek: { committee: string; title: string; when: string; url?: string }[];
+    newDocs: { committee: string; title: string; when: string; url?: string; docType?: string }[];
+    forYou: { committee: string; title: string; when: string; url?: string }[];
+  }>(null);
+  const [digestPreviewPending, setDigestPreviewPending] = useState(false);
+  const [digestPreviewStatus, setDigestPreviewStatus] = useState<null | { ok: boolean; msg: string }>(null);
+
+  async function previewDigest() {
+    setDigestPreviewPending(true);
+    setDigestPreviewStatus(null);
+    try {
+      const res = await fetch("/api/alerts/weekly-digest", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ preview: true }),
+      });
+      if (!res.ok) {
+        const j = await res.json().catch(() => ({}));
+        throw new Error(j.error ?? `HTTP ${res.status}`);
+      }
+      const data = await res.json();
+      setDigestPreview(data.digest);
+      const total =
+        (data.digest?.forYou?.length ?? 0) +
+        (data.digest?.thisWeek?.length ?? 0) +
+        (data.digest?.newDocs?.length ?? 0);
+      setDigestPreviewStatus({
+        ok: true,
+        msg: total === 0 ? "Nothing scheduled this week" : `${total} item${total === 1 ? "" : "s"} this week`,
+      });
+    } catch (ex) {
+      setDigestPreviewStatus({ ok: false, msg: String(ex) });
+    } finally {
+      setDigestPreviewPending(false);
+    }
+  }
 
   async function pickPersona(p: Persona) {
     if (p.id === personaId || saving) return;
@@ -362,6 +405,100 @@ export function SettingsForm({
         </p>
       </section>
       )}
+
+      <section className="pt-2 border-t border-stone-200 text-sm">
+        <h3 className="font-medium text-stone-900 mb-2">Weekly digest</h3>
+        <p className="text-stone-600 mb-2">
+          Every Sunday morning we email you a summary of the week ahead
+          (meetings, new agendas) tailored to your persona and selected
+          categories. You can preview what yours would look like below.
+        </p>
+        <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={previewDigest}
+            disabled={digestPreviewPending}
+            className="px-3 py-1.5 bg-brand-600 text-white text-sm rounded-md hover:bg-brand-700 disabled:bg-stone-300 disabled:cursor-not-allowed"
+          >
+            {digestPreviewPending ? "Building…" : "Preview my digest"}
+          </button>
+          {digestPreviewStatus && (
+            <span
+              className={
+                "text-xs " +
+                (digestPreviewStatus.ok
+                  ? "text-stone-600"
+                  : "text-rose-600")
+              }
+            >
+              {digestPreviewStatus.msg}
+            </span>
+          )}
+        </div>
+        {digestPreview && (
+          <div className="mt-3 surface p-4 text-sm bg-stone-50">
+            <div className="font-serif text-base font-semibold text-stone-900 mb-2">
+              Your week in Pembroke
+            </div>
+            <div className="text-xs text-stone-500 mb-3">
+              {digestPreview.weekStart &&
+                new Date(digestPreview.weekStart).toLocaleDateString("en-US", { month: "long", day: "numeric" })}
+              {" – "}
+              {digestPreview.weekEnd &&
+                new Date(digestPreview.weekEnd).toLocaleDateString("en-US", { month: "long", day: "numeric" })}
+            </div>
+            {digestPreview.snow && (
+              <div className="mb-3 p-2 bg-amber-50 border border-amber-300 rounded text-amber-900 text-xs">
+                ❄ {digestPreview.snow.title}
+              </div>
+            )}
+            {digestPreview.forYou?.length > 0 && (
+              <div className="mb-3">
+                <div className="text-[10px] uppercase tracking-wider text-stone-400 font-semibold mb-1">
+                  Picked for you
+                </div>
+                {digestPreview.forYou.map((i, idx) => (
+                  <div key={idx} className="text-xs text-stone-700">
+                    • {i.committee} — {i.title} ({new Date(i.when).toLocaleDateString("en-US", { month: "short", day: "numeric" })})
+                  </div>
+                ))}
+              </div>
+            )}
+            {digestPreview.thisWeek?.length > 0 && (
+              <div className="mb-3">
+                <div className="text-[10px] uppercase tracking-wider text-stone-400 font-semibold mb-1">
+                  This week
+                </div>
+                {digestPreview.thisWeek.map((i, idx) => (
+                  <div key={idx} className="text-xs text-stone-700">
+                    • {new Date(i.when).toLocaleString("en-US", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })} — {i.committee}
+                  </div>
+                ))}
+              </div>
+            )}
+            {digestPreview.newDocs?.length > 0 && (
+              <div className="mb-3">
+                <div className="text-[10px] uppercase tracking-wider text-stone-400 font-semibold mb-1">
+                  New postings
+                </div>
+                {digestPreview.newDocs.map((i, idx) => (
+                  <div key={idx} className="text-xs text-stone-700">
+                    • {new Date(i.when).toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" })} — {i.committee} — {i.title}
+                  </div>
+                ))}
+              </div>
+            )}
+            {(!digestPreview.forYou || digestPreview.forYou.length === 0) &&
+              (!digestPreview.thisWeek || digestPreview.thisWeek.length === 0) &&
+              (!digestPreview.newDocs || digestPreview.newDocs.length === 0) && (
+                <div className="text-stone-500 italic text-xs">
+                  Nothing in your digest this week. Pick a persona or more
+                  categories to see content here.
+                </div>
+              )}
+          </div>
+        )}
+      </section>
 
       <details className="pt-2 border-t border-stone-200 text-sm text-stone-600 group">
         <summary className="cursor-pointer text-stone-700 font-medium list-none flex items-center gap-2 py-2">

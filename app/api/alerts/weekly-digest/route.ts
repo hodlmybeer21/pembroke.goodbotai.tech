@@ -34,6 +34,9 @@ interface WeeklyDigestPayload {
   sinceIso?: string | null;
   // Optional: dry-run mode (build digests, don't send).
   dryRun?: boolean;
+  // Preview mode: builds the digest for the requesting user
+  // (from Clerk session) and returns it without sending.
+  preview?: boolean;
 }
 
 export async function POST(req: Request) {
@@ -46,6 +49,29 @@ export async function POST(req: Request) {
     payload = raw ? (JSON.parse(raw) as WeeklyDigestPayload) : {};
   } catch {
     // empty body is fine
+  }
+
+  // Preview mode: builds the digest for the requesting user (from
+  // sessionId if provided) and returns it WITHOUT sending. The
+  // settings page uses this to show a "here's what your digest
+  // would look like" preview before Sunday rolls around.
+  if (payload.preview) {
+    const { auth } = await import("@clerk/nextjs/server");
+    const { getProfile } = await import("@/lib/db");
+    const { userId } = await auth();
+    if (!userId) {
+      return NextResponse.json({ error: "no session" }, { status: 401 });
+    }
+    const profile = await getProfile(userId).catch(() => null);
+    if (!profile) {
+      return NextResponse.json({ error: "no profile" }, { status: 404 });
+    }
+    const digest = await buildDigest({
+      userCategories: profile.categories,
+      personaId: profile.persona,
+      sinceDocsIso: payload.sinceIso ?? null,
+    });
+    return NextResponse.json({ digest });
   }
 
   // Pull all profiles that have at least one category set.
