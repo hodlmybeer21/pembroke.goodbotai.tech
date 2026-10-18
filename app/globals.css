@@ -52,6 +52,69 @@ a:hover { text-decoration: underline; }
   color: #44403c;
 }
 
+/* Mobile-first polish — tap targets, touch states, viewport handling.
+   Apple HIG and Material Design both want min 44x44px tap targets. We
+   add a global rule so every button/anchor gets a touch-friendly hit
+   area without per-component changes. */
+@media (max-width: 767px) {
+  /* Larger tap targets on mobile — wraps to 44x44+ */
+  a[class*="inline-block"]:not([class*="min-h-"]),
+  button:not([class*="min-h-"]):not([class*="p-1"]):not([class*="p-2"]) {
+    min-height: 44px;
+  }
+
+  /* Prevent iOS from zooming when focusing a small input — 16px+ font size */
+  input, select, textarea {
+    font-size: 16px;
+  }
+
+  /* Smoother touch interactions */
+  button, a {
+    -webkit-tap-highlight-color: rgba(30, 58, 138, 0.08);
+  }
+
+  /* Active state for buttons (pressed) */
+  button:active:not(:disabled),
+  a:active {
+    opacity: 0.75;
+  }
+}
+
+/* Mobile typography — better line lengths, slightly larger body text,
+   tighter line-height for the page lede. The sm+ rules restore the
+   desktop proportions. */
+@media (max-width: 639px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .container-page {
+    padding: 1.25rem 1rem 1.5rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Prevent horizontal scroll on mobile — defensive. Some absolute-
+   positioned children (modals) can leak outside the viewport. */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar on the drawer but keep scrolling. */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 /* Card primitive — used by the home brief, agendas list, settings form. */
 .surface {
   background: white;

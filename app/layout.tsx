@@ -7,7 +7,7 @@ import Link from "next/link";
 import { ClerkProviderWrapper } from "@/components/ClerkProviderWrapper";
 import { NavLink } from "@/components/NavLink";
 import { NavAuth } from "@/components/NavAuth";
-import { MobileMenu } from "@/components/MobileMenu";
+import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { SnowBanner } from "@/components/SnowBanner";
 import { SnowTestMode } from "@/components/SnowTestMode";
 import { Wordmark } from "@/components/Wordmark";
@@ -77,14 +77,17 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 <NavLink href="/ask">Ask</NavLink>
                 <NavLink href="/trash">Trash</NavLink>
               </nav>
-              {/* Small screens — just the wordmark + hamburger. */}
+              {/* Small screens — just the wordmark + account icon.
+                  Navigation lives in the sticky bottom nav below. */}
               <div className="flex sm:hidden items-center gap-3 text-white">
                 <NavAuth />
-                <MobileMenu />
               </div>
             </div>
           </header>
-          <main className="flex-1">{children}</main>
+          {/* pb-16 on mobile so the sticky bottom nav doesn't cover
+              the last paragraph of page content. md:pb-0 because the
+              bottom nav is hidden on larger screens. */}
+          <main className="flex-1 pb-16 md:pb-0">{children}</main>
           <footer className="border-t border-stone-200 bg-white">
             <div className="max-w-site mx-auto px-4 sm:px-6 py-5 text-xs text-stone-500 flex flex-col sm:flex-row sm:justify-between gap-2">
               <div>
@@ -99,6 +102,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               </div>
             </div>
           </footer>
+          {/* Sticky mobile bottom nav — hidden on sm+ where the
+              desktop nav in the header takes over. */}
+          <MobileBottomNav />
         </body>
       </html>
     </ClerkProviderWrapper>
