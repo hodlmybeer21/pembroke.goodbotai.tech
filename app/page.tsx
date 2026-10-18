@@ -2,8 +2,12 @@ import { fetchAllFeeds, dedupeByDateTitle, filterHorizon } from "@/lib/ical";
 import { fetchAgendaCenter, loadOcrExport, findSummary } from "@/lib/agenda-center";
 import { buildBrief } from "@/lib/brief";
 import { Brief } from "@/components/Brief";
+import { PersonaOnboardingGate } from "@/components/PersonaOnboardingGate";
 import Link from "next/link";
-import { TAG_LABEL } from "@/lib/impact";
+import { TAG_LABEL, type ImpactTag } from "@/lib/impact";
+import { auth, currentUser } from "@clerk/nextjs/server";
+import { findPersona } from "@/lib/categories";
+import { getProfile } from "@/lib/db";
 
 export const revalidate = 3600;
 
@@ -32,6 +36,27 @@ export default async function HomePage() {
   const newDocsCount = brief.newDocs.length;
   const thisWeekCount = brief.thisWeek.length;
   const lastRefresh = brief.generatedAt;
+
+  // Read the user's persona (signed in only) so the impact sections
+  // surface in the order that matters most to them. The picker is
+  // shown below if no persona is set.
+  const { userId } = await auth();
+  let persona = null;
+  let hasPersona = false;
+  if (userId) {
+    const user = await currentUser();
+    if (user) {
+      const profile = await getProfile(userId).catch(() => null);
+      if (profile?.persona) {
+        const found = findPersona(profile.persona);
+        if (found) {
+          persona = found;
+          hasPersona = true;
+        }
+      }
+    }
+  }
+  const tagOrder: ImpactTag[] | undefined = persona?.primaryTags as ImpactTag[] | undefined;
 
   return (
     <div className="container-page">
@@ -106,8 +131,13 @@ export default async function HomePage() {
           Nothing on the town calendar in the next 90 days. Check back later.
         </p>
       ) : (
-        <Brief items={items} weekEnd={brief.weekEnd} laterCap={brief.laterCap} generatedAt={brief.generatedAt} />
+        <Brief items={items} weekEnd={brief.weekEnd} laterCap={brief.laterCap} generatedAt={brief.generatedAt} tagOrder={tagOrder} />
       )}
+
+      {/* Persona onboarding — shown when the user is signed in but has
+          never picked a persona. Mounts as a client component that
+          opens the picker on first visit. */}
+      {userId && <PersonaOnboardingGate hasPersona={hasPersona} />}
 
       {brief.newDocs.length > 0 && (
         <section className="mt-12 pt-8 border-t border-stone-200">

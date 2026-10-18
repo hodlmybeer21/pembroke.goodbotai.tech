@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CATEGORIES } from "@/lib/categories";
+import { CATEGORIES, PERSONAS, type Persona } from "@/lib/categories";
 
 // Feature flag for the per-user Telegram opt-in. Set to true (and set
 // TELEGRAM_COLUMN_KEY on Vercel) to re-enable the Telegram section in
@@ -13,6 +13,7 @@ interface SettingsFormProps {
   email: string;
   initialCategories: string[];
   initialTelegramEnabled: boolean;
+  initialPersona: string | null;
   unsubscribeToken: string;
 }
 
@@ -20,9 +21,11 @@ export function SettingsForm({
   email,
   initialCategories,
   initialTelegramEnabled,
+  initialPersona,
   unsubscribeToken,
 }: SettingsFormProps) {
   const [selected, setSelected] = useState<Set<string>>(new Set(initialCategories));
+  const [personaId, setPersonaId] = useState<string | null>(initialPersona);
   const [saving, setSaving] = useState(false);
   const [savedAt, setSavedAt] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -32,6 +35,32 @@ export function SettingsForm({
   const [tgSaving, setTgSaving] = useState(false);
   const [tgStatus, setTgStatus] = useState<null | { ok: boolean; msg: string }>(null);
   const [tgExpanded, setTgExpanded] = useState(false);
+
+  async function pickPersona(p: Persona) {
+    if (p.id === personaId || saving) return;
+    setSaving(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/persona", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ persona: p.id, categories: p.categories }),
+      });
+      if (!res.ok) {
+        const j = await res.json().catch(() => ({}));
+        throw new Error(j.error ?? `HTTP ${res.status}`);
+      }
+      // Apply the persona's default categories locally so the UI updates
+      // immediately. The user can fine-tune the checkboxes after.
+      setPersonaId(p.id);
+      setSelected(new Set(p.categories));
+      setSavedAt(new Date().toLocaleTimeString("en-US", { timeStyle: "short" }));
+    } catch (ex) {
+      setError(String(ex));
+    } finally {
+      setSaving(false);
+    }
+  }
 
   function toggle(id: string) {
     setSelected((prev) => {
@@ -130,9 +159,52 @@ export function SettingsForm({
   return (
     <div className="space-y-6">
       <div className="text-sm text-stone-600">
-        Signed in as <strong>{email}</strong>. Pick the topics you care about.
-        We'll email you when something new drops.
+        Signed in as <strong>{email}</strong>. Pick a life-situation persona
+        below for the best defaults, then fine-tune the categories.
       </div>
+
+      {/* Persona picker — quick presets that bundle the right categories
+          together. Picking a persona also reorders the home page's
+          impact sections to surface what matters most to you first. */}
+      <section className="surface p-4">
+        <div className="flex items-baseline justify-between gap-2 mb-2">
+          <h2 className="font-serif text-base font-semibold text-stone-900">
+            What best describes you?
+          </h2>
+          {personaId && (
+            <span className="text-xs text-stone-500">
+              Current: {PERSONAS.find((p) => p.id === personaId)?.label ?? personaId}
+            </span>
+          )}
+        </div>
+        <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          {PERSONAS.map((p) => {
+            const isSelected = personaId === p.id;
+            return (
+              <li key={p.id}>
+                <button
+                  type="button"
+                  onClick={() => pickPersona(p)}
+                  disabled={saving}
+                  aria-pressed={isSelected}
+                  className={
+                    "w-full text-left px-3 py-2.5 rounded-lg border-2 transition-colors text-sm disabled:opacity-50 " +
+                    (isSelected
+                      ? "border-brand-600 bg-brand-50"
+                      : "border-stone-200 hover:border-brand-400 bg-white")
+                  }
+                >
+                  <div className="flex items-baseline gap-1.5">
+                    <span aria-hidden>{p.emoji}</span>
+                    <span className="font-semibold text-stone-900">{p.label}</span>
+                  </div>
+                  <p className="text-xs text-stone-500 mt-0.5">{p.blurb}</p>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
 
       <div className="grid gap-3 sm:grid-cols-2">
         {CATEGORIES.map((cat) => {

@@ -89,6 +89,7 @@ export default async function SettingsPage() {
   }
   const initialCategories = profile?.categories ?? [];
   const initialTelegramEnabled = profile?.telegram_enabled ?? false;
+  const initialPersona = profile?.persona ?? null;
   const unsubscribeToken = profile?.unsubscribe_token ?? "";
 
   let liveWatches: Awaited<ReturnType<typeof listWatches>> = [];
@@ -117,6 +118,7 @@ export default async function SettingsPage() {
         email={email}
         initialCategories={initialCategories}
         initialTelegramEnabled={initialTelegramEnabled}
+        initialPersona={initialPersona}
         unsubscribeToken={unsubscribeToken}
       />
       {streets.length > 0 && (

@@ -5,30 +5,37 @@
 import { buildBrief, groupByTag, TAG_ORDER, fmtWhen, type BriefItem } from "@/lib/brief";
 import { TAG_LABEL, type ImpactTag } from "@/lib/impact";
 
-export function Brief({ items, weekEnd, laterCap }: {
+export function Brief({ items, weekEnd, laterCap, tagOrder }: {
   items: { kind: "calendar" | "doc"; committee: string; title: string; when: Date; tags: Set<ImpactTag>; url?: string }[];
   weekEnd: Date;
   laterCap: number;
+  // Override the default TAG_ORDER (wallet → commute → kids → property
+  // → family) with a persona-specific ordering. Used when the user has
+  // picked a persona on first visit, so the home page surfaces the
+  // section they care about most first.
+  tagOrder?: ImpactTag[];
   generatedAt: Date;
 }) {
   const thisWeek = items.filter((i) => i.when < weekEnd);
   const later = items.filter((i) => i.when >= weekEnd).slice(0, laterCap);
+  const order = tagOrder ?? TAG_ORDER;
 
   return (
     <div className="space-y-10">
-      <Section title="This week" items={thisWeek} weekEnd={weekEnd} />
+      <Section title="This week" items={thisWeek} weekEnd={weekEnd} tagOrder={order} />
       {later.length > 0 && (
-        <Section title="Later" items={later} weekEnd={weekEnd} compact />
+        <Section title="Later" items={later} weekEnd={weekEnd} compact tagOrder={order} />
       )}
     </div>
   );
 }
 
-function Section({ title, items, weekEnd, compact = false }: {
+function Section({ title, items, weekEnd, compact = false, tagOrder }: {
   title: string;
   items: BriefItem[];
   weekEnd: Date;
   compact?: boolean;
+  tagOrder?: ImpactTag[];
 }) {
   if (items.length === 0) return null;
   const grouped = groupByTag(items);
@@ -38,7 +45,7 @@ function Section({ title, items, weekEnd, compact = false }: {
         {title}
       </h2>
       <div className="grid gap-4 sm:grid-cols-2">
-        {TAG_ORDER.map((tag) => {
+        {(tagOrder ?? TAG_ORDER).map((tag) => {
           const bucket = grouped[tag];
           if (bucket.length === 0) return null;
           return (

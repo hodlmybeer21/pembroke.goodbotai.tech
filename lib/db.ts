@@ -40,6 +40,7 @@ export type Profile = {
   categories: string[];
   unsubscribe_token: string;
   telegram_enabled: boolean;
+  persona: string | null;
   created_at: Date;
   updated_at: Date;
 };
@@ -48,7 +49,10 @@ export type Profile = {
 // Never includes telegram_*_encrypted columns or unsubscribe_token (the
 // unsubscribe token is only used to build unsubscribe URLs in emails
 // and never needs to leave the server).
-export type PublicProfile = Pick<Profile, "email" | "categories" | "telegram_enabled">;
+export type PublicProfile = Pick<
+  Profile,
+  "email" | "categories" | "telegram_enabled" | "persona"
+>;
 
 export async function ensureSchema(): Promise<void> {
   await sql`
@@ -64,6 +68,7 @@ export async function ensureSchema(): Promise<void> {
       telegram_bot_token_nonce BYTEA,
       telegram_bot_token_tag BYTEA,
       telegram_enabled BOOLEAN NOT NULL DEFAULT false,
+      persona TEXT,
       created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
       updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
     )
@@ -82,6 +87,7 @@ export async function ensureSchema(): Promise<void> {
   await ensureColumn("profiles", "telegram_bot_token_nonce", "BYTEA");
   await ensureColumn("profiles", "telegram_bot_token_tag", "BYTEA");
   await ensureColumn("profiles", "telegram_enabled", "BOOLEAN NOT NULL DEFAULT false");
+  await ensureColumn("profiles", "persona", "TEXT");
   await sql`
     CREATE TABLE IF NOT EXISTS street_watches (
       clerk_id TEXT NOT NULL REFERENCES profiles(clerk_id) ON DELETE CASCADE,
@@ -142,7 +148,7 @@ async function ensureColumn(
 export async function getProfile(clerkId: string): Promise<Profile | null> {
   await ensureSchema();
   const r = await sql<Profile>`
-    SELECT clerk_id, email, categories, unsubscribe_token, telegram_enabled, created_at, updated_at
+    SELECT clerk_id, email, categories, unsubscribe_token, telegram_enabled, persona, created_at, updated_at
       FROM profiles WHERE clerk_id = ${clerkId}
   `;
   return r.rows[0] ?? null;
@@ -165,6 +171,30 @@ export async function upsertProfile(
           categories = EXCLUDED.categories,
           updated_at = now()
     RETURNING clerk_id, email, categories, unsubscribe_token, telegram_enabled, created_at, updated_at
+  `;
+  return r.rows[0];
+}
+
+// Persona onboarding — sets the persona and (optionally) replaces the
+// user's category list with the persona's default bundle. Used by the
+// /onboarding flow and the settings page when the user picks a persona.
+export async function setPersona(
+  clerkId: string,
+  email: string,
+  persona: string,
+  categories: string[],
+): Promise<Profile> {
+  await ensureSchema();
+  const token = randomUUID();
+  const r = await sql<Profile>`
+    INSERT INTO profiles (clerk_id, email, categories, unsubscribe_token, persona, updated_at)
+    VALUES (${clerkId}, ${email}, ${categories as unknown as string}, ${token}, ${persona}, now())
+    ON CONFLICT (clerk_id) DO UPDATE
+      SET email = EXCLUDED.email,
+          categories = EXCLUDED.categories,
+          persona = EXCLUDED.persona,
+          updated_at = now()
+    RETURNING clerk_id, email, categories, unsubscribe_token, telegram_enabled, persona, created_at, updated_at
   `;
   return r.rows[0];
 }
