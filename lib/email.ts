@@ -116,7 +116,7 @@ export function buildWeeklyDigestText(input: WeeklyDigestInput): string {
     lines.push("");
     lines.push(`❄ ${input.snow.title}`);
     lines.push(`Until ${input.snow.until.toLocaleString("en-US", { weekday: "short", hour: "numeric", minute: "2-digit" })}`);
-    lines.push(input.snow.url);
+    if (input.snow.url) lines.push(input.snow.url);
   }
   if (input.forYou.length) {
     lines.push("");
