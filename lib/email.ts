@@ -22,7 +22,8 @@ function unsubscribeUrl(token: string): string {
   return `${SITE_BASE}/api/alerts/unsubscribe?token=${encodeURIComponent(token)}`;
 }
 
-function esc(s: string): string {
+function esc(s: string | undefined | null): string {
+  if (!s) return "";
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
@@ -36,7 +37,7 @@ export interface WeeklyDigestInput {
   weekStart: Date;
   weekEnd: Date;
   personaLabel: string | null;
-  snow: { title: string; until: Date; url: string } | null;
+  snow: { title: string; until: Date; url?: string } | null;
   thisWeek: { committee: string; title: string; when: Date; url?: string }[];
   newDocs: { committee: string; title: string; when: Date; url?: string; docType?: string }[];
   forYou: { committee: string; title: string; when: Date; url?: string }[];
