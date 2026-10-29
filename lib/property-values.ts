@@ -70,3 +70,52 @@ export function bucketOf(pct: number | null, below: boolean): "below" | "near" |
   if (pct !== null && pct < 10) return "near";
   return "above";
 }
+
+export interface PropertyListing {
+  address: string | null;
+  city: string | null;
+  list_price: number | null;
+  assessed: number;
+  difference: number | null;
+  pct_of_assessed: number | null;
+  below_assessment: boolean;
+  lat: number;
+  lon: number;
+  beds: number | null;
+  baths: number | null;
+  sqft: number | null;
+  property_type: string | null;
+  source_url: string | null;
+  source: string | null;
+  parcel_address: string | null;
+  match_miles: number;
+}
+
+export interface PropertyListingsFile {
+  generated_at: string;
+  source: string;
+  count: number;
+  below_assessment_count: number;
+  listings: PropertyListing[];
+}
+
+let cachedListings: PropertyListingsFile | null = null;
+
+/**
+ * Load currently-listed homes matched to their town parcel.
+ *
+ * Only listings we could confidently match to a town parcel (same street,
+ * same house number, nearby) carry an assessed value. Anything we couldn't
+ * match is left out rather than shown with a guessed comparison.
+ */
+export function loadPropertyListings(): PropertyListingsFile | null {
+  if (cachedListings) return cachedListings;
+  try {
+    const path = join(process.cwd(), "data", "property-listings.json");
+    if (!existsSync(path)) return null;
+    cachedListings = JSON.parse(readFileSync(path, "utf8")) as PropertyListingsFile;
+    return cachedListings;
+  } catch {
+    return null;
+  }
+}

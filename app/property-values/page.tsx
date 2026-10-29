@@ -6,8 +6,9 @@
 // Tyler noticed that some homes were selling under the town's appraised
 // value; this page lets anyone check that for themselves.
 
-import { loadPropertyValues } from "@/lib/property-values";
+import { loadPropertyListings, loadPropertyValues } from "@/lib/property-values";
 import { PropertyValueTable } from "@/components/PropertyValueTable";
+import { ForSaleListings } from "@/components/ForSaleListings";
 import { ShareButton } from "@/components/ShareButton";
 
 export const revalidate = 86400;
@@ -15,7 +16,7 @@ export const revalidate = 86400;
 export const metadata = {
   title: "Home sales vs. town assessed value — Pembroke, NH",
   description:
-    "Recent Pembroke home sales compared to the town's assessed property value. See which homes sold under the assessed value the town bills tax against.",
+    "Recent Pembroke home sales and current listings compared to the town's assessed property value. See which homes sold under the assessed value the town bills tax against.",
   openGraph: {
     title: "Did it sell under the assessed value? — Pembroke, NH",
     description:
@@ -31,6 +32,7 @@ export const metadata = {
 
 export default function PropertyValuesPage() {
   const data = loadPropertyValues();
+  const listings = loadPropertyListings();
 
   if (!data || !data.sales?.length) {
     return (
@@ -115,6 +117,19 @@ export default function PropertyValuesPage() {
           year: "numeric",
         })}
         sourceUrl={data.source_url}
+      />
+
+      <ForSaleListings
+        listings={listings?.listings ?? []}
+        generatedAt={
+          listings
+            ? new Date(listings.generated_at).toLocaleDateString("en-US", {
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+              })
+            : ""
+        }
       />
 
       <section className="mt-10 rounded-lg border border-stone-200 bg-white p-5">
