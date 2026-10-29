@@ -57,6 +57,12 @@ export default function AboutPage() {
               Straight from the town&apos;s property database.
             </li>
             <li>
+              <Link className="underline" href="/property-values">What the numbers say</Link>{" "}
+              — what Pembroke homes are going for per square foot, how recent sales
+              compare to the town&apos;s assessment, where your tax dollar goes, and
+              an estimate of the annual bill on any home shown.
+            </li>
+            <li>
               <Link className="underline" href="/trash">Trash day lookup</Link>{" "}
               — type your street, get your pickup day.
             </li>

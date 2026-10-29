@@ -6,9 +6,10 @@
 // Tyler noticed that some homes were selling under the town's appraised
 // value; this page lets anyone check that for themselves.
 
-import { loadPropertyListings, loadPropertyValues } from "@/lib/property-values";
+import { loadPropertyListings, loadPropertyTrends, loadPropertyValues } from "@/lib/property-values";
 import { PropertyValueTable } from "@/components/PropertyValueTable";
 import { ForSaleListings } from "@/components/ForSaleListings";
+import { PropertyTrends } from "@/components/PropertyTrends";
 import { ShareButton } from "@/components/ShareButton";
 
 export const revalidate = 86400;
@@ -33,6 +34,7 @@ export const metadata = {
 export default function PropertyValuesPage() {
   const data = loadPropertyValues();
   const listings = loadPropertyListings();
+  const trends = loadPropertyTrends();
 
   if (!data || !data.sales?.length) {
     return (
@@ -109,6 +111,8 @@ export default function PropertyValuesPage() {
         )}
       </div>
 
+      {trends && <PropertyTrends trends={trends} />}
+
       <PropertyValueTable
         sales={data.sales}
         generatedAt={new Date(data.generated_at).toLocaleDateString("en-US", {
@@ -117,10 +121,12 @@ export default function PropertyValuesPage() {
           year: "numeric",
         })}
         sourceUrl={data.source_url}
+        taxRate={trends?.tax_rate}
       />
 
       <ForSaleListings
         listings={listings?.listings ?? []}
+        taxRate={trends?.tax_rate}
         generatedAt={
           listings
             ? new Date(listings.generated_at).toLocaleDateString("en-US", {

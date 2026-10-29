@@ -1,0 +1,283 @@
+{
+ "generated_at": "2026-10-29T18:04:26.851121+00:00",
+ "tax_rate": 21.84,
+ "tax_rate_history": {
+  "2024": 19.64,
+  "2025": 21.84,
+  "2026_projected": 24.13
+ },
+ "tax_rate_source": "https://www.revenue.nh.gov/about-dra/municipal-and-property-division/property-bureau/equalization",
+ "tax_breakdown": [
+  {
+   "label": "Local school",
+   "rate": 13.75,
+   "pct": 63
+  },
+  {
+   "label": "Municipal (town services)",
+   "rate": 5.42,
+   "pct": 25
+  },
+  {
+   "label": "County",
+   "rate": 1.58,
+   "pct": 7
+  },
+  {
+   "label": "State education",
+   "rate": 1.09,
+   "pct": 5
+  }
+ ],
+ "parcel_count": 259,
+ "years": [
+  {
+   "year": "2022",
+   "sales": 63,
+   "median_psf": 244.8,
+   "median_ratio": 1.0,
+   "median_sale_price": 389000,
+   "below_assessed": 5,
+   "within_20": 54,
+   "above_20": 4,
+   "median_tax_bill": 8891.1
+  },
+  {
+   "year": "2023",
+   "sales": 36,
+   "median_psf": 274.0,
+   "median_ratio": 1.0,
+   "median_sale_price": 399350.0,
+   "below_assessed": 1,
+   "within_20": 31,
+   "above_20": 4,
+   "median_tax_bill": 8914.0
+  },
+  {
+   "year": "2024",
+   "sales": 40,
+   "median_psf": 272.7,
+   "median_ratio": 1.1,
+   "median_sale_price": 477500.0,
+   "below_assessed": 1,
+   "within_20": 34,
+   "above_20": 5,
+   "median_tax_bill": 9795.2
+  },
+  {
+   "year": "2025",
+   "sales": 67,
+   "median_psf": 297.4,
+   "median_ratio": 1.2,
+   "median_sale_price": 485000,
+   "below_assessed": 0,
+   "within_20": 33,
+   "above_20": 34,
+   "median_tax_bill": 8535.1
+  },
+  {
+   "year": "2026",
+   "sales": 53,
+   "median_psf": 316.6,
+   "median_ratio": 1.3,
+   "median_sale_price": 527800,
+   "below_assessed": 0,
+   "within_20": 15,
+   "above_20": 38,
+   "median_tax_bill": 9168.4
+  }
+ ],
+ "size_bands": [
+  {
+   "label": "Under 1,200 sq ft",
+   "count": 58,
+   "median_psf": 359.1,
+   "median_price": 375000.0
+  },
+  {
+   "label": "1,200\u20131,600 sq ft",
+   "count": 60,
+   "median_psf": 300.3,
+   "median_price": 432500.0
+  },
+  {
+   "label": "1,600\u20132,200 sq ft",
+   "count": 82,
+   "median_psf": 261.0,
+   "median_price": 480500.0
+  },
+  {
+   "label": "2,200\u20133,000 sq ft",
+   "count": 42,
+   "median_psf": 233.6,
+   "median_price": 550000.0
+  },
+  {
+   "label": "Over 3,000 sq ft",
+   "count": 17,
+   "median_psf": 195.2,
+   "median_price": 650000
+  }
+ ],
+ "possibly_over_assessed": [
+  {
+   "address": "480 PEMBROKE ST",
+   "sale_price": 225000,
+   "sale_date": "2024-04-30",
+   "assessed": 325500.0,
+   "pct": -30.9,
+   "tax_bill": 7109,
+   "lat": null,
+   "lon": null
+  },
+  {
+   "address": "803 CROSS COUNTRY RD",
+   "sale_price": 335000,
+   "sale_date": "2023-06-30",
+   "assessed": 447600.0,
+   "pct": -25.2,
+   "tax_bill": 9776,
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "possibly_under_assessed": [
+  {
+   "address": "7-9 BROADWAY",
+   "sale_price": 1100000,
+   "sale_date": "2026-05-05",
+   "assessed": 518900.0,
+   "pct": 112.0,
+   "tax_bill": 11333,
+   "lat": null,
+   "lon": null
+  },
+  {
+   "address": "1 MIDDLE ST",
+   "sale_price": 1190000,
+   "sale_date": "2025-12-18",
+   "assessed": 576600.0,
+   "pct": 106.4,
+   "tax_bill": 12593,
+   "lat": null,
+   "lon": null
+  },
+  {
+   "address": "3-5 CHURCH ST",
+   "sale_price": 495000,
+   "sale_date": "2024-10-04",
+   "assessed": 291300.0,
+   "pct": 69.9,
+   "tax_bill": 6362,
+   "lat": null,
+   "lon": null
+  },
+  {
+   "address": "8 CENTRAL ST",
+   "sale_price": 325000,
+   "sale_date": "2026-05-14",
+   "assessed": 194100.0,
+   "pct": 67.4,
+   "tax_bill": 4239,
+   "lat": null,
+   "lon": null
+  },
+  {
+   "address": "634 BOROUGH RD",
+   "sale_price": 565000,
+   "sale_date": "2025-12-01",
+   "assessed": 343600.0,
+   "pct": 64.4,
+   "tax_bill": 7504,
+   "lat": null,
+   "lon": null
+  },
+  {
+   "address": "5-7 PLEASANT ST",
+   "sale_price": 535000,
+   "sale_date": "2025-10-02",
+   "assessed": 339500.0,
+   "pct": 57.6,
+   "tax_bill": 7415,
+   "lat": null,
+   "lon": null
+  },
+  {
+   "address": "9 HILLCREST AVE",
+   "sale_price": 298000,
+   "sale_date": "2026-07-06",
+   "assessed": 190500.0,
+   "pct": 56.4,
+   "tax_bill": 4161,
+   "lat": null,
+   "lon": null
+  },
+  {
+   "address": "228 PEMBROKE HILL RD",
+   "sale_price": 480000,
+   "sale_date": "2025-12-04",
+   "assessed": 309200.0,
+   "pct": 55.2,
+   "tax_bill": 6753,
+   "lat": null,
+   "lon": null
+  },
+  {
+   "address": "60-62 BROADWAY",
+   "sale_price": 845000,
+   "sale_date": "2026-03-05",
+   "assessed": 544500.0,
+   "pct": 55.2,
+   "tax_bill": 11892,
+   "lat": null,
+   "lon": null
+  },
+  {
+   "address": "423 BUCK ST",
+   "sale_price": 435600,
+   "sale_date": "2026-05-05",
+   "assessed": 285700.0,
+   "pct": 52.5,
+   "tax_bill": 6240,
+   "lat": null,
+   "lon": null
+  },
+  {
+   "address": "17 PROSPECT ST",
+   "sale_price": 565000,
+   "sale_date": "2025-10-30",
+   "assessed": 371000.0,
+   "pct": 52.3,
+   "tax_bill": 8103,
+   "lat": null,
+   "lon": null
+  },
+  {
+   "address": "12 MILLARD ST",
+   "sale_price": 480000,
+   "sale_date": "2026-05-12",
+   "assessed": 318100.0,
+   "pct": 50.9,
+   "tax_bill": 6947,
+   "lat": null,
+   "lon": null
+  },
+  {
+   "address": "6 CENTRAL ST",
+   "sale_price": 295000,
+   "sale_date": "2026-07-31",
+   "assessed": 196600.0,
+   "pct": 50.1,
+   "tax_bill": 4294,
+   "lat": null,
+   "lon": null
+  }
+ ],
+ "tax_bill": {
+  "median": 8971.9,
+  "p10": 6554.0,
+  "p90": 12593.0,
+  "on_300k": 6552.0,
+  "on_450k": 9828.0
+ }
+}

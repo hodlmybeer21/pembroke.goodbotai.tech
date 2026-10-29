@@ -100,7 +100,6 @@ export interface PropertyListingsFile {
 }
 
 let cachedListings: PropertyListingsFile | null = null;
-
 /**
  * Load currently-listed homes matched to their town parcel.
  *
@@ -115,6 +114,78 @@ export function loadPropertyListings(): PropertyListingsFile | null {
     if (!existsSync(path)) return null;
     cachedListings = JSON.parse(readFileSync(path, "utf8")) as PropertyListingsFile;
     return cachedListings;
+  } catch {
+    return null;
+  }
+}
+
+// ---------------------------------------------------------------- trends
+
+export interface TrendYear {
+  year: string;
+  sales: number;
+  median_psf: number | null;
+  median_ratio: number | null;
+  median_sale_price: number | null;
+  below_assessed: number;
+  within_20: number;
+  above_20: number;
+  median_tax_bill: number | null;
+}
+
+export interface PropertyTrendsFile {
+  generated_at: string;
+  tax_rate: number;
+  tax_rate_history: Record<string, number>;
+  parcel_count: number;
+  years: TrendYear[];
+  size_bands: Array<{
+    label: string;
+    count: number;
+    median_psf: number | null;
+    median_price: number | null;
+  }>;
+  possibly_over_assessed: Array<{
+    address: string | null;
+    sale_price: number;
+    sale_date: string;
+    assessed: number;
+    pct: number;
+    tax_bill: number;
+  }>;
+  possibly_under_assessed: Array<{
+    address: string | null;
+    sale_price: number;
+    sale_date: string;
+    assessed: number;
+    pct: number;
+    tax_bill: number;
+  }>;
+  tax_bill: {
+    median: number | null;
+    p10: number | null;
+    p90: number | null;
+    on_300k: number | null;
+    on_450k: number | null;
+  };
+}
+
+let cachedTrends: PropertyTrendsFile | null = null;
+
+/**
+ * Load the trend analytics for the property values page.
+ *
+ * The tax rate lives here because it is a fact about the town, not
+ * something we derive. It is the NH DRA's 2025 rate for Pembroke,
+ * $21.84 per $1,000 of assessed value.
+ */
+export function loadPropertyTrends(): PropertyTrendsFile | null {
+  if (cachedTrends) return cachedTrends;
+  try {
+    const path = join(process.cwd(), "data", "property-trends.json");
+    if (!existsSync(path)) return null;
+    cachedTrends = JSON.parse(readFileSync(path, "utf8")) as PropertyTrendsFile;
+    return cachedTrends;
   } catch {
     return null;
   }

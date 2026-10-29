@@ -12,12 +12,13 @@ import type { PropertyListing } from "@/lib/property-values";
 interface Props {
   listings: PropertyListing[];
   generatedAt: string;
+  taxRate?: number;
 }
 
 const money = (n: number | null) =>
   n === null ? "—" : "$" + n.toLocaleString("en-US", { maximumFractionDigits: 0 });
 
-export function ForSaleListings({ listings, generatedAt }: Props) {
+export function ForSaleListings({ listings, generatedAt, taxRate }: Props) {
   const [showAll, setShowAll] = useState(false);
 
   const sorted = useMemo(
@@ -61,6 +62,9 @@ export function ForSaleListings({ listings, generatedAt }: Props) {
                 <th className="py-2 pr-3 font-semibold text-stone-900">Address</th>
                 <th className="py-2 pr-3 text-right font-semibold text-stone-900">Asking</th>
                 <th className="py-2 pr-3 text-right font-semibold text-stone-900">Assessed</th>
+                {taxRate ? (
+                  <th className="py-2 pr-3 text-right font-semibold text-stone-900">Tax bill</th>
+                ) : null}
                 <th className="py-2 text-right font-semibold text-stone-900">Gap</th>
               </tr>
             </thead>
@@ -81,6 +85,12 @@ export function ForSaleListings({ listings, generatedAt }: Props) {
                       {money(l.list_price)}
                     </td>
                     <td className="py-2 pr-3 text-right text-stone-700">{money(l.assessed)}</td>
+                    {taxRate ? (
+                      <td className="py-2 pr-3 text-right whitespace-nowrap text-stone-600">
+                        {money(Math.round((l.assessed / 1000) * taxRate))}
+                        <span className="text-xs text-stone-400">/yr</span>
+                      </td>
+                    ) : null}
                     <td className="py-2 text-right whitespace-nowrap">
                       {diff !== null && (
                         <span

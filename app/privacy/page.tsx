@@ -190,6 +190,19 @@ export default function PrivacyPage() {
             listing sites (Redfin, Movoto), which publish them. Those sites
             may show a listing agent&apos;s name; we do not reproduce it.
           </p>
+          <p className="text-sm text-stone-700 leading-relaxed mt-3">
+            The tax bill figures on the{" "}
+            <Link className="underline" href="/property-values">
+              home sale values
+            </Link>{" "}
+            page are estimates, calculated as the town&apos;s assessed value
+            multiplied by the published tax rate of $21.84 per $1,000 for the
+            2025 tax year (set by the NH Department of Revenue Administration
+            on October 22, 2025). They are not a tax bill. Actual bills also
+            depend on your exemptions, veteran&apos;s credits, payment
+            schedule, and any district-specific charges, and the rate changes
+            every year.
+          </p>
         </section>
 
         <section className="lg:col-span-2 surface p-5">

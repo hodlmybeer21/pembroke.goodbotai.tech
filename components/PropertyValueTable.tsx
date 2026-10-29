@@ -14,6 +14,8 @@ interface Props {
   sales: PropertySale[];
   generatedAt: string;
   sourceUrl: string;
+  /** Town tax rate per $1,000 of assessed value, for the bill estimate. */
+  taxRate?: number;
 }
 
 type Filter = "all" | "below" | "near" | "above";
@@ -43,7 +45,7 @@ const FILTERS: Array<{ key: Filter; label: string }> = [
   { key: "above", label: "Above assessment" },
 ];
 
-export function PropertyValueTable({ sales, generatedAt, sourceUrl }: Props) {
+export function PropertyValueTable({ sales, generatedAt, sourceUrl, taxRate }: Props) {
   const [filter, setFilter] = useState<Filter>("all");
   const [scope, setScope] = useState<Scope>("market");
   const [sort, setSort] = useState<SortKey>("date");
@@ -226,9 +228,12 @@ export function PropertyValueTable({ sales, generatedAt, sourceUrl }: Props) {
             <tr className="border-b border-stone-300 text-left">
               <th className="py-2 pr-3 font-semibold text-stone-900">{sortBtn("date", "Sold", "text-left")}</th>
               <th className="py-2 pr-3 font-semibold text-stone-900">Address</th>
-              <th className="py-2 pr-3 font-semibold text-stone-900">{sortBtn("price", "Sale price")}</th>
-              <th className="py-2 pr-3 font-semibold text-stone-900">{sortBtn("assessed", "Town assessed")}</th>
-              <th className="py-2 font-semibold text-stone-900">{sortBtn("pct", "Difference")}</th>
+              <th className="py-2 pr-3 text-right font-semibold text-stone-900">{sortBtn("price", "Sale price")}</th>
+              <th className="py-2 pr-3 text-right font-semibold text-stone-900">{sortBtn("assessed", "Town assessed")}</th>
+              {taxRate ? (
+                <th className="py-2 pr-3 text-right font-semibold text-stone-900">Est. tax bill</th>
+              ) : null}
+              <th className="py-2 text-right font-semibold text-stone-900">{sortBtn("pct", "Difference")}</th>
             </tr>
           </thead>
           <tbody>
@@ -258,6 +263,12 @@ export function PropertyValueTable({ sales, generatedAt, sourceUrl }: Props) {
                   </td>
                   <td className="py-2 pr-3 text-right font-medium text-stone-900">{money(s.sale_price)}</td>
                   <td className="py-2 pr-3 text-right text-stone-700">{money(s.assessed)}</td>
+                  {taxRate ? (
+                    <td className="py-2 pr-3 text-right whitespace-nowrap text-stone-600">
+                      {money(Math.round((s.assessed / 1000) * taxRate))}
+                      <span className="text-xs text-stone-400">/yr</span>
+                    </td>
+                  ) : null}
                   <td className="py-2 text-right whitespace-nowrap">
                     <span
                       className={`font-semibold ${
