@@ -47,10 +47,10 @@ const TABS: Tab[] = [
     match: (p) => p === "/",
   },
   {
-    href: "/ask",
-    label: "Ask",
-    icon: <Icon d="M21 12a8 8 0 1 1-3.6-6.7L21 4l-1 4h-3a8 8 0 0 1 4 4z" />,
-    match: (p) => p === "/ask",
+    href: "/decisions",
+    label: "Decisions",
+    icon: <Icon d="M9 12l2 2 4-4m7 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" />,
+    match: (p) => p === "/decisions" || p.startsWith("/decisions/"),
   },
   {
     href: "/trash",
@@ -59,10 +59,10 @@ const TABS: Tab[] = [
     match: (p) => p === "/trash",
   },
   {
-    href: "/archive",
-    label: "Archive",
-    icon: <Icon d="M12 8v4l3 2M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z" />,
-    match: (p) => p === "/archive",
+    href: "/ask",
+    label: "Ask",
+    icon: <Icon d="M21 12a8 8 0 1 1-3.6-6.7L21 4l-1 4h-3a8 8 0 0 1 4 4z" />,
+    match: (p) => p === "/ask",
   },
 ];
 

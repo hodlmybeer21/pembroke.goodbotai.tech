@@ -4,7 +4,7 @@
 // (for next-meeting dates), then renders the directory grouped by
 // committee type, with a "How to participate" footer.
 
-import { fetchAllFeeds } from "@/lib/ical";
+import { loadCalendarEvents } from "@/lib/town-data";
 import { loadOfficials, groupCommittees, type Committee } from "@/lib/officials";
 import Link from "next/link";
 
@@ -17,7 +17,7 @@ async function attachNextMeetings(committees: Committee[]): Promise<Committee[]>
   // committees that don't appear in the iCal feed, leave null.
   let events;
   try {
-    events = await fetchAllFeeds();
+    events = loadCalendarEvents();
   } catch {
     return committees;
   }

@@ -1,0 +1,268 @@
+{
+ "generated_at": "2026-10-29T20:19:04.931198Z",
+ "source": "https://www.pembroke-nh.com/calendar.aspx",
+ "today": "2026-10-29",
+ "counts": {
+  "events": 23,
+  "meetings": 11,
+  "other": 12,
+  "errors": 0
+ },
+ "meetings": [
+  {
+   "date": "2026-11-04",
+   "time": "6:00 PM",
+   "all_day": false,
+   "title": "Select Board Meeting",
+   "eid": "500",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=500",
+   "is_meeting": true,
+   "last_meeting": "2026-08-19",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "6:30 PM",
+   "all_day": false,
+   "title": "Planning Board Workshop",
+   "eid": "440",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=440",
+   "is_meeting": true,
+   "last_meeting": "2026-07-28",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "6:00 PM",
+   "all_day": false,
+   "title": "Select Board Meeting",
+   "eid": "505",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=505",
+   "is_meeting": true,
+   "last_meeting": "2026-08-19",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "6:30 PM",
+   "all_day": false,
+   "title": "Planning Board Meeting",
+   "eid": "411",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=411",
+   "is_meeting": true,
+   "last_meeting": "2026-07-28",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359"
+  },
+  {
+   "date": "2026-12-02",
+   "time": "6:00 PM",
+   "all_day": false,
+   "title": "Select Board Meeting",
+   "eid": "501",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=501",
+   "is_meeting": true,
+   "last_meeting": "2026-08-19",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+  },
+  {
+   "date": "2026-12-08",
+   "time": "6:30 PM",
+   "all_day": false,
+   "title": "Planning Board Workshop",
+   "eid": "441",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=441",
+   "is_meeting": true,
+   "last_meeting": "2026-07-28",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359"
+  },
+  {
+   "date": "2026-12-16",
+   "time": "6:00 PM",
+   "all_day": false,
+   "title": "Select Board Meeting",
+   "eid": "506",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=506",
+   "is_meeting": true,
+   "last_meeting": "2026-08-19",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+  },
+  {
+   "date": "2026-12-22",
+   "time": "6:30 PM",
+   "all_day": false,
+   "title": "Planning Board Meeting",
+   "eid": "412",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=412",
+   "is_meeting": true,
+   "last_meeting": "2026-07-28",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359"
+  },
+  {
+   "date": "2027-01-06",
+   "time": "6:00 PM",
+   "all_day": false,
+   "title": "Select Board Meeting",
+   "eid": "502",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=502",
+   "is_meeting": true,
+   "last_meeting": "2026-08-19",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+  },
+  {
+   "date": "2027-01-12",
+   "time": "6:30 PM",
+   "all_day": false,
+   "title": "Planning Board Workshop",
+   "eid": "442",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=442",
+   "is_meeting": true,
+   "last_meeting": "2026-07-28",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359"
+  },
+  {
+   "date": "2027-01-26",
+   "time": "6:30 PM",
+   "all_day": false,
+   "title": "Planning Board Meeting",
+   "eid": "413",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=413",
+   "is_meeting": true,
+   "last_meeting": "2026-07-28",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359"
+  }
+ ],
+ "other": [
+  {
+   "date": "2026-11-11",
+   "time": "8:00 AM",
+   "all_day": false,
+   "title": "Veterans Day- Office Closed",
+   "eid": "404",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=404",
+   "is_meeting": false,
+   "last_meeting": null,
+   "last_minutes_url": null
+  },
+  {
+   "date": "2026-11-23",
+   "time": "",
+   "all_day": true,
+   "title": "Pembroke Water Works- Thanksgiving Week- Office Closed",
+   "eid": "401",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
+   "is_meeting": false,
+   "last_meeting": "2026-07-16",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "",
+   "all_day": true,
+   "title": "Pembroke Water Works- Thanksgiving Week- Office Closed",
+   "eid": "401",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
+   "is_meeting": false,
+   "last_meeting": "2026-07-16",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "",
+   "all_day": true,
+   "title": "Pembroke Water Works- Thanksgiving Week- Office Closed",
+   "eid": "401",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
+   "is_meeting": false,
+   "last_meeting": "2026-07-16",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "",
+   "all_day": true,
+   "title": "Pembroke Water Works- Thanksgiving Week- Office Closed",
+   "eid": "401",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
+   "is_meeting": false,
+   "last_meeting": "2026-07-16",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+  },
+  {
+   "date": "2026-11-27",
+   "time": "",
+   "all_day": true,
+   "title": "Pembroke Water Works- Thanksgiving Week- Office Closed",
+   "eid": "401",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
+   "is_meeting": false,
+   "last_meeting": "2026-07-16",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+  },
+  {
+   "date": "2026-12-21",
+   "time": "",
+   "all_day": true,
+   "title": "Pembroke Water Works- Christmas Week- Office Closed",
+   "eid": "405",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
+   "is_meeting": false,
+   "last_meeting": "2026-07-16",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+  },
+  {
+   "date": "2026-12-22",
+   "time": "",
+   "all_day": true,
+   "title": "Pembroke Water Works- Christmas Week- Office Closed",
+   "eid": "405",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
+   "is_meeting": false,
+   "last_meeting": "2026-07-16",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+  },
+  {
+   "date": "2026-12-23",
+   "time": "",
+   "all_day": true,
+   "title": "Pembroke Water Works- Christmas Week- Office Closed",
+   "eid": "405",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
+   "is_meeting": false,
+   "last_meeting": "2026-07-16",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+  },
+  {
+   "date": "2026-12-24",
+   "time": "",
+   "all_day": true,
+   "title": "Pembroke Water Works- Christmas Week- Office Closed",
+   "eid": "405",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
+   "is_meeting": false,
+   "last_meeting": "2026-07-16",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+  },
+  {
+   "date": "2026-12-25",
+   "time": "",
+   "all_day": true,
+   "title": "Pembroke Water Works- Christmas Week- Office Closed",
+   "eid": "405",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
+   "is_meeting": false,
+   "last_meeting": "2026-07-16",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+  },
+  {
+   "date": "2027-01-01",
+   "time": "8:00 AM",
+   "all_day": false,
+   "title": "New Years Day- Office Closed",
+   "eid": "406",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=406",
+   "is_meeting": false,
+   "last_meeting": null,
+   "last_minutes_url": null
+  }
+ ]
+}

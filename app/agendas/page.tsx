@@ -1,79 +1,55 @@
-import { fetchAgendaCenter, loadOcrExport, findSummary } from "@/lib/agenda-center";
-import { NewSinceLastVisit } from "./NewSinceLastVisit";
+// app/agendas/page.tsx — browse every agenda and minute the town has posted.
+//
+// Built from data/archive-index.json: 630 documents with OCR summaries,
+// grouped by month. The live Agenda Center landing page only exposes 13
+// rows (one stale entry per committee), so the archive index is the
+// better source and this page uses it directly.
+//
+// The filters run client-side over the full index, so every document is
+// reachable without a page load.
+
+import Link from "next/link";
+import { loadArchiveIndex, type ArchiveDoc } from "@/lib/town-data";
+import { AgendaBrowser } from "@/components/AgendaBrowser";
 
 export const revalidate = 3600;
 
-export default async function AgendasPage() {
-  const docs = await fetchAgendaCenter().catch(() => []);
-  const ocr = loadOcrExport();
-  const ocrGeneratedAt = ocr?.generated_at;
+export default function AgendasPage({
+  searchParams,
+}: {
+  searchParams?: Promise<{ committee?: string }>;
+}) {
+  const index = loadArchiveIndex();
+  const docs: ArchiveDoc[] = (index?.months ?? []).flatMap((m) => m.entries);
+  const committees = index?.committees ?? [];
 
   return (
-    <div className="container-page">
-      <header className="mb-8">
-        <h1 className="font-serif text-3xl font-semibold text-stone-900 tracking-tight">
-          Agendas & minutes
-        </h1>
-        <p className="text-stone-600 mt-2 text-sm">
-          Recent postings from the{" "}
-          <a
-            href="https://www.pembroke-nh.com/agendacenter"
-            className="underline"
-          >
-            town agenda center
-          </a>
-          . PDFs are scanned images; on-device OCR auto-summaries appear when available.
-        </p>
-      </header>
+    <main className="mx-auto max-w-4xl px-4 py-8 pb-24 md:pb-10">
+      <nav className="text-sm text-stone-500">
+        <Link href="/" className="hover:underline">
+          Pembroke
+        </Link>{" "}
+        / Agendas &amp; minutes
+      </nav>
 
-      <div className="mb-6">
-        <NewSinceLastVisit totalCount={docs.length} />
+      <h1 className="mt-2 font-serif text-3xl font-bold text-stone-900">
+        Agendas &amp; minutes
+      </h1>
+      <p className="mt-2 max-w-2xl text-stone-700">
+        Every agenda and set of minutes the town has posted —{" "}
+        <strong className="text-stone-900">{docs.length} documents</strong>{" "}
+        across {committees.length} boards and committees. The PDFs are
+        scanned images, so each one is read and summarised here. Every
+        entry links to the town&rsquo;s own document.
+      </p>
+
+      <div className="mt-8">
+        <AgendaBrowser
+          docs={docs}
+          committees={committees}
+          generatedAt={index?.generated_at}
+        />
       </div>
-
-      {docs.length === 0 ? (
-        <p className="text-stone-500">No agenda postings available right now.</p>
-      ) : (
-        <ul className="grid gap-4 sm:grid-cols-2">
-          {docs.map((d, idx) => {
-            const summary = findSummary(d, ocr);
-            return (
-              <li key={idx} className="surface p-5">
-                <div className="flex items-baseline gap-2 text-xs text-stone-500">
-                  <time>{d.meetingDate}</time>
-                  <span className="font-medium text-stone-700">{d.committee}</span>
-                  <span className="tag-pill ml-auto">{d.docType}</span>
-                </div>
-                <div className="mt-2 text-sm font-medium text-stone-900">{d.title}</div>
-                {summary && (
-                  <p className="mt-3 text-xs text-stone-600 leading-relaxed">
-                    {summary.length > 320
-                      ? summary.slice(0, 319).trimEnd() + "…"
-                      : summary}
-                  </p>
-                )}
-                <div className="mt-3 flex items-center gap-3">
-                  <a
-                    className="text-xs text-brand-700 underline"
-                    href={d.url}
-                  >
-                    Read full document →
-                  </a>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
-      )}
-
-      {ocrGeneratedAt && (
-        <p className="text-xs text-stone-500 mt-8 pt-6 border-t border-stone-200">
-          Auto-summaries generated from OCR{" "}
-          <time dateTime={ocrGeneratedAt}>
-            {new Date(ocrGeneratedAt).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" })}
-          </time>
-          .
-        </p>
-      )}
-    </div>
+    </main>
   );
 }

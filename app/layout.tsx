@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ClerkProviderWrapper } from "@/components/ClerkProviderWrapper";
 import { NavLink } from "@/components/NavLink";
+import { MoreMenu } from "@/components/MoreMenu";
 import { NavAuth } from "@/components/NavAuth";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { SnowBanner } from "@/components/SnowBanner";
@@ -54,19 +55,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 <span>Pembroke, NH</span>
               </Link>
               <nav className="hidden lg:flex gap-5 text-white items-center text-sm">
+                <NavLink href="/decisions">How the town decides</NavLink>
+                <NavLink href="/property-values">Sale values</NavLink>
                 <NavLink href="/calendar">Calendar</NavLink>
                 <NavLink href="/agendas">Agendas</NavLink>
-                <NavLink href="/archive">Archive</NavLink>
                 <NavLink href="/ask">Ask</NavLink>
-                <NavLink href="/trash">Trash</NavLink>
-                <NavLink href="/officials">Officials</NavLink>
-                <NavLink href="/report">Report</NavLink>
-                <NavLink href="/participate">Participate</NavLink>
-                <NavLink href="/welcome">Welcome</NavLink>
-                <NavLink href="/schools">Schools</NavLink>
-                <NavLink href="/property-values">Sale values</NavLink>
-                <NavLink href="/decisions">How the town decides</NavLink>
-                <NavLink href="/about">About</NavLink>
+                <MoreMenu />
                 <span className="border-l border-white/20 pl-3 ml-1">
                   <NavAuth />
                 </span>
@@ -74,10 +68,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               {/* Medium screens (sm-lg) — show a trimmed inline nav of
                   the four highest-traffic pages plus a hamburger for the rest. */}
               <nav className="hidden sm:flex lg:hidden gap-4 text-white text-sm items-center">
+                <NavLink href="/decisions">Decisions</NavLink>
                 <NavLink href="/calendar">Calendar</NavLink>
-                <NavLink href="/agendas">Agendas</NavLink>
                 <NavLink href="/ask">Ask</NavLink>
                 <NavLink href="/trash">Trash</NavLink>
+                <MoreMenu />
               </nav>
               {/* Small screens — just the wordmark + account icon.
                   Navigation lives in the sticky bottom nav below. */}

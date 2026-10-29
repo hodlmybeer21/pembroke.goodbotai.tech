@@ -16,7 +16,7 @@
 // focused on what they care about instead of dumping the full
 // 7-day brief.
 
-import { fetchAllFeeds, dedupeByDateTitle, filterHorizon } from "./ical";
+import { loadCalendarEvents, dedupeByDateTitle, filterHorizon } from "./town-data";
 import { fetchAgendaCenter, loadOcrExport } from "./agenda-center";
 import { buildBrief, type BriefItem } from "./brief";
 import { findPersona, type Persona } from "./categories";
@@ -107,7 +107,7 @@ export async function buildDigest(inputs: DigestInputs): Promise<Digest> {
 
   // Pull the same data the home page uses.
   const [events, docs] = await Promise.all([
-    fetchAllFeeds().catch(() => []),
+    Promise.resolve(loadCalendarEvents()),
     fetchAgendaCenter().catch(() => []),
   ]);
   const deduped = dedupeByDateTitle(

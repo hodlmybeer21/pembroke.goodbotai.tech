@@ -15,7 +15,7 @@
 
 import { NextResponse } from "next/server";
 import { fetchAgendaCenter, loadOcrExport } from "@/lib/agenda-center";
-import { fetchAllFeeds, filterHorizon } from "@/lib/ical";
+import { loadUpcomingMeetings } from "@/lib/town-data";
 import { loadTownInfo, selectRelevantPages } from "@/lib/town-info";
 import { loadArchive, selectArchiveEntries, isPastMeetingQuestion, type ArchiveEntry } from "@/lib/archive";
 import { loadTrashRoutes, searchStreets, curbsideReminder } from "@/lib/trash";
@@ -29,6 +29,8 @@ interface Meeting {
   title: string;
   when: Date;
   url?: string;
+  /** The meeting's own start time, e.g. "6:00 PM". */
+  time?: string;
 }
 
 interface AskContext {
@@ -224,19 +226,21 @@ function topicCommittees(q: string): string[] {
 async function buildContext(q: string): Promise<AskContext> {
   const now = new Date();
   const horizonEnd = new Date(now.getTime() + 90 * 24 * 3600 * 1000);
-  const [events, docs, townInfo, archive] = await Promise.all([
-    fetchAllFeeds().catch(() => []),
+  const [docs, townInfo, archive] = await Promise.all([
     fetchAgendaCenter().catch(() => []),
     Promise.resolve(loadTownInfo()),
     Promise.resolve(loadArchive()),
   ]);
-  const upcoming = filterHorizon(events, now, horizonEnd)
-    .sort((a, b) => a.start.getTime() - b.start.getTime())
-    .slice(0, 12);
-  const meetings: Meeting[] = upcoming.map((e) => ({
-    committee: e.committee,
-    title: e.summary,
-    when: e.start,
+  // Upcoming meetings come from data/calendar.json - the town's iCal
+  // endpoints are dead, and the live Agenda Center page only lists 13
+  // stale rows. The calendar file is scraped from the same endpoint the
+  // town's own calendar widget uses.
+  const meetings: Meeting[] = loadUpcomingMeetings(12).map((m) => ({
+    committee: m.committee,
+    title: m.title,
+    when: m.when,
+    time: m.time,
+    url: m.url,
   }));
   const ocr = loadOcrExport();
   const summaries = Object.values(ocr?.summaries ?? {})
@@ -355,14 +359,14 @@ function stubAnswer(q: string, ctx: AskContext): string {
     if (matches.length > 0) {
       lines.push(`Upcoming ${namedCommittee} meeting${matches.length > 1 ? "s" : ""}:`);
       for (const m of matches) {
+        // The calendar gives the real start time ("6:00 PM"); use it
+        // rather than the noon placeholder the date carries.
         const when = m.when.toLocaleString("en-US", {
           weekday: "short",
           month: "short",
           day: "numeric",
-          hour: "numeric",
-          minute: "2-digit",
         });
-        lines.push(`- ${when} — ${m.title}`);
+        lines.push(`- ${when}${m.time ? ` at ${m.time}` : ""} — ${m.title}`);
       }
     }
   } else if (ctx.townPages.length > 0) {

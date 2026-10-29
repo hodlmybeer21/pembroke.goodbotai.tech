@@ -9,7 +9,7 @@
 // and pick the most recent one that is active for today's date in ET.
 
 import "server-only";
-import { fetchAllFeeds, type CalendarEvent } from "./ical";
+import { loadCalendarEvents, type LegacyCalendarEvent as CalendarEvent } from "./town-data";
 
 export interface SnowNotice {
   until: Date;
@@ -69,7 +69,7 @@ function isActiveToday(e: CalendarEvent, todayYmd: string): boolean {
 export async function getActiveSnowNotice(): Promise<SnowNotice | null> {
   let events: CalendarEvent[] = [];
   try {
-    events = await fetchAllFeeds();
+    events = loadCalendarEvents();
   } catch {
     return null;
   }

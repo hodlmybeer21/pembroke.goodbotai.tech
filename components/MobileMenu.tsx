@@ -24,23 +24,24 @@ interface NavGroup {
 
 const GROUPS: NavGroup[] = [
   {
-    label: "Today",
+    label: "Read the town",
     items: [
-      { href: "/", label: "Daily brief" },
+      { href: "/decisions", label: "How the town decides" },
+      { href: "/property-values", label: "Home sale values" },
       { href: "/calendar", label: "Meeting calendar" },
-      { href: "/agendas", label: "Agendas" },
+      { href: "/agendas", label: "Agendas & minutes" },
+      { href: "/archive", label: "Meeting archive" },
     ],
   },
   {
     label: "I need to…",
     items: [
+      { href: "/trash", label: "Trash day lookup" },
       { href: "/report", label: "Report an issue" },
       { href: "/officials", label: "Email an official" },
       { href: "/participate", label: "Speak at a meeting" },
       { href: "/welcome", label: "New resident checklist" },
       { href: "/schools", label: "Schools (SAU 53)" },
-      { href: "/property-values", label: "Home sale values" },
-      { href: "/decisions", label: "How the town decides" },
     ],
   },
   {
