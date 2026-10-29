@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0f2a5c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Stylised map pins: green above assessment, red below -->
+  <g opacity="0.9">
+    <g transform="translate(880, 120)">
+      <path d="M0 0 C -16 -22 -24 -33 -24 -46 a 24 24 0 1 1 48 0 C 24 -33 16 -22 0 0 Z" fill="#15803d" stroke="white" stroke-width="2.5"/>
+      <circle cx="0" cy="-46" r="9" fill="white"/>
+    </g>
+    <g transform="translate(985, 195)">
+      <path d="M0 0 C -16 -22 -24 -33 -24 -46 a 24 24 0 1 1 48 0 C 24 -33 16 -22 0 0 Z" fill="#b91c1c" stroke="white" stroke-width="2.5"/>
+      <circle cx="0" cy="-46" r="9" fill="white"/>
+    </g>
+    <g transform="translate(1075, 130)">
+      <path d="M0 0 C -16 -22 -24 -33 -24 -46 a 24 24 0 1 1 48 0 C 24 -33 16 -22 0 0 Z" fill="#15803d" stroke="white" stroke-width="2.5"/>
+      <circle cx="0" cy="-46" r="9" fill="white"/>
+    </g>
+    <g transform="translate(915, 265)">
+      <path d="M0 0 C -14 -19 -21 -29 -21 -40 a 21 21 0 1 1 42 0 C 21 -29 14 -19 0 0 Z" fill="#b45309" stroke="white" stroke-width="2.5"/>
+      <circle cx="0" cy="-40" r="8" fill="white"/>
+    </g>
+    <g transform="translate(1040, 290)">
+      <path d="M0 0 C -14 -19 -21 -29 -21 -40 a 21 21 0 1 1 42 0 C 21 -29 14 -19 0 0 Z" fill="#15803d" stroke="white" stroke-width="2.5"/>
+      <circle cx="0" cy="-40" r="8" fill="white"/>
+    </g>
+  </g>
+
+  <!-- Faint street grid -->
+  <g stroke="white" stroke-width="1" opacity="0.13">
+    <path d="M760 60 L1160 250"/>
+    <path d="M740 180 L1180 380"/>
+    <path d="M780 300 L1140 470"/>
+    <path d="M860 60 L760 420"/>
+    <path d="M980 60 L880 470"/>
+    <path d="M1090 80 L990 500"/>
+  </g>
+
+  <text x="80" y="150" fill="white" font-family="system-ui, sans-serif" font-size="24" font-weight="600" opacity="0.9">Pembroke, NH</text>
+  <text x="80" y="290" fill="white" font-family="system-ui, sans-serif" font-size="68" font-weight="700" letter-spacing="-0.02em">Home sales vs.</text>
+  <text x="80" y="366" fill="white" font-family="system-ui, sans-serif" font-size="68" font-weight="700" letter-spacing="-0.02em">tax assessed value</text>
+  <text x="80" y="440" fill="#fef3c7" font-family="system-ui, sans-serif" font-size="26" font-weight="400">Every recent sale, next to what the town bills tax on.</text>
+  <text x="80" y="478" fill="#fef3c7" font-family="system-ui, sans-serif" font-size="26" font-weight="400">Pinned on a map. Tap a home to see the gap.</text>
+
+  <g transform="translate(80, 520)" font-family="system-ui, sans-serif" font-size="19">
+    <circle cx="9" cy="9" r="9" fill="#15803d"/>
+    <text x="28" y="15" fill="white" opacity="0.85">Sold above assessed</text>
+    <circle cx="239" cy="9" r="9" fill="#b45309"/>
+    <text x="258" y="15" fill="white" opacity="0.85">Within 10%</text>
+    <circle cx="405" cy="9" r="9" fill="#b91c1c"/>
+    <text x="424" y="15" fill="white" opacity="0.85">Sold below assessed</text>
+  </g>
+</svg>

@@ -1,0 +1,7247 @@
+{
+ "generated_at": "2026-10-29T16:31:09.534890+00:00",
+ "source": "Town of Pembroke property database (AxisGIS) - tax assessment and recorded sales",
+ "source_url": "https://www.axisgis.com/PembrokeNH/",
+ "town": "Pembroke, NH",
+ "years_shown": 4,
+ "count": 214,
+ "market_sale_count": 171,
+ "below_assessment_count": 46,
+ "sales": [
+  {
+   "cama": "264-0041-006-000",
+   "address": "330A&B ACADEMY RD",
+   "sale_price": 600000,
+   "sale_date": "2026-09-28",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 412300,
+   "assessed_land": 130100,
+   "assessed_bldg": 281300,
+   "difference": 187700,
+   "pct_of_assessed": 45.5,
+   "below_assessment": false,
+   "lat": 43.147963,
+   "lon": -71.441055,
+   "use": "TWO FAMILY",
+   "sqft": "1944",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1986",
+   "acres": 2.02741,
+   "zone": "R-1B",
+   "prior_sales": []
+  },
+  {
+   "cama": "565-0039-000-000",
+   "address": "44 SHERWOOD MEADOWS",
+   "sale_price": 515000,
+   "sale_date": "2026-09-21",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 415000,
+   "assessed_land": 114400,
+   "assessed_bldg": 291300,
+   "difference": 100000,
+   "pct_of_assessed": 24.1,
+   "below_assessment": false,
+   "lat": 43.150762,
+   "lon": -71.46428,
+   "use": "SINGLE FAM",
+   "sqft": "1848",
+   "beds": "4",
+   "baths": "1",
+   "year_built": "1962",
+   "acres": 0.24,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2025-08-29",
+     "price": 415000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "563-0040-010-000",
+   "address": "503 ASHLEY DR",
+   "sale_price": 705000,
+   "sale_date": "2026-09-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 561100,
+   "assessed_land": 132600,
+   "assessed_bldg": 419600,
+   "difference": 143900,
+   "pct_of_assessed": 25.6,
+   "below_assessment": false,
+   "lat": 43.172539,
+   "lon": -71.474475,
+   "use": "SINGLE FAM",
+   "sqft": "2357",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2004",
+   "acres": 0.922062,
+   "zone": "R-1C",
+   "prior_sales": [
+    {
+     "date": "2004-02-25",
+     "price": 80000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2005-04-20",
+     "price": 309800,
+     "qualified": "Q"
+    },
+    {
+     "date": "2018-10-02",
+     "price": 350000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0085-039-000",
+   "address": "147 TINA DR",
+   "sale_price": 565000,
+   "sale_date": "2026-09-17",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 453100,
+   "assessed_land": 118600,
+   "assessed_bldg": 323100,
+   "difference": 111900,
+   "pct_of_assessed": 24.7,
+   "below_assessment": false,
+   "lat": 43.137041,
+   "lon": -71.4436,
+   "use": "SINGLE FAM",
+   "sqft": "1728",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1986",
+   "acres": 0.539137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1986-09-25",
+     "price": 135000,
+     "qualified": "U"
+    },
+    {
+     "date": "2004-10-13",
+     "price": 240000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2022-10-11",
+     "price": 436000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0007-022-000",
+   "address": "42 MASON AVE",
+   "sale_price": 586000,
+   "sale_date": "2026-09-16",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 481800,
+   "assessed_land": 144400,
+   "assessed_bldg": 328700,
+   "difference": 104200,
+   "pct_of_assessed": 21.6,
+   "below_assessment": false,
+   "lat": 43.138074,
+   "lon": -71.459018,
+   "use": "SINGLE FAM",
+   "sqft": "1429",
+   "beds": "2",
+   "baths": "2",
+   "year_built": "1997",
+   "acres": 1.829137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1997-06-02",
+     "price": 122800,
+     "qualified": "U"
+    },
+    {
+     "date": "2019-09-13",
+     "price": 320000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0204-000-000",
+   "address": "383 ROWE AVE",
+   "sale_price": 487500,
+   "sale_date": "2026-09-08",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 401500,
+   "assessed_land": 136100,
+   "assessed_bldg": 234300,
+   "difference": 86000,
+   "pct_of_assessed": 21.4,
+   "below_assessment": false,
+   "lat": 43.159535,
+   "lon": -71.465516,
+   "use": "SINGLE FAM",
+   "sqft": "1456",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1960",
+   "acres": 0.839137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1998-12-04",
+     "price": 114000,
+     "qualified": "U"
+    },
+    {
+     "date": "2008-06-20",
+     "price": 242500,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "260-0034-003-000",
+   "address": "542 CROSS COUNTRY RD",
+   "sale_price": 629900,
+   "sale_date": "2026-08-21",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 503800,
+   "assessed_land": 144700,
+   "assessed_bldg": 351500,
+   "difference": 126100,
+   "pct_of_assessed": 25.0,
+   "below_assessment": false,
+   "lat": 43.186845,
+   "lon": -71.448816,
+   "use": "SINGLE FAM",
+   "sqft": "1985",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "2001",
+   "acres": 3.176547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2001-03-28",
+     "price": 182000,
+     "qualified": "U"
+    },
+    {
+     "date": "2019-05-01",
+     "price": 320000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2022-04-12",
+     "price": 525000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "264-0045-017-000",
+   "address": "238 ALEXANDER DR",
+   "sale_price": 350000,
+   "sale_date": "2026-08-21",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 577500,
+   "assessed_land": 152600,
+   "assessed_bldg": 396700,
+   "difference": -227500,
+   "pct_of_assessed": -39.4,
+   "below_assessment": true,
+   "lat": 43.145672,
+   "lon": -71.441282,
+   "use": "SINGLE FAM",
+   "sqft": "2096",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2001",
+   "acres": 1.69,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "2001-06-15",
+     "price": 40000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "634-0037-000-000",
+   "address": "520 PEMBROKE ST",
+   "sale_price": 508700,
+   "sale_date": "2026-08-21",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 355500,
+   "assessed_land": 108900,
+   "assessed_bldg": 208700,
+   "difference": 153200,
+   "pct_of_assessed": 43.1,
+   "below_assessment": false,
+   "lat": 43.171323,
+   "lon": -71.48223,
+   "use": "SINGLE FAM",
+   "sqft": "1240",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1962",
+   "acres": 1.187006,
+   "zone": "LO-A",
+   "prior_sales": [
+    {
+     "date": "2006-02-02",
+     "price": 250000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2026-02-03",
+     "price": 305000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0007-010-000",
+   "address": "14 BRITTANY CIRCLE",
+   "sale_price": 640000,
+   "sale_date": "2026-08-17",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 486600,
+   "assessed_land": 145500,
+   "assessed_bldg": 333900,
+   "difference": 153400,
+   "pct_of_assessed": 31.5,
+   "below_assessment": false,
+   "lat": 43.139725,
+   "lon": -71.456064,
+   "use": "SINGLE FAM",
+   "sqft": "1832",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1999",
+   "acres": 1.419808,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2001-05-01",
+     "price": 172000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-110-000",
+   "address": "435 TERRIE DR",
+   "sale_price": 540000,
+   "sale_date": "2026-08-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 373400,
+   "assessed_land": 143000,
+   "assessed_bldg": 228300,
+   "difference": 166600,
+   "pct_of_assessed": 44.6,
+   "below_assessment": false,
+   "lat": 43.161297,
+   "lon": -71.475716,
+   "use": "SINGLE FAM",
+   "sqft": "1328",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1987",
+   "acres": 1.249137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1987-11-18",
+     "price": 125600,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "256-0001-005-000",
+   "address": "762 ROBINSON RD",
+   "sale_price": 649000,
+   "sale_date": "2026-07-17",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 585800,
+   "assessed_land": 141400,
+   "assessed_bldg": 443900,
+   "difference": 63200,
+   "pct_of_assessed": 10.8,
+   "below_assessment": false,
+   "lat": 43.229438,
+   "lon": -71.460737,
+   "use": "SINGLE FAM",
+   "sqft": "2704",
+   "beds": "3",
+   "baths": "3",
+   "year_built": "2001",
+   "acres": 2.206547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2000-10-30",
+     "price": 35000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0092-008-000",
+   "address": "19 WHITTEMORE RD",
+   "sale_price": 575000,
+   "sale_date": "2026-07-16",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 437700,
+   "assessed_land": 133100,
+   "assessed_bldg": 294800,
+   "difference": 137300,
+   "pct_of_assessed": 31.4,
+   "below_assessment": false,
+   "lat": 43.164824,
+   "lon": -71.478271,
+   "use": "SINGLE FAM",
+   "sqft": "1666",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "2002",
+   "acres": 0.519137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2003-03-13",
+     "price": 210000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2017-11-09",
+     "price": 265000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "634-0039-000-000",
+   "address": "526 PEMBROKE ST",
+   "sale_price": 435000,
+   "sale_date": "2026-07-06",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 316300,
+   "assessed_land": 96500,
+   "assessed_bldg": 219500,
+   "difference": 118700,
+   "pct_of_assessed": 37.5,
+   "below_assessment": false,
+   "lat": 43.172222,
+   "lon": -71.482579,
+   "use": "SINGLE FAM",
+   "sqft": "1313",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1951",
+   "acres": 0.34,
+   "zone": "LO-A",
+   "prior_sales": [
+    {
+     "date": "1995-07-07",
+     "price": 83000,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-03-01",
+     "price": 220000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0148-000-000",
+   "address": "235 BUCK ST",
+   "sale_price": 400000,
+   "sale_date": "2026-06-26",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 294000,
+   "assessed_land": 99100,
+   "assessed_bldg": 187000,
+   "difference": 106000,
+   "pct_of_assessed": 36.1,
+   "below_assessment": false,
+   "lat": 43.139298,
+   "lon": -71.436252,
+   "use": "SINGLE FAM",
+   "sqft": "1116",
+   "beds": "4",
+   "baths": "1",
+   "year_built": "1956",
+   "acres": 0.5,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "2021-06-30",
+     "price": 275000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0233-001-000",
+   "address": "365A&B PEMBROKE ST",
+   "sale_price": 569900,
+   "sale_date": "2026-06-23",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 381000,
+   "assessed_land": 98200,
+   "assessed_bldg": 280200,
+   "difference": 188900,
+   "pct_of_assessed": 49.6,
+   "below_assessment": false,
+   "lat": 43.155975,
+   "lon": -71.465818,
+   "use": "TWO FAMILY",
+   "sqft": "1161",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1979",
+   "acres": 0.479137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2000-08-14",
+     "price": 155000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0085-050-000",
+   "address": "158A&B TINA DR",
+   "sale_price": 625000,
+   "sale_date": "2026-06-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 456300,
+   "assessed_land": 124200,
+   "assessed_bldg": 322300,
+   "difference": 168700,
+   "pct_of_assessed": 37.0,
+   "below_assessment": false,
+   "lat": 43.138143,
+   "lon": -71.444679,
+   "use": "TWO FAMILY",
+   "sqft": "2384",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1987",
+   "acres": 1.009137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1999-10-13",
+     "price": 122000,
+     "qualified": "U"
+    },
+    {
+     "date": "2003-10-28",
+     "price": 270000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2016-10-14",
+     "price": 260000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "561-0076-000-000",
+   "address": "701 ELEY LANE",
+   "sale_price": 400000,
+   "sale_date": "2026-06-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 356400,
+   "assessed_land": 118300,
+   "assessed_bldg": 227400,
+   "difference": 43600,
+   "pct_of_assessed": 12.2,
+   "below_assessment": false,
+   "lat": 43.199877,
+   "lon": -71.46709,
+   "use": "SINGLE FAM",
+   "sqft": "1164",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1969",
+   "acres": 0.48,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1984-07-12",
+     "price": 66000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0088-000-000",
+   "address": "448 PEMBROKE ST",
+   "sale_price": 201000,
+   "sale_date": "2026-05-29",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 299100,
+   "assessed_land": 94200,
+   "assessed_bldg": 198100,
+   "difference": -98100,
+   "pct_of_assessed": -32.8,
+   "below_assessment": true,
+   "lat": 43.163591,
+   "lon": -71.474363,
+   "use": "SINGLE FAM",
+   "sqft": "1222",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1960",
+   "acres": 0.569137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1999-04-23",
+     "price": 89000,
+     "qualified": "U"
+    },
+    {
+     "date": "2005-10-04",
+     "price": 178000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2008-05-08",
+     "price": 152900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "634-0012-000-000",
+   "address": "492 WOODLAWN RIDGE RD",
+   "sale_price": 650000,
+   "sale_date": "2026-05-28",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 462200,
+   "assessed_land": 139600,
+   "assessed_bldg": 311400,
+   "difference": 187800,
+   "pct_of_assessed": 40.6,
+   "below_assessment": false,
+   "lat": 43.165805,
+   "lon": -71.486335,
+   "use": "SINGLE FAM",
+   "sqft": "1620",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1968",
+   "acres": 0.86,
+   "zone": "LO-D",
+   "prior_sales": [
+    {
+     "date": "2005-08-31",
+     "price": 265700,
+     "qualified": "Q"
+    },
+    {
+     "date": "2022-07-14",
+     "price": 579900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "260-0022-000-000",
+   "address": "647 CROSS COUNTRY RD",
+   "sale_price": 630000,
+   "sale_date": "2026-05-20",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 493850,
+   "assessed_land": 143850,
+   "assessed_bldg": 293100,
+   "difference": 136150,
+   "pct_of_assessed": 27.6,
+   "below_assessment": false,
+   "lat": 43.192892,
+   "lon": -71.43987,
+   "use": "SINGLE FAM",
+   "sqft": "1248",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1978",
+   "acres": 5.016547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2021-10-12",
+     "price": 450000,
+     "qualified": "U"
+    },
+    {
+     "date": "2023-03-20",
+     "price": 515000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0125-000-000",
+   "address": "190 BUCK ST",
+   "sale_price": 425000,
+   "sale_date": "2026-05-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 327000,
+   "assessed_land": 97900,
+   "assessed_bldg": 198900,
+   "difference": 98000,
+   "pct_of_assessed": 30.0,
+   "below_assessment": false,
+   "lat": 43.133542,
+   "lon": -71.43935,
+   "use": "SINGLE FAM",
+   "sqft": "910",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1958",
+   "acres": 0.452,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "1996-06-20",
+     "price": 75000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0058-002-000",
+   "address": "214  DEARBORN RD",
+   "sale_price": 560000,
+   "sale_date": "2026-05-12",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 475900,
+   "assessed_land": 113200,
+   "assessed_bldg": 359200,
+   "difference": 84100,
+   "pct_of_assessed": 17.7,
+   "below_assessment": false,
+   "lat": 43.139208,
+   "lon": -71.44841,
+   "use": "SINGLE FAM",
+   "sqft": "1872",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2004",
+   "acres": 0.639991,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2004-05-28",
+     "price": 600000,
+     "qualified": "U"
+    },
+    {
+     "date": "2005-04-20",
+     "price": 295000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0085-046-000",
+   "address": "169 TINA DR",
+   "sale_price": 565000,
+   "sale_date": "2026-05-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 466900,
+   "assessed_land": 119800,
+   "assessed_bldg": 278600,
+   "difference": 98100,
+   "pct_of_assessed": 21.0,
+   "below_assessment": false,
+   "lat": 43.139107,
+   "lon": -71.446037,
+   "use": "SINGLE FAM",
+   "sqft": "1080",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1988",
+   "acres": 0.639137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1999-10-04",
+     "price": 125000,
+     "qualified": "U"
+    },
+    {
+     "date": "2023-04-18",
+     "price": 450000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "264-0074-000-000",
+   "address": "325 PEMBROKE HILL RD",
+   "sale_price": 486000,
+   "sale_date": "2026-05-05",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 326500,
+   "assessed_land": 114700,
+   "assessed_bldg": 206200,
+   "difference": 159500,
+   "pct_of_assessed": 48.9,
+   "below_assessment": false,
+   "lat": 43.163708,
+   "lon": -71.455453,
+   "use": "SINGLE FAM",
+   "sqft": "1044",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1972",
+   "acres": 0.69,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2020-01-24",
+     "price": 161000,
+     "qualified": "U"
+    },
+    {
+     "date": "2020-05-19",
+     "price": 280000,
+     "qualified": "U"
+    },
+    {
+     "date": "2023-06-23",
+     "price": 433000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "264-0063-004-000",
+   "address": "316 CHURCH RD",
+   "sale_price": 625000,
+   "sale_date": "2026-05-04",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 581800,
+   "assessed_land": 154500,
+   "assessed_bldg": 416300,
+   "difference": 43200,
+   "pct_of_assessed": 7.4,
+   "below_assessment": false,
+   "lat": 43.154689,
+   "lon": -71.449851,
+   "use": "SINGLE FAM",
+   "sqft": "2414",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1999",
+   "acres": 3.396547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1999-09-01",
+     "price": 148901,
+     "qualified": "U"
+    },
+    {
+     "date": "2009-07-06",
+     "price": 322900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2016-11-04",
+     "price": 325000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "634-0022-000-000",
+   "address": "481 WOODLAWN RIDGE RD",
+   "sale_price": 587000,
+   "sale_date": "2026-04-29",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 543200,
+   "assessed_land": 132200,
+   "assessed_bldg": 389900,
+   "difference": 43800,
+   "pct_of_assessed": 8.1,
+   "below_assessment": false,
+   "lat": 43.164669,
+   "lon": -71.484853,
+   "use": "SFR/IN-LAW",
+   "sqft": "2080",
+   "beds": "5",
+   "baths": "2",
+   "year_built": "1967",
+   "acres": 0.45,
+   "zone": "LO-D",
+   "prior_sales": [
+    {
+     "date": "1989-05-23",
+     "price": 202900,
+     "qualified": "U"
+    },
+    {
+     "date": "2015-02-23",
+     "price": 209900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "563-0008-000-000",
+   "address": "202 BEACON HILL RD",
+   "sale_price": 425000,
+   "sale_date": "2026-04-24",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 299900,
+   "assessed_land": 101500,
+   "assessed_bldg": 197600,
+   "difference": 125100,
+   "pct_of_assessed": 41.7,
+   "below_assessment": false,
+   "lat": 43.177842,
+   "lon": -71.486425,
+   "use": "SINGLE FAM",
+   "sqft": "1554",
+   "beds": "2",
+   "baths": "2",
+   "year_built": "1900",
+   "acres": 0.389555,
+   "zone": "LO-A",
+   "prior_sales": [
+    {
+     "date": "2006-11-14",
+     "price": 120000,
+     "qualified": "U"
+    },
+    {
+     "date": "2007-05-16",
+     "price": 10000,
+     "qualified": "U"
+    },
+    {
+     "date": "2010-06-11",
+     "price": 195000,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-07-19",
+     "price": 299900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0257-006-000",
+   "address": "260 CHURCH RD",
+   "sale_price": 665000,
+   "sale_date": "2026-03-27",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 529500,
+   "assessed_land": 138700,
+   "assessed_bldg": 379600,
+   "difference": 135500,
+   "pct_of_assessed": 25.6,
+   "below_assessment": false,
+   "lat": 43.15391,
+   "lon": -71.452382,
+   "use": "SINGLE FAM",
+   "sqft": "2070",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1993",
+   "acres": 1.966547,
+   "zone": "R-1D",
+   "prior_sales": [
+    {
+     "date": "1993-10-26",
+     "price": 122500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0238-000-000",
+   "address": "357 PEMBROKE ST",
+   "sale_price": 427000,
+   "sale_date": "2026-03-20",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 326100,
+   "assessed_land": 98000,
+   "assessed_bldg": 210100,
+   "difference": 100900,
+   "pct_of_assessed": 30.9,
+   "below_assessment": false,
+   "lat": 43.155034,
+   "lon": -71.464912,
+   "use": "SINGLE FAM",
+   "sqft": "1066",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1955",
+   "acres": 0.46,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2018-09-25",
+     "price": 240000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0123-000-000",
+   "address": "182-184 BUCK ST",
+   "sale_price": 695000,
+   "sale_date": "2026-03-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 691600,
+   "assessed_land": 202000,
+   "assessed_bldg": 463800,
+   "difference": 3400,
+   "pct_of_assessed": 0.5,
+   "below_assessment": false,
+   "lat": 43.133607,
+   "lon": -71.44089,
+   "use": "MULTI HSES",
+   "sqft": "1604",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1973",
+   "acres": 6.877411,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "1999-06-15",
+     "price": 137000,
+     "qualified": "U"
+    },
+    {
+     "date": "2025-04-25",
+     "price": 200000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0036-000-000",
+   "address": "259 PEMBROKE ST",
+   "sale_price": 426000,
+   "sale_date": "2026-03-09",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 424700,
+   "assessed_land": 103400,
+   "assessed_bldg": 316400,
+   "difference": 1300,
+   "pct_of_assessed": 0.3,
+   "below_assessment": false,
+   "lat": 43.145017,
+   "lon": -71.455267,
+   "use": "SINGLE FAM",
+   "sqft": "1820",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1798",
+   "acres": 0.999137,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "258-0002-000-000",
+   "address": "611 NO PEMBROKE RD",
+   "sale_price": 625000,
+   "sale_date": "2026-02-19",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 562500,
+   "assessed_land": 140800,
+   "assessed_bldg": 399600,
+   "difference": 62500,
+   "pct_of_assessed": 11.1,
+   "below_assessment": false,
+   "lat": 43.214094,
+   "lon": -71.442251,
+   "use": "SINGLE FAM",
+   "sqft": "2340",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2005",
+   "acres": 3.576547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2004-09-20",
+     "price": 85000,
+     "qualified": "U"
+    },
+    {
+     "date": "2005-07-07",
+     "price": 128000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2010-04-27",
+     "price": 320000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "260-0055-000-000",
+   "address": "667 BOROUGH RD",
+   "sale_price": 740000,
+   "sale_date": "2026-02-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 578100,
+   "assessed_land": 152500,
+   "assessed_bldg": 417900,
+   "difference": 161900,
+   "pct_of_assessed": 28.0,
+   "below_assessment": false,
+   "lat": 43.204888,
+   "lon": -71.459632,
+   "use": "SINGLE FAM",
+   "sqft": "1854",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2022",
+   "acres": 4.596547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2001-08-16",
+     "price": 255000,
+     "qualified": "U"
+    },
+    {
+     "date": "2006-08-22",
+     "price": 295000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "260-0025-000-000",
+   "address": "704 CROSS COUNTRY RD",
+   "sale_price": 565000,
+   "sale_date": "2026-01-16",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 478600,
+   "assessed_land": 123200,
+   "assessed_bldg": 347000,
+   "difference": 86400,
+   "pct_of_assessed": 18.1,
+   "below_assessment": false,
+   "lat": 43.196658,
+   "lon": -71.438089,
+   "use": "SINGLE FAM",
+   "sqft": "2204",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1863",
+   "acres": 1.019995,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1997-10-01",
+     "price": 90000,
+     "qualified": "U"
+    },
+    {
+     "date": "2015-04-26",
+     "price": 184000,
+     "qualified": "U"
+    },
+    {
+     "date": "2015-11-12",
+     "price": 85000,
+     "qualified": "U"
+    },
+    {
+     "date": "2016-10-03",
+     "price": 310000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0149-000-000",
+   "address": "412 DEERPATH LANE",
+   "sale_price": 485000,
+   "sale_date": "2026-01-14",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 440900,
+   "assessed_land": 132700,
+   "assessed_bldg": 300700,
+   "difference": 44100,
+   "pct_of_assessed": 10.0,
+   "below_assessment": false,
+   "lat": 43.162021,
+   "lon": -71.465698,
+   "use": "SINGLE FAM",
+   "sqft": "1773",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1973",
+   "acres": 0.47,
+   "zone": "R-1C",
+   "prior_sales": [
+    {
+     "date": "2018-04-20",
+     "price": 245000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2022-05-12",
+     "price": 410000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2024-08-15",
+     "price": 465000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2026-01-14",
+     "price": 485000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "258-0012-001-000",
+   "address": "834 BOROUGH RD",
+   "sale_price": 515000,
+   "sale_date": "2026-01-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 422900,
+   "assessed_land": 139100,
+   "assessed_bldg": 278800,
+   "difference": 92100,
+   "pct_of_assessed": 21.8,
+   "below_assessment": false,
+   "lat": 43.219018,
+   "lon": -71.458347,
+   "use": "SINGLE FAM",
+   "sqft": "1547",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1999",
+   "acres": 1.996547,
+   "zone": "R-3D",
+   "prior_sales": []
+  },
+  {
+   "cama": "565-0242-000-000",
+   "address": "347 PEMBROKE ST",
+   "sale_price": 412000,
+   "sale_date": "2026-01-06",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 380300,
+   "assessed_land": 108600,
+   "assessed_bldg": 232400,
+   "difference": 31700,
+   "pct_of_assessed": 8.3,
+   "below_assessment": false,
+   "lat": 43.154235,
+   "lon": -71.463864,
+   "use": "TWO FAMILY",
+   "sqft": "2097",
+   "beds": "2",
+   "baths": "2",
+   "year_built": "1828",
+   "acres": 1.519137,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "563-0063-000-000",
+   "address": "203 BRICKETT HILL RD",
+   "sale_price": 470000,
+   "sale_date": "2025-12-30",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 358800,
+   "assessed_land": 108200,
+   "assessed_bldg": 235100,
+   "difference": 111200,
+   "pct_of_assessed": 31.0,
+   "below_assessment": false,
+   "lat": 43.169614,
+   "lon": -71.478532,
+   "use": "SINGLE FAM",
+   "sqft": "1596",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1953",
+   "acres": 0.499137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2018-07-20",
+     "price": 170000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-04-12",
+     "price": 235000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-147-000",
+   "address": "440 MICOL RD",
+   "sale_price": 415000,
+   "sale_date": "2025-12-29",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 347300,
+   "assessed_land": 134100,
+   "assessed_bldg": 213200,
+   "difference": 67700,
+   "pct_of_assessed": 19.5,
+   "below_assessment": false,
+   "lat": 43.159363,
+   "lon": -71.480388,
+   "use": "SINGLE FAM",
+   "sqft": "1326",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1988",
+   "acres": 0.589137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2000-09-25",
+     "price": 139900,
+     "qualified": "U"
+    },
+    {
+     "date": "2024-10-02",
+     "price": 450000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "563-0040-008-000",
+   "address": "509 ASHLEY DR",
+   "sale_price": 675000,
+   "sale_date": "2025-12-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 529600,
+   "assessed_land": 133000,
+   "assessed_bldg": 387500,
+   "difference": 145400,
+   "pct_of_assessed": 27.5,
+   "below_assessment": false,
+   "lat": 43.173244,
+   "lon": -71.474979,
+   "use": "SINGLE FAM",
+   "sqft": "2034",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2004",
+   "acres": 0.958274,
+   "zone": "R-1C",
+   "prior_sales": [
+    {
+     "date": "2004-03-16",
+     "price": 80000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2005-03-08",
+     "price": 327600,
+     "qualified": "Q"
+    },
+    {
+     "date": "2014-07-01",
+     "price": 312500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0044-000-000",
+   "address": "233 PEMBROKE ST",
+   "sale_price": 475000,
+   "sale_date": "2025-12-17",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 343300,
+   "assessed_land": 105000,
+   "assessed_bldg": 226000,
+   "difference": 131700,
+   "pct_of_assessed": 38.4,
+   "below_assessment": false,
+   "lat": 43.142282,
+   "lon": -71.452064,
+   "use": "SINGLE FAM",
+   "sqft": "1638",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1913",
+   "acres": 1.644137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2000-09-19",
+     "price": 155000,
+     "qualified": "U"
+    },
+    {
+     "date": "2025-07-15",
+     "price": 223000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0072-000-000",
+   "address": "307 DEARBORN RD",
+   "sale_price": 386400,
+   "sale_date": "2025-12-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 340200,
+   "assessed_land": 100400,
+   "assessed_bldg": 225800,
+   "difference": 46200,
+   "pct_of_assessed": 13.6,
+   "below_assessment": false,
+   "lat": 43.141946,
+   "lon": -71.440664,
+   "use": "SINGLE FAM",
+   "sqft": "1056",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1974",
+   "acres": 0.3,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "2017-10-30",
+     "price": 237500,
+     "qualified": "Q"
+    },
+    {
+     "date": "2018-01-26",
+     "price": 255000,
+     "qualified": "U"
+    },
+    {
+     "date": "2018-06-06",
+     "price": 242000,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-10-01",
+     "price": 350000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0145-000-000",
+   "address": "228 PEMBROKE HILL RD",
+   "sale_price": 480000,
+   "sale_date": "2025-12-04",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 309200,
+   "assessed_land": 106900,
+   "assessed_bldg": 187300,
+   "difference": 170800,
+   "pct_of_assessed": 55.2,
+   "below_assessment": false,
+   "lat": 43.160872,
+   "lon": -71.464999,
+   "use": "SINGLE FAM",
+   "sqft": "1613",
+   "beds": "4",
+   "baths": "1",
+   "year_built": "1961",
+   "acres": 0.39,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2001-09-18",
+     "price": 163500,
+     "qualified": "U"
+    },
+    {
+     "date": "2006-07-05",
+     "price": 240000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2009-07-27",
+     "price": 230000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0022-000-000",
+   "address": "224 PEMBROKE ST",
+   "sale_price": 500000,
+   "sale_date": "2025-12-01",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 491300,
+   "assessed_land": 108800,
+   "assessed_bldg": 365000,
+   "difference": 8700,
+   "pct_of_assessed": 1.8,
+   "below_assessment": false,
+   "lat": 43.14026,
+   "lon": -71.452304,
+   "use": "SINGLE FAM",
+   "sqft": "2424",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1907",
+   "acres": 1.539137,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "561-0079-006-000",
+   "address": "634 BOROUGH RD",
+   "sale_price": 565000,
+   "sale_date": "2025-12-01",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 343600,
+   "assessed_land": 144000,
+   "assessed_bldg": 195600,
+   "difference": 221400,
+   "pct_of_assessed": 64.4,
+   "below_assessment": false,
+   "lat": 43.201853,
+   "lon": -71.465163,
+   "use": "TWO FAMILY",
+   "sqft": "1862",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1985",
+   "acres": 2.446547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2012-05-10",
+     "price": 148556,
+     "qualified": "U"
+    },
+    {
+     "date": "2012-11-07",
+     "price": 116600,
+     "qualified": "U"
+    },
+    {
+     "date": "2014-04-29",
+     "price": 225000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2020-10-01",
+     "price": 265000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0097-000-000",
+   "address": "8 SKYVIEW TERRACE",
+   "sale_price": 450000,
+   "sale_date": "2025-11-26",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 357200,
+   "assessed_land": 129400,
+   "assessed_bldg": 226000,
+   "difference": 92800,
+   "pct_of_assessed": 26.0,
+   "below_assessment": false,
+   "lat": 43.13751,
+   "lon": -71.448261,
+   "use": "SINGLE FAM",
+   "sqft": "1578",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1949",
+   "acres": 0.28,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2016-09-12",
+     "price": 205000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-04-30",
+     "price": 242000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0153-000-000",
+   "address": "422 DEERPATH LANE",
+   "sale_price": 550000,
+   "sale_date": "2025-11-26",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 409500,
+   "assessed_land": 131700,
+   "assessed_bldg": 271800,
+   "difference": 140500,
+   "pct_of_assessed": 34.3,
+   "below_assessment": false,
+   "lat": 43.163178,
+   "lon": -71.466911,
+   "use": "SINGLE FAM",
+   "sqft": "1323",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1976",
+   "acres": 0.42,
+   "zone": "R-1C",
+   "prior_sales": [
+    {
+     "date": "1998-07-17",
+     "price": 100000,
+     "qualified": "U"
+    },
+    {
+     "date": "2020-07-30",
+     "price": 335000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0233-000-000",
+   "address": "367 PEMBROKE ST",
+   "sale_price": 365000,
+   "sale_date": "2025-11-26",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 375900,
+   "assessed_land": 98000,
+   "assessed_bldg": 270900,
+   "difference": -10900,
+   "pct_of_assessed": -2.9,
+   "below_assessment": true,
+   "lat": 43.156208,
+   "lon": -71.466061,
+   "use": "TWO FAMILY",
+   "sqft": "3059",
+   "beds": "5",
+   "baths": "4",
+   "year_built": "1828",
+   "acres": 0.46,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1990-07-31",
+     "price": 148000,
+     "qualified": "U"
+    },
+    {
+     "date": "2019-04-15",
+     "price": 220000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "632-0014-000-000",
+   "address": "82 SHEEP DAVIS RD",
+   "sale_price": 335000,
+   "sale_date": "2025-11-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 276200,
+   "assessed_land": 110200,
+   "assessed_bldg": 165500,
+   "difference": 58800,
+   "pct_of_assessed": 21.3,
+   "below_assessment": false,
+   "lat": 43.18967,
+   "lon": -71.483093,
+   "use": "SINGLE FAM",
+   "sqft": "1044",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1948",
+   "acres": 0.91,
+   "zone": "C-1A",
+   "prior_sales": [
+    {
+     "date": "2018-01-25",
+     "price": 180000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2018-08-22",
+     "price": 197500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-007-000",
+   "address": "43 DONNA DR",
+   "sale_price": 458000,
+   "sale_date": "2025-11-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 367500,
+   "assessed_land": 135400,
+   "assessed_bldg": 210900,
+   "difference": 90500,
+   "pct_of_assessed": 24.6,
+   "below_assessment": false,
+   "lat": 43.155798,
+   "lon": -71.47865,
+   "use": "SINGLE FAM",
+   "sqft": "1224",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1984",
+   "acres": 0.689137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1991-12-12",
+     "price": 86800,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "264-0062-001-000",
+   "address": "331 CHURCH RD",
+   "sale_price": 490000,
+   "sale_date": "2025-11-12",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 495900,
+   "assessed_land": 155200,
+   "assessed_bldg": 334700,
+   "difference": -5900,
+   "pct_of_assessed": -1.2,
+   "below_assessment": true,
+   "lat": 43.154883,
+   "lon": -71.44594,
+   "use": "SINGLE FAM",
+   "sqft": "2079",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1986",
+   "acres": 3.466547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2002-07-25",
+     "price": 213500,
+     "qualified": "U"
+    },
+    {
+     "date": "2003-12-03",
+     "price": 250000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2020-07-20",
+     "price": 299000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-121-000",
+   "address": "424 TERRIE DR",
+   "sale_price": 535000,
+   "sale_date": "2025-11-06",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 470000,
+   "assessed_land": 125800,
+   "assessed_bldg": 307000,
+   "difference": 65000,
+   "pct_of_assessed": 13.8,
+   "below_assessment": false,
+   "lat": 43.160512,
+   "lon": -71.473575,
+   "use": "SINGLE FAM",
+   "sqft": "1768",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1988",
+   "acres": 0.469137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1988-09-19",
+     "price": 86400,
+     "qualified": "U"
+    },
+    {
+     "date": "2015-10-08",
+     "price": 245000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0161-000-000",
+   "address": "189 BUCK ST",
+   "sale_price": 575000,
+   "sale_date": "2025-10-30",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 387200,
+   "assessed_land": 168400,
+   "assessed_bldg": 202600,
+   "difference": 187800,
+   "pct_of_assessed": 48.5,
+   "below_assessment": false,
+   "lat": 43.132224,
+   "lon": -71.438522,
+   "use": "SINGLE FAM",
+   "sqft": "1296",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1951",
+   "acres": 6.196547,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "2010-02-11",
+     "price": 140000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "258-0005-003-000",
+   "address": "927 BOROUGH RD",
+   "sale_price": 915000,
+   "sale_date": "2025-10-21",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 909671,
+   "assessed_land": 128371,
+   "assessed_bldg": 737500,
+   "difference": 5329,
+   "pct_of_assessed": 0.6,
+   "below_assessment": false,
+   "lat": 43.222973,
+   "lon": -71.449802,
+   "use": "SINGLE FAM",
+   "sqft": "4162",
+   "beds": "4",
+   "baths": "3",
+   "year_built": "2003",
+   "acres": 12.049995,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2003-01-14",
+     "price": 65000,
+     "qualified": "U"
+    },
+    {
+     "date": "2005-10-25",
+     "price": 560000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0063-000-000",
+   "address": "318 DEARBORN RD",
+   "sale_price": 805000,
+   "sale_date": "2025-10-21",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 378200,
+   "assessed_land": 141500,
+   "assessed_bldg": 229200,
+   "difference": 426800,
+   "pct_of_assessed": 112.9,
+   "below_assessment": false,
+   "lat": 43.142712,
+   "lon": -71.438547,
+   "use": "SINGLE FAM",
+   "sqft": "4088",
+   "beds": "3",
+   "baths": "3",
+   "year_built": "1940",
+   "acres": 2.47741,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "1992-08-14",
+     "price": 73000,
+     "qualified": "U"
+    },
+    {
+     "date": "2009-05-01",
+     "price": 225100,
+     "qualified": "U"
+    },
+    {
+     "date": "2025-01-30",
+     "price": 358800,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0219-000-000",
+   "address": "377 PERLEY AVE",
+   "sale_price": 375000,
+   "sale_date": "2025-10-21",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 338000,
+   "assessed_land": 130800,
+   "assessed_bldg": 206700,
+   "difference": 37000,
+   "pct_of_assessed": 10.9,
+   "below_assessment": false,
+   "lat": 43.158329,
+   "lon": -71.465909,
+   "use": "SINGLE FAM",
+   "sqft": "1008",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1958",
+   "acres": 0.37,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2001-05-29",
+     "price": 131900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-027-000",
+   "address": "40 DONNA DR",
+   "sale_price": 379000,
+   "sale_date": "2025-10-09",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 305100,
+   "assessed_land": 134300,
+   "assessed_bldg": 169800,
+   "difference": 73900,
+   "pct_of_assessed": 24.2,
+   "below_assessment": false,
+   "lat": 43.1569,
+   "lon": -71.478233,
+   "use": "SINGLE FAM",
+   "sqft": "896",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1978",
+   "acres": 0.609137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2001-08-15",
+     "price": 131000,
+     "qualified": "U"
+    },
+    {
+     "date": "2014-11-12",
+     "price": 138000,
+     "qualified": "U"
+    },
+    {
+     "date": "2017-01-26",
+     "price": 174000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "561-0036-000-000",
+   "address": "316-318 BOROUGH RD",
+   "sale_price": 1000000,
+   "sale_date": "2025-10-08",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 339200,
+   "assessed_land": 148200,
+   "assessed_bldg": 189100,
+   "difference": 660800,
+   "pct_of_assessed": 194.8,
+   "below_assessment": false,
+   "lat": 43.191851,
+   "lon": -71.479454,
+   "use": "SINGLE FAM",
+   "sqft": "981",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1939",
+   "acres": 4.172547,
+   "zone": "C-1C",
+   "prior_sales": [
+    {
+     "date": "2004-03-15",
+     "price": 249000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2018-10-30",
+     "price": 375000,
+     "qualified": "U"
+    },
+    {
+     "date": "2024-11-14",
+     "price": 500000,
+     "qualified": "U"
+    },
+    {
+     "date": "2024-11-14",
+     "price": 300000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "561-0028-000-000",
+   "address": "440 OLD BOROUGH RD",
+   "sale_price": 394000,
+   "sale_date": "2025-09-24",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 270500,
+   "assessed_land": 88700,
+   "assessed_bldg": 167400,
+   "difference": 123500,
+   "pct_of_assessed": 45.7,
+   "below_assessment": false,
+   "lat": 43.195931,
+   "lon": -71.473839,
+   "use": "SINGLE FAM",
+   "sqft": "1245",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1933",
+   "acres": 0.48,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2003-04-02",
+     "price": 135000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2009-09-28",
+     "price": 108100,
+     "qualified": "U"
+    },
+    {
+     "date": "2018-12-10",
+     "price": 221000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "260-0034-002-000",
+   "address": "536 CROSS COUNTRY RD",
+   "sale_price": 610000,
+   "sale_date": "2025-09-22",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 497700,
+   "assessed_land": 141500,
+   "assessed_bldg": 350700,
+   "difference": 112300,
+   "pct_of_assessed": 22.6,
+   "below_assessment": false,
+   "lat": 43.186402,
+   "lon": -71.449705,
+   "use": "SINGLE FAM",
+   "sqft": "1875",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2001",
+   "acres": 3.376547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2001-05-10",
+     "price": 222300,
+     "qualified": "U"
+    },
+    {
+     "date": "2010-06-07",
+     "price": 269000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2013-10-28",
+     "price": 264000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-01-29",
+     "price": 325500,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0257-002-000",
+   "address": "224 CHURCH RD",
+   "sale_price": 535000,
+   "sale_date": "2025-09-19",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 443100,
+   "assessed_land": 140700,
+   "assessed_bldg": 299800,
+   "difference": 91900,
+   "pct_of_assessed": 20.7,
+   "below_assessment": false,
+   "lat": 43.151347,
+   "lon": -71.456564,
+   "use": "SINGLE FAM",
+   "sqft": "1632",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1993",
+   "acres": 2.146547,
+   "zone": "R-1D",
+   "prior_sales": [
+    {
+     "date": "2007-03-28",
+     "price": 273900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2013-01-23",
+     "price": 221139,
+     "qualified": "U"
+    },
+    {
+     "date": "2013-05-14",
+     "price": 192900,
+     "qualified": "U"
+    },
+    {
+     "date": "2020-05-15",
+     "price": 285000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "264-0048-000-000",
+   "address": "229 ACADEMY RD",
+   "sale_price": 169900,
+   "sale_date": "2025-08-27",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 239600,
+   "assessed_land": 104700,
+   "assessed_bldg": 131800,
+   "difference": -69700,
+   "pct_of_assessed": -29.1,
+   "below_assessment": true,
+   "lat": 43.146842,
+   "lon": -71.452254,
+   "use": "SINGLE FAM",
+   "sqft": "762",
+   "beds": "1",
+   "baths": "1",
+   "year_built": "1948",
+   "acres": 0.23,
+   "zone": "R-1B",
+   "prior_sales": []
+  },
+  {
+   "cama": "565-0081-080-000",
+   "address": "418 ROSS RD",
+   "sale_price": 535000,
+   "sale_date": "2025-08-21",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 363800,
+   "assessed_land": 108200,
+   "assessed_bldg": 238300,
+   "difference": 171200,
+   "pct_of_assessed": 47.1,
+   "below_assessment": false,
+   "lat": 43.15738,
+   "lon": -71.477869,
+   "use": "SINGLE FAM",
+   "sqft": "1488",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1985",
+   "acres": 0.489137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2005-05-02",
+     "price": 238000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2006-10-16",
+     "price": 225000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "563-0072-001-000",
+   "address": "469 PEMBROKE ST",
+   "sale_price": 485000,
+   "sale_date": "2025-08-05",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 471900,
+   "assessed_land": 100500,
+   "assessed_bldg": 360100,
+   "difference": 13100,
+   "pct_of_assessed": 2.8,
+   "below_assessment": false,
+   "lat": 43.166382,
+   "lon": -71.47582,
+   "use": "SINGLE FAM",
+   "sqft": "2099",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1762",
+   "acres": 0.709137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2019-08-19",
+     "price": 246500,
+     "qualified": "Q"
+    },
+    {
+     "date": "2024-05-07",
+     "price": 466900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "563-0045-000-000",
+   "address": "243 BRICKETT HILL RD",
+   "sale_price": 394000,
+   "sale_date": "2025-07-30",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 314700,
+   "assessed_land": 117000,
+   "assessed_bldg": 196800,
+   "difference": 79300,
+   "pct_of_assessed": 25.2,
+   "below_assessment": false,
+   "lat": 43.172659,
+   "lon": -71.472351,
+   "use": "SINGLE FAM",
+   "sqft": "1048",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1975",
+   "acres": 0.77,
+   "zone": "R-1C",
+   "prior_sales": [
+    {
+     "date": "2009-05-07",
+     "price": 131300,
+     "qualified": "U"
+    },
+    {
+     "date": "2009-12-30",
+     "price": 145100,
+     "qualified": "U"
+    },
+    {
+     "date": "2013-02-28",
+     "price": 175000,
+     "qualified": "U"
+    },
+    {
+     "date": "2015-10-16",
+     "price": 180000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0006-000-000",
+   "address": "312 PEMBROKE ST",
+   "sale_price": 530000,
+   "sale_date": "2025-07-30",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 457200,
+   "assessed_land": 160100,
+   "assessed_bldg": 293400,
+   "difference": 72800,
+   "pct_of_assessed": 15.9,
+   "below_assessment": false,
+   "lat": 43.148971,
+   "lon": -71.463049,
+   "use": "TWO FAMILY",
+   "sqft": "2736",
+   "beds": "4",
+   "baths": "3",
+   "year_built": "1878",
+   "acres": 6.999137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2012-11-15",
+     "price": 153500,
+     "qualified": "U"
+    },
+    {
+     "date": "2022-12-08",
+     "price": 350000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "563-0015-002-000",
+   "address": "564A&B THIRD RANGE RD",
+   "sale_price": 585000,
+   "sale_date": "2025-07-28",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 463200,
+   "assessed_land": 133200,
+   "assessed_bldg": 323200,
+   "difference": 121800,
+   "pct_of_assessed": 26.3,
+   "below_assessment": false,
+   "lat": 43.180533,
+   "lon": -71.478212,
+   "use": "TWO FAMILY",
+   "sqft": "2464",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1988",
+   "acres": 1.6,
+   "zone": "R-1D",
+   "prior_sales": [
+    {
+     "date": "1996-05-03",
+     "price": 95600,
+     "qualified": "U"
+    },
+    {
+     "date": "2022-10-26",
+     "price": 438500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "264-0063-002-000",
+   "address": "338 CHURCH RD",
+   "sale_price": 590000,
+   "sale_date": "2025-07-24",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 461400,
+   "assessed_land": 169500,
+   "assessed_bldg": 254800,
+   "difference": 128600,
+   "pct_of_assessed": 27.9,
+   "below_assessment": false,
+   "lat": 43.156329,
+   "lon": -71.446957,
+   "use": "SINGLE FAM",
+   "sqft": "1280",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1986",
+   "acres": 5.736547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2003-05-28",
+     "price": 210900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0089-000-000",
+   "address": "450 PEMBROKE ST",
+   "sale_price": 390000,
+   "sale_date": "2025-07-22",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 307500,
+   "assessed_land": 99100,
+   "assessed_bldg": 203800,
+   "difference": 82500,
+   "pct_of_assessed": 26.8,
+   "below_assessment": false,
+   "lat": 43.16384,
+   "lon": -71.474595,
+   "use": "SINGLE FAM",
+   "sqft": "1087",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1953",
+   "acres": 0.569137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2001-04-02",
+     "price": 137500,
+     "qualified": "U"
+    },
+    {
+     "date": "2007-04-20",
+     "price": 218000,
+     "qualified": "U"
+    },
+    {
+     "date": "2012-02-16",
+     "price": 96972,
+     "qualified": "U"
+    },
+    {
+     "date": "2012-04-02",
+     "price": 131000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0076-001-000",
+   "address": "10 BOW LANE",
+   "sale_price": 600000,
+   "sale_date": "2025-07-02",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 505100,
+   "assessed_land": 127200,
+   "assessed_bldg": 373100,
+   "difference": 94900,
+   "pct_of_assessed": 18.8,
+   "below_assessment": false,
+   "lat": 43.157553,
+   "lon": -71.470294,
+   "use": "SINGLE FAM",
+   "sqft": "2048",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1982",
+   "acres": 0.569137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2016-12-08",
+     "price": 299000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-104-000",
+   "address": "446 TERRIE DR",
+   "sale_price": 528000,
+   "sale_date": "2025-07-02",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 404000,
+   "assessed_land": 126400,
+   "assessed_bldg": 274400,
+   "difference": 124000,
+   "pct_of_assessed": 30.7,
+   "below_assessment": false,
+   "lat": 43.159939,
+   "lon": -71.473885,
+   "use": "SINGLE FAM",
+   "sqft": "1657",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1989",
+   "acres": 0.509137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1989-11-20",
+     "price": 79890,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "559-0001-001-000",
+   "address": "741 NO PEMBROKE RD",
+   "sale_price": 750000,
+   "sale_date": "2025-06-09",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 569800,
+   "assessed_land": 165800,
+   "assessed_bldg": 394900,
+   "difference": 180200,
+   "pct_of_assessed": 31.6,
+   "below_assessment": false,
+   "lat": 43.216759,
+   "lon": -71.466203,
+   "use": "SINGLE FAM",
+   "sqft": "2150",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1998",
+   "acres": 6.556547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1998-02-24",
+     "price": 23900,
+     "qualified": "U"
+    },
+    {
+     "date": "2006-01-31",
+     "price": 354000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2008-11-05",
+     "price": 330000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "264-0029-000-000",
+   "address": "234 ACADEMY RD",
+   "sale_price": 430000,
+   "sale_date": "2025-05-23",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 412700,
+   "assessed_land": 122900,
+   "assessed_bldg": 284700,
+   "difference": 17300,
+   "pct_of_assessed": 4.2,
+   "below_assessment": false,
+   "lat": 43.147735,
+   "lon": -71.451285,
+   "use": "SINGLE FAM",
+   "sqft": "1536",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1962",
+   "acres": 1,
+   "zone": "R-1B",
+   "prior_sales": []
+  },
+  {
+   "cama": "565-0081-092-000",
+   "address": "439 TERRIE DR",
+   "sale_price": 675000,
+   "sale_date": "2025-05-23",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 651300,
+   "assessed_land": 132600,
+   "assessed_bldg": 507800,
+   "difference": 23700,
+   "pct_of_assessed": 3.6,
+   "below_assessment": false,
+   "lat": 43.160386,
+   "lon": -71.475201,
+   "use": "SINGLE FAM",
+   "sqft": "3448",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1987",
+   "acres": 0.479137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2002-05-01",
+     "price": 195000,
+     "qualified": "U"
+    },
+    {
+     "date": "2015-03-12",
+     "price": 199900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "563-0040-009-000",
+   "address": "507 ASHLEY DR",
+   "sale_price": 690000,
+   "sale_date": "2025-05-19",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 555400,
+   "assessed_land": 132900,
+   "assessed_bldg": 418200,
+   "difference": 134600,
+   "pct_of_assessed": 24.2,
+   "below_assessment": false,
+   "lat": 43.172978,
+   "lon": -71.474639,
+   "use": "SINGLE FAM",
+   "sqft": "2267",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2005",
+   "acres": 0.948274,
+   "zone": "R-1C",
+   "prior_sales": [
+    {
+     "date": "2004-03-15",
+     "price": 80000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2005-06-30",
+     "price": 309900,
+     "qualified": "U"
+    },
+    {
+     "date": "2008-06-12",
+     "price": 213000,
+     "qualified": "U"
+    },
+    {
+     "date": "2008-06-24",
+     "price": 280000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-087-000",
+   "address": "12 MELISSA DR",
+   "sale_price": 350000,
+   "sale_date": "2025-05-12",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 379200,
+   "assessed_land": 135700,
+   "assessed_bldg": 242700,
+   "difference": -29200,
+   "pct_of_assessed": -7.7,
+   "below_assessment": true,
+   "lat": 43.159239,
+   "lon": -71.477002,
+   "use": "SINGLE FAM",
+   "sqft": "1224",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1987",
+   "acres": 0.709137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1999-03-30",
+     "price": 94000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "264-0023-000-000",
+   "address": "210 ACADEMY RD",
+   "sale_price": 370000,
+   "sale_date": "2025-04-30",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 272500,
+   "assessed_land": 82600,
+   "assessed_bldg": 188200,
+   "difference": 97500,
+   "pct_of_assessed": 35.8,
+   "below_assessment": false,
+   "lat": 43.147107,
+   "lon": -71.455826,
+   "use": "SINGLE FAM",
+   "sqft": "1244",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1910",
+   "acres": 0.083143,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2008-01-08",
+     "price": 169000,
+     "qualified": "U"
+    },
+    {
+     "date": "2008-07-22",
+     "price": 117000,
+     "qualified": "U"
+    },
+    {
+     "date": "2012-10-19",
+     "price": 150900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2022-08-01",
+     "price": 310000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0003-000-000",
+   "address": "94 BROADWAY",
+   "sale_price": 430000,
+   "sale_date": "2025-03-31",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 392100,
+   "assessed_land": 100600,
+   "assessed_bldg": 276200,
+   "difference": 37900,
+   "pct_of_assessed": 9.7,
+   "below_assessment": false,
+   "lat": 43.139501,
+   "lon": -71.453664,
+   "use": "SINGLE FAM",
+   "sqft": "1730",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1890",
+   "acres": 0.719137,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "561-0023-000-000",
+   "address": "724 CLOUGH MILL RD",
+   "sale_price": 556000,
+   "sale_date": "2025-03-31",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 499600,
+   "assessed_land": 94800,
+   "assessed_bldg": 346600,
+   "difference": 56400,
+   "pct_of_assessed": 11.3,
+   "below_assessment": false,
+   "lat": 43.196884,
+   "lon": -71.476233,
+   "use": "SINGLE FAM",
+   "sqft": "1400",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1970",
+   "acres": 0.95,
+   "zone": "C-1D",
+   "prior_sales": [
+    {
+     "date": "2002-08-19",
+     "price": 209900,
+     "qualified": "U"
+    },
+    {
+     "date": "2003-12-24",
+     "price": 219900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0257-001-000",
+   "address": "307 PEMBROKE ST",
+   "sale_price": 605000,
+   "sale_date": "2025-03-24",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 543000,
+   "assessed_land": 103900,
+   "assessed_bldg": 405100,
+   "difference": 62000,
+   "pct_of_assessed": 11.4,
+   "below_assessment": false,
+   "lat": 43.149527,
+   "lon": -71.459672,
+   "use": "SINGLE FAM",
+   "sqft": "3097",
+   "beds": "4",
+   "baths": "3",
+   "year_built": "1780",
+   "acres": 1.539137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2000-06-02",
+     "price": 186000,
+     "qualified": "U"
+    },
+    {
+     "date": "2019-07-30",
+     "price": 257800,
+     "qualified": "Q"
+    },
+    {
+     "date": "2020-10-28",
+     "price": 360000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "561-0071-000-000",
+   "address": "719 ELEY LANE",
+   "sale_price": 375000,
+   "sale_date": "2025-03-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 390700,
+   "assessed_land": 125700,
+   "assessed_bldg": 258800,
+   "difference": -15700,
+   "pct_of_assessed": -4.0,
+   "below_assessment": true,
+   "lat": 43.201853,
+   "lon": -71.468511,
+   "use": "SINGLE FAM",
+   "sqft": "1152",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1971",
+   "acres": 0.71,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1991-11-26",
+     "price": 115000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "264-0094-000-000",
+   "address": "237 FOURTH RANGE RD",
+   "sale_price": 625000,
+   "sale_date": "2025-03-10",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 613700,
+   "assessed_land": 177600,
+   "assessed_bldg": 388500,
+   "difference": 11300,
+   "pct_of_assessed": 1.8,
+   "below_assessment": false,
+   "lat": 43.158022,
+   "lon": -71.440508,
+   "use": "SINGLE FAM",
+   "sqft": "2637",
+   "beds": "4",
+   "baths": "1",
+   "year_built": "1770",
+   "acres": 5.496547,
+   "zone": "R-3D",
+   "prior_sales": []
+  },
+  {
+   "cama": "266-0019-000-000",
+   "address": "212 PEMBROKE ST",
+   "sale_price": 480000,
+   "sale_date": "2025-02-04",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 429600,
+   "assessed_land": 99800,
+   "assessed_bldg": 323600,
+   "difference": 50400,
+   "pct_of_assessed": 11.7,
+   "below_assessment": false,
+   "lat": 43.139144,
+   "lon": -71.451338,
+   "use": "SINGLE FAM",
+   "sqft": "1895",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1973",
+   "acres": 0.639137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2003-12-12",
+     "price": 272000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2017-09-22",
+     "price": 269900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "561-0079-004-000",
+   "address": "644 BOROUGH RD",
+   "sale_price": 485000,
+   "sale_date": "2025-01-31",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 409400,
+   "assessed_land": 133000,
+   "assessed_bldg": 268000,
+   "difference": 75600,
+   "pct_of_assessed": 18.5,
+   "below_assessment": false,
+   "lat": 43.202589,
+   "lon": -71.464098,
+   "use": "SINGLE FAM",
+   "sqft": "1824",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1992",
+   "acres": 2.076547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2009-09-02",
+     "price": 245500,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-09-03",
+     "price": 300000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2023-03-27",
+     "price": 450000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0068-000-000",
+   "address": "325 DEARBORN RD",
+   "sale_price": 425000,
+   "sale_date": "2025-01-17",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 429500,
+   "assessed_land": 123900,
+   "assessed_bldg": 231800,
+   "difference": -4500,
+   "pct_of_assessed": -1.0,
+   "below_assessment": true,
+   "lat": 43.141413,
+   "lon": -71.437279,
+   "use": "SINGLE FAM",
+   "sqft": "1040",
+   "beds": "2",
+   "baths": "2",
+   "year_built": "1979",
+   "acres": 1.060009,
+   "zone": "R-1B",
+   "prior_sales": []
+  },
+  {
+   "cama": "264-0022-000-000",
+   "address": "203 MEADOW LARK LANE",
+   "sale_price": 460000,
+   "sale_date": "2025-01-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 351300,
+   "assessed_land": 115700,
+   "assessed_bldg": 234200,
+   "difference": 108700,
+   "pct_of_assessed": 30.9,
+   "below_assessment": false,
+   "lat": 43.14749,
+   "lon": -71.455792,
+   "use": "SINGLE FAM",
+   "sqft": "1428",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1963",
+   "acres": 0.33,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2012-09-04",
+     "price": 164500,
+     "qualified": "Q"
+    },
+    {
+     "date": "2018-01-26",
+     "price": 225700,
+     "qualified": "U"
+    },
+    {
+     "date": "2018-08-24",
+     "price": 242000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0022-000-000",
+   "address": "19 SHERWOOD MEADOWS",
+   "sale_price": 650000,
+   "sale_date": "2025-01-10",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 564800,
+   "assessed_land": 118900,
+   "assessed_bldg": 432500,
+   "difference": 85200,
+   "pct_of_assessed": 15.1,
+   "below_assessment": false,
+   "lat": 43.14976,
+   "lon": -71.465288,
+   "use": "SINGLE FAM",
+   "sqft": "2185",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1995",
+   "acres": 0.569137,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "634-0013-000-000",
+   "address": "494 WOODLAWN RIDGE RD",
+   "sale_price": 499000,
+   "sale_date": "2024-12-27",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 447700,
+   "assessed_land": 149700,
+   "assessed_bldg": 282700,
+   "difference": 51300,
+   "pct_of_assessed": 11.5,
+   "below_assessment": false,
+   "lat": 43.16609,
+   "lon": -71.48659,
+   "use": "SINGLE FAM",
+   "sqft": "1102",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1964",
+   "acres": 0.95,
+   "zone": "LO-D",
+   "prior_sales": [
+    {
+     "date": "1997-02-03",
+     "price": 108000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "563-0017-000-000",
+   "address": "567 PEMBROKE ST",
+   "sale_price": 470000,
+   "sale_date": "2024-12-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 440400,
+   "assessed_land": 195800,
+   "assessed_bldg": 237000,
+   "difference": 29600,
+   "pct_of_assessed": 6.7,
+   "below_assessment": false,
+   "lat": 43.177453,
+   "lon": -71.486325,
+   "use": "SINGLE FAM",
+   "sqft": "2149",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1947",
+   "acres": 0.452,
+   "zone": "LO-A",
+   "prior_sales": [
+    {
+     "date": "1996-02-20",
+     "price": 110000,
+     "qualified": "U"
+    },
+    {
+     "date": "2022-11-21",
+     "price": 350000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "563-0040-017-000",
+   "address": "513 JACKS DR",
+   "sale_price": 649900,
+   "sale_date": "2024-11-25",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 670700,
+   "assessed_land": 140400,
+   "assessed_bldg": 520000,
+   "difference": -20800,
+   "pct_of_assessed": -3.1,
+   "below_assessment": true,
+   "lat": 43.174961,
+   "lon": -71.473443,
+   "use": "SINGLE FAM",
+   "sqft": "2933",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2004",
+   "acres": 1.578274,
+   "zone": "R-1C",
+   "prior_sales": [
+    {
+     "date": "2004-04-01",
+     "price": 105000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2011-11-29",
+     "price": 400000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0154-000-000",
+   "address": "424 DEERPATH LANE",
+   "sale_price": 654500,
+   "sale_date": "2024-11-04",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 560900,
+   "assessed_land": 150900,
+   "assessed_bldg": 354000,
+   "difference": 93600,
+   "pct_of_assessed": 16.7,
+   "below_assessment": false,
+   "lat": 43.163585,
+   "lon": -71.467412,
+   "use": "SINGLE FAM",
+   "sqft": "2056",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1978",
+   "acres": 1.058274,
+   "zone": "R-1C",
+   "prior_sales": []
+  },
+  {
+   "cama": "266-0075-004-000",
+   "address": "301 DEARBORN RD",
+   "sale_price": 470000,
+   "sale_date": "2024-10-21",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 422600,
+   "assessed_land": 134200,
+   "assessed_bldg": 283400,
+   "difference": 47400,
+   "pct_of_assessed": 11.2,
+   "below_assessment": false,
+   "lat": 43.141367,
+   "lon": -71.441587,
+   "use": "SINGLE FAM",
+   "sqft": "1547",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1988",
+   "acres": 1.81741,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "1988-05-20",
+     "price": 127000,
+     "qualified": "U"
+    },
+    {
+     "date": "2006-08-03",
+     "price": 249000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2015-06-05",
+     "price": 246368,
+     "qualified": "U"
+    },
+    {
+     "date": "2015-11-16",
+     "price": 215000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0140-000-000",
+   "address": "244 BUCK ST",
+   "sale_price": 385000,
+   "sale_date": "2024-10-17",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 300100,
+   "assessed_land": 105900,
+   "assessed_bldg": 192800,
+   "difference": 84900,
+   "pct_of_assessed": 28.3,
+   "below_assessment": false,
+   "lat": 43.140592,
+   "lon": -71.436537,
+   "use": "SINGLE FAM",
+   "sqft": "1170",
+   "beds": "4",
+   "baths": "1",
+   "year_built": "1954",
+   "acres": 0.75,
+   "zone": "R-1B",
+   "prior_sales": []
+  },
+  {
+   "cama": "634-0044-000-000",
+   "address": "566 PEMBROKE ST",
+   "sale_price": 460000,
+   "sale_date": "2024-10-16",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 448800,
+   "assessed_land": 121000,
+   "assessed_bldg": 314900,
+   "difference": 11200,
+   "pct_of_assessed": 2.5,
+   "below_assessment": false,
+   "lat": 43.1766,
+   "lon": -71.486999,
+   "use": "SINGLE FAM",
+   "sqft": "2088",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1928",
+   "acres": 1.525583,
+   "zone": "LO-A",
+   "prior_sales": [
+    {
+     "date": "1998-10-15",
+     "price": 145000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0152-000-000",
+   "address": "420 DEERPATH LANE",
+   "sale_price": 550000,
+   "sale_date": "2024-10-15",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 532300,
+   "assessed_land": 131500,
+   "assessed_bldg": 394000,
+   "difference": 17700,
+   "pct_of_assessed": 3.3,
+   "below_assessment": false,
+   "lat": 43.162901,
+   "lon": -71.466619,
+   "use": "SINGLE FAM",
+   "sqft": "2107",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "2002",
+   "acres": 0.41,
+   "zone": "R-1C",
+   "prior_sales": [
+    {
+     "date": "1997-08-14",
+     "price": 105300,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "561-0109-000-000",
+   "address": "401 BOROUGH RD",
+   "sale_price": 400000,
+   "sale_date": "2024-10-01",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 345600,
+   "assessed_land": 96800,
+   "assessed_bldg": 248500,
+   "difference": 54400,
+   "pct_of_assessed": 15.7,
+   "below_assessment": false,
+   "lat": 43.191829,
+   "lon": -71.477262,
+   "use": "SINGLE FAM",
+   "sqft": "1596",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1958",
+   "acres": 0.438,
+   "zone": "C-1D",
+   "prior_sales": [
+    {
+     "date": "2009-02-26",
+     "price": 152200,
+     "qualified": "U"
+    },
+    {
+     "date": "2020-03-10",
+     "price": 130000,
+     "qualified": "U"
+    },
+    {
+     "date": "2020-11-20",
+     "price": 285000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2023-01-24",
+     "price": 315000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-123-000",
+   "address": "428 TERRIE DR",
+   "sale_price": 480000,
+   "sale_date": "2024-09-30",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 403900,
+   "assessed_land": 125800,
+   "assessed_bldg": 276400,
+   "difference": 76100,
+   "pct_of_assessed": 18.8,
+   "below_assessment": false,
+   "lat": 43.161077,
+   "lon": -71.473962,
+   "use": "SINGLE FAM",
+   "sqft": "1547",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1987",
+   "acres": 0.469137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1987-10-27",
+     "price": 119900,
+     "qualified": "U"
+    },
+    {
+     "date": "2016-05-10",
+     "price": 146505,
+     "qualified": "U"
+    },
+    {
+     "date": "2016-09-28",
+     "price": 155000,
+     "qualified": "U"
+    },
+    {
+     "date": "2017-02-01",
+     "price": 242500,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-149-000",
+   "address": "446 MICOL RD",
+   "sale_price": 495000,
+   "sale_date": "2024-09-30",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 397000,
+   "assessed_land": 133500,
+   "assessed_bldg": 261500,
+   "difference": 98000,
+   "pct_of_assessed": 24.7,
+   "below_assessment": false,
+   "lat": 43.159926,
+   "lon": -71.480504,
+   "use": "SINGLE FAM",
+   "sqft": "1547",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1989",
+   "acres": 0.549137,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "565-0142-000-000",
+   "address": "401 GRANDVIEW RD",
+   "sale_price": 415000,
+   "sale_date": "2024-09-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 384600,
+   "assessed_land": 130100,
+   "assessed_bldg": 249100,
+   "difference": 30400,
+   "pct_of_assessed": 7.9,
+   "below_assessment": false,
+   "lat": 43.160142,
+   "lon": -71.466304,
+   "use": "SINGLE FAM",
+   "sqft": "2058",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1948",
+   "acres": 0.328214,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2012-08-31",
+     "price": 250725,
+     "qualified": "U"
+    },
+    {
+     "date": "2012-11-16",
+     "price": 152500,
+     "qualified": "U"
+    },
+    {
+     "date": "2020-07-01",
+     "price": 275000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2023-03-16",
+     "price": 400000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0085-007-000",
+   "address": "124 SMITH AVE",
+   "sale_price": 425000,
+   "sale_date": "2024-09-10",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 336100,
+   "assessed_land": 118400,
+   "assessed_bldg": 217200,
+   "difference": 88900,
+   "pct_of_assessed": 26.5,
+   "below_assessment": false,
+   "lat": 43.134711,
+   "lon": -71.444813,
+   "use": "SINGLE FAM",
+   "sqft": "1094",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1983",
+   "acres": 0.529137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2020-12-31",
+     "price": 262000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0025-000-000",
+   "address": "236 PEMBROKE ST",
+   "sale_price": 372000,
+   "sale_date": "2024-08-08",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 367600,
+   "assessed_land": 92200,
+   "assessed_bldg": 271500,
+   "difference": 4400,
+   "pct_of_assessed": 1.2,
+   "below_assessment": false,
+   "lat": 43.142112,
+   "lon": -71.453839,
+   "use": "SINGLE FAM",
+   "sqft": "2611",
+   "beds": "4",
+   "baths": "1",
+   "year_built": "1867",
+   "acres": 0.899137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1987-03-26",
+     "price": 120000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "563-0071-000-000",
+   "address": "473 PEMBROKE ST",
+   "sale_price": 600000,
+   "sale_date": "2024-08-07",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 546900,
+   "assessed_land": 166300,
+   "assessed_bldg": 350000,
+   "difference": 53100,
+   "pct_of_assessed": 9.7,
+   "below_assessment": false,
+   "lat": 43.168056,
+   "lon": -71.474767,
+   "use": "SINGLE FAM",
+   "sqft": "2472",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1770",
+   "acres": 7.289137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1997-10-07",
+     "price": 132000,
+     "qualified": "U"
+    },
+    {
+     "date": "2009-12-21",
+     "price": 287500,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0108-000-000",
+   "address": "403 PEMBROKE ST",
+   "sale_price": 393000,
+   "sale_date": "2024-08-07",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 270300,
+   "assessed_land": 87000,
+   "assessed_bldg": 180800,
+   "difference": 122700,
+   "pct_of_assessed": 45.4,
+   "below_assessment": false,
+   "lat": 43.15902,
+   "lon": -71.468953,
+   "use": "SINGLE FAM",
+   "sqft": "1240",
+   "beds": "1",
+   "baths": "1",
+   "year_built": "1947",
+   "acres": 0.17,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2013-01-23",
+     "price": 115000,
+     "qualified": "U"
+    },
+    {
+     "date": "2016-08-24",
+     "price": 158000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "260-0038-000-000",
+   "address": "447 BRUSH RD",
+   "sale_price": 375000,
+   "sale_date": "2024-07-19",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 385567,
+   "assessed_land": 100567,
+   "assessed_bldg": 276300,
+   "difference": -10567,
+   "pct_of_assessed": -2.7,
+   "below_assessment": true,
+   "lat": 43.186445,
+   "lon": -71.460703,
+   "use": "SINGLE FAM",
+   "sqft": "1345",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1977",
+   "acres": 11.900005,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2015-03-31",
+     "price": 470000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0076-000-000",
+   "address": "14 BOW LANE",
+   "sale_price": 480000,
+   "sale_date": "2024-07-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 449300,
+   "assessed_land": 134900,
+   "assessed_bldg": 309500,
+   "difference": 30700,
+   "pct_of_assessed": 6.8,
+   "below_assessment": false,
+   "lat": 43.157377,
+   "lon": -71.471045,
+   "use": "SINGLE FAM",
+   "sqft": "1488",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1967",
+   "acres": 1.139137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2015-08-05",
+     "price": 210000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0077-000-000",
+   "address": "233 DEARBORN RD",
+   "sale_price": 350000,
+   "sale_date": "2024-07-09",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 300500,
+   "assessed_land": 107500,
+   "assessed_bldg": 189900,
+   "difference": 49500,
+   "pct_of_assessed": 16.5,
+   "below_assessment": false,
+   "lat": 43.140766,
+   "lon": -71.444546,
+   "use": "SINGLE FAM",
+   "sqft": "836",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1967",
+   "acres": 0.439991,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "2003-03-26",
+     "price": 140000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0025-000-000",
+   "address": "25 SHERWOOD MEADOWS",
+   "sale_price": 512000,
+   "sale_date": "2024-07-02",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 486000,
+   "assessed_land": 114200,
+   "assessed_bldg": 371300,
+   "difference": 26000,
+   "pct_of_assessed": 5.3,
+   "below_assessment": false,
+   "lat": 43.15072,
+   "lon": -71.465917,
+   "use": "SINGLE FAM",
+   "sqft": "1588",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1959",
+   "acres": 0.23,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2012-03-16",
+     "price": 203000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "561-0112-002-000",
+   "address": "627 FOURTH RANGE RD",
+   "sale_price": 440000,
+   "sale_date": "2024-06-26",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 542100,
+   "assessed_land": 173000,
+   "assessed_bldg": 328200,
+   "difference": -102100,
+   "pct_of_assessed": -18.8,
+   "below_assessment": true,
+   "lat": 43.187752,
+   "lon": -71.468713,
+   "use": "SINGLE FAM",
+   "sqft": "1740",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1984",
+   "acres": 6.996547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2012-11-19",
+     "price": 325000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-056-000",
+   "address": "11 DONNA DR",
+   "sale_price": 426000,
+   "sale_date": "2024-06-21",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 364600,
+   "assessed_land": 132400,
+   "assessed_bldg": 207500,
+   "difference": 61400,
+   "pct_of_assessed": 16.8,
+   "below_assessment": false,
+   "lat": 43.158734,
+   "lon": -71.472655,
+   "use": "SINGLE FAM",
+   "sqft": "1224",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1984",
+   "acres": 0.469137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2015-09-01",
+     "price": 191400,
+     "qualified": "Q"
+    },
+    {
+     "date": "2017-06-07",
+     "price": 235000,
+     "qualified": "U"
+    },
+    {
+     "date": "2017-06-07",
+     "price": 235000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "563-0113-004-000",
+   "address": "521A&B FOURTH RANGE RD",
+   "sale_price": 680000,
+   "sale_date": "2024-06-07",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 622200,
+   "assessed_land": 206000,
+   "assessed_bldg": 394400,
+   "difference": 57800,
+   "pct_of_assessed": 9.3,
+   "below_assessment": false,
+   "lat": 43.181544,
+   "lon": -71.460743,
+   "use": "TWO FAMILY",
+   "sqft": "2655",
+   "beds": "5",
+   "baths": "2",
+   "year_built": "1986",
+   "acres": 8.776547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2001-04-04",
+     "price": 172000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0179-000-000",
+   "address": "405 DEERPATH LANE",
+   "sale_price": 520000,
+   "sale_date": "2024-05-29",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 504300,
+   "assessed_land": 138200,
+   "assessed_bldg": 358600,
+   "difference": 15700,
+   "pct_of_assessed": 3.1,
+   "below_assessment": false,
+   "lat": 43.161745,
+   "lon": -71.46445,
+   "use": "SINGLE FAM",
+   "sqft": "1588",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1965",
+   "acres": 0.62,
+   "zone": "R-1C",
+   "prior_sales": [
+    {
+     "date": "1987-07-06",
+     "price": 160000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "264-0041-003-000",
+   "address": "320A&B ACADEMY RD",
+   "sale_price": 460000,
+   "sale_date": "2024-05-23",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 419400,
+   "assessed_land": 130500,
+   "assessed_bldg": 287400,
+   "difference": 40600,
+   "pct_of_assessed": 9.7,
+   "below_assessment": false,
+   "lat": 43.147946,
+   "lon": -71.443159,
+   "use": "TWO FAMILY",
+   "sqft": "1944",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1986",
+   "acres": 2.06741,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "2018-05-14",
+     "price": 273500,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0085-042-000",
+   "address": "155A&B TINA DR",
+   "sale_price": 407400,
+   "sale_date": "2024-05-03",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 403600,
+   "assessed_land": 119800,
+   "assessed_bldg": 282900,
+   "difference": 3800,
+   "pct_of_assessed": 0.9,
+   "below_assessment": false,
+   "lat": 43.138191,
+   "lon": -71.443329,
+   "use": "TWO FAMILY",
+   "sqft": "2032",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1986",
+   "acres": 0.639137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2001-11-20",
+     "price": 169900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "634-0026-000-000",
+   "address": "480 PEMBROKE ST",
+   "sale_price": 225000,
+   "sale_date": "2024-04-30",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 325500,
+   "assessed_land": 118800,
+   "assessed_bldg": 194400,
+   "difference": -100500,
+   "pct_of_assessed": -30.9,
+   "below_assessment": true,
+   "lat": 43.167108,
+   "lon": -71.47764,
+   "use": "SINGLE FAM",
+   "sqft": "1048",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1957",
+   "acres": 1.545583,
+   "zone": "LO-A",
+   "prior_sales": []
+  },
+  {
+   "cama": "565-0257-005-000",
+   "address": "246 CHURCH RD",
+   "sale_price": 462000,
+   "sale_date": "2024-04-22",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 443300,
+   "assessed_land": 137500,
+   "assessed_bldg": 304000,
+   "difference": 18700,
+   "pct_of_assessed": 4.2,
+   "below_assessment": false,
+   "lat": 43.153401,
+   "lon": -71.453137,
+   "use": "SINGLE FAM",
+   "sqft": "1314",
+   "beds": "2",
+   "baths": "2",
+   "year_built": "1993",
+   "acres": 1.839991,
+   "zone": "R-1D",
+   "prior_sales": [
+    {
+     "date": "1993-09-07",
+     "price": 25000,
+     "qualified": "U"
+    },
+    {
+     "date": "2023-11-07",
+     "price": 412000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "634-0007-002-000",
+   "address": "51 WHITTEMORE RD",
+   "sale_price": 603000,
+   "sale_date": "2024-04-05",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 543100,
+   "assessed_land": 189500,
+   "assessed_bldg": 343900,
+   "difference": 59900,
+   "pct_of_assessed": 11.0,
+   "below_assessment": false,
+   "lat": 43.162462,
+   "lon": -71.485019,
+   "use": "SINGLE FAM",
+   "sqft": "2104",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1981",
+   "acres": 1.430005,
+   "zone": "R-1D",
+   "prior_sales": [
+    {
+     "date": "1997-07-15",
+     "price": 157000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "256-0001-017-000",
+   "address": "890 WELLINGTON WAY",
+   "sale_price": 612000,
+   "sale_date": "2024-02-15",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 615600,
+   "assessed_land": 167100,
+   "assessed_bldg": 437100,
+   "difference": -3600,
+   "pct_of_assessed": -0.6,
+   "below_assessment": true,
+   "lat": 43.22815,
+   "lon": -71.46128,
+   "use": "SINGLE FAM",
+   "sqft": "2388",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2001",
+   "acres": 4.029991,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2001-12-28",
+     "price": 40000,
+     "qualified": "U"
+    },
+    {
+     "date": "2008-08-05",
+     "price": 348000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2011-08-22",
+     "price": 330000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0021-000-000",
+   "address": "220 PEMBROKE ST",
+   "sale_price": 455000,
+   "sale_date": "2024-02-15",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 469000,
+   "assessed_land": 103800,
+   "assessed_bldg": 350300,
+   "difference": -14000,
+   "pct_of_assessed": -3.0,
+   "below_assessment": true,
+   "lat": 43.139795,
+   "lon": -71.451902,
+   "use": "SINGLE FAM",
+   "sqft": "2164",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1900",
+   "acres": 1.039137,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "565-0016-000-000",
+   "address": "7 SHERWOOD MEADOWS",
+   "sale_price": 401000,
+   "sale_date": "2024-01-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 365800,
+   "assessed_land": 119400,
+   "assessed_bldg": 245200,
+   "difference": 35200,
+   "pct_of_assessed": 9.6,
+   "below_assessment": false,
+   "lat": 43.150732,
+   "lon": -71.463125,
+   "use": "SINGLE FAM",
+   "sqft": "910",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1966",
+   "acres": 0.609137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1996-01-29",
+     "price": 70000,
+     "qualified": "U"
+    },
+    {
+     "date": "2009-03-04",
+     "price": 6300,
+     "qualified": "U"
+    },
+    {
+     "date": "2023-10-27",
+     "price": 282000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "561-0030-000-000",
+   "address": "430 OLD BOROUGH RD",
+   "sale_price": 412000,
+   "sale_date": "2024-01-17",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 278500,
+   "assessed_land": 113800,
+   "assessed_bldg": 140000,
+   "difference": 133500,
+   "pct_of_assessed": 47.9,
+   "below_assessment": false,
+   "lat": 43.194879,
+   "lon": -71.474817,
+   "use": "SINGLE FAM",
+   "sqft": "912",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1948",
+   "acres": 2.006547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2023-05-09",
+     "price": 195000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "262-0055-000-000",
+   "address": "441A&B SIXTH RANGE RD",
+   "sale_price": 1090000,
+   "sale_date": "2023-12-21",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 1045716,
+   "assessed_land": 147416,
+   "assessed_bldg": 848100,
+   "difference": 44284,
+   "pct_of_assessed": 4.2,
+   "below_assessment": false,
+   "lat": 43.186297,
+   "lon": -71.436544,
+   "use": "TWO FAMILY",
+   "sqft": "4080",
+   "beds": "5",
+   "baths": "3",
+   "year_built": "2013",
+   "acres": 64.999991,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2002-11-19",
+     "price": 182800,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "260-0005-001-000",
+   "address": "447 SIXTH RANGE RD",
+   "sale_price": 500000,
+   "sale_date": "2023-12-05",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 524700,
+   "assessed_land": 139300,
+   "assessed_bldg": 298700,
+   "difference": -24700,
+   "pct_of_assessed": -4.7,
+   "below_assessment": true,
+   "lat": 43.186425,
+   "lon": -71.441392,
+   "use": "SINGLE FAM",
+   "sqft": "1816",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1990",
+   "acres": 2.016547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1999-03-19",
+     "price": 109900,
+     "qualified": "U"
+    },
+    {
+     "date": "2004-03-02",
+     "price": 250500,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0007-023-000",
+   "address": "40 MASON AVE",
+   "sale_price": 466500,
+   "sale_date": "2023-11-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 516500,
+   "assessed_land": 145000,
+   "assessed_bldg": 361300,
+   "difference": -50000,
+   "pct_of_assessed": -9.7,
+   "below_assessment": true,
+   "lat": 43.138247,
+   "lon": -71.458498,
+   "use": "SINGLE FAM",
+   "sqft": "1196",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1998",
+   "acres": 1.405579,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1998-06-18",
+     "price": 27000,
+     "qualified": "U"
+    },
+    {
+     "date": "2005-09-19",
+     "price": 335000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-157-000",
+   "address": "441 MICOL RD",
+   "sale_price": 380000,
+   "sale_date": "2023-10-27",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 347800,
+   "assessed_land": 135800,
+   "assessed_bldg": 210500,
+   "difference": 32200,
+   "pct_of_assessed": 9.3,
+   "below_assessment": false,
+   "lat": 43.159674,
+   "lon": -71.479335,
+   "use": "SINGLE FAM",
+   "sqft": "1160",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1988",
+   "acres": 0.719137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2001-06-25",
+     "price": 139900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "264-0010-000-000",
+   "address": "291 PEMBROKE ST",
+   "sale_price": 400000,
+   "sale_date": "2023-10-17",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 548100,
+   "assessed_land": 110300,
+   "assessed_bldg": 431000,
+   "difference": -148100,
+   "pct_of_assessed": -27.0,
+   "below_assessment": true,
+   "lat": 43.148726,
+   "lon": -71.458579,
+   "use": "APT 4-8 UN",
+   "sqft": "4929",
+   "beds": "5",
+   "baths": "5",
+   "year_built": "1790",
+   "acres": 1.269137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2000-08-31",
+     "price": 170000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0070-000-000",
+   "address": "315 DEARBORN RD",
+   "sale_price": 345000,
+   "sale_date": "2023-10-16",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 309400,
+   "assessed_land": 114700,
+   "assessed_bldg": 194200,
+   "difference": 35600,
+   "pct_of_assessed": 11.5,
+   "below_assessment": false,
+   "lat": 43.141748,
+   "lon": -71.439149,
+   "use": "SINGLE FAM",
+   "sqft": "960",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1972",
+   "acres": 0.69,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "2003-05-05",
+     "price": 160000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-082-000",
+   "address": "419 ROSS RD",
+   "sale_price": 525000,
+   "sale_date": "2023-09-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 478200,
+   "assessed_land": 108700,
+   "assessed_bldg": 368000,
+   "difference": 46800,
+   "pct_of_assessed": 9.8,
+   "below_assessment": false,
+   "lat": 43.157844,
+   "lon": -71.47726,
+   "use": "SINGLE FAM",
+   "sqft": "1916",
+   "beds": "2",
+   "baths": "2",
+   "year_built": "2019",
+   "acres": 0.549137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1986-09-22",
+     "price": 89700,
+     "qualified": "U"
+    },
+    {
+     "date": "2022-03-30",
+     "price": 227600,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "561-0112-003-000",
+   "address": "603 FOURTH RANGE RD",
+   "sale_price": 265000,
+   "sale_date": "2023-09-12",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 596600,
+   "assessed_land": 157700,
+   "assessed_bldg": 425000,
+   "difference": -331600,
+   "pct_of_assessed": -55.6,
+   "below_assessment": true,
+   "lat": 43.185804,
+   "lon": -71.468738,
+   "use": "SINGLE FAM",
+   "sqft": "2363",
+   "beds": "3",
+   "baths": "3",
+   "year_built": "1986",
+   "acres": 3.686547,
+   "zone": "R-3D",
+   "prior_sales": []
+  },
+  {
+   "cama": "266-0007-004-000",
+   "address": "9 BRITTANY CIRCLE",
+   "sale_price": 472000,
+   "sale_date": "2023-09-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 502900,
+   "assessed_land": 143100,
+   "assessed_bldg": 359300,
+   "difference": -30900,
+   "pct_of_assessed": -6.1,
+   "below_assessment": true,
+   "lat": 43.139095,
+   "lon": -71.456781,
+   "use": "SINGLE FAM",
+   "sqft": "1800",
+   "beds": "3",
+   "baths": "3",
+   "year_built": "2000",
+   "acres": 1.289991,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2012-04-19",
+     "price": 271384,
+     "qualified": "U"
+    },
+    {
+     "date": "2012-11-30",
+     "price": 165000,
+     "qualified": "U"
+    },
+    {
+     "date": "2018-07-02",
+     "price": 275000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-11-25",
+     "price": 315000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "264-0039-006-000",
+   "address": "279 CROSS RD",
+   "sale_price": 800000,
+   "sale_date": "2023-09-07",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 798100,
+   "assessed_land": 137300,
+   "assessed_bldg": 605900,
+   "difference": 1900,
+   "pct_of_assessed": 0.2,
+   "below_assessment": false,
+   "lat": 43.150525,
+   "lon": -71.448917,
+   "use": "SINGLE FAM",
+   "sqft": "2858",
+   "beds": "4",
+   "baths": "3",
+   "year_built": "2020",
+   "acres": 1.837,
+   "zone": "R-1D",
+   "prior_sales": [
+    {
+     "date": "2005-02-24",
+     "price": 24000,
+     "qualified": "U"
+    },
+    {
+     "date": "2019-02-04",
+     "price": 4450,
+     "qualified": "U"
+    },
+    {
+     "date": "2020-05-11",
+     "price": 219000,
+     "qualified": "U"
+    },
+    {
+     "date": "2020-12-04",
+     "price": 599900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-102-000",
+   "address": "3 MELISSA DR",
+   "sale_price": 500000,
+   "sale_date": "2023-09-07",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 372500,
+   "assessed_land": 134900,
+   "assessed_bldg": 231600,
+   "difference": 127500,
+   "pct_of_assessed": 34.2,
+   "below_assessment": false,
+   "lat": 43.159291,
+   "lon": -71.474917,
+   "use": "SINGLE FAM",
+   "sqft": "1548",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1986",
+   "acres": 0.649137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2005-10-03",
+     "price": 240000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2023-09-07",
+     "price": 500000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "632-0012-000-000",
+   "address": "68 SHEEP DAVIS RD",
+   "sale_price": 282000,
+   "sale_date": "2023-08-24",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 295900,
+   "assessed_land": 111400,
+   "assessed_bldg": 172100,
+   "difference": -13900,
+   "pct_of_assessed": -4.7,
+   "below_assessment": true,
+   "lat": 43.187734,
+   "lon": -71.484099,
+   "use": "SINGLE FAM",
+   "sqft": "840",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1963",
+   "acres": 0.984,
+   "zone": "C-1",
+   "prior_sales": [
+    {
+     "date": "2010-09-27",
+     "price": 176620,
+     "qualified": "U"
+    },
+    {
+     "date": "2010-11-10",
+     "price": 72000,
+     "qualified": "U"
+    },
+    {
+     "date": "2018-10-09",
+     "price": 157200,
+     "qualified": "Q"
+    },
+    {
+     "date": "2021-05-17",
+     "price": 215000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0208-000-000",
+   "address": "375 ROWE AVE",
+   "sale_price": 325000,
+   "sale_date": "2023-08-10",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 360600,
+   "assessed_land": 125500,
+   "assessed_bldg": 225500,
+   "difference": -35600,
+   "pct_of_assessed": -9.9,
+   "below_assessment": true,
+   "lat": 43.158479,
+   "lon": -71.464549,
+   "use": "SINGLE FAM",
+   "sqft": "1464",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1955",
+   "acres": 0.45,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "565-0031-000-000",
+   "address": "37 SHERWOOD MEADOWS",
+   "sale_price": 427500,
+   "sale_date": "2023-08-01",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 410300,
+   "assessed_land": 114800,
+   "assessed_bldg": 288000,
+   "difference": 17200,
+   "pct_of_assessed": 4.2,
+   "below_assessment": false,
+   "lat": 43.151681,
+   "lon": -71.464078,
+   "use": "SINGLE FAM",
+   "sqft": "1638",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1978",
+   "acres": 0.27,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2002-06-14",
+     "price": 178000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0128-000-000",
+   "address": "403 GIRARD AVE",
+   "sale_price": 232000,
+   "sale_date": "2023-07-25",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 256200,
+   "assessed_land": 117500,
+   "assessed_bldg": 138200,
+   "difference": -24200,
+   "pct_of_assessed": -9.4,
+   "below_assessment": true,
+   "lat": 43.159884,
+   "lon": -71.467596,
+   "use": "SINGLE FAM",
+   "sqft": "550",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1950",
+   "acres": 0.17,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "565-0051-010-000",
+   "address": "29 PEASLEE DR",
+   "sale_price": 490000,
+   "sale_date": "2023-07-19",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 442500,
+   "assessed_land": 118900,
+   "assessed_bldg": 320900,
+   "difference": 47500,
+   "pct_of_assessed": 10.7,
+   "below_assessment": false,
+   "lat": 43.153274,
+   "lon": -71.465752,
+   "use": "SINGLE FAM",
+   "sqft": "1666",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "2002",
+   "acres": 0.569137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2002-12-26",
+     "price": 210400,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0199-000-000",
+   "address": "231 PEMBROKE HILL RD",
+   "sale_price": 451000,
+   "sale_date": "2023-07-12",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 383200,
+   "assessed_land": 112900,
+   "assessed_bldg": 255900,
+   "difference": 67800,
+   "pct_of_assessed": 17.7,
+   "below_assessment": false,
+   "lat": 43.160787,
+   "lon": -71.463729,
+   "use": "SINGLE FAM",
+   "sqft": "1528",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1960",
+   "acres": 0.919137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1999-01-08",
+     "price": 108000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0025-002-000",
+   "address": "106A&B BROADWAY",
+   "sale_price": 490000,
+   "sale_date": "2023-07-07",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 406800,
+   "assessed_land": 95200,
+   "assessed_bldg": 311100,
+   "difference": 83200,
+   "pct_of_assessed": 20.5,
+   "below_assessment": false,
+   "lat": 43.141703,
+   "lon": -71.453812,
+   "use": "TWO FAMILY",
+   "sqft": "2024",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1986",
+   "acres": 0.669137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2006-05-25",
+     "price": 264933,
+     "qualified": "Q"
+    },
+    {
+     "date": "2009-04-08",
+     "price": 182000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "262-0001-000-000",
+   "address": "348 PEMBROKE HILL RD",
+   "sale_price": 700000,
+   "sale_date": "2023-07-06",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 609100,
+   "assessed_land": 152700,
+   "assessed_bldg": 371500,
+   "difference": 90900,
+   "pct_of_assessed": 14.9,
+   "below_assessment": false,
+   "lat": 43.165517,
+   "lon": -71.45303,
+   "use": "SINGLE FAM",
+   "sqft": "3038",
+   "beds": "4",
+   "baths": "3",
+   "year_built": "1984",
+   "acres": 3.236547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2001-08-21",
+     "price": 141800,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "262-0010-000-000",
+   "address": "468 FOURTH RANGE RD",
+   "sale_price": 370000,
+   "sale_date": "2023-06-16",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 305400,
+   "assessed_land": 114700,
+   "assessed_bldg": 189400,
+   "difference": 64600,
+   "pct_of_assessed": 21.2,
+   "below_assessment": false,
+   "lat": 43.1739,
+   "lon": -71.458481,
+   "use": "SINGLE FAM",
+   "sqft": "960",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1970",
+   "acres": 0.69,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1993-05-05",
+     "price": 80000,
+     "qualified": "U"
+    },
+    {
+     "date": "2012-09-04",
+     "price": 164900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-160-000",
+   "address": "433 MICOL RD",
+   "sale_price": 532500,
+   "sale_date": "2023-06-02",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 531300,
+   "assessed_land": 126700,
+   "assessed_bldg": 383500,
+   "difference": 1200,
+   "pct_of_assessed": 0.2,
+   "below_assessment": false,
+   "lat": 43.158764,
+   "lon": -71.479124,
+   "use": "SINGLE FAM",
+   "sqft": "2307",
+   "beds": "5",
+   "baths": "3",
+   "year_built": "1988",
+   "acres": 0.539137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1991-05-16",
+     "price": 83500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0126-000-000",
+   "address": "407 GIRARD AVE",
+   "sale_price": 375000,
+   "sale_date": "2023-06-01",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 370700,
+   "assessed_land": 130500,
+   "assessed_bldg": 239100,
+   "difference": 4300,
+   "pct_of_assessed": 1.2,
+   "below_assessment": false,
+   "lat": 43.160374,
+   "lon": -71.468065,
+   "use": "SINGLE FAM",
+   "sqft": "1752",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1955",
+   "acres": 0.35,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2013-02-08",
+     "price": 114900,
+     "qualified": "U"
+    },
+    {
+     "date": "2013-09-24",
+     "price": 95000,
+     "qualified": "U"
+    },
+    {
+     "date": "2014-02-12",
+     "price": 180000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-10-28",
+     "price": 222900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0151-000-000",
+   "address": "418 DEERPATH LANE",
+   "sale_price": 466000,
+   "sale_date": "2023-05-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 461700,
+   "assessed_land": 132000,
+   "assessed_bldg": 302800,
+   "difference": 4300,
+   "pct_of_assessed": 0.9,
+   "below_assessment": false,
+   "lat": 43.16261,
+   "lon": -71.46634,
+   "use": "SINGLE FAM",
+   "sqft": "1090",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1977",
+   "acres": 0.44,
+   "zone": "R-1C",
+   "prior_sales": [
+    {
+     "date": "2019-10-11",
+     "price": 165000,
+     "qualified": "U"
+    },
+    {
+     "date": "2019-10-11",
+     "price": 155000,
+     "qualified": "U"
+    },
+    {
+     "date": "2020-06-01",
+     "price": 299000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0051-002-000",
+   "address": "7 PEASLEE DR",
+   "sale_price": 487500,
+   "sale_date": "2023-05-16",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 440100,
+   "assessed_land": 118300,
+   "assessed_bldg": 318800,
+   "difference": 47400,
+   "pct_of_assessed": 10.8,
+   "below_assessment": false,
+   "lat": 43.152427,
+   "lon": -71.464181,
+   "use": "SINGLE FAM",
+   "sqft": "1353",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "2002",
+   "acres": 0.519137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2002-08-30",
+     "price": 175900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2011-10-31",
+     "price": 242500,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "561-0040-000-000",
+   "address": "709 CLOUGH MILL RD",
+   "sale_price": 405000,
+   "sale_date": "2023-05-12",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 281100,
+   "assessed_land": 88200,
+   "assessed_bldg": 191400,
+   "difference": 123900,
+   "pct_of_assessed": 44.1,
+   "below_assessment": false,
+   "lat": 43.196509,
+   "lon": -71.473678,
+   "use": "SINGLE FAM",
+   "sqft": "1160",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1943",
+   "acres": 0.65,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2004-08-16",
+     "price": 200000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2022-10-28",
+     "price": 220000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0085-000-000",
+   "address": "434 PEMBROKE ST",
+   "sale_price": 550000,
+   "sale_date": "2023-05-09",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 592400,
+   "assessed_land": 105000,
+   "assessed_bldg": 484400,
+   "difference": -42400,
+   "pct_of_assessed": -7.2,
+   "below_assessment": true,
+   "lat": 43.162006,
+   "lon": -71.472882,
+   "use": "THREE FAM",
+   "sqft": "4656",
+   "beds": "7",
+   "baths": "9",
+   "year_built": "1901",
+   "acres": 1.159137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2001-01-17",
+     "price": 134000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-098-000",
+   "address": "11 MELISSA DR",
+   "sale_price": 375000,
+   "sale_date": "2023-05-04",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 344800,
+   "assessed_land": 134900,
+   "assessed_bldg": 208400,
+   "difference": 30200,
+   "pct_of_assessed": 8.8,
+   "below_assessment": false,
+   "lat": 43.158588,
+   "lon": -71.476284,
+   "use": "SINGLE FAM",
+   "sqft": "1106",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1986",
+   "acres": 0.649137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1986-10-10",
+     "price": 94100,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-119-000",
+   "address": "420 TERRIE DR",
+   "sale_price": 430000,
+   "sale_date": "2023-04-14",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 432800,
+   "assessed_land": 125800,
+   "assessed_bldg": 257000,
+   "difference": -2800,
+   "pct_of_assessed": -0.6,
+   "below_assessment": true,
+   "lat": 43.159951,
+   "lon": -71.473117,
+   "use": "SINGLE FAM",
+   "sqft": "1768",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1987",
+   "acres": 0.469137,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "266-0057-000-000",
+   "address": "206 DEARBORN RD",
+   "sale_price": 375000,
+   "sale_date": "2023-03-29",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 486000,
+   "assessed_land": 110300,
+   "assessed_bldg": 365300,
+   "difference": -111000,
+   "pct_of_assessed": -22.8,
+   "below_assessment": true,
+   "lat": 43.138757,
+   "lon": -71.449261,
+   "use": "SINGLE FAM",
+   "sqft": "2680",
+   "beds": "3",
+   "baths": "3",
+   "year_built": "1778",
+   "acres": 0.689137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2003-12-31",
+     "price": 242500,
+     "qualified": "U"
+    },
+    {
+     "date": "2003-12-31",
+     "price": 230000,
+     "qualified": "U"
+    },
+    {
+     "date": "2019-06-03",
+     "price": 215000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0085-014-000",
+   "address": "150 SMITH AVE",
+   "sale_price": 360000,
+   "sale_date": "2023-03-20",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 369800,
+   "assessed_land": 117900,
+   "assessed_bldg": 250700,
+   "difference": -9800,
+   "pct_of_assessed": -2.7,
+   "below_assessment": true,
+   "lat": 43.137179,
+   "lon": -71.446149,
+   "use": "SINGLE FAM",
+   "sqft": "1336",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1985",
+   "acres": 0.468,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1998-04-03",
+     "price": 69000,
+     "qualified": "U"
+    },
+    {
+     "date": "2015-01-26",
+     "price": 146700,
+     "qualified": "U"
+    },
+    {
+     "date": "2015-04-02",
+     "price": 139900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "634-0045-000-000",
+   "address": "570 PEMBROKE ST",
+   "sale_price": 375000,
+   "sale_date": "2023-03-20",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 420800,
+   "assessed_land": 117400,
+   "assessed_bldg": 296600,
+   "difference": -45800,
+   "pct_of_assessed": -10.9,
+   "below_assessment": true,
+   "lat": 43.177107,
+   "lon": -71.48751,
+   "use": "SINGLE FAM",
+   "sqft": "2199",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1900",
+   "acres": 1.405583,
+   "zone": "LO-A",
+   "prior_sales": [
+    {
+     "date": "2002-06-27",
+     "price": 200000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2008-10-01",
+     "price": 340000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0135-000-000",
+   "address": "412 GRANDVIEW RD",
+   "sale_price": 330000,
+   "sale_date": "2023-03-03",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 339400,
+   "assessed_land": 130300,
+   "assessed_bldg": 206800,
+   "difference": -9400,
+   "pct_of_assessed": -2.8,
+   "below_assessment": true,
+   "lat": 43.16103,
+   "lon": -71.468094,
+   "use": "SINGLE FAM",
+   "sqft": "1116",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1964",
+   "acres": 0.34,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "561-0069-000-000",
+   "address": "725 ELEY LANE",
+   "sale_price": 317000,
+   "sale_date": "2023-01-03",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 401300,
+   "assessed_land": 121500,
+   "assessed_bldg": 279300,
+   "difference": -84300,
+   "pct_of_assessed": -21.0,
+   "below_assessment": true,
+   "lat": 43.20247,
+   "lon": -71.468966,
+   "use": "SINGLE FAM",
+   "sqft": "1144",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1978",
+   "acres": 0.58,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2002-11-19",
+     "price": 195000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "262-0037-000-000",
+   "address": "471 FOURTH RANGE RD",
+   "sale_price": 850000,
+   "sale_date": "2022-12-29",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 618673,
+   "assessed_land": 140173,
+   "assessed_bldg": 186100,
+   "difference": 231327,
+   "pct_of_assessed": 37.4,
+   "below_assessment": false,
+   "lat": 43.176886,
+   "lon": -71.453396,
+   "use": "SINGLE FAM",
+   "sqft": "1344",
+   "beds": "4",
+   "baths": "1",
+   "year_built": "1964",
+   "acres": 65.000005,
+   "zone": "R-3D",
+   "prior_sales": []
+  },
+  {
+   "cama": "563-0104-003-000",
+   "address": "312 BRICKETT HILL RD",
+   "sale_price": 360000,
+   "sale_date": "2022-12-21",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 394300,
+   "assessed_land": 159000,
+   "assessed_bldg": 230000,
+   "difference": -34300,
+   "pct_of_assessed": -8.7,
+   "below_assessment": true,
+   "lat": 43.17555,
+   "lon": -71.469226,
+   "use": "SINGLE FAM",
+   "sqft": "1248",
+   "beds": "2",
+   "baths": "2",
+   "year_built": "2002",
+   "acres": 3.806547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2003-01-29",
+     "price": 195900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "258-0005-000-000",
+   "address": "935 BOROUGH RD",
+   "sale_price": 745400,
+   "sale_date": "2022-12-19",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 819860,
+   "assessed_land": 161560,
+   "assessed_bldg": 578100,
+   "difference": -74460,
+   "pct_of_assessed": -9.1,
+   "below_assessment": true,
+   "lat": 43.223352,
+   "lon": -71.448283,
+   "use": "SINGLE FAM",
+   "sqft": "2883",
+   "beds": "4",
+   "baths": "3",
+   "year_built": "1996",
+   "acres": 13.016547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2016-11-30",
+     "price": 399000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "561-0039-000-000",
+   "address": "438 BOROUGH RD",
+   "sale_price": 250000,
+   "sale_date": "2022-11-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 296000,
+   "assessed_land": 105600,
+   "assessed_bldg": 187300,
+   "difference": -46000,
+   "pct_of_assessed": -15.5,
+   "below_assessment": true,
+   "lat": 43.195648,
+   "lon": -71.473076,
+   "use": "TWO FAMILY",
+   "sqft": "1565",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1950",
+   "acres": 0.739991,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2001-05-07",
+     "price": 124900,
+     "qualified": "U"
+    },
+    {
+     "date": "2014-11-18",
+     "price": 68600,
+     "qualified": "U"
+    },
+    {
+     "date": "2015-06-26",
+     "price": 71000,
+     "qualified": "U"
+    },
+    {
+     "date": "2016-05-23",
+     "price": 193000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "264-0067-000-000",
+   "address": "344 THIRD RANGE RD",
+   "sale_price": 365000,
+   "sale_date": "2022-11-03",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 347700,
+   "assessed_land": 123400,
+   "assessed_bldg": 204100,
+   "difference": 17300,
+   "pct_of_assessed": 5.0,
+   "below_assessment": false,
+   "lat": 43.158328,
+   "lon": -71.456559,
+   "use": "SINGLE FAM",
+   "sqft": "1056",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1973",
+   "acres": 1.029982,
+   "zone": "R-1D",
+   "prior_sales": []
+  },
+  {
+   "cama": "565-0092-014-000",
+   "address": "456 FAIRWAY DR",
+   "sale_price": 410000,
+   "sale_date": "2022-11-03",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 430200,
+   "assessed_land": 126200,
+   "assessed_bldg": 300900,
+   "difference": -20200,
+   "pct_of_assessed": -4.7,
+   "below_assessment": true,
+   "lat": 43.164438,
+   "lon": -71.476114,
+   "use": "SINGLE FAM",
+   "sqft": "1666",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2003",
+   "acres": 1.627544,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2005-03-21",
+     "price": 249900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2007-10-04",
+     "price": 227500,
+     "qualified": "U"
+    },
+    {
+     "date": "2007-11-19",
+     "price": 206000,
+     "qualified": "U"
+    },
+    {
+     "date": "2017-06-26",
+     "price": 245400,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "258-0032-000-000",
+   "address": "668 NO PEMBROKE RD",
+   "sale_price": 415000,
+   "sale_date": "2022-10-24",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 481300,
+   "assessed_land": 138600,
+   "assessed_bldg": 321200,
+   "difference": -66300,
+   "pct_of_assessed": -13.8,
+   "below_assessment": true,
+   "lat": 43.212516,
+   "lon": -71.452143,
+   "use": "SINGLE FAM",
+   "sqft": "1841",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1977",
+   "acres": 1.956547,
+   "zone": "R-3D",
+   "prior_sales": []
+  },
+  {
+   "cama": "565-0036-000-000",
+   "address": "38 SHERWOOD MEADOWS",
+   "sale_price": 370000,
+   "sale_date": "2022-10-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 433800,
+   "assessed_land": 115000,
+   "assessed_bldg": 313500,
+   "difference": -63800,
+   "pct_of_assessed": -14.7,
+   "below_assessment": true,
+   "lat": 43.151356,
+   "lon": -71.464447,
+   "use": "SINGLE FAM",
+   "sqft": "1490",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1967",
+   "acres": 0.28,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1996-10-21",
+     "price": 91000,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-09-23",
+     "price": 320000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "561-0045-001-000",
+   "address": "506 BOROUGH RD",
+   "sale_price": 640000,
+   "sale_date": "2022-10-07",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 728900,
+   "assessed_land": 155500,
+   "assessed_bldg": 538400,
+   "difference": -88900,
+   "pct_of_assessed": -12.2,
+   "below_assessment": true,
+   "lat": 43.196882,
+   "lon": -71.472766,
+   "use": "SINGLE FAM",
+   "sqft": "2492",
+   "beds": "4",
+   "baths": "3",
+   "year_built": "2014",
+   "acres": 3.486547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1990-03-06",
+     "price": 50000,
+     "qualified": "U"
+    },
+    {
+     "date": "2014-05-23",
+     "price": 90000,
+     "qualified": "U"
+    },
+    {
+     "date": "2015-03-31",
+     "price": 339000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "634-0023-001-000",
+   "address": "56 WHITTEMORE RD",
+   "sale_price": 325066,
+   "sale_date": "2022-10-06",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 142700,
+   "assessed_land": 142700,
+   "assessed_bldg": 0,
+   "difference": 182366,
+   "pct_of_assessed": 127.8,
+   "below_assessment": false,
+   "lat": 43.163523,
+   "lon": -71.485432,
+   "use": "SINGLE FAM",
+   "sqft": "3274",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2025",
+   "acres": 0.743274,
+   "zone": null,
+   "prior_sales": []
+  },
+  {
+   "cama": "561-0053-000-000",
+   "address": "706 ELEY LANE",
+   "sale_price": 345000,
+   "sale_date": "2022-10-04",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 365500,
+   "assessed_land": 134600,
+   "assessed_bldg": 215300,
+   "difference": -20500,
+   "pct_of_assessed": -5.6,
+   "below_assessment": true,
+   "lat": 43.199913,
+   "lon": -71.468344,
+   "use": "SINGLE FAM",
+   "sqft": "1170",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1968",
+   "acres": 1.030005,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2014-08-04",
+     "price": 201500,
+     "qualified": "Q"
+    },
+    {
+     "date": "2020-09-01",
+     "price": 250000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "264-0071-000-000",
+   "address": "305 PEMBROKE HILL RD",
+   "sale_price": 416300,
+   "sale_date": "2022-09-30",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 378000,
+   "assessed_land": 122900,
+   "assessed_bldg": 221500,
+   "difference": 38300,
+   "pct_of_assessed": 10.1,
+   "below_assessment": false,
+   "lat": 43.16225,
+   "lon": -71.458148,
+   "use": "SINGLE FAM",
+   "sqft": "1344",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1967",
+   "acres": 1,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2002-10-30",
+     "price": 189900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2022-03-03",
+     "price": 67500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "262-0029-005-000",
+   "address": "435 CROSS COUNTRY RD",
+   "sale_price": 610000,
+   "sale_date": "2022-09-27",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 548100,
+   "assessed_land": 124000,
+   "assessed_bldg": 419400,
+   "difference": 61900,
+   "pct_of_assessed": 11.3,
+   "below_assessment": false,
+   "lat": 43.180073,
+   "lon": -71.456225,
+   "use": "SINGLE FAM",
+   "sqft": "2094",
+   "beds": "4",
+   "baths": "3",
+   "year_built": "2022",
+   "acres": 3.46,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2021-10-04",
+     "price": 70000,
+     "qualified": "U"
+    },
+    {
+     "date": "2022-02-17",
+     "price": 8070,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "561-0054-000-000",
+   "address": "710 ELEY LANE",
+   "sale_price": 415000,
+   "sale_date": "2022-09-22",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 465800,
+   "assessed_land": 125100,
+   "assessed_bldg": 334500,
+   "difference": -50800,
+   "pct_of_assessed": -10.9,
+   "below_assessment": true,
+   "lat": 43.200282,
+   "lon": -71.468478,
+   "use": "SINGLE FAM",
+   "sqft": "1830",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1972",
+   "acres": 0.69,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1986-10-03",
+     "price": 116000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "559-0016-005-000",
+   "address": "732 NO PEMBROKE RD",
+   "sale_price": 560000,
+   "sale_date": "2022-09-20",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 575600,
+   "assessed_land": 167500,
+   "assessed_bldg": 387100,
+   "difference": -15600,
+   "pct_of_assessed": -2.7,
+   "below_assessment": true,
+   "lat": 43.213258,
+   "lon": -71.463772,
+   "use": "SINGLE FAM",
+   "sqft": "2112",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1996",
+   "acres": 6.106547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1995-05-22",
+     "price": 18700,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-05-17",
+     "price": 452000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-139-000",
+   "address": "429 NADINE RD",
+   "sale_price": 465000,
+   "sale_date": "2022-09-16",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 456300,
+   "assessed_land": 133400,
+   "assessed_bldg": 321700,
+   "difference": 8700,
+   "pct_of_assessed": 1.9,
+   "below_assessment": false,
+   "lat": 43.158811,
+   "lon": -71.481069,
+   "use": "SINGLE FAM",
+   "sqft": "1667",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1988",
+   "acres": 0.539137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1995-02-07",
+     "price": 99900,
+     "qualified": "U"
+    },
+    {
+     "date": "2004-04-05",
+     "price": 220000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2008-10-06",
+     "price": 257000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "262-0004-000-000",
+   "address": "446 FOURTH RANGE RD",
+   "sale_price": 259000,
+   "sale_date": "2022-09-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 245400,
+   "assessed_land": 137500,
+   "assessed_bldg": 104700,
+   "difference": 13600,
+   "pct_of_assessed": 5.5,
+   "below_assessment": false,
+   "lat": 43.171701,
+   "lon": -71.456577,
+   "use": "SINGLE FAM",
+   "sqft": "925",
+   "beds": "1",
+   "baths": "1",
+   "year_built": "1938",
+   "acres": 1.856547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2002-01-07",
+     "price": 48000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-095-000",
+   "address": "447 TERRIE DR",
+   "sale_price": 365000,
+   "sale_date": "2022-09-12",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 343800,
+   "assessed_land": 132600,
+   "assessed_bldg": 209100,
+   "difference": 21200,
+   "pct_of_assessed": 6.2,
+   "below_assessment": false,
+   "lat": 43.15934,
+   "lon": -71.474348,
+   "use": "SINGLE FAM",
+   "sqft": "1224",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1986",
+   "acres": 0.479137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2019-09-17",
+     "price": 260000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "563-0036-000-000",
+   "address": "208 BRICKETT HILL RD",
+   "sale_price": 450000,
+   "sale_date": "2022-09-08",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 417000,
+   "assessed_land": 109300,
+   "assessed_bldg": 274300,
+   "difference": 33000,
+   "pct_of_assessed": 7.9,
+   "below_assessment": false,
+   "lat": 43.170432,
+   "lon": -71.478371,
+   "use": "SINGLE FAM",
+   "sqft": "1608",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1970",
+   "acres": 0.51,
+   "zone": "LO-A",
+   "prior_sales": [
+    {
+     "date": "1999-01-13",
+     "price": 118000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0223-000-000",
+   "address": "380 PERLEY AVE",
+   "sale_price": 412000,
+   "sale_date": "2022-09-02",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 378100,
+   "assessed_land": 128500,
+   "assessed_bldg": 248300,
+   "difference": 33900,
+   "pct_of_assessed": 9.0,
+   "below_assessment": false,
+   "lat": 43.158251,
+   "lon": -71.466518,
+   "use": "SINGLE FAM",
+   "sqft": "1430",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1975",
+   "acres": 0.23,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2016-08-23",
+     "price": 131000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2017-01-30",
+     "price": 251600,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "559-0002-002-000",
+   "address": "765 NO PEMBROKE RD",
+   "sale_price": 440000,
+   "sale_date": "2022-08-31",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 429900,
+   "assessed_land": 127400,
+   "assessed_bldg": 302500,
+   "difference": 10100,
+   "pct_of_assessed": 2.3,
+   "below_assessment": false,
+   "lat": 43.216489,
+   "lon": -71.469369,
+   "use": "SINGLE FAM",
+   "sqft": "1820",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1996",
+   "acres": 2.716547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1993-03-26",
+     "price": 20000,
+     "qualified": "U"
+    },
+    {
+     "date": "2003-12-02",
+     "price": 269400,
+     "qualified": "Q"
+    },
+    {
+     "date": "2017-11-03",
+     "price": 280000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-042-000",
+   "address": "418 TERRIE DR",
+   "sale_price": 402500,
+   "sale_date": "2022-08-31",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 356000,
+   "assessed_land": 125800,
+   "assessed_bldg": 224600,
+   "difference": 46500,
+   "pct_of_assessed": 13.1,
+   "below_assessment": false,
+   "lat": 43.159673,
+   "lon": -71.472888,
+   "use": "SINGLE FAM",
+   "sqft": "1428",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1984",
+   "acres": 0.469137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2001-08-21",
+     "price": 144000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "563-0040-018-000",
+   "address": "511 JACKS DR",
+   "sale_price": 572500,
+   "sale_date": "2022-08-30",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 562000,
+   "assessed_land": 132500,
+   "assessed_bldg": 422100,
+   "difference": 10500,
+   "pct_of_assessed": 1.9,
+   "below_assessment": false,
+   "lat": 43.174471,
+   "lon": -71.473212,
+   "use": "SINGLE FAM",
+   "sqft": "2208",
+   "beds": "3",
+   "baths": "3",
+   "year_built": "2003",
+   "acres": 0.92,
+   "zone": "R-1C",
+   "prior_sales": [
+    {
+     "date": "2003-08-25",
+     "price": 295000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2012-08-24",
+     "price": 242000,
+     "qualified": "U"
+    },
+    {
+     "date": "2012-12-14",
+     "price": 195800,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "258-0007-003-000",
+   "address": "729 ROBINSON RD",
+   "sale_price": 674900,
+   "sale_date": "2022-08-26",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 724000,
+   "assessed_land": 198500,
+   "assessed_bldg": 512600,
+   "difference": -49100,
+   "pct_of_assessed": -6.8,
+   "below_assessment": true,
+   "lat": 43.227532,
+   "lon": -71.456211,
+   "use": "SINGLE FAM",
+   "sqft": "2370",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "2002",
+   "acres": 7.396547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2011-03-22",
+     "price": 352546,
+     "qualified": "U"
+    },
+    {
+     "date": "2011-04-25",
+     "price": 289900,
+     "qualified": "U"
+    },
+    {
+     "date": "2016-07-26",
+     "price": 331000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2017-07-10",
+     "price": 392000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "258-0007-000-000",
+   "address": "916 BOROUGH RD",
+   "sale_price": 526000,
+   "sale_date": "2022-08-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 532300,
+   "assessed_land": 173500,
+   "assessed_bldg": 329900,
+   "difference": -6300,
+   "pct_of_assessed": -1.2,
+   "below_assessment": true,
+   "lat": 43.224919,
+   "lon": -71.453408,
+   "use": "SINGLE FAM",
+   "sqft": "1664",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1980",
+   "acres": 5.126547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2001-08-28",
+     "price": 100000,
+     "qualified": "U"
+    },
+    {
+     "date": "2015-07-27",
+     "price": 254000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "634-0036-000-000",
+   "address": "518 PEMBROKE ST",
+   "sale_price": 488000,
+   "sale_date": "2022-08-01",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 400900,
+   "assessed_land": 105100,
+   "assessed_bldg": 288000,
+   "difference": 87100,
+   "pct_of_assessed": 21.7,
+   "below_assessment": false,
+   "lat": 43.171065,
+   "lon": -71.48198,
+   "use": "THREE FAM",
+   "sqft": "2318",
+   "beds": "7",
+   "baths": "4",
+   "year_built": "1960",
+   "acres": 0.93,
+   "zone": "LO-A",
+   "prior_sales": [
+    {
+     "date": "1991-12-16",
+     "price": 110000,
+     "qualified": "U"
+    },
+    {
+     "date": "2007-12-05",
+     "price": 170000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "260-0034-004-000",
+   "address": "546 CROSS COUNTRY RD",
+   "sale_price": 740000,
+   "sale_date": "2022-07-27",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 794000,
+   "assessed_land": 144000,
+   "assessed_bldg": 631600,
+   "difference": -54000,
+   "pct_of_assessed": -6.8,
+   "below_assessment": true,
+   "lat": 43.187295,
+   "lon": -71.448395,
+   "use": "SINGLE FAM",
+   "sqft": "3319",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "2001",
+   "acres": 2.446547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2012-06-08",
+     "price": 270300,
+     "qualified": "U"
+    },
+    {
+     "date": "2012-08-01",
+     "price": 310000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "561-0111-002-000",
+   "address": "643 FOURTH RANGE RD",
+   "sale_price": 400000,
+   "sale_date": "2022-07-25",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 459900,
+   "assessed_land": 172100,
+   "assessed_bldg": 279600,
+   "difference": -59900,
+   "pct_of_assessed": -13.0,
+   "below_assessment": true,
+   "lat": 43.190032,
+   "lon": -71.471077,
+   "use": "SINGLE FAM",
+   "sqft": "1778",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1951",
+   "acres": 4.996547,
+   "zone": "R-3D",
+   "prior_sales": []
+  },
+  {
+   "cama": "565-0125-000-000",
+   "address": "409 GIRARD AVE",
+   "sale_price": 323000,
+   "sale_date": "2022-07-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 314400,
+   "assessed_land": 122900,
+   "assessed_bldg": 186300,
+   "difference": 8600,
+   "pct_of_assessed": 2.7,
+   "below_assessment": false,
+   "lat": 43.16061,
+   "lon": -71.468298,
+   "use": "SINGLE FAM",
+   "sqft": "1080",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1950",
+   "acres": 0.28,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2000-09-18",
+     "price": 116000,
+     "qualified": "U"
+    },
+    {
+     "date": "2014-12-10",
+     "price": 159900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-06-11",
+     "price": 235000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "266-0096-000-000",
+   "address": "6 SKYVIEW TERRACE",
+   "sale_price": 360000,
+   "sale_date": "2022-07-06",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 269000,
+   "assessed_land": 82900,
+   "assessed_bldg": 176900,
+   "difference": 91000,
+   "pct_of_assessed": 33.8,
+   "below_assessment": false,
+   "lat": 43.137693,
+   "lon": -71.448392,
+   "use": "SINGLE FAM",
+   "sqft": "1156",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1949",
+   "acres": 0.14,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1987-04-16",
+     "price": 86000,
+     "qualified": "U"
+    },
+    {
+     "date": "2009-06-22",
+     "price": 170900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0018-000-000",
+   "address": "210 PEMBROKE ST",
+   "sale_price": 585000,
+   "sale_date": "2022-06-20",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 575400,
+   "assessed_land": 137600,
+   "assessed_bldg": 393900,
+   "difference": 9600,
+   "pct_of_assessed": 1.7,
+   "below_assessment": false,
+   "lat": 43.138853,
+   "lon": -71.450843,
+   "use": "TWO FAMILY",
+   "sqft": "3721",
+   "beds": "6",
+   "baths": "3",
+   "year_built": "1892",
+   "acres": 0.809137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2010-09-01",
+     "price": 500000,
+     "qualified": "U"
+    },
+    {
+     "date": "2016-08-31",
+     "price": 165000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0245-000-000",
+   "address": "339 PEMBROKE ST",
+   "sale_price": 365000,
+   "sale_date": "2022-06-20",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 303000,
+   "assessed_land": 98700,
+   "assessed_bldg": 190800,
+   "difference": 62000,
+   "pct_of_assessed": 20.5,
+   "below_assessment": false,
+   "lat": 43.153229,
+   "lon": -71.462938,
+   "use": "SINGLE FAM",
+   "sqft": "1794",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1925",
+   "acres": 0.529137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2014-08-25",
+     "price": 164000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-10-04",
+     "price": 243300,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "561-0110-006-000",
+   "address": "647 HALEIGHS COURT",
+   "sale_price": 587500,
+   "sale_date": "2022-06-16",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 651600,
+   "assessed_land": 180900,
+   "assessed_bldg": 462500,
+   "difference": -64100,
+   "pct_of_assessed": -9.8,
+   "below_assessment": true,
+   "lat": 43.195519,
+   "lon": -71.467871,
+   "use": "SINGLE FAM",
+   "sqft": "2584",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2005",
+   "acres": 7.126547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2004-09-10",
+     "price": 48000,
+     "qualified": "U"
+    },
+    {
+     "date": "2005-06-06",
+     "price": 105000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0130-000-000",
+   "address": "214 PEMBROKE HILL RD",
+   "sale_price": 286000,
+   "sale_date": "2022-06-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 302200,
+   "assessed_land": 107100,
+   "assessed_bldg": 193500,
+   "difference": -16200,
+   "pct_of_assessed": -5.4,
+   "below_assessment": true,
+   "lat": 43.159894,
+   "lon": -71.466902,
+   "use": "SINGLE FAM",
+   "sqft": "983",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1943",
+   "acres": 0.409114,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1992-07-02",
+     "price": 83900,
+     "qualified": "U"
+    },
+    {
+     "date": "2018-05-08",
+     "price": 184500,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "264-0037-007-000",
+   "address": "290 CROSS RD",
+   "sale_price": 400000,
+   "sale_date": "2022-06-06",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 423600,
+   "assessed_land": 125600,
+   "assessed_bldg": 287200,
+   "difference": -23600,
+   "pct_of_assessed": -5.6,
+   "below_assessment": true,
+   "lat": 43.151368,
+   "lon": -71.451723,
+   "use": "SINGLE FAM",
+   "sqft": "1512",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1987",
+   "acres": 1.160009,
+   "zone": "R-1D",
+   "prior_sales": [
+    {
+     "date": "2001-08-02",
+     "price": 184900,
+     "qualified": "U"
+    },
+    {
+     "date": "2017-07-25",
+     "price": 250000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "561-0087-000-000",
+   "address": "623 BOROUGH RD",
+   "sale_price": 470000,
+   "sale_date": "2022-05-31",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 483700,
+   "assessed_land": 143400,
+   "assessed_bldg": 327700,
+   "difference": -13700,
+   "pct_of_assessed": -2.8,
+   "below_assessment": true,
+   "lat": 43.19976,
+   "lon": -71.46553,
+   "use": "SINGLE FAM",
+   "sqft": "1998",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1965",
+   "acres": 2.386547,
+   "zone": "R-3D",
+   "prior_sales": []
+  },
+  {
+   "cama": "266-0007-014-000",
+   "address": "6 BRITTANY CIRCLE",
+   "sale_price": 440000,
+   "sale_date": "2022-05-26",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 472200,
+   "assessed_land": 143500,
+   "assessed_bldg": 320800,
+   "difference": -32200,
+   "pct_of_assessed": -6.8,
+   "below_assessment": true,
+   "lat": 43.139599,
+   "lon": -71.457521,
+   "use": "SINGLE FAM",
+   "sqft": "1512",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1999",
+   "acres": 1.311622,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1999-09-07",
+     "price": 139200,
+     "qualified": "U"
+    },
+    {
+     "date": "2017-10-10",
+     "price": 266000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2018-09-10",
+     "price": 285000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0117-000-000",
+   "address": "405 ELM ST",
+   "sale_price": 357000,
+   "sale_date": "2022-05-26",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 311200,
+   "assessed_land": 117500,
+   "assessed_bldg": 193700,
+   "difference": 45800,
+   "pct_of_assessed": 14.7,
+   "below_assessment": false,
+   "lat": 43.159655,
+   "lon": -71.468439,
+   "use": "SINGLE FAM",
+   "sqft": "1163",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1948",
+   "acres": 0.17,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2017-05-26",
+     "price": 180400,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "260-0027-000-000",
+   "address": "634 CROSS COUNTRY RD",
+   "sale_price": 350000,
+   "sale_date": "2022-05-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 395100,
+   "assessed_land": 164200,
+   "assessed_bldg": 229600,
+   "difference": -45100,
+   "pct_of_assessed": -11.4,
+   "below_assessment": true,
+   "lat": 43.193278,
+   "lon": -71.443983,
+   "use": "TWO FAMILY",
+   "sqft": "1970",
+   "beds": "2",
+   "baths": "2",
+   "year_built": "1980",
+   "acres": 5.096547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2015-05-06",
+     "price": 132500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0167-000-000",
+   "address": "443 DEERPATH LANE",
+   "sale_price": 585000,
+   "sale_date": "2022-04-27",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 607000,
+   "assessed_land": 133100,
+   "assessed_bldg": 451300,
+   "difference": -22000,
+   "pct_of_assessed": -3.6,
+   "below_assessment": true,
+   "lat": 43.162764,
+   "lon": -71.464819,
+   "use": "SINGLE FAM",
+   "sqft": "3015",
+   "beds": "3",
+   "baths": "3",
+   "year_built": "1980",
+   "acres": 0.48,
+   "zone": "R-1C",
+   "prior_sales": [
+    {
+     "date": "1994-12-15",
+     "price": 55000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "563-0086-000-000",
+   "address": "449 PEMBROKE ST",
+   "sale_price": 340000,
+   "sale_date": "2022-04-26",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 393800,
+   "assessed_land": 102000,
+   "assessed_bldg": 287200,
+   "difference": -53800,
+   "pct_of_assessed": -13.7,
+   "below_assessment": true,
+   "lat": 43.164319,
+   "lon": -71.473734,
+   "use": "SINGLE FAM",
+   "sqft": "1428",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1950",
+   "acres": 0.859137,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "266-0179-000-000",
+   "address": "155A&B BUCK ST",
+   "sale_price": 400000,
+   "sale_date": "2022-04-25",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 337500,
+   "assessed_land": 96500,
+   "assessed_bldg": 240400,
+   "difference": 62500,
+   "pct_of_assessed": 18.5,
+   "below_assessment": false,
+   "lat": 43.131358,
+   "lon": -71.444933,
+   "use": "TWO FAMILY",
+   "sqft": "2197",
+   "beds": "6",
+   "baths": "2",
+   "year_built": "1920",
+   "acres": 0.359568,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "1997-11-21",
+     "price": 80000,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-10-14",
+     "price": 140000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-005-000",
+   "address": "47 DONNA DR",
+   "sale_price": 335000,
+   "sale_date": "2022-04-21",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 423500,
+   "assessed_land": 135900,
+   "assessed_bldg": 254900,
+   "difference": -88500,
+   "pct_of_assessed": -20.9,
+   "below_assessment": true,
+   "lat": 43.155621,
+   "lon": -71.47946,
+   "use": "SINGLE FAM",
+   "sqft": "1632",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1984",
+   "acres": 0.729137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1998-06-29",
+     "price": 109900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "561-0004-000-000",
+   "address": "638 FOURTH RANGE RD",
+   "sale_price": 840000,
+   "sale_date": "2022-04-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 753652,
+   "assessed_land": 129052,
+   "assessed_bldg": 621100,
+   "difference": 86348,
+   "pct_of_assessed": 11.5,
+   "below_assessment": false,
+   "lat": 43.187843,
+   "lon": -71.474169,
+   "use": "SINGLE FAM",
+   "sqft": "2886",
+   "beds": "4",
+   "baths": "4",
+   "year_built": "2022",
+   "acres": 14.89,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2013-04-30",
+     "price": 15000,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-02-08",
+     "price": 100000,
+     "qualified": "U"
+    },
+    {
+     "date": "2022-04-18",
+     "price": 840000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-032-000",
+   "address": "28 DONNA DR",
+   "sale_price": 389000,
+   "sale_date": "2022-04-15",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 379900,
+   "assessed_land": 134600,
+   "assessed_bldg": 240000,
+   "difference": 9100,
+   "pct_of_assessed": 2.4,
+   "below_assessment": false,
+   "lat": 43.157831,
+   "lon": -71.476099,
+   "use": "SINGLE FAM",
+   "sqft": "1508",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1984",
+   "acres": 0.629137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1995-05-01",
+     "price": 84000,
+     "qualified": "U"
+    },
+    {
+     "date": "2003-08-20",
+     "price": 209000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "258-0010-000-000",
+   "address": "738 ROBINSON RD",
+   "sale_price": 395000,
+   "sale_date": "2022-04-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 590600,
+   "assessed_land": 156300,
+   "assessed_bldg": 365600,
+   "difference": -195600,
+   "pct_of_assessed": -33.1,
+   "below_assessment": true,
+   "lat": 43.226902,
+   "lon": -71.458732,
+   "use": "SINGLE FAM",
+   "sqft": "2806",
+   "beds": "4",
+   "baths": "3",
+   "year_built": "1780",
+   "acres": 3.566547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1997-04-30",
+     "price": 160000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0138-000-000",
+   "address": "236 BUCK ST",
+   "sale_price": 155000,
+   "sale_date": "2022-04-01",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 288600,
+   "assessed_land": 98300,
+   "assessed_bldg": 185800,
+   "difference": -133600,
+   "pct_of_assessed": -46.3,
+   "below_assessment": true,
+   "lat": 43.139708,
+   "lon": -71.436842,
+   "use": "SINGLE FAM",
+   "sqft": "840",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1980",
+   "acres": 0.47,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "1989-10-06",
+     "price": 92500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "266-0139-001-000",
+   "address": "234 BUCK ST",
+   "sale_price": 357000,
+   "sale_date": "2022-03-25",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 356100,
+   "assessed_land": 123800,
+   "assessed_bldg": 219900,
+   "difference": 900,
+   "pct_of_assessed": 0.3,
+   "below_assessment": false,
+   "lat": 43.139273,
+   "lon": -71.437473,
+   "use": "SINGLE FAM",
+   "sqft": "1000",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1995",
+   "acres": 1.99741,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "1995-08-14",
+     "price": 89900,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-07-20",
+     "price": 224730,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-08-11",
+     "price": 214700,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "258-0014-001-000",
+   "address": "849A&B BOROUGH RD",
+   "sale_price": 600000,
+   "sale_date": "2022-03-02",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 723700,
+   "assessed_land": 165200,
+   "assessed_bldg": 528400,
+   "difference": -123700,
+   "pct_of_assessed": -17.1,
+   "below_assessment": true,
+   "lat": 43.21941,
+   "lon": -71.454692,
+   "use": "TWO FAMILY",
+   "sqft": "4352",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "2010",
+   "acres": 4.996547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2006-03-23",
+     "price": 108000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2009-11-12",
+     "price": 90000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "258-0019-000-000",
+   "address": "653 NO PEMBROKE RD",
+   "sale_price": 549900,
+   "sale_date": "2022-02-22",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 636100,
+   "assessed_land": 132300,
+   "assessed_bldg": 501500,
+   "difference": -86200,
+   "pct_of_assessed": -13.6,
+   "below_assessment": true,
+   "lat": 43.213888,
+   "lon": -71.45037,
+   "use": "SINGLE FAM",
+   "sqft": "2056",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2022",
+   "acres": 3.421547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2005-04-06",
+     "price": 290000,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-01-21",
+     "price": 70000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2022-02-22",
+     "price": 549900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0030-000-000",
+   "address": "35 SHERWOOD MEADOWS",
+   "sale_price": 126000,
+   "sale_date": "2022-02-15",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 357700,
+   "assessed_land": 117800,
+   "assessed_bldg": 239400,
+   "difference": -231700,
+   "pct_of_assessed": -64.8,
+   "below_assessment": true,
+   "lat": 43.151844,
+   "lon": -71.464568,
+   "use": "SINGLE FAM",
+   "sqft": "1170",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1957",
+   "acres": 0.479137,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "266-0147-000-000",
+   "address": "237 BUCK ST",
+   "sale_price": 525000,
+   "sale_date": "2022-02-01",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 314100,
+   "assessed_land": 98800,
+   "assessed_bldg": 213300,
+   "difference": 210900,
+   "pct_of_assessed": 67.1,
+   "below_assessment": false,
+   "lat": 43.13962,
+   "lon": -71.436112,
+   "use": "SINGLE FAM",
+   "sqft": "1440",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1956",
+   "acres": 0.489991,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "2014-12-22",
+     "price": 105000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "565-0087-000-000",
+   "address": "442 PEMBROKE ST",
+   "sale_price": 230000,
+   "sale_date": "2022-02-01",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 315000,
+   "assessed_land": 94200,
+   "assessed_bldg": 212000,
+   "difference": -85000,
+   "pct_of_assessed": -27.0,
+   "below_assessment": true,
+   "lat": 43.163078,
+   "lon": -71.473894,
+   "use": "SINGLE FAM",
+   "sqft": "925",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1959",
+   "acres": 0.569137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1997-04-01",
+     "price": 88000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "634-0009-000-000",
+   "address": "484 WOODLAWN RIDGE RD",
+   "sale_price": 382000,
+   "sale_date": "2022-02-01",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 445100,
+   "assessed_land": 149100,
+   "assessed_bldg": 285500,
+   "difference": -63100,
+   "pct_of_assessed": -14.2,
+   "below_assessment": true,
+   "lat": 43.164658,
+   "lon": -71.485603,
+   "use": "SINGLE FAM",
+   "sqft": "1660",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1969",
+   "acres": 0.922865,
+   "zone": "LO-D",
+   "prior_sales": [
+    {
+     "date": "1979-03-15",
+     "price": 69900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "561-0079-002-000",
+   "address": "652 BOROUGH RD",
+   "sale_price": 600000,
+   "sale_date": "2022-01-31",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 473500,
+   "assessed_land": 140300,
+   "assessed_bldg": 317500,
+   "difference": 126500,
+   "pct_of_assessed": 26.7,
+   "below_assessment": false,
+   "lat": 43.203337,
+   "lon": -71.463055,
+   "use": "SINGLE FAM",
+   "sqft": "1420",
+   "beds": "1",
+   "baths": "2",
+   "year_built": "1987",
+   "acres": 2.106547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2000-08-21",
+     "price": 265000,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-11-04",
+     "price": 410866,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "563-0115-013-000",
+   "address": "608A&B FOURTH RANGE RD",
+   "sale_price": 437500,
+   "sale_date": "2022-01-28",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 492300,
+   "assessed_land": 140900,
+   "assessed_bldg": 343000,
+   "difference": -54800,
+   "pct_of_assessed": -11.1,
+   "below_assessment": true,
+   "lat": 43.185269,
+   "lon": -71.469382,
+   "use": "TWO FAMILY",
+   "sqft": "2386",
+   "beds": "6",
+   "baths": "2",
+   "year_built": "1986",
+   "acres": 2.166547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1999-10-29",
+     "price": 89000,
+     "qualified": "U"
+    },
+    {
+     "date": "2004-02-27",
+     "price": 269900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0081-081-000",
+   "address": "19 MELISSA DR",
+   "sale_price": 399500,
+   "sale_date": "2022-01-25",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 418100,
+   "assessed_land": 132700,
+   "assessed_bldg": 240600,
+   "difference": -18600,
+   "pct_of_assessed": -4.4,
+   "below_assessment": true,
+   "lat": 43.158131,
+   "lon": -71.477512,
+   "use": "SINGLE FAM",
+   "sqft": "1632",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1984",
+   "acres": 0.489137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1987-04-30",
+     "price": 115900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "260-0053-000-000",
+   "address": "659 BOROUGH RD",
+   "sale_price": 230000,
+   "sale_date": "2022-01-18",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 409932,
+   "assessed_land": 116032,
+   "assessed_bldg": 286900,
+   "difference": -179932,
+   "pct_of_assessed": -43.9,
+   "below_assessment": true,
+   "lat": 43.203648,
+   "lon": -71.459668,
+   "use": "SINGLE FAM",
+   "sqft": "1372",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2022",
+   "acres": 10.7,
+   "zone": "R-3D",
+   "prior_sales": []
+  },
+  {
+   "cama": "264-0003-000-000",
+   "address": "272 PEMBROKE ST",
+   "sale_price": 725000,
+   "sale_date": "2022-01-03",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 529900,
+   "assessed_land": 100200,
+   "assessed_bldg": 398300,
+   "difference": 195100,
+   "pct_of_assessed": 36.8,
+   "below_assessment": false,
+   "lat": 43.145886,
+   "lon": -71.457407,
+   "use": "APT 4-8 UN",
+   "sqft": "4224",
+   "beds": "8",
+   "baths": "5",
+   "year_built": "1852",
+   "acres": 0.599137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1999-05-24",
+     "price": 112000,
+     "qualified": "U"
+    },
+    {
+     "date": "2006-09-05",
+     "price": 325000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-11-27",
+     "price": 305000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "565-0102-000-000",
+   "address": "417 PEMBROKE ST",
+   "sale_price": 439000,
+   "sale_date": "2022-01-03",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 494000,
+   "assessed_land": 100100,
+   "assessed_bldg": 372800,
+   "difference": -55000,
+   "pct_of_assessed": -11.1,
+   "below_assessment": true,
+   "lat": 43.16045,
+   "lon": -71.469976,
+   "use": "SINGLE FAM",
+   "sqft": "2176",
+   "beds": "4",
+   "baths": "3",
+   "year_built": "2011",
+   "acres": 1.159137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2002-07-16",
+     "price": 167000,
+     "qualified": "Q"
+    }
+   ]
+  }
+ ]
+}
