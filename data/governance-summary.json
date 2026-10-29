@@ -1,21 +1,25 @@
 {
- "generated_at": "2026-10-29T18:58:23.496267Z",
+ "generated_at": "2026-10-29T19:21:17.515576Z",
  "minutes_count": 266,
  "source_span": {
   "start": "2025-01-16",
-  "end": "2026-09-14"
+  "end": "2026-08-20"
  },
  "totals": {
-  "more": 45,
+  "more": 46,
   "less": 12,
-  "admin": 25,
-  "motions": 82,
-  "all_motions": 157,
-  "passed": 68,
+  "admin": 9,
+  "motions": 67,
+  "all_motions": 121,
+  "passed": 60,
   "failed": 0,
   "vote_blocks": 21,
   "named_votes": 117,
-  "members": 72
+  "contested": 4,
+  "members": 73,
+  "committees": 13,
+  "issues": 12,
+  "money_motions": 33
  },
  "topics": [
   {
@@ -60,19 +64,21 @@
   },
   {
    "topic": "Roads and maintenance",
-   "total": 1,
+   "total": 2,
    "passed": 1,
    "failed": 0,
-   "unknown": 0,
+   "unknown": 1,
    "decided": 1,
    "more": 1,
    "less": 0,
-   "admin": 0,
+   "admin": 1,
    "pass_rate": 100,
    "by_year": {
+    "2025": 1,
     "2026": 1
    },
    "committees": {
+    "Roads Committee": 1,
     "Board of Selectmen": 1
    }
   },
@@ -169,44 +175,245 @@
    }
   },
   {
-   "topic": "Town facilities",
-   "total": 2,
-   "passed": 0,
+   "topic": "Other business",
+   "total": 16,
+   "passed": 12,
    "failed": 0,
-   "unknown": 2,
-   "decided": 0,
-   "more": 0,
-   "less": 0,
-   "admin": 2,
-   "pass_rate": null,
+   "unknown": 4,
+   "decided": 12,
+   "more": 9,
+   "less": 4,
+   "admin": 3,
+   "pass_rate": 100,
    "by_year": {
-    "2025": 2
+    "2025": 7,
+    "2026": 9
    },
    "committees": {
+    "Sewer Commission": 8,
+    "Board of Selectmen": 6,
     "Roads Committee": 2
+   }
+  }
+ ],
+ "issues": [
+  {
+   "issue": "One-off business",
+   "count": 20,
+   "more": 12,
+   "less": 5,
+   "admin": 3,
+   "first": "2025-01-27",
+   "last": "2026-08-19",
+   "committees": {
+    "Sewer Commission": 10,
+    "Board of Selectmen": 9,
+    "Roads Committee": 1
+   },
+   "money_named": 139050,
+   "largest_amount": 67900,
+   "movers": {
+    "Sandy Goulet": 6,
+    "Jules Pellerin": 5,
+    "Artie": 4,
+    "Paulette Malo": 2
    }
   },
   {
-   "topic": "Other business",
-   "total": 30,
-   "passed": 20,
-   "failed": 0,
-   "unknown": 10,
-   "decided": 20,
-   "more": 8,
-   "less": 4,
-   "admin": 18,
-   "pass_rate": 100,
-   "by_year": {
-    "2025": 14,
-    "2026": 16
-   },
+   "issue": "Sewer billing and abatements",
+   "count": 19,
+   "more": 12,
+   "less": 7,
+   "admin": 0,
+   "first": "2025-02-18",
+   "last": "2026-06-16",
    "committees": {
-    "Roads Committee": 15,
-    "Sewer Commission": 8,
-    "Board of Selectmen": 6,
-    "Water Works": 1
+    "Sewer Commission": 19
+   },
+   "money_named": 2009,
+   "largest_amount": 588,
+   "movers": {
+    "Jules Pellerin": 13,
+    "Artie": 6
    }
+  },
+  {
+   "issue": "Sewer infrastructure and equipment",
+   "count": 8,
+   "more": 7,
+   "less": 0,
+   "admin": 1,
+   "first": "2025-02-18",
+   "last": "2026-06-16",
+   "committees": {
+    "Sewer Commission": 8
+   },
+   "money_named": 455075,
+   "largest_amount": 200000,
+   "movers": {
+    "Jules Pellerin": 6,
+    "Artie": 2
+   }
+  },
+  {
+   "issue": "Capital reserve withdrawals",
+   "count": 4,
+   "more": 4,
+   "less": 0,
+   "admin": 0,
+   "first": "2026-04-01",
+   "last": "2026-08-19",
+   "committees": {
+    "Board of Selectmen": 4
+   },
+   "money_named": 372929,
+   "largest_amount": 312250,
+   "movers": {
+    "Bryan Christiansen": 2,
+    "Sandy Goulet": 1
+   }
+  },
+  {
+   "issue": "Land use, property and mapping",
+   "count": 4,
+   "more": 2,
+   "less": 0,
+   "admin": 2,
+   "first": "2025-08-11",
+   "last": "2026-06-16",
+   "committees": {
+    "Board of Selectmen": 2,
+    "Roads Committee": 1,
+    "Sewer Commission": 1
+   },
+   "money_named": 0,
+   "largest_amount": null,
+   "movers": {
+    "Paulette Malo": 1,
+    "Sandy Goulet": 1,
+    "Jules Pellerin": 1
+   }
+  },
+  {
+   "issue": "Bid and procurement waivers",
+   "count": 3,
+   "more": 2,
+   "less": 0,
+   "admin": 1,
+   "first": "2026-03-09",
+   "last": "2026-07-20",
+   "committees": {
+    "Roads Committee": 1,
+    "Board of Selectmen": 1,
+    "Sewer Commission": 1
+   },
+   "money_named": 25,
+   "largest_amount": 25,
+   "movers": {
+    "Sandy Goulet": 2,
+    "Jules Pellerin": 1
+   }
+  },
+  {
+   "issue": "Contracts and professional services",
+   "count": 2,
+   "more": 2,
+   "less": 0,
+   "admin": 0,
+   "first": "2026-03-18",
+   "last": "2026-06-03",
+   "committees": {
+    "Board of Selectmen": 2
+   },
+   "money_named": 0,
+   "largest_amount": null,
+   "movers": {
+    "Sandy Goulet": 2
+   }
+  },
+  {
+   "issue": "Recreation, fields and programs",
+   "count": 2,
+   "more": 2,
+   "less": 0,
+   "admin": 0,
+   "first": "2026-05-06",
+   "last": "2026-05-06",
+   "committees": {
+    "Board of Selectmen": 2
+   },
+   "money_named": 450,
+   "largest_amount": 450,
+   "movers": {
+    "Sandy Goulet": 2
+   }
+  },
+  {
+   "issue": "Town Code amendments",
+   "count": 2,
+   "more": 1,
+   "less": 0,
+   "admin": 1,
+   "first": "2026-05-20",
+   "last": "2026-08-19",
+   "committees": {
+    "Board of Selectmen": 2
+   },
+   "money_named": 0,
+   "largest_amount": null,
+   "movers": {
+    "Sandy Goulet": 1,
+    "Bryan Christiansen": 1
+   }
+  },
+  {
+   "issue": "Energy and utility contracting",
+   "count": 1,
+   "more": 0,
+   "less": 0,
+   "admin": 1,
+   "first": "2026-07-15",
+   "last": "2026-07-15",
+   "committees": {
+    "Board of Selectmen": 1
+   },
+   "money_named": 0,
+   "largest_amount": null,
+   "movers": {
+    "Bryan Christiansen": 1
+   }
+  },
+  {
+   "issue": "Personnel, pay and benefits",
+   "count": 1,
+   "more": 1,
+   "less": 0,
+   "admin": 0,
+   "first": "2025-03-17",
+   "last": "2025-03-17",
+   "committees": {
+    "Sewer Commission": 1
+   },
+   "money_named": 0,
+   "largest_amount": null,
+   "movers": {
+    "Artie": 1
+   }
+  },
+  {
+   "issue": "Public safety equipment",
+   "count": 1,
+   "more": 1,
+   "less": 0,
+   "admin": 0,
+   "first": "2026-05-06",
+   "last": "2026-05-06",
+   "committees": {
+    "Board of Selectmen": 1
+   },
+   "money_named": 0,
+   "largest_amount": null,
+   "movers": {}
   }
  ],
  "committees": [
@@ -238,26 +445,13 @@
   },
   {
    "committee": "Roads Committee",
-   "motions": 17,
-   "passed": 8,
-   "failed": 0,
-   "members": [
-    "Brent Edmonds",
-    "Paulette Malo",
-    "Sandy Goulet",
-    "Tom",
-    "Vince"
-   ],
-   "url": "https://www.pembroke-nh.com/agendacenter"
-  },
-  {
-   "committee": "Water Works",
-   "motions": 1,
+   "motions": 3,
    "passed": 0,
    "failed": 0,
    "members": [
-    "Edward Lavallee",
-    "Lawrence Plourde"
+    "Paulette Malo",
+    "Sandy Goulet",
+    "Tom"
    ],
    "url": "https://www.pembroke-nh.com/agendacenter"
   },
@@ -295,6 +489,584 @@
    "url": null
   }
  ],
+ "attendance": [
+  {
+   "committee": "sewer commission",
+   "meetings": 57,
+   "people": [
+    {
+     "name": "Jules Pellerin",
+     "present": 39,
+     "excused": 18,
+     "rate": 68
+    },
+    {
+     "name": "Paulette Malo",
+     "present": 19,
+     "excused": 0,
+     "rate": 100
+    }
+   ]
+  },
+  {
+   "committee": "board of selectmen",
+   "meetings": 43,
+   "people": [
+    {
+     "name": "Bryan Christiansen",
+     "present": 38,
+     "excused": 5,
+     "rate": 88
+    },
+    {
+     "name": "Matt Miller",
+     "present": 35,
+     "excused": 2,
+     "rate": 95
+    },
+    {
+     "name": "Karen Yeaton",
+     "present": 33,
+     "excused": 2,
+     "rate": 94
+    },
+    {
+     "name": "Sandy Goulet",
+     "present": 17,
+     "excused": 9,
+     "rate": 65
+    },
+    {
+     "name": "Rick Frederickson",
+     "present": 11,
+     "excused": 6,
+     "rate": 65
+    },
+    {
+     "name": "Peter Gagyi",
+     "present": 4,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Burton Curley",
+     "present": 0,
+     "excused": 1,
+     "rate": 0
+    },
+    {
+     "name": "Center Board",
+     "present": 0,
+     "excused": 2,
+     "rate": 0
+    },
+    {
+     "name": "Charles Therrien",
+     "present": 0,
+     "excused": 3,
+     "rate": 0
+    },
+    {
+     "name": "Clint Hanson",
+     "present": 0,
+     "excused": 2,
+     "rate": 0
+    },
+    {
+     "name": "Kate Castaldo-Rice",
+     "present": 0,
+     "excused": 1,
+     "rate": 0
+    },
+    {
+     "name": "Program Committee",
+     "present": 0,
+     "excused": 1,
+     "rate": 0
+    }
+   ]
+  },
+  {
+   "committee": "water works",
+   "meetings": 17,
+   "people": [
+    {
+     "name": "Bruce Kudrick",
+     "present": 17,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Kevin Brasley",
+     "present": 17,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Edward Lavallee",
+     "present": 15,
+     "excused": 1,
+     "rate": 94
+    },
+    {
+     "name": "Lawrence Plourde",
+     "present": 15,
+     "excused": 2,
+     "rate": 88
+    },
+    {
+     "name": "Chet Martel",
+     "present": 6,
+     "excused": 9,
+     "rate": 40
+    },
+    {
+     "name": "Thomas Petit",
+     "present": 3,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Ed Lavellee",
+     "present": 0,
+     "excused": 1,
+     "rate": 0
+    },
+    {
+     "name": "Lynne Bledsoe Saint Coeur",
+     "present": 0,
+     "excused": 4,
+     "rate": 0
+    }
+   ]
+  },
+  {
+   "committee": "roads committee",
+   "meetings": 16,
+   "people": [
+    {
+     "name": "Tom Gallo",
+     "present": 13,
+     "excused": 3,
+     "rate": 81
+    },
+    {
+     "name": "Adam Mendozza",
+     "present": 12,
+     "excused": 4,
+     "rate": 75
+    },
+    {
+     "name": "Brent Edmonds",
+     "present": 11,
+     "excused": 2,
+     "rate": 85
+    },
+    {
+     "name": "Paulette Malo",
+     "present": 11,
+     "excused": 2,
+     "rate": 85
+    },
+    {
+     "name": "Sandy Goulet",
+     "present": 11,
+     "excused": 3,
+     "rate": 79
+    },
+    {
+     "name": "Buddy",
+     "present": 8,
+     "excused": 4,
+     "rate": 67
+    },
+    {
+     "name": "Burton Curley",
+     "present": 8,
+     "excused": 4,
+     "rate": 67
+    },
+    {
+     "name": "Brian Seaworth",
+     "present": 2,
+     "excused": 1,
+     "rate": 67
+    }
+   ]
+  },
+  {
+   "committee": "budget committee",
+   "meetings": 14,
+   "people": [
+    {
+     "name": "Clint Hanson",
+     "present": 14,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Mark LePage",
+     "present": 14,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Gerry Fleury",
+     "present": 13,
+     "excused": 1,
+     "rate": 93
+    },
+    {
+     "name": "Matt Miller",
+     "present": 12,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Louis Caron",
+     "present": 10,
+     "excused": 1,
+     "rate": 91
+    },
+    {
+     "name": "Brian Seaworth",
+     "present": 9,
+     "excused": 1,
+     "rate": 90
+    },
+    {
+     "name": "Susanne Whitbeck",
+     "present": 4,
+     "excused": 1,
+     "rate": 80
+    },
+    {
+     "name": "Gene Gauss",
+     "present": 3,
+     "excused": 5,
+     "rate": 38
+    },
+    {
+     "name": "Kristopher DeLorme",
+     "present": 2,
+     "excused": 1,
+     "rate": 67
+    },
+    {
+     "name": "Jason Mayeu",
+     "present": 0,
+     "excused": 2,
+     "rate": 0
+    },
+    {
+     "name": "Mariana Beer",
+     "present": 0,
+     "excused": 1,
+     "rate": 0
+    }
+   ]
+  },
+  {
+   "committee": "cemetery commission",
+   "meetings": 12,
+   "people": [
+    {
+     "name": "Ellen Paulsen",
+     "present": 12,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "James Garvin",
+     "present": 12,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Adam Mendozza",
+     "present": 11,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Daniel Chase",
+     "present": 6,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Zachary Sawyer",
+     "present": 6,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Fleda Young",
+     "present": 2,
+     "excused": 0,
+     "rate": 100
+    }
+   ]
+  },
+  {
+   "committee": "economic development committee",
+   "meetings": 12,
+   "people": [
+    {
+     "name": "Clint Hanson",
+     "present": 9,
+     "excused": 3,
+     "rate": 75
+    },
+    {
+     "name": "Center Board",
+     "present": 8,
+     "excused": 3,
+     "rate": 73
+    },
+    {
+     "name": "Bryan Christiansen",
+     "present": 7,
+     "excused": 3,
+     "rate": 70
+    },
+    {
+     "name": "Kate Castaldo-Rice",
+     "present": 7,
+     "excused": 3,
+     "rate": 70
+    },
+    {
+     "name": "Dana Carlucci",
+     "present": 2,
+     "excused": 8,
+     "rate": 20
+    },
+    {
+     "name": "Charles Therrien",
+     "present": 0,
+     "excused": 5,
+     "rate": 0
+    }
+   ]
+  },
+  {
+   "committee": "conservation commission",
+   "meetings": 8,
+   "people": [
+    {
+     "name": "Ammy Heiser",
+     "present": 1,
+     "excused": 4,
+     "rate": 20
+    },
+    {
+     "name": "Erin Insley",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Joshua Bursey",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Wendy Weisiger",
+     "present": 1,
+     "excused": 7,
+     "rate": 12
+    },
+    {
+     "name": "Ayn Whytemare",
+     "present": 0,
+     "excused": 5,
+     "rate": 0
+    },
+    {
+     "name": "Karen Yeaton",
+     "present": 0,
+     "excused": 2,
+     "rate": 0
+    }
+   ]
+  },
+  {
+   "committee": "energy committee",
+   "meetings": 5,
+   "people": [
+    {
+     "name": "Jackie Wengenroth",
+     "present": 0,
+     "excused": 2,
+     "rate": 0
+    },
+    {
+     "name": "Jennifer Smith",
+     "present": 0,
+     "excused": 1,
+     "rate": 0
+    },
+    {
+     "name": "Pentti Aalto",
+     "present": 0,
+     "excused": 5,
+     "rate": 0
+    }
+   ]
+  },
+  {
+   "committee": "range roads subcommittee",
+   "meetings": 5,
+   "people": [
+    {
+     "name": "Burton Curley",
+     "present": 0,
+     "excused": 5,
+     "rate": 0
+    },
+    {
+     "name": "Center Board",
+     "present": 0,
+     "excused": 2,
+     "rate": 0
+    },
+    {
+     "name": "Program Committee",
+     "present": 0,
+     "excused": 5,
+     "rate": 0
+    },
+    {
+     "name": "Stephanie Cravotta",
+     "present": 0,
+     "excused": 2,
+     "rate": 0
+    }
+   ]
+  },
+  {
+   "committee": "meet me in suncook",
+   "meetings": 3,
+   "people": [
+    {
+     "name": "Melaine Boisvert",
+     "present": 3,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Dana Carlucci",
+     "present": 2,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Joan Bussiere",
+     "present": 2,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Doc",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Erika Flewelling",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Jason Anderson",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Joyce Belanger",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Lorette Girard",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Luc",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Pat Fowler",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    }
+   ]
+  },
+  {
+   "committee": "trustees of trust funds",
+   "meetings": 1,
+   "people": [
+    {
+     "name": "Courtney Eschbach",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Gerry Fleury",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Zephan Wood",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    }
+   ]
+  },
+  {
+   "committee": "zoning board of adjustment",
+   "meetings": 1,
+   "people": [
+    {
+     "name": "Bridget Elsemore",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Christopher Coffill",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "Concord",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    },
+    {
+     "name": "NH",
+     "present": 1,
+     "excused": 0,
+     "rate": 100
+    }
+   ]
+  }
+ ],
  "members": [
   {
    "name": "Jules Pellerin",
@@ -304,10 +1076,13 @@
    "yes": 0,
    "no": 0,
    "abstain": 0,
-   "present": 0,
-   "excused": 0,
+   "present": 39,
+   "excused": 18,
+   "meetings_recorded": 57,
+   "attendance_rate": 68,
    "committees": [
-    "Sewer Commission"
+    "Sewer Commission",
+    "sewer commission"
    ],
    "topics": [
     "Budget and money",
@@ -315,29 +1090,43 @@
     "Zoning and land use",
     "Energy and sustainability"
    ],
+   "issues": [
+    "Sewer billing and abatements",
+    "Sewer infrastructure and equipment",
+    "One-off business"
+   ],
    "top_topic": "Budget and money"
   },
   {
    "name": "Sandy Goulet",
    "title": "Vice Chair",
-   "moved": 23,
-   "seconded": 3,
+   "moved": 15,
+   "seconded": 0,
    "yes": 0,
    "no": 0,
    "abstain": 0,
-   "present": 17,
-   "excused": 9,
+   "present": 28,
+   "excused": 12,
+   "meetings_recorded": 40,
+   "attendance_rate": 70,
    "committees": [
     "Board of Selectmen",
     "Economic Development Committee",
     "Recreation Commission",
-    "Roads Committee"
+    "Roads Committee",
+    "board of selectmen",
+    "roads committee"
    ],
    "topics": [
     "Other business",
     "Budget and money",
     "Conservation and open space",
-    "Town facilities"
+    "Economic development"
+   ],
+   "issues": [
+    "One-off business",
+    "Bid and procurement waivers",
+    "Contracts and professional services"
    ],
    "top_topic": "Other business"
   },
@@ -351,6 +1140,8 @@
    "abstain": 0,
    "present": 0,
    "excused": 0,
+   "meetings_recorded": 0,
+   "attendance_rate": null,
    "committees": [
     "Sewer Commission"
    ],
@@ -358,6 +1149,11 @@
     "Budget and money",
     "Other business",
     "Zoning and land use"
+   ],
+   "issues": [
+    "Sewer billing and abatements",
+    "One-off business",
+    "Sewer infrastructure and equipment"
    ],
    "top_topic": "Budget and money"
   },
@@ -369,13 +1165,17 @@
    "yes": 5,
    "no": 0,
    "abstain": 0,
-   "present": 38,
+   "present": 45,
    "excused": 8,
+   "meetings_recorded": 53,
+   "attendance_rate": 85,
    "committees": [
     "Board of Selectmen",
     "Economic Development Committee",
     "Planning Board",
-    "Recreation Commission"
+    "Recreation Commission",
+    "board of selectmen",
+    "economic development committee"
    ],
    "topics": [
     "Budget and money",
@@ -383,104 +1183,43 @@
     "Public safety",
     "Economic development"
    ],
+   "issues": [
+    "One-off business",
+    "Capital reserve withdrawals",
+    "Contracts and professional services"
+   ],
    "top_topic": "Budget and money"
-  },
-  {
-   "name": "Vince",
-   "title": null,
-   "moved": 4,
-   "seconded": 2,
-   "yes": 0,
-   "no": 0,
-   "abstain": 0,
-   "present": 0,
-   "excused": 0,
-   "committees": [
-    "Roads Committee"
-   ],
-   "topics": [
-    "Other business",
-    "Town facilities"
-   ],
-   "top_topic": "Other business"
   },
   {
    "name": "Paulette Malo",
    "title": "Vice Chair",
    "moved": 3,
-   "seconded": 20,
+   "seconded": 15,
    "yes": 0,
    "no": 0,
    "abstain": 0,
-   "present": 0,
-   "excused": 0,
+   "present": 30,
+   "excused": 2,
+   "meetings_recorded": 32,
+   "attendance_rate": 94,
    "committees": [
     "Roads Committee",
-    "Sewer Commission"
+    "Sewer Commission",
+    "roads committee",
+    "sewer commission"
    ],
    "topics": [
-    "Other business",
     "Budget and money",
-    "Energy and sustainability"
-   ],
-   "top_topic": "Other business"
-  },
-  {
-   "name": "Tom",
-   "title": null,
-   "moved": 1,
-   "seconded": 6,
-   "yes": 0,
-   "no": 0,
-   "abstain": 0,
-   "present": 0,
-   "excused": 0,
-   "committees": [
-    "Roads Committee"
-   ],
-   "topics": [
     "Other business",
-    "Town facilities"
+    "Energy and sustainability",
+    "Roads and maintenance"
    ],
-   "top_topic": "Other business"
-  },
-  {
-   "name": "Brent Edmonds",
-   "title": "Member",
-   "moved": 1,
-   "seconded": 0,
-   "yes": 15,
-   "no": 0,
-   "abstain": 1,
-   "present": 0,
-   "excused": 0,
-   "committees": [
-    "Conservation Commission",
-    "Planning Board",
-    "Roads Committee"
+   "issues": [
+    "One-off business",
+    "Sewer billing and abatements",
+    "Sewer infrastructure and equipment"
    ],
-   "topics": [
-    "Other business"
-   ],
-   "top_topic": "Other business"
-  },
-  {
-   "name": "Edward Lavallee",
-   "title": "Member",
-   "moved": 1,
-   "seconded": 0,
-   "yes": 0,
-   "no": 0,
-   "abstain": 0,
-   "present": 15,
-   "excused": 1,
-   "committees": [
-    "Water Works"
-   ],
-   "topics": [
-    "Other business"
-   ],
-   "top_topic": "Other business"
+   "top_topic": "Budget and money"
   },
   {
    "name": "Matt Miller",
@@ -492,17 +1231,26 @@
    "abstain": 0,
    "present": 47,
    "excused": 2,
+   "meetings_recorded": 49,
+   "attendance_rate": 96,
    "committees": [
     "Board of Selectmen",
     "Capital Improvement Program Committee",
     "Energy Committee",
-    "Range Roads Subcommittee"
+    "Range Roads Subcommittee",
+    "board of selectmen",
+    "budget committee"
    ],
    "topics": [
     "Other business",
     "Budget and money",
     "Economic development",
     "Conservation and open space"
+   ],
+   "issues": [
+    "One-off business",
+    "Land use, property and mapping",
+    "Capital reserve withdrawals"
    ],
    "top_topic": "Other business"
   },
@@ -516,13 +1264,45 @@
    "abstain": 0,
    "present": 4,
    "excused": 0,
+   "meetings_recorded": 4,
+   "attendance_rate": 100,
    "committees": [
-    "Board of Selectmen"
+    "Board of Selectmen",
+    "board of selectmen"
    ],
    "topics": [
     "Other business",
     "Zoning and land use",
     "Public safety"
+   ],
+   "issues": [
+    "One-off business",
+    "Town Code amendments"
+   ],
+   "top_topic": "Other business"
+  },
+  {
+   "name": "Tom",
+   "title": null,
+   "moved": 0,
+   "seconded": 2,
+   "yes": 0,
+   "no": 0,
+   "abstain": 0,
+   "present": 0,
+   "excused": 0,
+   "meetings_recorded": 0,
+   "attendance_rate": null,
+   "committees": [
+    "Roads Committee"
+   ],
+   "topics": [
+    "Other business",
+    "Roads and maintenance"
+   ],
+   "issues": [
+    "One-off business",
+    "Land use, property and mapping"
    ],
    "top_topic": "Other business"
   },
@@ -536,34 +1316,23 @@
    "abstain": 0,
    "present": 33,
    "excused": 4,
+   "meetings_recorded": 37,
+   "attendance_rate": 89,
    "committees": [
     "Board of Selectmen",
     "Capital Improvement Program Committee",
     "Conservation Commission",
-    "Energy Committee"
+    "Energy Committee",
+    "board of selectmen",
+    "conservation commission"
    ],
    "topics": [
     "Energy and sustainability"
    ],
+   "issues": [
+    "Energy and utility contracting"
+   ],
    "top_topic": "Energy and sustainability"
-  },
-  {
-   "name": "Lawrence Plourde",
-   "title": "Member",
-   "moved": 0,
-   "seconded": 1,
-   "yes": 0,
-   "no": 0,
-   "abstain": 0,
-   "present": 15,
-   "excused": 2,
-   "committees": [
-    "Water Works"
-   ],
-   "topics": [
-    "Other business"
-   ],
-   "top_topic": "Other business"
   },
   {
    "name": "Adam Mendozza",
@@ -573,12 +1342,17 @@
    "yes": 0,
    "no": 0,
    "abstain": 0,
-   "present": 11,
-   "excused": 0,
+   "present": 23,
+   "excused": 4,
+   "meetings_recorded": 27,
+   "attendance_rate": 85,
    "committees": [
-    "Roads Committee"
+    "Roads Committee",
+    "cemetery commission",
+    "roads committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -591,10 +1365,14 @@
    "abstain": 0,
    "present": 1,
    "excused": 4,
+   "meetings_recorded": 5,
+   "attendance_rate": 20,
    "committees": [
-    "Conservation Commission"
+    "Conservation Commission",
+    "conservation commission"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -607,10 +1385,13 @@
    "abstain": 0,
    "present": 0,
    "excused": 0,
+   "meetings_recorded": 0,
+   "attendance_rate": null,
    "committees": [
     "Planning Board"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -623,10 +1404,14 @@
    "abstain": 0,
    "present": 0,
    "excused": 5,
+   "meetings_recorded": 5,
+   "attendance_rate": 0,
    "committees": [
-    "Conservation Commission"
+    "Conservation Commission",
+    "conservation commission"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -639,11 +1424,36 @@
    "abstain": 0,
    "present": 0,
    "excused": 0,
+   "meetings_recorded": 0,
+   "attendance_rate": null,
    "committees": [
     "Zoning Board",
     "Zoning Board of Adjustment"
    ],
    "topics": [],
+   "issues": [],
+   "top_topic": null
+  },
+  {
+   "name": "Brent Edmonds",
+   "title": "Member",
+   "moved": 0,
+   "seconded": 0,
+   "yes": 15,
+   "no": 0,
+   "abstain": 1,
+   "present": 11,
+   "excused": 2,
+   "meetings_recorded": 13,
+   "attendance_rate": 85,
+   "committees": [
+    "Conservation Commission",
+    "Planning Board",
+    "Roads Committee",
+    "roads committee"
+   ],
+   "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -654,13 +1464,18 @@
    "yes": 17,
    "no": 0,
    "abstain": 0,
-   "present": 9,
-   "excused": 1,
+   "present": 11,
+   "excused": 2,
+   "meetings_recorded": 13,
+   "attendance_rate": 85,
    "committees": [
     "Budget Committe",
-    "Planning Board"
+    "Planning Board",
+    "budget committee",
+    "roads committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -673,8 +1488,13 @@
    "abstain": 0,
    "present": 1,
    "excused": 0,
-   "committees": [],
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
+   "committees": [
+    "zoning board of adjustment"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -687,12 +1507,35 @@
    "abstain": 0,
    "present": 17,
    "excused": 0,
+   "meetings_recorded": 17,
+   "attendance_rate": 100,
    "committees": [
     "Water Works",
     "Zoning Board",
-    "Zoning Board of Adjustment"
+    "Zoning Board of Adjustment",
+    "water works"
    ],
    "topics": [],
+   "issues": [],
+   "top_topic": null
+  },
+  {
+   "name": "Buddy",
+   "title": null,
+   "moved": 0,
+   "seconded": 0,
+   "yes": 0,
+   "no": 0,
+   "abstain": 0,
+   "present": 8,
+   "excused": 4,
+   "meetings_recorded": 12,
+   "attendance_rate": 67,
+   "committees": [
+    "roads committee"
+   ],
+   "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -703,13 +1546,19 @@
    "yes": 0,
    "no": 0,
    "abstain": 0,
-   "present": 0,
-   "excused": 6,
+   "present": 8,
+   "excused": 10,
+   "meetings_recorded": 18,
+   "attendance_rate": 44,
    "committees": [
     "Range Roads Subcommittee",
-    "Roads Committee"
+    "Roads Committee",
+    "board of selectmen",
+    "range roads subcommittee",
+    "roads committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -720,10 +1569,17 @@
    "yes": 0,
    "no": 0,
    "abstain": 0,
-   "present": 0,
+   "present": 8,
    "excused": 7,
-   "committees": [],
+   "meetings_recorded": 15,
+   "attendance_rate": 53,
+   "committees": [
+    "board of selectmen",
+    "economic development committee",
+    "range roads subcommittee"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -736,10 +1592,15 @@
    "abstain": 0,
    "present": 0,
    "excused": 8,
+   "meetings_recorded": 8,
+   "attendance_rate": 0,
    "committees": [
-    "Economic Development Committee"
+    "Economic Development Committee",
+    "board of selectmen",
+    "economic development committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -752,8 +1613,13 @@
    "abstain": 0,
    "present": 6,
    "excused": 9,
-   "committees": [],
+   "meetings_recorded": 15,
+   "attendance_rate": 40,
+   "committees": [
+    "water works"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -766,8 +1632,13 @@
    "abstain": 0,
    "present": 1,
    "excused": 0,
-   "committees": [],
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
+   "committees": [
+    "zoning board of adjustment"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -778,14 +1649,20 @@
    "yes": 17,
    "no": 0,
    "abstain": 0,
-   "present": 14,
+   "present": 23,
    "excused": 5,
+   "meetings_recorded": 28,
+   "attendance_rate": 82,
    "committees": [
     "Budget Committe",
     "Economic Development Committee",
-    "Planning Board"
+    "Planning Board",
+    "board of selectmen",
+    "budget committee",
+    "economic development committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -798,8 +1675,33 @@
    "abstain": 0,
    "present": 1,
    "excused": 0,
-   "committees": [],
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
+   "committees": [
+    "zoning board of adjustment"
+   ],
    "topics": [],
+   "issues": [],
+   "top_topic": null
+  },
+  {
+   "name": "Courtney Eschbach",
+   "title": "Member",
+   "moved": 0,
+   "seconded": 0,
+   "yes": 0,
+   "no": 0,
+   "abstain": 0,
+   "present": 1,
+   "excused": 0,
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
+   "committees": [
+    "Trustees of Trust Funds",
+    "trustees of trust funds"
+   ],
+   "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -810,13 +1712,18 @@
    "yes": 3,
    "no": 0,
    "abstain": 1,
-   "present": 2,
+   "present": 4,
    "excused": 8,
+   "meetings_recorded": 12,
+   "attendance_rate": 33,
    "committees": [
     "Zoning Board",
-    "Zoning Board of Adjustment"
+    "Zoning Board of Adjustment",
+    "economic development committee",
+    "meet me in suncook"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -829,10 +1736,14 @@
    "abstain": 0,
    "present": 6,
    "excused": 0,
+   "meetings_recorded": 6,
+   "attendance_rate": 100,
    "committees": [
-    "Cemetery Commission"
+    "Cemetery Commission",
+    "cemetery commission"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -845,8 +1756,13 @@
    "abstain": 0,
    "present": 1,
    "excused": 0,
-   "committees": [],
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
+   "committees": [
+    "meet me in suncook"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -859,8 +1775,33 @@
    "abstain": 0,
    "present": 0,
    "excused": 1,
-   "committees": [],
+   "meetings_recorded": 1,
+   "attendance_rate": 0,
+   "committees": [
+    "water works"
+   ],
    "topics": [],
+   "issues": [],
+   "top_topic": null
+  },
+  {
+   "name": "Edward Lavallee",
+   "title": "Member",
+   "moved": 0,
+   "seconded": 0,
+   "yes": 0,
+   "no": 0,
+   "abstain": 0,
+   "present": 15,
+   "excused": 1,
+   "meetings_recorded": 16,
+   "attendance_rate": 94,
+   "committees": [
+    "Water Works",
+    "water works"
+   ],
+   "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -873,10 +1814,14 @@
    "abstain": 0,
    "present": 12,
    "excused": 0,
+   "meetings_recorded": 12,
+   "attendance_rate": 100,
    "committees": [
-    "Cemetery Commission"
+    "Cemetery Commission",
+    "cemetery commission"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -889,8 +1834,13 @@
    "abstain": 0,
    "present": 1,
    "excused": 0,
-   "committees": [],
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
+   "committees": [
+    "meet me in suncook"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -903,10 +1853,14 @@
    "abstain": 0,
    "present": 1,
    "excused": 0,
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
    "committees": [
-    "Conservation Commission"
+    "Conservation Commission",
+    "conservation commission"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -919,10 +1873,14 @@
    "abstain": 0,
    "present": 2,
    "excused": 0,
+   "meetings_recorded": 2,
+   "attendance_rate": 100,
    "committees": [
-    "Cemetery Commission"
+    "Cemetery Commission",
+    "cemetery commission"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -935,11 +1893,15 @@
    "abstain": 0,
    "present": 3,
    "excused": 5,
+   "meetings_recorded": 8,
+   "attendance_rate": 38,
    "committees": [
     "Budget Committe",
-    "Capital Improvement Program Committee"
+    "Capital Improvement Program Committee",
+    "budget committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -950,28 +1912,19 @@
    "yes": 0,
    "no": 0,
    "abstain": 0,
-   "present": 13,
+   "present": 14,
    "excused": 1,
+   "meetings_recorded": 15,
+   "attendance_rate": 93,
    "committees": [
     "Budget Committe",
     "Capital Improvement Program Committee",
-    "Trustees of Trust Funds"
+    "Trustees of Trust Funds",
+    "budget committee",
+    "trustees of trust funds"
    ],
    "topics": [],
-   "top_topic": null
-  },
-  {
-   "name": "Inc",
-   "title": null,
-   "moved": 0,
-   "seconded": 0,
-   "yes": 0,
-   "no": 0,
-   "abstain": 0,
-   "present": 1,
-   "excused": 0,
-   "committees": [],
-   "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -984,10 +1937,14 @@
    "abstain": 0,
    "present": 0,
    "excused": 2,
+   "meetings_recorded": 2,
+   "attendance_rate": 0,
    "committees": [
-    "Energy Committee"
+    "Energy Committee",
+    "energy committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1000,10 +1957,14 @@
    "abstain": 0,
    "present": 12,
    "excused": 0,
+   "meetings_recorded": 12,
+   "attendance_rate": 100,
    "committees": [
-    "Cemetery Commission"
+    "Cemetery Commission",
+    "cemetery commission"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1016,8 +1977,13 @@
    "abstain": 0,
    "present": 1,
    "excused": 0,
-   "committees": [],
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
+   "committees": [
+    "meet me in suncook"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1030,10 +1996,14 @@
    "abstain": 0,
    "present": 0,
    "excused": 2,
+   "meetings_recorded": 2,
+   "attendance_rate": 0,
    "committees": [
-    "Budget Committe"
+    "Budget Committe",
+    "budget committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1046,8 +2016,13 @@
    "abstain": 0,
    "present": 0,
    "excused": 1,
-   "committees": [],
+   "meetings_recorded": 1,
+   "attendance_rate": 0,
+   "committees": [
+    "energy committee"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1060,8 +2035,13 @@
    "abstain": 0,
    "present": 2,
    "excused": 0,
-   "committees": [],
+   "meetings_recorded": 2,
+   "attendance_rate": 100,
+   "committees": [
+    "meet me in suncook"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1074,10 +2054,14 @@
    "abstain": 1,
    "present": 1,
    "excused": 0,
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
    "committees": [
-    "Planning Board"
+    "Planning Board",
+    "conservation commission"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1090,8 +2074,13 @@
    "abstain": 0,
    "present": 1,
    "excused": 0,
-   "committees": [],
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
+   "committees": [
+    "meet me in suncook"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1102,12 +2091,17 @@
    "yes": 0,
    "no": 0,
    "abstain": 0,
-   "present": 0,
+   "present": 7,
    "excused": 4,
+   "meetings_recorded": 11,
+   "attendance_rate": 64,
    "committees": [
-    "Economic Development Committee"
+    "Economic Development Committee",
+    "board of selectmen",
+    "economic development committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1120,10 +2114,13 @@
    "abstain": 1,
    "present": 0,
    "excused": 0,
+   "meetings_recorded": 0,
+   "attendance_rate": null,
    "committees": [
     "Planning Board"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1136,10 +2133,14 @@
    "abstain": 0,
    "present": 17,
    "excused": 0,
+   "meetings_recorded": 17,
+   "attendance_rate": 100,
    "committees": [
-    "Water Works"
+    "Water Works",
+    "water works"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1152,10 +2153,34 @@
    "abstain": 0,
    "present": 2,
    "excused": 1,
+   "meetings_recorded": 3,
+   "attendance_rate": 67,
    "committees": [
-    "Budget Committe"
+    "Budget Committe",
+    "budget committee"
    ],
    "topics": [],
+   "issues": [],
+   "top_topic": null
+  },
+  {
+   "name": "Lawrence Plourde",
+   "title": "Member",
+   "moved": 0,
+   "seconded": 0,
+   "yes": 0,
+   "no": 0,
+   "abstain": 0,
+   "present": 15,
+   "excused": 2,
+   "meetings_recorded": 17,
+   "attendance_rate": 88,
+   "committees": [
+    "Water Works",
+    "water works"
+   ],
+   "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1168,8 +2193,13 @@
    "abstain": 0,
    "present": 1,
    "excused": 0,
-   "committees": [],
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
+   "committees": [
+    "meet me in suncook"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1182,10 +2212,14 @@
    "abstain": 0,
    "present": 10,
    "excused": 1,
+   "meetings_recorded": 11,
+   "attendance_rate": 91,
    "committees": [
-    "Budget Committe"
+    "Budget Committe",
+    "budget committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1198,8 +2232,13 @@
    "abstain": 0,
    "present": 1,
    "excused": 0,
-   "committees": [],
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
+   "committees": [
+    "meet me in suncook"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1212,10 +2251,14 @@
    "abstain": 0,
    "present": 0,
    "excused": 4,
+   "meetings_recorded": 4,
+   "attendance_rate": 0,
    "committees": [
-    "Water Works"
+    "Water Works",
+    "water works"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1228,10 +2271,14 @@
    "abstain": 0,
    "present": 0,
    "excused": 1,
+   "meetings_recorded": 1,
+   "attendance_rate": 0,
    "committees": [
-    "Budget Committe"
+    "Budget Committe",
+    "budget committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1244,10 +2291,14 @@
    "abstain": 0,
    "present": 14,
    "excused": 0,
+   "meetings_recorded": 14,
+   "attendance_rate": 100,
    "committees": [
-    "Budget Committe"
+    "Budget Committe",
+    "budget committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1260,8 +2311,13 @@
    "abstain": 0,
    "present": 3,
    "excused": 0,
-   "committees": [],
+   "meetings_recorded": 3,
+   "attendance_rate": 100,
+   "committees": [
+    "meet me in suncook"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1274,8 +2330,13 @@
    "abstain": 0,
    "present": 1,
    "excused": 0,
-   "committees": [],
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
+   "committees": [
+    "zoning board of adjustment"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1288,25 +2349,14 @@
    "abstain": 0,
    "present": 0,
    "excused": 0,
+   "meetings_recorded": 0,
+   "attendance_rate": null,
    "committees": [
     "Zoning Board",
     "Zoning Board of Adjustment"
    ],
    "topics": [],
-   "top_topic": null
-  },
-  {
-   "name": "None",
-   "title": null,
-   "moved": 0,
-   "seconded": 0,
-   "yes": 0,
-   "no": 0,
-   "abstain": 0,
-   "present": 15,
-   "excused": 13,
-   "committees": [],
-   "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1319,8 +2369,13 @@
    "abstain": 0,
    "present": 1,
    "excused": 0,
-   "committees": [],
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
+   "committees": [
+    "meet me in suncook"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1333,10 +2388,14 @@
    "abstain": 0,
    "present": 0,
    "excused": 5,
+   "meetings_recorded": 5,
+   "attendance_rate": 0,
    "committees": [
-    "Energy Committee"
+    "Energy Committee",
+    "energy committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1349,8 +2408,14 @@
    "abstain": 0,
    "present": 0,
    "excused": 6,
-   "committees": [],
+   "meetings_recorded": 6,
+   "attendance_rate": 0,
+   "committees": [
+    "board of selectmen",
+    "range roads subcommittee"
+   ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1363,12 +2428,16 @@
    "abstain": 0,
    "present": 11,
    "excused": 6,
+   "meetings_recorded": 17,
+   "attendance_rate": 65,
    "committees": [
     "Board of Selectmen",
     "Conservation Commission",
-    "Planning Board"
+    "Planning Board",
+    "board of selectmen"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1381,11 +2450,14 @@
    "abstain": 0,
    "present": 0,
    "excused": 0,
+   "meetings_recorded": 0,
+   "attendance_rate": null,
    "committees": [
     "Zoning Board",
     "Zoning Board of Adjustment"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1398,11 +2470,15 @@
    "abstain": 0,
    "present": 0,
    "excused": 2,
+   "meetings_recorded": 2,
+   "attendance_rate": 0,
    "committees": [
     "Planning Board",
-    "Range Roads Subcommittee"
+    "Range Roads Subcommittee",
+    "range roads subcommittee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1415,11 +2491,15 @@
    "abstain": 0,
    "present": 4,
    "excused": 1,
+   "meetings_recorded": 5,
+   "attendance_rate": 80,
    "committees": [
     "Budget Committe",
-    "Library Trustees"
+    "Library Trustees",
+    "budget committee"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1432,11 +2512,14 @@
    "abstain": 0,
    "present": 0,
    "excused": 0,
+   "meetings_recorded": 0,
+   "attendance_rate": null,
    "committees": [
     "Zoning Board",
     "Zoning Board of Adjustment"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1449,10 +2532,34 @@
    "abstain": 0,
    "present": 3,
    "excused": 0,
+   "meetings_recorded": 3,
+   "attendance_rate": 100,
    "committees": [
-    "Water Works"
+    "Water Works",
+    "water works"
    ],
    "topics": [],
+   "issues": [],
+   "top_topic": null
+  },
+  {
+   "name": "Tom Gallo",
+   "title": "Member",
+   "moved": 0,
+   "seconded": 0,
+   "yes": 0,
+   "no": 0,
+   "abstain": 0,
+   "present": 13,
+   "excused": 3,
+   "meetings_recorded": 16,
+   "attendance_rate": 81,
+   "committees": [
+    "Conservation Commission",
+    "roads committee"
+   ],
+   "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1465,10 +2572,14 @@
    "abstain": 0,
    "present": 1,
    "excused": 7,
+   "meetings_recorded": 8,
+   "attendance_rate": 12,
    "committees": [
-    "Conservation Commission"
+    "Conservation Commission",
+    "conservation commission"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
   },
   {
@@ -1481,11 +2592,774 @@
    "abstain": 0,
    "present": 6,
    "excused": 0,
+   "meetings_recorded": 6,
+   "attendance_rate": 100,
    "committees": [
-    "Cemetery Commission"
+    "Cemetery Commission",
+    "cemetery commission"
    ],
    "topics": [],
+   "issues": [],
    "top_topic": null
+  },
+  {
+   "name": "Zephan Wood",
+   "title": "Member",
+   "moved": 0,
+   "seconded": 0,
+   "yes": 0,
+   "no": 0,
+   "abstain": 0,
+   "present": 1,
+   "excused": 0,
+   "meetings_recorded": 1,
+   "attendance_rate": 100,
+   "committees": [
+    "Trustees of Trust Funds",
+    "trustees of trust funds"
+   ],
+   "topics": [],
+   "issues": [],
+   "top_topic": null
+  }
+ ],
+ "relationships": [
+  {
+   "mover": "Jules Pellerin",
+   "seconder": "Artie",
+   "count": 22
+  },
+  {
+   "mover": "Artie",
+   "seconder": "Paulette Malo",
+   "count": 10
+  },
+  {
+   "mover": "Sandy Goulet",
+   "seconder": "Bryan Christiansen",
+   "count": 10
+  },
+  {
+   "mover": "Jules Pellerin",
+   "seconder": "Paulette Malo",
+   "count": 4
+  },
+  {
+   "mover": "Artie",
+   "seconder": "Jules Pellerin",
+   "count": 3
+  },
+  {
+   "mover": "Paulette Malo",
+   "seconder": "Tom",
+   "count": 2
+  },
+  {
+   "mover": "Bryan Christiansen",
+   "seconder": "Matt Miller",
+   "count": 2
+  },
+  {
+   "mover": "Sandy Goulet",
+   "seconder": "Matt Miller",
+   "count": 2
+  },
+  {
+   "mover": "Bryan Christiansen",
+   "seconder": "Peter Gagyi",
+   "count": 2
+  },
+  {
+   "mover": "Paulette Malo",
+   "seconder": "Artie",
+   "count": 1
+  },
+  {
+   "mover": "Sandy Goulet",
+   "seconder": "Paulette Malo",
+   "count": 1
+  },
+  {
+   "mover": "Sandy Goulet",
+   "seconder": "Peter Gagyi",
+   "count": 1
+  },
+  {
+   "mover": "Bryan Christiansen",
+   "seconder": "Karen Yeaton",
+   "count": 1
+  }
+ ],
+ "vote_pairs": [
+  {
+   "a": "Brian Seaworth",
+   "b": "Clint Hanson",
+   "together": 17,
+   "share": 100
+  },
+  {
+   "a": "Brent Edmonds",
+   "b": "Brian Seaworth",
+   "together": 16,
+   "share": 100
+  },
+  {
+   "a": "Brent Edmonds",
+   "b": "Clint Hanson",
+   "together": 16,
+   "share": 100
+  },
+  {
+   "a": "Brent Edmonds",
+   "b": "Kathy Cruson",
+   "together": 15,
+   "share": 100
+  },
+  {
+   "a": "Brian Seaworth",
+   "b": "Kathy Cruson",
+   "together": 15,
+   "share": 100
+  },
+  {
+   "a": "Clint Hanson",
+   "b": "Kathy Cruson",
+   "together": 15,
+   "share": 100
+  },
+  {
+   "a": "Brian Seaworth",
+   "b": "Rick Frederickson",
+   "together": 12,
+   "share": 100
+  },
+  {
+   "a": "Clint Hanson",
+   "b": "Rick Frederickson",
+   "together": 12,
+   "share": 100
+  },
+  {
+   "a": "Brent Edmonds",
+   "b": "Rick Frederickson",
+   "together": 11,
+   "share": 92
+  },
+  {
+   "a": "Brian Seaworth",
+   "b": "Joshua Bursey",
+   "together": 10,
+   "share": 100
+  },
+  {
+   "a": "Clint Hanson",
+   "b": "Joshua Bursey",
+   "together": 10,
+   "share": 100
+  },
+  {
+   "a": "Kathy Cruson",
+   "b": "Rick Frederickson",
+   "together": 10,
+   "share": 83
+  },
+  {
+   "a": "Brent Edmonds",
+   "b": "Joshua Bursey",
+   "together": 9,
+   "share": 90
+  },
+  {
+   "a": "Joshua Bursey",
+   "b": "Kathy Cruson",
+   "together": 9,
+   "share": 90
+  },
+  {
+   "a": "Joshua Bursey",
+   "b": "Rick Frederickson",
+   "together": 9,
+   "share": 90
+  },
+  {
+   "a": "Brent Edmonds",
+   "b": "Stephanie Cravotta",
+   "together": 5,
+   "share": 100
+  },
+  {
+   "a": "Brent Edmonds",
+   "b": "Bryan Christiansen",
+   "together": 5,
+   "share": 100
+  },
+  {
+   "a": "Brian Seaworth",
+   "b": "Stephanie Cravotta",
+   "together": 5,
+   "share": 100
+  },
+  {
+   "a": "Brian Seaworth",
+   "b": "Bryan Christiansen",
+   "together": 5,
+   "share": 100
+  },
+  {
+   "a": "Bryan Christiansen",
+   "b": "Clint Hanson",
+   "together": 5,
+   "share": 100
+  },
+  {
+   "a": "Bryan Christiansen",
+   "b": "Kathy Cruson",
+   "together": 5,
+   "share": 100
+  },
+  {
+   "a": "Clint Hanson",
+   "b": "Stephanie Cravotta",
+   "together": 5,
+   "share": 100
+  },
+  {
+   "a": "Kathy Cruson",
+   "b": "Stephanie Cravotta",
+   "together": 5,
+   "share": 100
+  },
+  {
+   "a": "Rick Frederickson",
+   "b": "Stephanie Cravotta",
+   "together": 5,
+   "share": 100
+  },
+  {
+   "a": "Bruce Kudrick",
+   "b": "Dana Carlucci",
+   "together": 4,
+   "share": 100
+  },
+  {
+   "a": "Bruce Kudrick",
+   "b": "Thomas Hebert",
+   "together": 4,
+   "share": 100
+  },
+  {
+   "a": "Dana Carlucci",
+   "b": "Thomas Hebert",
+   "together": 4,
+   "share": 100
+  },
+  {
+   "a": "Joshua Bursey",
+   "b": "Stephanie Cravotta",
+   "together": 4,
+   "share": 80
+  },
+  {
+   "a": "Blakely V. Miner III",
+   "b": "Bruce Kudrick",
+   "together": 3,
+   "share": 100
+  },
+  {
+   "a": "Blakely V. Miner III",
+   "b": "Dana Carlucci",
+   "together": 3,
+   "share": 100
+  },
+  {
+   "a": "Blakely V. Miner III",
+   "b": "Natalie Glisson",
+   "together": 3,
+   "share": 100
+  },
+  {
+   "a": "Blakely V. Miner III",
+   "b": "Thomas Hebert",
+   "together": 3,
+   "share": 100
+  },
+  {
+   "a": "Bruce Kudrick",
+   "b": "Natalie Glisson",
+   "together": 3,
+   "share": 100
+  },
+  {
+   "a": "Dana Carlucci",
+   "b": "Natalie Glisson",
+   "together": 3,
+   "share": 100
+  },
+  {
+   "a": "Natalie Glisson",
+   "b": "Thomas Hebert",
+   "together": 3,
+   "share": 100
+  },
+  {
+   "a": "Angela Delaney",
+   "b": "Brent Edmonds",
+   "together": 1,
+   "share": 100
+  },
+  {
+   "a": "Angela Delaney",
+   "b": "Brian Seaworth",
+   "together": 1,
+   "share": 100
+  },
+  {
+   "a": "Angela Delaney",
+   "b": "Clint Hanson",
+   "together": 1,
+   "share": 100
+  },
+  {
+   "a": "Angela Delaney",
+   "b": "Joshua Bursey",
+   "together": 1,
+   "share": 100
+  },
+  {
+   "a": "Angela Delaney",
+   "b": "Kathy Cruson",
+   "together": 1,
+   "share": 100
+  }
+ ],
+ "contested": [
+  {
+   "date": "2025-11-24",
+   "committee": "Zoning Board",
+   "votes": [
+    {
+     "name": "Bruce Kudrick",
+     "vote": "yes"
+    },
+    {
+     "name": "Dana Carlucci",
+     "vote": "abstain"
+    },
+    {
+     "name": "Thomas Hebert",
+     "vote": "yes"
+    },
+    {
+     "name": "Safiya Wazir",
+     "vote": "yes"
+    }
+   ],
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11242025-270",
+   "dissenters": [],
+   "abstentions": [
+    "Dana Carlucci"
+   ]
+  },
+  {
+   "date": "2026-02-10",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "abstain"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    }
+   ],
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02102026-67",
+   "dissenters": [],
+   "abstentions": [
+    "Joshua Bursey"
+   ]
+  },
+  {
+   "date": "2026-02-10",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "abstain"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "abstain"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    }
+   ],
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02102026-67",
+   "dissenters": [],
+   "abstentions": [
+    "Brent Edmonds",
+    "Kathy Cruson"
+   ]
+  },
+  {
+   "date": "2026-07-28",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "no"
+    },
+    {
+     "name": "Bryan Christiansen",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    }
+   ],
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359",
+   "dissenters": [
+    "Kathy Cruson"
+   ],
+   "abstentions": []
+  }
+ ],
+ "money": [
+  {
+   "date": "2026-06-03",
+   "committee": "Board of Selectmen",
+   "subject": "approve the withdrawal of $312,250 from the Town Equipment Capital Reserve Fund for the purchase of the new six wheel dump truck and accessories",
+   "amount": 312250,
+   "mover": "Sandy Goulet",
+   "issue": "Capital reserve withdrawals",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06032026-289"
+  },
+  {
+   "date": "2025-02-18",
+   "committee": "Sewer Commission",
+   "subject": "move $200,000.00 to the sewer PDIP operating account",
+   "amount": 200000,
+   "mover": "Artie",
+   "issue": "Sewer infrastructure and equipment",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104"
+  },
+  {
+   "date": "2026-02-17",
+   "committee": "Sewer Commission",
+   "subject": "approve moving $200,000.000 from Merrimack County Savings Bank to the Operating Account at PDIP",
+   "amount": 200000,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer infrastructure and equipment",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02172026-118"
+  },
+  {
+   "date": "2026-08-17",
+   "committee": "Sewer Commission",
+   "subject": "not exceed $67,900 if the other 2 bids present proposals. The Commissioners want a text/call if any proposal is over $67,900 and will discuss at September 21, 2026 meeting",
+   "amount": 67900,
+   "mover": "Artie",
+   "issue": "One-off business",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08172026-378"
+  },
+  {
+   "date": "2025-06-16",
+   "committee": "Sewer Commission",
+   "subject": "accept the quote from Advanced to replace 82 feet of sewer main on the easement for a price not to exceed $31,675.00",
+   "amount": 31675,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer infrastructure and equipment",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109"
+  },
+  {
+   "date": "2026-04-15",
+   "committee": "Board of Selectmen",
+   "subject": "waive the bid requirements and to offer the bid for the stage and roof to New England Outdoor in the amount of $29,634, and to further request the removal from the Recreation Capital Reserve Fund in the amount of $9,364",
+   "amount": 29634,
+   "mover": "Bryan Christiansen",
+   "issue": "Capital reserve withdrawals",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04152026-293"
+  },
+  {
+   "date": "2025-03-17",
+   "committee": "Sewer Commission",
+   "subject": "accept the quote for 3 heat pumps with a price not to exceed $21,900",
+   "amount": 21900,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer infrastructure and equipment",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172025-105"
+  },
+  {
+   "date": "2026-08-19",
+   "committee": "Board of Selectmen",
+   "subject": "approve the withdrawals of a sum not to exceed $8,500 from the Police Small Equipment Fund, and to further withdraw the sum not to exceed $5,000 from the Energy Savings Capital Reserve Funds",
+   "amount": 8500,
+   "mover": "Bryan Christiansen",
+   "issue": "Capital reserve withdrawals",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+  },
+  {
+   "date": "2026-04-01",
+   "committee": "Board of Selectmen",
+   "subject": "Goulet, to authorize the withdrawal of the sum of $8181 from the revaluation Capital Reserve fund and to transfer to the General Fund and to authorize the chair to sign the document",
+   "amount": 8181,
+   "mover": null,
+   "issue": "Capital reserve withdrawals",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04012026-290"
+  },
+  {
+   "date": "2026-06-03",
+   "committee": "Board of Selectmen",
+   "subject": "accept the $3150 in accordance with RSA 31:95 III (b)",
+   "amount": 3150,
+   "mover": "Sandy Goulet",
+   "issue": "One-off business",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06032026-289"
+  },
+  {
+   "date": "2025-02-18",
+   "committee": "Sewer Commission",
+   "subject": "purchase the Ariens Deluxe snow blower from Greenland Equipment for the amount not to exceed $1,500.00",
+   "amount": 1500,
+   "mover": "Artie",
+   "issue": "Sewer infrastructure and equipment",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104"
+  },
+  {
+   "date": "2025-04-21",
+   "committee": "Sewer Commission",
+   "subject": "DENY the abatement for $587.63 due to their failure to fix the problem",
+   "amount": 588,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212025-107"
+  },
+  {
+   "date": "2026-05-06",
+   "committee": "Board of Selectmen",
+   "subject": "waive the Little League fees of $450 due to the expenses that they pay for field maintenance",
+   "amount": 450,
+   "mover": "Sandy Goulet",
+   "issue": "Recreation, fields and programs",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287"
+  },
+  {
+   "date": "2025-06-16",
+   "committee": "Sewer Commission",
+   "subject": "approve the abatement for $363.67 due to the meter reading being incorrect",
+   "amount": 364,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109"
+  },
+  {
+   "date": "2026-03-17",
+   "committee": "Sewer Commission",
+   "subject": "DENY the abatement for $353.77",
+   "amount": 354,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172026-106"
+  },
+  {
+   "date": "2026-04-21",
+   "committee": "Sewer Commission",
+   "subject": "approve the abatement for $136.50 and the $30.00 late penalty due to penalties being added on 4/21/2026",
+   "amount": 136,
+   "mover": "Artie",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212026-336"
+  },
+  {
+   "date": "2026-08-19",
+   "committee": "Board of Selectmen",
+   "subject": "accept the $100 donation in accordance with RSA 31:95-b III (b) from the Pembroke Women's Club for Pembroke EMS",
+   "amount": 100,
+   "mover": "Bryan Christiansen",
+   "issue": "One-off business",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+  },
+  {
+   "date": "2025-11-17",
+   "committee": "Sewer Commission",
+   "subject": "abate this account in the amount of $87.62 due to a billing error",
+   "amount": 88,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11172025-114"
+  },
+  {
+   "date": "2025-08-18",
+   "committee": "Sewer Commission",
+   "subject": "accept the $60.00 late penalty",
+   "amount": 60,
+   "mover": "Artie",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08182025-111"
+  },
+  {
+   "date": "2025-02-18",
+   "committee": "Sewer Commission",
+   "subject": "approve the $30.00 late penalty as a 1 time abatement",
+   "amount": 30,
+   "mover": "Artie",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104"
+  },
+  {
+   "date": "2025-03-17",
+   "committee": "Sewer Commission",
+   "subject": "approve the $30.00 late penalty as a 1 time abatement",
+   "amount": 30,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172025-105"
+  },
+  {
+   "date": "2025-04-21",
+   "committee": "Sewer Commission",
+   "subject": "approve the $30.00 late penalty as a 1 time abatement",
+   "amount": 30,
+   "mover": "Artie",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212025-107"
+  },
+  {
+   "date": "2025-04-21",
+   "committee": "Sewer Commission",
+   "subject": "accept the abatement for $30.00 Late Penalty as a one-time abatement",
+   "amount": 30,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212025-107"
+  },
+  {
+   "date": "2025-05-20",
+   "committee": "Sewer Commission",
+   "subject": "approve the $30.00 late penalty as a 1 time abatement",
+   "amount": 30,
+   "mover": "Artie",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05202025-108"
+  },
+  {
+   "date": "2025-06-16",
+   "committee": "Sewer Commission",
+   "subject": "approve the $30.00 late penalty as a 1 time abatement",
+   "amount": 30,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109"
+  },
+  {
+   "date": "2025-07-21",
+   "committee": "Sewer Commission",
+   "subject": "DENY the $30.00 late penalty. This decision is based on the history of the account showing that payment were made at the time and some times before the post cards were sent",
+   "amount": 30,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07212025-110"
+  },
+  {
+   "date": "2025-07-21",
+   "committee": "Sewer Commission",
+   "subject": "approve the $30.00 late penalty as a 1 time abatement",
+   "amount": 30,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07212025-110"
+  },
+  {
+   "date": "2025-11-17",
+   "committee": "Sewer Commission",
+   "subject": "abate this account for the late penalty of $30.00 as a 1 time abatement",
+   "amount": 30,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11172025-114"
+  },
+  {
+   "date": "2025-12-15",
+   "committee": "Sewer Commission",
+   "subject": "abate this account in the amount of $30.00 late penalty as a 1 time abatement",
+   "amount": 30,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_12152025-115"
+  },
+  {
+   "date": "2026-01-20",
+   "committee": "Sewer Commission",
+   "subject": "abate this account in the amount of $30.00 late penalty as a 1 time abatement",
+   "amount": 30,
+   "mover": "Artie",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01202026-116"
+  },
+  {
+   "date": "2026-03-17",
+   "committee": "Sewer Commission",
+   "subject": "approve the abatement for $30.00 late penalty due to billing issues from Waterworks",
+   "amount": 30,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172026-106"
+  },
+  {
+   "date": "2026-06-16",
+   "committee": "Sewer Commission",
+   "subject": "accept the $30.00 abatement as a 1 time abatement",
+   "amount": 30,
+   "mover": "Jules Pellerin",
+   "issue": "Sewer billing and abatements",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162026-338"
+  },
+  {
+   "date": "2026-05-06",
+   "committee": "Board of Selectmen",
+   "subject": "waive the sealed bids requirements and to approve the gas mask purchase from Atlantic tactical for the sum of $25, 144.20",
+   "amount": 25,
+   "mover": "Sandy Goulet",
+   "issue": "Bid and procurement waivers",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287"
   }
  ],
  "timeline": [
@@ -1509,7 +3383,7 @@
   },
   {
    "month": "2025-04",
-   "motions": 3,
+   "motions": 4,
    "passed": 3,
    "failed": 0
   },
@@ -1521,38 +3395,38 @@
   },
   {
    "month": "2025-06",
-   "motions": 5,
-   "passed": 4,
+   "motions": 4,
+   "passed": 3,
    "failed": 0
   },
   {
    "month": "2025-07",
+   "motions": 2,
+   "passed": 2,
+   "failed": 0
+  },
+  {
+   "month": "2025-08",
+   "motions": 4,
+   "passed": 3,
+   "failed": 0
+  },
+  {
+   "month": "2025-09",
+   "motions": 2,
+   "passed": 2,
+   "failed": 0
+  },
+  {
+   "month": "2025-11",
    "motions": 3,
    "passed": 3,
    "failed": 0
   },
   {
-   "month": "2025-08",
-   "motions": 5,
-   "passed": 4,
-   "failed": 0
-  },
-  {
-   "month": "2025-09",
-   "motions": 4,
-   "passed": 3,
-   "failed": 0
-  },
-  {
-   "month": "2025-11",
-   "motions": 5,
-   "passed": 4,
-   "failed": 0
-  },
-  {
    "month": "2025-12",
-   "motions": 4,
-   "passed": 3,
+   "motions": 2,
+   "passed": 2,
    "failed": 0
   },
   {
@@ -1569,25 +3443,25 @@
   },
   {
    "month": "2026-03",
-   "motions": 8,
-   "passed": 7,
+   "motions": 7,
+   "passed": 6,
    "failed": 0
   },
   {
    "month": "2026-04",
-   "motions": 6,
+   "motions": 5,
    "passed": 5,
    "failed": 0
   },
   {
    "month": "2026-05",
-   "motions": 8,
-   "passed": 7,
+   "motions": 6,
+   "passed": 6,
    "failed": 0
   },
   {
    "month": "2026-06",
-   "motions": 8,
+   "motions": 6,
    "passed": 6,
    "failed": 0
   },
@@ -1602,12 +3476,6 @@
    "motions": 7,
    "passed": 7,
    "failed": 0
-  },
-  {
-   "month": "2026-09",
-   "motions": 1,
-   "passed": 0,
-   "failed": 0
   }
  ],
  "motions": [
@@ -1620,6 +3488,8 @@
    "outcome": "",
    "direction": "administrative",
    "topic": "Other business",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01272025-140"
   },
   {
@@ -1631,6 +3501,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 30,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104"
   },
   {
@@ -1642,6 +3514,8 @@
    "outcome": "passed",
    "direction": "administrative",
    "topic": "Budget and money",
+   "issue": "Sewer infrastructure and equipment",
+   "amount": 200000,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104"
   },
   {
@@ -1653,6 +3527,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer infrastructure and equipment",
+   "amount": 1500,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104"
   },
   {
@@ -1664,6 +3540,8 @@
    "outcome": "passed",
    "direction": "administrative",
    "topic": "Budget and money",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104"
   },
   {
@@ -1675,6 +3553,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 30,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172025-105"
   },
   {
@@ -1686,6 +3566,8 @@
    "outcome": "",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Personnel, pay and benefits",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172025-105"
   },
   {
@@ -1697,7 +3579,22 @@
    "outcome": "",
    "direction": "toward more",
    "topic": "Energy and sustainability",
+   "issue": "Sewer infrastructure and equipment",
+   "amount": 21900,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172025-105"
+  },
+  {
+   "date": "2025-04-07",
+   "committee": "Roads Committee",
+   "subject": "recommend to write the recommendation to the Board of Selectmen to reward the bid to indus",
+   "mover": "Paulette Malo",
+   "seconder": "Tom",
+   "outcome": "",
+   "direction": "toward more",
+   "topic": "Other business",
+   "issue": "One-off business",
+   "amount": null,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04072025-275"
   },
   {
    "date": "2025-04-21",
@@ -1708,6 +3605,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 30,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212025-107"
   },
   {
@@ -1719,6 +3618,8 @@
    "outcome": "passed",
    "direction": "toward less",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 588,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212025-107"
   },
   {
@@ -1730,6 +3631,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 30,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212025-107"
   },
   {
@@ -1741,18 +3644,9 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 30,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05202025-108"
-  },
-  {
-   "date": "2025-06-09",
-   "committee": "Roads Committee",
-   "subject": "All in favor",
-   "mover": "Paulette Malo",
-   "seconder": "Sandy Goulet",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06092025-277"
   },
   {
    "date": "2025-06-16",
@@ -1763,6 +3657,8 @@
    "outcome": "",
    "direction": "toward more",
    "topic": "Other business",
+   "issue": "Sewer infrastructure and equipment",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109"
   },
   {
@@ -1774,6 +3670,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 30,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109"
   },
   {
@@ -1785,6 +3683,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 364,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109"
   },
   {
@@ -1796,18 +3696,9 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Zoning and land use",
+   "issue": "Sewer infrastructure and equipment",
+   "amount": 31675,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109"
-  },
-  {
-   "date": "2025-07-07",
-   "committee": "Roads Committee",
-   "subject": "Five in favor, One Abstained",
-   "mover": "Sandy Goulet",
-   "seconder": "Paulette Malo",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07072025-278"
   },
   {
    "date": "2025-07-21",
@@ -1818,6 +3709,8 @@
    "outcome": "passed",
    "direction": "toward less",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 30,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07212025-110"
   },
   {
@@ -1829,28 +3722,21 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 30,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07212025-110"
   },
   {
    "date": "2025-08-11",
    "committee": "Roads Committee",
-   "subject": "All in favor",
-   "mover": "Tom",
-   "seconder": "Paulette Malo",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08112025-279"
-  },
-  {
-   "date": "2025-08-11",
-   "committee": "Roads Committee",
-   "subject": "Next meeting September 8, 2025 at 5:30 PM at Town Hall",
-   "mover": "Vince",
+   "subject": "hammerhead should not be allowed as zoning prohibits. The road should be crowned and if additional drainage is needed must be done and pavement thickness needs to be 2 \u00bd\" base and 1 \u00bd\" top coat",
+   "mover": "Paulette Malo",
    "seconder": "Tom",
    "outcome": "",
    "direction": "administrative",
-   "topic": "Town facilities",
+   "topic": "Roads and maintenance",
+   "issue": "Land use, property and mapping",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08112025-279"
   },
   {
@@ -1862,6 +3748,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 60,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08182025-111"
   },
   {
@@ -1873,6 +3761,8 @@
    "outcome": "passed",
    "direction": "toward less",
    "topic": "Other business",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08182025-111"
   },
   {
@@ -1884,29 +3774,9 @@
    "outcome": "passed",
    "direction": "toward less",
    "topic": "Other business",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08182025-111"
-  },
-  {
-   "date": "2025-09-08",
-   "committee": "Roads Committee",
-   "subject": "All in favor, Abstained: Sandy and Buddy",
-   "mover": "Vince",
-   "seconder": "Tom",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09082025-280"
-  },
-  {
-   "date": "2025-09-08",
-   "committee": "Roads Committee",
-   "subject": "Next meeting October 6, 2025 at 5:30 PM at Town Hall",
-   "mover": "Vince",
-   "seconder": "Sandy Goulet",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Town facilities",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09082025-280"
   },
   {
    "date": "2025-09-15",
@@ -1917,6 +3787,8 @@
    "outcome": "passed",
    "direction": "toward less",
    "topic": "Other business",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09152025-112"
   },
   {
@@ -1928,29 +3800,9 @@
    "outcome": "passed",
    "direction": "toward less",
    "topic": "Other business",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09152025-112"
-  },
-  {
-   "date": "2025-11-10",
-   "committee": "Roads Committee",
-   "subject": "Five in favor, Paulette abstained",
-   "mover": "Sandy Goulet",
-   "seconder": "Vince",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11102025-281"
-  },
-  {
-   "date": "2025-11-10",
-   "committee": "Roads Committee",
-   "subject": "Next meeting November 24, 2025 only if necessary",
-   "mover": "Vince",
-   "seconder": "Sandy Goulet",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11102025-281"
   },
   {
    "date": "2025-11-17",
@@ -1961,6 +3813,8 @@
    "outcome": "passed",
    "direction": "toward less",
    "topic": "Budget and money",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11172025-114"
   },
   {
@@ -1972,6 +3826,8 @@
    "outcome": "passed",
    "direction": "toward less",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 88,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11172025-114"
   },
   {
@@ -1983,29 +3839,9 @@
    "outcome": "passed",
    "direction": "toward less",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 30,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11172025-114"
-  },
-  {
-   "date": "2025-12-08",
-   "committee": "Roads Committee",
-   "subject": "All in favor",
-   "mover": "Sandy Goulet",
-   "seconder": "Tom",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_12082025-282"
-  },
-  {
-   "date": "2025-12-08",
-   "committee": "Roads Committee",
-   "subject": "All in favor 6:14 P.M",
-   "mover": "Sandy Goulet",
-   "seconder": "Tom",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_12082025-282"
   },
   {
    "date": "2025-12-15",
@@ -2016,6 +3852,8 @@
    "outcome": "passed",
    "direction": "toward less",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 30,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_12152025-115"
   },
   {
@@ -2027,6 +3865,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Zoning and land use",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_12152025-115"
   },
   {
@@ -2038,6 +3878,8 @@
    "outcome": "passed",
    "direction": "toward less",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 30,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01202026-116"
   },
   {
@@ -2049,6 +3891,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Other business",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01202026-116"
   },
   {
@@ -2060,6 +3904,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer infrastructure and equipment",
+   "amount": 200000,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02172026-118"
   },
   {
@@ -2071,28 +3917,21 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer infrastructure and equipment",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02172026-118"
   },
   {
    "date": "2026-03-09",
    "committee": "Roads Committee",
-   "subject": "All in favor",
-   "mover": "Sandy Goulet",
-   "seconder": "Paulette Malo",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03092026-274"
-  },
-  {
-   "date": "2026-03-09",
-   "committee": "Roads Committee",
-   "subject": "Next meeting April, 13, 2026",
+   "subject": "send the bid package as prepared be sent out",
    "mover": "Sandy Goulet",
    "seconder": "Paulette Malo",
    "outcome": "",
    "direction": "administrative",
    "topic": "Other business",
+   "issue": "Bid and procurement waivers",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03092026-274"
   },
   {
@@ -2104,6 +3943,8 @@
    "outcome": "passed",
    "direction": "toward less",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 354,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172026-106"
   },
   {
@@ -2115,6 +3956,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 30,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172026-106"
   },
   {
@@ -2126,6 +3969,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Zoning and land use",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172026-106"
   },
   {
@@ -2137,6 +3982,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Other business",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03182026-146"
   },
   {
@@ -2148,6 +3995,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Economic development",
+   "issue": "Contracts and professional services",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03182026-146"
   },
   {
@@ -2159,6 +4008,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Other business",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03182026-146"
   },
   {
@@ -2170,6 +4021,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Conservation and open space",
+   "issue": "Land use, property and mapping",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04012026-290"
   },
   {
@@ -2181,6 +4034,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Capital reserve withdrawals",
+   "amount": 8181,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04012026-290"
   },
   {
@@ -2192,18 +4047,9 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Economic development",
+   "issue": "Land use, property and mapping",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04012026-290"
-  },
-  {
-   "date": "2026-04-13",
-   "committee": "Roads Committee",
-   "subject": "Adjourned: 6:28 p.m",
-   "mover": "Paulette Malo",
-   "seconder": "Tom",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04132026-295"
   },
   {
    "date": "2026-04-15",
@@ -2214,6 +4060,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Capital reserve withdrawals",
+   "amount": 29634,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04152026-293"
   },
   {
@@ -2225,6 +4073,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 136,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212026-336"
   },
   {
@@ -2236,6 +4086,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Recreation and parks",
+   "issue": "Recreation, fields and programs",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287"
   },
   {
@@ -2247,6 +4099,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Recreation, fields and programs",
+   "amount": 450,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287"
   },
   {
@@ -2258,6 +4112,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Other business",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287"
   },
   {
@@ -2269,6 +4125,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Bid and procurement waivers",
+   "amount": 25,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287"
   },
   {
@@ -2280,29 +4138,9 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Public safety equipment",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287"
-  },
-  {
-   "date": "2026-05-11",
-   "committee": "Roads Committee",
-   "subject": "All in favor, Sandy abstained",
-   "mover": "Sandy Goulet",
-   "seconder": "Paulette Malo",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05112026-296"
-  },
-  {
-   "date": "2026-05-11",
-   "committee": "Roads Committee",
-   "subject": "Adjourned: 5:49 p.m",
-   "mover": "Sandy Goulet",
-   "seconder": "Paulette Malo",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05112026-296"
   },
   {
    "date": "2026-05-20",
@@ -2313,6 +4151,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Other business",
+   "issue": "Town Code amendments",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05202026-288"
   },
   {
@@ -2324,6 +4164,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Capital reserve withdrawals",
+   "amount": 312250,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06032026-289"
   },
   {
@@ -2335,6 +4177,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Public safety",
+   "issue": "Contracts and professional services",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06032026-289"
   },
   {
@@ -2346,18 +4190,9 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Other business",
+   "issue": "One-off business",
+   "amount": 3150,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06032026-289"
-  },
-  {
-   "date": "2026-06-08",
-   "committee": "Roads Committee",
-   "subject": "Adjourned: 5:59 p.m",
-   "mover": "Brent Edmonds",
-   "seconder": "Tom",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06082026-309"
   },
   {
    "date": "2026-06-16",
@@ -2368,6 +4203,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer billing and abatements",
+   "amount": 30,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162026-338"
   },
   {
@@ -2379,6 +4216,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Sewer infrastructure and equipment",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162026-338"
   },
   {
@@ -2390,18 +4229,9 @@
    "outcome": "passed",
    "direction": "administrative",
    "topic": "Budget and money",
+   "issue": "Land use, property and mapping",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162026-338"
-  },
-  {
-   "date": "2026-06-18",
-   "committee": "Water Works",
-   "subject": "All in favor, motion passed",
-   "mover": "Edward Lavallee",
-   "seconder": "Lawrence Plourde",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06182026-339"
   },
   {
    "date": "2026-07-15",
@@ -2412,6 +4242,8 @@
    "outcome": "passed",
    "direction": "administrative",
    "topic": "Energy and sustainability",
+   "issue": "Energy and utility contracting",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07152026-335"
   },
   {
@@ -2423,6 +4255,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Other business",
+   "issue": "Bid and procurement waivers",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07202026-355"
   },
   {
@@ -2434,6 +4268,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Conservation and open space",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08052026-364"
   },
   {
@@ -2445,6 +4281,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Roads and maintenance",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08052026-364"
   },
   {
@@ -2456,6 +4294,8 @@
    "outcome": "passed",
    "direction": "administrative",
    "topic": "Other business",
+   "issue": "One-off business",
+   "amount": 67900,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08172026-378"
   },
   {
@@ -2467,6 +4307,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "Capital reserve withdrawals",
+   "amount": 8500,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
   },
   {
@@ -2478,6 +4320,8 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Budget and money",
+   "issue": "One-off business",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
   },
   {
@@ -2489,6 +4333,8 @@
    "outcome": "passed",
    "direction": "administrative",
    "topic": "Zoning and land use",
+   "issue": "Town Code amendments",
+   "amount": null,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
   },
   {
@@ -2500,18 +4346,9 @@
    "outcome": "passed",
    "direction": "toward more",
    "topic": "Public safety",
+   "issue": "One-off business",
+   "amount": 100,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
-  },
-  {
-   "date": "2026-09-14",
-   "committee": "Roads Committee",
-   "subject": "Next meeting Monday, October 19, 2026, 5:30 P.M",
-   "mover": "Sandy Goulet",
-   "seconder": "Vince",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09142026-385"
   }
  ],
  "votes": [

@@ -50,6 +50,8 @@ export interface MotionRow {
   outcome: string;
   direction: string;
   topic: string;
+  issue: string;
+  amount: number | null;
   url: string | null;
 }
 
@@ -71,6 +73,63 @@ export interface StateRep {
   url: string | null;
 }
 
+export interface IssueSummary {
+  issue: string;
+  count: number;
+  more: number;
+  less: number;
+  admin: number;
+  first: string | null;
+  last: string | null;
+  committees: Record<string, number>;
+  money_named: number;
+  largest_amount: number | null;
+  movers: Record<string, number>;
+}
+
+export interface AttendanceRow {
+  committee: string;
+  meetings: number;
+  people: Array<{
+    name: string;
+    present: number;
+    excused: number;
+    rate: number;
+  }>;
+}
+
+export interface Relationship {
+  mover: string;
+  seconder: string;
+  count: number;
+}
+
+export interface VotePair {
+  a: string;
+  b: string;
+  together: number;
+  share: number | null;
+}
+
+export interface ContestedVote {
+  date: string;
+  committee: string;
+  votes: Array<{ name: string; vote: string }>;
+  url: string | null;
+  dissenters: string[];
+  abstentions: string[];
+}
+
+export interface MoneyRow {
+  date: string;
+  committee: string;
+  subject: string;
+  amount: number;
+  mover: string | null;
+  issue: string;
+  url: string | null;
+}
+
 export interface GovernanceSummary {
   generated_at: string;
   minutes_count: number;
@@ -85,11 +144,21 @@ export interface GovernanceSummary {
     failed: number;
     vote_blocks: number;
     named_votes: number;
+    contested: number;
     members: number;
+    committees: number;
+    issues: number;
+    money_motions: number;
   };
   topics: TopicSummary[];
+  issues: IssueSummary[];
   committees: CommitteeSummary[];
+  attendance: AttendanceRow[];
   members: MemberSummary[];
+  relationships: Relationship[];
+  vote_pairs: VotePair[];
+  contested: ContestedVote[];
+  money: MoneyRow[];
   timeline: Array<{ month: string; motions: number; passed: number; failed: number }>;
   motions: MotionRow[];
   votes: VoteRow[];

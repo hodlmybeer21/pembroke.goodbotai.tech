@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#292524"/>
+      <stop offset="100%" stop-color="#1c1917"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Direction bars: the town's decisions, green toward more, amber toward less -->
+  <g transform="translate(790, 150)">
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="250" height="16" rx="8" fill="#15803d" opacity="0.9"/>
+      <rect x="0" y="22" width="250" height="16" rx="8" fill="#a8a29e" opacity="0.5"/>
+      <rect x="0" y="44" width="52" height="16" rx="8" fill="#b45309" opacity="0.95"/>
+    </g>
+    <g transform="translate(0, 96)">
+      <rect x="0" y="0" width="196" height="16" rx="8" fill="#15803d" opacity="0.9"/>
+      <rect x="0" y="22" width="196" height="16" rx="8" fill="#a8a29e" opacity="0.5"/>
+      <rect x="0" y="44" width="90" height="16" rx="8" fill="#b45309" opacity="0.95"/>
+    </g>
+    <g transform="translate(0, 192)">
+      <rect x="0" y="0" width="150" height="16" rx="8" fill="#15803d" opacity="0.9"/>
+      <rect x="0" y="22" width="150" height="16" rx="8" fill="#a8a29e" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- Faint meeting-paper lines -->
+  <g stroke="white" stroke-width="1" opacity="0.08">
+    <path d="M760 60 L1160 220"/>
+    <path d="M740 200 L1180 400"/>
+    <path d="M800 340 L1140 520"/>
+    <path d="M880 60 L820 520"/>
+    <path d="M1010 60 L960 520"/>
+    <path d="M1130 80 L1090 500"/>
+  </g>
+
+  <text x="80" y="150" fill="white" font-family="system-ui, sans-serif" font-size="24" font-weight="600" opacity="0.9">Pembroke, NH</text>
+  <text x="80" y="290" fill="white" font-family="system-ui, sans-serif" font-size="68" font-weight="700" letter-spacing="-0.02em">How the town</text>
+  <text x="80" y="366" fill="white" font-family="system-ui, sans-serif" font-size="68" font-weight="700" letter-spacing="-0.02em">decides things</text>
+  <text x="80" y="440" fill="#fef3c7" font-family="system-ui, sans-serif" font-size="26" font-weight="400">Two years of meeting minutes, read straight through.</text>
+  <text x="80" y="478" fill="#fef3c7" font-family="system-ui, sans-serif" font-size="26" font-weight="400">Every decision links back to the source document.</text>
+
+  <g transform="translate(80, 520)" font-family="system-ui, sans-serif" font-size="19">
+    <circle cx="9" cy="9" r="9" fill="#15803d"/>
+    <text x="28" y="15" fill="white" opacity="0.85">Moved toward more</text>
+    <circle cx="232" cy="9" r="9" fill="#b45309"/>
+    <text x="251" y="15" fill="white" opacity="0.85">Moved toward less</text>
+    <circle cx="430" cy="9" r="9" fill="#a8a29e"/>
+    <text x="449" y="15" fill="white" opacity="0.85">Routine</text>
+  </g>
+</svg>

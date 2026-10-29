@@ -1,20 +1,7 @@
 {
- "generated_at": "2026-10-29T18:58:23.471233Z",
+ "generated_at": "2026-10-29T19:21:17.489145Z",
  "minutes_count": 266,
  "motions": [
-  {
-   "date": "2025-01-16",
-   "committee": "Energy Committee",
-   "mover": "Jennifer Smith",
-   "seconder": "Richard Wengenroth",
-   "subject": "accept the minutes as written",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Other business",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01162025-196",
-   "title": "Energy Committee Minutes"
-  },
   {
    "date": "2025-01-16",
    "committee": "Water Works",
@@ -85,32 +72,6 @@
    "committee": "Sewer Commission",
    "mover": "Artie",
    "seconder": "Paulette Malo",
-   "subject": "accept the minutes of November 18, 2024 as written",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Other business",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104",
-   "title": "Sewer Commission Minutes"
-  },
-  {
-   "date": "2025-02-18",
-   "committee": "Sewer Commission",
-   "mover": "Artie",
-   "seconder": "Paulette Malo",
-   "subject": "accept the minutes of November 18, 2024 Non-Public as written",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Other business",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104",
-   "title": "Sewer Commission Minutes"
-  },
-  {
-   "date": "2025-02-18",
-   "committee": "Sewer Commission",
-   "mover": "Artie",
-   "seconder": "Paulette Malo",
    "subject": "move $200,000.00 to the sewer PDIP operating account",
    "outcome": "passed",
    "direction": "administrative",
@@ -144,19 +105,6 @@
    "procedural": false,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104",
    "title": "Sewer Commission Minutes"
-  },
-  {
-   "date": "2025-02-20",
-   "committee": "Energy Committee",
-   "mover": "Jennifer Smith",
-   "seconder": "Richard Wengenroth",
-   "subject": "accept the minutes as written",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Other business",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02202025-197",
-   "title": "Energy Committee Minutes"
   },
   {
    "date": "2025-02-20",
@@ -207,19 +155,6 @@
    "direction": "toward more",
    "topic": "Budget and money",
    "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172025-105",
-   "title": "Sewer Commission Minutes"
-  },
-  {
-   "date": "2025-03-17",
-   "committee": "Sewer Commission",
-   "mover": "Artie",
-   "seconder": "Jules Pellerin",
-   "subject": "accept the minutes of November 18, 2024 as written",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Other business",
-   "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172025-105",
    "title": "Sewer Commission Minutes"
   },
@@ -289,17 +224,17 @@
    "title": "Water Works Minutes"
   },
   {
-   "date": "2025-03-26",
-   "committee": "Energy Committee",
-   "mover": "Jennifer Smith",
-   "seconder": "Richard Wengenroth",
-   "subject": "accept the minutes as written",
-   "outcome": "passed",
+   "date": "2025-04-07",
+   "committee": "Roads Committee",
+   "mover": "Paulette Malo",
+   "seconder": "Tom",
+   "subject": "recommend to write the recommendation to the Board of Selectmen to reward the bid to indus",
+   "outcome": "",
    "direction": "toward more",
    "topic": "Other business",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03262025-200",
-   "title": "Energy Committee Minutes"
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04072025-275",
+   "title": "Roads Committee Minutes"
   },
   {
    "date": "2025-04-17",
@@ -380,19 +315,6 @@
    "title": "Sewer Commission Minutes"
   },
   {
-   "date": "2025-05-12",
-   "committee": "Energy Committee",
-   "mover": "Jennifer Smith",
-   "seconder": "Richard Wengenroth",
-   "subject": "accept the minutes as written",
-   "outcome": "",
-   "direction": "toward more",
-   "topic": "Other business",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05122025-189",
-   "title": "Energy Committee Minutes"
-  },
-  {
    "date": "2025-05-20",
    "committee": "Sewer Commission",
    "mover": "Artie",
@@ -402,19 +324,6 @@
    "direction": "toward more",
    "topic": "Budget and money",
    "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05202025-108",
-   "title": "Sewer Commission Minutes"
-  },
-  {
-   "date": "2025-05-20",
-   "committee": "Sewer Commission",
-   "mover": "Artie",
-   "seconder": "Paulette Malo",
-   "subject": "accept the minutes April 21, 2025 as written",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Other business",
-   "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05202025-108",
    "title": "Sewer Commission Minutes"
   },
@@ -458,19 +367,6 @@
    "title": "Water Works Minutes"
   },
   {
-   "date": "2025-06-09",
-   "committee": "Roads Committee",
-   "mover": "Paulette Malo",
-   "seconder": "Sandy Goulet",
-   "subject": "All in favor",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06092025-277",
-   "title": "Roads Committee Minutes"
-  },
-  {
    "date": "2025-06-16",
    "committee": "Sewer Commission",
    "mover": "Jules Pellerin",
@@ -506,19 +402,6 @@
    "direction": "toward more",
    "topic": "Budget and money",
    "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109",
-   "title": "Sewer Commission Minutes"
-  },
-  {
-   "date": "2025-06-16",
-   "committee": "Sewer Commission",
-   "mover": "Artie",
-   "seconder": "Paulette Malo",
-   "subject": "accept the minutes May 20, 2025 as written",
-   "outcome": "",
-   "direction": "toward more",
-   "topic": "Other business",
-   "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109",
    "title": "Sewer Commission Minutes"
   },
@@ -573,19 +456,6 @@
    "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06262025-249",
    "title": "Water Works Minutes"
-  },
-  {
-   "date": "2025-07-07",
-   "committee": "Roads Committee",
-   "mover": "Sandy Goulet",
-   "seconder": "Paulette Malo",
-   "subject": "Five in favor, One Abstained",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07072025-278",
-   "title": "Roads Committee Minutes"
   },
   {
    "date": "2025-07-17",
@@ -656,19 +526,6 @@
    "date": "2025-07-21",
    "committee": "Sewer Commission",
    "mover": "Artie",
-   "seconder": "Jules Pellerin",
-   "subject": "accept the minutes June 16, 2025 as written",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Other business",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07212025-110",
-   "title": "Sewer Commission Minutes"
-  },
-  {
-   "date": "2025-07-21",
-   "committee": "Sewer Commission",
-   "mover": "Artie",
    "seconder": "Artie",
    "subject": "come out of Non-Public meeting at 7:30 pm Seconded: Andy seconded the motion. Vote: Andy-Yes Artie-Yes Paulette-Yes Motion: Andy made the motion to seal the Non-Public minutes for 2 years",
    "outcome": "passed",
@@ -681,25 +538,12 @@
   {
    "date": "2025-08-11",
    "committee": "Roads Committee",
-   "mover": "Tom",
-   "seconder": "Paulette Malo",
-   "subject": "All in favor",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08112025-279",
-   "title": "Roads Committee Minutes"
-  },
-  {
-   "date": "2025-08-11",
-   "committee": "Roads Committee",
-   "mover": "Vince",
+   "mover": "Paulette Malo",
    "seconder": "Tom",
-   "subject": "Next meeting September 8, 2025 at 5:30 PM at Town Hall",
+   "subject": "hammerhead should not be allowed as zoning prohibits. The road should be crowned and if additional drainage is needed must be done and pavement thickness needs to be 2 \u00bd\" base and 1 \u00bd\" top coat",
    "outcome": "",
    "direction": "administrative",
-   "topic": "Town facilities",
+   "topic": "Roads and maintenance",
    "procedural": false,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08112025-279",
    "title": "Roads Committee Minutes"
@@ -727,19 +571,6 @@
    "direction": "toward less",
    "topic": "Other business",
    "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08182025-111",
-   "title": "Sewer Commission Minutes"
-  },
-  {
-   "date": "2025-08-18",
-   "committee": "Sewer Commission",
-   "mover": "Artie",
-   "seconder": "Paulette Malo",
-   "subject": "accept the minutes of July 21, 2025 as written",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Other business",
-   "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08182025-111",
    "title": "Sewer Commission Minutes"
   },
@@ -781,32 +612,6 @@
    "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08212025-251",
    "title": "Water Works Minutes"
-  },
-  {
-   "date": "2025-09-08",
-   "committee": "Roads Committee",
-   "mover": "Vince",
-   "seconder": "Tom",
-   "subject": "All in favor, Abstained: Sandy and Buddy",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09082025-280",
-   "title": "Roads Committee Minutes"
-  },
-  {
-   "date": "2025-09-08",
-   "committee": "Roads Committee",
-   "mover": "Vince",
-   "seconder": "Sandy Goulet",
-   "subject": "Next meeting October 6, 2025 at 5:30 PM at Town Hall",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Town facilities",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09082025-280",
-   "title": "Roads Committee Minutes"
   },
   {
    "date": "2025-09-15",
@@ -865,19 +670,6 @@
    "committee": "Water Works",
    "mover": "Edward Lavallee",
    "seconder": "Lawrence Plourde",
-   "subject": "All in favor, motion passed Adjustment Manifest \u2013 To approve the Adjustment Manifest for August in the amount of -$319.50",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Budget and money",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09182025-252",
-   "title": "Water Works Minutes"
-  },
-  {
-   "date": "2025-09-18",
-   "committee": "Water Works",
-   "mover": "Edward Lavallee",
-   "seconder": "Lawrence Plourde",
    "subject": "Late Penalty Manifest",
    "outcome": "passed",
    "direction": "administrative",
@@ -917,19 +709,6 @@
    "committee": "Water Works",
    "mover": "Chet Martel",
    "seconder": "Edward Lavallee",
-   "subject": "All in favor, motion passed Adjustment Manifest \u2013 To approve the Adjustment Manifest for September in the amount of $2,608.14",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Budget and money",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_10162025-253",
-   "title": "Water Works Minutes"
-  },
-  {
-   "date": "2025-10-16",
-   "committee": "Water Works",
-   "mover": "Chet Martel",
-   "seconder": "Edward Lavallee",
    "subject": "Late Penalty Manifest",
    "outcome": "passed",
    "direction": "administrative",
@@ -937,32 +716,6 @@
    "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_10162025-253",
    "title": "Water Works Minutes"
-  },
-  {
-   "date": "2025-11-10",
-   "committee": "Roads Committee",
-   "mover": "Sandy Goulet",
-   "seconder": "Vince",
-   "subject": "Five in favor, Paulette abstained",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11102025-281",
-   "title": "Roads Committee Minutes"
-  },
-  {
-   "date": "2025-11-10",
-   "committee": "Roads Committee",
-   "mover": "Vince",
-   "seconder": "Sandy Goulet",
-   "subject": "Next meeting November 24, 2025 only if necessary",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11102025-281",
-   "title": "Roads Committee Minutes"
   },
   {
    "date": "2025-11-17",
@@ -1034,19 +787,6 @@
    "committee": "Water Works",
    "mover": "Chet Martel",
    "seconder": "Lawrence Plourde",
-   "subject": "All in favor, motion passed Adjustment Manifest \u2013 To approve the Adjustment Manifest for October in the amount of $13,389.47",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Budget and money",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11202025-254",
-   "title": "Water Works Minutes"
-  },
-  {
-   "date": "2025-11-20",
-   "committee": "Water Works",
-   "mover": "Chet Martel",
-   "seconder": "Lawrence Plourde",
    "subject": "General Journal Adjustment Manifest- To approve the General Journal Adjustment Manifest for December 2024 in the amount of $9,513.00",
    "outcome": "passed",
    "direction": "toward more",
@@ -1054,32 +794,6 @@
    "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11202025-254",
    "title": "Water Works Minutes"
-  },
-  {
-   "date": "2025-12-08",
-   "committee": "Roads Committee",
-   "mover": "Sandy Goulet",
-   "seconder": "Tom",
-   "subject": "All in favor",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_12082025-282",
-   "title": "Roads Committee Minutes"
-  },
-  {
-   "date": "2025-12-08",
-   "committee": "Roads Committee",
-   "mover": "Sandy Goulet",
-   "seconder": "Tom",
-   "subject": "All in favor 6:14 P.M",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_12082025-282",
-   "title": "Roads Committee Minutes"
   },
   {
    "date": "2025-12-15",
@@ -1149,19 +863,6 @@
   {
    "date": "2025-12-18",
    "committee": "Water Works",
-   "mover": "Edward Lavallee",
-   "seconder": "Lawrence Plourde",
-   "subject": "All in favor, motion passed Adjustment Manifest \u2013 To approve the Adjustment Manifest for November in the amount of $1,685.58 Motion by Ed Lavallee and Seconded by Larry Plourde",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Budget and money",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_12182025-255",
-   "title": "Water Works Minutes"
-  },
-  {
-   "date": "2025-12-18",
-   "committee": "Water Works",
    "mover": "Kevin Brasley",
    "seconder": "Lawrence Plourde",
    "subject": "go into non-public session at 6:55pm",
@@ -1206,19 +907,6 @@
    "subject": "Billing Register Manifest",
    "outcome": "passed",
    "direction": "administrative",
-   "topic": "Budget and money",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01152026-256",
-   "title": "Water Works Minutes"
-  },
-  {
-   "date": "2026-01-15",
-   "committee": "Water Works",
-   "mover": "Edward Lavallee",
-   "seconder": "Lawrence Plourde",
-   "subject": "All in favor, motion passed Adjustment Manifest \u2013 To approve the Adjustment Manifest for December 2025 in the amount of $2,061.59 Motion by Ed Lavallee and Seconded by Larry Plourde",
-   "outcome": "passed",
-   "direction": "toward more",
    "topic": "Budget and money",
    "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01152026-256",
@@ -1303,37 +991,11 @@
    "title": "Water Works Minutes"
   },
   {
-   "date": "2026-02-18",
-   "committee": "Water Works",
-   "mover": "Edward Lavallee",
-   "seconder": "Lawrence Plourde",
-   "subject": "All in favor, motion passed Adjustment Manifest \u2013 To approve the Adjustment Manifest for December 2025 in the amount of $2,061.59 Motion by Ed Lavallee and Seconded by Larry Plourde",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Budget and money",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182026-257",
-   "title": "Water Works Minutes"
-  },
-  {
    "date": "2026-03-09",
    "committee": "Roads Committee",
    "mover": "Sandy Goulet",
    "seconder": "Paulette Malo",
-   "subject": "All in favor",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03092026-274",
-   "title": "Roads Committee Minutes"
-  },
-  {
-   "date": "2026-03-09",
-   "committee": "Roads Committee",
-   "mover": "Sandy Goulet",
-   "seconder": "Paulette Malo",
-   "subject": "Next meeting April, 13, 2026",
+   "subject": "send the bid package as prepared be sent out",
    "outcome": "",
    "direction": "administrative",
    "topic": "Other business",
@@ -1446,19 +1108,6 @@
    "title": "Water Works Minutes"
   },
   {
-   "date": "2026-03-19",
-   "committee": "Water Works",
-   "mover": "Bruce Kudrick",
-   "seconder": "Thomas Petit",
-   "subject": "All in favor, motion passed Adjustment Manifest \u2013 To approve the Adjustment Manifest for January in the amount of $706.30 and the adjustment manifest for February in the amount of $620.02 Motion by Bruce Kudrick and Seco",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Budget and money",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03192026-258",
-   "title": "Water Works Minutes"
-  },
-  {
    "date": "2026-04-01",
    "committee": "Board of Selectmen",
    "mover": "Sandy Goulet",
@@ -1498,19 +1147,6 @@
    "title": "Board of Selectmen Minutes"
   },
   {
-   "date": "2026-04-13",
-   "committee": "Roads Committee",
-   "mover": "Paulette Malo",
-   "seconder": "Tom",
-   "subject": "Adjourned: 6:28 p.m",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04132026-295",
-   "title": "Roads Committee Minutes"
-  },
-  {
    "date": "2026-04-15",
    "committee": "Board of Selectmen",
    "mover": "Bryan Christiansen",
@@ -1544,19 +1180,6 @@
    "subject": "Billing Register Manifest",
    "outcome": "passed",
    "direction": "administrative",
-   "topic": "Budget and money",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04162026-342",
-   "title": "Water Works Minutes"
-  },
-  {
-   "date": "2026-04-16",
-   "committee": "Water Works",
-   "mover": "Edward Lavallee",
-   "seconder": "Thomas Petit",
-   "subject": "All in favor, motion passed Adjustment Manifest \u2013 To approve the Adjustment Manifest for March in the amount of $3,138.47 Motion by Ed Lavallee and Seconded by Tom Petit",
-   "outcome": "passed",
-   "direction": "toward more",
    "topic": "Budget and money",
    "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04162026-342",
@@ -1641,32 +1264,6 @@
    "title": "Board of Selectmen Minutes"
   },
   {
-   "date": "2026-05-11",
-   "committee": "Roads Committee",
-   "mover": "Sandy Goulet",
-   "seconder": "Paulette Malo",
-   "subject": "All in favor, Sandy abstained",
-   "outcome": "passed",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05112026-296",
-   "title": "Roads Committee Minutes"
-  },
-  {
-   "date": "2026-05-11",
-   "committee": "Roads Committee",
-   "mover": "Sandy Goulet",
-   "seconder": "Paulette Malo",
-   "subject": "Adjourned: 5:49 p.m",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05112026-296",
-   "title": "Roads Committee Minutes"
-  },
-  {
    "date": "2026-05-20",
    "committee": "Board of Selectmen",
    "mover": "Sandy Goulet",
@@ -1700,19 +1297,6 @@
    "subject": "Billing Register Manifest",
    "outcome": "passed",
    "direction": "administrative",
-   "topic": "Budget and money",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05212026-341",
-   "title": "Water Works Minutes"
-  },
-  {
-   "date": "2026-05-21",
-   "committee": "Water Works",
-   "mover": "Thomas Petit",
-   "seconder": "Edward Lavallee",
-   "subject": "All in favor, motion passed Adjustment Manifest \u2013 To approve the Adjustment Manifest for April in the amount of $8,486.20 In addition to approve the General Journal Adjustment Manifest for December 2025 in the amount of ",
-   "outcome": "passed",
-   "direction": "toward more",
    "topic": "Budget and money",
    "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05212026-341",
@@ -1756,19 +1340,6 @@
    "procedural": false,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06032026-289",
    "title": "Board of Selectmen Minutes"
-  },
-  {
-   "date": "2026-06-08",
-   "committee": "Roads Committee",
-   "mover": "Brent Edmonds",
-   "seconder": "Tom",
-   "subject": "Adjourned: 5:59 p.m",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06082026-309",
-   "title": "Roads Committee Minutes"
   },
   {
    "date": "2026-06-16",
@@ -1832,19 +1403,6 @@
    "direction": "administrative",
    "topic": "Budget and money",
    "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06182026-339",
-   "title": "Water Works Minutes"
-  },
-  {
-   "date": "2026-06-18",
-   "committee": "Water Works",
-   "mover": "Edward Lavallee",
-   "seconder": "Lawrence Plourde",
-   "subject": "All in favor, motion passed",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06182026-339",
    "title": "Water Works Minutes"
   },
@@ -1940,19 +1498,6 @@
    "title": "Board of Selectmen Minutes"
   },
   {
-   "date": "2026-08-13",
-   "committee": "Capital Improvement Program",
-   "mover": "Michael Rodney",
-   "seconder": "Kathy Cruson",
-   "subject": "accept the minutes of August 6th",
-   "outcome": "passed",
-   "direction": "toward more",
-   "topic": "Other business",
-   "procedural": true,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08132026-362",
-   "title": "Capital Improvement Program Minutes"
-  },
-  {
    "date": "2026-08-17",
    "committee": "Sewer Commission",
    "mover": "Artie",
@@ -2029,19 +1574,6 @@
    "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08202026-381",
    "title": "Capital Improvement Program Minutes"
-  },
-  {
-   "date": "2026-09-14",
-   "committee": "Roads Committee",
-   "mover": "Sandy Goulet",
-   "seconder": "Vince",
-   "subject": "Next meeting Monday, October 19, 2026, 5:30 P.M",
-   "outcome": "",
-   "direction": "administrative",
-   "topic": "Other business",
-   "procedural": false,
-   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09142026-385",
-   "title": "Roads Committee Minutes"
   }
  ],
  "named_votes": [
@@ -2683,204 +2215,310 @@
   }
  ],
  "attendance": {
-  "Mark LePage": {
-   "present": 14
+  "budget committee": {
+   "Mark LePage": {
+    "present": 14
+   },
+   "Gerry Fleury": {
+    "present": 13,
+    "excused": 1
+   },
+   "Clint Hanson": {
+    "present": 14
+   },
+   "Gene Gauss": {
+    "present": 3,
+    "excused": 5
+   },
+   "Brian Seaworth": {
+    "present": 9,
+    "excused": 1
+   },
+   "Louis Caron": {
+    "present": 10,
+    "excused": 1
+   },
+   "Matt Miller": {
+    "present": 12
+   },
+   "Susanne Whitbeck": {
+    "present": 4,
+    "excused": 1
+   },
+   "Jason Mayeu": {
+    "excused": 2
+   },
+   "Kristopher DeLorme": {
+    "excused": 1,
+    "present": 2
+   },
+   "Mariana Beer": {
+    "excused": 1
+   }
   },
-  "Gerry Fleury": {
-   "present": 13,
-   "excused": 1
+  "economic development committee": {
+   "Kate Castaldo-Rice": {
+    "excused": 3,
+    "present": 7
+   },
+   "Dana Carlucci": {
+    "excused": 8,
+    "present": 2
+   },
+   "Bryan Christiansen": {
+    "present": 7,
+    "excused": 3
+   },
+   "Clint Hanson": {
+    "present": 9,
+    "excused": 3
+   },
+   "Center Board": {
+    "present": 8,
+    "excused": 3
+   },
+   "Charles Therrien": {
+    "excused": 5
+   }
   },
-  "Clint Hanson": {
-   "present": 14,
-   "excused": 5
+  "conservation commission": {
+   "Ammy Heiser": {
+    "excused": 4,
+    "present": 1
+   },
+   "Ayn Whytemare": {
+    "excused": 5
+   },
+   "Wendy Weisiger": {
+    "excused": 7,
+    "present": 1
+   },
+   "Erin Insley": {
+    "present": 1
+   },
+   "Joshua Bursey": {
+    "present": 1
+   },
+   "Karen Yeaton": {
+    "excused": 2
+   }
   },
-  "Gene Gauss": {
-   "present": 3,
-   "excused": 5
+  "cemetery commission": {
+   "Daniel Chase": {
+    "present": 6
+   },
+   "James Garvin": {
+    "present": 12
+   },
+   "Adam Mendozza": {
+    "present": 11
+   },
+   "Ellen Paulsen": {
+    "present": 12
+   },
+   "Zachary Sawyer": {
+    "present": 6
+   },
+   "Fleda Young": {
+    "present": 2
+   }
   },
-  "Brian Seaworth": {
-   "present": 9,
-   "excused": 1
+  "board of selectmen": {
+   "Rick Frederickson": {
+    "present": 11,
+    "excused": 6
+   },
+   "Sandy Goulet": {
+    "present": 17,
+    "excused": 9
+   },
+   "Bryan Christiansen": {
+    "present": 38,
+    "excused": 5
+   },
+   "Karen Yeaton": {
+    "present": 33,
+    "excused": 2
+   },
+   "Matt Miller": {
+    "present": 35,
+    "excused": 2
+   },
+   "Kate Castaldo-Rice": {
+    "excused": 1
+   },
+   "Clint Hanson": {
+    "excused": 2
+   },
+   "Center Board": {
+    "excused": 2
+   },
+   "Charles Therrien": {
+    "excused": 3
+   },
+   "Burton Curley": {
+    "excused": 1
+   },
+   "Program Committee": {
+    "excused": 1
+   },
+   "Peter Gagyi": {
+    "present": 4
+   }
   },
-  "Louis Caron": {
-   "present": 10,
-   "excused": 1
+  "energy committee": {
+   "Pentti Aalto": {
+    "excused": 5
+   },
+   "Jackie Wengenroth": {
+    "excused": 2
+   },
+   "Jennifer Smith": {
+    "excused": 1
+   }
   },
-  "None": {
-   "present": 15,
-   "excused": 13
+  "water works": {
+   "Kevin Brasley": {
+    "present": 17
+   },
+   "Bruce Kudrick": {
+    "present": 17
+   },
+   "Edward Lavallee": {
+    "present": 15,
+    "excused": 1
+   },
+   "Chet Martel": {
+    "excused": 9,
+    "present": 6
+   },
+   "Lawrence Plourde": {
+    "excused": 2,
+    "present": 15
+   },
+   "Lynne Bledsoe Saint Coeur": {
+    "excused": 4
+   },
+   "Ed Lavellee": {
+    "excused": 1
+   },
+   "Thomas Petit": {
+    "present": 3
+   }
   },
-  "Kate Castaldo-Rice": {
-   "excused": 4
+  "roads committee": {
+   "Buddy": {
+    "present": 8,
+    "excused": 4
+   },
+   "Burton Curley": {
+    "present": 8,
+    "excused": 4
+   },
+   "Sandy Goulet": {
+    "present": 11,
+    "excused": 3
+   },
+   "Paulette Malo": {
+    "present": 11,
+    "excused": 2
+   },
+   "Adam Mendozza": {
+    "present": 12,
+    "excused": 4
+   },
+   "Tom Gallo": {
+    "excused": 3,
+    "present": 13
+   },
+   "Brian Seaworth": {
+    "present": 2,
+    "excused": 1
+   },
+   "Brent Edmonds": {
+    "present": 11,
+    "excused": 2
+   }
   },
-  "Dana Carlucci": {
-   "excused": 8,
-   "present": 2
+  "sewer commission": {
+   "Paulette Malo": {
+    "present": 19
+   },
+   "Jules Pellerin": {
+    "excused": 18,
+    "present": 39
+   }
   },
-  "Ammy Heiser": {
-   "excused": 4,
-   "present": 1
+  "range roads subcommittee": {
+   "Stephanie Cravotta": {
+    "excused": 2
+   },
+   "Center Board": {
+    "excused": 2
+   },
+   "Burton Curley": {
+    "excused": 5
+   },
+   "Program Committee": {
+    "excused": 5
+   }
   },
-  "Ayn Whytemare": {
-   "excused": 5
+  "trustees of trust funds": {
+   "Zephan Wood": {
+    "present": 1
+   },
+   "Courtney Eschbach": {
+    "present": 1
+   },
+   "Gerry Fleury": {
+    "present": 1
+   }
   },
-  "Daniel Chase": {
-   "present": 6
+  "zoning board of adjustment": {
+   "Christopher Coffill": {
+    "present": 1
+   },
+   "Concord": {
+    "present": 1
+   },
+   "NH": {
+    "present": 1
+   },
+   "Bridget Elsemore": {
+    "present": 1
+   }
   },
-  "James Garvin": {
-   "present": 12
-  },
-  "Adam Mendozza": {
-   "present": 11
-  },
-  "Ellen Paulsen": {
-   "present": 12
-  },
-  "Zachary Sawyer": {
-   "present": 6
-  },
-  "Rick Frederickson": {
-   "present": 11,
-   "excused": 6
-  },
-  "Sandy Goulet": {
-   "present": 17,
-   "excused": 9
-  },
-  "Bryan Christiansen": {
-   "present": 38,
-   "excused": 8
-  },
-  "Pentti Aalto": {
-   "excused": 5
-  },
-  "Matt Miller": {
-   "present": 47,
-   "excused": 2
-  },
-  "Kevin Brasley": {
-   "present": 17
-  },
-  "Bruce Kudrick": {
-   "present": 17
-  },
-  "Edward Lavallee": {
-   "present": 15,
-   "excused": 1
-  },
-  "Chet Martel": {
-   "excused": 9,
-   "present": 6
-  },
-  "Lawrence Plourde": {
-   "excused": 2,
-   "present": 15
-  },
-  "Karen Yeaton": {
-   "present": 33,
-   "excused": 4
-  },
-  "Wendy Weisiger": {
-   "excused": 7,
-   "present": 1
-  },
-  "Fleda Young": {
-   "present": 2
-  },
-  "Stephanie Cravotta": {
-   "excused": 2
-  },
-  "Center Board": {
-   "excused": 7
-  },
-  "Burton Curley": {
-   "excused": 6
-  },
-  "Program Committee": {
-   "excused": 6
-  },
-  "Lynne Bledsoe Saint Coeur": {
-   "excused": 4
-  },
-  "Erin Insley": {
-   "present": 1
-  },
-  "Joshua Bursey": {
-   "present": 1
-  },
-  "Jackie Wengenroth": {
-   "excused": 2
-  },
-  "Charles Therrien": {
-   "excused": 8
-  },
-  "Jennifer Smith": {
-   "excused": 1
-  },
-  "Ed Lavellee": {
-   "excused": 1
-  },
-  "Christopher Coffill": {
-   "present": 1
-  },
-  "Susanne Whitbeck": {
-   "present": 4,
-   "excused": 1
-  },
-  "Jason Mayeu": {
-   "excused": 2
-  },
-  "Kristopher DeLorme": {
-   "excused": 1,
-   "present": 2
-  },
-  "Mariana Beer": {
-   "excused": 1
-  },
-  "Thomas Petit": {
-   "present": 3
-  },
-  "Inc": {
-   "present": 1
-  },
-  "Melaine Boisvert": {
-   "present": 3
-  },
-  "Joan Bussiere": {
-   "present": 2
-  },
-  "Lorette Girard": {
-   "present": 1
-  },
-  "Luc": {
-   "present": 1
-  },
-  "Peter Gagyi": {
-   "present": 4
-  },
-  "Concord": {
-   "present": 1
-  },
-  "NH": {
-   "present": 1
-  },
-  "Joyce Belanger": {
-   "present": 1
-  },
-  "Bridget Elsemore": {
-   "present": 1
-  },
-  "Jason Anderson": {
-   "present": 1
-  },
-  "Erika Flewelling": {
-   "present": 1
-  },
-  "Pat Fowler": {
-   "present": 1
-  },
-  "Doc": {
-   "present": 1
+  "meet me in suncook": {
+   "Melaine Boisvert": {
+    "present": 3
+   },
+   "Joan Bussiere": {
+    "present": 2
+   },
+   "Dana Carlucci": {
+    "present": 2
+   },
+   "Lorette Girard": {
+    "present": 1
+   },
+   "Luc": {
+    "present": 1
+   },
+   "Joyce Belanger": {
+    "present": 1
+   },
+   "Jason Anderson": {
+    "present": 1
+   },
+   "Erika Flewelling": {
+    "present": 1
+   },
+   "Pat Fowler": {
+    "present": 1
+   },
+   "Doc": {
+    "present": 1
+   }
   }
  }
 }

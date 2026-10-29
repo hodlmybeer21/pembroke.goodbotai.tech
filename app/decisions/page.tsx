@@ -31,6 +31,14 @@ export const metadata = {
     description:
       "The direction of the town, and who moved what — from the town's own meeting minutes.",
     url: "https://pembroke.goodbotai.tech/decisions",
+    images: [
+      {
+        url: "/og-decisions.svg",
+        width: 1200,
+        height: 630,
+        alt: "How the town decides things — two years of Pembroke meeting minutes",
+      },
+    ],
   },
 };
 

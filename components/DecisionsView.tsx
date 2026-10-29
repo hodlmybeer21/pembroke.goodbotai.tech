@@ -120,6 +120,359 @@ function Legend({ color, label }: { color: string; label: string }) {
   );
 }
 
+// -------------------------------------------------------------- issues
+function IssueTracker({ summary }: { summary: GovernanceSummary }) {
+  const [open, setOpen] = useState<string | null>(null);
+  const issues = summary.issues.filter((i) => i.count > 0);
+  return (
+    <div>
+      <h3 className="text-sm font-semibold text-stone-900">
+        The issues the town keeps coming back to
+      </h3>
+      <p className="mt-0.5 text-xs text-stone-600">
+        Substantive motions grouped by the matter they concern. An issue
+        with a dozen decisions is a live argument; one with a single
+        decision is housekeeping.
+      </p>
+      <ul className="mt-3 space-y-2">
+        {issues.map((i) => {
+          const expanded = open === i.issue;
+          const movers = Object.entries(i.movers);
+          return (
+            <li key={i.issue} className="rounded-lg border border-stone-200">
+              <button
+                type="button"
+                onClick={() => setOpen(expanded ? null : i.issue)}
+                aria-expanded={expanded}
+                className="w-full px-3 py-2.5 text-left"
+              >
+                <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+                  <span className="font-medium text-stone-900">{i.issue}</span>
+                  <span className="shrink-0 text-xs text-stone-500">
+                    {i.count} decision{i.count === 1 ? "" : "s"}
+                    {i.first && i.last ? ` · ${fmtDate(i.first)}–${fmtDate(i.last)}` : ""}
+                  </span>
+                </div>
+                <div className="mt-1.5 flex h-1.5 w-full overflow-hidden rounded-sm bg-stone-100">
+                  <span style={{ width: `${(i.more / i.count) * 100}%`, backgroundColor: DIR_MORE }} />
+                  <span style={{ width: `${(i.admin / i.count) * 100}%`, backgroundColor: DIR_ADMIN }} />
+                  <span style={{ width: `${(i.less / i.count) * 100}%`, backgroundColor: DIR_LESS }} />
+                </div>
+                <div className="mt-1 flex flex-wrap gap-x-3 text-[11px] text-stone-600">
+                  <span>{i.more} toward more</span>
+                  <span>{i.less} toward less</span>
+                  {i.money_named > 0 && (
+                    <span className="font-medium text-stone-800">
+                      ${i.money_named.toLocaleString()} named
+                    </span>
+                  )}
+                </div>
+              </button>
+              {expanded && (
+                <div className="border-t border-stone-100 px-3 py-2.5">
+                  {movers.length > 0 && (
+                    <p className="text-xs text-stone-600">
+                      Moved most often by{" "}
+                      {movers.map(([n, c], i) => (
+                        <span key={n}>
+                          {i > 0 && ", "}
+                          <span className="font-medium text-stone-800">{n}</span> ({c})
+                        </span>
+                      ))}
+                    </p>
+                  )}
+                  <ul className="mt-2 space-y-1.5">
+                    {summary.motions
+                      .filter((m) => m.issue === i.issue)
+                      .map((m, k) => (
+                        <li key={k} className="text-xs">
+                          <span className="text-stone-500">{fmtDate(m.date)}</span>{" "}
+                          <span className="text-stone-800">{m.subject}</span>
+                          {m.mover && (
+                            <span className="text-stone-500"> — {m.mover}</span>
+                          )}
+                        </li>
+                      ))}
+                  </ul>
+                </div>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
+
+// ----------------------------------------------------------- attendance
+function AttendanceTable({ rows }: { rows: GovernanceSummary["attendance"] }) {
+  const [open, setOpen] = useState<string | null>(rows[0]?.committee ?? null);
+  return (
+    <div>
+      <h3 className="text-sm font-semibold text-stone-900">
+        Who shows up
+      </h3>
+      <p className="mt-0.5 text-xs text-stone-600">
+        Meetings each member attended, out of the meetings where the
+        minutes record them. An excused absence still counts as being on
+        the body.
+      </p>
+      <ul className="mt-3 space-y-1.5">
+        {rows.map((r) => {
+          const expanded = open === r.committee;
+          return (
+            <li key={r.committee} className="rounded-lg border border-stone-200">
+              <button
+                type="button"
+                onClick={() => setOpen(expanded ? null : r.committee)}
+                aria-expanded={expanded}
+                className="flex w-full items-baseline justify-between gap-2 px-3 py-2 text-left"
+              >
+                <span className="text-sm font-medium text-stone-900">
+                  {r.committee}
+                </span>
+                <span className="shrink-0 text-xs text-stone-500">
+                  {r.people.length} people · {r.meetings} meetings recorded
+                </span>
+              </button>
+              {expanded && (
+                <ul className="space-y-1.5 border-t border-stone-100 px-3 py-2.5">
+                  {r.people.map((p) => (
+                    <li key={p.name} className="flex items-center gap-2">
+                      <span className="w-32 shrink-0 truncate text-xs text-stone-700 sm:w-40">
+                        {p.name}
+                      </span>
+                      <span className="h-2.5 flex-1 overflow-hidden rounded-sm bg-stone-100">
+                        <span
+                          className="block h-full rounded-sm bg-stone-600"
+                          style={{ width: `${p.rate}%` }}
+                        />
+                      </span>
+                      <span className="w-14 shrink-0 text-right text-[11px] text-stone-500">
+                        {p.present}/{p.present + p.excused} · {p.rate}%
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
+
+// -------------------------------------------------------- voting analysis
+function VotingAnalysis({ summary }: { summary: GovernanceSummary }) {
+  const [tab, setTab] = useState<"contested" | "pairs" | "records">("contested");
+  const record = summary.members.filter((m) => m.yes + m.no + m.abstain > 0);
+  return (
+    <div>
+      <h3 className="text-sm font-semibold text-stone-900">
+        How members actually voted
+      </h3>
+      <p className="mt-0.5 text-xs text-stone-600">
+        Only a minority of meetings record who voted which way. This is
+        everything the minutes spell out.
+      </p>
+
+      <div className="mt-3 flex flex-wrap gap-2">
+        {(
+          [
+            ["contested", `Where anyone dissented (${summary.contested.length})`],
+            ["pairs", "Who votes with whom"],
+            ["records", "Every member's record"],
+          ] as const
+        ).map(([key, label]) => (
+          <button
+            key={key}
+            onClick={() => setTab(key)}
+            aria-pressed={tab === key}
+            className={`rounded-full border px-3 py-1 text-xs ${
+              tab === key
+                ? "border-stone-900 bg-stone-900 text-white"
+                : "border-stone-300 bg-white text-stone-700"
+            }`}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {tab === "contested" && (
+        <div className="mt-3">
+          {summary.contested.length === 0 ? (
+            <p className="text-sm text-stone-600">
+              No recorded vote had a no or an abstention.
+            </p>
+          ) : (
+            <ul className="space-y-2">
+              {summary.contested.map((c, i) => (
+                <li key={i} className="rounded-lg border border-amber-200 bg-amber-50 p-3">
+                  <div className="flex flex-wrap items-baseline gap-x-2">
+                    <span className="text-xs text-stone-600">{fmtDate(c.date)}</span>
+                    <span className="text-xs font-medium text-stone-800">
+                      {c.committee}
+                    </span>
+                  </div>
+                  <div className="mt-1 text-sm text-stone-900">
+                    {c.dissenters.length > 0 && (
+                      <>
+                        <span className="font-semibold text-red-800">
+                          {c.dissenters.join(", ")} voted no.
+                        </span>{" "}
+                      </>
+                    )}
+                    {c.abstentions.length > 0 && (
+                      <span className="text-amber-900">
+                        {c.abstentions.join(", ")} abstained.
+                      </span>
+                    )}
+                  </div>
+                  {c.url && (
+                    <a href={c.url} target="_blank" rel="noopener noreferrer"
+                       className="mt-1 inline-block text-xs underline text-stone-600">
+                      Source minutes
+                    </a>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
+
+      {tab === "pairs" && (
+        <ul className="mt-3 space-y-1">
+          {summary.vote_pairs.slice(0, 16).map((p, i) => (
+            <li key={i} className="flex items-baseline justify-between gap-3 border-b border-stone-100 py-1.5 text-sm">
+              <span className="min-w-0 truncate text-stone-800">
+                {p.a} <span className="text-stone-400">+</span> {p.b}
+              </span>
+              <span className="shrink-0 text-xs text-stone-500">
+                {p.together} vote{p.together === 1 ? "" : "s"} together
+                {p.share !== null ? ` · ${p.share}%` : ""}
+              </span>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {tab === "records" && (
+        <div className="mt-3 overflow-x-auto">
+          <table className="w-full min-w-[460px] border-collapse text-sm">
+            <thead>
+              <tr className="border-b border-stone-300 text-left">
+                <th className="py-1.5 pr-3 font-medium text-stone-600">Member</th>
+                <th className="py-1.5 pr-3 text-right font-medium text-stone-600">Yes</th>
+                <th className="py-1.5 pr-3 text-right font-medium text-stone-600">No</th>
+                <th className="py-1.5 pr-3 text-right font-medium text-stone-600">Abstain</th>
+                <th className="py-1.5 text-right font-medium text-stone-600">Motions moved</th>
+              </tr>
+            </thead>
+            <tbody>
+              {record.map((m) => (
+                <tr key={m.name} className="border-b border-stone-100">
+                  <td className="py-1.5 pr-3 text-stone-800">{m.name}</td>
+                  <td className="py-1.5 pr-3 text-right text-stone-700">{m.yes}</td>
+                  <td className={`py-1.5 pr-3 text-right ${m.no ? "font-semibold text-red-800" : "text-stone-400"}`}>
+                    {m.no || "—"}
+                  </td>
+                  <td className="py-1.5 pr-3 text-right text-stone-400">{m.abstain || "—"}</td>
+                  <td className="py-1.5 text-right text-stone-600">{m.moved}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// --------------------------------------------------------- relationships
+function Relationships({ summary }: { summary: GovernanceSummary }) {
+  const rels = summary.relationships;
+  const max = Math.max(...rels.map((r) => r.count), 1);
+  return (
+    <div>
+      <h3 className="text-sm font-semibold text-stone-900">
+        Who works with whom
+      </h3>
+      <p className="mt-0.5 text-xs text-stone-600">
+        A second is the public act of supporting a motion for discussion.
+        These are the pairs that have done it most often — structure, not
+        a verdict about anyone.
+      </p>
+      <ul className="mt-3 space-y-1.5">
+        {rels.slice(0, 14).map((r, i) => (
+          <li key={i} className="flex items-center gap-2">
+            <span className="w-36 shrink-0 truncate text-xs text-stone-700 sm:w-44">
+              {r.mover}
+            </span>
+            <span className="shrink-0 text-xs text-stone-400">→</span>
+            <span className="w-32 shrink-0 truncate text-xs text-stone-700 sm:w-40">
+              {r.seconder}
+            </span>
+            <span className="h-3 flex-1 overflow-hidden rounded-sm bg-stone-100">
+              <span
+                className="block h-full rounded-sm bg-stone-500"
+                style={{ width: `${(r.count / max) * 100}%` }}
+              />
+            </span>
+            <span className="w-8 shrink-0 text-right text-xs font-medium text-stone-900">
+              {r.count}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+// --------------------------------------------------------------- money
+function MoneyTrail({ rows }: { rows: GovernanceSummary["money"] }) {
+  const top = rows.slice(0, 12);
+  return (
+    <div>
+      <h3 className="text-sm font-semibold text-stone-900">
+        The money
+      </h3>
+      <p className="mt-0.5 text-xs text-stone-600">
+        The largest dollar figures the motions name. Some of these are
+        spending; some are moving money between accounts; all of them are
+        in the minutes.
+      </p>
+      <ul className="mt-3 divide-y divide-stone-100 border-t border-stone-200">
+        {top.map((m, i) => (
+          <li key={i} className="py-2">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-3">
+              <span className="font-serif text-lg font-semibold text-stone-900">
+                ${m.amount.toLocaleString()}
+              </span>
+              <span className="text-xs text-stone-500">
+                {fmtDate(m.date)} · {m.committee}
+              </span>
+            </div>
+            <div className="mt-0.5 text-sm text-stone-800">{m.subject}</div>
+            <div className="mt-0.5 flex flex-wrap gap-x-3 text-xs text-stone-500">
+              <span>{m.issue}</span>
+              {m.mover && <span>moved by {m.mover}</span>}
+              {m.url && (
+                <a href={m.url} target="_blank" rel="noopener noreferrer"
+                   className="underline">
+                  Source minutes
+                </a>
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 // -------------------------------------------------------------- timeline
 function Timeline({ data }: { data: GovernanceSummary["timeline"] }) {
   if (!data.length) return null;
@@ -263,6 +616,7 @@ function MemberRow({ m }: { m: MemberSummary }) {
 function MotionRecord({ motions }: { motions: MotionRow[] }) {
   const [committee, setCommittee] = useState("all");
   const [topic, setTopic] = useState("all");
+  const [issue, setIssue] = useState("all");
   const [direction, setDirection] = useState("all");
   const [query, setQuery] = useState("");
 
@@ -274,20 +628,25 @@ function MotionRecord({ motions }: { motions: MotionRow[] }) {
     () => Array.from(new Set(motions.map((m) => m.topic))).sort(),
     [motions]
   );
+  const issues = useMemo(
+    () => Array.from(new Set(motions.map((m) => m.issue))).sort(),
+    [motions]
+  );
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return motions.filter((m) => {
       if (committee !== "all" && m.committee !== committee) return false;
       if (topic !== "all" && m.topic !== topic) return false;
+      if (issue !== "all" && m.issue !== issue) return false;
       if (direction !== "all" && m.direction !== direction) return false;
       if (q) {
-        const hay = `${m.subject} ${m.mover ?? ""} ${m.seconder ?? ""} ${m.topic}`;
+        const hay = `${m.subject} ${m.mover ?? ""} ${m.seconder ?? ""} ${m.topic} ${m.issue}`;
         if (!hay.toLowerCase().includes(q)) return false;
       }
       return true;
     });
-  }, [motions, committee, topic, direction, query]);
+  }, [motions, committee, topic, issue, direction, query]);
 
   const sel = "rounded-md border border-stone-300 bg-white px-2 py-1.5 text-sm";
 
@@ -318,6 +677,13 @@ function MotionRecord({ motions }: { motions: MotionRow[] }) {
                 className={sel} aria-label="Filter by subject">
           <option value="all">All subjects</option>
           {topics.map((t) => (
+            <option key={t} value={t}>{t}</option>
+          ))}
+        </select>
+        <select value={issue} onChange={(e) => setIssue(e.target.value)}
+                className={sel} aria-label="Filter by issue">
+          <option value="all">All issues</option>
+          {issues.map((t) => (
             <option key={t} value={t}>{t}</option>
           ))}
         </select>
@@ -458,9 +824,9 @@ export function DecisionsView({ summary }: { summary: GovernanceSummary }) {
       {/* headline numbers */}
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         <Stat value={String(totals.motions)} label="decisions read from the minutes" />
-        <Stat value={String(totals.more)} label="moved the town toward more" tone="green" />
+        <Stat value={String(totals.issues)} label="distinct issues the town has worked" />
         <Stat value={String(totals.less)} label="moved the town toward less" tone="amber" />
-        <Stat value={String(summary.votes.length)} label="votes recorded by name" />
+        <Stat value={String(totals.contested)} label="votes where anyone dissented" tone="amber" />
       </div>
 
       <div className="mt-6 grid gap-8 lg:grid-cols-2">
@@ -468,8 +834,24 @@ export function DecisionsView({ summary }: { summary: GovernanceSummary }) {
         <DirectionChart topics={summary.topics} />
       </div>
 
-      <div className="mt-8">
-        <Timeline data={summary.timeline} />
+      <div className="mt-8 border-t border-stone-200 pt-6">
+        <IssueTracker summary={summary} />
+      </div>
+
+      <div className="mt-8 grid gap-8 lg:grid-cols-2">
+        <AttendanceTable rows={summary.attendance} />
+        <Relationships summary={summary} />
+      </div>
+
+      <div className="mt-8 border-t border-stone-200 pt-6">
+        <VotingAnalysis summary={summary} />
+      </div>
+
+      <div className="mt-8 grid gap-8 lg:grid-cols-2">
+        <MoneyTrail rows={summary.money} />
+        <div>
+          <Timeline data={summary.timeline} />
+        </div>
       </div>
 
       <div className="mt-8 border-t border-stone-200 pt-6">
@@ -517,6 +899,25 @@ export function DecisionsView({ summary }: { summary: GovernanceSummary }) {
             Routine business — approving minutes, paying bills, scheduling
             meetings — is filtered out. It is real, but it does not show
             which way the town is heading.
+          </li>
+          <li>
+            <strong>Attendance is attendance, not a verdict.</strong> Some
+            committees are small and meet irregularly, so a percentage
+            means different things in different rooms. It is here because
+            showing up is a fact, not because it is a judgement.
+          </li>
+          <li>
+            <strong>&ldquo;Who works with whom&rdquo; is structure, not
+            influence.</strong> A second is the public act of supporting a
+            motion for discussion. We do not turn that into a measure of
+            anyone&rsquo;s power, and we do not rank names.
+          </li>
+          <li>
+            Issues are grouped by the matter a motion concerns, so
+            &ldquo;sewer billing and abatements&rdquo; brings together
+            every late-penalty decision the commission made. The grouping
+            is ours, not the town&rsquo;s — the wording of each decision is
+            the town&rsquo;s own.
           </li>
         </ul>
         <p className="mt-4 text-xs text-stone-500">
