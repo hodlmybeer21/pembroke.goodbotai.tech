@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-29T16:31:09.534890+00:00",
+ "generated_at": "2026-10-29T16:37:37.347776+00:00",
  "source": "Town of Pembroke property database (AxisGIS) - tax assessment and recorded sales",
  "source_url": "https://www.axisgis.com/PembrokeNH/",
  "town": "Pembroke, NH",
  "years_shown": 4,
- "count": 214,
- "market_sale_count": 171,
- "below_assessment_count": 46,
+ "count": 343,
+ "market_sale_count": 260,
+ "below_assessment_count": 72,
  "sales": [
   {
    "cama": "264-0041-006-000",
@@ -31,6 +31,41 @@
    "acres": 2.02741,
    "zone": "R-1B",
    "prior_sales": []
+  },
+  {
+   "cama": "937-0012-000-000",
+   "address": "338 NO PEMBROKE RD",
+   "sale_price": 720000,
+   "sale_date": "2026-09-25",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 488500,
+   "assessed_land": 126300,
+   "assessed_bldg": 354600,
+   "difference": 231500,
+   "pct_of_assessed": 47.4,
+   "below_assessment": false,
+   "lat": 43.19073,
+   "lon": -71.417616,
+   "use": "SINGLE FAM",
+   "sqft": "2336",
+   "beds": "3",
+   "baths": "3",
+   "year_built": "1988",
+   "acres": 1.2,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1996-03-29",
+     "price": 146500,
+     "qualified": "U"
+    },
+    {
+     "date": "2020-09-02",
+     "price": 382000,
+     "qualified": "Q"
+    }
+   ]
   },
   {
    "cama": "565-0039-000-000",
@@ -178,6 +213,30 @@
    ]
   },
   {
+   "cama": "VW-0119-000-000",
+   "address": "8 UNION ST",
+   "sale_price": 125000,
+   "sale_date": "2026-09-15",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 222400,
+   "assessed_land": 80100,
+   "assessed_bldg": 142100,
+   "difference": -97400,
+   "pct_of_assessed": -43.8,
+   "below_assessment": true,
+   "lat": 43.131553,
+   "lon": -71.453792,
+   "use": "SINGLE FAM",
+   "sqft": "1082",
+   "beds": "2",
+   "baths": "2",
+   "year_built": "1880",
+   "acres": 0.12,
+   "zone": "B-1A",
+   "prior_sales": []
+  },
+  {
    "cama": "565-0204-000-000",
    "address": "383 ROWE AVE",
    "sale_price": 487500,
@@ -209,6 +268,71 @@
      "date": "2008-06-20",
      "price": 242500,
      "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0004-000-000",
+   "address": "6-8 PLEASANT ST",
+   "sale_price": 375000,
+   "sale_date": "2026-09-04",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 391100,
+   "assessed_land": 114500,
+   "assessed_bldg": 269100,
+   "difference": -16100,
+   "pct_of_assessed": -4.1,
+   "below_assessment": true,
+   "lat": 43.132566,
+   "lon": -71.452934,
+   "use": "TWO FAMILY",
+   "sqft": "2116",
+   "beds": "5",
+   "baths": "2",
+   "year_built": "1928",
+   "acres": 0.259568,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2002-08-30",
+     "price": 189900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2006-05-30",
+     "price": 254000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0151-000-000",
+   "address": "163-165 MAIN ST",
+   "sale_price": 525000,
+   "sale_date": "2026-08-24",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 369200,
+   "assessed_land": 83600,
+   "assessed_bldg": 285600,
+   "difference": 155800,
+   "pct_of_assessed": 42.2,
+   "below_assessment": false,
+   "lat": 43.131758,
+   "lon": -71.45227,
+   "use": "THREE FAM",
+   "sqft": "2290",
+   "beds": "4",
+   "baths": "3",
+   "year_built": "1903",
+   "acres": 0.09,
+   "zone": "B-2",
+   "prior_sales": [
+    {
+     "date": "1978-06-01",
+     "price": 36500,
+     "qualified": "U"
     }
    ]
   },
@@ -378,6 +502,160 @@
    ]
   },
   {
+   "cama": "VW-0052-000-000",
+   "address": "10 LINDY ST",
+   "sale_price": 300000,
+   "sale_date": "2026-08-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 236100,
+   "assessed_land": 124900,
+   "assessed_bldg": 102000,
+   "difference": 63900,
+   "pct_of_assessed": 27.1,
+   "below_assessment": false,
+   "lat": 43.135464,
+   "lon": -71.454958,
+   "use": "SINGLE FAM",
+   "sqft": "801",
+   "beds": "1",
+   "baths": "1",
+   "year_built": "1928",
+   "acres": 0.21,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2016-08-15",
+     "price": 94000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2022-02-11",
+     "price": 202000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0003-000-000",
+   "address": "160 MAIN ST",
+   "sale_price": 650000,
+   "sale_date": "2026-08-10",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 586400,
+   "assessed_land": 84400,
+   "assessed_bldg": 488500,
+   "difference": 63600,
+   "pct_of_assessed": 10.8,
+   "below_assessment": false,
+   "lat": 43.132312,
+   "lon": -71.452646,
+   "use": "SINGLE FAM",
+   "sqft": "3100",
+   "beds": "6",
+   "baths": "2",
+   "year_built": "1898",
+   "acres": 0.614784,
+   "zone": "B-2",
+   "prior_sales": [
+    {
+     "date": "2023-02-13",
+     "price": 355000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0142-000-000",
+   "address": "9 DONALD AVE",
+   "sale_price": 535000,
+   "sale_date": "2026-08-06",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 498000,
+   "assessed_land": 131000,
+   "assessed_bldg": 317600,
+   "difference": 37000,
+   "pct_of_assessed": 7.4,
+   "below_assessment": false,
+   "lat": 43.137712,
+   "lon": -71.456579,
+   "use": "SINGLE FAM",
+   "sqft": "1790",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1965",
+   "acres": 0.38,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1999-06-25",
+     "price": 124000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0154-000-000",
+   "address": "6 CENTRAL ST",
+   "sale_price": 295000,
+   "sale_date": "2026-07-31",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 196600,
+   "assessed_land": 59800,
+   "assessed_bldg": 136800,
+   "difference": 98400,
+   "pct_of_assessed": 50.1,
+   "below_assessment": false,
+   "lat": 43.131666,
+   "lon": -71.451973,
+   "use": "SINGLE FAM",
+   "sqft": "1096",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1903",
+   "acres": 0.04,
+   "zone": "B-2A",
+   "prior_sales": []
+  },
+  {
+   "cama": "VW-0151-000-000",
+   "address": "15 FAIRVIEW AVE",
+   "sale_price": 510000,
+   "sale_date": "2026-07-22",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 419800,
+   "assessed_land": 130300,
+   "assessed_bldg": 288000,
+   "difference": 90200,
+   "pct_of_assessed": 21.5,
+   "below_assessment": false,
+   "lat": 43.137294,
+   "lon": -71.456539,
+   "use": "SINGLE FAM",
+   "sqft": "1536",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1967",
+   "acres": 0.34,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2011-12-30",
+     "price": 168000,
+     "qualified": "U"
+    },
+    {
+     "date": "2018-03-30",
+     "price": 170000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "256-0001-005-000",
    "address": "762 ROBINSON RD",
    "sale_price": 649000,
@@ -443,6 +721,41 @@
    ]
   },
   {
+   "cama": "VW-0069-000-000",
+   "address": "9 PINE ST",
+   "sale_price": 474900,
+   "sale_date": "2026-07-14",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 413400,
+   "assessed_land": 130500,
+   "assessed_bldg": 270400,
+   "difference": 61500,
+   "pct_of_assessed": 14.9,
+   "below_assessment": false,
+   "lat": 43.134548,
+   "lon": -71.453968,
+   "use": "TWO FAMILY",
+   "sqft": "2456",
+   "beds": "6",
+   "baths": "2",
+   "year_built": "1888",
+   "acres": 0.35,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2000-09-05",
+     "price": 119000,
+     "qualified": "U"
+    },
+    {
+     "date": "2006-02-17",
+     "price": 200000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "634-0039-000-000",
    "address": "526 PEMBROKE ST",
    "sale_price": 435000,
@@ -473,6 +786,46 @@
     {
      "date": "2021-03-01",
      "price": 220000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0044-000-000",
+   "address": "9 HILLCREST AVE",
+   "sale_price": 298000,
+   "sale_date": "2026-07-06",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 190500,
+   "assessed_land": 104500,
+   "assessed_bldg": 81200,
+   "difference": 107500,
+   "pct_of_assessed": 56.4,
+   "below_assessment": false,
+   "lat": 43.136983,
+   "lon": -71.451002,
+   "use": "SINGLE FAM",
+   "sqft": "453",
+   "beds": "1",
+   "baths": "1",
+   "year_built": "1938",
+   "acres": 0.13,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2021-09-16",
+     "price": 135000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2022-05-09",
+     "price": 245000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2023-09-27",
+     "price": 250000,
      "qualified": "Q"
     }
    ]
@@ -578,6 +931,111 @@
    ]
   },
   {
+   "cama": "VW-0053-000-000",
+   "address": "12 LINDY ST",
+   "sale_price": 425000,
+   "sale_date": "2026-06-17",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 329300,
+   "assessed_land": 124900,
+   "assessed_bldg": 189700,
+   "difference": 95700,
+   "pct_of_assessed": 29.1,
+   "below_assessment": false,
+   "lat": 43.135487,
+   "lon": -71.454774,
+   "use": "SINGLE FAM",
+   "sqft": "1144",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1949",
+   "acres": 0.21,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2005-09-02",
+     "price": 199900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0082-000-000",
+   "address": "32 TURNPIKE ST",
+   "sale_price": 370000,
+   "sale_date": "2026-06-15",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 315700,
+   "assessed_land": 95900,
+   "assessed_bldg": 219000,
+   "difference": 54300,
+   "pct_of_assessed": 17.2,
+   "below_assessment": false,
+   "lat": 43.131879,
+   "lon": -71.446831,
+   "use": "SINGLE FAM",
+   "sqft": "1170",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1928",
+   "acres": 0.299568,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "2002-04-22",
+     "price": 149900,
+     "qualified": "U"
+    },
+    {
+     "date": "2003-10-20",
+     "price": 180400,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-01-29",
+     "price": 171990,
+     "qualified": "U"
+    },
+    {
+     "date": "2022-02-28",
+     "price": 275000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "939-0045-000-000",
+   "address": "410 EAST VIEW DR",
+   "sale_price": 540000,
+   "sale_date": "2026-06-12",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 446900,
+   "assessed_land": 143600,
+   "assessed_bldg": 296000,
+   "difference": 93100,
+   "pct_of_assessed": 20.8,
+   "below_assessment": false,
+   "lat": 43.153922,
+   "lon": -71.43015,
+   "use": "SINGLE FAM",
+   "sqft": "1430",
+   "beds": "4",
+   "baths": "1",
+   "year_built": "1971",
+   "acres": 0.77,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2021-11-08",
+     "price": 380000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "561-0076-000-000",
    "address": "701 ELEY LANE",
    "sale_price": 400000,
@@ -604,6 +1062,41 @@
      "date": "1984-07-12",
      "price": 66000,
      "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0107-000-000",
+   "address": "7 HIGH ST",
+   "sale_price": 345900,
+   "sale_date": "2026-06-01",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 255300,
+   "assessed_land": 89600,
+   "assessed_bldg": 165400,
+   "difference": 90600,
+   "pct_of_assessed": 35.5,
+   "below_assessment": false,
+   "lat": 43.131448,
+   "lon": -71.454692,
+   "use": "SINGLE FAM",
+   "sqft": "1137",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1933",
+   "acres": 0.08,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2004-08-12",
+     "price": 100000,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-01-08",
+     "price": 228000,
+     "qualified": "Q"
     }
    ]
   },
@@ -683,6 +1176,36 @@
    ]
   },
   {
+   "cama": "VE-0090-000-000",
+   "address": "225 MAIN ST",
+   "sale_price": 375000,
+   "sale_date": "2026-05-22",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 306500,
+   "assessed_land": 106200,
+   "assessed_bldg": 197300,
+   "difference": 68500,
+   "pct_of_assessed": 22.3,
+   "below_assessment": false,
+   "lat": 43.134822,
+   "lon": -71.448263,
+   "use": "SINGLE FAM",
+   "sqft": "884",
+   "beds": "2",
+   "baths": "2",
+   "year_built": "1965",
+   "acres": 0.34,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2023-11-09",
+     "price": 349000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "260-0022-000-000",
    "address": "647 CROSS COUNTRY RD",
    "sale_price": 630000,
@@ -748,6 +1271,41 @@
    ]
   },
   {
+   "cama": "VE-0155-000-000",
+   "address": "8 CENTRAL ST",
+   "sale_price": 325000,
+   "sale_date": "2026-05-14",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 194100,
+   "assessed_land": 42600,
+   "assessed_bldg": 151100,
+   "difference": 130900,
+   "pct_of_assessed": 67.4,
+   "below_assessment": false,
+   "lat": 43.13166,
+   "lon": -71.451863,
+   "use": "SINGLE FAM",
+   "sqft": "1138",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1903",
+   "acres": 0.03,
+   "zone": "B-2A",
+   "prior_sales": [
+    {
+     "date": "1993-10-25",
+     "price": 51000,
+     "qualified": "U"
+    },
+    {
+     "date": "2019-07-19",
+     "price": 140000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "266-0058-002-000",
    "address": "214  DEARBORN RD",
    "sale_price": 560000,
@@ -779,6 +1337,36 @@
      "date": "2005-04-20",
      "price": 295000,
      "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0100-000-000",
+   "address": "12 MILLARD ST",
+   "sale_price": 480000,
+   "sale_date": "2026-05-12",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 318100,
+   "assessed_land": 98900,
+   "assessed_bldg": 216700,
+   "difference": 161900,
+   "pct_of_assessed": 50.9,
+   "below_assessment": false,
+   "lat": 43.132703,
+   "lon": -71.448494,
+   "use": "SINGLE FAM",
+   "sqft": "1514",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1903",
+   "acres": 0.599568,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2025-11-03",
+     "price": 200000,
+     "qualified": "U"
     }
    ]
   },
@@ -853,6 +1441,81 @@
     {
      "date": "2023-06-23",
      "price": 433000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "941-0013-000-000",
+   "address": "423 BUCK ST",
+   "sale_price": 435600,
+   "sale_date": "2026-05-05",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 285700,
+   "assessed_land": 111100,
+   "assessed_bldg": 174300,
+   "difference": 149900,
+   "pct_of_assessed": 52.5,
+   "below_assessment": false,
+   "lat": 43.148981,
+   "lon": -71.427142,
+   "use": "SINGLE FAM",
+   "sqft": "1056",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1960",
+   "acres": 0.57,
+   "zone": "R-3B",
+   "prior_sales": [
+    {
+     "date": "1979-06-26",
+     "price": 47800,
+     "qualified": "U"
+    },
+    {
+     "date": "2008-07-31",
+     "price": 140000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2026-03-13",
+     "price": 200000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0003-000-000",
+   "address": "7-9 BROADWAY",
+   "sale_price": 1100000,
+   "sale_date": "2026-05-05",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 518900,
+   "assessed_land": 118400,
+   "assessed_bldg": 393900,
+   "difference": 581100,
+   "pct_of_assessed": 112.0,
+   "below_assessment": false,
+   "lat": 43.132656,
+   "lon": -71.451794,
+   "use": "APT 4-8 UN",
+   "sqft": "4710",
+   "beds": "9",
+   "baths": "6",
+   "year_built": "1910",
+   "acres": 0.194784,
+   "zone": "B-2A",
+   "prior_sales": [
+    {
+     "date": "2006-05-15",
+     "price": 285000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2023-01-06",
+     "price": 500000,
      "qualified": "Q"
     }
    ]
@@ -978,6 +1641,155 @@
    ]
   },
   {
+   "cama": "VW-0180-000-000",
+   "address": "4 SIMPSON AVE",
+   "sale_price": 90000,
+   "sale_date": "2026-04-21",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 285600,
+   "assessed_land": 132000,
+   "assessed_bldg": 152700,
+   "difference": -195600,
+   "pct_of_assessed": -68.5,
+   "below_assessment": true,
+   "lat": 43.134448,
+   "lon": -71.457079,
+   "use": "SINGLE FAM",
+   "sqft": "1155",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1900",
+   "acres": 0.44,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
+   "cama": "VW-0216-000-000",
+   "address": "14 HIGH ST",
+   "sale_price": 527800,
+   "sale_date": "2026-04-17",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 416100,
+   "assessed_land": 115400,
+   "assessed_bldg": 277500,
+   "difference": 111700,
+   "pct_of_assessed": 26.8,
+   "below_assessment": false,
+   "lat": 43.132024,
+   "lon": -71.455463,
+   "use": "TWO FAMILY",
+   "sqft": "2214",
+   "beds": "5",
+   "baths": "2",
+   "year_built": "1928",
+   "acres": 0.329568,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "1992-01-15",
+     "price": 75000,
+     "qualified": "U"
+    },
+    {
+     "date": "2005-07-18",
+     "price": 259900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2014-07-21",
+     "price": 196000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-04-05",
+     "price": 308900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0002-000-000",
+   "address": "3-5 BROADWAY",
+   "sale_price": 530000,
+   "sale_date": "2026-04-10",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 410800,
+   "assessed_land": 78800,
+   "assessed_bldg": 330300,
+   "difference": 119200,
+   "pct_of_assessed": 29.0,
+   "below_assessment": false,
+   "lat": 43.132485,
+   "lon": -71.451895,
+   "use": "TWO FAMILY",
+   "sqft": "2622",
+   "beds": "5",
+   "baths": "3",
+   "year_built": "1910",
+   "acres": 0.058,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "2009-09-29",
+     "price": 60000,
+     "qualified": "U"
+    },
+    {
+     "date": "2012-11-13",
+     "price": 152500,
+     "qualified": "U"
+    },
+    {
+     "date": "2018-06-01",
+     "price": 220000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2020-12-01",
+     "price": 270000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "935-0006-001-000",
+   "address": "821 CROSS COUNTRY RD",
+   "sale_price": 975000,
+   "sale_date": "2026-04-03",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 306,
+   "assessed_land": 306,
+   "assessed_bldg": 0,
+   "difference": 974694,
+   "pct_of_assessed": 318527.5,
+   "below_assessment": false,
+   "lat": 43.204353,
+   "lon": -71.423827,
+   "use": "SINGLE FAM",
+   "sqft": "3198",
+   "beds": "4",
+   "baths": "3",
+   "year_built": "2025",
+   "acres": 3.56,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2025-06-10",
+     "price": 225000,
+     "qualified": "U"
+    },
+    {
+     "date": "2025-10-09",
+     "price": 21970,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "565-0257-006-000",
    "address": "260 CHURCH RD",
    "sale_price": 665000,
@@ -1003,6 +1815,36 @@
     {
      "date": "1993-10-26",
      "price": 122500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "935-0007-000-000",
+   "address": "855 CROSS COUNTRY RD",
+   "sale_price": 340000,
+   "sale_date": "2026-03-27",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 572008,
+   "assessed_land": 142208,
+   "assessed_bldg": 424000,
+   "difference": -232008,
+   "pct_of_assessed": -40.6,
+   "below_assessment": true,
+   "lat": 43.203698,
+   "lon": -71.415103,
+   "use": "SINGLE FAM",
+   "sqft": "2749",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1991",
+   "acres": 130.106547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1999-04-16",
+     "price": 7000,
      "qualified": "U"
     }
    ]
@@ -1097,6 +1939,36 @@
    "prior_sales": []
   },
   {
+   "cama": "VW-0033-000-000",
+   "address": "60-62 BROADWAY",
+   "sale_price": 845000,
+   "sale_date": "2026-03-05",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 544500,
+   "assessed_land": 137000,
+   "assessed_bldg": 403600,
+   "difference": 300500,
+   "pct_of_assessed": 55.2,
+   "below_assessment": false,
+   "lat": 43.135708,
+   "lon": -71.45328,
+   "use": "APT 4-8 UN",
+   "sqft": "4330",
+   "beds": "8",
+   "baths": "7",
+   "year_built": "1903",
+   "acres": 0.929137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1993-09-09",
+     "price": 40000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "258-0002-000-000",
    "address": "611 NO PEMBROKE RD",
    "sale_price": 625000,
@@ -1167,6 +2039,116 @@
     {
      "date": "2006-08-22",
      "price": 295000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0111-000-000",
+   "address": "24 KIMBALL ST",
+   "sale_price": 50000,
+   "sale_date": "2026-01-27",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 116400,
+   "assessed_land": 77400,
+   "assessed_bldg": 38400,
+   "difference": -66400,
+   "pct_of_assessed": -57.0,
+   "below_assessment": true,
+   "lat": 43.130944,
+   "lon": -71.449199,
+   "use": "SINGLE FAM",
+   "sqft": "624",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1878",
+   "acres": 0.1,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2019-05-09",
+     "price": 23450,
+     "qualified": "U"
+    },
+    {
+     "date": "2024-02-07",
+     "price": 23450,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0203-000-000",
+   "address": "111 GLASS ST",
+   "sale_price": 308000,
+   "sale_date": "2026-01-27",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 312500,
+   "assessed_land": 77600,
+   "assessed_bldg": 234000,
+   "difference": -4500,
+   "pct_of_assessed": -1.4,
+   "below_assessment": true,
+   "lat": 43.130187,
+   "lon": -71.447656,
+   "use": "SINGLE FAM",
+   "sqft": "1543",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1909",
+   "acres": 0.131226,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "1996-09-24",
+     "price": 72500,
+     "qualified": "U"
+    },
+    {
+     "date": "2012-07-11",
+     "price": 137500,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-09-23",
+     "price": 218500,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0135-000-000",
+   "address": "12-14 CHURCH ST",
+   "sale_price": 294000,
+   "sale_date": "2026-01-23",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 306400,
+   "assessed_land": 80100,
+   "assessed_bldg": 223900,
+   "difference": -12400,
+   "pct_of_assessed": -4.0,
+   "below_assessment": true,
+   "lat": 43.131727,
+   "lon": -71.451186,
+   "use": "TWO FAMILY",
+   "sqft": "2587",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1888",
+   "acres": 0.12,
+   "zone": "B-2A",
+   "prior_sales": [
+    {
+     "date": "2017-12-14",
+     "price": 105000,
+     "qualified": "U"
+    },
+    {
+     "date": "2018-09-05",
+     "price": 185000,
      "qualified": "Q"
     }
    ]
@@ -1380,6 +2362,30 @@
    ]
   },
   {
+   "cama": "941-0031-000-000",
+   "address": "398 WEST VIEW TERRACE",
+   "sale_price": 300000,
+   "sale_date": "2025-12-24",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 406800,
+   "assessed_land": 148000,
+   "assessed_bldg": 253300,
+   "difference": -106800,
+   "pct_of_assessed": -26.3,
+   "below_assessment": true,
+   "lat": 43.151949,
+   "lon": -71.431292,
+   "use": "SINGLE FAM",
+   "sqft": "1242",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1972",
+   "acres": 0.89,
+   "zone": "R-3D",
+   "prior_sales": []
+  },
+  {
    "cama": "563-0040-008-000",
    "address": "509 ASHLEY DR",
    "sale_price": 675000,
@@ -1415,6 +2421,36 @@
     {
      "date": "2014-07-01",
      "price": 312500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0213-000-000",
+   "address": "1 MIDDLE ST",
+   "sale_price": 1190000,
+   "sale_date": "2025-12-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 576600,
+   "assessed_land": 105900,
+   "assessed_bldg": 468900,
+   "difference": 613400,
+   "pct_of_assessed": 106.4,
+   "below_assessment": false,
+   "lat": 43.131334,
+   "lon": -71.455722,
+   "use": "APT 4-8 UN",
+   "sqft": "4350",
+   "beds": "9",
+   "baths": "6",
+   "year_built": "1908",
+   "acres": 0.339568,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "2018-08-31",
+     "price": 230000,
      "qualified": "U"
     }
    ]
@@ -1749,6 +2785,30 @@
    ]
   },
   {
+   "cama": "937-0014-002-000",
+   "address": "320 NO PEMBROKE RD",
+   "sale_price": 487000,
+   "sale_date": "2025-11-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 390800,
+   "assessed_land": 151200,
+   "assessed_bldg": 200400,
+   "difference": 96200,
+   "pct_of_assessed": 24.6,
+   "below_assessment": false,
+   "lat": 43.188762,
+   "lon": -71.415039,
+   "use": "SINGLE FAM",
+   "sqft": "1002",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1983",
+   "acres": 3.096547,
+   "zone": "R-3D",
+   "prior_sales": []
+  },
+  {
    "cama": "565-0081-007-000",
    "address": "43 DONNA DR",
    "sale_price": 458000,
@@ -1819,6 +2879,36 @@
    ]
   },
   {
+   "cama": "VE-0048-000-000",
+   "address": "13 HILLCREST AVE",
+   "sale_price": 570000,
+   "sale_date": "2025-11-10",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 394200,
+   "assessed_land": 130300,
+   "assessed_bldg": 260700,
+   "difference": 175800,
+   "pct_of_assessed": 44.6,
+   "below_assessment": false,
+   "lat": 43.137006,
+   "lon": -71.450149,
+   "use": "TWO FAMILY",
+   "sqft": "2412",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1950",
+   "acres": 0.34,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1997-02-10",
+     "price": 80000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "565-0081-121-000",
    "address": "424 TERRIE DR",
    "sale_price": 535000,
@@ -1879,6 +2969,66 @@
     {
      "date": "2010-02-11",
      "price": 140000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0014-000-000",
+   "address": "17 PROSPECT ST",
+   "sale_price": 565000,
+   "sale_date": "2025-10-30",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 371000,
+   "assessed_land": 114200,
+   "assessed_bldg": 245300,
+   "difference": 194000,
+   "pct_of_assessed": 52.3,
+   "below_assessment": false,
+   "lat": 43.133325,
+   "lon": -71.453281,
+   "use": "TWO FAMILY",
+   "sqft": "2038",
+   "beds": "5",
+   "baths": "2",
+   "year_built": "1903",
+   "acres": 0.23,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1995-11-14",
+     "price": 87000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0161-000-000",
+   "address": "34-42 GLASS ST",
+   "sale_price": 860000,
+   "sale_date": "2025-10-23",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 580700,
+   "assessed_land": 107700,
+   "assessed_bldg": 436700,
+   "difference": 279300,
+   "pct_of_assessed": 48.1,
+   "below_assessment": false,
+   "lat": 43.130731,
+   "lon": -71.451536,
+   "use": "APT 4-8 UN",
+   "sqft": "3558",
+   "beds": "9",
+   "baths": "5",
+   "year_built": "1878",
+   "acres": 0.154784,
+   "zone": "B-2A",
+   "prior_sales": [
+    {
+     "date": "2024-11-21",
+     "price": 750000,
      "qualified": "U"
     }
    ]
@@ -1989,6 +3139,36 @@
    ]
   },
   {
+   "cama": "939-0022-000-000",
+   "address": "508 BUCK ST",
+   "sale_price": 556000,
+   "sale_date": "2025-10-17",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 466300,
+   "assessed_land": 127700,
+   "assessed_bldg": 331000,
+   "difference": 89700,
+   "pct_of_assessed": 19.2,
+   "below_assessment": false,
+   "lat": 43.154872,
+   "lon": -71.423116,
+   "use": "SINGLE FAM",
+   "sqft": "2034",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1950",
+   "acres": 1.279982,
+   "zone": "R-3B",
+   "prior_sales": [
+    {
+     "date": "2000-06-27",
+     "price": 157000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "565-0081-027-000",
    "address": "40 DONNA DR",
    "sale_price": 379000,
@@ -2072,6 +3252,135 @@
      "qualified": "U"
     }
    ]
+  },
+  {
+   "cama": "VW-0018-000-000",
+   "address": "5-7 PLEASANT ST",
+   "sale_price": 535000,
+   "sale_date": "2025-10-02",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 339500,
+   "assessed_land": 94500,
+   "assessed_bldg": 239000,
+   "difference": 195500,
+   "pct_of_assessed": 57.6,
+   "below_assessment": false,
+   "lat": 43.132958,
+   "lon": -71.452936,
+   "use": "THREE FAM",
+   "sqft": "2732",
+   "beds": "5",
+   "baths": "3",
+   "year_built": "1900",
+   "acres": 0.11,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2001-09-20",
+     "price": 175000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "939-0016-000-000",
+   "address": "550 BUCK ST",
+   "sale_price": 490000,
+   "sale_date": "2025-09-29",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 551600,
+   "assessed_land": 130100,
+   "assessed_bldg": 381100,
+   "difference": -61600,
+   "pct_of_assessed": -11.2,
+   "below_assessment": true,
+   "lat": 43.157069,
+   "lon": -71.415878,
+   "use": "SINGLE FAM",
+   "sqft": "2923",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1832",
+   "acres": 1.419995,
+   "zone": "R-3B",
+   "prior_sales": [
+    {
+     "date": "2020-05-18",
+     "price": 330000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0200-000-000",
+   "address": "23 PLEASANT ST",
+   "sale_price": 320000,
+   "sale_date": "2025-09-29",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 249100,
+   "assessed_land": 89600,
+   "assessed_bldg": 157800,
+   "difference": 70900,
+   "pct_of_assessed": 28.5,
+   "below_assessment": false,
+   "lat": 43.132676,
+   "lon": -71.455566,
+   "use": "SINGLE FAM",
+   "sqft": "914",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1928",
+   "acres": 0.08,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2006-06-06",
+     "price": 187000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2008-07-28",
+     "price": 129900,
+     "qualified": "U"
+    },
+    {
+     "date": "2008-12-09",
+     "price": 113000,
+     "qualified": "U"
+    },
+    {
+     "date": "2018-08-29",
+     "price": 180000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0143-000-000",
+   "address": "7 DONALD AVE",
+   "sale_price": 430000,
+   "sale_date": "2025-09-26",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 390300,
+   "assessed_land": 131000,
+   "assessed_bldg": 251500,
+   "difference": 39700,
+   "pct_of_assessed": 10.2,
+   "below_assessment": false,
+   "lat": 43.137761,
+   "lon": -71.456172,
+   "use": "SINGLE FAM",
+   "sqft": "1104",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1975",
+   "acres": 0.38,
+   "zone": "R-1A",
+   "prior_sales": []
   },
   {
    "cama": "561-0028-000-000",
@@ -2159,6 +3468,46 @@
    ]
   },
   {
+   "cama": "VE-0021-000-000",
+   "address": "65 1/2 BROADWAY",
+   "sale_price": 375000,
+   "sale_date": "2025-09-22",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 288800,
+   "assessed_land": 101100,
+   "assessed_bldg": 184700,
+   "difference": 86200,
+   "pct_of_assessed": 29.8,
+   "below_assessment": false,
+   "lat": 43.136273,
+   "lon": -71.452353,
+   "use": "SINGLE FAM",
+   "sqft": "920",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1972",
+   "acres": 0.36,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1997-11-03",
+     "price": 62000,
+     "qualified": "U"
+    },
+    {
+     "date": "2022-05-20",
+     "price": 165000,
+     "qualified": "U"
+    },
+    {
+     "date": "2022-09-28",
+     "price": 285000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "565-0257-002-000",
    "address": "224 CHURCH RD",
    "sale_price": 535000,
@@ -2199,6 +3548,46 @@
     {
      "date": "2020-05-15",
      "price": 285000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0138-000-000",
+   "address": "8 DONALD AVE",
+   "sale_price": 492000,
+   "sale_date": "2025-09-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 411700,
+   "assessed_land": 131000,
+   "assessed_bldg": 275300,
+   "difference": 80300,
+   "pct_of_assessed": 19.5,
+   "below_assessment": false,
+   "lat": 43.138272,
+   "lon": -71.456278,
+   "use": "SFR/IN-LAW",
+   "sqft": "1217",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1974",
+   "acres": 0.38,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2003-12-09",
+     "price": 192000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2015-08-17",
+     "price": 190000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-01-18",
+     "price": 267500,
      "qualified": "Q"
     }
    ]
@@ -2259,6 +3648,66 @@
      "date": "2006-10-16",
      "price": 225000,
      "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0187-000-000",
+   "address": "61A&B GLASS ST",
+   "sale_price": 420000,
+   "sale_date": "2025-08-14",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 291900,
+   "assessed_land": 88700,
+   "assessed_bldg": 175200,
+   "difference": 128100,
+   "pct_of_assessed": 43.9,
+   "below_assessment": false,
+   "lat": 43.130228,
+   "lon": -71.45047,
+   "use": "TWO FAMILY",
+   "sqft": "1500",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1825",
+   "acres": 0.314784,
+   "zone": "B-2A",
+   "prior_sales": [
+    {
+     "date": "2021-02-17",
+     "price": 219900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0024-000-000",
+   "address": "25 PROSPECT ST",
+   "sale_price": 480000,
+   "sale_date": "2025-08-12",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 388700,
+   "assessed_land": 128900,
+   "assessed_bldg": 247500,
+   "difference": 91300,
+   "pct_of_assessed": 23.5,
+   "below_assessment": false,
+   "lat": 43.134029,
+   "lon": -71.453399,
+   "use": "TWO FAMILY",
+   "sqft": "1702",
+   "beds": "5",
+   "baths": "2",
+   "year_built": "1928",
+   "acres": 0.25,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2024-10-11",
+     "price": 300000,
+     "qualified": "U"
     }
    ]
   },
@@ -2548,6 +3997,110 @@
    ]
   },
   {
+   "cama": "VE-0004-000-000",
+   "address": "11 BROADWAY",
+   "sale_price": 499900,
+   "sale_date": "2025-06-25",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 382800,
+   "assessed_land": 101800,
+   "assessed_bldg": 272600,
+   "difference": 117100,
+   "pct_of_assessed": 30.6,
+   "below_assessment": false,
+   "lat": 43.132845,
+   "lon": -71.451823,
+   "use": "SINGLE FAM",
+   "sqft": "2168",
+   "beds": "4",
+   "baths": "1",
+   "year_built": "1894",
+   "acres": 0.21,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "1980-03-27",
+     "price": 31000,
+     "qualified": "U"
+    },
+    {
+     "date": "2025-02-10",
+     "price": 330000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0010-000-000",
+   "address": "18 BROADWAY",
+   "sale_price": 489000,
+   "sale_date": "2025-06-12",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 350200,
+   "assessed_land": 89700,
+   "assessed_bldg": 239000,
+   "difference": 138800,
+   "pct_of_assessed": 39.6,
+   "below_assessment": false,
+   "lat": 43.133192,
+   "lon": -71.452655,
+   "use": "TWO FAMILY",
+   "sqft": "2832",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1919",
+   "acres": 0.13,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2007-03-30",
+     "price": 190000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2009-09-01",
+     "price": 141500,
+     "qualified": "U"
+    },
+    {
+     "date": "2009-11-16",
+     "price": 90000,
+     "qualified": "U"
+    },
+    {
+     "date": "2023-12-08",
+     "price": 250000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0126-000-000",
+   "address": "86 BROADWAY",
+   "sale_price": 460000,
+   "sale_date": "2025-06-12",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 368500,
+   "assessed_land": 107000,
+   "assessed_bldg": 261000,
+   "difference": 91500,
+   "pct_of_assessed": 24.8,
+   "below_assessment": false,
+   "lat": 43.138267,
+   "lon": -71.453584,
+   "use": "SINGLE FAM",
+   "sqft": "1521",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1950",
+   "acres": 0.4,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
    "cama": "559-0001-001-000",
    "address": "741 NO PEMBROKE RD",
    "sale_price": 750000,
@@ -2583,6 +4136,71 @@
     {
      "date": "2008-11-05",
      "price": 330000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "939-0041-000-000",
+   "address": "411 EAST MEADOW LANE",
+   "sale_price": 660000,
+   "sale_date": "2025-06-04",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 626300,
+   "assessed_land": 163900,
+   "assessed_bldg": 451900,
+   "difference": 33700,
+   "pct_of_assessed": 5.4,
+   "below_assessment": false,
+   "lat": 43.152497,
+   "lon": -71.428424,
+   "use": "SINGLE FAM",
+   "sqft": "2619",
+   "beds": "5",
+   "baths": "4",
+   "year_built": "1976",
+   "acres": 2.116547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2019-03-01",
+     "price": 309900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0118-000-000",
+   "address": "104 GLASS ST",
+   "sale_price": 445000,
+   "sale_date": "2025-05-30",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 378800,
+   "assessed_land": 109200,
+   "assessed_bldg": 268600,
+   "difference": 66200,
+   "pct_of_assessed": 17.5,
+   "below_assessment": false,
+   "lat": 43.131107,
+   "lon": -71.447946,
+   "use": "SINGLE FAM",
+   "sqft": "1826",
+   "beds": "4",
+   "baths": "1",
+   "year_built": "1878",
+   "acres": 1.629568,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2007-04-30",
+     "price": 210000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-06-21",
+     "price": 220000,
      "qualified": "Q"
     }
    ]
@@ -2767,6 +4385,96 @@
    ]
   },
   {
+   "cama": "VW-0193-000-000",
+   "address": "33 PLEASANT ST",
+   "sale_price": 330000,
+   "sale_date": "2025-04-30",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 292700,
+   "assessed_land": 108400,
+   "assessed_bldg": 184000,
+   "difference": 37300,
+   "pct_of_assessed": 12.7,
+   "below_assessment": false,
+   "lat": 43.132579,
+   "lon": -71.457242,
+   "use": "SINGLE FAM",
+   "sqft": "1212",
+   "beds": "1",
+   "baths": "1",
+   "year_built": "1963",
+   "acres": 0.194008,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2008-09-10",
+     "price": 45000,
+     "qualified": "U"
+    },
+    {
+     "date": "2009-10-06",
+     "price": 63600,
+     "qualified": "Q"
+    },
+    {
+     "date": "2013-12-11",
+     "price": 43160,
+     "qualified": "U"
+    },
+    {
+     "date": "2016-05-20",
+     "price": 50000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "870-0011-000-000",
+   "address": "3 OLD BEAR BROOK RD",
+   "sale_price": 410000,
+   "sale_date": "2025-04-29",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 376200,
+   "assessed_land": 120100,
+   "assessed_bldg": 250000,
+   "difference": 33800,
+   "pct_of_assessed": 9.0,
+   "below_assessment": false,
+   "lat": 43.160855,
+   "lon": -71.408977,
+   "use": "SINGLE FAM",
+   "sqft": "1260",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1985",
+   "acres": 1.209986,
+   "zone": "R-3B",
+   "prior_sales": [
+    {
+     "date": "2011-03-18",
+     "price": 218023,
+     "qualified": "U"
+    },
+    {
+     "date": "2011-03-18",
+     "price": 35299,
+     "qualified": "U"
+    },
+    {
+     "date": "2011-05-24",
+     "price": 168800,
+     "qualified": "U"
+    },
+    {
+     "date": "2020-11-30",
+     "price": 50000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "266-0003-000-000",
    "address": "94 BROADWAY",
    "sale_price": 430000,
@@ -2826,6 +4534,36 @@
    ]
   },
   {
+   "cama": "VW-0132-000-000",
+   "address": "5 FAIRVIEW AVE",
+   "sale_price": 407000,
+   "sale_date": "2025-03-31",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 409300,
+   "assessed_land": 131500,
+   "assessed_bldg": 269600,
+   "difference": -2300,
+   "pct_of_assessed": -0.6,
+   "below_assessment": true,
+   "lat": 43.137563,
+   "lon": -71.454376,
+   "use": "SINGLE FAM",
+   "sqft": "1607",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1951",
+   "acres": 0.41,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2020-11-09",
+     "price": 315000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "565-0257-001-000",
    "address": "307 PEMBROKE ST",
    "sale_price": 605000,
@@ -2861,6 +4599,71 @@
     {
      "date": "2020-10-28",
      "price": 360000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0241-000-000",
+   "address": "52-54 FRONT ST",
+   "sale_price": 394000,
+   "sale_date": "2025-03-24",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 351100,
+   "assessed_land": 94200,
+   "assessed_bldg": 256100,
+   "difference": 42900,
+   "pct_of_assessed": 12.2,
+   "below_assessment": false,
+   "lat": 43.130918,
+   "lon": -71.45539,
+   "use": "TWO FAMILY",
+   "sqft": "2904",
+   "beds": "8",
+   "baths": "2",
+   "year_built": "1878",
+   "acres": 0.16,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "2008-05-16",
+     "price": 140000,
+     "qualified": "U"
+    },
+    {
+     "date": "2017-07-12",
+     "price": 245000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "937-0014-004-000",
+   "address": "330 NO PEMBROKE RD",
+   "sale_price": 660000,
+   "sale_date": "2025-03-20",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 498500,
+   "assessed_land": 138300,
+   "assessed_bldg": 353700,
+   "difference": 161500,
+   "pct_of_assessed": 32.4,
+   "below_assessment": false,
+   "lat": 43.189984,
+   "lon": -71.416272,
+   "use": "SINGLE FAM",
+   "sqft": "1696",
+   "beds": "3",
+   "baths": "3",
+   "year_built": "1988",
+   "acres": 1.926547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2024-04-12",
+     "price": 455000,
      "qualified": "Q"
     }
    ]
@@ -2917,6 +4720,75 @@
    "year_built": "1770",
    "acres": 5.496547,
    "zone": "R-3D",
+   "prior_sales": []
+  },
+  {
+   "cama": "VE-0017-000-000",
+   "address": "49 BROADWAY",
+   "sale_price": 440000,
+   "sale_date": "2025-03-10",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 454100,
+   "assessed_land": 110900,
+   "assessed_bldg": 327700,
+   "difference": -14100,
+   "pct_of_assessed": -3.1,
+   "below_assessment": true,
+   "lat": 43.135462,
+   "lon": -71.451955,
+   "use": "SINGLE FAM",
+   "sqft": "2088",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1918",
+   "acres": 0.739137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2012-12-31",
+     "price": 50000,
+     "qualified": "U"
+    },
+    {
+     "date": "2013-07-15",
+     "price": 159900,
+     "qualified": "U"
+    },
+    {
+     "date": "2016-10-13",
+     "price": 234900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2022-10-28",
+     "price": 367500,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0170-000-000",
+   "address": "44 HIGH ST",
+   "sale_price": 340000,
+   "sale_date": "2025-03-03",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 285900,
+   "assessed_land": 96200,
+   "assessed_bldg": 183100,
+   "difference": 54100,
+   "pct_of_assessed": 18.9,
+   "below_assessment": false,
+   "lat": 43.13498,
+   "lon": -71.456018,
+   "use": "SINGLE FAM",
+   "sqft": "1034",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1927",
+   "acres": 0.12,
+   "zone": "R-1A",
    "prior_sales": []
   },
   {
@@ -2995,6 +4867,36 @@
    ]
   },
   {
+   "cama": "VW-0152-000-000",
+   "address": "17 FAIRVIEW AVE",
+   "sale_price": 410000,
+   "sale_date": "2025-01-23",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 365900,
+   "assessed_land": 130300,
+   "assessed_bldg": 228900,
+   "difference": 44100,
+   "pct_of_assessed": 12.1,
+   "below_assessment": false,
+   "lat": 43.137249,
+   "lon": -71.456909,
+   "use": "SINGLE FAM",
+   "sqft": "968",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1967",
+   "acres": 0.34,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2023-09-11",
+     "price": 395100,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "266-0068-000-000",
    "address": "325 DEARBORN RD",
    "sale_price": 425000,
@@ -3017,6 +4919,36 @@
    "acres": 1.060009,
    "zone": "R-1B",
    "prior_sales": []
+  },
+  {
+   "cama": "VW-0047-002-000",
+   "address": "10 RENARL AVE",
+   "sale_price": 1158200,
+   "sale_date": "2025-01-16",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 1106100,
+   "assessed_land": 249600,
+   "assessed_bldg": 493500,
+   "difference": 52100,
+   "pct_of_assessed": 4.7,
+   "below_assessment": false,
+   "lat": 43.136318,
+   "lon": -71.454449,
+   "use": "CONDO",
+   "sqft": "3363",
+   "beds": "9",
+   "baths": "6",
+   "year_built": "1960",
+   "acres": 2.6414,
+   "zone": null,
+   "prior_sales": [
+    {
+     "date": "2018-10-01",
+     "price": 1430000,
+     "qualified": "Q"
+    }
+   ]
   },
   {
    "cama": "264-0022-000-000",
@@ -3148,6 +5080,81 @@
    ]
   },
   {
+   "cama": "VE-0016-000-000",
+   "address": "47 BROADWAY",
+   "sale_price": 280000,
+   "sale_date": "2024-12-06",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 313200,
+   "assessed_land": 108100,
+   "assessed_bldg": 205100,
+   "difference": -33200,
+   "pct_of_assessed": -10.6,
+   "below_assessment": true,
+   "lat": 43.135237,
+   "lon": -71.451932,
+   "use": "SINGLE FAM",
+   "sqft": "1593",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1878",
+   "acres": 0.489137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2006-02-07",
+     "price": 144000,
+     "qualified": "U"
+    },
+    {
+     "date": "2006-02-13",
+     "price": 120000,
+     "qualified": "U"
+    },
+    {
+     "date": "2006-06-15",
+     "price": 192933,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0071-000-000",
+   "address": "178 MAIN ST",
+   "sale_price": 475000,
+   "sale_date": "2024-11-26",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 490900,
+   "assessed_land": 105100,
+   "assessed_bldg": 361800,
+   "difference": -15900,
+   "pct_of_assessed": -3.2,
+   "below_assessment": true,
+   "lat": 43.132655,
+   "lon": -71.45138,
+   "use": "SINGLE FAM",
+   "sqft": "1866",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1898",
+   "acres": 0.269568,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2020-05-31",
+     "price": 274900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2023-01-24",
+     "price": 355400,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "563-0040-017-000",
    "address": "513 JACKS DR",
    "sale_price": 649900,
@@ -3181,6 +5188,70 @@
      "qualified": "Q"
     }
    ]
+  },
+  {
+   "cama": "VW-0055-000-000",
+   "address": "16 LINDY ST",
+   "sale_price": 485000,
+   "sale_date": "2024-11-15",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 359900,
+   "assessed_land": 129000,
+   "assessed_bldg": 224600,
+   "difference": 125100,
+   "pct_of_assessed": 34.8,
+   "below_assessment": false,
+   "lat": 43.135537,
+   "lon": -71.454386,
+   "use": "SINGLE FAM",
+   "sqft": "1580",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1950",
+   "acres": 0.26,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1999-03-29",
+     "price": 70000,
+     "qualified": "U"
+    },
+    {
+     "date": "2017-07-18",
+     "price": 198000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2022-09-01",
+     "price": 320000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0163-000-000",
+   "address": "1 RENARL AVE",
+   "sale_price": 382500,
+   "sale_date": "2024-11-12",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 313800,
+   "assessed_land": 130300,
+   "assessed_bldg": 183000,
+   "difference": 68700,
+   "pct_of_assessed": 21.9,
+   "below_assessment": false,
+   "lat": 43.13678,
+   "lon": -71.456424,
+   "use": "SINGLE FAM",
+   "sqft": "1148",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1962",
+   "acres": 0.34,
+   "zone": "R-1A",
+   "prior_sales": []
   },
   {
    "cama": "565-0154-000-000",
@@ -3276,6 +5347,36 @@
    "prior_sales": []
   },
   {
+   "cama": "939-0032-000-000",
+   "address": "448 BUCK ST",
+   "sale_price": 401500,
+   "sale_date": "2024-10-17",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 311700,
+   "assessed_land": 123500,
+   "assessed_bldg": 175000,
+   "difference": 89800,
+   "pct_of_assessed": 28.8,
+   "below_assessment": false,
+   "lat": 43.152081,
+   "lon": -71.425278,
+   "use": "SINGLE FAM",
+   "sqft": "1520",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1910",
+   "acres": 1.039991,
+   "zone": "R-3B",
+   "prior_sales": [
+    {
+     "date": "2024-05-06",
+     "price": 205000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "634-0044-000-000",
    "address": "566 PEMBROKE ST",
    "sale_price": 460000,
@@ -3332,6 +5433,51 @@
      "date": "1997-08-14",
      "price": 105300,
      "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0158-000-000",
+   "address": "3-5 CHURCH ST",
+   "sale_price": 495000,
+   "sale_date": "2024-10-04",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 291300,
+   "assessed_land": 77900,
+   "assessed_bldg": 207900,
+   "difference": 203700,
+   "pct_of_assessed": 69.9,
+   "below_assessment": false,
+   "lat": 43.131758,
+   "lon": -71.45166,
+   "use": "TWO FAMILY",
+   "sqft": "2112",
+   "beds": "5",
+   "baths": "2",
+   "year_built": "1878",
+   "acres": 0.103673,
+   "zone": "B-2A",
+   "prior_sales": [
+    {
+     "date": "2011-09-22",
+     "price": 40000,
+     "qualified": "U"
+    },
+    {
+     "date": "2015-01-14",
+     "price": 126000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2018-07-06",
+     "price": 145000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2023-11-16",
+     "price": 300000,
+     "qualified": "Q"
     }
    ]
   },
@@ -3525,6 +5671,191 @@
    ]
   },
   {
+   "cama": "VW-0015-000-000",
+   "address": "11-13 PROSPECT ST",
+   "sale_price": 455000,
+   "sale_date": "2024-09-03",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 354900,
+   "assessed_land": 115700,
+   "assessed_bldg": 229800,
+   "difference": 100100,
+   "pct_of_assessed": 28.2,
+   "below_assessment": false,
+   "lat": 43.133069,
+   "lon": -71.453161,
+   "use": "TWO FAMILY",
+   "sqft": "2464",
+   "beds": "6",
+   "baths": "2",
+   "year_built": "1921",
+   "acres": 0.379568,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "1990-04-13",
+     "price": 50000,
+     "qualified": "U"
+    },
+    {
+     "date": "2004-04-06",
+     "price": 219000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2019-11-21",
+     "price": 262000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0047-003-000",
+   "address": "12 RENARL AVE",
+   "sale_price": 1000000,
+   "sale_date": "2024-09-03",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 680000,
+   "assessed_land": 182700,
+   "assessed_bldg": 494300,
+   "difference": 320000,
+   "pct_of_assessed": 47.1,
+   "below_assessment": false,
+   "lat": 43.135952,
+   "lon": -71.454907,
+   "use": "CONDO",
+   "sqft": "3363",
+   "beds": "9",
+   "baths": "6",
+   "year_built": "1960",
+   "acres": 0.516001,
+   "zone": null,
+   "prior_sales": [
+    {
+     "date": "2018-10-01",
+     "price": 1430000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "870-0031-000-000",
+   "address": "674 THOMPSON RD",
+   "sale_price": 490000,
+   "sale_date": "2024-08-28",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 416500,
+   "assessed_land": 97800,
+   "assessed_bldg": 311200,
+   "difference": 73500,
+   "pct_of_assessed": 17.6,
+   "below_assessment": false,
+   "lat": 43.164582,
+   "lon": -71.407393,
+   "use": "TWO FAMILY",
+   "sqft": "2100",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1962",
+   "acres": 0.44,
+   "zone": "R-3B",
+   "prior_sales": [
+    {
+     "date": "1994-05-02",
+     "price": 62900,
+     "qualified": "U"
+    },
+    {
+     "date": "2005-04-01",
+     "price": 215000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2016-07-14",
+     "price": 239900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0097-000-000",
+   "address": "4 KIMBALL ST",
+   "sale_price": 425000,
+   "sale_date": "2024-08-27",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 337400,
+   "assessed_land": 85600,
+   "assessed_bldg": 251300,
+   "difference": 87600,
+   "pct_of_assessed": 26.0,
+   "below_assessment": false,
+   "lat": 43.132478,
+   "lon": -71.449872,
+   "use": "SINGLE FAM",
+   "sqft": "1411",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1947",
+   "acres": 0.16,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2020-12-08",
+     "price": 215000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0005-000-000",
+   "address": "13-15 BROADWAY",
+   "sale_price": 605000,
+   "sale_date": "2024-08-26",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 573200,
+   "assessed_land": 115900,
+   "assessed_bldg": 450400,
+   "difference": 31800,
+   "pct_of_assessed": 5.5,
+   "below_assessment": false,
+   "lat": 43.133008,
+   "lon": -71.451854,
+   "use": "MULTI HSES",
+   "sqft": "1595",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1933",
+   "acres": 0.15,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "2009-07-15",
+     "price": 79800,
+     "qualified": "U"
+    },
+    {
+     "date": "2009-11-30",
+     "price": 165000,
+     "qualified": "U"
+    },
+    {
+     "date": "2018-10-03",
+     "price": 263200,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-10-04",
+     "price": 425000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "266-0025-000-000",
    "address": "236 PEMBROKE ST",
    "sale_price": 372000,
@@ -3625,6 +5956,95 @@
    ]
   },
   {
+   "cama": "264-0072-000-000",
+   "address": "359 THIRD RANGE RD",
+   "sale_price": 420000,
+   "sale_date": "2024-08-02",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 565200,
+   "assessed_land": 142600,
+   "assessed_bldg": 385300,
+   "difference": -145200,
+   "pct_of_assessed": -25.7,
+   "below_assessment": true,
+   "lat": 43.1607,
+   "lon": -71.457055,
+   "use": "SINGLE FAM",
+   "sqft": "2288",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1980",
+   "acres": 2.837995,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2024-08-02",
+     "price": 420000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0014-000-000",
+   "address": "43 BROADWAY",
+   "sale_price": 645000,
+   "sale_date": "2024-07-24",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 442400,
+   "assessed_land": 108100,
+   "assessed_bldg": 332800,
+   "difference": 202600,
+   "pct_of_assessed": 45.8,
+   "below_assessment": false,
+   "lat": 43.134868,
+   "lon": -71.451885,
+   "use": "THREE FAM",
+   "sqft": "3138",
+   "beds": "5",
+   "baths": "4",
+   "year_built": "1828",
+   "acres": 0.489137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1992-07-27",
+     "price": 79900,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-08-09",
+     "price": 265000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0056-000-000",
+   "address": "18 LINDY ST",
+   "sale_price": 481000,
+   "sale_date": "2024-07-23",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 477900,
+   "assessed_land": 134200,
+   "assessed_bldg": 315900,
+   "difference": 3100,
+   "pct_of_assessed": 0.6,
+   "below_assessment": false,
+   "lat": 43.13559,
+   "lon": -71.453989,
+   "use": "SFR/IN-LAW",
+   "sqft": "2160",
+   "beds": "5",
+   "baths": "2",
+   "year_built": "1944",
+   "acres": 0.599137,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
    "cama": "260-0038-000-000",
    "address": "447 BRUSH RD",
    "sale_price": 375000,
@@ -3680,6 +6100,81 @@
     {
      "date": "2015-08-05",
      "price": 210000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0050-000-000",
+   "address": "148 PEMBROKE ST",
+   "sale_price": 555000,
+   "sale_date": "2024-07-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 543100,
+   "assessed_land": 122400,
+   "assessed_bldg": 418200,
+   "difference": 11900,
+   "pct_of_assessed": 2.2,
+   "below_assessment": false,
+   "lat": 43.137154,
+   "lon": -71.44967,
+   "use": "MULTI HSES",
+   "sqft": "1524",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1931",
+   "acres": 0.45,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2000-02-14",
+     "price": 110000,
+     "qualified": "U"
+    },
+    {
+     "date": "2004-03-31",
+     "price": 197900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2018-12-24",
+     "price": 254900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0090-000-000",
+   "address": "17 PLEASANT ST",
+   "sale_price": 460000,
+   "sale_date": "2024-07-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 427800,
+   "assessed_land": 107700,
+   "assessed_bldg": 317000,
+   "difference": 32200,
+   "pct_of_assessed": 7.5,
+   "below_assessment": false,
+   "lat": 43.132863,
+   "lon": -71.454485,
+   "use": "SINGLE FAM",
+   "sqft": "1342",
+   "beds": "4",
+   "baths": "1",
+   "year_built": "1987",
+   "acres": 0.19,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2000-07-31",
+     "price": 144000,
+     "qualified": "U"
+    },
+    {
+     "date": "2020-08-13",
+     "price": 313000,
      "qualified": "Q"
     }
    ]
@@ -3745,6 +6240,36 @@
    ]
   },
   {
+   "cama": "565-0236-000-000",
+   "address": "354 THIRD RANGE RD",
+   "sale_price": 150000,
+   "sale_date": "2024-07-01",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 1487,
+   "assessed_land": 1487,
+   "assessed_bldg": 0,
+   "difference": 148513,
+   "pct_of_assessed": 9987.4,
+   "below_assessment": false,
+   "lat": 43.159194,
+   "lon": -71.457636,
+   "use": "SINGLE FAM",
+   "sqft": "2956",
+   "beds": "4",
+   "baths": "3",
+   "year_built": "2025",
+   "acres": 1.84348,
+   "zone": "R-1D",
+   "prior_sales": [
+    {
+     "date": "2024-07-01",
+     "price": 150000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "561-0112-002-000",
    "address": "627 FOURTH RANGE RD",
    "sale_price": 440000,
@@ -3771,6 +6296,51 @@
      "date": "2012-11-19",
      "price": 325000,
      "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0128-000-000",
+   "address": "88 1/2 BROADWAY",
+   "sale_price": 305000,
+   "sale_date": "2024-06-24",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 253200,
+   "assessed_land": 99500,
+   "assessed_bldg": 152400,
+   "difference": 51800,
+   "pct_of_assessed": 20.5,
+   "below_assessment": false,
+   "lat": 43.138469,
+   "lon": -71.453876,
+   "use": "SINGLE FAM",
+   "sqft": "736",
+   "beds": "1",
+   "baths": "1",
+   "year_built": "1950",
+   "acres": 0.23,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2004-06-22",
+     "price": 163000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2009-12-23",
+     "price": 139000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2014-01-28",
+     "price": 136900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2020-07-15",
+     "price": 181000,
+     "qualified": "Q"
     }
    ]
   },
@@ -3811,6 +6381,51 @@
      "date": "2017-06-07",
      "price": 235000,
      "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0101-000-000",
+   "address": "5 TURNPIKE ST",
+   "sale_price": 567000,
+   "sale_date": "2024-06-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 523000,
+   "assessed_land": 97900,
+   "assessed_bldg": 383700,
+   "difference": 44000,
+   "pct_of_assessed": 8.4,
+   "below_assessment": false,
+   "lat": 43.1331,
+   "lon": -71.448584,
+   "use": "SINGLE FAM",
+   "sqft": "2016",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2020",
+   "acres": 0.499568,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "2004-06-21",
+     "price": 215000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2009-04-09",
+     "price": 85000,
+     "qualified": "U"
+    },
+    {
+     "date": "2010-02-22",
+     "price": 65000,
+     "qualified": "U"
+    },
+    {
+     "date": "2010-05-13",
+     "price": 155000,
+     "qualified": "U"
     }
    ]
   },
@@ -3905,6 +6520,36 @@
    ]
   },
   {
+   "cama": "VW-0087-000-000",
+   "address": "18 MAPLE ST",
+   "sale_price": 571000,
+   "sale_date": "2024-05-16",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 570800,
+   "assessed_land": 119300,
+   "assessed_bldg": 385100,
+   "difference": 200,
+   "pct_of_assessed": 0.0,
+   "below_assessment": false,
+   "lat": 43.133089,
+   "lon": -71.455003,
+   "use": "TWO FAMILY",
+   "sqft": "3144",
+   "beds": "5",
+   "baths": "3",
+   "year_built": "1878",
+   "acres": 0.599137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1985-07-01",
+     "price": 95000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "266-0085-042-000",
    "address": "155A&B TINA DR",
    "sale_price": 407400,
@@ -3959,6 +6604,36 @@
    "prior_sales": []
   },
   {
+   "cama": "VW-0149-000-000",
+   "address": "9 FAIRVIEW AVE",
+   "sale_price": 380000,
+   "sale_date": "2024-04-29",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 392200,
+   "assessed_land": 130300,
+   "assessed_bldg": 256400,
+   "difference": -12200,
+   "pct_of_assessed": -3.1,
+   "below_assessment": true,
+   "lat": 43.137402,
+   "lon": -71.455652,
+   "use": "SINGLE FAM",
+   "sqft": "972",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1968",
+   "acres": 0.34,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2001-06-04",
+     "price": 154500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "565-0257-005-000",
    "address": "246 CHURCH RD",
    "sale_price": 462000,
@@ -3994,6 +6669,36 @@
    ]
   },
   {
+   "cama": "939-0060-001-000",
+   "address": "136 DUDLEY HILL RD",
+   "sale_price": 645000,
+   "sale_date": "2024-04-19",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 597000,
+   "assessed_land": 178100,
+   "assessed_bldg": 417000,
+   "difference": 48000,
+   "pct_of_assessed": 8.0,
+   "below_assessment": false,
+   "lat": 43.151906,
+   "lon": -71.432334,
+   "use": "SINGLE FAM",
+   "sqft": "2056",
+   "beds": "3",
+   "baths": "3",
+   "year_built": "1983",
+   "acres": 4.196547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2003-12-12",
+     "price": 229000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "634-0007-002-000",
    "address": "51 WHITTEMORE RD",
    "sale_price": 603000,
@@ -4022,6 +6727,95 @@
      "qualified": "U"
     }
    ]
+  },
+  {
+   "cama": "VE-0163-000-000",
+   "address": "41 CHURCH ST",
+   "sale_price": 1080000,
+   "sale_date": "2024-04-05",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 230200,
+   "assessed_land": 79600,
+   "assessed_bldg": 147800,
+   "difference": 849800,
+   "pct_of_assessed": 369.2,
+   "below_assessment": false,
+   "lat": 43.13094,
+   "lon": -71.451366,
+   "use": "SINGLE FAM",
+   "sqft": "1295",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1920",
+   "acres": 0.134784,
+   "zone": "B-2A",
+   "prior_sales": [
+    {
+     "date": "1997-05-01",
+     "price": 160000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0058-002-000",
+   "address": "11 LINDY ST",
+   "sale_price": 570000,
+   "sale_date": "2024-03-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 545600,
+   "assessed_land": 132300,
+   "assessed_bldg": 411800,
+   "difference": 24400,
+   "pct_of_assessed": 4.5,
+   "below_assessment": false,
+   "lat": 43.134935,
+   "lon": -71.454657,
+   "use": "SINGLE FAM",
+   "sqft": "1808",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2024",
+   "acres": 0.459298,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2022-12-20",
+     "price": 142500,
+     "qualified": "U"
+    },
+    {
+     "date": "2023-09-01",
+     "price": 105000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0110-000-000",
+   "address": "22 KIMBALL ST",
+   "sale_price": 295000,
+   "sale_date": "2024-02-28",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 362700,
+   "assessed_land": 96100,
+   "assessed_bldg": 249400,
+   "difference": -67700,
+   "pct_of_assessed": -18.7,
+   "below_assessment": true,
+   "lat": 43.131111,
+   "lon": -71.448896,
+   "use": "SINGLE FAM",
+   "sqft": "1686",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1878",
+   "acres": 0.319568,
+   "zone": "B-1",
+   "prior_sales": []
   },
   {
    "cama": "256-0001-017-000",
@@ -4188,6 +6982,41 @@
    ]
   },
   {
+   "cama": "VE-0040-000-000",
+   "address": "4 HILLCREST AVE",
+   "sale_price": 365000,
+   "sale_date": "2023-12-14",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 383900,
+   "assessed_land": 117500,
+   "assessed_bldg": 243100,
+   "difference": -18900,
+   "pct_of_assessed": -4.9,
+   "below_assessment": true,
+   "lat": 43.137225,
+   "lon": -71.452033,
+   "use": "SINGLE FAM",
+   "sqft": "1050",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1948",
+   "acres": 0.17,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2016-08-17",
+     "price": 154000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2023-05-16",
+     "price": 225000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "260-0005-001-000",
    "address": "447 SIXTH RANGE RD",
    "sale_price": 500000,
@@ -4258,6 +7087,36 @@
    ]
   },
   {
+   "cama": "VE-0065-000-000",
+   "address": "198 MAIN ST",
+   "sale_price": 320500,
+   "sale_date": "2023-11-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 293100,
+   "assessed_land": 114700,
+   "assessed_bldg": 169300,
+   "difference": 27400,
+   "pct_of_assessed": 9.3,
+   "below_assessment": false,
+   "lat": 43.133522,
+   "lon": -71.450701,
+   "use": "SINGLE FAM",
+   "sqft": "1184",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1934",
+   "acres": 1.139568,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2014-10-28",
+     "price": 68900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "565-0081-157-000",
    "address": "441 MICOL RD",
    "sale_price": 380000,
@@ -4318,6 +7177,36 @@
    ]
   },
   {
+   "cama": "868-0021-000-000",
+   "address": "8 NO PEMBROKE RD",
+   "sale_price": 280000,
+   "sale_date": "2023-10-17",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 488300,
+   "assessed_land": 134600,
+   "assessed_bldg": 345500,
+   "difference": -208300,
+   "pct_of_assessed": -42.7,
+   "below_assessment": true,
+   "lat": 43.171688,
+   "lon": -71.399159,
+   "use": "APT 4-8 UN",
+   "sqft": "3084",
+   "beds": "8",
+   "baths": "4",
+   "year_built": "1972",
+   "acres": 6.371763,
+   "zone": "R-3B",
+   "prior_sales": [
+    {
+     "date": "1994-04-18",
+     "price": 83600,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "266-0070-000-000",
    "address": "315 DEARBORN RD",
    "sale_price": 345000,
@@ -4344,6 +7233,36 @@
      "date": "2003-05-05",
      "price": 160000,
      "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "939-0044-000-000",
+   "address": "414 EAST VIEW DR",
+   "sale_price": 390000,
+   "sale_date": "2023-09-19",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 453700,
+   "assessed_land": 162600,
+   "assessed_bldg": 261600,
+   "difference": -63700,
+   "pct_of_assessed": -14.0,
+   "below_assessment": true,
+   "lat": 43.154291,
+   "lon": -71.429379,
+   "use": "SINGLE FAM",
+   "sqft": "1392",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1973",
+   "acres": 1.559986,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1999-07-26",
+     "price": 145000,
+     "qualified": "U"
     }
    ]
   },
@@ -4379,6 +7298,46 @@
      "date": "2022-03-30",
      "price": 227600,
      "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0081-000-000",
+   "address": "11 MAPLE ST",
+   "sale_price": 450000,
+   "sale_date": "2023-09-13",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 498400,
+   "assessed_land": 114500,
+   "assessed_bldg": 345800,
+   "difference": -48400,
+   "pct_of_assessed": -9.7,
+   "below_assessment": true,
+   "lat": 43.133613,
+   "lon": -71.45441,
+   "use": "SINGLE FAM",
+   "sqft": "2587",
+   "beds": "4",
+   "baths": "1",
+   "year_built": "1890",
+   "acres": 0.25,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2007-02-27",
+     "price": 285000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2018-08-21",
+     "price": 275000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2023-04-26",
+     "price": 355000,
+     "qualified": "U"
     }
    ]
   },
@@ -4527,6 +7486,95 @@
     {
      "date": "2023-09-07",
      "price": 500000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "941-0005-001-000",
+   "address": "13 PHEASANT RUN",
+   "sale_price": 850000,
+   "sale_date": "2023-09-05",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 813700,
+   "assessed_land": 224600,
+   "assessed_bldg": 587100,
+   "difference": 36300,
+   "pct_of_assessed": 4.5,
+   "below_assessment": false,
+   "lat": 43.14389,
+   "lon": -71.428267,
+   "use": "SINGLE FAM",
+   "sqft": "2457",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2023",
+   "acres": 10.99741,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "2022-11-10",
+     "price": 65000,
+     "qualified": "U"
+    },
+    {
+     "date": "2023-05-24",
+     "price": 11160,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0047-004-000",
+   "address": "14 RENARL AVE",
+   "sale_price": 1850000,
+   "sale_date": "2023-09-01",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 729300,
+   "assessed_land": 208000,
+   "assessed_bldg": 518300,
+   "difference": 1120700,
+   "pct_of_assessed": 153.7,
+   "below_assessment": false,
+   "lat": 43.135852,
+   "lon": -71.455549,
+   "use": "CONDO",
+   "sqft": "3688",
+   "beds": "9",
+   "baths": "6",
+   "year_built": "1960",
+   "acres": 1.1117,
+   "zone": null,
+   "prior_sales": []
+  },
+  {
+   "cama": "VW-0047-001-000",
+   "address": "8 RENARL AVE",
+   "sale_price": 1850000,
+   "sale_date": "2023-09-01",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 647700,
+   "assessed_land": 182500,
+   "assessed_bldg": 462200,
+   "difference": 1202300,
+   "pct_of_assessed": 185.6,
+   "below_assessment": false,
+   "lat": 43.136483,
+   "lon": -71.455419,
+   "use": "CONDO",
+   "sqft": "3363",
+   "beds": "9",
+   "baths": "6",
+   "year_built": "1950",
+   "acres": 0.511892,
+   "zone": null,
+   "prior_sales": [
+    {
+     "date": "2018-10-01",
+     "price": 1430000,
      "qualified": "Q"
     }
    ]
@@ -4715,6 +7763,51 @@
    ]
   },
   {
+   "cama": "VE-0125-000-000",
+   "address": "31 TURNPIKE ST",
+   "sale_price": 383500,
+   "sale_date": "2023-07-10",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 361200,
+   "assessed_land": 96000,
+   "assessed_bldg": 259600,
+   "difference": 22300,
+   "pct_of_assessed": 6.2,
+   "below_assessment": false,
+   "lat": 43.131797,
+   "lon": -71.44758,
+   "use": "SINGLE FAM",
+   "sqft": "1312",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1953",
+   "acres": 0.309568,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "2015-08-07",
+     "price": 120079,
+     "qualified": "U"
+    },
+    {
+     "date": "2016-07-07",
+     "price": 120500,
+     "qualified": "U"
+    },
+    {
+     "date": "2016-12-19",
+     "price": 228000,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-09-30",
+     "price": 300000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "266-0025-002-000",
    "address": "106A&B BROADWAY",
    "sale_price": 490000,
@@ -4776,6 +7869,41 @@
      "date": "2001-08-21",
      "price": 141800,
      "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "935-0004-003-000",
+   "address": "803 CROSS COUNTRY RD",
+   "sale_price": 335000,
+   "sale_date": "2023-06-30",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 447600,
+   "assessed_land": 148100,
+   "assessed_bldg": 299500,
+   "difference": -112600,
+   "pct_of_assessed": -25.2,
+   "below_assessment": true,
+   "lat": 43.202239,
+   "lon": -71.426767,
+   "use": "TWO FAMILY",
+   "sqft": "2304",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1986",
+   "acres": 2.816547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1986-12-24",
+     "price": 152000,
+     "qualified": "U"
+    },
+    {
+     "date": "2014-10-01",
+     "price": 234000,
+     "qualified": "Q"
     }
    ]
   },
@@ -5060,6 +8188,86 @@
    ]
   },
   {
+   "cama": "VE-0207-000-000",
+   "address": "129 GLASS ST",
+   "sale_price": 330000,
+   "sale_date": "2023-04-28",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 332300,
+   "assessed_land": 88400,
+   "assessed_bldg": 243400,
+   "difference": -2300,
+   "pct_of_assessed": -0.7,
+   "below_assessment": true,
+   "lat": 43.130715,
+   "lon": -71.446767,
+   "use": "APT 4-8 UN",
+   "sqft": "1360",
+   "beds": "4",
+   "baths": "4",
+   "year_built": "1928",
+   "acres": 0.18,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2002-06-24",
+     "price": 185000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2020-08-28",
+     "price": 207500,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0239-000-000",
+   "address": "60-62 FRONT ST",
+   "sale_price": 347500,
+   "sale_date": "2023-04-25",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 285600,
+   "assessed_land": 89700,
+   "assessed_bldg": 183500,
+   "difference": 61900,
+   "pct_of_assessed": 21.7,
+   "below_assessment": false,
+   "lat": 43.130807,
+   "lon": -71.455933,
+   "use": "TWO FAMILY",
+   "sqft": "1787",
+   "beds": "6",
+   "baths": "2",
+   "year_built": "1878",
+   "acres": 0.13,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "1996-12-05",
+     "price": 45000,
+     "qualified": "U"
+    },
+    {
+     "date": "2008-04-18",
+     "price": 126300,
+     "qualified": "U"
+    },
+    {
+     "date": "2009-04-24",
+     "price": 73500,
+     "qualified": "U"
+    },
+    {
+     "date": "2017-08-31",
+     "price": 187000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "565-0081-119-000",
    "address": "420 TERRIE DR",
    "sale_price": 430000,
@@ -5082,6 +8290,36 @@
    "acres": 0.469137,
    "zone": "R-1A",
    "prior_sales": []
+  },
+  {
+   "cama": "VE-0039-000-000",
+   "address": "5 HOWARD ST",
+   "sale_price": 393700,
+   "sale_date": "2023-04-07",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 409500,
+   "assessed_land": 100800,
+   "assessed_bldg": 308200,
+   "difference": -15800,
+   "pct_of_assessed": -3.9,
+   "below_assessment": true,
+   "lat": 43.137629,
+   "lon": -71.451636,
+   "use": "SINGLE FAM",
+   "sqft": "2113",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "2004",
+   "acres": 0.08,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1995-08-04",
+     "price": 40000,
+     "qualified": "U"
+    }
+   ]
   },
   {
    "cama": "266-0057-000-000",
@@ -5221,6 +8459,111 @@
    "acres": 0.34,
    "zone": "R-1A",
    "prior_sales": []
+  },
+  {
+   "cama": "VE-0127-000-000",
+   "address": "25 TURNPIKE ST",
+   "sale_price": 350000,
+   "sale_date": "2023-03-02",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 333800,
+   "assessed_land": 95300,
+   "assessed_bldg": 231500,
+   "difference": 16200,
+   "pct_of_assessed": 4.9,
+   "below_assessment": false,
+   "lat": 43.132176,
+   "lon": -71.44798,
+   "use": "SINGLE FAM",
+   "sqft": "1524",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1966",
+   "acres": 0.239568,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "2002-08-01",
+     "price": 125000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2018-08-03",
+     "price": 235000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0066-000-000",
+   "address": "194-196 MAIN ST",
+   "sale_price": 540000,
+   "sale_date": "2023-02-27",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 611900,
+   "assessed_land": 106900,
+   "assessed_bldg": 492800,
+   "difference": -71900,
+   "pct_of_assessed": -11.8,
+   "below_assessment": true,
+   "lat": 43.133054,
+   "lon": -71.450411,
+   "use": "APT 4-8 UN",
+   "sqft": "3664",
+   "beds": "7",
+   "baths": "5",
+   "year_built": "1878",
+   "acres": 0.429568,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2015-02-20",
+     "price": 157000,
+     "qualified": "U"
+    },
+    {
+     "date": "2023-02-27",
+     "price": 540000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2024-09-05",
+     "price": 750000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0058-000-000",
+   "address": "15 LINDY ST",
+   "sale_price": 335000,
+   "sale_date": "2023-01-27",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 339100,
+   "assessed_land": 134400,
+   "assessed_bldg": 200200,
+   "difference": -4100,
+   "pct_of_assessed": -1.2,
+   "below_assessment": true,
+   "lat": 43.135011,
+   "lon": -71.453969,
+   "use": "SINGLE FAM",
+   "sqft": "1342",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1945",
+   "acres": 0.618037,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2022-04-21",
+     "price": 142500,
+     "qualified": "U"
+    }
+   ]
   },
   {
    "cama": "561-0069-000-000",
@@ -5475,6 +8818,46 @@
    "prior_sales": []
   },
   {
+   "cama": "VE-0192-000-000",
+   "address": "83-85 GLASS ST",
+   "sale_price": 182500,
+   "sale_date": "2022-10-24",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 380200,
+   "assessed_land": 101600,
+   "assessed_bldg": 271300,
+   "difference": -197700,
+   "pct_of_assessed": -52.0,
+   "below_assessment": true,
+   "lat": 43.130245,
+   "lon": -71.449371,
+   "use": "TWO FAMILY",
+   "sqft": "2460",
+   "beds": "6",
+   "baths": "3",
+   "year_built": "1878",
+   "acres": 0.18,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "2000-03-14",
+     "price": 88000,
+     "qualified": "U"
+    },
+    {
+     "date": "2006-06-21",
+     "price": 250000,
+     "qualified": "U"
+    },
+    {
+     "date": "2022-10-24",
+     "price": 182500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "565-0036-000-000",
    "address": "38 SHERWOOD MEADOWS",
    "sale_price": 370000,
@@ -5574,6 +8957,54 @@
    "prior_sales": []
   },
   {
+   "cama": "634-0023-002-000",
+   "address": "52 WHITTEMORE RD",
+   "sale_price": 325066,
+   "sale_date": "2022-10-06",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 797700,
+   "assessed_land": 135200,
+   "assessed_bldg": 657800,
+   "difference": -472634,
+   "pct_of_assessed": -59.2,
+   "below_assessment": true,
+   "lat": 43.16342,
+   "lon": -71.484903,
+   "use": "SINGLE FAM",
+   "sqft": "3274",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2024",
+   "acres": 0.539509,
+   "zone": null,
+   "prior_sales": []
+  },
+  {
+   "cama": "634-0023-003-000",
+   "address": "50 WHITTEMORE RD",
+   "sale_price": 325066,
+   "sale_date": "2022-10-06",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 761000,
+   "assessed_land": 135500,
+   "assessed_bldg": 620800,
+   "difference": -435934,
+   "pct_of_assessed": -57.3,
+   "below_assessment": true,
+   "lat": 43.16331,
+   "lon": -71.484467,
+   "use": "SINGLE FAM",
+   "sqft": "3168",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "2024",
+   "acres": 0.547314,
+   "zone": null,
+   "prior_sales": []
+  },
+  {
    "cama": "561-0053-000-000",
    "address": "706 ELEY LANE",
    "sale_price": 345000,
@@ -5642,6 +9073,30 @@
      "qualified": "U"
     }
    ]
+  },
+  {
+   "cama": "VE-0197-000-000",
+   "address": "101A&B GLASS ST",
+   "sale_price": 375000,
+   "sale_date": "2022-09-28",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 345000,
+   "assessed_land": 88400,
+   "assessed_bldg": 255600,
+   "difference": 30000,
+   "pct_of_assessed": 8.7,
+   "below_assessment": false,
+   "lat": 43.130254,
+   "lon": -71.448318,
+   "use": "TWO FAMILY",
+   "sqft": "2916",
+   "beds": "5",
+   "baths": "2",
+   "year_built": "1832",
+   "acres": 0.18,
+   "zone": "B-1",
+   "prior_sales": []
   },
   {
    "cama": "262-0029-005-000",
@@ -5782,6 +9237,30 @@
      "qualified": "Q"
     }
    ]
+  },
+  {
+   "cama": "939-0020-000-000",
+   "address": "514 BUCK ST",
+   "sale_price": 378000,
+   "sale_date": "2022-09-15",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 406200,
+   "assessed_land": 144300,
+   "assessed_bldg": 256800,
+   "difference": -28200,
+   "pct_of_assessed": -6.9,
+   "below_assessment": true,
+   "lat": 43.155625,
+   "lon": -71.421935,
+   "use": "SINGLE FAM",
+   "sqft": "1372",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1964",
+   "acres": 2.541763,
+   "zone": "R-3B",
+   "prior_sales": []
   },
   {
    "cama": "262-0004-000-000",
@@ -5979,6 +9458,36 @@
    ]
   },
   {
+   "cama": "870-0014-000-000",
+   "address": "9-2 OLD BEAR BROOK RD",
+   "sale_price": 240000,
+   "sale_date": "2022-08-31",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 407100,
+   "assessed_land": 111600,
+   "assessed_bldg": 290600,
+   "difference": -167100,
+   "pct_of_assessed": -41.0,
+   "below_assessment": true,
+   "lat": 43.158946,
+   "lon": -71.408253,
+   "use": "SINGLE FAM",
+   "sqft": "2459",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1778",
+   "acres": 1.811763,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2022-08-31",
+     "price": 240000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "563-0040-018-000",
    "address": "511 JACKS DR",
    "sale_price": 572500,
@@ -6064,6 +9573,71 @@
    ]
   },
   {
+   "cama": "937-0009-000-000",
+   "address": "404 NO PEMBROKE RD",
+   "sale_price": 450000,
+   "sale_date": "2022-08-26",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 483600,
+   "assessed_land": 145700,
+   "assessed_bldg": 331700,
+   "difference": -33600,
+   "pct_of_assessed": -6.9,
+   "below_assessment": true,
+   "lat": 43.191354,
+   "lon": -71.419429,
+   "use": "SINGLE FAM",
+   "sqft": "1876",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1975",
+   "acres": 2.596547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "1989-05-01",
+     "price": 105000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "941-0010-001-000",
+   "address": "409 BUCK ST",
+   "sale_price": 775000,
+   "sale_date": "2022-08-19",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 848600,
+   "assessed_land": 152500,
+   "assessed_bldg": 691400,
+   "difference": -73600,
+   "pct_of_assessed": -8.7,
+   "below_assessment": true,
+   "lat": 43.147021,
+   "lon": -71.428718,
+   "use": "SINGLE FAM",
+   "sqft": "3087",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "2022",
+   "acres": 6.202,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "2022-02-17",
+     "price": 6700,
+     "qualified": "U"
+    },
+    {
+     "date": "2022-08-19",
+     "price": 775000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "258-0007-000-000",
    "address": "916 BOROUGH RD",
    "sale_price": 526000,
@@ -6094,6 +9668,76 @@
     {
      "date": "2015-07-27",
      "price": 254000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "262-0045-000-000",
+   "address": "373 FOURTH RANGE RD",
+   "sale_price": 152610,
+   "sale_date": "2022-08-08",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 655500,
+   "assessed_land": 228900,
+   "assessed_bldg": 372400,
+   "difference": -502890,
+   "pct_of_assessed": -76.7,
+   "below_assessment": true,
+   "lat": 43.168875,
+   "lon": -71.446482,
+   "use": "SINGLE FAM",
+   "sqft": "2548",
+   "beds": "3",
+   "baths": "3",
+   "year_built": "1984",
+   "acres": 105.723547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2017-07-17",
+     "price": 405000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "941-0015-000-000",
+   "address": "425 BUCK ST",
+   "sale_price": 355000,
+   "sale_date": "2022-08-05",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 343700,
+   "assessed_land": 111700,
+   "assessed_bldg": 226300,
+   "difference": 11300,
+   "pct_of_assessed": 3.3,
+   "below_assessment": false,
+   "lat": 43.149344,
+   "lon": -71.426803,
+   "use": "SINGLE FAM",
+   "sqft": "1328",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1971",
+   "acres": 0.59,
+   "zone": "R-3B",
+   "prior_sales": [
+    {
+     "date": "2008-09-09",
+     "price": 197500,
+     "qualified": "Q"
+    },
+    {
+     "date": "2009-07-29",
+     "price": 195400,
+     "qualified": "Q"
+    },
+    {
+     "date": "2015-09-09",
+     "price": 185000,
      "qualified": "Q"
     }
    ]
@@ -6130,6 +9774,51 @@
      "date": "2007-12-05",
      "price": 170000,
      "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0167-000-000",
+   "address": "3 HAROLD AVE",
+   "sale_price": 265000,
+   "sale_date": "2022-07-28",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 330300,
+   "assessed_land": 128500,
+   "assessed_bldg": 200400,
+   "difference": -65300,
+   "pct_of_assessed": -19.8,
+   "below_assessment": true,
+   "lat": 43.135248,
+   "lon": -71.457321,
+   "use": "SINGLE FAM",
+   "sqft": "1158",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1934",
+   "acres": 0.23,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1998-09-03",
+     "price": 69000,
+     "qualified": "U"
+    },
+    {
+     "date": "2007-08-28",
+     "price": 215900,
+     "qualified": "Q"
+    },
+    {
+     "date": "2016-10-17",
+     "price": 190000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2022-07-28",
+     "price": 265000,
+     "qualified": "Q"
     }
    ]
   },
@@ -6193,6 +9882,36 @@
    "prior_sales": []
   },
   {
+   "cama": "VE-0047-000-000",
+   "address": "11 HILLCREST AVE",
+   "sale_price": 375000,
+   "sale_date": "2022-07-18",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 421000,
+   "assessed_land": 117500,
+   "assessed_bldg": 289800,
+   "difference": -46000,
+   "pct_of_assessed": -10.9,
+   "below_assessment": true,
+   "lat": 43.137017,
+   "lon": -71.450582,
+   "use": "SINGLE FAM",
+   "sqft": "1756",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1957",
+   "acres": 0.17,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1987-06-01",
+     "price": 94000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "565-0125-000-000",
    "address": "409 GIRARD AVE",
    "sale_price": 323000,
@@ -6233,6 +9952,76 @@
    ]
   },
   {
+   "cama": "937-0009-001-000",
+   "address": "408 NO PEMBROKE RD",
+   "sale_price": 480000,
+   "sale_date": "2022-07-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 501200,
+   "assessed_land": 144900,
+   "assessed_bldg": 349500,
+   "difference": -21200,
+   "pct_of_assessed": -4.2,
+   "below_assessment": true,
+   "lat": 43.191844,
+   "lon": -71.419924,
+   "use": "SINGLE FAM",
+   "sqft": "2344",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1980",
+   "acres": 2.596547,
+   "zone": "R-3D",
+   "prior_sales": [
+    {
+     "date": "2001-01-09",
+     "price": 109900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0073-000-000",
+   "address": "174 MAIN ST",
+   "sale_price": 212500,
+   "sale_date": "2022-07-08",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 525000,
+   "assessed_land": 95700,
+   "assessed_bldg": 422900,
+   "difference": -312500,
+   "pct_of_assessed": -59.5,
+   "below_assessment": true,
+   "lat": 43.132395,
+   "lon": -71.451654,
+   "use": "SINGLE FAM",
+   "sqft": "2421",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1878",
+   "acres": 0.17,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2001-01-30",
+     "price": 98000,
+     "qualified": "U"
+    },
+    {
+     "date": "2004-11-08",
+     "price": 200000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2016-11-03",
+     "price": 237500,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
    "cama": "266-0096-000-000",
    "address": "6 SKYVIEW TERRACE",
    "sale_price": 360000,
@@ -6263,6 +10052,111 @@
     {
      "date": "2009-06-22",
      "price": 170900,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0062-000-000",
+   "address": "37 HIGH ST",
+   "sale_price": 309000,
+   "sale_date": "2022-06-30",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 348500,
+   "assessed_land": 104400,
+   "assessed_bldg": 242900,
+   "difference": -39500,
+   "pct_of_assessed": -11.3,
+   "below_assessment": true,
+   "lat": 43.134564,
+   "lon": -71.455425,
+   "use": "SINGLE FAM",
+   "sqft": "1474",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1949",
+   "acres": 0.17,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1999-01-08",
+     "price": 47000,
+     "qualified": "U"
+    },
+    {
+     "date": "2004-08-17",
+     "price": 186900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0067-000-000",
+   "address": "190 MAIN ST",
+   "sale_price": 280000,
+   "sale_date": "2022-06-23",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 258400,
+   "assessed_land": 105200,
+   "assessed_bldg": 151000,
+   "difference": 21600,
+   "pct_of_assessed": 8.4,
+   "below_assessment": false,
+   "lat": 43.133066,
+   "lon": -71.451052,
+   "use": "SINGLE FAM",
+   "sqft": "656",
+   "beds": "2",
+   "baths": "2",
+   "year_built": "1968",
+   "acres": 0.749568,
+   "zone": "B-1",
+   "prior_sales": [
+    {
+     "date": "2019-08-06",
+     "price": 52000,
+     "qualified": "U"
+    },
+    {
+     "date": "2021-06-11",
+     "price": 250000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0030-000-000",
+   "address": "42-48 BROADWAY",
+   "sale_price": 650000,
+   "sale_date": "2022-06-23",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 641100,
+   "assessed_land": 130300,
+   "assessed_bldg": 508500,
+   "difference": 8900,
+   "pct_of_assessed": 1.4,
+   "below_assessment": false,
+   "lat": 43.135006,
+   "lon": -71.453125,
+   "use": "APT 4-8 UN",
+   "sqft": "5564",
+   "beds": "9",
+   "baths": "6",
+   "year_built": "1878",
+   "acres": 0.34,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "1999-11-30",
+     "price": 136000,
+     "qualified": "U"
+    },
+    {
+     "date": "2020-10-13",
+     "price": 246000,
      "qualified": "U"
     }
    ]
@@ -6467,6 +10361,30 @@
    "prior_sales": []
   },
   {
+   "cama": "VW-0236-000-000",
+   "address": "2 KEYSTONE LANE",
+   "sale_price": 100000,
+   "sale_date": "2022-05-27",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 194700,
+   "assessed_land": 105900,
+   "assessed_bldg": 85200,
+   "difference": -94700,
+   "pct_of_assessed": -48.6,
+   "below_assessment": true,
+   "lat": 43.130159,
+   "lon": -71.45698,
+   "use": "SINGLE FAM",
+   "sqft": "540",
+   "beds": "1",
+   "baths": "1",
+   "year_built": "1903",
+   "acres": 0.339568,
+   "zone": "B-1A",
+   "prior_sales": []
+  },
+  {
    "cama": "266-0007-014-000",
    "address": "6 BRITTANY CIRCLE",
    "sale_price": 440000,
@@ -6537,6 +10455,90 @@
    ]
   },
   {
+   "cama": "VW-0108-000-000",
+   "address": "33-39 FRONT ST",
+   "sale_price": 950000,
+   "sale_date": "2022-05-26",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 526700,
+   "assessed_land": 100300,
+   "assessed_bldg": 406900,
+   "difference": 423300,
+   "pct_of_assessed": 80.4,
+   "below_assessment": false,
+   "lat": 43.131378,
+   "lon": -71.454367,
+   "use": "APT 4-8 UN",
+   "sqft": "3840",
+   "beds": "9",
+   "baths": "4",
+   "year_built": "1850",
+   "acres": 0.2,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "2000-06-21",
+     "price": 133500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0109-000-000",
+   "address": "25-31 FRONT ST",
+   "sale_price": 950000,
+   "sale_date": "2022-05-26",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 509000,
+   "assessed_land": 100300,
+   "assessed_bldg": 406900,
+   "difference": 441000,
+   "pct_of_assessed": 86.6,
+   "below_assessment": false,
+   "lat": 43.131329,
+   "lon": -71.454028,
+   "use": "APT 4-8 UN",
+   "sqft": "3840",
+   "beds": "9",
+   "baths": "4",
+   "year_built": "1850",
+   "acres": 0.2,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "2002-09-17",
+     "price": 225000,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0042-000-000",
+   "address": "5 HILLCREST AVE",
+   "sale_price": 100000,
+   "sale_date": "2022-05-16",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 285600,
+   "assessed_land": 111900,
+   "assessed_bldg": 173400,
+   "difference": -185600,
+   "pct_of_assessed": -65.0,
+   "below_assessment": true,
+   "lat": 43.136879,
+   "lon": -71.451647,
+   "use": "SINGLE FAM",
+   "sqft": "864",
+   "beds": "2",
+   "baths": "1",
+   "year_built": "1948",
+   "acres": 0.14,
+   "zone": "R-1A",
+   "prior_sales": []
+  },
+  {
    "cama": "260-0027-000-000",
    "address": "634 CROSS COUNTRY RD",
    "sale_price": 350000,
@@ -6562,6 +10564,81 @@
     {
      "date": "2015-05-06",
      "price": 132500,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0210-000-000",
+   "address": "71 FRONT ST",
+   "sale_price": 430000,
+   "sale_date": "2022-05-09",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 386700,
+   "assessed_land": 86600,
+   "assessed_bldg": 292100,
+   "difference": 43300,
+   "pct_of_assessed": 11.2,
+   "below_assessment": false,
+   "lat": 43.131174,
+   "lon": -71.456713,
+   "use": "THREE FAM",
+   "sqft": "2578",
+   "beds": "7",
+   "baths": "3",
+   "year_built": "1878",
+   "acres": 0.11,
+   "zone": "B-1A",
+   "prior_sales": [
+    {
+     "date": "2004-03-24",
+     "price": 155000,
+     "qualified": "U"
+    },
+    {
+     "date": "2004-04-27",
+     "price": 155000,
+     "qualified": "U"
+    },
+    {
+     "date": "2005-06-09",
+     "price": 263000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2021-01-06",
+     "price": 279900,
+     "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "868-0015-005-000",
+   "address": "818 BACHELDER RD",
+   "sale_price": 385000,
+   "sale_date": "2022-04-28",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 296600,
+   "assessed_land": 102700,
+   "assessed_bldg": 182500,
+   "difference": 88400,
+   "pct_of_assessed": 29.8,
+   "below_assessment": false,
+   "lat": 43.173527,
+   "lon": -71.396574,
+   "use": "SINGLE FAM",
+   "sqft": "1049",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1985",
+   "acres": 2.036547,
+   "zone": "R-3B",
+   "prior_sales": [
+    {
+     "date": "1986-01-27",
+     "price": 80000,
      "qualified": "U"
     }
    ]
@@ -6821,6 +10898,41 @@
    ]
   },
   {
+   "cama": "941-0010-000-000",
+   "address": "415 BUCK ST",
+   "sale_price": 840000,
+   "sale_date": "2022-03-31",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 853573,
+   "assessed_land": 112173,
+   "assessed_bldg": 692800,
+   "difference": -13573,
+   "pct_of_assessed": -1.6,
+   "below_assessment": true,
+   "lat": 43.146182,
+   "lon": -71.426846,
+   "use": "SINGLE FAM",
+   "sqft": "3100",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "2022",
+   "acres": 17.2,
+   "zone": "R-1B",
+   "prior_sales": [
+    {
+     "date": "2021-02-17",
+     "price": 60000,
+     "qualified": "U"
+    },
+    {
+     "date": "2022-02-17",
+     "price": 6950,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "266-0139-001-000",
    "address": "234 BUCK ST",
    "sale_price": 357000,
@@ -6896,6 +11008,36 @@
    ]
   },
   {
+   "cama": "941-0025-000-000",
+   "address": "449 BUCK ST",
+   "sale_price": 375000,
+   "sale_date": "2022-02-24",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 337500,
+   "assessed_land": 123500,
+   "assessed_bldg": 209200,
+   "difference": 37500,
+   "pct_of_assessed": 11.1,
+   "below_assessment": false,
+   "lat": 43.15218,
+   "lon": -71.423962,
+   "use": "SINGLE FAM",
+   "sqft": "1112",
+   "beds": "3",
+   "baths": "1",
+   "year_built": "1969",
+   "acres": 1.039991,
+   "zone": "R-3B",
+   "prior_sales": [
+    {
+     "date": "1996-04-08",
+     "price": 85000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "258-0019-000-000",
    "address": "653 NO PEMBROKE RD",
    "sale_price": 549900,
@@ -6936,6 +11078,46 @@
    ]
   },
   {
+   "cama": "VE-0164-000-000",
+   "address": "10 GLASS ST",
+   "sale_price": 200000,
+   "sale_date": "2022-02-22",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 331900,
+   "assessed_land": 75500,
+   "assessed_bldg": 246200,
+   "difference": -131900,
+   "pct_of_assessed": -39.7,
+   "below_assessment": true,
+   "lat": 43.130809,
+   "lon": -71.452181,
+   "use": "THREE FAM",
+   "sqft": "2140",
+   "beds": "6",
+   "baths": "3",
+   "year_built": "1950",
+   "acres": 0.086,
+   "zone": "B-2",
+   "prior_sales": [
+    {
+     "date": "2005-02-24",
+     "price": 150000,
+     "qualified": "U"
+    },
+    {
+     "date": "2009-07-21",
+     "price": 40000,
+     "qualified": "U"
+    },
+    {
+     "date": "2009-08-04",
+     "price": 75000,
+     "qualified": "U"
+    }
+   ]
+  },
+  {
    "cama": "565-0030-000-000",
    "address": "35 SHERWOOD MEADOWS",
    "sale_price": 126000,
@@ -6958,6 +11140,36 @@
    "acres": 0.479137,
    "zone": "R-1A",
    "prior_sales": []
+  },
+  {
+   "cama": "VW-0181-000-000",
+   "address": "2 SIMPSON AVE",
+   "sale_price": 361000,
+   "sale_date": "2022-02-11",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 353100,
+   "assessed_land": 134900,
+   "assessed_bldg": 198300,
+   "difference": 7900,
+   "pct_of_assessed": 2.2,
+   "below_assessment": false,
+   "lat": 43.134226,
+   "lon": -71.457027,
+   "use": "SINGLE FAM",
+   "sqft": "1621",
+   "beds": "3",
+   "baths": "2",
+   "year_built": "1931",
+   "acres": 0.649137,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2002-12-31",
+     "price": 180000,
+     "qualified": "Q"
+    }
+   ]
   },
   {
    "cama": "266-0147-000-000",
@@ -7085,6 +11297,30 @@
    ]
   },
   {
+   "cama": "941-0009-000-000",
+   "address": "407 BUCK ST",
+   "sale_price": 360000,
+   "sale_date": "2022-01-31",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 366300,
+   "assessed_land": 109900,
+   "assessed_bldg": 253400,
+   "difference": -6300,
+   "pct_of_assessed": -1.7,
+   "below_assessment": true,
+   "lat": 43.147667,
+   "lon": -71.429624,
+   "use": "SINGLE FAM",
+   "sqft": "1890",
+   "beds": "4",
+   "baths": "1",
+   "year_built": "1902",
+   "acres": 0.53,
+   "zone": "R-1B",
+   "prior_sales": []
+  },
+  {
    "cama": "563-0115-013-000",
    "address": "608A&B FOURTH RANGE RD",
    "sale_price": 437500,
@@ -7146,6 +11382,36 @@
      "date": "1987-04-30",
      "price": 115900,
      "qualified": "U"
+    }
+   ]
+  },
+  {
+   "cama": "VW-0066-000-000",
+   "address": "15 PINE ST",
+   "sale_price": 324000,
+   "sale_date": "2022-01-19",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 358100,
+   "assessed_land": 123600,
+   "assessed_bldg": 207400,
+   "difference": -34100,
+   "pct_of_assessed": -9.5,
+   "below_assessment": true,
+   "lat": 43.134466,
+   "lon": -71.454612,
+   "use": "TWO FAMILY",
+   "sqft": "1702",
+   "beds": "4",
+   "baths": "2",
+   "year_built": "1890",
+   "acres": 0.328558,
+   "zone": "R-1A",
+   "prior_sales": [
+    {
+     "date": "2016-08-09",
+     "price": 193600,
+     "qualified": "Q"
     }
    ]
   },
@@ -7240,6 +11506,46 @@
      "date": "2002-07-16",
      "price": 167000,
      "qualified": "Q"
+    }
+   ]
+  },
+  {
+   "cama": "VE-0160-000-000",
+   "address": "32A&B GLASS ST",
+   "sale_price": 200000,
+   "sale_date": "2022-01-03",
+   "sale_qualified": "Q",
+   "market_sale": true,
+   "assessed": 404000,
+   "assessed_land": 74600,
+   "assessed_bldg": 328600,
+   "difference": -204000,
+   "pct_of_assessed": -50.5,
+   "below_assessment": true,
+   "lat": 43.130751,
+   "lon": -71.451812,
+   "use": "TWO FAMILY",
+   "sqft": "3322",
+   "beds": "8",
+   "baths": "2",
+   "year_built": "1894",
+   "acres": 0.08,
+   "zone": "B-2A",
+   "prior_sales": [
+    {
+     "date": "2003-05-21",
+     "price": 214000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2005-12-01",
+     "price": 225000,
+     "qualified": "Q"
+    },
+    {
+     "date": "2009-08-14",
+     "price": 97600,
+     "qualified": "U"
     }
    ]
   }
