@@ -167,9 +167,28 @@ export default function PrivacyPage() {
           </ul>
           <p className="text-sm text-stone-700 leading-relaxed">
             The town-side data (meeting summaries, agenda PDFs, scraped
-            service pages) is all from the Town of Pembroke's own public
-            website. It belongs to the town, not to us, and the town
-            publishes it as a public record.
+            service pages, and the property assessment and sale records on
+            the{" "}
+            <Link className="underline" href="/property-values">
+              home sale values
+            </Link>{" "}
+            page) is all from the Town of Pembroke&apos;s own public
+            website and property database. It belongs to the town, not to
+            us, and the town publishes it as a public record.
+          </p>
+          <p className="text-sm text-stone-700 leading-relaxed mt-3">
+            One deliberate omission: although property assessment records in
+            New Hampshire are public, we do{" "}
+            <strong>not</strong> publish or store property owners&apos; names
+            anywhere on this site. We publish the assessment value, the
+            recorded sale prices, the address, and a map pin. That is what
+            residents need, and it avoids carrying personal data we have no
+            reason to hold.
+          </p>
+          <p className="text-sm text-stone-700 leading-relaxed mt-3">
+            Asking prices for homes currently on the market come from public
+            listing sites (Redfin, Movoto), which publish them. Those sites
+            may show a listing agent&apos;s name; we do not reproduce it.
           </p>
         </section>
 

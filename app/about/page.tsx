@@ -51,6 +51,12 @@ export default function AboutPage() {
               Answers come from the town's own website.
             </li>
             <li>
+              <Link className="underline" href="/property-values">Home sale
+              values</Link> — recent Pembroke home sales and current listings,
+              each next to the town&apos;s assessed property value, on a map.
+              Straight from the town&apos;s property database.
+            </li>
+            <li>
               <Link className="underline" href="/trash">Trash day lookup</Link>{" "}
               — type your street, get your pickup day.
             </li>
