@@ -18,6 +18,7 @@ interface Props {
 
 type Filter = "all" | "below" | "near" | "above";
 type SortKey = "date" | "price" | "assessed" | "pct";
+type Scope = "market" | "all";
 
 const money = (n: number) =>
   "$" + n.toLocaleString("en-US", { maximumFractionDigits: 0 });
@@ -44,12 +45,20 @@ const FILTERS: Array<{ key: Filter; label: string }> = [
 
 export function PropertyValueTable({ sales, generatedAt, sourceUrl }: Props) {
   const [filter, setFilter] = useState<Filter>("all");
+  const [scope, setScope] = useState<Scope>("market");
   const [sort, setSort] = useState<SortKey>("date");
   const [focusId, setFocusId] = useState<string | null>(null);
   const [showMap, setShowMap] = useState(false);
 
+  // Arm's-length sales are the meaningful comparison against an assessment.
+  // Transfers are shown only when the resident explicitly asks for them.
+  const scoped = useMemo(
+    () => (scope === "market" ? sales.filter((s) => s.market_sale) : sales),
+    [sales, scope]
+  );
+
   const rows = useMemo(() => {
-    let out = sales.slice();
+    let out = scoped.slice();
     if (filter !== "all") out = out.filter((s) => bucket(s) === filter);
     const dir = sort === "date" ? -1 : 1;
     out.sort((a, b) => {
@@ -65,7 +74,7 @@ export function PropertyValueTable({ sales, generatedAt, sourceUrl }: Props) {
       }
     });
     return out;
-  }, [sales, filter, sort]);
+  }, [scoped, filter, sort]);
 
   const pins = useMemo<MapPin[]>(
     () =>
@@ -85,14 +94,19 @@ export function PropertyValueTable({ sales, generatedAt, sourceUrl }: Props) {
 
   const counts = useMemo(() => {
     let below = 0, near = 0, above = 0;
-    for (const s of sales) {
+    for (const s of scoped) {
       const b = bucket(s);
       if (b === "below") below++;
       else if (b === "near") near++;
       else above++;
     }
-    return { below, near, above, all: sales.length };
-  }, [sales]);
+    return { below, near, above, all: scoped.length };
+  }, [scoped]);
+
+  const transferCount = useMemo(
+    () => sales.filter((s) => !s.market_sale).length,
+    [sales]
+  );
 
   const selectRow = (id: string) => {
     setFocusId(id);
@@ -123,6 +137,11 @@ export function PropertyValueTable({ sales, generatedAt, sourceUrl }: Props) {
         <Stat label="Within 10%" value={String(counts.near)} tone="amber" />
         <Stat label="Sold below assessment" value={String(counts.below)} tone="red" />
       </div>
+      <p className="mt-2 text-xs text-stone-500">
+        {scope === "market"
+          ? "Arm's-length sales only — the ones that reflect what the market will pay."
+          : "Including family transfers, court sales, and foreclosures."}
+      </p>
 
       {/* Filters */}
       <div className="mt-5 flex flex-wrap items-center gap-2">
@@ -148,6 +167,37 @@ export function PropertyValueTable({ sales, generatedAt, sourceUrl }: Props) {
           );
         })}
       </div>
+
+      {/* Scope: market sales by default; transfers opt-in */}
+      {transferCount > 0 && (
+        <div className="mt-3 flex flex-wrap items-center gap-2 text-sm">
+          <span className="text-stone-500">Show</span>
+          <button
+            type="button"
+            onClick={() => setScope("market")}
+            className={`min-h-[36px] rounded-md border px-2.5 py-1 text-sm ${
+              scope === "market"
+                ? "border-stone-900 bg-stone-900 text-white"
+                : "border-stone-300 bg-white text-stone-700"
+            }`}
+            aria-pressed={scope === "market"}
+          >
+            Market sales only
+          </button>
+          <button
+            type="button"
+            onClick={() => setScope("all")}
+            className={`min-h-[36px] rounded-md border px-2.5 py-1 text-sm ${
+              scope === "all"
+                ? "border-stone-900 bg-stone-900 text-white"
+                : "border-stone-300 bg-white text-stone-700"
+            }`}
+            aria-pressed={scope === "all"}
+          >
+            Include transfers ({transferCount})
+          </button>
+        </div>
+      )}
 
       {/* Map toggle — on mobile the map sits under the list unless asked for */}
       <div className="mt-4 sm:hidden">
