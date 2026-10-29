@@ -40,6 +40,7 @@ const GROUPS: NavGroup[] = [
       { href: "/welcome", label: "New resident checklist" },
       { href: "/schools", label: "Schools (SAU 53)" },
       { href: "/property-values", label: "Home sale values" },
+      { href: "/decisions", label: "How the town decides" },
     ],
   },
   {

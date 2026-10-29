@@ -57,9 +57,16 @@ export default function AboutPage() {
               Straight from the town&apos;s property database.
             </li>
             <li>
+              <Link className="underline" href="/decisions">How the town decides</Link>{" "}
+              — two years of meeting minutes read straight through: what the
+              town spent its attention on, which way each subject leaned, who
+              moved what, and the votes where the minutes name who voted how.
+              Every decision links back to the source document.
+            </li>
+            <li>
               <Link className="underline" href="/property-values">What the numbers say</Link>{" "}
               — what Pembroke homes are going for per square foot, how recent sales
-              compare to the town&apos;s assessment, where your tax dollar goes, and
+              compare to the town&apos;s assessed value, where your tax dollar goes, and
               an estimate of the annual bill on any home shown.
             </li>
             <li>

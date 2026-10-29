@@ -191,6 +191,20 @@ export default function PrivacyPage() {
             may show a listing agent&apos;s name; we do not reproduce it.
           </p>
           <p className="text-sm text-stone-700 leading-relaxed mt-3">
+            The{" "}
+            <Link className="underline" href="/decisions">
+              how the town decides
+            </Link>{" "}
+            page is built from the town&apos;s own published meeting minutes.
+            It names public officials and, where the minutes record it, how
+            individual members voted. Those minutes are public records in New
+            Hampshire under RSA 91, and every decision on the page links back
+            to the source document so anyone can check it. We publish no
+            resident information on that page, and we do not score, rank, or
+            label any member — the page shows the record and lets you draw
+            your own conclusions.
+          </p>
+          <p className="text-sm text-stone-700 leading-relaxed mt-3">
             The tax bill figures on the{" "}
             <Link className="underline" href="/property-values">
               home sale values

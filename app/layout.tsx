@@ -65,6 +65,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 <NavLink href="/welcome">Welcome</NavLink>
                 <NavLink href="/schools">Schools</NavLink>
                 <NavLink href="/property-values">Sale values</NavLink>
+                <NavLink href="/decisions">How the town decides</NavLink>
                 <NavLink href="/about">About</NavLink>
                 <span className="border-l border-white/20 pl-3 ml-1">
                   <NavAuth />
