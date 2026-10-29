@@ -49,6 +49,8 @@ export interface MotionRow {
   seconder: string | null;
   outcome: string;
   direction: string;
+  /** The town's own action word, straight from the motion text. */
+  verb: string;
   topic: string;
   issue: string;
   amount: number | null;
@@ -73,6 +75,20 @@ export interface StateRep {
   url: string | null;
 }
 
+export interface IssueDecision {
+  date: string;
+  month: string;
+  subject: string;
+  verb: string;
+  direction: string;
+  outcome: string;
+  mover: string | null;
+  seconder: string | null;
+  committee: string | null;
+  amount: number | null;
+  url: string | null;
+}
+
 export interface IssueSummary {
   issue: string;
   count: number;
@@ -85,6 +101,11 @@ export interface IssueSummary {
   money_named: number;
   largest_amount: number | null;
   movers: Record<string, number>;
+  /** The town's own action words: "approve" 9, "deny" 3, ... */
+  verbs: Record<string, number>;
+  /** Decision counts per month, split by direction. */
+  months: Record<string, { more: number; less: number; admin: number; total: number }>;
+  decisions: IssueDecision[];
 }
 
 export interface AttendanceRow {
@@ -152,6 +173,8 @@ export interface GovernanceSummary {
   };
   topics: TopicSummary[];
   issues: IssueSummary[];
+  /** Every month in the window, for stable axes. */
+  months: string[];
   committees: CommitteeSummary[];
   attendance: AttendanceRow[];
   members: MemberSummary[];

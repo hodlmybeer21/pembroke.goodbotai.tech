@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T19:21:17.515576Z",
+ "generated_at": "2026-10-29T19:40:05.480910Z",
  "minutes_count": 266,
  "source_span": {
   "start": "2025-01-16",
@@ -217,7 +217,352 @@
     "Jules Pellerin": 5,
     "Artie": 4,
     "Paulette Malo": 2
-   }
+   },
+   "verbs": {
+    "table": 5,
+    "approve": 5,
+    "accept": 3,
+    "authorize": 2,
+    "send": 1,
+    "conditionally approve": 1,
+    "exceed": 1
+   },
+   "months": {
+    "2025-01": {
+     "more": 0,
+     "less": 0,
+     "admin": 1,
+     "total": 1
+    },
+    "2025-02": {
+     "more": 0,
+     "less": 0,
+     "admin": 1,
+     "total": 1
+    },
+    "2025-04": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2025-08": {
+     "more": 0,
+     "less": 2,
+     "admin": 0,
+     "total": 2
+    },
+    "2025-09": {
+     "more": 0,
+     "less": 2,
+     "admin": 0,
+     "total": 2
+    },
+    "2025-11": {
+     "more": 0,
+     "less": 1,
+     "admin": 0,
+     "total": 1
+    },
+    "2025-12": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2026-01": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2026-03": {
+     "more": 3,
+     "less": 0,
+     "admin": 0,
+     "total": 3
+    },
+    "2026-05": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2026-06": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2026-08": {
+     "more": 4,
+     "less": 0,
+     "admin": 1,
+     "total": 5
+    }
+   },
+   "decisions": [
+    {
+     "date": "2025-01-27",
+     "month": "2025-01",
+     "subject": "enter into non public session in accordance with RSA 91-A:3 II (I) Consideration of legal advice provided by legal counsel, either in writing or orally, to one or more members of the public body, even where legal is not ",
+     "verb": "",
+     "direction": "administrative",
+     "outcome": "",
+     "mover": null,
+     "seconder": "Matt Miller",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01272025-140"
+    },
+    {
+     "date": "2025-02-18",
+     "month": "2025-02",
+     "subject": "send an invoice for the 75 gpd for the space",
+     "verb": "send",
+     "direction": "administrative",
+     "outcome": "passed",
+     "mover": "Artie",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104"
+    },
+    {
+     "date": "2025-04-07",
+     "month": "2025-04",
+     "subject": "recommend to write the recommendation to the Board of Selectmen to reward the bid to indus",
+     "verb": "",
+     "direction": "toward more",
+     "outcome": "",
+     "mover": "Paulette Malo",
+     "seconder": "Tom",
+     "committee": "Roads Committee",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04072025-275"
+    },
+    {
+     "date": "2025-08-18",
+     "month": "2025-08",
+     "subject": "table the minutes June 16, 2025 Non-Public",
+     "verb": "table",
+     "direction": "toward less",
+     "outcome": "passed",
+     "mover": "Artie",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08182025-111"
+    },
+    {
+     "date": "2025-08-18",
+     "month": "2025-08",
+     "subject": "table the minutes July 21, 2025 Non-Public",
+     "verb": "table",
+     "direction": "toward less",
+     "outcome": "passed",
+     "mover": "Artie",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08182025-111"
+    },
+    {
+     "date": "2025-09-15",
+     "month": "2025-09",
+     "subject": "table the minutes June 16, 2025 Non-Public",
+     "verb": "table",
+     "direction": "toward less",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09152025-112"
+    },
+    {
+     "date": "2025-09-15",
+     "month": "2025-09",
+     "subject": "table the minutes July 21, 2025 Non-Public",
+     "verb": "table",
+     "direction": "toward less",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09152025-112"
+    },
+    {
+     "date": "2025-11-17",
+     "month": "2025-11",
+     "subject": "table the bottom line of the budget until the December meeting due to the unknown final numbers for the health & dental insurance",
+     "verb": "table",
+     "direction": "toward less",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11172025-114"
+    },
+    {
+     "date": "2025-12-15",
+     "month": "2025-12",
+     "subject": "authorize Paulette to research and move forward to obtain a credit card for the sewer department, and to authorize her to sign any paperwork needed to complete the application",
+     "verb": "authorize",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_12152025-115"
+    },
+    {
+     "date": "2026-01-20",
+     "month": "2026-01",
+     "subject": "approve the meeting schedule with the meetings in January, February, March, April and June will take place on the 3rd Tuesday of those months",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Paulette Malo",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01202026-116"
+    },
+    {
+     "date": "2026-03-17",
+     "month": "2026-03",
+     "subject": "conditionally approve capacity for this project to move forward. Should the ZBA approve the project a substantial amount of the connection fee will need to be paid upon submittal to the Planning Board as well as other fe",
+     "verb": "conditionally approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172026-106"
+    },
+    {
+     "date": "2026-03-18",
+     "month": "2026-03",
+     "subject": "accept the committee's recommendations as presented, for both the health and dental plans",
+     "verb": "accept",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": "Bryan Christiansen",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03182026-146"
+    },
+    {
+     "date": "2026-03-18",
+     "month": "2026-03",
+     "subject": "approve the letter as amended",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": "Bryan Christiansen",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03182026-146"
+    },
+    {
+     "date": "2026-05-06",
+     "month": "2026-05",
+     "subject": "approve the crack sealing bids to sealcoating Inc",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": "Peter Gagyi",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287"
+    },
+    {
+     "date": "2026-06-03",
+     "month": "2026-06",
+     "subject": "accept the $3150 in accordance with RSA 31:95 III (b)",
+     "verb": "accept",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": "Bryan Christiansen",
+     "committee": "Board of Selectmen",
+     "amount": 3150,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06032026-289"
+    },
+    {
+     "date": "2026-08-05",
+     "month": "2026-08",
+     "subject": "approve minor trimming of trees in the right of way and to bring in the necessary fill to access the site",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": "Matt Miller",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08052026-364"
+    },
+    {
+     "date": "2026-08-05",
+     "month": "2026-08",
+     "subject": "approve minor work in the roadway to remove boulders to access the site which will be reviewed by Public Works",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": "Bryan Christiansen",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08052026-364"
+    },
+    {
+     "date": "2026-08-17",
+     "month": "2026-08",
+     "subject": "not exceed $67,900 if the other 2 bids present proposals. The Commissioners want a text/call if any proposal is over $67,900 and will discuss at September 21, 2026 meeting",
+     "verb": "exceed",
+     "direction": "administrative",
+     "outcome": "passed",
+     "mover": "Artie",
+     "seconder": "Jules Pellerin",
+     "committee": "Sewer Commission",
+     "amount": 67900,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08172026-378"
+    },
+    {
+     "date": "2026-08-19",
+     "month": "2026-08",
+     "subject": "authorize the Chair to sign the letters with the New Hampshire Department of Highway Safety permitting participation in the grant- funded detail work",
+     "verb": "authorize",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Bryan Christiansen",
+     "seconder": "Matt Miller",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+    },
+    {
+     "date": "2026-08-19",
+     "month": "2026-08",
+     "subject": "accept the $100 donation in accordance with RSA 31:95-b III (b) from the Pembroke Women's Club for Pembroke EMS",
+     "verb": "accept",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Bryan Christiansen",
+     "seconder": "Peter Gagyi",
+     "committee": "Board of Selectmen",
+     "amount": 100,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+    }
+   ]
   },
   {
    "issue": "Sewer billing and abatements",
@@ -235,7 +580,342 @@
    "movers": {
     "Jules Pellerin": 13,
     "Artie": 6
-   }
+   },
+   "verbs": {
+    "approve": 9,
+    "abate": 4,
+    "deny": 3,
+    "accept": 3
+   },
+   "months": {
+    "2025-02": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2025-03": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2025-04": {
+     "more": 2,
+     "less": 1,
+     "admin": 0,
+     "total": 3
+    },
+    "2025-05": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2025-06": {
+     "more": 2,
+     "less": 0,
+     "admin": 0,
+     "total": 2
+    },
+    "2025-07": {
+     "more": 1,
+     "less": 1,
+     "admin": 0,
+     "total": 2
+    },
+    "2025-08": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2025-11": {
+     "more": 0,
+     "less": 2,
+     "admin": 0,
+     "total": 2
+    },
+    "2025-12": {
+     "more": 0,
+     "less": 1,
+     "admin": 0,
+     "total": 1
+    },
+    "2026-01": {
+     "more": 0,
+     "less": 1,
+     "admin": 0,
+     "total": 1
+    },
+    "2026-03": {
+     "more": 1,
+     "less": 1,
+     "admin": 0,
+     "total": 2
+    },
+    "2026-04": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2026-06": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    }
+   },
+   "decisions": [
+    {
+     "date": "2025-02-18",
+     "month": "2025-02",
+     "subject": "approve the $30.00 late penalty as a 1 time abatement",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Artie",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": 30,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104"
+    },
+    {
+     "date": "2025-03-17",
+     "month": "2025-03",
+     "subject": "approve the $30.00 late penalty as a 1 time abatement",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 30,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172025-105"
+    },
+    {
+     "date": "2025-04-21",
+     "month": "2025-04",
+     "subject": "approve the $30.00 late penalty as a 1 time abatement",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Artie",
+     "seconder": "Jules Pellerin",
+     "committee": "Sewer Commission",
+     "amount": 30,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212025-107"
+    },
+    {
+     "date": "2025-04-21",
+     "month": "2025-04",
+     "subject": "DENY the abatement for $587.63 due to their failure to fix the problem",
+     "verb": "deny",
+     "direction": "toward less",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 588,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212025-107"
+    },
+    {
+     "date": "2025-04-21",
+     "month": "2025-04",
+     "subject": "accept the abatement for $30.00 Late Penalty as a one-time abatement",
+     "verb": "accept",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 30,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212025-107"
+    },
+    {
+     "date": "2025-05-20",
+     "month": "2025-05",
+     "subject": "approve the $30.00 late penalty as a 1 time abatement",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Artie",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": 30,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05202025-108"
+    },
+    {
+     "date": "2025-06-16",
+     "month": "2025-06",
+     "subject": "approve the $30.00 late penalty as a 1 time abatement",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 30,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109"
+    },
+    {
+     "date": "2025-06-16",
+     "month": "2025-06",
+     "subject": "approve the abatement for $363.67 due to the meter reading being incorrect",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 364,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109"
+    },
+    {
+     "date": "2025-07-21",
+     "month": "2025-07",
+     "subject": "DENY the $30.00 late penalty. This decision is based on the history of the account showing that payment were made at the time and some times before the post cards were sent",
+     "verb": "deny",
+     "direction": "toward less",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 30,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07212025-110"
+    },
+    {
+     "date": "2025-07-21",
+     "month": "2025-07",
+     "subject": "approve the $30.00 late penalty as a 1 time abatement",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 30,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07212025-110"
+    },
+    {
+     "date": "2025-08-18",
+     "month": "2025-08",
+     "subject": "accept the $60.00 late penalty",
+     "verb": "accept",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Artie",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": 60,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08182025-111"
+    },
+    {
+     "date": "2025-11-17",
+     "month": "2025-11",
+     "subject": "abate this account in the amount of $87.62 due to a billing error",
+     "verb": "abate",
+     "direction": "toward less",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 88,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11172025-114"
+    },
+    {
+     "date": "2025-11-17",
+     "month": "2025-11",
+     "subject": "abate this account for the late penalty of $30.00 as a 1 time abatement",
+     "verb": "abate",
+     "direction": "toward less",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 30,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11172025-114"
+    },
+    {
+     "date": "2025-12-15",
+     "month": "2025-12",
+     "subject": "abate this account in the amount of $30.00 late penalty as a 1 time abatement",
+     "verb": "abate",
+     "direction": "toward less",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 30,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_12152025-115"
+    },
+    {
+     "date": "2026-01-20",
+     "month": "2026-01",
+     "subject": "abate this account in the amount of $30.00 late penalty as a 1 time abatement",
+     "verb": "abate",
+     "direction": "toward less",
+     "outcome": "passed",
+     "mover": "Artie",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": 30,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01202026-116"
+    },
+    {
+     "date": "2026-03-17",
+     "month": "2026-03",
+     "subject": "DENY the abatement for $353.77",
+     "verb": "deny",
+     "direction": "toward less",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 354,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172026-106"
+    },
+    {
+     "date": "2026-03-17",
+     "month": "2026-03",
+     "subject": "approve the abatement for $30.00 late penalty due to billing issues from Waterworks",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 30,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172026-106"
+    },
+    {
+     "date": "2026-04-21",
+     "month": "2026-04",
+     "subject": "approve the abatement for $136.50 and the $30.00 late penalty due to penalties being added on 4/21/2026",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Artie",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": 136,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212026-336"
+    },
+    {
+     "date": "2026-06-16",
+     "month": "2026-06",
+     "subject": "accept the $30.00 abatement as a 1 time abatement",
+     "verb": "accept",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 30,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162026-338"
+    }
+   ]
   },
   {
    "issue": "Sewer infrastructure and equipment",
@@ -253,7 +933,151 @@
    "movers": {
     "Jules Pellerin": 6,
     "Artie": 2
-   }
+   },
+   "verbs": {
+    "accept": 3,
+    "approve": 3,
+    "move": 1,
+    "purchase": 1
+   },
+   "months": {
+    "2025-02": {
+     "more": 1,
+     "less": 0,
+     "admin": 1,
+     "total": 2
+    },
+    "2025-03": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2025-06": {
+     "more": 2,
+     "less": 0,
+     "admin": 0,
+     "total": 2
+    },
+    "2026-02": {
+     "more": 2,
+     "less": 0,
+     "admin": 0,
+     "total": 2
+    },
+    "2026-06": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    }
+   },
+   "decisions": [
+    {
+     "date": "2025-02-18",
+     "month": "2025-02",
+     "subject": "move $200,000.00 to the sewer PDIP operating account",
+     "verb": "move",
+     "direction": "administrative",
+     "outcome": "passed",
+     "mover": "Artie",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": 200000,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104"
+    },
+    {
+     "date": "2025-02-18",
+     "month": "2025-02",
+     "subject": "purchase the Ariens Deluxe snow blower from Greenland Equipment for the amount not to exceed $1,500.00",
+     "verb": "purchase",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Artie",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": 1500,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182025-104"
+    },
+    {
+     "date": "2025-03-17",
+     "month": "2025-03",
+     "subject": "accept the quote for 3 heat pumps with a price not to exceed $21,900",
+     "verb": "accept",
+     "direction": "toward more",
+     "outcome": "",
+     "mover": "Jules Pellerin",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": 21900,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172025-105"
+    },
+    {
+     "date": "2025-06-16",
+     "month": "2025-06",
+     "subject": "accept the quote for the 100 kw at a price not to exceed 47,025.00",
+     "verb": "accept",
+     "direction": "toward more",
+     "outcome": "",
+     "mover": "Jules Pellerin",
+     "seconder": "Paulette Malo",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109"
+    },
+    {
+     "date": "2025-06-16",
+     "month": "2025-06",
+     "subject": "accept the quote from Advanced to replace 82 feet of sewer main on the easement for a price not to exceed $31,675.00",
+     "verb": "accept",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 31675,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109"
+    },
+    {
+     "date": "2026-02-17",
+     "month": "2026-02",
+     "subject": "approve moving $200,000.000 from Merrimack County Savings Bank to the Operating Account at PDIP",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": 200000,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02172026-118"
+    },
+    {
+     "date": "2026-02-17",
+     "month": "2026-02",
+     "subject": "approve the purchase of a new laptop",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02172026-118"
+    },
+    {
+     "date": "2026-06-16",
+     "month": "2026-06",
+     "subject": "approve opening separate escrow accounts for projects on an as needed basis and to place those account at PDIP for the managing of those funds along with interest",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162026-338"
+    }
+   ]
   },
   {
    "issue": "Capital reserve withdrawals",
@@ -271,7 +1095,86 @@
    "movers": {
     "Bryan Christiansen": 2,
     "Sandy Goulet": 1
-   }
+   },
+   "verbs": {
+    "approve": 2,
+    "authorize": 1,
+    "waive": 1
+   },
+   "months": {
+    "2026-04": {
+     "more": 2,
+     "less": 0,
+     "admin": 0,
+     "total": 2
+    },
+    "2026-06": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2026-08": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    }
+   },
+   "decisions": [
+    {
+     "date": "2026-04-01",
+     "month": "2026-04",
+     "subject": "Goulet, to authorize the withdrawal of the sum of $8181 from the revaluation Capital Reserve fund and to transfer to the General Fund and to authorize the chair to sign the document",
+     "verb": "authorize",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": null,
+     "seconder": "Bryan Christiansen",
+     "committee": "Board of Selectmen",
+     "amount": 8181,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04012026-290"
+    },
+    {
+     "date": "2026-04-15",
+     "month": "2026-04",
+     "subject": "waive the bid requirements and to offer the bid for the stage and roof to New England Outdoor in the amount of $29,634, and to further request the removal from the Recreation Capital Reserve Fund in the amount of $9,364",
+     "verb": "waive",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Bryan Christiansen",
+     "seconder": "Matt Miller",
+     "committee": "Board of Selectmen",
+     "amount": 29634,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04152026-293"
+    },
+    {
+     "date": "2026-06-03",
+     "month": "2026-06",
+     "subject": "approve the withdrawal of $312,250 from the Town Equipment Capital Reserve Fund for the purchase of the new six wheel dump truck and accessories",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": "Bryan Christiansen",
+     "committee": "Board of Selectmen",
+     "amount": 312250,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06032026-289"
+    },
+    {
+     "date": "2026-08-19",
+     "month": "2026-08",
+     "subject": "approve the withdrawals of a sum not to exceed $8,500 from the Police Small Equipment Fund, and to further withdraw the sum not to exceed $5,000 from the Energy Savings Capital Reserve Funds",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Bryan Christiansen",
+     "seconder": null,
+     "committee": "Board of Selectmen",
+     "amount": 8500,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+    }
+   ]
   },
   {
    "issue": "Land use, property and mapping",
@@ -292,7 +1195,86 @@
     "Paulette Malo": 1,
     "Sandy Goulet": 1,
     "Jules Pellerin": 1
-   }
+   },
+   "verbs": {
+    "allow": 1,
+    "authorize": 1,
+    "send": 1
+   },
+   "months": {
+    "2025-08": {
+     "more": 0,
+     "less": 0,
+     "admin": 1,
+     "total": 1
+    },
+    "2026-04": {
+     "more": 2,
+     "less": 0,
+     "admin": 0,
+     "total": 2
+    },
+    "2026-06": {
+     "more": 0,
+     "less": 0,
+     "admin": 1,
+     "total": 1
+    }
+   },
+   "decisions": [
+    {
+     "date": "2025-08-11",
+     "month": "2025-08",
+     "subject": "hammerhead should not be allowed as zoning prohibits. The road should be crowned and if additional drainage is needed must be done and pavement thickness needs to be 2 \u00bd\" base and 1 \u00bd\" top coat",
+     "verb": "",
+     "direction": "administrative",
+     "outcome": "",
+     "mover": "Paulette Malo",
+     "seconder": "Tom",
+     "committee": "Roads Committee",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08112025-279"
+    },
+    {
+     "date": "2026-04-01",
+     "month": "2026-04",
+     "subject": "allow Jessica Stephenson to take care of the property on Main Street with no objections from the Town",
+     "verb": "allow",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": null,
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04012026-290"
+    },
+    {
+     "date": "2026-04-01",
+     "month": "2026-04",
+     "subject": "authorize the Chairman to sign the waiver for map 262-36-1, moved by Selectmen Goulet",
+     "verb": "authorize",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": null,
+     "seconder": "Matt Miller",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04012026-290"
+    },
+    {
+     "date": "2026-06-16",
+     "month": "2026-06",
+     "subject": "send a letter to the person and should they not respond send a letter to the property owner informing them that the tenant is behind on payments",
+     "verb": "send",
+     "direction": "administrative",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162026-338"
+    }
+   ]
   },
   {
    "issue": "Bid and procurement waivers",
@@ -312,7 +1294,72 @@
    "movers": {
     "Sandy Goulet": 2,
     "Jules Pellerin": 1
-   }
+   },
+   "verbs": {
+    "waive": 2,
+    "send": 1
+   },
+   "months": {
+    "2026-03": {
+     "more": 0,
+     "less": 0,
+     "admin": 1,
+     "total": 1
+    },
+    "2026-05": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2026-07": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    }
+   },
+   "decisions": [
+    {
+     "date": "2026-03-09",
+     "month": "2026-03",
+     "subject": "send the bid package as prepared be sent out",
+     "verb": "send",
+     "direction": "administrative",
+     "outcome": "",
+     "mover": "Sandy Goulet",
+     "seconder": "Paulette Malo",
+     "committee": "Roads Committee",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03092026-274"
+    },
+    {
+     "date": "2026-05-06",
+     "month": "2026-05",
+     "subject": "waive the sealed bids requirements and to approve the gas mask purchase from Atlantic tactical for the sum of $25, 144.20",
+     "verb": "waive",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": "Bryan Christiansen",
+     "committee": "Board of Selectmen",
+     "amount": 25,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287"
+    },
+    {
+     "date": "2026-07-20",
+     "month": "2026-07",
+     "subject": "waive the bidding process (minimum of 3 bids) for this year ONLY",
+     "verb": "waive",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Jules Pellerin",
+     "seconder": "Artie",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07202026-355"
+    }
+   ]
   },
   {
    "issue": "Contracts and professional services",
@@ -329,7 +1376,53 @@
    "largest_amount": null,
    "movers": {
     "Sandy Goulet": 2
-   }
+   },
+   "verbs": {
+    "accept": 1,
+    "approve": 1
+   },
+   "months": {
+    "2026-03": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2026-06": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    }
+   },
+   "decisions": [
+    {
+     "date": "2026-03-18",
+     "month": "2026-03",
+     "subject": "accept the contracts with Milton Cat and to authorize the Public Works Director to sign the contract",
+     "verb": "accept",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": "Bryan Christiansen",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03182026-146"
+    },
+    {
+     "date": "2026-06-03",
+     "month": "2026-06",
+     "subject": "approve the Hazard Mitigation contract with Central NH Regional Planning Commission and to authorize the Town Administrator and Fire Chief to sign the document",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": "Bryan Christiansen",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06032026-289"
+    }
+   ]
   },
   {
    "issue": "Recreation, fields and programs",
@@ -346,7 +1439,47 @@
    "largest_amount": 450,
    "movers": {
     "Sandy Goulet": 2
-   }
+   },
+   "verbs": {
+    "authorize": 1,
+    "waive": 1
+   },
+   "months": {
+    "2026-05": {
+     "more": 2,
+     "less": 0,
+     "admin": 0,
+     "total": 2
+    }
+   },
+   "decisions": [
+    {
+     "date": "2026-05-06",
+     "month": "2026-05",
+     "subject": "authorize the farmers market to take play on May 16\" at Pembroke Park",
+     "verb": "authorize",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": "Bryan Christiansen",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287"
+    },
+    {
+     "date": "2026-05-06",
+     "month": "2026-05",
+     "subject": "waive the Little League fees of $450 due to the expenses that they pay for field maintenance",
+     "verb": "waive",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": "Bryan Christiansen",
+     "committee": "Board of Selectmen",
+     "amount": 450,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287"
+    }
+   ]
   },
   {
    "issue": "Town Code amendments",
@@ -364,7 +1497,53 @@
    "movers": {
     "Sandy Goulet": 1,
     "Bryan Christiansen": 1
-   }
+   },
+   "verbs": {
+    "approve": 1,
+    "move": 1
+   },
+   "months": {
+    "2026-05": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    },
+    "2026-08": {
+     "more": 0,
+     "less": 0,
+     "admin": 1,
+     "total": 1
+    }
+   },
+   "decisions": [
+    {
+     "date": "2026-05-20",
+     "month": "2026-05",
+     "subject": "approve Town Code Chapter 160 as presented",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": "Sandy Goulet",
+     "seconder": "Matt Miller",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05202026-288"
+    },
+    {
+     "date": "2026-08-19",
+     "month": "2026-08",
+     "subject": "move Town Code Chapter 191 to public hearing on September 2, 2026",
+     "verb": "move",
+     "direction": "administrative",
+     "outcome": "passed",
+     "mover": "Bryan Christiansen",
+     "seconder": "Peter Gagyi",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+    }
+   ]
   },
   {
    "issue": "Energy and utility contracting",
@@ -381,7 +1560,33 @@
    "largest_amount": null,
    "movers": {
     "Bryan Christiansen": 1
-   }
+   },
+   "verbs": {
+    "exceed": 1
+   },
+   "months": {
+    "2026-07": {
+     "more": 0,
+     "less": 0,
+     "admin": 1,
+     "total": 1
+    }
+   },
+   "decisions": [
+    {
+     "date": "2026-07-15",
+     "month": "2026-07",
+     "subject": "enter into a five year contract with Constellation Energy at a rate not to exceed 10.677 cents per kilowatt hour",
+     "verb": "exceed",
+     "direction": "administrative",
+     "outcome": "passed",
+     "mover": "Bryan Christiansen",
+     "seconder": "Karen Yeaton",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07152026-335"
+    }
+   ]
   },
   {
    "issue": "Personnel, pay and benefits",
@@ -398,7 +1603,33 @@
    "largest_amount": null,
    "movers": {
     "Artie": 1
-   }
+   },
+   "verbs": {
+    "accept": 1
+   },
+   "months": {
+    "2025-03": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    }
+   },
+   "decisions": [
+    {
+     "date": "2025-03-17",
+     "month": "2025-03",
+     "subject": "accept the COLA as budgeted and to have Andy sign as the chair the letter to the finance department",
+     "verb": "accept",
+     "direction": "toward more",
+     "outcome": "",
+     "mover": "Artie",
+     "seconder": "Jules Pellerin",
+     "committee": "Sewer Commission",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03172025-105"
+    }
+   ]
   },
   {
    "issue": "Public safety equipment",
@@ -413,8 +1644,56 @@
    },
    "money_named": 0,
    "largest_amount": null,
-   "movers": {}
+   "movers": {},
+   "verbs": {
+    "approve": 1
+   },
+   "months": {
+    "2026-05": {
+     "more": 1,
+     "less": 0,
+     "admin": 0,
+     "total": 1
+    }
+   },
+   "decisions": [
+    {
+     "date": "2026-05-06",
+     "month": "2026-05",
+     "subject": "approve the forest fire warden appointments and the federal excess property cooperative agreements",
+     "verb": "approve",
+     "direction": "toward more",
+     "outcome": "passed",
+     "mover": null,
+     "seconder": "Bryan Christiansen",
+     "committee": "Board of Selectmen",
+     "amount": null,
+     "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287"
+    }
+   ]
   }
+ ],
+ "months": [
+  "2025-01",
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05",
+  "2025-06",
+  "2025-07",
+  "2025-08",
+  "2025-09",
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08"
  ],
  "committees": [
   {
@@ -3487,6 +4766,7 @@
    "seconder": "Matt Miller",
    "outcome": "",
    "direction": "administrative",
+   "verb": "",
    "topic": "Other business",
    "issue": "One-off business",
    "amount": null,
@@ -3500,6 +4780,7 @@
    "seconder": "Paulette Malo",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 30,
@@ -3513,6 +4794,7 @@
    "seconder": "Paulette Malo",
    "outcome": "passed",
    "direction": "administrative",
+   "verb": "move",
    "topic": "Budget and money",
    "issue": "Sewer infrastructure and equipment",
    "amount": 200000,
@@ -3526,6 +4808,7 @@
    "seconder": "Paulette Malo",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "purchase",
    "topic": "Budget and money",
    "issue": "Sewer infrastructure and equipment",
    "amount": 1500,
@@ -3539,6 +4822,7 @@
    "seconder": "Paulette Malo",
    "outcome": "passed",
    "direction": "administrative",
+   "verb": "send",
    "topic": "Budget and money",
    "issue": "One-off business",
    "amount": null,
@@ -3552,6 +4836,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 30,
@@ -3565,6 +4850,7 @@
    "seconder": "Jules Pellerin",
    "outcome": "",
    "direction": "toward more",
+   "verb": "accept",
    "topic": "Budget and money",
    "issue": "Personnel, pay and benefits",
    "amount": null,
@@ -3578,6 +4864,7 @@
    "seconder": "Paulette Malo",
    "outcome": "",
    "direction": "toward more",
+   "verb": "accept",
    "topic": "Energy and sustainability",
    "issue": "Sewer infrastructure and equipment",
    "amount": 21900,
@@ -3591,6 +4878,7 @@
    "seconder": "Tom",
    "outcome": "",
    "direction": "toward more",
+   "verb": "",
    "topic": "Other business",
    "issue": "One-off business",
    "amount": null,
@@ -3604,6 +4892,7 @@
    "seconder": "Jules Pellerin",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 30,
@@ -3617,6 +4906,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward less",
+   "verb": "deny",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 588,
@@ -3630,6 +4920,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "accept",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 30,
@@ -3643,6 +4934,7 @@
    "seconder": "Paulette Malo",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 30,
@@ -3656,6 +4948,7 @@
    "seconder": "Paulette Malo",
    "outcome": "",
    "direction": "toward more",
+   "verb": "accept",
    "topic": "Other business",
    "issue": "Sewer infrastructure and equipment",
    "amount": null,
@@ -3669,6 +4962,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 30,
@@ -3682,6 +4976,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 364,
@@ -3695,6 +4990,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "accept",
    "topic": "Zoning and land use",
    "issue": "Sewer infrastructure and equipment",
    "amount": 31675,
@@ -3708,6 +5004,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward less",
+   "verb": "deny",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 30,
@@ -3721,6 +5018,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 30,
@@ -3734,6 +5032,7 @@
    "seconder": "Tom",
    "outcome": "",
    "direction": "administrative",
+   "verb": "",
    "topic": "Roads and maintenance",
    "issue": "Land use, property and mapping",
    "amount": null,
@@ -3747,6 +5046,7 @@
    "seconder": "Paulette Malo",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "accept",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 60,
@@ -3760,6 +5060,7 @@
    "seconder": "Paulette Malo",
    "outcome": "passed",
    "direction": "toward less",
+   "verb": "table",
    "topic": "Other business",
    "issue": "One-off business",
    "amount": null,
@@ -3773,6 +5074,7 @@
    "seconder": "Paulette Malo",
    "outcome": "passed",
    "direction": "toward less",
+   "verb": "table",
    "topic": "Other business",
    "issue": "One-off business",
    "amount": null,
@@ -3786,6 +5088,7 @@
    "seconder": "Paulette Malo",
    "outcome": "passed",
    "direction": "toward less",
+   "verb": "table",
    "topic": "Other business",
    "issue": "One-off business",
    "amount": null,
@@ -3799,6 +5102,7 @@
    "seconder": "Paulette Malo",
    "outcome": "passed",
    "direction": "toward less",
+   "verb": "table",
    "topic": "Other business",
    "issue": "One-off business",
    "amount": null,
@@ -3812,6 +5116,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward less",
+   "verb": "table",
    "topic": "Budget and money",
    "issue": "One-off business",
    "amount": null,
@@ -3825,6 +5130,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward less",
+   "verb": "abate",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 88,
@@ -3838,6 +5144,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward less",
+   "verb": "abate",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 30,
@@ -3851,6 +5158,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward less",
+   "verb": "abate",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 30,
@@ -3864,6 +5172,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "authorize",
    "topic": "Zoning and land use",
    "issue": "One-off business",
    "amount": null,
@@ -3877,6 +5186,7 @@
    "seconder": "Paulette Malo",
    "outcome": "passed",
    "direction": "toward less",
+   "verb": "abate",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 30,
@@ -3890,6 +5200,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Other business",
    "issue": "One-off business",
    "amount": null,
@@ -3903,6 +5214,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Sewer infrastructure and equipment",
    "amount": 200000,
@@ -3916,6 +5228,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Sewer infrastructure and equipment",
    "amount": null,
@@ -3929,6 +5242,7 @@
    "seconder": "Paulette Malo",
    "outcome": "",
    "direction": "administrative",
+   "verb": "send",
    "topic": "Other business",
    "issue": "Bid and procurement waivers",
    "amount": null,
@@ -3942,6 +5256,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward less",
+   "verb": "deny",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 354,
@@ -3955,6 +5270,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 30,
@@ -3968,6 +5284,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "conditionally approve",
    "topic": "Zoning and land use",
    "issue": "One-off business",
    "amount": null,
@@ -3981,6 +5298,7 @@
    "seconder": "Bryan Christiansen",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "accept",
    "topic": "Other business",
    "issue": "One-off business",
    "amount": null,
@@ -3994,6 +5312,7 @@
    "seconder": "Bryan Christiansen",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "accept",
    "topic": "Economic development",
    "issue": "Contracts and professional services",
    "amount": null,
@@ -4007,6 +5326,7 @@
    "seconder": "Bryan Christiansen",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Other business",
    "issue": "One-off business",
    "amount": null,
@@ -4020,6 +5340,7 @@
    "seconder": null,
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "allow",
    "topic": "Conservation and open space",
    "issue": "Land use, property and mapping",
    "amount": null,
@@ -4033,6 +5354,7 @@
    "seconder": "Bryan Christiansen",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "authorize",
    "topic": "Budget and money",
    "issue": "Capital reserve withdrawals",
    "amount": 8181,
@@ -4046,6 +5368,7 @@
    "seconder": "Matt Miller",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "authorize",
    "topic": "Economic development",
    "issue": "Land use, property and mapping",
    "amount": null,
@@ -4059,6 +5382,7 @@
    "seconder": "Matt Miller",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "waive",
    "topic": "Budget and money",
    "issue": "Capital reserve withdrawals",
    "amount": 29634,
@@ -4072,6 +5396,7 @@
    "seconder": "Paulette Malo",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 136,
@@ -4085,6 +5410,7 @@
    "seconder": "Bryan Christiansen",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "authorize",
    "topic": "Recreation and parks",
    "issue": "Recreation, fields and programs",
    "amount": null,
@@ -4098,6 +5424,7 @@
    "seconder": "Bryan Christiansen",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "waive",
    "topic": "Budget and money",
    "issue": "Recreation, fields and programs",
    "amount": 450,
@@ -4111,6 +5438,7 @@
    "seconder": "Peter Gagyi",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Other business",
    "issue": "One-off business",
    "amount": null,
@@ -4124,6 +5452,7 @@
    "seconder": "Bryan Christiansen",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "waive",
    "topic": "Budget and money",
    "issue": "Bid and procurement waivers",
    "amount": 25,
@@ -4137,6 +5466,7 @@
    "seconder": "Bryan Christiansen",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Public safety equipment",
    "amount": null,
@@ -4150,6 +5480,7 @@
    "seconder": "Matt Miller",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Other business",
    "issue": "Town Code amendments",
    "amount": null,
@@ -4163,6 +5494,7 @@
    "seconder": "Bryan Christiansen",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Capital reserve withdrawals",
    "amount": 312250,
@@ -4176,6 +5508,7 @@
    "seconder": "Bryan Christiansen",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Public safety",
    "issue": "Contracts and professional services",
    "amount": null,
@@ -4189,6 +5522,7 @@
    "seconder": "Bryan Christiansen",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "accept",
    "topic": "Other business",
    "issue": "One-off business",
    "amount": 3150,
@@ -4202,6 +5536,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "accept",
    "topic": "Budget and money",
    "issue": "Sewer billing and abatements",
    "amount": 30,
@@ -4215,6 +5550,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Sewer infrastructure and equipment",
    "amount": null,
@@ -4228,6 +5564,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "administrative",
+   "verb": "send",
    "topic": "Budget and money",
    "issue": "Land use, property and mapping",
    "amount": null,
@@ -4241,6 +5578,7 @@
    "seconder": "Karen Yeaton",
    "outcome": "passed",
    "direction": "administrative",
+   "verb": "exceed",
    "topic": "Energy and sustainability",
    "issue": "Energy and utility contracting",
    "amount": null,
@@ -4254,6 +5592,7 @@
    "seconder": "Artie",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "waive",
    "topic": "Other business",
    "issue": "Bid and procurement waivers",
    "amount": null,
@@ -4267,6 +5606,7 @@
    "seconder": "Matt Miller",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Conservation and open space",
    "issue": "One-off business",
    "amount": null,
@@ -4280,6 +5620,7 @@
    "seconder": "Bryan Christiansen",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Roads and maintenance",
    "issue": "One-off business",
    "amount": null,
@@ -4293,6 +5634,7 @@
    "seconder": "Jules Pellerin",
    "outcome": "passed",
    "direction": "administrative",
+   "verb": "exceed",
    "topic": "Other business",
    "issue": "One-off business",
    "amount": 67900,
@@ -4306,6 +5648,7 @@
    "seconder": null,
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "approve",
    "topic": "Budget and money",
    "issue": "Capital reserve withdrawals",
    "amount": 8500,
@@ -4319,6 +5662,7 @@
    "seconder": "Matt Miller",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "authorize",
    "topic": "Budget and money",
    "issue": "One-off business",
    "amount": null,
@@ -4332,6 +5676,7 @@
    "seconder": "Peter Gagyi",
    "outcome": "passed",
    "direction": "administrative",
+   "verb": "move",
    "topic": "Zoning and land use",
    "issue": "Town Code amendments",
    "amount": null,
@@ -4345,6 +5690,7 @@
    "seconder": "Peter Gagyi",
    "outcome": "passed",
    "direction": "toward more",
+   "verb": "accept",
    "topic": "Public safety",
    "issue": "One-off business",
    "amount": 100,

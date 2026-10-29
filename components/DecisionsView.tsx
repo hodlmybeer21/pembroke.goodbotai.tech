@@ -120,6 +120,259 @@ function Legend({ color, label }: { color: string; label: string }) {
   );
 }
 
+// ------------------------------------------------------- attention grid
+// Which issues consumed the town's attention, month by month. Cell
+// darkness is the number of decisions in that month. Purely a count -
+// no weighting, no interpretation.
+function AttentionGrid({
+  issues,
+  months,
+}: {
+  issues: GovernanceSummary["issues"];
+  months: string[];
+}) {
+  const shown = issues.filter((i) => i.count >= 2).slice(0, 9);
+  const max = Math.max(
+    ...shown.flatMap((i) => Object.values(i.months).map((m) => m.total)),
+    1
+  );
+  if (!shown.length || !months.length) return null;
+
+  return (
+    <div>
+      <h3 className="text-sm font-semibold text-stone-900">
+        How the town&apos;s attention shifted
+      </h3>
+      <p className="mt-0.5 text-xs text-stone-600">
+        Each cell is the number of decisions on that issue in that month.
+        Darker means more of the town&apos;s time went there.
+      </p>
+      <div className="mt-3 overflow-x-auto">
+        <div className="min-w-[560px]">
+          <div className="flex">
+            <div className="w-36 shrink-0" />
+            {months.map((m) => (
+              <div key={m} className="flex-1 text-center text-[9px] text-stone-400">
+                {m.slice(2)}
+              </div>
+            ))}
+          </div>
+          {shown.map((i) => (
+            <div key={i.issue} className="flex items-center gap-1 py-0.5">
+              <div className="w-36 shrink-0 truncate pr-2 text-[11px] text-stone-700">
+                {i.issue}
+              </div>
+              {months.map((m) => {
+                const c = i.months[m];
+                const n = c?.total ?? 0;
+                return (
+                  <div key={m} className="flex-1 px-px">
+                    <div
+                      className="flex h-6 items-center justify-center rounded-[2px] text-[9px] font-medium"
+                      style={{
+                        backgroundColor:
+                          n === 0
+                            ? "#f5f5f4"
+                            : `rgba(30, 58, 138, ${0.15 + (n / max) * 0.85})`,
+                        color: n / max > 0.55 ? "white" : "#57534e",
+                      }}
+                      title={`${i.issue} — ${m}: ${n} decision${n === 1 ? "" : "s"}`}
+                    >
+                      {n || ""}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ------------------------------------------------------ issue evolution
+// The conversation on one issue, in order: each decision as a dot on the
+// timeline, with a running line showing the cumulative lean. The running
+// line is "more" minus "less" so far - it goes up when the town approved
+// something and down when it denied or deferred something.
+function IssueEvolution({
+  issues,
+  months,
+}: {
+  issues: GovernanceSummary["issues"];
+  months: string[];
+}) {
+  const usable = issues.filter((i) => i.count >= 2);
+  const [sel, setSel] = useState<string>(usable[0]?.issue ?? "");
+  const issue = usable.find((i) => i.issue === sel) ?? usable[0];
+  if (!issue || !months.length) return null;
+
+  const W = 620;
+  const TOP = 26;
+  const DOT_Y = 54;
+  const LEAN_TOP = 84;
+  const LEAN_H = 76;
+  const PAD_L = 34;
+  const PAD_R = 12;
+  const PAD_B = 22;
+
+  const idx = new Map(months.map((m, i) => [m, i]));
+  const span = months.length;
+  const x = (month: string) =>
+    PAD_L +
+    ((idx.get(month) ?? 0) / Math.max(span - 1, 1)) * (W - PAD_L - PAD_R);
+
+  // Running lean: more minus less, cumulative.
+  let run = 0;
+  const lean = issue.decisions.map((d) => {
+    if (d.direction === "toward more") run += 1;
+    else if (d.direction === "toward less") run -= 1;
+    return { month: d.month, run };
+  });
+  const maxAbs = Math.max(1, ...lean.map((l) => Math.abs(l.run)));
+  const leanY = (v: number) =>
+    LEAN_TOP + LEAN_H / 2 - (v / maxAbs) * (LEAN_H / 2 - 6);
+
+  const leanPath = lean
+    .map((l, i) => `${i === 0 ? "M" : "L"}${x(l.month)},${leanY(l.run)}`)
+    .join(" ");
+
+  const verbEntries = Object.entries(issue.verbs);
+
+  return (
+    <div>
+      <h3 className="text-sm font-semibold text-stone-900">
+        How the conversation evolved
+      </h3>
+      <p className="mt-0.5 text-xs text-stone-600">
+        Pick an issue. Each dot is one decision, in the order the town made
+        it. The line below tracks the running lean — up when the town
+        approved something, down when it denied or deferred.
+      </p>
+
+      <div className="mt-3 flex flex-wrap gap-2">
+        {usable.map((i) => (
+          <button
+            key={i.issue}
+            onClick={() => setSel(i.issue)}
+            aria-pressed={sel === i.issue}
+            className={`rounded-full border px-3 py-1 text-xs ${
+              sel === i.issue
+                ? "border-stone-900 bg-stone-900 text-white"
+                : "border-stone-300 bg-white text-stone-700"
+            }`}
+          >
+            {i.issue}
+          </button>
+        ))}
+      </div>
+
+      {/* the town's own words */}
+      <div className="mt-3 flex flex-wrap items-center gap-1.5">
+        <span className="text-xs text-stone-600">What the town actually said:</span>
+        {verbEntries.map(([v, c]) => (
+          <span
+            key={v}
+            className="rounded-full border border-stone-300 bg-white px-2 py-0.5 text-[11px] text-stone-700"
+          >
+            <span className="font-semibold">{v}</span> {c}
+          </span>
+        ))}
+      </div>
+
+      <svg viewBox={`0 0 ${W} ${LEAN_TOP + LEAN_H + PAD_B}`} className="mt-2 w-full"
+           role="img"
+           aria-label={`Decisions on ${issue.issue} over time, and the running lean`}>
+        {/* month axis */}
+        {months.map((m, i) =>
+          i % 3 === 0 || i === months.length - 1 ? (
+            <text key={m} x={x(m)} y={LEAN_TOP + LEAN_H + 14} textAnchor="middle"
+                  fontSize="9" fill="#a8a29e">
+              {m.slice(2)}
+            </text>
+          ) : null
+        )}
+
+        {/* decision dots */}
+        {issue.decisions.map((d, i) => (
+          <circle
+            key={i}
+            cx={x(d.month)}
+            cy={DOT_Y}
+            r="6"
+            fill={
+              d.direction === "toward more"
+                ? DIR_MORE
+                : d.direction === "toward less"
+                ? DIR_LESS
+                : DIR_ADMIN
+            }
+            stroke="white"
+            strokeWidth="1.5"
+          >
+            <title>{`${d.date}: ${d.subject}`}</title>
+          </circle>
+        ))}
+
+        {/* lean axis */}
+        <line x1={PAD_L} x2={W - PAD_R} y1={leanY(0)} y2={leanY(0)}
+              stroke="#d6d3d1" strokeWidth="1" />
+        <text x={PAD_L - 6} y={leanY(0) + 3} textAnchor="end" fontSize="9" fill="#a8a29e">
+          even
+        </text>
+        <text x={PAD_L - 6} y={leanY(maxAbs) + 3} textAnchor="end" fontSize="9" fill="#a8a29e">
+          +{maxAbs}
+        </text>
+        <text x={PAD_L - 6} y={leanY(-maxAbs) + 3} textAnchor="end" fontSize="9" fill="#a8a29e">
+          −{maxAbs}
+        </text>
+
+        {/* the running lean */}
+        {lean.length > 1 && (
+          <path d={leanPath} fill="none" stroke="#1e3a8a" strokeWidth="2"
+                strokeLinejoin="round" strokeLinecap="round" opacity="0.85" />
+        )}
+        {lean.map((l, i) => (
+          <circle key={i} cx={x(l.month)} cy={leanY(l.run)} r="3" fill="#1e3a8a" />
+        ))}
+      </svg>
+
+      <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-stone-600">
+        <Legend color={DIR_MORE} label="Approved / authorized" />
+        <Legend color={DIR_LESS} label="Denied / deferred" />
+        <Legend color={DIR_ADMIN} label="Routine" />
+      </div>
+
+      {/* the decisions themselves */}
+      <ol className="mt-3 space-y-1.5 border-t border-stone-200 pt-2">
+        {issue.decisions.map((d, i) => (
+          <li key={i} className="flex flex-wrap items-baseline gap-x-2 text-xs">
+            <span className="w-20 shrink-0 text-stone-500">{fmtDate(d.date)}</span>
+            {d.verb && (
+              <span className="w-16 shrink-0 font-semibold uppercase tracking-wide text-stone-800">
+                {d.verb}
+              </span>
+            )}
+            <span className="min-w-0 flex-1 text-stone-800">{d.subject}</span>
+            {d.amount && (
+              <span className="shrink-0 font-medium text-stone-700">
+                ${d.amount.toLocaleString()}
+              </span>
+            )}
+            {d.url && (
+              <a href={d.url} target="_blank" rel="noopener noreferrer"
+                 className="shrink-0 underline text-stone-500">
+                source
+              </a>
+            )}
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+}
+
 // -------------------------------------------------------------- issues
 function IssueTracker({ summary }: { summary: GovernanceSummary }) {
   const [open, setOpen] = useState<string | null>(null);
@@ -167,6 +420,18 @@ function IssueTracker({ summary }: { summary: GovernanceSummary }) {
                     </span>
                   )}
                 </div>
+                {Object.keys(i.verbs).length > 0 && (
+                  <div className="mt-1.5 flex flex-wrap gap-1">
+                    {Object.entries(i.verbs).map(([v, c]) => (
+                      <span
+                        key={v}
+                        className="rounded border border-stone-200 bg-stone-50 px-1.5 py-0.5 text-[10px] text-stone-700"
+                      >
+                        <span className="font-semibold">{v}</span> {c}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </button>
               {expanded && (
                 <div className="border-t border-stone-100 px-3 py-2.5">
@@ -733,6 +998,11 @@ function MotionRecord({ motions }: { motions: MotionRow[] }) {
                 </>
               )}
             </div>
+            {m.verb && (
+              <div className="mt-1 inline-block rounded border border-stone-200 bg-stone-50 px-1.5 py-0.5 text-[10px] uppercase tracking-wide text-stone-700">
+                {m.verb}
+              </div>
+            )}
             {m.url && (
               <a href={m.url} target="_blank" rel="noopener noreferrer"
                  className="mt-0.5 inline-block text-xs underline text-stone-500">
@@ -838,6 +1108,14 @@ export function DecisionsView({ summary }: { summary: GovernanceSummary }) {
         <IssueTracker summary={summary} />
       </div>
 
+      <div className="mt-8 border-t border-stone-200 pt-6">
+        <AttentionGrid issues={summary.issues} months={summary.months} />
+      </div>
+
+      <div className="mt-8 border-t border-stone-200 pt-6">
+        <IssueEvolution issues={summary.issues} months={summary.months} />
+      </div>
+
       <div className="mt-8 grid gap-8 lg:grid-cols-2">
         <AttendanceTable rows={summary.attendance} />
         <Relationships summary={summary} />
@@ -875,6 +1153,16 @@ export function DecisionsView({ summary }: { summary: GovernanceSummary }) {
             Everything here comes from the town&apos;s own published meeting
             minutes, which are public records in New Hampshire. Each decision
             links back to the document it came from, so you can check it.
+          </li>
+          <li>
+            <strong>The town&apos;s own words are the evidence.</strong> The
+            little action chips — <em>approve</em>, <em>deny</em>,{" "}
+            <em>waive</em>, <em>table</em> — are the words in the motion
+            itself. The &ldquo;toward more&rdquo; and &ldquo;toward less&rdquo;
+            labels are our reading of those words; the chips beside them are
+            the fact. Every decision shows its own wording and links to the
+            document it came from, so you can check our reading against
+            the source.
           </li>
           <li>
             <strong>Nobody is scored or ranked.</strong> There is no
