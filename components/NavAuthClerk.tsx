@@ -15,7 +15,7 @@ export function NavAuthClerk() {
 
   if (!configured) {
     return (
-      <Link href="/sign-in" className="text-sm text-brand-600 underline">
+      <Link href="/sign-in" className="text-sm font-medium text-white underline underline-offset-2 decoration-amber-300 hover:text-amber-200">
         Sign in
       </Link>
     );
@@ -29,7 +29,7 @@ export function NavAuthClerk() {
       </SignedIn>
       <SignedOut>
         <SignInButton mode="modal">
-          <button className="text-sm text-brand-600 underline">Sign in</button>
+          <button className="text-sm font-medium text-white underline underline-offset-2 decoration-amber-300 hover:text-amber-200">Sign in</button>
         </SignInButton>
       </SignedOut>
     </>

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T12:36:36.996991+00:00",
+  "generated_at": "2026-10-30T16:24:02.631716+00:00",
   "source_directory": "https://www.pembroke-nh.com/m/directory",
   "source_select_board": "https://www.pembroke-nh.com/1342/Board-of-Selectmen",
   "source_planning_board": "https://www.pembroke-nh.com/1397/Planning-Board",
@@ -847,12 +847,12 @@
     {
       "chamber": "house",
       "district": "Merrimack 12",
-      "name": "Dianne Schuett",
-      "party": "D",
+      "name": "Peter Mehegan",
+      "party": "R",
       "towns": "Pembroke",
-      "email": "Dianne.Schuett@gc.nh.gov",
+      "email": "Peter.Mehegan@gc.nh.gov",
       "phone": null,
-      "url": "https://gc.nh.gov/house/members/webpages/member.aspx?pid=1194"
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=11382"
     },
     {
       "chamber": "house",
@@ -862,7 +862,7 @@
       "towns": "Pembroke",
       "email": "brian.seaworth@gc.nh.gov",
       "phone": "603-722-0807",
-      "url": "https://gc.nh.gov/house/members/webpages/member.aspx?pid=1107"
+      "url": "https://gc.nh.gov/house/members/member.aspx?pid=944"
     }
   ]
 }

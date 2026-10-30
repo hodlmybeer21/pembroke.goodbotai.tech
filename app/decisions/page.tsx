@@ -15,6 +15,7 @@
 // records in New Hampshire (RSA 91). No resident personal information
 // is involved.
 
+import { formatEt } from "@/lib/dates";
 import Link from "next/link";
 import { loadGovernanceSummary } from "@/lib/governance";
 import { DecisionsView } from "@/components/DecisionsView";
@@ -33,7 +34,7 @@ export const metadata = {
     url: "https://pembroke.goodbotai.tech/decisions",
     images: [
       {
-        url: "/og-decisions.svg",
+        url: "/og-decisions.png",
         width: 1200,
         height: 630,
         alt: "How the town decides things — two years of Pembroke meeting minutes",
@@ -79,6 +80,11 @@ export default function DecisionsPage() {
             subject leaned, and who moved what. Every decision links back to
             the source document.
           </p>
+          {summary?.generated_at && (
+            <p className="mt-1 text-xs text-stone-500">
+              Data as of {formatEt(summary.generated_at)}
+            </p>
+          )}
         </div>
         <ShareButton
           title="How Pembroke decides things"

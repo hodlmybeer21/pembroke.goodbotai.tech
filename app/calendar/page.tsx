@@ -10,12 +10,27 @@
 // Planning Board, so the other bodies are shown with the pattern the
 // minutes reveal, clearly labelled as a pattern rather than a schedule.
 
+import { formatEt } from "@/lib/dates";
 import Link from "next/link";
 import {
   loadCalendar,
   loadMeetingPatterns,
   type CalendarEvent,
 } from "@/lib/town-data";
+
+export const metadata = {
+  title: "Meeting calendar — Pembroke, NH",
+  description:
+    "Upcoming Pembroke Select Board, Planning Board and committee meetings, with times, from the town's published calendar.",
+  alternates: { canonical: "/calendar" },
+  openGraph: {
+    title: "Meeting calendar — Pembroke, NH",
+    description:
+      "Upcoming Pembroke Select Board, Planning Board and committee meetings, with times, from the town's published calendar.",
+    url: "/calendar",
+    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Pembroke, NH" }],
+  },
+};
 
 export const revalidate = 3600;
 
@@ -217,11 +232,7 @@ export default function CalendarPage() {
 
       {calendar?.generated_at && (
         <p className="mt-10 text-xs text-stone-500">
-          Calendar checked{" "}
-          {new Date(calendar.generated_at).toLocaleString("en-US", {
-            dateStyle: "medium",
-            timeStyle: "short",
-          })}
+          Calendar checked {formatEt(calendar.generated_at)}
           . This is the town&rsquo;s published calendar; it changes when they
           post new dates.
         </p>

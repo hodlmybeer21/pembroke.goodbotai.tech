@@ -10,7 +10,7 @@ import Link from "next/link";
 const ClerkChrome = dynamic(() => import("./NavAuthClerk").then((m) => m.NavAuthClerk), {
   ssr: false,
   loading: () => (
-    <Link href="/sign-in" className="text-sm text-brand-600 underline">
+    <Link href="/sign-in" className="text-sm font-medium text-white underline underline-offset-2 decoration-amber-300 hover:text-amber-200">
       Sign in
     </Link>
   ),

@@ -8,6 +8,7 @@
 
 import { useMemo, useState } from "react";
 import type { ArchiveDoc } from "@/lib/town-data";
+import { formatEt, parseMeetingDate, TOWN_TZ } from "@/lib/dates";
 
 interface Props {
   docs: ArchiveDoc[];
@@ -17,25 +18,22 @@ interface Props {
 
 type TypeFilter = "all" | "Agenda" | "Minutes";
 
+/** "Oct 19, 2026" or "2026-10-19" -> a sortable date, or null.
+ *  (The old parser only accepted full month names, so every
+ *  abbreviated month - i.e. almost the whole archive - sorted as
+ *  "no date" and the newest visible entry looked like May.) */
+const parseDate = parseMeetingDate;
+
 const MONTHS = [
   "January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December",
 ];
 
-/** "Oct 19, 2026" -> a sortable date, or null. */
-function parseDate(s: string): Date | null {
-  const m = /^([A-Z][a-z]+)\s+(\d{1,2}),\s+(\d{4})$/.exec(s.trim());
-  if (!m) return null;
-  const mi = MONTHS.indexOf(m[1]);
-  if (mi < 0) return null;
-  const d = new Date(Number(m[3]), mi, Number(m[2]));
-  return isNaN(d.getTime()) ? null : d;
-}
-
 function fmt(s: string) {
   const d = parseDate(s);
   if (!d) return s;
   return d.toLocaleDateString("en-US", {
+    timeZone: TOWN_TZ,
     weekday: "short",
     month: "short",
     day: "numeric",
@@ -65,7 +63,7 @@ export function AgendaBrowser({ docs, committees, generatedAt }: Props) {
     const set = new Set<string>();
     for (const d of sorted) {
       const dt = parseDate(d.meeting_date);
-      if (dt) set.add(`${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, "0")}`);
+      if (dt) set.add(`${dt.getUTCFullYear()}-${String(dt.getUTCMonth() + 1).padStart(2, "0")}`);
     }
     return [...set].sort().reverse();
   }, [sorted]);
@@ -78,7 +76,7 @@ export function AgendaBrowser({ docs, committees, generatedAt }: Props) {
       if (month !== "all") {
         const dt = parseDate(d.meeting_date);
         if (!dt) return false;
-        const key = `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, "0")}`;
+        const key = `${dt.getUTCFullYear()}-${String(dt.getUTCMonth() + 1).padStart(2, "0")}`;
         if (key !== month) return false;
       }
       if (q) {
@@ -230,10 +228,7 @@ export function AgendaBrowser({ docs, committees, generatedAt }: Props) {
       {generatedAt && (
         <p className="mt-8 border-t border-stone-200 pt-4 text-xs text-stone-500">
           Archive read{" "}
-          {new Date(generatedAt).toLocaleString("en-US", {
-            dateStyle: "medium",
-            timeStyle: "short",
-          })}
+          {formatEt(generatedAt)}
           . Summaries are generated on-device from the town&rsquo;s own PDFs.
         </p>
       )}
