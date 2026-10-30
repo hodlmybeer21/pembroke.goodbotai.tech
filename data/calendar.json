@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T13:33:28.611337Z",
+ "generated_at": "2026-10-30T17:02:23.216626Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
  "today": "2026-10-30",
  "counts": {
@@ -17,8 +17,8 @@
    "eid": "538",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=538",
    "is_meeting": true,
-   "last_meeting": "2026-08-19",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-11-04",
@@ -28,8 +28,8 @@
    "eid": "500",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=500",
    "is_meeting": true,
-   "last_meeting": "2026-08-19",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-11-10",
@@ -39,8 +39,8 @@
    "eid": "440",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=440",
    "is_meeting": true,
-   "last_meeting": "2026-07-28",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-11-18",
@@ -50,8 +50,8 @@
    "eid": "505",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=505",
    "is_meeting": true,
-   "last_meeting": "2026-08-19",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-11-24",
@@ -61,8 +61,8 @@
    "eid": "411",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=411",
    "is_meeting": true,
-   "last_meeting": "2026-07-28",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-12-02",
@@ -72,8 +72,8 @@
    "eid": "501",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=501",
    "is_meeting": true,
-   "last_meeting": "2026-08-19",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-12-08",
@@ -83,8 +83,8 @@
    "eid": "441",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=441",
    "is_meeting": true,
-   "last_meeting": "2026-07-28",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-12-16",
@@ -94,8 +94,8 @@
    "eid": "506",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=506",
    "is_meeting": true,
-   "last_meeting": "2026-08-19",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-12-22",
@@ -105,8 +105,8 @@
    "eid": "412",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=412",
    "is_meeting": true,
-   "last_meeting": "2026-07-28",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2027-01-06",
@@ -116,8 +116,8 @@
    "eid": "502",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=502",
    "is_meeting": true,
-   "last_meeting": "2026-08-19",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2027-01-12",
@@ -127,8 +127,8 @@
    "eid": "442",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=442",
    "is_meeting": true,
-   "last_meeting": "2026-07-28",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2027-01-26",
@@ -138,8 +138,8 @@
    "eid": "413",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=413",
    "is_meeting": true,
-   "last_meeting": "2026-07-28",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359"
+   "last_meeting": null,
+   "last_minutes_url": null
   }
  ],
  "other": [
@@ -162,8 +162,8 @@
    "eid": "401",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
    "is_meeting": false,
-   "last_meeting": "2026-07-16",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-11-24",
@@ -173,8 +173,8 @@
    "eid": "401",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
    "is_meeting": false,
-   "last_meeting": "2026-07-16",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-11-25",
@@ -184,8 +184,8 @@
    "eid": "401",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
    "is_meeting": false,
-   "last_meeting": "2026-07-16",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-11-26",
@@ -195,8 +195,8 @@
    "eid": "401",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
    "is_meeting": false,
-   "last_meeting": "2026-07-16",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-11-27",
@@ -206,8 +206,8 @@
    "eid": "401",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
    "is_meeting": false,
-   "last_meeting": "2026-07-16",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-12-21",
@@ -217,8 +217,8 @@
    "eid": "405",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
    "is_meeting": false,
-   "last_meeting": "2026-07-16",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-12-22",
@@ -228,8 +228,8 @@
    "eid": "405",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
    "is_meeting": false,
-   "last_meeting": "2026-07-16",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-12-23",
@@ -239,8 +239,8 @@
    "eid": "405",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
    "is_meeting": false,
-   "last_meeting": "2026-07-16",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-12-24",
@@ -250,8 +250,8 @@
    "eid": "405",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
    "is_meeting": false,
-   "last_meeting": "2026-07-16",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2026-12-25",
@@ -261,8 +261,8 @@
    "eid": "405",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
    "is_meeting": false,
-   "last_meeting": "2026-07-16",
-   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07162026-349"
+   "last_meeting": null,
+   "last_minutes_url": null
   },
   {
    "date": "2027-01-01",
