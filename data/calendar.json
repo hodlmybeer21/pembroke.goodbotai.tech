@@ -1,14 +1,25 @@
 {
- "generated_at": "2026-10-29T20:19:04.931198Z",
+ "generated_at": "2026-10-30T13:33:28.611337Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-10-29",
+ "today": "2026-10-30",
  "counts": {
-  "events": 23,
-  "meetings": 11,
+  "events": 24,
+  "meetings": 12,
   "other": 12,
   "errors": 0
  },
  "meetings": [
+  {
+   "date": "2026-11-03",
+   "time": "2:00 PM",
+   "all_day": false,
+   "title": "Select Board Meeting - Workshop",
+   "eid": "538",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=538",
+   "is_meeting": true,
+   "last_meeting": "2026-08-19",
+   "last_minutes_url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08192026-376"
+  },
   {
    "date": "2026-11-04",
    "time": "6:00 PM",
