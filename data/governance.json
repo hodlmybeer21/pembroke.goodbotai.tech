@@ -1,7 +1,20 @@
 {
- "generated_at": "2026-10-29T19:21:17.489145Z",
+ "generated_at": "2026-10-30T17:28:48.250653Z",
  "minutes_count": 266,
  "motions": [
+  {
+   "date": "2025-01-14",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Clint Hanson",
+   "subject": "move Amendment #1 to the March ballot",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01142025-73",
+   "title": "Planning Board Minutes"
+  },
   {
    "date": "2025-01-16",
    "committee": "Water Works",
@@ -224,6 +237,45 @@
    "title": "Water Works Minutes"
   },
   {
+   "date": "2025-03-25",
+   "committee": "Planning Board",
+   "mover": "Clint Hanson",
+   "seconder": "Kathy Cruson",
+   "subject": "continue the public hearing to the April 22, 2025, meeting",
+   "outcome": null,
+   "direction": "administrative",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03252025-62",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-03-25",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Clint Hanson",
+   "subject": "grant the waiver requests from the checklist items Part A. C., I., K., L., N., Q; Part B. B(7), B(11), B(16), B(18), B(20), B(21); and Part C. A., B., C., D., E,. and F",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Public safety",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03252025-62",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-03-25",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Clint Hanson",
+   "subject": "accept the application as complete",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03252025-62",
+   "title": "Planning Board Minutes"
+  },
+  {
    "date": "2025-04-07",
    "committee": "Roads Committee",
    "mover": "Paulette Malo",
@@ -235,6 +287,45 @@
    "procedural": false,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04072025-275",
    "title": "Roads Committee Minutes"
+  },
+  {
+   "date": "2025-04-08",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Rick Frederickson",
+   "subject": "nominate Chairman Seaworth to continue as Chair of the Planning Board",
+   "outcome": null,
+   "direction": "administrative",
+   "topic": "Zoning and land use",
+   "procedural": true,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04082025-60",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-04-08",
+   "committee": "Planning Board",
+   "mover": "Clint Hanson",
+   "seconder": null,
+   "subject": "close nominations",
+   "outcome": null,
+   "direction": "administrative",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04082025-60",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-04-08",
+   "committee": "Planning Board",
+   "mover": "Brian Seaworth",
+   "seconder": "Rick Frederickson",
+   "subject": "nominate Vice Chairman Edmonds to continue his role as Vice Chairman of the Planning Board",
+   "outcome": null,
+   "direction": "administrative",
+   "topic": "Zoning and land use",
+   "procedural": true,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04082025-60",
+   "title": "Planning Board Minutes"
   },
   {
    "date": "2025-04-17",
@@ -315,6 +406,19 @@
    "title": "Sewer Commission Minutes"
   },
   {
+   "date": "2025-04-22",
+   "committee": "Planning Board",
+   "mover": "Kathy Cruson",
+   "seconder": "Clint Hanson",
+   "subject": "deny Major Site Plan Application #25-101 without prejudice",
+   "outcome": null,
+   "direction": "toward less",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04222025-59",
+   "title": "Planning Board Minutes"
+  },
+  {
    "date": "2025-05-20",
    "committee": "Sewer Commission",
    "mover": "Artie",
@@ -367,6 +471,71 @@
    "title": "Water Works Minutes"
   },
   {
+   "date": "2025-05-27",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Clint Hanson",
+   "subject": "grant the waiver requests for checklist items: Part A. Item K; Part B. Items B7, B11, B16 and B20; and Part C. Items B and C",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Public safety",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05272025-56",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-05-27",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Clint Hanson",
+   "subject": "accept the application as complete",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05272025-56",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-06-10",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Kathy Cruson",
+   "subject": "grant the waiver requests for checklist items Part A. Items M, R, and U",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Public safety",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06102025-54",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-06-10",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Clint Hanson",
+   "subject": "accept the application as complete",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06102025-54",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-06-10",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": null,
+   "subject": "approve Special Use Permit SUP- WP #25-306 with the following conditions: 1. SUP-WP #25-306 for Riveredge Properties, Lot 101, was approved in conjunction with Minor Subdivision Plan #25-05. If at any time Minor Subdivis",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06102025-54",
+   "title": "Planning Board Minutes"
+  },
+  {
    "date": "2025-06-16",
    "committee": "Sewer Commission",
    "mover": "Jules Pellerin",
@@ -417,6 +586,45 @@
    "procedural": false,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06162025-109",
    "title": "Sewer Commission Minutes"
+  },
+  {
+   "date": "2025-06-24",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Kathy Cruson",
+   "subject": "grant the waiver requests for checklist items Part A. Items M, R, and U",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Public safety",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06242025-52",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-06-24",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Clint Hanson",
+   "subject": "accept the application as complete",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06242025-52",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-06-24",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": null,
+   "subject": "approve Special Use Permit SUP- WP #25-306 with the following conditions: 1. SUP-WP #25-306 for Riveredge Properties, Lot 101, was approved in conjunction with Minor Subdivision Plan #25-05. If at any time Minor Subdivis",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06242025-52",
+   "title": "Planning Board Minutes"
   },
   {
    "date": "2025-06-26",
@@ -536,6 +744,19 @@
    "title": "Sewer Commission Minutes"
   },
   {
+   "date": "2025-07-22",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Clint Hanson",
+   "subject": "approve Wetlands Special Use Permit SUP-WP #25-309 subject to the following conditions: 1. This Special Use Permit is in accordance with Article 143-72.D.(2), Wetlands Protection District, to construct a driveway for a r",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07222025-49",
+   "title": "Planning Board Minutes"
+  },
+  {
    "date": "2025-08-11",
    "committee": "Roads Committee",
    "mover": "Paulette Malo",
@@ -614,6 +835,58 @@
    "title": "Water Works Minutes"
   },
   {
+   "date": "2025-08-26",
+   "committee": "Planning Board",
+   "mover": null,
+   "seconder": "Clint Hanson",
+   "subject": "for the Planning Board to move the New Business item for review prior to the Old Business item",
+   "outcome": null,
+   "direction": "administrative",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08262025-45",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-08-26",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Kathy Cruson",
+   "subject": "grant the waiver requests for checklist items: Part A. Items C, D, E, F, G, H, J, K, and M",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Public safety",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08262025-45",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-08-26",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Kathy Cruson",
+   "subject": "accept the application as complete",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08262025-45",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-08-26",
+   "committee": "Planning Board",
+   "mover": "Rick Frederickson",
+   "seconder": "Kathy Cruson",
+   "subject": "approve Special Use Permit SUP-AC #25-311 conditionally until Minor Site Plan #25-105 has received final approval, at which time the Special Use Permit becomes final for as long as the plan is approved. If at any time th",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08262025-45",
+   "title": "Planning Board Minutes"
+  },
+  {
    "date": "2025-09-15",
    "committee": "Sewer Commission",
    "mover": "Jules Pellerin",
@@ -677,6 +950,19 @@
    "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09182025-252",
    "title": "Water Works Minutes"
+  },
+  {
+   "date": "2025-09-22",
+   "committee": "Zoning Board",
+   "mover": "Thomas Hebert",
+   "seconder": "Dana Carlucci",
+   "subject": "continue Case 25-10-Z to the next meeting in order to allow the Applicant time to gather the necessary information requested by the Board at the August 25, 2025 meeting",
+   "outcome": null,
+   "direction": "administrative",
+   "topic": "Other business",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09222025-268",
+   "title": "Zoning Board Minutes"
   },
   {
    "date": "2025-10-16",
@@ -796,6 +1082,19 @@
    "title": "Water Works Minutes"
   },
   {
+   "date": "2025-11-24",
+   "committee": "Zoning Board",
+   "mover": "Thomas Hebert",
+   "seconder": "Safiya Wazir",
+   "subject": "approve the Meeting Minutes of October 27, 2025 as presented",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Other business",
+   "procedural": true,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11242025-270",
+   "title": "Zoning Board Minutes"
+  },
+  {
    "date": "2025-12-15",
    "committee": "Sewer Commission",
    "mover": "Jules Pellerin",
@@ -887,6 +1186,32 @@
    "title": "Water Works Minutes"
   },
   {
+   "date": "2026-01-13",
+   "committee": "Planning Board",
+   "mover": "Rick Frederickson",
+   "seconder": "Clint Hanson",
+   "subject": "recommend Amendment #9",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01132026-74",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-01-13",
+   "committee": "Planning Board",
+   "mover": "Rick Frederickson",
+   "seconder": "Clint Hanson",
+   "subject": "reconsider the vote to recommend Amendment #9",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01132026-74",
+   "title": "Planning Board Minutes"
+  },
+  {
    "date": "2026-01-15",
    "committee": "Water Works",
    "mover": "Edward Lavallee",
@@ -939,6 +1264,71 @@
    "title": "Sewer Commission Minutes"
   },
   {
+   "date": "2026-01-27",
+   "committee": "Planning Board",
+   "mover": null,
+   "seconder": "Clint Hanson",
+   "subject": "grant the waiver requests for checklist items: Part A, Items: C, I, K, M, Q, R, and U",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Public safety",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01272026-70",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-01-27",
+   "committee": "Planning Board",
+   "mover": null,
+   "seconder": "Clint Hanson",
+   "subject": "accept the application as complete",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01272026-70",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-01-27",
+   "committee": "Planning Board",
+   "mover": null,
+   "seconder": "Clint Hanson",
+   "subject": "approve Subdivision Application #26-01 with the conditions as read",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01272026-70",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-02-10",
+   "committee": "Planning Board",
+   "mover": null,
+   "seconder": "Clint Hanson",
+   "subject": "recommend appointing Alternate Bursey to a full Planning Board member",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02102026-67",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-02-10",
+   "committee": "Planning Board",
+   "mover": "Clint Hanson",
+   "seconder": "Rick Frederickson",
+   "subject": "approve the minutes of January 13, 2026",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Other business",
+   "procedural": true,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02102026-67",
+   "title": "Planning Board Minutes"
+  },
+  {
    "date": "2026-02-17",
    "committee": "Sewer Commission",
    "mover": "Jules Pellerin",
@@ -989,6 +1379,32 @@
    "procedural": true,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02182026-257",
    "title": "Water Works Minutes"
+  },
+  {
+   "date": "2026-02-23",
+   "committee": "Zoning Board",
+   "mover": "Thomas Hebert",
+   "seconder": "Dana Carlucci",
+   "subject": "application for Cases 26-02-Z, 26-03- Z, and 26-04-Z be continued to March 23, 2026",
+   "outcome": null,
+   "direction": "administrative",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02232026-272",
+   "title": "Zoning Board Minutes"
+  },
+  {
+   "date": "2026-02-23",
+   "committee": "Zoning Board",
+   "mover": "Thomas Hebert",
+   "seconder": "Blakely V. Miner III",
+   "subject": "approve the Meeting Minutes of January 26, 2026 as presented",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Other business",
+   "procedural": true,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02232026-272",
+   "title": "Zoning Board Minutes"
   },
   {
    "date": "2026-03-09",
@@ -1147,6 +1563,71 @@
    "title": "Board of Selectmen Minutes"
   },
   {
+   "date": "2026-04-14",
+   "committee": "Planning Board",
+   "mover": "Bryan Christiansen",
+   "seconder": "Clint Hanson",
+   "subject": "recommend the Select Board appoint Bob Bourque to the member potion",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Other business",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04142026-399",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-04-14",
+   "committee": "Planning Board",
+   "mover": "Bryan Christiansen",
+   "seconder": "Clint Hanson",
+   "subject": "nominate Brian Seaworth as chair of the planning board",
+   "outcome": null,
+   "direction": "administrative",
+   "topic": "Zoning and land use",
+   "procedural": true,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04142026-399",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-04-14",
+   "committee": "Planning Board",
+   "mover": "Clint Hanson",
+   "seconder": "Bryan Christiansen",
+   "subject": "close nominations",
+   "outcome": null,
+   "direction": "administrative",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04142026-399",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-04-14",
+   "committee": "Planning Board",
+   "mover": "Bryan Christiansen",
+   "seconder": "Clint Hanson",
+   "subject": "table the election of vice chair to the next meeting",
+   "outcome": null,
+   "direction": "toward less",
+   "topic": "Other business",
+   "procedural": true,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04142026-399",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-04-14",
+   "committee": "Planning Board",
+   "mover": "Bryan Christiansen",
+   "seconder": "Clint Hanson",
+   "subject": "reassign members to their current committee appointments as follows: \u2022 CIP Committee - Member Cruson \u2022 Conservation Commission - Alternate Bourque \u2022 Roads Committee - Member Edmonds \u2022 Technical Review Committee - Alterna",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Conservation and open space",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04142026-399",
+   "title": "Planning Board Minutes"
+  },
+  {
    "date": "2026-04-15",
    "committee": "Board of Selectmen",
    "mover": "Bryan Christiansen",
@@ -1197,6 +1678,58 @@
    "procedural": false,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04212026-336",
    "title": "Sewer Commission Minutes"
+  },
+  {
+   "date": "2026-04-27",
+   "committee": "Zoning Board",
+   "mover": "Thomas Hebert",
+   "seconder": "Dana Carlucci",
+   "subject": "deny the request for rehearing. While perhaps our articulation of the reasons for denial could have been clearer, a hardship exists when special conditions of the land render the use for which the variance is sought reas",
+   "outcome": null,
+   "direction": "toward less",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04272026-306",
+   "title": "Zoning Board Minutes"
+  },
+  {
+   "date": "2026-04-27",
+   "committee": "Zoning Board",
+   "mover": "Thomas Hebert",
+   "seconder": "Dana Carlucci",
+   "subject": "Variance from Article V, \u00a7143-21 is not required because the cluster subdivision proposal creates no new lots and the existing lot has sufficient contiguous lot frontage on a Class V or better maintained street",
+   "outcome": null,
+   "direction": "administrative",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04272026-306",
+   "title": "Zoning Board Minutes"
+  },
+  {
+   "date": "2026-04-28",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Clint Hanson",
+   "subject": "grant the waiver requests for checklist items: Part A. Items I., L., and Q.; Part B. Item B.(11); and Part C. Items B. and C",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Public safety",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04282026-286",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-04-28",
+   "committee": "Planning Board",
+   "mover": null,
+   "seconder": "Brent Edmonds",
+   "subject": "accept the application as complete",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04282026-286",
+   "title": "Planning Board Minutes"
   },
   {
    "date": "2026-05-06",
@@ -1262,6 +1795,45 @@
    "procedural": false,
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05062026-287",
    "title": "Board of Selectmen Minutes"
+  },
+  {
+   "date": "2026-05-12",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Clint Hanson",
+   "subject": "nominate Robert Bourque as vice chair of the planning board",
+   "outcome": null,
+   "direction": "administrative",
+   "topic": "Zoning and land use",
+   "procedural": true,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05122026-400",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-05-12",
+   "committee": "Planning Board",
+   "mover": "Bryan Christiansen",
+   "seconder": null,
+   "subject": "adopt the policy that the applicant must submit a continuance request in writing as least one week prior to the meeting",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Other business",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05122026-400",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-05-12",
+   "committee": "Planning Board",
+   "mover": "Bryan Christiansen",
+   "seconder": null,
+   "subject": "adopt the Rules of Procedure as amended",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Other business",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05122026-400",
+   "title": "Planning Board Minutes"
   },
   {
    "date": "2026-05-20",
@@ -1472,6 +2044,32 @@
    "title": "Sewer Commission Minutes"
   },
   {
+   "date": "2026-07-28",
+   "committee": "Planning Board",
+   "mover": "Brent Edmonds",
+   "seconder": "Clint Hanson",
+   "subject": "grant the waiver requests for checklist items: Part A. Items I, L, and Q; Part B. Items B.(7) and B.(11); and Part C. Items B. and C",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Public safety",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-07-28",
+   "committee": "Planning Board",
+   "mover": "Clint Hanson",
+   "seconder": "Bryan Christiansen",
+   "subject": "accept the application as complete",
+   "outcome": null,
+   "direction": "toward more",
+   "topic": "Zoning and land use",
+   "procedural": false,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359",
+   "title": "Planning Board Minutes"
+  },
+  {
    "date": "2026-08-05",
    "committee": "Board of Selectmen",
    "mover": "Sandy Goulet",
@@ -1611,6 +2209,87 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01142025-73",
+   "title": "Planning Board Minutes",
+   "subject": "move Amendment #3 to the March ballot",
+   "mover": "Brent Edmonds",
+   "tally": null
+  },
+  {
+   "date": "2025-01-14",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Stephanie Cravotta",
+     "vote": "yes"
+    }
+   ],
+   "subject": "move Amendment #1 to the March ballot",
+   "mover": "Brent Edmonds",
+   "tally": "7-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01142025-73",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-01-14",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Stephanie Cravotta",
+     "vote": "yes"
+    }
+   ],
+   "subject": "move Amendment #2 to the March ballot",
+   "mover": "Brent Edmonds",
+   "tally": "7-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01142025-73",
    "title": "Planning Board Minutes"
   },
   {
@@ -1643,6 +2322,79 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03252025-62",
+   "title": "Planning Board Minutes",
+   "subject": "accept the application as complete",
+   "mover": "Brent Edmonds",
+   "tally": "7-0"
+  },
+  {
+   "date": "2025-03-25",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Stephanie Cravotta",
+     "vote": "yes"
+    }
+   ],
+   "subject": "continue the public hearing to the April 22, 2025, meeting",
+   "mover": "Clint Hanson",
+   "tally": "7-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03252025-62",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-03-25",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Stephanie Cravotta",
+     "vote": "yes"
+    }
+   ],
+   "subject": "grant the waiver requests from the checklist items Part A. C., I., K., L., N., Q; Part B. B(7), B(11), B(16), B(18), B(20), B(21); and Part C. A., B., C., D., E,. and F",
+   "mover": "Brent Edmonds",
+   "tally": "7-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_03252025-62",
    "title": "Planning Board Minutes"
   },
   {
@@ -1667,7 +2419,10 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04082025-60",
-   "title": "Planning Board Minutes"
+   "title": "Planning Board Minutes",
+   "subject": "close nominations",
+   "mover": "Clint Hanson",
+   "tally": "5-0"
   },
   {
    "date": "2025-05-27",
@@ -1698,6 +2453,44 @@
      "vote": "yes"
     }
    ],
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05272025-56",
+   "title": "Planning Board Minutes",
+   "subject": "accept the application as complete",
+   "mover": "Brent Edmonds",
+   "tally": "6-0"
+  },
+  {
+   "date": "2025-05-27",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "yes"
+    }
+   ],
+   "subject": "grant the waiver requests for checklist items: Part A. Item K; Part B. Items B7, B11, B16 and B20; and Part C. Items B and C",
+   "mover": "Brent Edmonds",
+   "tally": "6-0",
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05272025-56",
    "title": "Planning Board Minutes"
   },
@@ -1735,6 +2528,48 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06102025-54",
+   "title": "Planning Board Minutes",
+   "subject": "accept the application as complete",
+   "mover": "Brent Edmonds",
+   "tally": "7-0"
+  },
+  {
+   "date": "2025-06-10",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Stephanie Cravotta",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    }
+   ],
+   "subject": "grant the waiver requests for checklist items Part A. Items M, R, and U",
+   "mover": "Brent Edmonds",
+   "tally": "7-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06102025-54",
    "title": "Planning Board Minutes"
   },
   {
@@ -1770,6 +2605,48 @@
      "vote": "yes"
     }
    ],
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06242025-52",
+   "title": "Planning Board Minutes",
+   "subject": "accept the application as complete",
+   "mover": "Brent Edmonds",
+   "tally": "7-0"
+  },
+  {
+   "date": "2025-06-24",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Stephanie Cravotta",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    }
+   ],
+   "subject": "grant the waiver requests for checklist items Part A. Items M, R, and U",
+   "mover": "Brent Edmonds",
+   "tally": "7-0",
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_06242025-52",
    "title": "Planning Board Minutes"
   },
@@ -1807,7 +2684,10 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07222025-49",
-   "title": "Planning Board Minutes"
+   "title": "Planning Board Minutes",
+   "subject": "approve Wetlands Special Use Permit SUP-WP #25-309 subject to the following conditions: 1. This Special Use Permit is in accordance with Article 143-72.D.(2), Wetlands Protection District, to construct a driveway for a r",
+   "mover": "Brent Edmonds",
+   "tally": "7-0"
   },
   {
    "date": "2025-08-26",
@@ -1843,6 +2723,126 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08262025-45",
+   "title": "Planning Board Minutes",
+   "subject": "approve Special Use Permit SUP-AC #25-311 conditionally until Minor Site Plan #25-105 has received final approval, at which time the Special Use Permit becomes final for as long as the plan is approved. If at any time th",
+   "mover": "Rick Frederickson",
+   "tally": null
+  },
+  {
+   "date": "2025-08-26",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    },
+    {
+     "name": "Angela Delaney",
+     "vote": "yes"
+    }
+   ],
+   "subject": "for the Planning Board to move the New Business item for review prior to the Old Business item",
+   "mover": null,
+   "tally": "7-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08262025-45",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-08-26",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    },
+    {
+     "name": "Angela Delaney",
+     "vote": "yes"
+    }
+   ],
+   "subject": "grant the waiver requests for checklist items: Part A. Items C, D, E, F, G, H, J, K, and M",
+   "mover": "Brent Edmonds",
+   "tally": "7-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08262025-45",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2025-08-26",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    },
+    {
+     "name": "Angela Delaney",
+     "vote": "yes"
+    }
+   ],
+   "subject": "accept the application as complete",
+   "mover": "Brent Edmonds",
+   "tally": "7-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_08262025-45",
    "title": "Planning Board Minutes"
   },
   {
@@ -1871,6 +2871,71 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09222025-268",
+   "title": "Zoning Board Minutes",
+   "subject": "continue Case 25-12-Z to the next meeting in order to allow the Applicant time to gather the necessary information requested by the Board at the August 25, 2025 meeting",
+   "mover": "Thomas Hebert",
+   "tally": null
+  },
+  {
+   "date": "2025-09-22",
+   "committee": "Zoning Board",
+   "votes": [
+    {
+     "name": "Bruce Kudrick",
+     "vote": "yes"
+    },
+    {
+     "name": "Natalie Glisson",
+     "vote": "yes"
+    },
+    {
+     "name": "Thomas Hebert",
+     "vote": "yes"
+    },
+    {
+     "name": "Blakely V. Miner III",
+     "vote": "yes"
+    },
+    {
+     "name": "Dana Carlucci",
+     "vote": "yes"
+    }
+   ],
+   "subject": "continue Case 25-10-Z to the next meeting in order to allow the Applicant time to gather the necessary information requested by the Board at the August 25, 2025 meeting",
+   "mover": "Thomas Hebert",
+   "tally": null,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09222025-268",
+   "title": "Zoning Board Minutes"
+  },
+  {
+   "date": "2025-09-22",
+   "committee": "Zoning Board",
+   "votes": [
+    {
+     "name": "Bruce Kudrick",
+     "vote": "yes"
+    },
+    {
+     "name": "Natalie Glisson",
+     "vote": "yes"
+    },
+    {
+     "name": "Thomas Hebert",
+     "vote": "yes"
+    },
+    {
+     "name": "Blakely V. Miner III",
+     "vote": "yes"
+    },
+    {
+     "name": "Dana Carlucci",
+     "vote": "yes"
+    }
+   ],
+   "subject": "continue Case 25-11-Z to the next meeting in order to allow the Applicant time to gather the necessary information Pembroke Zoning Board of Adjustment September 22, 2025 requested by the Board at the August 25, 2025 meet",
+   "mover": "Thomas Hebert",
+   "tally": "5-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_09222025-268",
    "title": "Zoning Board Minutes"
   },
   {
@@ -1895,7 +2960,10 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_11242025-270",
-   "title": "Zoning Board Minutes"
+   "title": "Zoning Board Minutes",
+   "subject": "approve the Meeting Minutes of October 27, 2025 as presented",
+   "mover": "Thomas Hebert",
+   "tally": "3-0"
   },
   {
    "date": "2026-01-13",
@@ -1923,6 +2991,40 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01132026-74",
+   "title": "Planning Board Minutes",
+   "subject": "reconsider the vote to recommend Amendment #9",
+   "mover": "Rick Frederickson",
+   "tally": "6-0"
+  },
+  {
+   "date": "2026-01-13",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    }
+   ],
+   "subject": "recommend Amendment #9",
+   "mover": "Rick Frederickson",
+   "tally": "5-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01132026-74",
    "title": "Planning Board Minutes"
   },
   {
@@ -1946,6 +3048,63 @@
      "vote": "yes"
     }
    ],
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01272026-70",
+   "title": "Planning Board Minutes",
+   "subject": "approve Subdivision Application #26-01 with the conditions as read",
+   "mover": null,
+   "tally": "5-0"
+  },
+  {
+   "date": "2026-01-27",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    }
+   ],
+   "subject": "grant the waiver requests for checklist items: Part A, Items: C, I, K, M, Q, R, and U",
+   "mover": null,
+   "tally": "5-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01272026-70",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-01-27",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    }
+   ],
+   "subject": "accept the application as complete",
+   "mover": null,
+   "tally": "5-0",
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_01272026-70",
    "title": "Planning Board Minutes"
   },
@@ -1979,7 +3138,10 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02102026-67",
-   "title": "Planning Board Minutes"
+   "title": "Planning Board Minutes",
+   "subject": "approve the minutes of January 13, 2026",
+   "mover": "Clint Hanson",
+   "tally": "6-0"
   },
   {
    "date": "2026-02-10",
@@ -2011,6 +3173,44 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02102026-67",
+   "title": "Planning Board Minutes",
+   "subject": "approve the minutes of January 27, 2026",
+   "mover": "Clint Hanson",
+   "tally": "5-0"
+  },
+  {
+   "date": "2026-02-10",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "abstain"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Rick Frederickson",
+     "vote": "yes"
+    }
+   ],
+   "subject": "recommend appointing Alternate Bursey to a full Planning Board member",
+   "mover": null,
+   "tally": "6-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02102026-67",
    "title": "Planning Board Minutes"
   },
   {
@@ -2038,6 +3238,40 @@
      "vote": "yes"
     }
    ],
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02232026-272",
+   "title": "Zoning Board Minutes",
+   "subject": "approve the Meeting Minutes of January 26, 2026 as presented",
+   "mover": "Thomas Hebert",
+   "tally": "5-0"
+  },
+  {
+   "date": "2026-02-23",
+   "committee": "Zoning Board",
+   "votes": [
+    {
+     "name": "Thomas Hebert",
+     "vote": "yes"
+    },
+    {
+     "name": "Blakely V. Miner III",
+     "vote": "yes"
+    },
+    {
+     "name": "Bruce Kudrick",
+     "vote": "yes"
+    },
+    {
+     "name": "Natalie Glisson",
+     "vote": "yes"
+    },
+    {
+     "name": "Dana Carlucci",
+     "vote": "yes"
+    }
+   ],
+   "subject": "application for Cases 26-02-Z, 26-03- Z, and 26-04-Z be continued to March 23, 2026",
+   "mover": "Thomas Hebert",
+   "tally": "5-0",
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_02232026-272",
    "title": "Zoning Board Minutes"
   },
@@ -2067,6 +3301,102 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04142026-399",
+   "title": "Planning Board Minutes",
+   "subject": "reassign members to their current committee appointments as follows: \u2022 CIP Committee - Member Cruson \u2022 Conservation Commission - Alternate Bourque \u2022 Roads Committee - Member Edmonds \u2022 Technical Review Committee - Alterna",
+   "mover": "Bryan Christiansen",
+   "tally": "5-0"
+  },
+  {
+   "date": "2026-04-14",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Bryan Christiansen",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    }
+   ],
+   "subject": "recommend the Select Board appoint Bob Bourque to the member potion",
+   "mover": "Bryan Christiansen",
+   "tally": "5-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04142026-399",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-04-14",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Bryan Christiansen",
+     "vote": "yes"
+    }
+   ],
+   "subject": "close nominations",
+   "mover": "Clint Hanson",
+   "tally": "5-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04142026-399",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-04-14",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Bryan Christiansen",
+     "vote": "yes"
+    }
+   ],
+   "subject": "table the election of vice chair to the next meeting",
+   "mover": "Bryan Christiansen",
+   "tally": "5-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04142026-399",
    "title": "Planning Board Minutes"
   },
   {
@@ -2095,6 +3425,40 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04272026-306",
+   "title": "Zoning Board Minutes",
+   "subject": "Variance from Article V, \u00a7143-21 is not required because the cluster subdivision proposal creates no new lots and the existing lot has sufficient contiguous lot frontage on a Class V or better maintained street",
+   "mover": "Thomas Hebert",
+   "tally": null
+  },
+  {
+   "date": "2026-04-27",
+   "committee": "Zoning Board",
+   "votes": [
+    {
+     "name": "Thomas Hebert",
+     "vote": "yes"
+    },
+    {
+     "name": "Natalie Glisson",
+     "vote": "yes"
+    },
+    {
+     "name": "Bruce Kudrick",
+     "vote": "yes"
+    },
+    {
+     "name": "Blakely V. Miner III",
+     "vote": "yes"
+    },
+    {
+     "name": "Dana Carlucci",
+     "vote": "yes"
+    }
+   ],
+   "subject": "deny the request for rehearing. While perhaps our articulation of the reasons for denial could have been clearer, a hardship exists when special conditions of the land render the use for which the variance is sought reas",
+   "mover": "Thomas Hebert",
+   "tally": null,
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04272026-306",
    "title": "Zoning Board Minutes"
   },
   {
@@ -2122,6 +3486,40 @@
      "vote": "yes"
     }
    ],
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04282026-286",
+   "title": "Planning Board Minutes",
+   "subject": "accept the application as complete",
+   "mover": null,
+   "tally": "6-0"
+  },
+  {
+   "date": "2026-04-28",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    },
+    {
+     "name": "Bryan Christiansen",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    }
+   ],
+   "subject": "grant the waiver requests for checklist items: Part A. Items I., L., and Q.; Part B. Item B.(11); and Part C. Items B. and C",
+   "mover": "Brent Edmonds",
+   "tally": "6-0",
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_04282026-286",
    "title": "Planning Board Minutes"
   },
@@ -2155,6 +3553,79 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05122026-400",
+   "title": "Planning Board Minutes",
+   "subject": "adopt the Rules of Procedure as amended",
+   "mover": "Bryan Christiansen",
+   "tally": "7-0"
+  },
+  {
+   "date": "2026-05-12",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Bryan Christiansen",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    }
+   ],
+   "subject": "nominate Robert Bourque as vice chair of the planning board",
+   "mover": "Brent Edmonds",
+   "tally": "6-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05122026-400",
+   "title": "Planning Board Minutes"
+  },
+  {
+   "date": "2026-05-12",
+   "committee": "Planning Board",
+   "votes": [
+    {
+     "name": "Brian Seaworth",
+     "vote": "yes"
+    },
+    {
+     "name": "Brent Edmonds",
+     "vote": "yes"
+    },
+    {
+     "name": "Bryan Christiansen",
+     "vote": "yes"
+    },
+    {
+     "name": "Clint Hanson",
+     "vote": "yes"
+    },
+    {
+     "name": "Joshua Bursey",
+     "vote": "yes"
+    },
+    {
+     "name": "Kathy Cruson",
+     "vote": "yes"
+    }
+   ],
+   "subject": "adopt the policy that the applicant must submit a continuance request in writing as least one week prior to the meeting",
+   "mover": "Bryan Christiansen",
+   "tally": "7-0",
+   "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_05122026-400",
    "title": "Planning Board Minutes"
   },
   {
@@ -2183,7 +3654,10 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359",
-   "title": "Planning Board Minutes"
+   "title": "Planning Board Minutes",
+   "subject": "grant the waiver requests for checklist items: Part A. Items I, L, and Q; Part B. Items B.(7) and B.(11); and Part C. Items B. and C",
+   "mover": "Brent Edmonds",
+   "tally": "4-2"
   },
   {
    "date": "2026-07-28",
@@ -2211,7 +3685,10 @@
     }
    ],
    "url": "https://www.pembroke-nh.com/AgendaCenter/ViewFile/Minutes/_07282026-359",
-   "title": "Planning Board Minutes"
+   "title": "Planning Board Minutes",
+   "subject": "accept the application as complete",
+   "mover": "Clint Hanson",
+   "tally": "6-0"
   }
  ],
  "attendance": {
@@ -2520,5 +3997,1668 @@
     "present": 1
    }
   }
- }
+ },
+ "people": [
+  {
+   "name": "Adam Mendozza",
+   "first": "Adam",
+   "last": "Mendozza",
+   "suffix": "",
+   "committees": [
+    "cemetery commission",
+    "roads committee"
+   ],
+   "aliases": [
+    "Adam Mendozza"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Agency Representative",
+   "first": "Agency",
+   "last": "Representative",
+   "suffix": "",
+   "committees": [
+    "*",
+    "budget committee"
+   ],
+   "aliases": [
+    "LEA"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Ammy Heiser",
+   "first": "Ammy",
+   "last": "Heiser",
+   "suffix": "",
+   "committees": [
+    "conservation commission"
+   ],
+   "aliases": [
+    "Ammy Heiser",
+    "Heiser"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Andrew Yonchak",
+   "first": "Andrew",
+   "last": "Yonchak",
+   "suffix": "",
+   "committees": [
+    "capital improvement program committee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Andy",
+   "first": "Andy",
+   "last": "Andy",
+   "suffix": "",
+   "committees": [
+    "*",
+    "sewer commission"
+   ],
+   "aliases": [
+    "Andy"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Angela Delaney",
+   "first": "Angela",
+   "last": "Delaney",
+   "suffix": "",
+   "committees": [
+    "planning board"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Artie",
+   "first": "Artie",
+   "last": "Artie",
+   "suffix": "",
+   "committees": [
+    "*",
+    "sewer commission"
+   ],
+   "aliases": [
+    "Artie"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Association Standards",
+   "first": "Association",
+   "last": "Standards",
+   "suffix": "",
+   "committees": [
+    "*",
+    "board of selectmen"
+   ],
+   "aliases": [
+    "NFPA"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Auditorium MEMBERS",
+   "first": "Auditorium",
+   "last": "MEMBERS",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "ADOPTED",
+    "DRAFT"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Ayn Whytemare",
+   "first": "Ayn",
+   "last": "Whytemare",
+   "suffix": "",
+   "committees": [
+    "conservation commission"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Blakely V. Miner III",
+   "first": "Blakely",
+   "last": "Miner",
+   "suffix": "iii",
+   "committees": [
+    "zoning board of adjustment"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Brent Edmonds",
+   "first": "Brent",
+   "last": "Edmonds",
+   "suffix": "",
+   "committees": [
+    "conservation commission",
+    "planning board",
+    "roads committee"
+   ],
+   "aliases": [
+    "Brent"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Brian",
+   "first": "Brian",
+   "last": "Brian",
+   "suffix": "",
+   "committees": [
+    "*",
+    "roads committee"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Brian Mrazik",
+   "first": "Brian",
+   "last": "Mrazik",
+   "suffix": "",
+   "committees": [
+    "conservation commission"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Brian Seaworth",
+   "first": "Brian",
+   "last": "Seaworth",
+   "suffix": "",
+   "committees": [
+    "budget committee",
+    "planning board"
+   ],
+   "aliases": [
+    "Brian Seaworth"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Bridget Elsemore",
+   "first": "Bridget",
+   "last": "Elsemore",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Bruce Kudrick",
+   "first": "Bruce",
+   "last": "Kudrick",
+   "suffix": "",
+   "committees": [
+    "water works",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "Bruce Kudrick"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Bryan Christiansen",
+   "first": "Bryan",
+   "last": "Christiansen",
+   "suffix": "",
+   "committees": [
+    "board of selectmen",
+    "economic development committee",
+    "recreation commission"
+   ],
+   "aliases": [
+    "Bryan Christiansen",
+    "Christiansen",
+    "Christiansen."
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Buddy",
+   "first": "Buddy",
+   "last": "Buddy",
+   "suffix": "",
+   "committees": [
+    "*",
+    "roads committee"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Burton Curley",
+   "first": "Burton",
+   "last": "Curley",
+   "suffix": "",
+   "committees": [
+    "range roads subcommittee",
+    "roads committee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "BY REPORT",
+   "first": "BY",
+   "last": "REPORT",
+   "suffix": "",
+   "committees": [
+    "*",
+    "conservation commission"
+   ],
+   "aliases": [
+    "Assigned"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Carol Bertsimas",
+   "first": "Carol",
+   "last": "Bertsimas",
+   "suffix": "",
+   "committees": [
+    "conservation commission",
+    "range roads subcommittee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Carolyn Cronin",
+   "first": "Carolyn",
+   "last": "Cronin",
+   "suffix": "",
+   "committees": [
+    "economic development committee",
+    "range roads subcommittee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Center Board",
+   "first": "Center",
+   "last": "Board",
+   "suffix": "",
+   "committees": [
+    "*",
+    "budget committee"
+   ],
+   "aliases": [
+    "CRTC"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Charles Therrien",
+   "first": "Charles",
+   "last": "Therrien",
+   "suffix": "",
+   "committees": [
+    "economic development committee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Chet Martel",
+   "first": "Chet",
+   "last": "Martel",
+   "suffix": "",
+   "committees": [
+    "*",
+    "water works"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Christopher Coffill",
+   "first": "Christopher",
+   "last": "Coffill",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Clerk",
+   "first": "Clerk",
+   "last": "Clerk",
+   "suffix": "",
+   "committees": [
+    "*"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Clint Hanson",
+   "first": "Clint",
+   "last": "Hanson",
+   "suffix": "",
+   "committees": [
+    "budget committee",
+    "economic development committee"
+   ],
+   "aliases": [
+    "Clint Hanson"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Clinton Hanson, Jr.",
+   "first": "Clinton",
+   "last": "Jr",
+   "suffix": "",
+   "committees": [
+    "planning board"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Concord",
+   "first": "Concord",
+   "last": "Concord",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Conservation District",
+   "first": "Conservation",
+   "last": "District",
+   "suffix": "",
+   "committees": [
+    "*",
+    "conservation commission",
+    "economic development committee",
+    "planning board"
+   ],
+   "aliases": [
+    "AC",
+    "Financing District"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Courtney Eschbach",
+   "first": "Courtney",
+   "last": "Eschbach",
+   "suffix": "",
+   "committees": [
+    "trustees of trust funds"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Dana Carlucci",
+   "first": "Dana",
+   "last": "Carlucci",
+   "suffix": "",
+   "committees": [
+    "meet me in suncook",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "Dana",
+    "Jocelyn Carlucci"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Daniel Chase",
+   "first": "Daniel",
+   "last": "Chase",
+   "suffix": "",
+   "committees": [
+    "cemetery commission"
+   ],
+   "aliases": [
+    "Dan Chase",
+    "Daniel Chase"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Design Overlay",
+   "first": "Design",
+   "last": "Overlay",
+   "suffix": "",
+   "committees": [
+    "*",
+    "conservation commission",
+    "planning board"
+   ],
+   "aliases": [
+    "AD",
+    "Conservation Overlay",
+    "Protection Overlay"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Doc",
+   "first": "Doc",
+   "last": "Doc",
+   "suffix": "",
+   "committees": [
+    "*",
+    "meet me in suncook"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Ed LaValley",
+   "first": "Ed",
+   "last": "LaValley",
+   "suffix": "",
+   "committees": [
+    "*",
+    "water works"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Ed Lavellee",
+   "first": "Ed",
+   "last": "Lavellee",
+   "suffix": "",
+   "committees": [
+    "*",
+    "water works"
+   ],
+   "aliases": [
+    "Ed Lavellee"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Education Budget",
+   "first": "Education",
+   "last": "Budget",
+   "suffix": "",
+   "committees": [
+    "*",
+    "budget committee"
+   ],
+   "aliases": [
+    "SPED"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Edward Lavallee",
+   "first": "Edward",
+   "last": "Lavallee",
+   "suffix": "",
+   "committees": [
+    "water works"
+   ],
+   "aliases": [
+    "Ed Lavallee"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Ellen Paulsen",
+   "first": "Ellen",
+   "last": "Paulsen",
+   "suffix": "",
+   "committees": [
+    "cemetery commission"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Erika Flewelling",
+   "first": "Erika",
+   "last": "Flewelling",
+   "suffix": "",
+   "committees": [
+    "*",
+    "meet me in suncook"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Erin Insley",
+   "first": "Erin",
+   "last": "Insley",
+   "suffix": "",
+   "committees": [
+    "conservation commission"
+   ],
+   "aliases": [
+    "Erin Insley"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Fleda Young",
+   "first": "Fleda",
+   "last": "Young",
+   "suffix": "",
+   "committees": [
+    "cemetery commission"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Gene Gauss",
+   "first": "Gene",
+   "last": "Gauss",
+   "suffix": "",
+   "committees": [
+    "budget committee",
+    "capital improvement program committee"
+   ],
+   "aliases": [
+    "Gene Gauss"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Gerry Fleury",
+   "first": "Gerry",
+   "last": "Fleury",
+   "suffix": "",
+   "committees": [
+    "budget committee",
+    "capital improvement program committee",
+    "trustees of trust funds"
+   ],
+   "aliases": [
+    "Gerry Fleury"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Hatch Meeting",
+   "first": "Hatch",
+   "last": "Meeting",
+   "suffix": "",
+   "committees": [
+    "*",
+    "energy committee"
+   ],
+   "aliases": [
+    "CPCH"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Jackie Wengenroth",
+   "first": "Jackie",
+   "last": "Wengenroth",
+   "suffix": "",
+   "committees": [
+    "energy committee"
+   ],
+   "aliases": [
+    "Jackie Wengenroth"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "James Garvin",
+   "first": "James",
+   "last": "Garvin",
+   "suffix": "",
+   "committees": [
+    "cemetery commission"
+   ],
+   "aliases": [
+    "James Garvin"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Jason Anderson",
+   "first": "Jason",
+   "last": "Anderson",
+   "suffix": "",
+   "committees": [
+    "*",
+    "meet me in suncook"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Jason Mayeu",
+   "first": "Jason",
+   "last": "Mayeu",
+   "suffix": "",
+   "committees": [
+    "budget committee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Jennifer Smith",
+   "first": "Jennifer",
+   "last": "Smith",
+   "suffix": "",
+   "committees": [
+    "*",
+    "energy committee"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Jessica Stevenson",
+   "first": "Jessica",
+   "last": "Stevenson",
+   "suffix": "",
+   "committees": [
+    "economic development committee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Joan Bussiere",
+   "first": "Joan",
+   "last": "Bussiere",
+   "suffix": "",
+   "committees": [
+    "*",
+    "meet me in suncook"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Joshua Bursey",
+   "first": "Joshua",
+   "last": "Bursey",
+   "suffix": "",
+   "committees": [
+    "planning board"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Joyce Belanger",
+   "first": "Joyce",
+   "last": "Belanger",
+   "suffix": "",
+   "committees": [
+    "*",
+    "meet me in suncook"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Judy Mitchell",
+   "first": "Judy",
+   "last": "Mitchell",
+   "suffix": "",
+   "committees": [
+    "library trustees"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Jules Pellerin",
+   "first": "Jules",
+   "last": "Pellerin",
+   "suffix": "",
+   "committees": [
+    "*",
+    "sewer commission"
+   ],
+   "aliases": [
+    "Andy"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Kaitlin Camidge",
+   "first": "Kaitlin",
+   "last": "Camidge",
+   "suffix": "",
+   "committees": [
+    "library trustees"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Karen Yeaton",
+   "first": "Karen",
+   "last": "Yeaton",
+   "suffix": "",
+   "committees": [
+    "board of selectmen",
+    "capital improvement program committee",
+    "conservation commission",
+    "energy committee"
+   ],
+   "aliases": [
+    "Karen Yeaton",
+    "Yeaton."
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Kate Castaldo-Rice",
+   "first": "Kate",
+   "last": "Castaldo-Rice",
+   "suffix": "",
+   "committees": [
+    "economic development committee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Kathy Cruson",
+   "first": "Kathy",
+   "last": "Cruson",
+   "suffix": "",
+   "committees": [
+    "capital improvement program committee",
+    "planning board"
+   ],
+   "aliases": [
+    "Kathy Cruson"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Kerri Dean",
+   "first": "Kerri",
+   "last": "Dean",
+   "suffix": "",
+   "committees": [
+    "budget committee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Kevin Brasley",
+   "first": "Kevin",
+   "last": "Brasley",
+   "suffix": "",
+   "committees": [
+    "water works"
+   ],
+   "aliases": [
+    "Kevin Brasley"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Kristopher DeLorme",
+   "first": "Kristopher",
+   "last": "DeLorme",
+   "suffix": "",
+   "committees": [
+    "budget committee"
+   ],
+   "aliases": [
+    "Kristopher",
+    "Kristopher DeLorme"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Lawrence Plourde",
+   "first": "Lawrence",
+   "last": "Plourde",
+   "suffix": "",
+   "committees": [
+    "water works"
+   ],
+   "aliases": [
+    "Larry Plourde"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Lorette Girard",
+   "first": "Lorette",
+   "last": "Girard",
+   "suffix": "",
+   "committees": [
+    "*",
+    "meet me in suncook"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Louis Caron",
+   "first": "Louis",
+   "last": "Caron",
+   "suffix": "",
+   "committees": [
+    "budget committee"
+   ],
+   "aliases": [
+    "Louis",
+    "Louis Caron"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Luc",
+   "first": "Luc",
+   "last": "Luc",
+   "suffix": "",
+   "committees": [
+    "*",
+    "meet me in suncook"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Lynne Bledsoe Saint Coeur",
+   "first": "Lynne",
+   "last": "Coeur",
+   "suffix": "",
+   "committees": [
+    "water works"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Mariana Beer",
+   "first": "Mariana",
+   "last": "Beer",
+   "suffix": "",
+   "committees": [
+    "budget committee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Mark LePage",
+   "first": "Mark",
+   "last": "LePage",
+   "suffix": "",
+   "committees": [
+    "budget committee"
+   ],
+   "aliases": [
+    "Mark LePage"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Matt Miller",
+   "first": "Matt",
+   "last": "Miller",
+   "suffix": "",
+   "committees": [
+    "board of selectmen",
+    "budget committee",
+    "capital improvement program committee",
+    "energy committee",
+    "range roads subcommittee"
+   ],
+   "aliases": [
+    "Matt Miller",
+    "Miller",
+    "Miller."
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Matthew Gagne",
+   "first": "Matthew",
+   "last": "Gagne",
+   "suffix": "",
+   "committees": [
+    "water works"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Melaine Boisvert",
+   "first": "Melaine",
+   "last": "Boisvert",
+   "suffix": "",
+   "committees": [
+    "*",
+    "meet me in suncook"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Michael Rodney",
+   "first": "Michael",
+   "last": "Rodney",
+   "suffix": "",
+   "committees": [
+    "*",
+    "capital improvement program committee"
+   ],
+   "aliases": [
+    "Michael Rodney"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Minutes April",
+   "first": "Minutes",
+   "last": "April",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "Adopted",
+    "DRAFT"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Minutes August",
+   "first": "Minutes",
+   "last": "August",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "ADOPTED"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Minutes December",
+   "first": "Minutes",
+   "last": "December",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "Adopted"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Minutes February",
+   "first": "Minutes",
+   "last": "February",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "Adopted"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "MINUTES January",
+   "first": "MINUTES",
+   "last": "January",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "ADOPTED",
+    "Minutes January"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Minutes July",
+   "first": "Minutes",
+   "last": "July",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "Adopted"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Minutes June",
+   "first": "Minutes",
+   "last": "June",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "Adopted"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Minutes March",
+   "first": "Minutes",
+   "last": "March",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "ADOPTED"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Minutes May",
+   "first": "Minutes",
+   "last": "May",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "Adopted"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Minutes November",
+   "first": "Minutes",
+   "last": "November",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "Adopted"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Minutes October",
+   "first": "Minutes",
+   "last": "October",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "Adopted"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Minutes September",
+   "first": "Minutes",
+   "last": "September",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "Adopted"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Minutes She",
+   "first": "Minutes",
+   "last": "She",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "Adopted"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Minutes The",
+   "first": "Minutes",
+   "last": "The",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [
+    "Adopted"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Natalie Glisson",
+   "first": "Natalie",
+   "last": "Glisson",
+   "suffix": "",
+   "committees": [
+    "zoning board of adjustment"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "NH",
+   "first": "NH",
+   "last": "NH",
+   "suffix": "",
+   "committees": [
+    "*",
+    "zoning board of adjustment"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Pat Fowler",
+   "first": "Pat",
+   "last": "Fowler",
+   "suffix": "",
+   "committees": [
+    "*",
+    "meet me in suncook"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Paul Baldwin",
+   "first": "Paul",
+   "last": "Baldwin",
+   "suffix": "",
+   "committees": [
+    "library trustees"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Paulette Malo",
+   "first": "Paulette",
+   "last": "Malo",
+   "suffix": "",
+   "committees": [
+    "roads committee",
+    "sewer commission"
+   ],
+   "aliases": [
+    "Paulette"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Pentti Aalto",
+   "first": "Pentti",
+   "last": "Aalto",
+   "suffix": "",
+   "committees": [
+    "energy committee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Peter Gagyi",
+   "first": "Peter",
+   "last": "Gagyi",
+   "suffix": "",
+   "committees": [
+    "board of selectmen"
+   ],
+   "aliases": [
+    "Gagyi.",
+    "Peter Gagyi"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Placement Courses",
+   "first": "Placement",
+   "last": "Courses",
+   "suffix": "",
+   "committees": [
+    "*",
+    "budget committee"
+   ],
+   "aliases": [
+    "AP"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Program Committee",
+   "first": "Program",
+   "last": "Committee",
+   "suffix": "",
+   "committees": [
+    "*",
+    "capital improvement program committee",
+    "cemetery commission",
+    "planning board"
+   ],
+   "aliases": [
+    "CIP",
+    "IMPROVEMENT COMMITTEE",
+    "Program",
+    "Program Program"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Public Feedback",
+   "first": "Public",
+   "last": "Feedback",
+   "suffix": "",
+   "committees": [
+    "*",
+    "board of selectmen",
+    "range roads subcommittee"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Relief Fund",
+   "first": "Relief",
+   "last": "Fund",
+   "suffix": "",
+   "committees": [
+    "*",
+    "budget committee"
+   ],
+   "aliases": [
+    "ESSER"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Richard Wengenroth",
+   "first": "Richard",
+   "last": "Wengenroth",
+   "suffix": "",
+   "committees": [
+    "energy committee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Rick Frederickson",
+   "first": "Rick",
+   "last": "Frederickson",
+   "suffix": "",
+   "committees": [
+    "board of selectmen",
+    "conservation commission"
+   ],
+   "aliases": [
+    "Rick Frederickson"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Rob Azevedo",
+   "first": "Rob",
+   "last": "Azevedo",
+   "suffix": "",
+   "committees": [
+    "recreation commission"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Rose Galligan",
+   "first": "Rose",
+   "last": "Galligan",
+   "suffix": "",
+   "committees": [
+    "recreation commission"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Rosemarie Michaud",
+   "first": "Rosemarie",
+   "last": "Michaud",
+   "suffix": "",
+   "committees": [
+    "capital improvement program committee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Safiya Wazir",
+   "first": "Safiya",
+   "last": "Wazir",
+   "suffix": "",
+   "committees": [
+    "zoning board of adjustment"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Sandy Goulet",
+   "first": "Sandy",
+   "last": "Goulet",
+   "suffix": "",
+   "committees": [
+    "board of selectmen",
+    "economic development committee",
+    "recreation commission"
+   ],
+   "aliases": [
+    "Goulet",
+    "Sandy",
+    "Sandy Goulet",
+    "Selectwomen Goulet"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Services Expedited",
+   "first": "Services",
+   "last": "Expedited",
+   "suffix": "",
+   "committees": [
+    "*",
+    "planning board"
+   ],
+   "aliases": [
+    "NHDES"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Sharon Morris",
+   "first": "Sharon",
+   "last": "Morris",
+   "suffix": "",
+   "committees": [
+    "economic development committee",
+    "library trustees"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Shelley Fowler",
+   "first": "Shelley",
+   "last": "Fowler",
+   "suffix": "",
+   "committees": [
+    "library trustees",
+    "meet me in suncook"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Stephanie Cravotta",
+   "first": "Stephanie",
+   "last": "Cravotta",
+   "suffix": "",
+   "committees": [
+    "planning board",
+    "range roads subcommittee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Steve Fowler",
+   "first": "Steve",
+   "last": "Fowler",
+   "suffix": "",
+   "committees": [
+    "meet me in suncook",
+    "recreation commission"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Susanne Whitbeck",
+   "first": "Susanne",
+   "last": "Whitbeck",
+   "suffix": "",
+   "committees": [
+    "budget committee",
+    "library trustees"
+   ],
+   "aliases": [
+    "Sue Whitbeck"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Taylor Caron",
+   "first": "Taylor",
+   "last": "Caron",
+   "suffix": "",
+   "committees": [
+    "budget committee",
+    "recreation commission"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Thomas Hebert",
+   "first": "Thomas",
+   "last": "Hebert",
+   "suffix": "",
+   "committees": [
+    "zoning board of adjustment"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Thomas Petit",
+   "first": "Thomas",
+   "last": "Petit",
+   "suffix": "",
+   "committees": [
+    "water works"
+   ],
+   "aliases": [
+    "Tom Petit"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Tom",
+   "first": "Tom",
+   "last": "Tom",
+   "suffix": "",
+   "committees": [
+    "*",
+    "roads committee"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Tom Gallo",
+   "first": "Tom",
+   "last": "Gallo",
+   "suffix": "",
+   "committees": [
+    "conservation commission",
+    "roads committee"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Trust",
+   "first": "Trust",
+   "last": "Trust",
+   "suffix": "",
+   "committees": [
+    "*"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Trust Elaina",
+   "first": "Trust",
+   "last": "Elaina",
+   "suffix": "",
+   "committees": [
+    "*",
+    "conservation commission"
+   ],
+   "aliases": [
+    "FRCT"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Units Planner",
+   "first": "Units",
+   "last": "Planner",
+   "suffix": "",
+   "committees": [
+    "*",
+    "planning board"
+   ],
+   "aliases": [
+    "ADUS",
+    "ADUs"
+   ],
+   "in_directory": false
+  },
+  {
+   "name": "Vince",
+   "first": "Vince",
+   "last": "Vince",
+   "suffix": "",
+   "committees": [
+    "*",
+    "roads committee"
+   ],
+   "aliases": [],
+   "in_directory": false
+  },
+  {
+   "name": "Wendy Weisiger",
+   "first": "Wendy",
+   "last": "Weisiger",
+   "suffix": "",
+   "committees": [
+    "conservation commission"
+   ],
+   "aliases": [
+    "Wendy Weisiger"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Zachary Sawyer",
+   "first": "Zachary",
+   "last": "Sawyer",
+   "suffix": "",
+   "committees": [
+    "cemetery commission"
+   ],
+   "aliases": [
+    "Zachary",
+    "Zachary Sawyer"
+   ],
+   "in_directory": true
+  },
+  {
+   "name": "Zephan Wood",
+   "first": "Zephan",
+   "last": "Wood",
+   "suffix": "",
+   "committees": [
+    "trustees of trust funds"
+   ],
+   "aliases": [],
+   "in_directory": true
+  },
+  {
+   "name": "Zones Tax",
+   "first": "Zones",
+   "last": "Tax",
+   "suffix": "",
+   "committees": [
+    "*",
+    "economic development committee"
+   ],
+   "aliases": [
+    "ERZs"
+   ],
+   "in_directory": false
+  }
+ ]
 }
