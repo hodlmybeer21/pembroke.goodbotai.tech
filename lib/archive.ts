@@ -6,6 +6,7 @@
 
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
+import { normalizeCommittee, resolveCommitteeMention } from "@/lib/town-data";
 import "server-only";
 
 export interface ArchiveEntry {
@@ -37,7 +38,18 @@ export function loadArchive(): ArchiveIndex | null {
   try {
     const p = join(process.cwd(), "data", "archive-index.json");
     if (!existsSync(p)) return null;
-    return JSON.parse(readFileSync(p, "utf-8")) as ArchiveIndex;
+    const idx = JSON.parse(readFileSync(p, "utf-8")) as ArchiveIndex;
+    // Normalize the committee names so the same body doesn't read as two
+    // different ones depending on which document it came from.
+    if (Array.isArray(idx.committees)) {
+      idx.committees = idx.committees.map(normalizeCommittee);
+    }
+    for (const m of idx.months ?? []) {
+      for (const e of m.entries ?? []) {
+        if (e.committee) e.committee = normalizeCommittee(e.committee);
+      }
+    }
+    return idx;
   } catch {
     return null;
   }
@@ -118,15 +130,9 @@ function _dateRank(s: string): number {
 }
 
 function findNamedCommittee(qLow: string, known: string[]): string | null {
-  // Pick the longest match — avoid "Board" matching before "Planning Board".
-  let best: { name: string; len: number } | null = null;
-  for (const name of known) {
-    const low = name.toLowerCase();
-    if (qLow.includes(low) && (!best || low.length > best.len)) {
-      best = { name, len: low.length };
-    }
-  }
-  return best?.name ?? null;
+  // Alias-aware: residents say "Select Board", the town publishes
+  // "Board of Selectmen". Longest literal match wins as a fallback.
+  return resolveCommitteeMention(qLow, known);
 }
 
 /**

@@ -74,25 +74,33 @@ export interface UpcomingMeeting {
 const CALENDAR_TO_ARCHIVE: Array<[RegExp, string]> = [
   [/select board/i, "Board of Selectmen"],
   [/planning board workshop/i, "Planning Board Workshop"],
+  [/planning board public hearing/i, "Planning Board Public Hearing"],
   [/planning board/i, "Planning Board"],
   [/budget committee/i, "Budget Committee"],
   [/capital improvement/i, "Capital Improvement Program"],
   [/roads committee/i, "Roads Committee"],
+  [/range roads/i, "Range Roads Subcommittee"],
   [/water works/i, "Water Works"],
+  [/sewer/i, "Sewer Commission"],
   [/recreation/i, "Recreation Commission"],
   [/conservation/i, "Conservation Commission"],
   [/energy committee/i, "Energy Committee"],
+  [/economic development/i, "Economic Development Committee"],
+  [/joint loss/i, "Joint Loss Management Committee"],
   [/cemetery/i, "Cemetery Commission"],
   [/solid waste/i, "Solid Waste Advisory Committee"],
   [/trust funds/i, "Trustees of Trust Funds"],
-  [/zoning/i, "Zoning Board of Adjustment"],
+  [/zoning/i, "Zoning Board"],
+  [/meet me in suncook/i, "Meet Me In Suncook"],
 ];
 
 export function committeeLabel(title: string): string {
   for (const [re, name] of CALENDAR_TO_ARCHIVE) {
     if (re.test(title)) return name;
   }
-  return title.replace(/\s*meetings?\s*$/i, "").trim();
+  return normalizeCommittee(
+    title.replace(/\s*meetings?\s*$/i, "").trim()
+  );
 }
 
 /**
@@ -217,6 +225,127 @@ function readJson<T>(file: string): T | null {
 }
 
 /** Every document the site knows about, newest first. */
+/**
+ * How residents actually refer to the town's bodies, mapped to the
+ * name the town publishes under.
+ *
+ * The exact-name matcher alone was not enough: "Select Board" is how
+ * people say it, but the town's documents say "Board of Selectmen"
+ * (114 docs) with a single agenda calling it "Select Board" (1 doc).
+ * That mismatch made the bot say "no upcoming Select Board meeting is
+ * on the calendar" while the calendar held three of them.
+ *
+ * Only the aliases people actually use are listed, and an alias is
+ * only honored when its canonical name is one the town really has.
+ */
+const COMMITTEE_ALIASES: Array<[RegExp, string]> = [
+  [/\bselect\s*board\b/i, "Board of Selectmen"],
+  [/\bboard\s*of\s*selectmen\b/i, "Board of Selectmen"],
+  [/\bbos\b/i, "Board of Selectmen"],
+  [/\bplanning\s*board\s*workshop\b/i, "Planning Board Workshop"],
+  [/\bplanning\s*board\s*public\s*hearing\b/i, "Planning Board Public Hearing"],
+  [/\bplanning\s*board\b/i, "Planning Board"],
+  [/\bzoning\s*board\s*of\s+adjustment\b/i, "Zoning Board"],
+  [/\bzoning\s*board\b/i, "Zoning Board"],
+  [/\bbudget\s+committee\b/i, "Budget Committee"],
+  [/\bcapital\s+improvement\b|\bcip\b/i, "Capital Improvement Program"],
+  [/\broads\s+committee\b/i, "Roads Committee"],
+  [/\bwater\s+works\b/i, "Water Works"],
+  [/\bsewer\s+commission\b/i, "Sewer Commission"],
+  [/\brecreation\s+commission\b/i, "Recreation Commission"],
+  [/\bconservation\s+commission\b/i, "Conservation Commission"],
+  [/\benergy\s+committee\b/i, "Energy Committee"],
+  [/\beconomic\s+development\b/i, "Economic Development Committee"],
+  [/\bjoint\s+loss\b/i, "Joint Loss Management Committee"],
+  [/\bcemetery\s+commission\b/i, "Cemetery Commission"],
+  [/\bsolid\s+waste\b/i, "Solid Waste Advisory Committee"],
+  [/\btrust\s+funds\b/i, "Trustees of Trust Funds"],
+  [/\brange\s+roads\b/i, "Range Roads Subcommittee"],
+];
+
+/**
+ * Property market analytics: the tax rate, the typical tax bill, and
+ * the sale-to-assessment trend. Used by /ask so the bot can answer
+ * "what's my tax rate" with the same number the /property-values page
+ * shows.
+ */
+export interface PropertyTrends {
+  generated_at: string;
+  tax_rate: number;
+  tax_rate_history: Record<string, number>;
+  tax_rate_source?: string;
+  tax_breakdown?: Array<{ label: string; rate: number; pct: number }>;
+  parcel_count: number;
+  tax_bill: {
+    median: number | null;
+    p10: number | null;
+    p90: number | null;
+    on_300k: number | null;
+    on_450k: number | null;
+  };
+  years?: Array<Record<string, number>>;
+}
+
+let trendsCache: PropertyTrends | null = null;
+
+export function loadPropertyTrends(): PropertyTrends | null {
+  if (trendsCache) return trendsCache;
+  try {
+    const p = join(process.cwd(), "data", "property-trends.json");
+    if (!existsSync(p)) return null;
+    trendsCache = JSON.parse(readFileSync(p, "utf-8")) as PropertyTrends;
+    return trendsCache;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Resolve a committee mentioned in a question to the canonical name.
+ * Aliases win over exact matches because the exact-match path can only
+ * ever find the literal string the town uses.
+ */
+export function resolveCommitteeMention(
+  qLow: string,
+  known: string[],
+): string | null {
+  const knownLow = new Set(known.map((k) => (k ?? "").toLowerCase()));
+  for (const [re, canonical] of COMMITTEE_ALIASES) {
+    if (re.test(qLow) && knownLow.has(canonical.toLowerCase())) {
+      return canonical;
+    }
+  }
+  // Fall back to the longest literal match.
+  let best: { name: string; len: number } | null = null;
+  for (const name of known) {
+    const low = (name ?? "").toLowerCase();
+    if (low && qLow.includes(low) && (!best || low.length > best.len)) {
+      best = { name, len: low.length };
+    }
+  }
+  return best?.name ?? null;
+}
+
+/**
+ * Canonical committee names.
+ *
+ * The town publishes a body under several names across its own
+ * documents ("Select Board" on one agenda, "Board of Selectmen" on
+ * 114 others). Downstream pages — /decisions, /agendas, /ask — all key
+ * off the committee string, so a mismatch makes a body look like two
+ * different bodies. Everything is normalized to the name the town uses
+ * most often.
+ */
+export function normalizeCommittee(name: string): string {
+  const n = (name ?? "").trim();
+  const low = n.toLowerCase();
+  if (low === "select board") return "Board of Selectmen";
+  if (low.startsWith("zoning board of adjustment")) return "Zoning Board";
+  if (low.startsWith("planning board public hearing"))
+    return "Planning Board Public Hearing";
+  return n;
+}
+
 export function loadArchiveIndex(): ArchiveIndex | null {
   if (archiveCache) return archiveCache;
   archiveCache = readJson<ArchiveIndex>("archive-index.json");

@@ -15,7 +15,12 @@
 
 import { NextResponse } from "next/server";
 import { fetchAgendaCenter, loadOcrExport } from "@/lib/agenda-center";
-import { loadUpcomingMeetings } from "@/lib/town-data";
+import {
+  loadUpcomingMeetings,
+  resolveCommitteeMention,
+  loadPropertyTrends,
+  loadMeetingPatterns,
+} from "@/lib/town-data";
 import { loadTownInfo, selectRelevantPages } from "@/lib/town-info";
 import { loadArchive, selectArchiveEntries, isPastMeetingQuestion, type ArchiveEntry } from "@/lib/archive";
 import { loadTrashRoutes, searchStreets, curbsideReminder } from "@/lib/trash";
@@ -300,7 +305,55 @@ function stubAnswer(q: string, ctx: AskContext): string {
     !showArchive &&
     !showArchiveFallback;
 
-  if (showTrash) {
+  // Property tax questions. The bot used to answer "what is the
+  // property tax rate" with a paragraph about the assessing office
+  // having nothing to do with rates. The rate is one of the few
+  // numbers a resident actually needs, so answer it directly.
+  const showTax =
+    /tax|assessment|assessed|property value|my bill|tax bill|mill rate/i.test(q) &&
+    !namedCommittee;
+  if (showTax) {
+    const trends = loadPropertyTrends();
+    if (trends) {
+      const rate = trends.tax_rate;
+      const prev = trends.tax_rate_history?.["2024"];
+      const pct =
+        prev && prev !== rate ? ((rate - prev) / prev) * 100 : null;
+      lines.push(
+        `Pembroke's tax rate is **$${rate.toFixed(2)} per $1,000** of assessed value` +
+          (pct !== null
+            ? ` — up ${pct.toFixed(1)}% from $${prev.toFixed(2)} in 2024.`
+            : "."),
+      );
+      lines.push("");
+      lines.push(
+        `That means a $300,000 assessed home costs about **$${Math.round(
+          trends.tax_bill?.on_300k ?? rate * 300,
+        ).toLocaleString()}** a year in town taxes, and a $450,000 home about **$${Math.round(
+          trends.tax_bill?.on_450k ?? rate * 450,
+        ).toLocaleString()}**.`,
+      );
+      if (trends.tax_bill?.median) {
+        lines.push("");
+        lines.push(
+          `The median tax bill across Pembroke's recent sales is **$${Math.round(
+            trends.tax_bill.median,
+          ).toLocaleString()}** a year.`,
+        );
+      }
+      if (trends.tax_breakdown?.length) {
+        lines.push("");
+        lines.push("Where it goes:");
+        for (const b of trends.tax_breakdown) {
+          lines.push(`- ${b.label} — $${b.rate.toFixed(2)} per $1,000 (${b.pct}%)`);
+        }
+      }
+      lines.push("");
+      lines.push(
+        "Compare your own home against recent sales on pembroke.goodbotai.tech/property-values.",
+      );
+    }
+  } else if (showTrash) {
     const hits = ctx.trashHits.slice(0, 3);
     lines.push(
       hits.length === 1
@@ -352,6 +405,18 @@ function stubAnswer(q: string, ctx: AskContext): string {
     } else {
       lines.push(
         `No upcoming or archived ${namedCommittee} meetings found.`,
+      );
+    }
+    // The town only publishes dates for some bodies. Where the
+    // minutes show a consistent rhythm, give the resident the pattern
+    // instead of a bare "not scheduled".
+    const pattern = loadMeetingPatterns().find(
+      (p) => p.committee === namedCommittee,
+    );
+    if (pattern) {
+      lines.push("");
+      lines.push(
+        `That body does not publish dates ahead of time, but from the minutes it has been meeting **${pattern.cadence}**. Check the calendar for the next posted date.`,
       );
     }
   } else if (namedCommittee) {
@@ -442,18 +507,14 @@ function findNamedCommittee(
   // list (upcoming only) and the archive (historical), so a question like
   // "When did the Cemetery Commission last raise burial fees" still
   // resolves to a known committee even if there's no upcoming meeting.
-  const known = new Set([
-    ...meetings.map((m) => m.committee),
-    ...archiveCommittees,
-  ]);
-  let best: { name: string; len: number } | null = null;
-  for (const name of known) {
-    const low = name.toLowerCase();
-    if (qLow.includes(low) && (!best || low.length > best.len)) {
-      best = { name, len: low.length };
-    }
-  }
-  return best?.name ?? null;
+  const known = Array.from(
+    new Set([...meetings.map((m) => m.committee), ...archiveCommittees]),
+  );
+  // Alias-aware: "Select Board" is what residents say, "Board of
+  // Selectmen" is what the town publishes. Matching only the literal
+  // name meant the bot claimed there was no Select Board meeting while
+  // the calendar held three.
+  return resolveCommitteeMention(qLow, known);
 }
 
 interface HistoryMessage {

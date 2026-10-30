@@ -70,6 +70,14 @@ export default function AboutPage() {
               an estimate of the annual bill on any home shown.
             </li>
             <li>
+              <strong>NH tax rate map</strong> — every New Hampshire town shaded by
+              the tax rate the state sets on each $1,000 of assessed value. Zoom
+              from the whole state down to Pembroke, and flip the shading to see
+              whether a town&apos;s rate is driven by schools or by town services.
+              Rates from the New Hampshire Department of Revenue Administration;
+              boundaries from the New Hampshire DOT.
+            </li>
+            <li>
               <Link className="underline" href="/trash">Trash day lookup</Link>{" "}
               — type your street, get your pickup day.
             </li>

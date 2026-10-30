@@ -22,6 +22,7 @@ import {
   loadUpcomingMeetings,
 } from "@/lib/town-data";
 import { loadGovernanceSummary } from "@/lib/governance";
+import { NhTaxHeatMap } from "@/components/NhTaxHeatMap";
 import { loadPropertyValues } from "@/lib/property-values";
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
@@ -196,6 +197,25 @@ export default async function HomePage() {
               : "map + table",
           ]}
         />
+      </section>
+
+      {/* --------------------------------------------------- the tax map */}
+      <section className="mb-12 border-t border-stone-200 pt-10">
+        <div className="mb-1 text-xs uppercase tracking-widest text-stone-500">
+          Compare
+        </div>
+        <h2 className="font-serif text-2xl font-semibold text-stone-900">
+          How Pembroke&rsquo;s tax rate stacks up
+        </h2>
+        <p className="mt-2 max-w-2xl text-stone-700">
+          Every New Hampshire town, shaded by the tax rate the state sets
+          on each $1,000 of assessed value. Zoom in to compare Pembroke
+          with its neighbours, or flip the shading to see whether a
+          town&rsquo;s rate is driven by schools or by town services.
+        </p>
+        <div className="mt-5">
+          <NhTaxHeatMap />
+        </div>
       </section>
 
       {/* ------------------------------------------------------ quick access */}

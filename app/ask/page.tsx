@@ -10,6 +10,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ShareButton } from "@/components/ShareButton";
+import { MarkdownText } from "@/components/MarkdownText";
 
 interface AskResponse {
   answer: string;
@@ -413,8 +414,8 @@ function ChatBubble({ message }: { message: ChatMessage }) {
   return (
     <div className="flex justify-start mb-3">
       <div className="max-w-[85%] bg-stone-100 text-stone-900 text-sm rounded-2xl rounded-tl-sm px-4 py-2.5 shadow-sm">
-        <div className="whitespace-pre-wrap leading-relaxed">
-          {message.content}
+        <div className="leading-relaxed">
+          <MarkdownText text={message.content} />
         </div>
         {/* Context footer — what the bot read to answer */}
         {(message.townPages?.length || (message.archiveCount ?? 0) > 0) ? (
