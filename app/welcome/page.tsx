@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     title: "New to Pembroke? Start here.",
     description:
       "Vote. Trash. Library. Dog license. School. The first-month checklist every new resident needs.",
-    images: [{ url: "/og-welcome.svg", width: 1200, height: 630, alt: "New to Pembroke? Start here." }],
+    images: [{ url: "/og-welcome.png", width: 1200, height: 630, alt: "New to Pembroke? Start here." }],
   },
   twitter: {
     card: "summary_large_image",
     title: "New to Pembroke? Start here.",
-    images: ["/og-welcome.svg"],
+    images: ["/og-welcome.png"],
   },
 };
 

@@ -11,6 +11,21 @@
 import Link from "next/link";
 import { loadArchiveIndex, type ArchiveDoc } from "@/lib/town-data";
 import { AgendaBrowser } from "@/components/AgendaBrowser";
+import { formatEt } from "@/lib/dates";
+
+export const metadata = {
+  title: "Agendas & minutes — Pembroke, NH",
+  description:
+    "Search every agenda and set of minutes Pembroke's boards and committees have posted, with plain-English summaries.",
+  alternates: { canonical: "/agendas" },
+  openGraph: {
+    title: "Agendas & minutes — Pembroke, NH",
+    description:
+      "Search every agenda and set of minutes Pembroke's boards and committees have posted, with plain-English summaries.",
+    url: "/agendas",
+    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Pembroke, NH" }],
+  },
+};
 
 export const revalidate = 3600;
 
@@ -42,6 +57,11 @@ export default function AgendasPage({
         scanned images, so each one is read and summarised here. Every
         entry links to the town&rsquo;s own document.
       </p>
+      {index?.generated_at && (
+        <p className="mt-1 text-xs text-stone-500">
+          Data as of {formatEt(index.generated_at)}
+        </p>
+      )}
 
       <div className="mt-8">
         <AgendaBrowser

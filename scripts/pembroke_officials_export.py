@@ -10,7 +10,7 @@ Sources:
   - /1349/Budget-Committee    (Budget Committee — term end years)
   - /1397/Planning-Board      (Planning Board — term end years)
   - gc.nh.gov Senate District 17 page (Howard Pearl — Pembroke's senator)
-  - nhha.org 2025-2026 Legislator List (Brian Seaworth + Dianne Schuett)
+  - gc.nh.gov House member pages (Brian Seaworth + Peter Mehegan, Merrimack 12)
 
 The directory page is the primary source for the committee list. The
 committee-member pages (Select Board / Planning / Budget) only exist
@@ -36,7 +36,7 @@ Output: data/officials.json
     ],
     "state_reps": [
       {"chamber": "senate", "district": "17", "name": "Howard Pearl", "party": "R", "email": "...", "phone": "...", "url": "https://gc.nh.gov/..."},
-      {"chamber": "house",  "district": "Merrimack 12", "name": "Dianne Schuett", "party": "D", ...},
+      {"chamber": "house",  "district": "Merrimack 12", "name": "Peter Mehegan", "party": "R", ...},
       {"chamber": "house",  "district": "Merrimack 12", "name": "Brian Seaworth", "party": "R", ...}
     ]
   }
@@ -468,8 +468,10 @@ def parse_budget_committee(html: str) -> dict[str, str]:
 
 
 # The Pembroke districts and their current occupants, sourced from
-# gc.nh.gov (Senate) and the 2025-2026 NHHA legislator list (House).
-# Updated 2026-10. When the next election cycle happens, these will
+# gc.nh.gov (Senate) and the gc.nh.gov House member pages (House).
+# Updated 2026-10-30: Dianne Schuett left the House in Dec 2024; Peter
+# Mehegan holds the seat. The old /house/members/webpages/ URLs 404 —
+# member pages now live at /house/members/member.aspx?pid=N. When the next election cycle happens, these will
 # need to be refreshed — the cron pipeline can re-run this scraper.
 STATE_REPS = [
     {
@@ -485,12 +487,12 @@ STATE_REPS = [
     {
         "chamber": "house",
         "district": "Merrimack 12",
-        "name": "Dianne Schuett",
-        "party": "D",
+        "name": "Peter Mehegan",
+        "party": "R",
         "towns": "Pembroke",
-        "email": "Dianne.Schuett@gc.nh.gov",
+        "email": "Peter.Mehegan@gc.nh.gov",
         "phone": None,
-        "url": "https://gc.nh.gov/house/members/webpages/member.aspx?pid=1194",
+        "url": "https://gc.nh.gov/house/members/member.aspx?pid=11382",
     },
     {
         "chamber": "house",
@@ -500,7 +502,7 @@ STATE_REPS = [
         "towns": "Pembroke",
         "email": "brian.seaworth@gc.nh.gov",
         "phone": "603-722-0807",
-        "url": "https://gc.nh.gov/house/members/webpages/member.aspx?pid=1107",
+        "url": "https://gc.nh.gov/house/members/member.aspx?pid=944",
     },
 ]
 

@@ -13,12 +13,17 @@ interface Props {
   listings: PropertyListing[];
   generatedAt: string;
   taxRate?: number;
+  /** How many Pembroke listings the latest raw scrape found (before
+   *  parcel matching), so the page can say how many it is showing. */
+  rawCount?: number | null;
+  /** True when the matched-listings file is more than 3 days old. */
+  stale?: boolean;
 }
 
 const money = (n: number | null) =>
   n === null ? "—" : "$" + n.toLocaleString("en-US", { maximumFractionDigits: 0 });
 
-export function ForSaleListings({ listings, generatedAt, taxRate }: Props) {
+export function ForSaleListings({ listings, generatedAt, taxRate, rawCount, stale }: Props) {
   const [showAll, setShowAll] = useState(false);
 
   const sorted = useMemo(
@@ -126,8 +131,22 @@ export function ForSaleListings({ listings, generatedAt, taxRate }: Props) {
           </button>
         )}
 
+        {stale && (
+          <p className="mt-3 rounded border border-amber-200 bg-amber-50 px-3 py-2 text-xs text-amber-900">
+            These listings were last refreshed on {generatedAt} and may be out of date —
+            some homes may have sold or changed price since.
+          </p>
+        )}
         <p className="mt-4 text-xs leading-relaxed text-stone-500">
-          Asking prices pulled from public listing sites on {generatedAt}; assessed values from the
+          Listings as of {generatedAt}.{" "}
+          {rawCount && rawCount > listings.length && (
+            <>
+              Showing the {listings.length} of {rawCount} Pembroke listings found that could be
+              matched to a town parcel; the rest are condos or townhouses, or couldn&apos;t be
+              matched with confidence, and are left out rather than guessed.{" "}
+            </>
+          )}
+          Asking prices pulled from public listing sites; assessed values from the
           town&apos;s property database. An asking price is a seller&apos;s hope, not a sale — and
           the assessment is a tax number, not a market estimate. Treat the gap as a conversation
           starter, not a valuation.

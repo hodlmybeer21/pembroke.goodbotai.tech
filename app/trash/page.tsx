@@ -14,12 +14,12 @@ export const metadata = {
     title: "When is my trash day? — Pembroke, NH",
     description:
       "Type your street. Get your pickup day. Carts out by 6:45 AM. Recycling is mandatory.",
-    images: [{ url: "/og-trash.svg", width: 1200, height: 630, alt: "Pembroke trash day lookup" }],
+    images: [{ url: "/og-trash.png", width: 1200, height: 630, alt: "Pembroke trash day lookup" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "When is my trash day? — Pembroke, NH",
-    images: ["/og-trash.svg"],
+    images: ["/og-trash.png"],
   },
 };
 

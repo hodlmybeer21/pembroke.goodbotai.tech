@@ -20,7 +20,10 @@ import {
   dedupeByDateTitle,
   filterHorizon,
   loadUpcomingMeetings,
+  loadCalendar,
+  type LegacyCalendarEvent,
 } from "@/lib/town-data";
+import { formatEt } from "@/lib/dates";
 import { loadGovernanceSummary } from "@/lib/governance";
 import { NhTaxHeatMap } from "@/components/NhTaxHeatMap";
 import { loadPropertyValues } from "@/lib/property-values";
@@ -28,6 +31,19 @@ import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 
 export const revalidate = 3600;
+
+export const metadata = {
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Pembroke, NH — town brief",
+    description:
+      "Pembroke's town government, in plain English. Meetings, agendas, trash day, who to call. Refreshed every hour.",
+    url: "/",
+    siteName: "Pembroke, NH — town brief",
+    type: "website",
+    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Pembroke, NH" }],
+  },
+};
 
 function readJson<T>(file: string): T | null {
   try {
@@ -54,7 +70,9 @@ export default async function HomePage() {
 
   const now = new Date();
   const horizonEnd = new Date(now.getTime() + 90 * 24 * 3600 * 1000);
-  const dedupedEvents = dedupeByDateTitle(filterHorizon(events, now, horizonEnd));
+  const dedupedEvents = collapseDayRuns(
+    dedupeByDateTitle(filterHorizon(events, now, horizonEnd)),
+  );
 
   const brief = buildBrief(dedupedEvents, docs, { now });
 
@@ -68,6 +86,7 @@ export default async function HomePage() {
   }));
 
   const lastRefresh = brief.generatedAt;
+  const calendarAsOf = loadCalendar()?.generated_at ?? null;
   const ocr = loadOcrExport();
 
   // The next meeting the town has published.
@@ -137,6 +156,7 @@ export default async function HomePage() {
             value={
               next
                 ? `${next.when.toLocaleDateString("en-US", {
+                    timeZone: "America/New_York",
                     weekday: "short",
                     month: "short",
                     day: "numeric",
@@ -247,9 +267,7 @@ export default async function HomePage() {
         </p>
       ) : (
         <section className="mb-12">
-          <h2 className="mb-3 font-serif text-sm uppercase tracking-wider text-stone-500">
-            This week
-          </h2>
+          {/* Brief renders its own "This week" / "Later" headings. */}
           <Brief
             items={items}
             weekEnd={brief.weekEnd}
@@ -257,6 +275,11 @@ export default async function HomePage() {
             generatedAt={brief.generatedAt}
             tagOrder={tagOrder}
           />
+          {calendarAsOf && (
+            <p className="mt-3 text-xs text-stone-500">
+              Town calendar data as of {formatEt(calendarAsOf)}
+            </p>
+          )}
         </section>
       )}
 
@@ -320,18 +343,63 @@ export default async function HomePage() {
       )}
 
       <p className="mt-12 text-xs text-stone-500">
-        Refreshed{" "}
-        {lastRefresh.toLocaleString("en-US", {
-          dateStyle: "medium",
-          timeStyle: "short",
-        })}{" "}
-        · every hour from{" "}
+        Page refreshed {formatEt(lastRefresh)} · every hour from{" "}
         <a href="https://www.pembroke-nh.com" className="underline">
           pembroke-nh.com
         </a>
       </p>
     </main>
   );
+}
+
+/**
+ * Collapse runs of the same all-day notice on consecutive days (e.g.
+ * five "Water Works- Thanksgiving Week- Office Closed" rows, Nov 23-27)
+ * into one row titled with the date range.
+ */
+function collapseDayRuns(events: LegacyCalendarEvent[]): LegacyCalendarEvent[] {
+  const DAY = 24 * 3600 * 1000;
+  const out: LegacyCalendarEvent[] = [];
+  const bySummary = new Map<string, LegacyCalendarEvent[]>();
+  for (const e of events) {
+    if (!e.isHoliday) {
+      out.push(e);
+      continue;
+    }
+    const list = bySummary.get(e.summary) ?? [];
+    list.push(e);
+    bySummary.set(e.summary, list);
+  }
+  const fmt = (d: Date, withMonth: boolean) =>
+    d.toLocaleDateString("en-US", {
+      timeZone: "UTC", // calendar days are anchored at 12:00 UTC
+      ...(withMonth ? { month: "short" } : {}),
+      day: "numeric",
+    });
+  for (const list of bySummary.values()) {
+    list.sort((a, b) => a.start.getTime() - b.start.getTime());
+    let run: LegacyCalendarEvent[] = [];
+    const flush = () => {
+      if (!run.length) return;
+      const first = run[0];
+      const last = run[run.length - 1];
+      if (run.length === 1) {
+        out.push(first);
+      } else {
+        const sameMonth = first.start.getUTCMonth() === last.start.getUTCMonth();
+        const range = `${fmt(first.start, true)}–${fmt(last.start, !sameMonth)}`;
+        out.push({ ...first, summary: `${first.summary} (${range})`, end: last.end });
+      }
+      run = [];
+    };
+    for (const e of list) {
+      const prev = run[run.length - 1];
+      if (prev && Math.round((e.start.getTime() - prev.start.getTime()) / DAY) !== 1) flush();
+      run.push(e);
+    }
+    flush();
+  }
+  return out.sort((a, b) => a.start.getTime() - b.start.getTime());
 }
 
 function LiveFact({

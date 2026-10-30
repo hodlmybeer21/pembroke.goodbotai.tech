@@ -1,6 +1,7 @@
 import "server-only";
 import { existsSync, readFileSync } from "fs";
 import { join } from "path";
+import { parseMeetingDate } from "./dates";
 
 // Loader for the town's own published material: the archive index (630
 // documents with OCR summaries) and the upcoming calendar.
@@ -376,8 +377,9 @@ export function loadMeetingPatterns(): MeetingPattern[] {
   for (const month of index.months) {
     for (const e of month.entries) {
       if (e.doc_type !== "Minutes") continue;
-      const d = new Date(e.meeting_date + "T12:00:00");
-      if (isNaN(d.getTime())) continue;
+      // meeting_date is "Oct 19, 2026" in the archive; accept ISO too.
+      const d = parseMeetingDate(e.meeting_date);
+      if (!d) continue;
       const list = byCommittee.get(e.committee) ?? [];
       list.push(d);
       byCommittee.set(e.committee, list);
@@ -388,7 +390,7 @@ export function loadMeetingPatterns(): MeetingPattern[] {
                "Friday", "Saturday"];
   const out: MeetingPattern[] = [];
   for (const [committee, list] of byCommittee) {
-    const ds = [...new Set(list)].sort((a, b) => a.getTime() - b.getTime());
+    const ds = [...new Map(list.map((d) => [d.getTime(), d])).values()].sort((a, b) => a.getTime() - b.getTime());
     if (ds.length < 4) continue;
     const gaps: number[] = [];
     for (let i = 1; i < ds.length; i++) {
@@ -398,7 +400,7 @@ export function loadMeetingPatterns(): MeetingPattern[] {
     const gap = gaps[Math.floor(gaps.length / 2)];
     const dow = new Map<string, number>();
     for (const d of ds) {
-      const k = DAY[d.getDay()];
+      const k = DAY[d.getUTCDay()];
       dow.set(k, (dow.get(k) ?? 0) + 1);
     }
     const [weekday, hits] = [...dow.entries()].sort((a, b) => b[1] - a[1])[0];

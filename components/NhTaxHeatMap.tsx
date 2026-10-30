@@ -290,9 +290,26 @@ export function NhTaxHeatMap() {
     }
   }, [leafletReady, data, metric]);
 
-  // Fit the state once the data lands.
+  // Open on Pembroke and its part of the state once the data lands.
+  // Fitting the whole state left Pembroke a few pixels wide on most
+  // screens; this frames central/southern NH with Pembroke in the
+  // middle, and residents can zoom out for the rest of the state.
   useEffect(() => {
     if (!leafletReady || !data || !mapRef.current) return;
+    const pb = data.towns.find((t) => t.n === "PEMBROKE");
+    if (pb && pb.g.length) {
+      const ring = pb.g[0];
+      const cx = ring.reduce((a, c) => a + c[0], 0) / ring.length;
+      const cy = ring.reduce((a, c) => a + c[1], 0) / ring.length;
+      mapRef.current.fitBounds(
+        [
+          [cy - 0.45, cx - 0.85],
+          [cy + 0.45, cx + 0.85],
+        ],
+        { padding: [8, 8] },
+      );
+      return;
+    }
     const [w, s, e, n] = data.bounds;
     mapRef.current.fitBounds(
       [
@@ -319,6 +336,23 @@ export function NhTaxHeatMap() {
     return cities.filter((t) => (t.total ?? 0) < pembroke.total!).length;
   }, [data, pembroke]);
 
+  // Median of the incorporated cities and towns, recomputed from the
+  // rates themselves. With 234 towns the median is the midpoint of the
+  // 117th and 118th rates ($16.89 and $16.90 for 2025 = $16.895); the
+  // exported median_city_town rounds that down to $16.89, so round
+  // half-up in whole cents here instead.
+  const cityTownMedian = useMemo(() => {
+    if (!data) return null;
+    const cents = data.towns
+      .filter((t) => !t.u && t.total !== null)
+      .map((t) => Math.round((t.total as number) * 100))
+      .sort((a, b) => a - b);
+    if (!cents.length) return data.median_city_town;
+    const mid = Math.floor(cents.length / 2);
+    const c = cents.length % 2 ? cents[mid] : (cents[mid - 1] + cents[mid]) / 2;
+    return Math.round(c) / 100;
+  }, [data]);
+
   return (
     <div>
       {/* ------------------------------------------------- the stat row */}
@@ -331,7 +365,7 @@ export function NhTaxHeatMap() {
           />
           <Stat
             label="NH median"
-            value={money(data.median_city_town)}
+            value={money(cityTownMedian ?? data.median_city_town)}
             sub={`across ${data.city_town_count} cities and towns`}
           />
           <Stat
@@ -423,7 +457,7 @@ export function NhTaxHeatMap() {
           </div>
           <div className="flex w-64 justify-between text-[11px] text-stone-500">
             <span>{money(data.scale.min)}</span>
-            <span>{money(data.scale.median)} median</span>
+            <span>{money(cityTownMedian ?? data.scale.median)} median</span>
             <span>{money(data.scale.max)}</span>
           </div>
         </div>
@@ -439,7 +473,24 @@ export function NhTaxHeatMap() {
             )}
             . Shades are equal-count bands, so each one holds the same
             number of towns. Grey areas have no separately published
-            rate. Tap a town for its breakdown.
+            rate. Tap a town for its breakdown.{" "}
+            {(() => {
+              const shaded = data.towns.filter((t) => t.total !== null).length;
+              const unincorporated = data.towns.length - data.city_town_count;
+              return (
+                <>
+                  The map shows {data.towns.length} places ({shaded} with a
+                  rate); the median and Pembroke&rsquo;s ranking use only the{" "}
+                  {data.city_town_count} incorporated cities and towns. The
+                  other {unincorporated} are unincorporated places with no town
+                  government of their own.{" "}
+                  <a className="underline" href={data.source_url}>
+                    Source PDF
+                  </a>
+                  .
+                </>
+              );
+            })()}
           </>
         ) : (
           "Loading New Hampshire tax rates…"

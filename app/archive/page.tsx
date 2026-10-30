@@ -5,6 +5,21 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { ArchiveClient } from "./ArchiveClient";
+import { formatEt } from "@/lib/dates";
+
+export const metadata = {
+  title: "Meeting archive — Pembroke, NH",
+  description:
+    "Searchable archive of Pembroke meeting summaries, agendas and minutes.",
+  alternates: { canonical: "/archive" },
+  openGraph: {
+    title: "Meeting archive — Pembroke, NH",
+    description:
+      "Searchable archive of Pembroke meeting summaries, agendas and minutes.",
+    url: "/archive",
+    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Pembroke, NH" }],
+  },
+};
 
 export const revalidate = 3600;
 
@@ -70,6 +85,9 @@ export default async function ArchivePage({ searchParams }: { searchParams: { co
           {archive.count} meeting summary record{archive.count === 1 ? "" : "s"} on file.
           Each one is generated from the town's own PDF the day the document
           is posted. Type to search — results filter as you go.
+        </p>
+        <p className="mt-1 text-xs text-stone-500">
+          Data as of {formatEt(archive.generated_at)}
         </p>
       </header>
 

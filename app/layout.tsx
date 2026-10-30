@@ -16,6 +16,7 @@ import { getActiveSnowNotice } from "@/lib/snow";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pembroke.goodbotai.tech"),
   title: "Pembroke, NH — town brief",
   description:
     "What Pembroke NH town government is doing — meetings, agendas, decisions. Daily brief for residents.",
@@ -23,14 +24,15 @@ export const metadata: Metadata = {
     title: "Pembroke, NH — town brief",
     description:
       "Pembroke's town government, in plain English. Meetings, agendas, trash day, who to call. Refreshed every hour.",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Pembroke, NH" }],
+    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Pembroke, NH" }],
     type: "website",
+    siteName: "Pembroke, NH — town brief",
   },
   twitter: {
     card: "summary_large_image",
     title: "Pembroke, NH — town brief",
     description: "Pembroke's town government, in plain English.",
-    images: ["/og-default.svg"],
+    images: ["/og-default.png"],
   },
 };
 
@@ -45,6 +47,19 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <body className="min-h-screen flex flex-col">
           {snow && <SnowBanner notice={snow} />}
           <SnowTestMode />
+          {/* Sitewide disclaimer: this is an independent resident site,
+              not the town's. Points at the official site. */}
+          <div className="bg-amber-50 border-b border-amber-200 text-amber-900 text-xs">
+            <div className="max-w-site mx-auto px-4 sm:px-6 py-1.5">
+              <strong className="font-semibold">Unofficial:</strong> not
+              affiliated with the Town of Pembroke. For official notices, forms
+              and payments, use the town&rsquo;s site at{" "}
+              <a href="https://www.pembroke-nh.com" className="underline font-medium">
+                pembroke-nh.com
+              </a>
+              .
+            </div>
+          </div>
           <header className="surface-header sticky top-0 z-10 shadow-[0_1px_0_rgba(0,0,0,0.06)]">
             <div className="max-w-site mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
               <Link
@@ -92,9 +107,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 <a href="https://www.pembroke-nh.com" className="underline">
                   pembroke-nh.com
                 </a>
+                {" "}· Unofficial — not affiliated with the Town of Pembroke
               </div>
               <div className="flex items-center gap-4">
                 <span>Refreshes hourly</span>
+                <Link href="/status" className="underline">Data status</Link>
                 <Link href="/privacy" className="underline">Privacy</Link>
               </div>
             </div>

@@ -6,9 +6,10 @@
 // Tyler noticed that some homes were selling under the town's appraised
 // value; this page lets anyone check that for themselves.
 
-import { loadPropertyListings, loadPropertyTrends, loadPropertyValues } from "@/lib/property-values";
+import { loadPropertyListings, loadPropertyTrends, loadPropertyValues, loadRawListingCount } from "@/lib/property-values";
 import { PropertyValueTable } from "@/components/PropertyValueTable";
 import { ForSaleListings } from "@/components/ForSaleListings";
+import { formatEt } from "@/lib/dates";
 import { PropertyTrends } from "@/components/PropertyTrends";
 import { ShareButton } from "@/components/ShareButton";
 
@@ -22,12 +23,12 @@ export const metadata = {
     title: "Did it sell under the assessed value? — Pembroke, NH",
     description:
       "Every recent Pembroke home sale next to the town's assessed value, on a map.",
-    images: [{ url: "/og-property-values.svg", width: 1200, height: 630, alt: "Pembroke home sales vs assessed value" }],
+    images: [{ url: "/og-property-values.png", width: 1200, height: 630, alt: "Pembroke home sales vs assessed value" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Home sales vs. town assessed value — Pembroke, NH",
-    images: ["/og-property-values.svg"],
+    images: ["/og-property-values.png"],
   },
 };
 
@@ -127,14 +128,12 @@ export default function PropertyValuesPage() {
       <ForSaleListings
         listings={listings?.listings ?? []}
         taxRate={trends?.tax_rate}
-        generatedAt={
+        generatedAt={listings ? formatEt(listings.generated_at) : ""}
+        rawCount={loadRawListingCount()}
+        stale={
           listings
-            ? new Date(listings.generated_at).toLocaleDateString("en-US", {
-                month: "long",
-                day: "numeric",
-                year: "numeric",
-              })
-            : ""
+            ? Date.now() - new Date(listings.generated_at).getTime() > 3 * 24 * 3600 * 1000
+            : false
         }
       />
 

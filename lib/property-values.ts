@@ -119,6 +119,19 @@ export function loadPropertyListings(): PropertyListingsFile | null {
   }
 }
 
+/** Count of Pembroke listings in the latest raw scrape
+ *  (data/pembroke-listings.json), before parcel matching. */
+export function loadRawListingCount(): number | null {
+  try {
+    const path = join(process.cwd(), "data", "pembroke-listings.json");
+    if (!existsSync(path)) return null;
+    const j = JSON.parse(readFileSync(path, "utf8")) as { count?: number; listings?: unknown[] };
+    return j.count ?? j.listings?.length ?? null;
+  } catch {
+    return null;
+  }
+}
+
 // ---------------------------------------------------------------- trends
 
 export interface TrendYear {

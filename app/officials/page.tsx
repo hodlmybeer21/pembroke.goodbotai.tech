@@ -4,59 +4,73 @@
 // (for next-meeting dates), then renders the directory grouped by
 // committee type, with a "How to participate" footer.
 
-import { loadCalendarEvents } from "@/lib/town-data";
+import { committeeLabel, loadCalendar } from "@/lib/town-data";
+import { formatEt, parseMeetingDate, townDateTime } from "@/lib/dates";
 import { loadOfficials, groupCommittees, type Committee } from "@/lib/officials";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Town officials & state reps — Pembroke, NH",
+  description:
+    "Who serves on Pembroke's boards and committees, when they meet next, and who represents Pembroke in Concord.",
+  alternates: { canonical: "/officials" },
+  openGraph: {
+    title: "Town officials & state reps — Pembroke, NH",
+    description:
+      "Who serves on Pembroke's boards and committees, when they meet next, and who represents Pembroke in Concord.",
+    url: "/officials",
+    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Pembroke, NH" }],
+  },
+};
 
 export const revalidate = 3600;
 
 async function attachNextMeetings(committees: Committee[]): Promise<Committee[]> {
-  // For each committee, find the next iCal event whose title OR
-  // committee-name match matches. This gives a "Next meeting: Wed
-  // Oct 15, 7:00 pm" callout for the elected boards. For smaller
-  // committees that don't appear in the iCal feed, leave null.
-  let events;
-  try {
-    events = loadCalendarEvents();
-  } catch {
-    return committees;
-  }
+  // For each committee, find the next published meeting on the town
+  // calendar whose committee matches. Uses the meeting's real published
+  // time (e.g. "2:00 PM") in Eastern time - the previous version built
+  // every event at a placeholder noon, so every "Next:" read 12:00 PM.
+  const cal = loadCalendar();
+  if (!cal) return committees;
   const now = new Date();
-  const upcoming = events
-    .filter((e) => e.start >= now)
-    .sort((a, b) => a.start.getTime() - b.start.getTime());
+  const upcoming = cal.meetings
+    .map((e) => {
+      const at = townDateTime(e.date, e.time) ?? parseMeetingDate(e.date);
+      return { committee: committeeLabel(e.title), at, date: e.date, time: e.time };
+    })
+    .filter((e): e is { committee: string; at: Date; date: string; time: string } =>
+      !!e.at && e.at >= now)
+    .sort((a, b) => a.at.getTime() - b.at.getTime());
   const out: Committee[] = [];
   for (const c of committees) {
-    // Find the first event whose committee name is a substring of
-    // the committee's name (e.g. "Select Board" matches the
-    // committee "Board of Selectmen" since "Select" is in both).
+    const cName = c.name.toLowerCase();
     const match = upcoming.find((e) => {
       const eName = e.committee.toLowerCase();
-      const cName = c.name.toLowerCase();
       return eName.includes(cName) ||
         cName.includes(eName) ||
-        // "Board of Selectmen" → "Select Board" (the iCal name)
+        // "Board of Selectmen" vs the calendar's "Select Board"
         cName.replace("board of selectmen", "select board") === eName ||
         cName === eName;
     });
     out.push({
       ...c,
-      next_meeting: match ? match.start.toISOString() : null,
+      next_meeting: match ? formatNextMeeting(match.date, match.time) : null,
     });
   }
   return out;
 }
 
-function formatNextMeeting(iso: string | null): string {
-  if (!iso) return "";
-  const d = new Date(iso);
-  return d.toLocaleString("en-US", {
+/** "Tue, Nov 3, 2:00 PM ET" from the calendar's date + local time. */
+function formatNextMeeting(date: string, time: string): string {
+  const day = parseMeetingDate(date);
+  if (!day) return "";
+  const d = day.toLocaleDateString("en-US", {
+    timeZone: "UTC", // parseMeetingDate anchors at 12:00 UTC on the calendar day
     weekday: "short",
     month: "short",
     day: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
   });
+  return time ? `${d}, ${time} ET` : d;
 }
 
 export default async function OfficialsPage() {
@@ -96,7 +110,7 @@ export default async function OfficialsPage() {
           >
             pembroke-nh.com staff directory
           </a>
-          . Last scraped {new Date(data.generated_at).toLocaleDateString("en-US", { dateStyle: "medium" })}.
+          . Directory checked {formatEt(data.generated_at)}.
         </p>
       </header>
 
@@ -264,7 +278,7 @@ function CommitteeCard({ committee }: { committee: Committee }) {
       {committee.next_meeting && (
         <div className="mb-2 text-xs">
           <span className="inline-block px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200 font-medium">
-            Next: {formatNextMeeting(committee.next_meeting)}
+            Next: {committee.next_meeting}
           </span>
         </div>
       )}

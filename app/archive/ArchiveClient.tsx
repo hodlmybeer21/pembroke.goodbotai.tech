@@ -72,10 +72,13 @@ export function ArchiveClient({
   const byMonth = useMemo(() => {
     const m = new Map<string, { label: string; entries: ArchiveEntry[] }>();
     for (const { entry, monthLabel } of filtered) {
-      if (!m.has(entry.meeting_date.slice(0, 7))) {
-        m.set(entry.meeting_date.slice(0, 7), { label: monthLabel, entries: [] });
+      // Group by the month label the index already assigned. The old
+      // key was meeting_date.slice(0, 7), which on "Oct 19, 2026"-style
+      // dates split one month into several groups ("Oct 19," vs "Oct 2,").
+      if (!m.has(monthLabel)) {
+        m.set(monthLabel, { label: monthLabel, entries: [] });
       }
-      m.get(entry.meeting_date.slice(0, 7))!.entries.push(entry);
+      m.get(monthLabel)!.entries.push(entry);
     }
     return [...m.entries()];
   }, [filtered]);

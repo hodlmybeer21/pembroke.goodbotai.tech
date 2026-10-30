@@ -30,7 +30,12 @@ const noopMiddleware = (_req: NextRequest) => NextResponse.next();
 
 const realMiddleware = clerkMiddleware(async (auth, req) => {
   if (isProtected(req)) {
-    await auth.protect();
+    // Signed-out visitors go to /sign-in (and come back afterwards)
+    // instead of getting Clerk's default 404, which made /settings look
+    // like a dead link to anyone not signed in.
+    const signIn = new URL("/sign-in", req.url);
+    signIn.searchParams.set("redirect_url", req.nextUrl.pathname);
+    await auth.protect({ unauthenticatedUrl: signIn.toString() });
   }
 });
 
