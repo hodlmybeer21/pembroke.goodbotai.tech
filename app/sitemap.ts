@@ -8,6 +8,8 @@ const PAGES: Array<{ path: string; freq: "hourly" | "daily" | "weekly" | "monthl
   { path: "/", freq: "hourly", priority: 1 },
   { path: "/decisions", freq: "daily", priority: 0.9 },
   { path: "/property-values", freq: "daily", priority: 0.9 },
+  { path: "/taxes/history", freq: "monthly", priority: 0.8 },
+  { path: "/taxes", freq: "monthly", priority: 0.7 },
   { path: "/calendar", freq: "daily", priority: 0.8 },
   { path: "/agendas", freq: "daily", priority: 0.8 },
   { path: "/archive", freq: "daily", priority: 0.6 },

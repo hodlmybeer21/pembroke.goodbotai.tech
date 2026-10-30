@@ -1,0 +1,567 @@
+{
+  "town": "Pembroke, NH",
+  "units": "USD per $1,000 of assessed value",
+  "as_of": "2026-10-30",
+  "coverage": "tax years 2010-2025 (Tyler set 2010 as the floor); school budgets voted at the district meetings of March 2010 through March 2026",
+  "notes": [
+    "The school budget figure is the operating-budget warrant article voted at the annual Pembroke School District meeting (traditional meeting, not SB2). It excludes separate warrant articles. The meeting in March of year Y adopts the budget for fiscal year Y+1 (July to June), which is taxed partly in the year-Y rate and partly in the year-Y+1 rate.",
+    "The town budget figure is the municipal operating budget article voted at the March town meeting. It excludes special warrant articles.",
+    "Rates are set by NH DRA each fall. Total = municipal + county + state education + local education.",
+    "A revaluation took effect in 2024 ($794.5M assessed in 2023 vs $1.233B in 2024), so rates before and after 2024 are not directly comparable as tax effort.",
+    "source_type values: DRA_primary = NH DRA statewide rate table; town_report / town_report_DRA_sheet = Pembroke Annual Report (which reproduces the DRA calculation); secondary_cites_DRA = CNHRPC master plan table citing DRA; sau53_* = SAU 53 published documents; derived = computed from a cited document."
+  ],
+  "school_budget_extra": {
+    "meeting_2026": {
+      "fiscal_year": "FY2027",
+      "meeting_date": "2026-03-07",
+      "approved_operating_budget_usd": 34927573,
+      "source_type": "sau53_minutes",
+      "url": "https://drive.google.com/file/d/1rbXRj9wvJNEWAtuCVa_MU9PI_pUmyjI0/view",
+      "note": "2026 School District Meeting minutes: operating budget adopted at $34,927,573 by a card vote (OCR)."
+    },
+    "town_2026": {
+      "year": 2026,
+      "approved_operating_budget_usd": null,
+      "note": "Warrant recommended $12,195,101 (2025 report); 2026 vote not in the sources checked.",
+      "url": "https://www.pembroke-nh.com/DocumentCenter/View/869"
+    }
+  },
+  "years": [
+    {
+      "tax_year": 2010,
+      "total_rate": 25.84,
+      "components": {
+        "municipal": 5.72,
+        "county": 2.78,
+        "state_education": 2.35,
+        "local_education": 14.99
+      },
+      "rate_source": {
+        "type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/889",
+        "corroborating": [
+          "https://cnhrpc.org/wp-content/uploads/2020/06/Chapter-4-Economic-Development.pdf"
+        ],
+        "note": "2010 Annual Report '2010 Tax Rate Calculations' page (scanned; OCR). Town effort $3,488,686; commitment $15,497,939."
+      },
+      "school_budget": {
+        "meeting_year": 2010,
+        "fiscal_year": "FY2011",
+        "meeting_date": "2010-03",
+        "approved_operating_budget_usd": 23492412,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/889",
+        "note": "Minutes: operating budget adopted for $23,492,412; an amendment to raise it to $23,715,619 failed (OCR)."
+      },
+      "town_budget": {
+        "year": 2010,
+        "approved_operating_budget_usd": 7468645,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/889",
+        "note": "Passed as written; an amendment to $7,545,665 failed (OCR)."
+      }
+    },
+    {
+      "tax_year": 2011,
+      "total_rate": 26.44,
+      "components": {
+        "municipal": 5.79,
+        "county": 2.58,
+        "state_education": 2.45,
+        "local_education": 15.62
+      },
+      "rate_source": {
+        "type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/923",
+        "corroborating": [
+          "https://cnhrpc.org/wp-content/uploads/2020/06/Chapter-4-Economic-Development.pdf"
+        ],
+        "note": "2011 Annual Report tax-rate chart."
+      },
+      "school_budget": {
+        "meeting_year": 2011,
+        "fiscal_year": "FY2012",
+        "meeting_date": "2011-03",
+        "approved_operating_budget_usd": 23779333,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/923",
+        "note": "Minutes: operating budget adopted for $23,779,333; an amendment to reduce it failed 47-64."
+      },
+      "town_budget": {
+        "year": 2011,
+        "approved_operating_budget_usd": 7045493,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/923",
+        "note": "Voted $7,045,493."
+      }
+    },
+    {
+      "tax_year": 2012,
+      "total_rate": 26.84,
+      "components": {
+        "municipal": 5.78,
+        "county": 2.5,
+        "state_education": 2.27,
+        "local_education": 16.29
+      },
+      "rate_source": {
+        "type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/921",
+        "corroborating": [
+          "https://cnhrpc.org/wp-content/uploads/2020/06/Chapter-4-Economic-Development.pdf"
+        ],
+        "note": "2012 Annual Report tax rate calculation. (The report's cover pie prints local school 16.23; the calculation page and CNHRPC/DRA table say 16.29.)"
+      },
+      "school_budget": {
+        "meeting_year": 2012,
+        "fiscal_year": "FY2013",
+        "meeting_date": "2012-03",
+        "approved_operating_budget_usd": 24262244,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/921",
+        "note": "Minutes: operating budget adopted as amended for $24,262,244."
+      },
+      "town_budget": {
+        "year": 2012,
+        "approved_operating_budget_usd": 7181027,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/921",
+        "note": "Adopted."
+      }
+    },
+    {
+      "tax_year": 2013,
+      "total_rate": 26.84,
+      "components": {
+        "municipal": 6.19,
+        "county": 2.65,
+        "state_education": 2.19,
+        "local_education": 15.81
+      },
+      "rate_source": {
+        "type": "secondary_cites_DRA",
+        "url": "https://cnhrpc.org/wp-content/uploads/2020/06/Chapter-4-Economic-Development.pdf",
+        "corroborating": [
+          "https://www.pembroke-nh.com/DocumentCenter/View/883"
+        ],
+        "note": "CNHRPC Master Plan Ch.4 Table 4.3 (source line: NH DRA). The town's 2013 report cover pie prints county 2.50, which does not sum to 26.84; 2.65 sums correctly. The full 2013 town report is not online (its link points to the 2012 report). Not yet checked against a DRA sheet."
+      },
+      "school_budget": {
+        "meeting_year": 2013,
+        "fiscal_year": "FY2014",
+        "meeting_date": null,
+        "approved_operating_budget_usd": null,
+        "source_type": null,
+        "url": null,
+        "note": "Not found: the 2013 town report is not online (its link serves the 2012 report). The UNH Scholars copy is blocked from this box."
+      },
+      "town_budget": {
+        "year": 2013,
+        "approved_operating_budget_usd": null,
+        "source_type": null,
+        "url": null,
+        "note": "2013 report not online."
+      }
+    },
+    {
+      "tax_year": 2014,
+      "total_rate": 29.7,
+      "components": {
+        "municipal": 6.64,
+        "county": 2.89,
+        "state_education": 2.49,
+        "local_education": 17.68
+      },
+      "rate_source": {
+        "type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/880",
+        "corroborating": [
+          "https://cnhrpc.org/wp-content/uploads/2020/06/Chapter-4-Economic-Development.pdf"
+        ],
+        "note": "2014 Annual Report tax rate calculation (scanned; OCR)."
+      },
+      "school_budget": {
+        "meeting_year": 2014,
+        "fiscal_year": "FY2015",
+        "meeting_date": "2014-03",
+        "approved_operating_budget_usd": 24602163,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/884",
+        "note": "Minutes (report p.113): operating budget adopted as amended to the school board figure, $24,602,163 (OCR)."
+      },
+      "town_budget": {
+        "year": 2014,
+        "approved_operating_budget_usd": 7669894,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/880",
+        "note": "Adopted as amended: $7,662,394 plus a $7,500 library amendment (OCR)."
+      }
+    },
+    {
+      "tax_year": 2015,
+      "total_rate": 28.94,
+      "components": {
+        "municipal": 7.27,
+        "county": 2.84,
+        "state_education": 2.38,
+        "local_education": 16.45
+      },
+      "rate_source": {
+        "type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/878",
+        "corroborating": [
+          "https://cnhrpc.org/wp-content/uploads/2020/06/Chapter-4-Economic-Development.pdf"
+        ],
+        "note": "2015 Annual Report tax rate calculation."
+      },
+      "school_budget": {
+        "meeting_year": 2015,
+        "fiscal_year": "FY2016",
+        "meeting_date": "2015-03-07",
+        "approved_operating_budget_usd": 25074192,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/878",
+        "note": "Minutes: operating budget adopted for $25,074,192."
+      },
+      "town_budget": {
+        "year": 2015,
+        "approved_operating_budget_usd": 7788143,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/878",
+        "note": "Adopted."
+      }
+    },
+    {
+      "tax_year": 2016,
+      "total_rate": 29.0,
+      "components": {
+        "municipal": 7.1,
+        "county": 2.9,
+        "state_education": 2.34,
+        "local_education": 16.66
+      },
+      "rate_source": {
+        "type": "town_report_DRA_sheet",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/874",
+        "corroborating": [
+          "https://cnhrpc.org/wp-content/uploads/2020/06/Chapter-4-Economic-Development.pdf"
+        ],
+        "note": "2016 Annual Report reproduces the DRA tax rate sheet (Director-approved 12/6/2016). Components match the CNHRPC/DRA table."
+      },
+      "school_budget": {
+        "meeting_year": 2016,
+        "fiscal_year": "FY2017",
+        "meeting_date": "2016-03",
+        "approved_operating_budget_usd": 26002018,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/874",
+        "note": "Minutes: an amendment failed; operating budget adopted at $26,002,018 (OCR)."
+      },
+      "town_budget": {
+        "year": 2016,
+        "approved_operating_budget_usd": 8008878,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/874",
+        "note": "Passed (OCR)."
+      }
+    },
+    {
+      "tax_year": 2017,
+      "total_rate": 29.76,
+      "components": {
+        "municipal": 6.93,
+        "county": 2.86,
+        "state_education": 2.16,
+        "local_education": 17.81
+      },
+      "rate_source": {
+        "type": "town_report_DRA_sheet+secondary",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/875",
+        "corroborating": [
+          "https://cnhrpc.org/wp-content/uploads/2020/06/Chapter-4-Economic-Development.pdf"
+        ],
+        "note": "2017 Annual Report DRA sheet: OCR read the total $29.76. The component split is from the CNHRPC table (cites DRA)."
+      },
+      "school_budget": {
+        "meeting_year": 2017,
+        "fiscal_year": "FY2018",
+        "meeting_date": "2017-03-11",
+        "approved_operating_budget_usd": 25939943,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/875",
+        "note": "Minutes: operating budget adopted at $25,939,943 (OCR)."
+      },
+      "town_budget": {
+        "year": 2017,
+        "approved_operating_budget_usd": 8053964,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/875",
+        "note": "Adopted (OCR; no amendment noted)."
+      }
+    },
+    {
+      "tax_year": 2018,
+      "total_rate": 26.24,
+      "components": {
+        "municipal": 6.75,
+        "county": 2.8,
+        "state_education": 2.23,
+        "local_education": 14.46
+      },
+      "rate_source": {
+        "type": "town_report_DRA_sheet",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/876",
+        "corroborating": [
+          "https://cnhrpc.org/wp-content/uploads/2020/06/Chapter-4-Economic-Development.pdf"
+        ],
+        "note": "2018 Annual Report DRA calc (OCR): total effort $17,348,082; valuation $663,715,336."
+      },
+      "school_budget": {
+        "meeting_year": 2018,
+        "fiscal_year": "FY2019",
+        "meeting_date": "2018-03",
+        "approved_operating_budget_usd": 25319207,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/876",
+        "note": "Minutes: amended up from $24,549,355 to $25,319,207; adopted by ballot vote 265-158 (OCR)."
+      },
+      "town_budget": {
+        "year": 2018,
+        "approved_operating_budget_usd": 8504320,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/876",
+        "note": "Adopted (OCR)."
+      }
+    },
+    {
+      "tax_year": 2019,
+      "total_rate": 23.58,
+      "components": {
+        "municipal": 5.75,
+        "county": 2.5,
+        "state_education": 1.88,
+        "local_education": 13.45
+      },
+      "rate_source": {
+        "type": "town_report_DRA_sheet",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/870",
+        "corroborating": [
+          "https://cnhrpc.org/wp-content/uploads/2020/06/Chapter-4-Economic-Development.pdf"
+        ],
+        "note": "2019 Annual Report tax rate page (OCR): total effort $17,911,378; valuation $761,864,478 (up from $663.7M). The table heading on that page reads '2018', but the figures are the 2019 rate (they match the CNHRPC/DRA 2019 row)."
+      },
+      "school_budget": {
+        "meeting_year": 2019,
+        "fiscal_year": "FY2020",
+        "meeting_date": "2019-03-09",
+        "approved_operating_budget_usd": 25505590,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/870",
+        "note": "Minutes: operating budget adopted for $25,505,590 by ballot, 99-26 (OCR)."
+      },
+      "town_budget": {
+        "year": 2019,
+        "approved_operating_budget_usd": 8318667,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/870",
+        "note": "Passed (OCR)."
+      }
+    },
+    {
+      "tax_year": 2020,
+      "total_rate": 24.6,
+      "components": {
+        "municipal": 5.49,
+        "county": 2.49,
+        "state_education": 1.83,
+        "local_education": 14.79
+      },
+      "rate_source": {
+        "type": "DRA_primary",
+        "url": "https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/inline-documents/sonh/municipal-property/2020-municipal-tax-rates.pdf",
+        "corroborating": [],
+        "note": "DRA 2020 statewide tax rate table; set 10/23/20."
+      },
+      "school_budget": {
+        "meeting_year": 2020,
+        "fiscal_year": "FY2021",
+        "meeting_date": "2020-03",
+        "approved_operating_budget_usd": 27250105,
+        "source_type": "sau53_packet",
+        "url": "https://drive.google.com/file/d/1Mg1mZ3UXdfaXfu-xvJtq1muZL6VjXb4r/view",
+        "note": "The 2020 meeting minutes were not found. Figure is from the SAU 53 FY2022 warrant summary: 'approved current FY2021 budget of $27,250,105'."
+      },
+      "town_budget": {
+        "year": 2020,
+        "approved_operating_budget_usd": null,
+        "source_type": null,
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/870",
+        "note": "Warrant recommended $8,573,871 (2019 report). The vote was not confirmed: the 2020 minutes were not verified."
+      }
+    },
+    {
+      "tax_year": 2021,
+      "total_rate": 24.0,
+      "components": {
+        "municipal": 5.33,
+        "county": 2.42,
+        "state_education": 1.81,
+        "local_education": 14.44
+      },
+      "rate_source": {
+        "type": "DRA_primary",
+        "url": "https://www.revenue.nh.gov/sites/g/files/ehbemt736/files/inline-documents/sonh/municipal-property/2021-municipal-tax-rates.pdf",
+        "corroborating": [
+          "https://www.pembroke-nh.com/DocumentCenter/View/873"
+        ],
+        "note": "DRA 2021 statewide table; set 11/04/21; valuation $789,214,047; commitment $18,732,602. Also matches the 2021 Annual Report DRA sheet (OCR)."
+      },
+      "school_budget": {
+        "meeting_year": 2021,
+        "fiscal_year": "FY2022",
+        "meeting_date": "2021-05-01",
+        "approved_operating_budget_usd": 27474679,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/873",
+        "note": "Minutes: operating budget adopted for $27,474,679, 69-20. The meeting was postponed to May 1, 2021 (SAU 53 meeting folder) (OCR)."
+      },
+      "town_budget": {
+        "year": 2021,
+        "approved_operating_budget_usd": 8712950,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/873",
+        "note": "Adopted (OCR)."
+      }
+    },
+    {
+      "tax_year": 2022,
+      "total_rate": 24.9,
+      "components": {
+        "municipal": 5.36,
+        "county": 2.52,
+        "state_education": 1.28,
+        "local_education": 15.74
+      },
+      "rate_source": {
+        "type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/866",
+        "corroborating": [],
+        "note": "2022 Annual Report tax rate calculation."
+      },
+      "school_budget": {
+        "meeting_year": 2022,
+        "fiscal_year": "FY2023",
+        "meeting_date": "2022-03",
+        "approved_operating_budget_usd": 29273613,
+        "source_type": "sau53_packet",
+        "url": "https://drive.google.com/file/d/18l9UjeIwnhQVMW3Q2K8ChKywQPqmmiXH/view",
+        "note": "Minutes not found. Figure is from the SAU 53 FY2024 warrant summary: 'approved current FY2023 budget of $29,273,613'."
+      },
+      "town_budget": {
+        "year": 2022,
+        "approved_operating_budget_usd": 10002382,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/866",
+        "note": "Adopted."
+      }
+    },
+    {
+      "tax_year": 2023,
+      "total_rate": 27.88,
+      "components": {
+        "municipal": 5.99,
+        "county": 2.49,
+        "state_education": 1.83,
+        "local_education": 17.57
+      },
+      "rate_source": {
+        "type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/867",
+        "corroborating": [],
+        "note": "2023 Annual Report tax rate calculation; valuation $794,536,548."
+      },
+      "school_budget": {
+        "meeting_year": 2023,
+        "fiscal_year": "FY2024",
+        "meeting_date": "2023-03-11",
+        "approved_operating_budget_usd": 30779520,
+        "source_type": "sau53_packet",
+        "url": "https://drive.google.com/file/d/1CFDJ49GjgFLpetjjsNGIObLOijmwkCMv/view",
+        "note": "Minutes not found. Figure is from the SAU 53 FY2025 warrant summary: 'approved current FY2024 budget of $30,779,520'. The proposed figure was $29,752,151 (FY2024 packet), so the jump needs confirming against the 2023 minutes."
+      },
+      "town_budget": {
+        "year": 2023,
+        "approved_operating_budget_usd": 10671113,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/867",
+        "note": "Adopted."
+      }
+    },
+    {
+      "tax_year": 2024,
+      "total_rate": 19.64,
+      "components": {
+        "municipal": 4.94,
+        "county": 1.64,
+        "state_education": 1.18,
+        "local_education": 11.88
+      },
+      "rate_source": {
+        "type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/868",
+        "corroborating": [],
+        "note": "2024 Annual Report tax rate calculation; valuation $1,233,039,070. A town-wide revaluation took effect this year, so the lower rate partly reflects higher assessed values."
+      },
+      "school_budget": {
+        "meeting_year": 2024,
+        "fiscal_year": "FY2025",
+        "meeting_date": "2024-03-09",
+        "approved_operating_budget_usd": 30793987,
+        "source_type": "derived_sau53+news",
+        "url": "https://drive.google.com/file/d/1gsGUISY4O6Y7CizyOi5IsQCyXrNv0RA3/view",
+        "note": "Derived: the 2025 SAU 53 budget summary shows proposed $33,429,347 with a total increase of $2,635,360 (8.56%), which implies $30,793,987. Concord Monitor (3/9/2024) reports voters cut about $3M from the $33.8M proposal, 305-134. Exact minutes not found."
+      },
+      "town_budget": {
+        "year": 2024,
+        "approved_operating_budget_usd": 11624396,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/868",
+        "note": "Passed as written."
+      }
+    },
+    {
+      "tax_year": 2025,
+      "total_rate": 21.84,
+      "components": {
+        "municipal": 5.42,
+        "county": 1.58,
+        "state_education": 1.09,
+        "local_education": 13.75
+      },
+      "rate_source": {
+        "type": "DRA_primary",
+        "url": "https://revenue.nh.gov/sites/g/files/ehbemt736/files/documents/2025-municipal-tax-rates.pdf",
+        "corroborating": [
+          "https://www.pembroke-nh.com/DocumentCenter/View/869"
+        ],
+        "note": "DRA 2025 statewide table (already used at public/data/nh-tax-rates.json); valuation $1,254,214,752. Matches the 2025 Annual Report."
+      },
+      "school_budget": {
+        "meeting_year": 2025,
+        "fiscal_year": "FY2026",
+        "meeting_date": "2025-03-08",
+        "approved_operating_budget_usd": 33429347,
+        "source_type": "sau53_minutes",
+        "url": "https://drive.google.com/file/d/1ghTSnBBTAHUrJQ2eRPkfsJL-soP31ThE/view",
+        "note": "2025 School District Meeting minutes: amended up from the $33,029,347 warrant figure; adopted by ballot 206-125 (OCR). The FY2027 packet prints the voted FY2026 figure as $34,584,347, but its own arithmetic ($34,927,573 - $1,498,226) gives $33,429,347."
+      },
+      "town_budget": {
+        "year": 2025,
+        "approved_operating_budget_usd": 11588075,
+        "source_type": "town_report",
+        "url": "https://www.pembroke-nh.com/DocumentCenter/View/869",
+        "note": "Passed as amended upward to $11,588,075."
+      }
+    }
+  ]
+}

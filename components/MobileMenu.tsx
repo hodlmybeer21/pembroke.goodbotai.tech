@@ -28,6 +28,8 @@ const GROUPS: NavGroup[] = [
     items: [
       { href: "/decisions", label: "How the town decides" },
       { href: "/property-values", label: "Home sale values" },
+      { href: "/taxes/history", label: "Tax rate history" },
+      { href: "/taxes", label: "Taxes" },
       { href: "/calendar", label: "Meeting calendar" },
       { href: "/agendas", label: "Agendas & minutes" },
       { href: "/archive", label: "Meeting archive" },
