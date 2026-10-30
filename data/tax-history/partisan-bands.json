@@ -1,0 +1,364 @@
+{
+  "as_of": "2026-10-30",
+  "purpose": "Background context bands only. They do not imply that state officials set local budgets.",
+  "note": "Pembroke's Select Board, School Board and Budget Committee are elected on nonpartisan ballots; no party is assigned to them. Term dates for legislators are the NH House/Senate organization day (first Wednesday of December after the election); governor dates are inauguration days.",
+  "bands": [
+    {
+      "office": "NH Governor",
+      "jurisdiction": "statewide",
+      "person": "John Lynch",
+      "party": "D",
+      "start": "2005-01-06",
+      "end": "2013-01-03",
+      "source": "https://en.wikipedia.org/wiki/List_of_governors_of_New_Hampshire"
+    },
+    {
+      "office": "NH Governor",
+      "jurisdiction": "statewide",
+      "person": "Maggie Hassan",
+      "party": "D",
+      "start": "2013-01-03",
+      "end": "2017-01-02",
+      "source": "https://en.wikipedia.org/wiki/List_of_governors_of_New_Hampshire",
+      "note": "Resigned to join the U.S. Senate."
+    },
+    {
+      "office": "NH Governor (acting)",
+      "jurisdiction": "statewide",
+      "person": "Chuck Morse",
+      "party": "R",
+      "start": "2017-01-03",
+      "end": "2017-01-05",
+      "source": "https://en.wikipedia.org/wiki/Chuck_Morse",
+      "note": "Senate President, acting governor for 3 days; chart may omit."
+    },
+    {
+      "office": "NH Governor",
+      "jurisdiction": "statewide",
+      "person": "Chris Sununu",
+      "party": "R",
+      "start": "2017-01-05",
+      "end": "2025-01-09",
+      "source": "https://en.wikipedia.org/wiki/List_of_governors_of_New_Hampshire"
+    },
+    {
+      "office": "NH Governor",
+      "jurisdiction": "statewide",
+      "person": "Kelly Ayotte",
+      "party": "R",
+      "start": "2025-01-09",
+      "end": null,
+      "source": "https://en.wikipedia.org/wiki/List_of_governors_of_New_Hampshire"
+    },
+    {
+      "office": "NH State Senator",
+      "district": "Senate District 15",
+      "person": "Sylvia B. Larsen",
+      "party": "D",
+      "start": "2010-12-01",
+      "end": "2012-12-05",
+      "source": "https://www.pembroke-nh.com/DocumentCenter/View/923",
+      "note": "District per the 2011 Pembroke Annual Report officials list. Party: Democrat (widely reported; Ballotpedia is not fetchable from this box). The band starts at the chart floor; she also served earlier terms."
+    },
+    {
+      "office": "NH State Senator",
+      "district": "Senate District 17",
+      "person": "John Reagan",
+      "party": "R",
+      "start": "2012-12-05",
+      "end": "2022-12-07",
+      "source": "https://nh.electionstats.com/elections/view/144951/",
+      "note": "Pembroke in SD17 per the 2012 and 2014 Annual Reports; The 2020 SD17 result was Reagan (R) 20,317 vs Fraher (D) 13,488. The 2014-2018 elections were not individually re-checked."
+    },
+    {
+      "office": "NH State Senator",
+      "district": "Senate District 17",
+      "person": "Howard Pearl",
+      "party": "R",
+      "start": "2022-12-07",
+      "end": null,
+      "source": "https://gc.nh.gov/senate/members/webpages/district17.aspx",
+      "note": "SD17 includes Pembroke (NH SOS 2022 districting). Elected 2022 and 2024: https://nh.electionstats.com/elections/view/154971 , /171328"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 7 (3 seats; pre-2012 map)",
+      "person": "J. Brandon Giuda",
+      "party": "R",
+      "start": "2010-12-01",
+      "end": "2012-12-05",
+      "source": "https://electiondatabase.nhpr.org/contest/50654",
+      "note": "Town report spells it 'Guida'. Composition of the pre-2012 district not verified here."
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 7 (3 seats; pre-2012 map)",
+      "person": "Brian Seaworth",
+      "party": "R",
+      "start": "2010-12-01",
+      "end": "2012-12-05",
+      "source": "https://electiondatabase.nhpr.org/contest/50654",
+      "note": "Town report spells it 'Guida'. Composition of the pre-2012 district not verified here."
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 7 (3 seats; pre-2012 map)",
+      "person": "John McDonnell",
+      "party": "R",
+      "start": "2010-12-01",
+      "end": "2012-12-05",
+      "source": "https://electiondatabase.nhpr.org/contest/50654",
+      "note": "Town report spells it 'Guida'. Composition of the pre-2012 district not verified here."
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20 (Pembroke + Chichester, 3 seats; 2012 map)",
+      "person": "Sally Kelly",
+      "party": "D",
+      "start": "2012-12-05",
+      "end": "2014-12-03",
+      "source": "https://electiondatabase.nhpr.org/contest/49713"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20 (Pembroke + Chichester, 3 seats; 2012 map)",
+      "person": "Frank Davis",
+      "party": "D",
+      "start": "2012-12-05",
+      "end": "2014-12-03",
+      "source": "https://electiondatabase.nhpr.org/contest/49713"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20 (Pembroke + Chichester, 3 seats; 2012 map)",
+      "person": "Dianne E. Schuett",
+      "party": "D",
+      "start": "2012-12-05",
+      "end": "2014-12-03",
+      "source": "https://electiondatabase.nhpr.org/contest/49713"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20",
+      "person": "Dianne E. Schuett",
+      "party": "D",
+      "start": "2014-12-03",
+      "end": "2016-12-07",
+      "source": "https://www.pembroke-nh.com/DocumentCenter/View/884",
+      "note": "Names from the 2014 Annual Report officials list; parties from the 2016 Merrimack 20 results (same three incumbents)."
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20",
+      "person": "David Doherty",
+      "party": "D",
+      "start": "2014-12-03",
+      "end": "2016-12-07",
+      "source": "https://www.pembroke-nh.com/DocumentCenter/View/884",
+      "note": "Names from the 2014 Annual Report officials list; parties from the 2016 Merrimack 20 results (same three incumbents)."
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20",
+      "person": "Brian Seaworth",
+      "party": "R",
+      "start": "2014-12-03",
+      "end": "2016-12-07",
+      "source": "https://www.pembroke-nh.com/DocumentCenter/View/884",
+      "note": "Names from the 2014 Annual Report officials list; parties from the 2016 Merrimack 20 results (same three incumbents)."
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20",
+      "person": "Dianne E. Schuett",
+      "party": "D",
+      "start": "2016-12-07",
+      "end": "2018-12-05",
+      "source": "https://nh.electionstats.com/elections/view/81853/"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20",
+      "person": "Brian Seaworth",
+      "party": "R",
+      "start": "2016-12-07",
+      "end": "2018-12-05",
+      "source": "https://nh.electionstats.com/elections/view/81853/"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20",
+      "person": "David Doherty",
+      "party": "D",
+      "start": "2016-12-07",
+      "end": "2018-12-05",
+      "source": "https://nh.electionstats.com/elections/view/81853/"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20",
+      "person": "Dianne E. Schuett",
+      "party": "D",
+      "start": "2018-12-05",
+      "end": "2020-12-02",
+      "source": "https://nh.electionstats.com/elections/view/133727/"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20",
+      "person": "David Doherty",
+      "party": "D",
+      "start": "2018-12-05",
+      "end": "2020-12-02",
+      "source": "https://nh.electionstats.com/elections/view/133727/"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20",
+      "person": "Brian Seaworth",
+      "party": "R",
+      "start": "2018-12-05",
+      "end": "2020-12-02",
+      "source": "https://nh.electionstats.com/elections/view/133727/"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20",
+      "person": "Brian Seaworth",
+      "party": "R",
+      "start": "2020-12-02",
+      "end": "2022-12-07",
+      "source": "https://nh.electionstats.com/elections/view/144995/"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20",
+      "person": "Dianne E. Schuett",
+      "party": "D",
+      "start": "2020-12-02",
+      "end": "2022-12-07",
+      "source": "https://nh.electionstats.com/elections/view/144995/"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 20",
+      "person": "Susanne F. White",
+      "party": "R",
+      "start": "2020-12-02",
+      "end": "2022-12-07",
+      "source": "https://nh.electionstats.com/elections/view/144995/"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 12 (Pembroke only, 2 seats; 2022 map)",
+      "person": "Dianne Schuett",
+      "party": "D",
+      "start": "2022-12-07",
+      "end": "2024-12-04",
+      "source": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/inline-documents/sonh/2022-ge-house-merrimack-remediated.pdf",
+      "note": "Decided by recount. Also: https://ballotpedia.org/Dianne_Schuett"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 12 (Pembroke only, 2 seats; 2022 map)",
+      "person": "Brian Seaworth",
+      "party": "R",
+      "start": "2022-12-07",
+      "end": "2024-12-04",
+      "source": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/inline-documents/sonh/2022-ge-house-merrimack-remediated.pdf",
+      "note": "Decided by recount. Also: https://ballotpedia.org/Dianne_Schuett"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 12",
+      "person": "Peter Mehegan",
+      "party": "R",
+      "start": "2024-12-04",
+      "end": null,
+      "source": "https://nh.electionstats.com/elections/view/171224/"
+    },
+    {
+      "office": "NH State Representative",
+      "district": "Merrimack 12",
+      "person": "Brian Seaworth",
+      "party": "R",
+      "start": "2024-12-04",
+      "end": null,
+      "source": "https://nh.electionstats.com/elections/view/171224/"
+    }
+  ],
+  "house_delegation_summary": [
+    {
+      "start": "2010-12-01",
+      "end": "2012-12-05",
+      "district": "Merrimack 7 (3 seats; pre-2012 map)",
+      "R": 3,
+      "D": 0,
+      "seats": 3,
+      "source": "https://electiondatabase.nhpr.org/contest/50654"
+    },
+    {
+      "start": "2012-12-05",
+      "end": "2014-12-03",
+      "district": "Merrimack 20 (Pembroke + Chichester, 3 seats; 2012 map)",
+      "R": 0,
+      "D": 3,
+      "seats": 3,
+      "source": "https://electiondatabase.nhpr.org/contest/49713"
+    },
+    {
+      "start": "2014-12-03",
+      "end": "2016-12-07",
+      "district": "Merrimack 20",
+      "R": 1,
+      "D": 2,
+      "seats": 3,
+      "source": "https://www.pembroke-nh.com/DocumentCenter/View/884"
+    },
+    {
+      "start": "2016-12-07",
+      "end": "2018-12-05",
+      "district": "Merrimack 20",
+      "R": 1,
+      "D": 2,
+      "seats": 3,
+      "source": "https://nh.electionstats.com/elections/view/81853/"
+    },
+    {
+      "start": "2018-12-05",
+      "end": "2020-12-02",
+      "district": "Merrimack 20",
+      "R": 1,
+      "D": 2,
+      "seats": 3,
+      "source": "https://nh.electionstats.com/elections/view/133727/"
+    },
+    {
+      "start": "2020-12-02",
+      "end": "2022-12-07",
+      "district": "Merrimack 20",
+      "R": 2,
+      "D": 1,
+      "seats": 3,
+      "source": "https://nh.electionstats.com/elections/view/144995/"
+    },
+    {
+      "start": "2022-12-07",
+      "end": "2024-12-04",
+      "district": "Merrimack 12 (Pembroke only, 2 seats; 2022 map)",
+      "R": 1,
+      "D": 1,
+      "seats": 2,
+      "source": "https://www.sos.nh.gov/sites/g/files/ehbemt561/files/inline-documents/sonh/2022-ge-house-merrimack-remediated.pdf"
+    },
+    {
+      "start": "2024-12-04",
+      "end": null,
+      "district": "Merrimack 12",
+      "R": 2,
+      "D": 0,
+      "seats": 2,
+      "source": "https://nh.electionstats.com/elections/view/171224/"
+    }
+  ]
+}
