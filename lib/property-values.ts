@@ -91,12 +91,41 @@ export interface PropertyListing {
   match_miles: number;
 }
 
+/**
+ * A listing that is genuinely for sale in Pembroke but has no town
+ * assessment to compare against.
+ *
+ * Two cases, both normal:
+ *  - a new-construction plan, where the parcel does not exist yet
+ *  - a condo unit, where Pembroke assesses the building as a whole so
+ *    the unit has no assessment of its own
+ *
+ * These are shown so a resident can see what is on the market. They are
+ * never used in the sale-vs-assessment comparison.
+ */
+export interface UnmatchedListing {
+  address: string | null;
+  city: string | null;
+  state: string | null;
+  zip: string | null;
+  list_price: number | null;
+  beds: number | null;
+  baths: number | null;
+  sqft: number | null;
+  property_type: string | null;
+  source_url: string | null;
+  source: string | null;
+  no_assessment_reason: "new_construction" | "condo_unit" | "no_parcel";
+}
+
 export interface PropertyListingsFile {
   generated_at: string;
   source: string;
   count: number;
   below_assessment_count: number;
   listings: PropertyListing[];
+  unmatched_count?: number;
+  unmatched_listings?: UnmatchedListing[];
 }
 
 let cachedListings: PropertyListingsFile | null = null;

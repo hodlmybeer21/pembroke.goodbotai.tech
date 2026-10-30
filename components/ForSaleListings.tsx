@@ -7,7 +7,7 @@
 // now, priced against what the town says it's worth.
 
 import { useMemo, useState } from "react";
-import type { PropertyListing } from "@/lib/property-values";
+import type { PropertyListing, UnmatchedListing } from "@/lib/property-values";
 
 interface Props {
   listings: PropertyListing[];
@@ -18,13 +18,30 @@ interface Props {
   rawCount?: number | null;
   /** True when the matched-listings file is more than 3 days old. */
   stale?: boolean;
+  /** For sale, but with no town assessment to compare against. */
+  unmatched?: UnmatchedListing[];
 }
 
 const money = (n: number | null) =>
   n === null ? "—" : "$" + n.toLocaleString("en-US", { maximumFractionDigits: 0 });
 
-export function ForSaleListings({ listings, generatedAt, taxRate, rawCount, stale }: Props) {
+/** Why there is nothing to compare a listing against. */
+const REASON_LABEL: Record<UnmatchedListing["no_assessment_reason"], string> = {
+  new_construction: "New construction — no parcel yet",
+  condo_unit: "Condo unit — assessed as a whole building",
+  no_parcel: "No town parcel record yet",
+};
+
+export function ForSaleListings({
+  listings,
+  generatedAt,
+  taxRate,
+  rawCount,
+  stale,
+  unmatched = [],
+}: Props) {
   const [showAll, setShowAll] = useState(false);
+  const [showUnmatched, setShowUnmatched] = useState(false);
 
   const sorted = useMemo(
     () => listings.slice().sort((a, b) => (a.list_price ?? 0) - (b.list_price ?? 0)),
@@ -131,6 +148,74 @@ export function ForSaleListings({ listings, generatedAt, taxRate, rawCount, stal
           </button>
         )}
 
+        {unmatched.length > 0 && (
+          <div className="mt-6 border-t border-stone-200 pt-5">
+            <h3 className="font-serif text-base font-semibold text-stone-900">
+              Also for sale — no town assessment to compare
+            </h3>
+            <p className="mt-1 text-sm leading-relaxed text-stone-600">
+              These {unmatched.length} homes are on the market in Pembroke,
+              but the town has no assessment for the individual lot, so
+              there is nothing honest to compare them against. New
+              construction has no parcel yet, and Pembroke assesses condo
+              buildings as a whole rather than unit by unit.
+            </p>
+            <div className="mt-3 overflow-x-auto">
+              <table className="w-full min-w-[420px] border-collapse text-sm">
+                <thead>
+                  <tr className="border-b border-stone-300 text-left">
+                    <th className="py-2 pr-3 font-semibold text-stone-900">Address</th>
+                    <th className="py-2 pr-3 text-right font-semibold text-stone-900">Asking</th>
+                    <th className="py-2 text-right font-semibold text-stone-900">
+                      Why no comparison
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {(showUnmatched ? unmatched : unmatched.slice(0, 6)).map((u, i) => (
+                    <tr
+                      key={`${u.address}-${i}`}
+                      className="border-b border-stone-200 align-top"
+                    >
+                      <td className="py-2 pr-3">
+                        <div className="font-medium text-stone-900">
+                          {u.address ?? "—"}
+                        </div>
+                        <div className="text-xs text-stone-500">
+                          {[
+                            u.beds ? `${u.beds} bd` : null,
+                            u.baths ? `${u.baths} ba` : null,
+                            u.sqft ? `${Number(u.sqft).toLocaleString()} sqft` : null,
+                          ]
+                            .filter(Boolean)
+                            .join(" · ")}
+                        </div>
+                      </td>
+                      <td className="py-2 pr-3 text-right font-medium text-stone-900">
+                        {money(u.list_price)}
+                      </td>
+                      <td className="py-2 text-right text-xs text-stone-600">
+                        {REASON_LABEL[u.no_assessment_reason] ?? "—"}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            {unmatched.length > 6 && (
+              <button
+                type="button"
+                onClick={() => setShowUnmatched((v) => !v)}
+                className="mt-3 min-h-[44px] rounded-lg border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-800 hover:border-stone-500"
+              >
+                {showUnmatched
+                  ? "Show fewer"
+                  : `Show all ${unmatched.length} without an assessment`}
+              </button>
+            )}
+          </div>
+        )}
+
         {stale && (
           <p className="mt-3 rounded border border-amber-200 bg-amber-50 px-3 py-2 text-xs text-amber-900">
             These listings were last refreshed on {generatedAt} and may be out of date —
@@ -141,17 +226,16 @@ export function ForSaleListings({ listings, generatedAt, taxRate, rawCount, stal
           Listings as of {generatedAt}.{" "}
           {rawCount && rawCount > listings.length && (
             <>
-              Showing the {listings.length} of {rawCount} Pembroke listings found that could be
-              matched to a town parcel; the rest are condos or townhouses, or couldn&apos;t be
-              matched with confidence, and are left out rather than guessed.{" "}
+              {listings.length} of {rawCount} Pembroke listings could be matched to a
+              town parcel and are shown with their assessment. The other{" "}
+              {rawCount - listings.length} are listed above without a comparison
+              rather than left out.{" "}
             </>
           )}
           Asking prices pulled from public listing sites; assessed values from the
           town&apos;s property database. An asking price is a seller&apos;s hope, not a sale — and
           the assessment is a tax number, not a market estimate. Treat the gap as a conversation
           starter, not a valuation.
-          {" "}Condos and townhouses are left out: the town assesses those building-by-building, so
-          there&apos;s no per-unit number to compare against.
         </p>
       </div>
     </section>

@@ -127,6 +127,7 @@ export default function PropertyValuesPage() {
 
       <ForSaleListings
         listings={listings?.listings ?? []}
+        unmatched={listings?.unmatched_listings ?? []}
         taxRate={trends?.tax_rate}
         generatedAt={listings ? formatEt(listings.generated_at) : ""}
         rawCount={loadRawListingCount()}
