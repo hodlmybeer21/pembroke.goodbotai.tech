@@ -70,6 +70,15 @@ export default function AboutPage() {
               an estimate of the annual bill on any home shown.
             </li>
             <li>
+              <Link className="underline" href="/officials/votes">Voting
+              records</Link> — a page per official showing the votes the
+              minutes record by name, every one linked to its source
+              document, plus a grid of every official side by side with
+              dissents marked. Where the minutes record only that the
+              motion carried, it says so rather than guessing. No scores,
+              grades or rankings.
+            </li>
+            <li>
               <strong>NH tax rate map</strong> — every New Hampshire town shaded by
               the tax rate the state sets on each $1,000 of assessed value. Zoom
               from the whole state down to Pembroke, and flip the shading to see

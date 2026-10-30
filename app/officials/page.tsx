@@ -7,6 +7,7 @@
 import { committeeLabel, loadCalendar } from "@/lib/town-data";
 import { formatEt, parseMeetingDate, townDateTime } from "@/lib/dates";
 import { loadOfficials, groupCommittees, type Committee } from "@/lib/officials";
+import { slugForName, loadOfficialRecords } from "@/lib/official-records";
 import Link from "next/link";
 
 export const metadata = {
@@ -113,6 +114,38 @@ export default async function OfficialsPage() {
           . Directory checked {formatEt(data.generated_at)}.
         </p>
       </header>
+
+      {/* Voting record — the thing residents actually want to see. */}
+      {(() => {
+        const rec = loadOfficialRecords();
+        if (!rec) return null;
+        return (
+          <section className="mb-10 rounded-lg border border-stone-300 bg-white p-5">
+            <h2 className="font-serif text-lg font-semibold text-stone-900">
+              How they vote
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-stone-600">
+              Every official who appears in Pembroke&apos;s meeting minutes
+              has a voting record built from those minutes — the votes
+              recorded by name, with the source document linked, and
+              everything the minutes do not name left blank rather than
+              guessed at. There are no scores, grades or rankings.
+            </p>
+            <p className="mt-2 text-sm text-stone-600">
+              {rec.counts.officials} people appear in the minutes;{" "}
+              {rec.counts.named_vote_blocks} decisions record a roll call,{" "}
+              {rec.counts.named_votes_cast} individual votes were recorded
+              by name.
+            </p>
+            <Link
+              href="/officials/votes"
+              className="mt-3 inline-block rounded-lg bg-stone-900 px-4 py-2 text-sm font-medium text-white hover:bg-stone-700"
+            >
+              See every official side by side →
+            </Link>
+          </section>
+        );
+      })()}
 
       {/* State reps at the top — they're the highest-leverage contact for most residents. */}
       <section className="mb-10">
@@ -286,10 +319,26 @@ function CommitteeCard({ committee }: { committee: Committee }) {
         {committee.members.map((m, i) => (
           <li key={i} className="py-1.5 first:pt-0 last:pb-0 flex items-baseline justify-between gap-2">
             <span className="text-stone-800">
-              <span className="font-medium">{m.name}</span>
-              {m.title && m.title !== "Member" && (
-                <span className="text-stone-500 font-normal"> — {m.title}</span>
-              )}
+              {(() => {
+                const slug = slugForName(m.name);
+                return (
+                  <>
+                    {slug ? (
+                      <Link
+                        href={`/officials/${slug}`}
+                        className="font-medium hover:underline"
+                      >
+                        {m.name}
+                      </Link>
+                    ) : (
+                      <span className="font-medium">{m.name}</span>
+                    )}
+                    {m.title && m.title !== "Member" && (
+                      <span className="text-stone-500 font-normal"> — {m.title}</span>
+                    )}
+                  </>
+                );
+              })()}
             </span>
             {m.term_ends && (
               <span className="text-xs text-stone-500 shrink-0">
