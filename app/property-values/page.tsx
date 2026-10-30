@@ -7,6 +7,7 @@
 // value; this page lets anyone check that for themselves.
 
 import { loadPropertyListings, loadPropertyTrends, loadPropertyValues, loadRawListingCount } from "@/lib/property-values";
+import { estimatesByAddress, loadPropertyEstimates } from "@/lib/property-estimates";
 import { PropertyValueTable } from "@/components/PropertyValueTable";
 import { ForSaleListings } from "@/components/ForSaleListings";
 import { formatEt } from "@/lib/dates";
@@ -123,7 +124,47 @@ export default function PropertyValuesPage() {
         })}
         sourceUrl={data.source_url}
         taxRate={trends?.tax_rate}
+        estimates={estimatesByAddress()}
       />
+
+      {(() => {
+        const est = loadPropertyEstimates();
+        if (!est) return null;
+        return (
+          <section className="mt-8 rounded-lg border border-stone-200 bg-stone-50 p-5">
+            <h2 className="font-serif text-lg font-semibold text-stone-900">
+              How the &ldquo;estimated value today&rdquo; column is built
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-stone-700">
+              There is no Zestimate on this page. Zillow blocks automated access
+              outright, and the only official route to its estimates for a
+              public-interest project is an application to their Bridge
+              program &mdash; which nobody has applied for.
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-stone-700">
+              So the estimate is built from the town&apos;s own recorded sales
+              instead, and the comparable sales it used are published with
+              it. Tap <span className="font-medium">comps</span> on any row to
+              see them. {est.method}
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-stone-700">
+              The pool is {est.pool_size} recent arm&apos;s-length sales in
+              Pembroke, the same records the rest of this page uses and for
+              the same reason &mdash; a third of recorded sales are family
+              transfers, court sales or land deals, and including them
+              poisons the market. The median spread between the lowest and
+              highest comparable is {est.median_spread_pct}% of the estimate,
+              which is wide, and that width is shown on every row rather
+              than hidden.
+            </p>
+            <p className="mt-2 text-xs text-stone-500">
+              This is an estimate, not an appraisal, and it is not Zillow&apos;s
+              number. For a formal valuation, talk to a licensed appraiser.
+              Estimates as of {formatEt(est.generated_at)}.
+            </p>
+          </section>
+        );
+      })()}
 
       <ForSaleListings
         listings={listings?.listings ?? []}

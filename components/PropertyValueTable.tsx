@@ -9,6 +9,7 @@
 import { useMemo, useState } from "react";
 import { PropertyValueMap, type MapPin } from "./PropertyValueMap";
 import type { PropertySale } from "@/lib/property-values";
+import type { PropertyEstimate } from "@/lib/property-estimates";
 
 interface Props {
   sales: PropertySale[];
@@ -16,10 +17,12 @@ interface Props {
   sourceUrl: string;
   /** Town tax rate per $1,000 of assessed value, for the bill estimate. */
   taxRate?: number;
+  /** Comparable-sales estimates of today's value, keyed by address. */
+  estimates?: Record<string, PropertyEstimate>;
 }
 
 type Filter = "all" | "below" | "near" | "above";
-type SortKey = "date" | "price" | "assessed" | "pct";
+type SortKey = "date" | "price" | "assessed" | "estimate" | "pct";
 type Scope = "market" | "all";
 
 const money = (n: number) =>
@@ -45,12 +48,13 @@ const FILTERS: Array<{ key: Filter; label: string }> = [
   { key: "above", label: "Above assessment" },
 ];
 
-export function PropertyValueTable({ sales, generatedAt, sourceUrl, taxRate }: Props) {
+export function PropertyValueTable({ sales, generatedAt, sourceUrl, taxRate, estimates = {} }: Props) {
   const [filter, setFilter] = useState<Filter>("all");
   const [scope, setScope] = useState<Scope>("market");
   const [sort, setSort] = useState<SortKey>("date");
   const [focusId, setFocusId] = useState<string | null>(null);
   const [showMap, setShowMap] = useState(false);
+  const [expanded, setExpanded] = useState<string | null>(null);
 
   // Arm's-length sales are the meaningful comparison against an assessment.
   // Transfers are shown only when the resident explicitly asks for them.
@@ -69,6 +73,11 @@ export function PropertyValueTable({ sales, generatedAt, sourceUrl, taxRate }: P
           return (a.sale_price - b.sale_price) * dir;
         case "assessed":
           return (a.assessed - b.assessed) * dir;
+        case "estimate": {
+          const ea = estimates[(a.address ?? "").trim().toLowerCase()]?.estimate ?? 0;
+          const eb = estimates[(b.address ?? "").trim().toLowerCase()]?.estimate ?? 0;
+          return (ea - eb) * dir;
+        }
         case "pct":
           return ((a.pct_of_assessed ?? 0) - (b.pct_of_assessed ?? 0)) * dir;
         default:
@@ -223,13 +232,16 @@ export function PropertyValueTable({ sales, generatedAt, sourceUrl, taxRate }: P
 
       {/* Table */}
       <div className="mt-6 overflow-x-auto">
-        <table className="w-full min-w-[640px] border-collapse text-sm">
+        <table className="w-full min-w-[780px] border-collapse text-sm">
           <thead>
             <tr className="border-b border-stone-300 text-left">
               <th className="py-2 pr-3 font-semibold text-stone-900">{sortBtn("date", "Sold", "text-left")}</th>
               <th className="py-2 pr-3 font-semibold text-stone-900">Address</th>
               <th className="py-2 pr-3 text-right font-semibold text-stone-900">{sortBtn("price", "Sale price")}</th>
               <th className="py-2 pr-3 text-right font-semibold text-stone-900">{sortBtn("assessed", "Town assessed")}</th>
+              <th className="py-2 pr-3 text-right font-semibold text-stone-900">
+                {sortBtn("estimate", "Est. value today")}
+              </th>
               {taxRate ? (
                 <th className="py-2 pr-3 text-right font-semibold text-stone-900">Est. tax bill</th>
               ) : null}
@@ -263,6 +275,35 @@ export function PropertyValueTable({ sales, generatedAt, sourceUrl, taxRate }: P
                   </td>
                   <td className="py-2 pr-3 text-right font-medium text-stone-900">{money(s.sale_price)}</td>
                   <td className="py-2 pr-3 text-right text-stone-700">{money(s.assessed)}</td>
+                  {(() => {
+                    const est = estimates[(s.address ?? "").trim().toLowerCase()];
+                    if (!est) {
+                      return (
+                        <td className="py-2 pr-3 text-right">
+                          <span className="text-xs text-stone-400">no estimate</span>
+                        </td>
+                      );
+                    }
+                    const isOpen = expanded === s.cama;
+                    return (
+                      <td className="py-2 pr-3 text-right">
+                        <div className="font-medium text-stone-900">{money(est.estimate)}</div>
+                        <div className="text-xs text-stone-500">
+                          {money(est.low)}&ndash;{money(est.high)}
+                        </div>
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setExpanded(isOpen ? null : s.cama);
+                          }}
+                          className="mt-0.5 text-[11px] text-brand-700 underline"
+                        >
+                          {isOpen ? "hide" : "comps"}
+                        </button>
+                      </td>
+                    );
+                  })()}
                   {taxRate ? (
                     <td className="py-2 pr-3 text-right whitespace-nowrap text-stone-600">
                       {money(Math.round((s.assessed / 1000) * taxRate))}
@@ -286,9 +327,46 @@ export function PropertyValueTable({ sales, generatedAt, sourceUrl, taxRate }: P
                 </tr>
               );
             })}
+            {expanded
+              ? rows
+                  .filter((s) => s.cama === expanded)
+                  .map((s) => {
+                    const est = estimates[(s.address ?? "").trim().toLowerCase()];
+                    if (!est) return null;
+                    return (
+                      <tr key={`comps-${s.cama}`} className="bg-stone-50">
+                        <td colSpan={7} className="py-3 pr-3 text-xs text-stone-700">
+                          <div className="font-medium text-stone-900">
+                            How &ldquo;{money(est.estimate)}&rdquo; was estimated
+                          </div>
+                          <div className="mt-1">
+                            The median of these {est.comps.length} recent arm&apos;s-length
+                            sales in Pembroke, each adjusted to this home&apos;s
+                            square footage:
+                          </div>
+                          <ul className="mt-1.5 space-y-0.5">
+                            {est.comps.map((c, i) => (
+                              <li key={i}>
+                                <span className="font-medium">{c.address}</span>{" "}
+                                &mdash; {money(c.price)}
+                                {c.date ? ` on ${fmtDate(c.date)}` : ""}
+                                {c.sqft ? `, ${c.sqft.toLocaleString()} sqft` : ""}
+                                {c.miles !== null ? `, ${c.miles} mi away` : ""}
+                              </li>
+                            ))}
+                          </ul>
+                          <div className="mt-1.5 text-stone-500">
+                            An estimate, not an appraisal. The comparable sales ranged
+                            from {money(est.low)} to {money(est.high)}.
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })
+              : null}
             {rows.length === 0 && (
               <tr>
-                <td colSpan={5} className="py-8 text-center text-stone-500">
+                <td colSpan={7} className="py-8 text-center text-stone-500">
                   No sales match that filter.
                 </td>
               </tr>
@@ -305,8 +383,12 @@ export function PropertyValueTable({ sales, generatedAt, sourceUrl, taxRate }: P
         , pulled {generatedAt}. Town assessment is a tax value set by the assessor — it is not an
         appraisal of today&apos;s market value, and it only resets when the town re-assesses.
         {" "}Sale prices are the prices recorded on the deed, and some are transfers between
-        family members or court sales rather than open-market deals. This is for information,
-        not as a valuation of any specific home.
+        family members or court sales rather than open-market deals.{" "}
+        <span className="font-medium text-stone-600">Est. value today</span> is an
+        estimate built from comparable recent arm&apos;s-length sales &mdash; tap{" "}
+        <span className="font-medium">comps</span> on any row to see which ones. It is not
+        an appraisal and it is not a third-party automated valuation. This is for
+        information, not as a valuation of any specific home.
       </p>
     </div>
   );
