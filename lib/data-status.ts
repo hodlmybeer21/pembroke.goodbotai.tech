@@ -40,13 +40,20 @@ export const FEEDS: FeedSpec[] = [
   { file: "data/archive-index.json", label: "Agenda & minutes archive", usedOn: "/agendas, /archive, /ask", cadence: "daily", lateAfterHours: 36 },
   { file: "data/ocr-summaries.json", label: "OCR summaries", usedOn: "/, /agendas", cadence: "daily", lateAfterHours: 36 },
   { file: "data/town-info.json", label: "Town info pages", usedOn: "/ask", cadence: "daily", lateAfterHours: 36 },
-  { file: "data/property-values.json", label: "Property sales vs. assessed", usedOn: "/property-values", cadence: "daily", lateAfterHours: 60 },
+  // Assessed values and recorded sales are pulled weekly, not daily -
+  // the town re-assesses on a multi-year cycle and the AxisGIS API
+  // rate-limits hard on a full pull of all ~2,580 parcels. Calling
+  // these "daily" with a 60-hour threshold flagged them Late two and a
+  // half days after every Sunday run, which is a false alarm: the
+  // pipeline was working exactly as designed. The threshold has to be
+  // longer than the real cadence or the status page cries wolf.
+  { file: "data/property-values.json", label: "Property sales vs. assessed", usedOn: "/property-values", cadence: "weekly", lateAfterHours: 14 * 24 },
   { file: "data/property-listings.json", label: "Listings matched to parcels", usedOn: "/property-values", cadence: "daily", lateAfterHours: 60 },
   { file: "data/pembroke-listings.json", label: "Raw listings scrape", usedOn: "/property-values", cadence: "daily", lateAfterHours: 60 },
-  { file: "data/property-trends.json", label: "Property trends & tax bills", usedOn: "/, /property-values", cadence: "manual", lateAfterHours: null },
+  { file: "data/property-trends.json", label: "Property trends & tax bills", usedOn: "/, /property-values", cadence: "weekly", lateAfterHours: 14 * 24 },
   { file: "data/governance-summary.json", label: "Decisions analysis", usedOn: "/, /decisions", cadence: "manual", lateAfterHours: null },
   { file: "public/data/nh-tax-rates.json", label: "NH tax-rate map (DRA rates published; checked monthly)", usedOn: "/", cadence: "annual", lateAfterHours: 24 * 400, field: "completed_as_of" },
-  { file: "data/officials.json", label: "Officials directory", usedOn: "/officials", cadence: "manual", lateAfterHours: null },
+  { file: "data/officials.json", label: "Officials directory", usedOn: "/officials", cadence: "monthly", lateAfterHours: 40 * 24 },
   { file: "data/trash-routes.json", label: "Trash routes", usedOn: "/trash", cadence: "manual", lateAfterHours: null },
 ];
 
