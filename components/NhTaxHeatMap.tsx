@@ -310,6 +310,15 @@ export function NhTaxHeatMap() {
 
   const pembroke = data?.towns.find((t) => t.n === "PEMBROKE");
 
+  // How many New Hampshire cities and towns have a lower rate than
+  // Pembroke. Only cities and towns count — an unincorporated place
+  // has no school district of its own and would skew the count.
+  const pembrokeHigher = useMemo(() => {
+    if (!data || !pembroke || pembroke.total === null) return null;
+    const cities = data.towns.filter((t) => !t.u && t.total !== null);
+    return cities.filter((t) => (t.total ?? 0) < pembroke.total!).length;
+  }, [data, pembroke]);
+
   return (
     <div>
       {/* ------------------------------------------------- the stat row */}
@@ -329,10 +338,14 @@ export function NhTaxHeatMap() {
             label="Where Pembroke lands"
             value={
               data.pembroke_rank_pct !== null
-                ? `${Math.round(data.pembroke_rank_pct)}th`
+                ? ordinal(Math.round(data.pembroke_rank_pct))
                 : "—"
             }
-            sub="percentile — higher rate than most towns"
+            sub={
+              pembrokeHigher !== null
+                ? `percentile — a higher rate than ${pembrokeHigher} of ${data.city_town_count} towns`
+                : "percentile against the state median"
+            }
           />
         </div>
       )}
@@ -462,6 +475,16 @@ function titleCase(s: string): string {
   return s
     .toLowerCase()
     .replace(/\b[a-z]/g, (c) => c.toUpperCase());
+}
+
+/** 1st, 2nd, 3rd, 83rd - not "83th". */
+function ordinal(n: number): string {
+  const rem10 = n % 10;
+  const rem100 = n % 100;
+  if (rem10 === 1 && rem100 !== 11) return `${n}st`;
+  if (rem10 === 2 && rem100 !== 12) return `${n}nd`;
+  if (rem10 === 3 && rem100 !== 13) return `${n}rd`;
+  return `${n}th`;
 }
 
 function popupHtml(
