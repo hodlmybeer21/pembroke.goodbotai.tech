@@ -15,6 +15,7 @@ const GROUPS: Array<{ title: string; items: Array<{ href: string; label: string 
     title: "Your house",
     items: [
       { href: "/property-values", label: "Home sale values" },
+      { href: "/taxes/history", label: "Tax rate history" },
       { href: "/trash", label: "Trash day lookup" },
       { href: "/schools", label: "Schools (SAU 53)" },
       { href: "/welcome", label: "New resident checklist" },

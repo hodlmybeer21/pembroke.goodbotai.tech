@@ -72,6 +72,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               <nav className="hidden lg:flex gap-5 text-white items-center text-sm">
                 <NavLink href="/decisions">How the town decides</NavLink>
                 <NavLink href="/property-values">Sale values</NavLink>
+                <NavLink href="/taxes/history">Tax history</NavLink>
                 <NavLink href="/calendar">Calendar</NavLink>
                 <NavLink href="/agendas">Agendas</NavLink>
                 <NavLink href="/ask">Ask</NavLink>
