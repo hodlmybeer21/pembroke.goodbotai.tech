@@ -73,8 +73,8 @@ PIPELINE = [
 ]
 
 
-def run(cmd, cwd=None, check=True, quiet=False):
-    r = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
+def run(cmd, cwd=None, check=True, quiet=False, env=None):
+    r = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, env=env)
     if check and r.returncode != 0:
         raise RuntimeError(
             f"{' '.join(cmd)} failed ({r.returncode})\n{(r.stderr or r.stdout)[-800:]}"
