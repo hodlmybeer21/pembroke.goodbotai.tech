@@ -10,9 +10,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.39.7",
+    "@clerk/nextjs": "^6.39.8",
     "@vercel/postgres": "^0.10.0",
-    "next": "^14.2.34",
+    "next": "^14.2.35",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "resend": "^4.8.0"
@@ -21,9 +21,13 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
     "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2"
+  },
+  "overrides": {
+    "postcss": "$postcss",
+    "html-to-text": "^10.0.1"
   }
 }
