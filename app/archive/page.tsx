@@ -91,6 +91,35 @@ export default async function ArchivePage({ searchParams }: { searchParams: { co
         </p>
       </header>
 
+      <div className="mb-8 rounded-lg border border-stone-300 bg-white p-5">
+        <h2 className="font-serif text-lg font-semibold text-stone-900">
+          Search inside the minutes
+        </h2>
+        <p className="mt-1 text-sm leading-relaxed text-stone-600">
+          The list below filters by title and summary. To search the actual
+          text of every document &mdash; a street, a topic, a name &mdash; use
+          this.
+        </p>
+        <form action="/search" method="get" className="mt-3 flex gap-2">
+          <label className="sr-only" htmlFor="archive-fulltext">
+            Search the meeting minutes
+          </label>
+          <input
+            id="archive-fulltext"
+            type="search"
+            name="q"
+            placeholder="Search the minutes — a street, a topic, a name…"
+            className="w-full rounded-lg border border-stone-300 bg-white px-4 py-2.5 text-base shadow-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-200"
+          />
+          <button
+            type="submit"
+            className="shrink-0 rounded-lg bg-brand-700 px-4 py-2.5 text-sm font-medium text-white hover:bg-brand-800"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+
       <ArchiveClient
         archive={archive}
         initialCommittee={searchParams.committee}

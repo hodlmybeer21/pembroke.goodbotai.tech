@@ -27,6 +27,7 @@ const GROUPS: Array<{ title: string; items: Array<{ href: string; label: string 
       { href: "/calendar", label: "Meeting calendar" },
       { href: "/agendas", label: "Agendas & minutes" },
       { href: "/archive", label: "Meeting archive" },
+      { href: "/search", label: "Search the minutes" },
       { href: "/officials", label: "Officials directory" },
       { href: "/participate", label: "Take part" },
       { href: "/report", label: "Report an issue" },

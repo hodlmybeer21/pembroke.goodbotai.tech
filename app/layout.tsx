@@ -75,6 +75,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 <NavLink href="/taxes/history">Tax history</NavLink>
                 <NavLink href="/calendar">Calendar</NavLink>
                 <NavLink href="/agendas">Agendas</NavLink>
+                <NavLink href="/search">Search</NavLink>
                 <NavLink href="/ask">Ask</NavLink>
                 <MoreMenu />
                 <span className="border-l border-white/20 pl-3 ml-1">
