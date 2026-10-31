@@ -24,6 +24,7 @@ interface Hit {
   score: number;
   title_hit: boolean;
   text_hits: number;
+  phrase_hit: boolean;
 }
 
 interface Result {
@@ -187,11 +188,15 @@ export function MinutesSearch({ initialQuery = "" }: { initialQuery?: string }) 
                     <span className="text-xs font-medium text-brand-700">
                       {h.committee}
                     </span>
-                    {!h.title_hit && (
+                    {h.phrase_hit ? (
+                      <span className="text-xs text-medium text-green-700">
+                        exact phrase
+                      </span>
+                    ) : !h.title_hit ? (
                       <span className="text-xs text-stone-400">
                         (mentioned in the text)
                       </span>
-                    )}
+                    ) : null}
                   </div>
                   <p className="mt-1 font-medium text-stone-900">{h.title}</p>
                   <p className="mt-1.5 text-sm leading-relaxed text-stone-700">

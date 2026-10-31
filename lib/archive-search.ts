@@ -55,6 +55,8 @@ export interface SearchHit {
   score: number;
   title_hit: boolean;
   text_hits: number;
+  /** The exact query string appears in the document. */
+  phrase_hit: boolean;
 }
 
 // The minutes abbreviate and residents do not. Both sides are folded
@@ -85,7 +87,14 @@ for (const [canon, list] of Object.entries(ABBREVIATIONS)) {
 const TITLE_WEIGHT = 8;
 const SUMMARY_WEIGHT = 3;
 const TEXT_WEIGHT = 1;
-const PHRASE_BONUS = 6;
+/**
+ * A document containing the exact phrase outranks one that contains the
+ * same words apart. This is large on purpose: "Route 3" and "Route
+ * 106" are different roads, and a document that says "Route 3" is a
+ * better answer to "Route 3" than one that says "Route" somewhere and
+ * "3" somewhere else.
+ */
+const PHRASE_BONUS = 60;
 const SNIPPET_CHARS = 300;
 
 let docs: SearchDoc[] | null = null;
@@ -151,20 +160,82 @@ function variants(canon: string): string[] {
   return ABBREVIATIONS[canon] ?? [canon];
 }
 
+/**
+ * Split a query into terms.
+ *
+ * Numbers are kept however short they are: "Route 3" has to search for
+ * the 3, and the 3 is the whole difference between two different roads.
+ * Single characters are kept only when they are numeric - a bare "a" is
+ * a word, not a term.
+ */
 function tokenize(q: string): string[] {
   return normalize(q)
     .split(" ")
     .map(canonToken)
-    .filter((w) => w.length > 1 && !STOP.has(w));
+    .filter((w) => {
+      if (!w) return false;
+      if (STOP.has(w)) return false;
+      if (w.length > 1) return true;
+      return isNumeric(w);
+    });
 }
 
+function isNumeric(w: string): boolean {
+  return /^[0-9]+$/.test(w);
+}
+
+/**
+ * Count whole-word occurrences.
+ *
+ * Substring counting is what made "route" match inside "router" and
+ * "3" match inside "103". A match has to start and end on a word
+ * boundary to count.
+ */
 function countOf(hay: string, needle: string): number {
   if (!needle) return 0;
   let n = 0;
-  let i = hay.indexOf(needle);
-  while (i !== -1) {
-    n++;
-    i = hay.indexOf(needle, i + needle.length);
+  let i = 0;
+  while ((i = hay.indexOf(needle, i)) !== -1) {
+    const before = i === 0 ? "" : hay[i - 1];
+    const afterIdx = i + needle.length;
+    const after = afterIdx >= hay.length ? "" : hay[afterIdx];
+    const leftOk = before === "" || !/[a-z0-9]/.test(before);
+    const rightOk = after === "" || !/[a-z0-9]/.test(after);
+    if (leftOk && rightOk) n++;
+    i += needle.length;
+  }
+  return n;
+}
+
+/** Index of the first whole-word occurrence, or -1. */
+function findWord(hay: string, needle: string): number {
+  if (!needle) return -1;
+  let i = 0;
+  while ((i = hay.indexOf(needle, i)) !== -1) {
+    const before = i === 0 ? "" : hay[i - 1];
+    const afterIdx = i + needle.length;
+    const after = afterIdx >= hay.length ? "" : hay[afterIdx];
+    const leftOk = before === "" || !/[a-z0-9]/.test(before);
+    const rightOk = after === "" || !/[a-z0-9]/.test(after);
+    if (leftOk && rightOk) return i;
+    i += needle.length;
+  }
+  return -1;
+}
+
+/** Count whole-word occurrences of a multi-word phrase. */
+function countPhrase(hay: string, phrase: string): number {
+  if (!phrase) return 0;
+  let n = 0;
+  let i = 0;
+  while ((i = hay.indexOf(phrase, i)) !== -1) {
+    const before = i === 0 ? "" : hay[i - 1];
+    const afterIdx = i + phrase.length;
+    const after = afterIdx >= hay.length ? "" : hay[afterIdx];
+    const leftOk = before === "" || !/[a-z0-9]/.test(before);
+    const rightOk = after === "" || !/[a-z0-9]/.test(after);
+    if (leftOk && rightOk) n++;
+    i += phrase.length;
   }
   return n;
 }
@@ -180,11 +251,11 @@ function snippet(text: string, tokens: string[], phrase: string): string {
   const low = flat.toLowerCase();
 
   let at = -1;
-  if (phrase.length > 3) at = low.indexOf(phrase);
+  if (phrase.length > 3) at = findWord(low, phrase);
   if (at === -1) {
     for (const t of tokens) {
       for (const v of variants(t)) {
-        at = low.indexOf(v);
+        at = findWord(low, v);
         if (at !== -1) break;
       }
       if (at !== -1) break;
@@ -253,10 +324,10 @@ export function searchArchive(query: string, limit = 25): SearchResult {
 
     if (!allPresent) continue;
 
-    // The whole phrase appearing together is worth more than the same
-    // words scattered across the document.
-    if (phrase.length > 3 && body.includes(phrase)) score += PHRASE_BONUS;
-    if (phrase.length > 3 && title.includes(phrase)) score += PHRASE_BONUS;
+    // The exact phrase, together, beats the same words scattered.
+    const phraseHits =
+      phrase.length > 3 ? countPhrase(body, phrase) + countPhrase(title, phrase) : 0;
+    if (phraseHits > 0) score += PHRASE_BONUS * Math.min(phraseHits, 3);
 
     scored.push({
       guid: d.guid,
@@ -270,6 +341,7 @@ export function searchArchive(query: string, limit = 25): SearchResult {
       score,
       title_hit: titleHit > 0,
       text_hits: bodyHits,
+      phrase_hit: phraseHits > 0,
     });
   }
 
