@@ -13,6 +13,7 @@ const PAGES: Array<{ path: string; freq: "hourly" | "daily" | "weekly" | "monthl
   { path: "/calendar", freq: "daily", priority: 0.8 },
   { path: "/agendas", freq: "daily", priority: 0.8 },
   { path: "/archive", freq: "daily", priority: 0.6 },
+  { path: "/search", freq: "daily", priority: 0.7 },
   { path: "/ask", freq: "weekly", priority: 0.6 },
   { path: "/officials", freq: "weekly", priority: 0.7 },
   { path: "/officials/votes", freq: "weekly", priority: 0.7 },

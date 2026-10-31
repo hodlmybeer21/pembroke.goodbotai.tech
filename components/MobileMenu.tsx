@@ -33,6 +33,7 @@ const GROUPS: NavGroup[] = [
       { href: "/calendar", label: "Meeting calendar" },
       { href: "/agendas", label: "Agendas & minutes" },
       { href: "/archive", label: "Meeting archive" },
+      { href: "/search", label: "Search the minutes" },
     ],
   },
   {
