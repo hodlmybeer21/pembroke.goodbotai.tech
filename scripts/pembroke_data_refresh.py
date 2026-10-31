@@ -112,7 +112,13 @@ def main() -> int:
     if branch != "main":
         print(f"   ✗ the site checkout is on '{branch}', not main — skipping")
         return 1
-    dirty = run(["git", "status", "--porcelain"], cwd=REPO, quiet=True).stdout.strip()
+    # Untracked files are fine - the script itself, or a screenshot
+    # directory, should not stop a refresh. Tracked modifications to
+    # anything other than the data files would mean somebody's work is
+    # in the tree, and that does stop it.
+    dirty = run(
+        ["git", "status", "--porcelain", "--untracked-files=no"], cwd=REPO, quiet=True
+    ).stdout.strip()
     if dirty:
         print("   ✗ the site checkout has uncommitted changes — skipping")
         print("     " + dirty.replace("\n", "\n     ")[:400])
