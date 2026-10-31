@@ -31,6 +31,11 @@
 import "server-only";
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
+import {
+  canonToken,
+  normalizeWords,
+  spellings,
+} from "@/lib/archive-search-tokens";
 
 export interface SearchDoc {
   guid: string;
@@ -59,31 +64,6 @@ export interface SearchHit {
   phrase_hit: boolean;
 }
 
-// The minutes abbreviate and residents do not. Both sides are folded
-// to one form so "Elm St" and "Elm Street" are the same search.
-const ABBREVIATIONS: Record<string, string[]> = {
-  street: ["street", "st"],
-  road: ["road", "rd"],
-  drive: ["drive", "dr"],
-  lane: ["lane", "ln"],
-  avenue: ["avenue", "ave", "av"],
-  boulevard: ["boulevard", "blvd"],
-  circle: ["circle", "cir"],
-  court: ["court", "ct"],
-  place: ["place", "pl"],
-  terrace: ["terrace", "ter"],
-  highway: ["highway", "hwy"],
-  route: ["route", "rte", "rt"],
-  square: ["square", "sq"],
-  trail: ["trail", "trl"],
-  parkway: ["parkway", "pkwy"],
-};
-
-const ABBR_TO_CANON: Record<string, string> = {};
-for (const [canon, list] of Object.entries(ABBREVIATIONS)) {
-  for (const v of list) ABBR_TO_CANON[v] = canon;
-}
-
 const TITLE_WEIGHT = 8;
 const SUMMARY_WEIGHT = 3;
 const TEXT_WEIGHT = 1;
@@ -106,11 +86,6 @@ function normalize(s: string): string {
     .replace(/[^a-z0-9$%./'"-]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
-}
-
-/** Fold every abbreviation in a block of already-normalized text. */
-function canonicalize(s: string): string {
-  return s.replace(/[a-z0-9]+/g, (w) => ABBR_TO_CANON[w] ?? w);
 }
 
 function loadDocs(): SearchDoc[] {
@@ -139,26 +114,6 @@ const STOP = new Set([
   "by", "is", "was", "were", "be", "been", "with", "that", "this", "it",
   "as", "from", "has", "have", "had", "do", "does", "did", "not", "no",
 ]);
-
-/** Very small suffix stripper, so "selections" finds "selection". */
-function stem(w: string): string {
-  if (w.length > 4 && w.endsWith("ies")) return w.slice(0, -3) + "y";
-  if (w.length > 4 && w.endsWith("es") && !w.endsWith("ses")) return w.slice(0, -2);
-  if (w.length > 3 && w.endsWith("s") && !w.endsWith("ss")) return w.slice(0, -1);
-  return w;
-}
-
-/** The canonical form of a query word: abbreviation first, then stem. */
-function canonToken(w: string): string {
-  const abbr = ABBR_TO_CANON[w];
-  if (abbr) return abbr;
-  return stem(w);
-}
-
-/** Every original spelling that folds into this canonical form. */
-function variants(canon: string): string[] {
-  return ABBREVIATIONS[canon] ?? [canon];
-}
 
 /**
  * Split a query into terms.
@@ -245,16 +200,16 @@ function countPhrase(hay: string, phrase: string): number {
  * The snippet comes from the untouched text, so it reads the way the
  * document does - "412 Elm St", not "412 Elm Street".
  */
-function snippet(text: string, tokens: string[], phrase: string): string {
+function snippet(text: string, tokens: string[], phrase: string, phraseRaw: string): string {
   if (!text) return "";
   const flat = text.replace(/\s+/g, " ");
   const low = flat.toLowerCase();
 
   let at = -1;
-  if (phrase.length > 3) at = findWord(low, phrase);
+  if (phraseRaw.length > 3) at = findWord(low, phraseRaw);
   if (at === -1) {
     for (const t of tokens) {
-      for (const v of variants(t)) {
+      for (const v of spellings(t)) {
         at = findWord(low, v);
         if (at !== -1) break;
       }
@@ -284,7 +239,9 @@ export interface SearchResult {
 export function searchArchive(query: string, limit = 25): SearchResult {
   const all = loadDocs();
   const tokens = tokenize(query);
-  const phrase = canonicalize(normalize(query));
+  const phrase = normalizeWords(normalize(query));
+  // The phrase as it was typed, for finding it in the untouched text.
+  const phraseRaw = normalize(query);
 
   const base: SearchResult = {
     hits: [],
@@ -300,9 +257,13 @@ export function searchArchive(query: string, limit = 25): SearchResult {
   const scored: SearchHit[] = [];
 
   for (const d of all) {
-    const title = canonicalize(normalize(d.title || ""));
-    const summary = canonicalize(normalize(d.summary || ""));
-    const body = d.ocr_text ? canonicalize(normalize(d.ocr_text)) : "";
+    // The document side is folded exactly the way the query side is.
+    // This is the fix: the query was stemmed and the text was not, so
+    // "services" could not match a document that said "services" and
+    // those documents were excluded from the results entirely.
+    const title = normalizeWords(normalize(d.title || ""));
+    const summary = normalizeWords(normalize(d.summary || ""));
+    const body = d.ocr_text ? normalizeWords(normalize(d.ocr_text)) : "";
 
     let score = 0;
     let titleHit = 0;
@@ -325,8 +286,11 @@ export function searchArchive(query: string, limit = 25): SearchResult {
     if (!allPresent) continue;
 
     // The exact phrase, together, beats the same words scattered.
+    // A three-character phrase is still a phrase: "tax" is the folded
+    // form of "taxes" and deserves the same exact-phrase boost the
+    // longer ones get.
     const phraseHits =
-      phrase.length > 3 ? countPhrase(body, phrase) + countPhrase(title, phrase) : 0;
+      phrase.length >= 3 ? countPhrase(body, phrase) + countPhrase(title, phrase) : 0;
     if (phraseHits > 0) score += PHRASE_BONUS * Math.min(phraseHits, 3);
 
     scored.push({
@@ -337,7 +301,7 @@ export function searchArchive(query: string, limit = 25): SearchResult {
       title: d.title,
       url: d.url,
       summary: d.summary,
-      snippet: snippet(d.ocr_text || d.summary || "", tokens, phrase),
+      snippet: snippet(d.ocr_text || d.summary || "", tokens, phrase, phraseRaw),
       score,
       title_hit: titleHit > 0,
       text_hits: bodyHits,

@@ -11,6 +11,7 @@
 // text is far too heavy to ship to a phone.
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { highlightTerms } from "@/lib/archive-search-tokens";
 
 interface Hit {
   guid: string;
@@ -36,24 +37,12 @@ interface Result {
   documents_with_text: number;
 }
 
-// Kept in step with lib/archive-search.ts so the highlighted words in a
-// snippet are the ones that were actually searched for.
-const ABBREVIATIONS: Record<string, string[]> = {
-  street: ["street", "st"], road: ["road", "rd"], drive: ["drive", "dr"],
-  lane: ["lane", "ln"], avenue: ["avenue", "ave", "av"], boulevard: ["boulevard", "blvd"],
-  circle: ["circle", "cir"], court: ["court", "ct"], place: ["place", "pl"],
-  terrace: ["terrace", "ter"], highway: ["highway", "hwy"], route: ["route", "rte", "rt"],
-  square: ["square", "sq"], trail: ["trail", "trl"], parkway: ["parkway", "pkwy"],
-};
-
+// The same rules the search itself uses, so the highlighted words are
+// the words that were actually searched for - including the plural
+// forms, because the search folds them.
 function highlight(text: string, tokens: string[]) {
   if (!tokens.length) return text;
-  const words = new Set<string>();
-  for (const t of tokens) {
-    for (const v of ABBREVIATIONS[t] ?? [t]) words.add(v);
-    words.add(t);
-  }
-  const list = Array.from(words)
+  const list = highlightTerms(tokens)
     .filter((w) => w.length > 1)
     .sort((a, b) => b.length - a.length)
     .map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
