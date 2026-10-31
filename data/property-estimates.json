@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-30T19:11:04.000317+00:00",
+ "generated_at": "2026-10-31T09:30:38.929866+00:00",
  "method": "Median of up to four comparable recent arm's-length sales in Pembroke, each adjusted to the home's square footage using the price per square foot fitted across all qualified sales in the pool. Homes with fewer than three comparable sales get no estimate. This is an estimate, not an appraisal.",
  "pool_size": 165,
  "price_per_sqft_slope": 140.21,
- "count": 325,
+ "count": 332,
  "median_spread_pct": 24.3,
  "estimates": [
   {
@@ -14299,6 +14299,50 @@
    "cama": "941-0039-000-000"
   },
   {
+   "address": "363 Academy Rd",
+   "kind": "listed",
+   "estimate": 621495,
+   "low": 564672,
+   "high": 707624,
+   "comps": [
+    {
+     "address": "158A&B TINA DR",
+     "price": 625000.0,
+     "date": "2026-06-18",
+     "sqft": 2384.0,
+     "beds": 4.0,
+     "miles": 0.78
+    },
+    {
+     "address": "316 CHURCH RD",
+     "price": 625000.0,
+     "date": "2026-05-04",
+     "sqft": 2414.0,
+     "beds": 4.0,
+     "miles": 0.93
+    },
+    {
+     "address": "13 HILLCREST AVE",
+     "price": 570000.0,
+     "date": "2025-11-10",
+     "sqft": 2412.0,
+     "beds": 4.0,
+     "miles": 1.03
+    },
+    {
+     "address": "260 CHURCH RD",
+     "price": 665000.0,
+     "date": "2026-03-27",
+     "sqft": 2070.0,
+     "beds": 4.0,
+     "miles": 1.01
+    }
+   ],
+   "list_price": 625000.0,
+   "assessed": 509200.0,
+   "cama": "941-0043-003-000"
+  },
+  {
    "address": "643 4Th Range Rd",
    "kind": "listed",
    "estimate": 490610,
@@ -14341,6 +14385,86 @@
    "list_price": 550000.0,
    "assessed": 459900.0,
    "cama": "561-0111-002-000"
+  },
+  {
+   "address": "294 Cross Rd",
+   "kind": "listed",
+   "estimate": 540787,
+   "low": 479299,
+   "high": 695561,
+   "comps": [
+    {
+     "address": "228 PEMBROKE HILL RD",
+     "price": 480000.0,
+     "date": "2025-12-04",
+     "sqft": 1613.0,
+     "beds": 4.0,
+     "miles": 0.92
+    },
+    {
+     "address": "44 SHERWOOD MEADOWS",
+     "price": 515000.0,
+     "date": "2026-09-21",
+     "sqft": 1848.0,
+     "beds": 4.0,
+     "miles": 0.64
+    },
+    {
+     "address": "182-184 BUCK ST",
+     "price": 695000.0,
+     "date": "2026-03-13",
+     "sqft": 1604.0,
+     "beds": 4.0,
+     "miles": 1.37
+    },
+    {
+     "address": "260 CHURCH RD",
+     "price": 665000.0,
+     "date": "2026-03-27",
+     "sqft": 2070.0,
+     "beds": 4.0,
+     "miles": 0.14
+    }
+   ],
+   "list_price": 499900.0,
+   "assessed": 440700.0,
+   "cama": "264-0037-006-000"
+  },
+  {
+   "address": "386 Pembroke St",
+   "kind": "listed",
+   "estimate": 516696,
+   "low": 446882,
+   "high": 590951,
+   "comps": [
+    {
+     "address": "367 PEMBROKE ST",
+     "price": 365000.0,
+     "date": "2025-11-26",
+     "sqft": 3059.0,
+     "beds": 5.0,
+     "miles": 0.17
+    },
+    {
+     "address": "236 PEMBROKE ST",
+     "price": 372000.0,
+     "date": "2024-08-08",
+     "sqft": 2611.0,
+     "beds": 4.0,
+     "miles": 1.32
+    },
+    {
+     "address": "550 BUCK ST",
+     "price": 490000.0,
+     "date": "2025-09-29",
+     "sqft": 2923.0,
+     "beds": 4.0,
+     "miles": 2.66
+    }
+   ],
+   "list_price": 475000.0,
+   "assessed": 599100.0,
+   "cama": "565-0058-000-000"
   },
   {
    "address": "632 4Th Range Rd",
@@ -14387,6 +14511,94 @@
    "cama": "561-0002-000-000"
   },
   {
+   "address": "245 Buck St",
+   "kind": "listed",
+   "estimate": 482126,
+   "low": 440185,
+   "high": 534154,
+   "comps": [
+    {
+     "address": "147 TINA DR",
+     "price": 565000.0,
+     "date": "2026-09-17",
+     "sqft": 1728.0,
+     "beds": 3.0,
+     "miles": 0.47
+    },
+    {
+     "address": "15 FAIRVIEW AVE",
+     "price": 510000.0,
+     "date": "2026-07-22",
+     "sqft": 1536.0,
+     "beds": 3.0,
+     "miles": 1.07
+    },
+    {
+     "address": "8 SKYVIEW TERRACE",
+     "price": 450000.0,
+     "date": "2025-11-26",
+     "sqft": 1578.0,
+     "beds": 3.0,
+     "miles": 0.66
+    },
+    {
+     "address": "86 BROADWAY",
+     "price": 460000.0,
+     "date": "2025-06-12",
+     "sqft": 1521.0,
+     "beds": 3.0,
+     "miles": 0.91
+    }
+   ],
+   "list_price": 435000.0,
+   "assessed": 368000.0,
+   "cama": "266-0145-000-000"
+  },
+  {
+   "address": "382 Perley Ave",
+   "kind": "listed",
+   "estimate": 543207,
+   "low": 488225,
+   "high": 564667,
+   "comps": [
+    {
+     "address": "412 DEERPATH LANE",
+     "price": 485000.0,
+     "date": "2026-01-14",
+     "sqft": 1773.0,
+     "beds": 3.0,
+     "miles": 0.25
+    },
+    {
+     "address": "424 TERRIE DR",
+     "price": 535000.0,
+     "date": "2025-11-06",
+     "sqft": 1768.0,
+     "beds": 3.0,
+     "miles": 0.37
+    },
+    {
+     "address": "446 TERRIE DR",
+     "price": 528000.0,
+     "date": "2025-07-02",
+     "sqft": 1657.0,
+     "beds": 3.0,
+     "miles": 0.38
+    },
+    {
+     "address": "10 BOW LANE",
+     "price": 600000.0,
+     "date": "2025-07-02",
+     "sqft": 2048.0,
+     "beds": 3.0,
+     "miles": 0.19
+    }
+   ],
+   "list_price": 429000.0,
+   "assessed": 369000.0,
+   "cama": "565-0224-000-000"
+  },
+  {
    "address": "241 Pembroke St",
    "kind": "listed",
    "estimate": 414007,
@@ -14421,6 +14633,50 @@
    "list_price": 425000.0,
    "assessed": 436700.0,
    "cama": "266-0041-000-000"
+  },
+  {
+   "address": "755 Robinson Rd",
+   "kind": "listed",
+   "estimate": 564461,
+   "low": 520193,
+   "high": 587845,
+   "comps": [
+    {
+     "address": "644 BOROUGH RD",
+     "price": 485000.0,
+     "date": "2025-01-31",
+     "sqft": 1824.0,
+     "beds": 2.0,
+     "miles": 1.88
+    },
+    {
+     "address": "762 ROBINSON RD",
+     "price": 649000.0,
+     "date": "2026-07-17",
+     "sqft": 2704.0,
+     "beds": 3.0,
+     "miles": 0.1
+    },
+    {
+     "address": "890 WELLINGTON WAY",
+     "price": 612000.0,
+     "date": "2024-02-15",
+     "sqft": 2388.0,
+     "beds": 3.0,
+     "miles": 0.15
+    },
+    {
+     "address": "611 NO PEMBROKE RD",
+     "price": 625000.0,
+     "date": "2026-02-19",
+     "sqft": 2340.0,
+     "beds": 3.0,
+     "miles": 1.35
+    }
+   ],
+   "list_price": 400000.0,
+   "assessed": 459100.0,
+   "cama": "256-0003-000-000"
   },
   {
    "address": "9 Pleasant St",
@@ -14509,6 +14765,50 @@
    "list_price": 390000.0,
    "assessed": 270300.0,
    "cama": "266-0180-000-000"
+  },
+  {
+   "address": "88 Broadway St",
+   "kind": "listed",
+   "estimate": 461331,
+   "low": 387666,
+   "high": 575000,
+   "comps": [
+    {
+     "address": "12 LINDY ST",
+     "price": 425000.0,
+     "date": "2026-06-17",
+     "sqft": 1144.0,
+     "beds": 3.0,
+     "miles": 0.23
+    },
+    {
+     "address": "15 FAIRVIEW AVE",
+     "price": 510000.0,
+     "date": "2026-07-22",
+     "sqft": 1536.0,
+     "beds": 3.0,
+     "miles": 0.18
+    },
+    {
+     "address": "32 TURNPIKE ST",
+     "price": 370000.0,
+     "date": "2026-06-15",
+     "sqft": 1170.0,
+     "beds": 3.0,
+     "miles": 0.57
+    },
+    {
+     "address": "189 BUCK ST",
+     "price": 575000.0,
+     "date": "2025-10-30",
+     "sqft": 1296.0,
+     "beds": 3.0,
+     "miles": 0.87
+    }
+   ],
+   "list_price": 369000.0,
+   "assessed": 330900.0,
+   "cama": "VW-0127-000-000"
   }
  ]
 }

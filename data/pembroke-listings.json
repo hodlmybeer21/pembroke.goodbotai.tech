@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-30T17:01:26+00:00",
-  "count": 46,
+  "generated_at": "2026-10-31T09:30:38+00:00",
+  "count": 60,
   "listings": [
     {
       "address": "182 Buck St #123",
@@ -24,7 +24,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 57,
+      "days_on_market": 58,
       "price_per_sqft": 219
     },
     {
@@ -49,7 +49,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 16,
+      "days_on_market": 17,
       "price_per_sqft": 272
     },
     {
@@ -74,7 +74,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 79,
+      "days_on_market": 80,
       "price_per_sqft": 809
     },
     {
@@ -99,8 +99,33 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 2,
+      "days_on_market": 3,
       "price_per_sqft": 318
+    },
+    {
+      "address": "426 Grady Ln #34",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 966544,
+      "beds": 3,
+      "baths": 3,
+      "sqft": 2319,
+      "year_built": null,
+      "property_type": "Single Family",
+      "lot_acres": null,
+      "lot_sqft": 0,
+      "lat": 43.168187,
+      "lon": -71.446532,
+      "source_url": "https://www.movoto.com/pembroke-nh/426-grady-ln-apt-34-pembroke-nh-03275-890_5095512/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5095512_0_Rq7AMU_p.webp",
+      "mls_number": "5095512",
+      "status": "PENDING",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 134,
+      "price_per_sqft": null
     },
     {
       "address": "348 Brickett Hill Rd #3",
@@ -124,7 +149,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 8,
+      "days_on_market": 9,
       "price_per_sqft": 461
     },
     {
@@ -149,8 +174,33 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 731,
+      "days_on_market": 732,
       "price_per_sqft": 377
+    },
+    {
+      "address": "433 Dawn Ct #18",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 830012,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1920,
+      "year_built": 2026,
+      "property_type": "Condo",
+      "lot_acres": null,
+      "lot_sqft": 0,
+      "lat": 43.166938,
+      "lon": -71.442833,
+      "source_url": "https://www.movoto.com/pembroke-nh/433-dawn-ct-apt-18-pembroke-nh-03275-890_5087105/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5087105_0_EbeBZa_p.webp",
+      "mls_number": "5087105",
+      "status": "PENDING",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 178,
+      "price_per_sqft": null
     },
     {
       "address": "The Madison Plan",
@@ -174,7 +224,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 731,
+      "days_on_market": 732,
       "price_per_sqft": 412
     },
     {
@@ -199,7 +249,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 224,
+      "days_on_market": 225,
       "price_per_sqft": 354
     },
     {
@@ -224,7 +274,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 40,
+      "days_on_market": 41,
       "price_per_sqft": 245
     },
     {
@@ -249,7 +299,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 50,
+      "days_on_market": 51,
       "price_per_sqft": 447
     },
     {
@@ -274,7 +324,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 32,
+      "days_on_market": 33,
       "price_per_sqft": 447
     },
     {
@@ -289,17 +339,17 @@
       "year_built": 2025,
       "property_type": "Single Family",
       "lot_acres": null,
-      "lot_sqft": null,
+      "lot_sqft": 0,
       "lat": 43.1658937,
       "lon": -71.4486939,
       "source_url": "https://www.redfin.com/NH/Pembroke/441-Blane-Cir-03275/unit-12/home/194773625",
-      "source": "redfin",
+      "source": "movoto",
       "photo_url": "https://ssl.cdn-redfin.com/photo/154/islphoto/698/genIslnoResize.5102698_0.webp",
       "mls_number": "5102698",
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 91,
+      "days_on_market": 92,
       "price_per_sqft": 425
     },
     {
@@ -324,7 +374,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 17,
+      "days_on_market": 18,
       "price_per_sqft": 357
     },
     {
@@ -349,7 +399,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 731,
+      "days_on_market": 732,
       "price_per_sqft": 349
     },
     {
@@ -374,7 +424,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 731,
+      "days_on_market": 732,
       "price_per_sqft": 351
     },
     {
@@ -399,7 +449,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 224,
+      "days_on_market": 225,
       "price_per_sqft": 395
     },
     {
@@ -424,8 +474,58 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 731,
+      "days_on_market": 732,
       "price_per_sqft": 394
+    },
+    {
+      "address": "431 Blane Cir #08",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 753129,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1762,
+      "year_built": null,
+      "property_type": "Single Family",
+      "lot_acres": null,
+      "lot_sqft": 0,
+      "lat": 43.16639,
+      "lon": -71.449667,
+      "source_url": "https://www.movoto.com/pembroke-nh/431-blane-cir-apt-8-pembroke-nh-03275-890_4985429/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5113077_0_3Nq37A_p.webp",
+      "mls_number": "5113077",
+      "status": "PENDING",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 24,
+      "price_per_sqft": null
+    },
+    {
+      "address": "101 24 Brickett Hill Rd # -1",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 750000,
+      "beds": null,
+      "baths": null,
+      "sqft": null,
+      "year_built": null,
+      "property_type": "Land",
+      "lot_acres": 9.5,
+      "lot_sqft": 413820,
+      "lat": 43.178224,
+      "lon": -71.463755,
+      "source_url": "https://www.movoto.com/pembroke-nh/101-brickett-hill-rd-1-pembroke-nh-03275-890_5068114/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5111756_0_fvFBUY_p.webp",
+      "mls_number": "5111756",
+      "status": "ACTIVE",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 32,
+      "price_per_sqft": null
     },
     {
       "address": "101-1&2&4 Brickett Hill Rd Unit 01 02 04",
@@ -449,7 +549,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 32,
+      "days_on_market": 33,
       "price_per_sqft": null
     },
     {
@@ -474,7 +574,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 115,
+      "days_on_market": 116,
       "price_per_sqft": 344
     },
     {
@@ -499,7 +599,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 224,
+      "days_on_market": 225,
       "price_per_sqft": 397
     },
     {
@@ -524,7 +624,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 731,
+      "days_on_market": 732,
       "price_per_sqft": 357
     },
     {
@@ -549,7 +649,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 731,
+      "days_on_market": 732,
       "price_per_sqft": 398
     },
     {
@@ -574,7 +674,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 8,
+      "days_on_market": 9,
       "price_per_sqft": 401
     },
     {
@@ -599,7 +699,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 8,
+      "days_on_market": 9,
       "price_per_sqft": 317
     },
     {
@@ -624,7 +724,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 74,
+      "days_on_market": 75,
       "price_per_sqft": 275
     },
     {
@@ -649,7 +749,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 90,
+      "days_on_market": 91,
       "price_per_sqft": 168
     },
     {
@@ -674,7 +774,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 731,
+      "days_on_market": 732,
       "price_per_sqft": 409
     },
     {
@@ -699,7 +799,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 114,
+      "days_on_market": 115,
       "price_per_sqft": 238
     },
     {
@@ -724,7 +824,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 731,
+      "days_on_market": 732,
       "price_per_sqft": 432
     },
     {
@@ -749,7 +849,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 731,
+      "days_on_market": 732,
       "price_per_sqft": 453
     },
     {
@@ -774,7 +874,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 731,
+      "days_on_market": 732,
       "price_per_sqft": 402
     },
     {
@@ -799,7 +899,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 731,
+      "days_on_market": 732,
       "price_per_sqft": 455
     },
     {
@@ -824,7 +924,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 731,
+      "days_on_market": 732,
       "price_per_sqft": 450
     },
     {
@@ -849,8 +949,33 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 11,
+      "days_on_market": 12,
       "price_per_sqft": 227
+    },
+    {
+      "address": "363 Academy Rd",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 625000,
+      "beds": 4,
+      "baths": 5,
+      "sqft": 2374,
+      "year_built": 1980,
+      "property_type": "Single Family",
+      "lot_acres": 1.46,
+      "lot_sqft": 63598,
+      "lat": 43.146821,
+      "lon": -71.434794,
+      "source_url": "https://www.movoto.com/suncook-nh/363-academy-rd-suncook-nh-03275/pid_96xlyf4nih/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5105635_0_2EI2Qi_p.webp",
+      "mls_number": "5105635",
+      "status": "PENDING",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 72,
+      "price_per_sqft": null
     },
     {
       "address": "12-14 Church St",
@@ -874,7 +999,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 90,
+      "days_on_market": 91,
       "price_per_sqft": 213
     },
     {
@@ -899,8 +1024,33 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 18,
+      "days_on_market": 19,
       "price_per_sqft": 309
+    },
+    {
+      "address": "294 Cross Rd",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 499900,
+      "beds": 4,
+      "baths": 2,
+      "sqft": 1608,
+      "year_built": 1987,
+      "property_type": "Single Family",
+      "lot_acres": 1.16,
+      "lot_sqft": 50530,
+      "lat": 43.1519,
+      "lon": -71.451582,
+      "source_url": "https://www.movoto.com/suncook-nh/294-cross-rd-suncook-nh-03275/pid_1ktlyf4nih/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5105798_0_UrRrIz_p.webp",
+      "mls_number": "5105798",
+      "status": "PENDING",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 72,
+      "price_per_sqft": null
     },
     {
       "address": "449 Buck St",
@@ -924,8 +1074,33 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 66,
+      "days_on_market": 67,
       "price_per_sqft": 450
+    },
+    {
+      "address": "386 Pembroke St",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 475000,
+      "beds": 5,
+      "baths": 3,
+      "sqft": 3643,
+      "year_built": 1846,
+      "property_type": "Single Family",
+      "lot_acres": 0.99,
+      "lot_sqft": 43124,
+      "lat": 43.15791,
+      "lon": -71.468594,
+      "source_url": "https://www.movoto.com/suncook-nh/386-pembroke-st-suncook-nh-03275/pid_8wrlyf4nih/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5098006_0_ai6aq3_p.webp",
+      "mls_number": "5098006",
+      "status": "PENDING",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 119,
+      "price_per_sqft": null
     },
     {
       "address": "632 4Th Range Rd",
@@ -949,7 +1124,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 98,
+      "days_on_market": 99,
       "price_per_sqft": 354
     },
     {
@@ -974,8 +1149,58 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 31,
+      "days_on_market": 32,
       "price_per_sqft": 253
+    },
+    {
+      "address": "245 Buck St",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 435000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1508,
+      "year_built": 1961,
+      "property_type": "Single Family",
+      "lot_acres": 0.6,
+      "lot_sqft": 26136,
+      "lat": 43.140626,
+      "lon": -71.435791,
+      "source_url": "https://www.movoto.com/suncook-nh/245-buck-st-suncook-nh-03275/pid_hqulyf4nih/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5110361_0_Qzjyez_p.webp",
+      "mls_number": "5110361",
+      "status": "PENDING",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 43,
+      "price_per_sqft": null
+    },
+    {
+      "address": "382 Perley Ave",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 429000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1796,
+      "year_built": 1971,
+      "property_type": "Single Family",
+      "lot_acres": 0.23,
+      "lot_sqft": 10019,
+      "lat": 43.158507,
+      "lon": -71.46669,
+      "source_url": "https://www.movoto.com/suncook-nh/382-perley-ave-suncook-nh-03275/pid_2qwlyf4nih/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5112525_0_jzreAI_p.webp",
+      "mls_number": "5112525",
+      "status": "PENDING",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 28,
+      "price_per_sqft": null
     },
     {
       "address": "241 Pembroke St",
@@ -999,8 +1224,83 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 1,
+      "days_on_market": 2,
       "price_per_sqft": 178
+    },
+    {
+      "address": "216 Kearsage Dr #A",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 420000,
+      "beds": 2,
+      "baths": 3,
+      "sqft": 1732,
+      "year_built": 2006,
+      "property_type": "Condo",
+      "lot_acres": 1.0,
+      "lot_sqft": 43560,
+      "lat": 43.140759,
+      "lon": -71.449239,
+      "source_url": "https://www.movoto.com/suncook-nh/216-kearsage-dr-a-suncook-nh-03275/pid_1b0lyf4nih/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5111534_0_IfERb6_p.webp",
+      "mls_number": "5111534",
+      "status": "PENDING",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 35,
+      "price_per_sqft": null
+    },
+    {
+      "address": "412 Grandview Rd",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 420000,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 1116,
+      "year_built": 1964,
+      "property_type": "Single Family",
+      "lot_acres": 0.34,
+      "lot_sqft": 14810,
+      "lat": 43.161211,
+      "lon": -71.467985,
+      "source_url": "https://www.movoto.com/suncook-nh/412-grandview-rd-suncook-nh-03275/pid_c7vlyf4nih/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5115383_0_6EYNvv_p.webp",
+      "mls_number": "5115383",
+      "status": "PENDING",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 8,
+      "price_per_sqft": null
+    },
+    {
+      "address": "0 Poor Town Rd",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 400000,
+      "beds": null,
+      "baths": null,
+      "sqft": null,
+      "year_built": null,
+      "property_type": "Land",
+      "lot_acres": 67.37,
+      "lot_sqft": 2934637,
+      "lat": 43.146748,
+      "lon": -71.457568,
+      "source_url": "https://www.movoto.com/pembroke-nh/0-poor-town-rd-pembroke-nh-03275-890_4849683/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5048057_0_62UiMJ_p.webp",
+      "mls_number": "5048057",
+      "status": "ACTIVE",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 494,
+      "price_per_sqft": null
     },
     {
       "address": "0 Poor Town Rd #4",
@@ -1024,7 +1324,32 @@
       "status": "Active",
       "postal_city": "Allenstown",
       "town": "Pembroke",
-      "days_on_market": 485,
+      "days_on_market": 486,
+      "price_per_sqft": null
+    },
+    {
+      "address": "755 Robinson Rd",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 400000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 2075,
+      "year_built": 2000,
+      "property_type": "Single Family",
+      "lot_acres": 4.0,
+      "lot_sqft": 174240,
+      "lat": 43.229457,
+      "lon": -71.458846,
+      "source_url": "https://www.movoto.com/suncook-nh/755-robinson-rd-suncook-nh-03275/pid_u0tlyf4nih/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5114137_0_riUmJI_p.webp",
+      "mls_number": "5114137",
+      "status": "PENDING",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 17,
       "price_per_sqft": null
     },
     {
@@ -1049,7 +1374,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 1,
+      "days_on_market": 2,
       "price_per_sqft": 235
     },
     {
@@ -1074,8 +1399,33 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 16,
+      "days_on_market": 17,
       "price_per_sqft": 299
+    },
+    {
+      "address": "88 Broadway St",
+      "city": "Pembroke",
+      "state": "NH",
+      "zip": "03275",
+      "list_price": 369000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1296,
+      "year_built": 1943,
+      "property_type": "Single Family",
+      "lot_acres": 0.31,
+      "lot_sqft": 13504,
+      "lat": 43.138585,
+      "lon": -71.453384,
+      "source_url": "https://www.movoto.com/suncook-nh/88-broadway-suncook-nh-03275/pid_zyrlyf4nih/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5113550_0_RyRQyR_p.webp",
+      "mls_number": "5113550",
+      "status": "PENDING",
+      "postal_city": "Pembroke",
+      "town": "Pembroke",
+      "days_on_market": 22,
+      "price_per_sqft": null
     },
     {
       "address": "6 Remington Ct",
@@ -1099,7 +1449,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 51,
+      "days_on_market": 52,
       "price_per_sqft": 228
     },
     {
@@ -1124,33 +1474,33 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 16,
+      "days_on_market": 17,
       "price_per_sqft": null
     },
     {
-      "address": "100 Main St Unit M13",
+      "address": "100 Main St #M13",
       "city": "Pembroke",
       "state": "NH",
       "zip": "03275",
       "list_price": 215000,
       "beds": 1,
-      "baths": 1.0,
+      "baths": 1,
       "sqft": 712,
       "year_built": 1900,
       "property_type": "Condo",
       "lot_acres": 1.0,
       "lot_sqft": 43560,
-      "lat": 43.1308225,
-      "lon": -71.4539618,
-      "source_url": "https://www.redfin.com/NH/Pembroke/100-Main-St-03275/unit-M13/home/108646956",
-      "source": "redfin",
-      "photo_url": "https://ssl.cdn-redfin.com/photo/154/islphoto/506/genIslnoResize.5112506_0.webp",
+      "lat": 43.130823,
+      "lon": -71.453962,
+      "source_url": "https://www.movoto.com/suncook-nh/100-main-st-m13-suncook-nh-03275/pid_hzrlyf4nih/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5112506_0_fY723J_p.webp",
       "mls_number": "5112506",
-      "status": "Active",
+      "status": "PENDING",
       "postal_city": "Pembroke",
       "town": "Pembroke",
       "days_on_market": 29,
-      "price_per_sqft": 302
+      "price_per_sqft": null
     }
   ],
   "meta": {
@@ -1165,14 +1515,14 @@
         "photos_matched": 55
       },
       "movoto": {
-        "status": 0,
-        "raw_listings": 0
+        "status": 200,
+        "raw_listings": 42
       },
       "town_filter": {
         "method": "osm_boundary",
-        "outside_boundary": 8,
+        "outside_boundary": 9,
         "no_coordinates": 0,
-        "kept": 46
+        "kept": 60
       }
     }
   }
