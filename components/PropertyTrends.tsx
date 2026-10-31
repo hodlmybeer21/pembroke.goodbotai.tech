@@ -301,7 +301,7 @@ export function PropertyTrends({ trends }: { trends: TrendsFile }) {
               <>
                 , up {rateUp}% from ${hist["2024"]} the year before
               </>
-            ) : null} . Revaluation years make year-to-year rates hard to compare
+            ) : null}. Revaluation years make year-to-year rates hard to compare
             &mdash; see the{" "}
             <Link
               href="/taxes/history"
@@ -309,7 +309,7 @@ export function PropertyTrends({ trends }: { trends: TrendsFile }) {
             >
               full tax history
             </Link>{" "}for the year-by-year detail.
-            . Separately, the town&apos;s current assessments line up with what homes were selling
+            Separately, the town&apos;s current assessments line up with what homes were selling
             for around 2022–2023 — homes sold in 2026 are going for roughly 30% more than the
             assessment says. Assessments are set periodically, not daily, so that gap is normal
             and expected.
