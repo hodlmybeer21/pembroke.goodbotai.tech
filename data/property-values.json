@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T17:19:34.391859+00:00",
+ "generated_at": "2026-11-01T09:02:32.617958+00:00",
  "source": "Town of Pembroke property database (AxisGIS) - tax assessment and recorded sales",
  "source_url": "https://www.axisgis.com/PembrokeNH/",
  "town": "Pembroke, NH",
@@ -7526,30 +7526,6 @@
    ]
   },
   {
-   "cama": "VW-0047-004-000",
-   "address": "14 RENARL AVE",
-   "sale_price": 1850000,
-   "sale_date": "2023-09-01",
-   "sale_qualified": "U",
-   "market_sale": false,
-   "assessed": 729300,
-   "assessed_land": 208000,
-   "assessed_bldg": 518300,
-   "difference": 1120700,
-   "pct_of_assessed": 153.7,
-   "below_assessment": false,
-   "lat": 43.135852,
-   "lon": -71.455549,
-   "use": "CONDO",
-   "sqft": "3688",
-   "beds": "9",
-   "baths": "6",
-   "year_built": "1960",
-   "acres": 1.1117,
-   "zone": null,
-   "prior_sales": []
-  },
-  {
    "cama": "VW-0047-001-000",
    "address": "8 RENARL AVE",
    "sale_price": 1850000,
@@ -7578,6 +7554,30 @@
      "qualified": "Q"
     }
    ]
+  },
+  {
+   "cama": "VW-0047-004-000",
+   "address": "14 RENARL AVE",
+   "sale_price": 1850000,
+   "sale_date": "2023-09-01",
+   "sale_qualified": "U",
+   "market_sale": false,
+   "assessed": 729300,
+   "assessed_land": 208000,
+   "assessed_bldg": 518300,
+   "difference": 1120700,
+   "pct_of_assessed": 153.7,
+   "below_assessment": false,
+   "lat": 43.135852,
+   "lon": -71.455549,
+   "use": "CONDO",
+   "sqft": "3688",
+   "beds": "9",
+   "baths": "6",
+   "year_built": "1960",
+   "acres": 1.1117,
+   "zone": null,
+   "prior_sales": []
   },
   {
    "cama": "632-0012-000-000",
