@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-01T09:03:21.425928Z",
+ "generated_at": "2026-11-02T10:31:26.603246Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-11-01",
+ "today": "2026-11-02",
  "counts": {
-  "events": 24,
-  "meetings": 12,
+  "events": 25,
+  "meetings": 13,
   "other": 12,
   "errors": 0
  },
@@ -137,6 +137,17 @@
    "title": "Planning Board Meeting",
    "eid": "413",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=413",
+   "is_meeting": true,
+   "last_meeting": null,
+   "last_minutes_url": null
+  },
+  {
+   "date": "2027-02-09",
+   "time": "6:30 PM",
+   "all_day": false,
+   "title": "Planning Board Workshop",
+   "eid": "443",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=443",
    "is_meeting": true,
    "last_meeting": null,
    "last_minutes_url": null
