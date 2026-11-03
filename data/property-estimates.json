@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-11-02T10:30:38.401922+00:00",
+ "generated_at": "2026-11-03T10:30:38.062242+00:00",
  "method": "Median of up to four comparable recent arm's-length sales in Pembroke, each adjusted to the home's square footage using the price per square foot fitted across all qualified sales in the pool. Homes with fewer than three comparable sales get no estimate. This is an estimate, not an appraisal.",
  "pool_size": 165,
  "price_per_sqft_slope": 140.21,
- "count": 332,
+ "count": 331,
  "median_spread_pct": 24.3,
  "estimates": [
   {
@@ -14509,50 +14509,6 @@
    "list_price": 470000.0,
    "assessed": 427200.0,
    "cama": "561-0002-000-000"
-  },
-  {
-   "address": "245 Buck St",
-   "kind": "listed",
-   "estimate": 482126,
-   "low": 440185,
-   "high": 534154,
-   "comps": [
-    {
-     "address": "147 TINA DR",
-     "price": 565000.0,
-     "date": "2026-09-17",
-     "sqft": 1728.0,
-     "beds": 3.0,
-     "miles": 0.47
-    },
-    {
-     "address": "15 FAIRVIEW AVE",
-     "price": 510000.0,
-     "date": "2026-07-22",
-     "sqft": 1536.0,
-     "beds": 3.0,
-     "miles": 1.07
-    },
-    {
-     "address": "8 SKYVIEW TERRACE",
-     "price": 450000.0,
-     "date": "2025-11-26",
-     "sqft": 1578.0,
-     "beds": 3.0,
-     "miles": 0.66
-    },
-    {
-     "address": "86 BROADWAY",
-     "price": 460000.0,
-     "date": "2025-06-12",
-     "sqft": 1521.0,
-     "beds": 3.0,
-     "miles": 0.91
-    }
-   ],
-   "list_price": 435000.0,
-   "assessed": 368000.0,
-   "cama": "266-0145-000-000"
   },
   {
    "address": "382 Perley Ave",
