@@ -1,25 +1,14 @@
 {
- "generated_at": "2026-11-03T10:31:24.915952Z",
+ "generated_at": "2026-11-04T10:31:24.339812Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-11-03",
+ "today": "2026-11-04",
  "counts": {
-  "events": 25,
+  "events": 28,
   "meetings": 13,
-  "other": 12,
+  "other": 15,
   "errors": 0
  },
  "meetings": [
-  {
-   "date": "2026-11-03",
-   "time": "2:00 PM",
-   "all_day": false,
-   "title": "Select Board Meeting - Workshop",
-   "eid": "538",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=538",
-   "is_meeting": true,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
   {
    "date": "2026-11-04",
    "time": "6:00 PM",
@@ -27,6 +16,17 @@
    "title": "Select Board Meeting",
    "eid": "500",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=500",
+   "is_meeting": true,
+   "last_meeting": null,
+   "last_minutes_url": null
+  },
+  {
+   "date": "2026-11-09",
+   "time": "5:30 PM",
+   "all_day": false,
+   "title": "Roads Committee Meeting",
+   "eid": "539",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=539",
    "is_meeting": true,
    "last_meeting": null,
    "last_minutes_url": null
@@ -221,10 +221,43 @@
    "last_minutes_url": null
   },
   {
+   "date": "2026-12-18",
+   "time": "",
+   "all_day": true,
+   "title": "Pembroke Water Works- Office Closed",
+   "eid": "405",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
+   "is_meeting": false,
+   "last_meeting": null,
+   "last_minutes_url": null
+  },
+  {
+   "date": "2026-12-19",
+   "time": "",
+   "all_day": true,
+   "title": "Pembroke Water Works- Office Closed",
+   "eid": "405",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
+   "is_meeting": false,
+   "last_meeting": null,
+   "last_minutes_url": null
+  },
+  {
+   "date": "2026-12-20",
+   "time": "",
+   "all_day": true,
+   "title": "Pembroke Water Works- Office Closed",
+   "eid": "405",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
+   "is_meeting": false,
+   "last_meeting": null,
+   "last_minutes_url": null
+  },
+  {
    "date": "2026-12-21",
    "time": "",
    "all_day": true,
-   "title": "Pembroke Water Works- Christmas Week- Office Closed",
+   "title": "Pembroke Water Works- Office Closed",
    "eid": "405",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
    "is_meeting": false,
@@ -235,7 +268,7 @@
    "date": "2026-12-22",
    "time": "",
    "all_day": true,
-   "title": "Pembroke Water Works- Christmas Week- Office Closed",
+   "title": "Pembroke Water Works- Office Closed",
    "eid": "405",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
    "is_meeting": false,
@@ -246,7 +279,7 @@
    "date": "2026-12-23",
    "time": "",
    "all_day": true,
-   "title": "Pembroke Water Works- Christmas Week- Office Closed",
+   "title": "Pembroke Water Works- Office Closed",
    "eid": "405",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
    "is_meeting": false,
@@ -257,7 +290,7 @@
    "date": "2026-12-24",
    "time": "",
    "all_day": true,
-   "title": "Pembroke Water Works- Christmas Week- Office Closed",
+   "title": "Pembroke Water Works- Office Closed",
    "eid": "405",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
    "is_meeting": false,
@@ -268,7 +301,7 @@
    "date": "2026-12-25",
    "time": "",
    "all_day": true,
-   "title": "Pembroke Water Works- Christmas Week- Office Closed",
+   "title": "Pembroke Water Works- Office Closed",
    "eid": "405",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=405",
    "is_meeting": false,

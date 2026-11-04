@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T10:30:37.990607+00:00",
+ "generated_at": "2026-11-04T10:30:37.589468+00:00",
  "source": "Current active listings (Redfin / Movoto) matched to Town of Pembroke property records",
  "count": 20,
  "below_assessment_count": 4,
@@ -231,16 +231,16 @@
    "difference": 243600,
    "pct_of_assessed": 79.5,
    "below_assessment": false,
-   "lat": 43.131744,
-   "lon": -71.4512522,
-   "beds": 4,
-   "baths": 2.0,
+   "lat": 43.131725,
+   "lon": -71.45119,
+   "beds": null,
+   "baths": 2,
    "sqft": 2587,
-   "property_type": "Townhouse",
+   "property_type": "Multifamily",
    "year_built": 1888,
    "lot_acres": 0.12,
-   "source_url": "https://www.redfin.com/NH/Pembroke/14-Church-St-03275/home/88235926",
-   "source": "redfin",
+   "source_url": "https://www.movoto.com/pembroke-nh/12-14-church-st-pembroke-nh-03275-890_4668667/",
+   "source": "movoto",
    "parcel_address": "12-14 CHURCH ST",
    "cama": "VE-0135-000-000",
    "town_use": "TWO FAMILY",
@@ -250,7 +250,7 @@
    "town_year_built": "1888",
    "town_acres": 0.12,
    "zone": "B-2A",
-   "match_miles": 0.004
+   "match_miles": 0.0
   },
   {
    "address": "643 4Th Range Rd",
@@ -625,8 +625,8 @@
    "match_miles": 0.004
   }
  ],
- "total_count": 57,
- "unmatched_count": 37,
+ "total_count": 56,
+ "unmatched_count": 36,
  "unmatched_listings": [
   {
    "address": "841 Cross Country Rd",
@@ -637,7 +637,7 @@
    "beds": 4,
    "baths": 2.5,
    "sqft": 3147,
-   "property_type": "Single Family",
+   "property_type": "Manufactured",
    "source_url": "https://www.redfin.com/NH/Pembroke/841-Cross-Country-Rd-03275/home/206713847",
    "source": "redfin",
    "no_assessment_reason": "no_parcel"
@@ -683,20 +683,6 @@
    "source_url": "https://www.redfin.com/NH/Suncook/Suncook/The-Wentworth/home/193358050",
    "source": "redfin",
    "no_assessment_reason": "new_construction"
-  },
-  {
-   "address": "433 Dawn Ct #18",
-   "city": "Pembroke",
-   "state": "NH",
-   "zip": "03275",
-   "list_price": 830012,
-   "beds": 3,
-   "baths": 2,
-   "sqft": 1920,
-   "property_type": "Condo",
-   "source_url": "https://www.movoto.com/pembroke-nh/433-dawn-ct-apt-18-pembroke-nh-03275-890_5087105/",
-   "source": "movoto",
-   "no_assessment_reason": "condo_unit"
   },
   {
    "address": "The Madison Plan",
@@ -763,7 +749,7 @@
    "beds": 3,
    "baths": 2.0,
    "sqft": 1857,
-   "property_type": "Single Family",
+   "property_type": "Condo",
    "source_url": "https://www.redfin.com/NH/Pembroke/441-Blane-Cir-03275/unit-12/home/194773625",
    "source": "movoto",
    "no_assessment_reason": "condo_unit"
@@ -973,7 +959,7 @@
    "beds": 3,
    "baths": 2.5,
    "sqft": 2639,
-   "property_type": "Single Family",
+   "property_type": "Condo",
    "source_url": "https://www.redfin.com/NH/Pembroke/418-Blane-Cir-03275/home/184054795",
    "source": "redfin",
    "no_assessment_reason": "no_parcel"

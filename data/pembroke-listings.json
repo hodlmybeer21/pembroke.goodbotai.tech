@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-03T10:30:37+00:00",
-  "count": 58,
+  "generated_at": "2026-11-04T10:30:37+00:00",
+  "count": 57,
   "listings": [
     {
       "address": "311 Academy Rd",
@@ -24,7 +24,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 20,
+      "days_on_market": 21,
       "price_per_sqft": 272
     },
     {
@@ -49,7 +49,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 83,
+      "days_on_market": 84,
       "price_per_sqft": 809
     },
     {
@@ -62,7 +62,7 @@
       "baths": 2.5,
       "sqft": 3147,
       "year_built": 2026,
-      "property_type": "Single Family",
+      "property_type": "Manufactured",
       "lot_acres": 2.54,
       "lot_sqft": 110642,
       "lat": 43.2060964,
@@ -74,7 +74,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 6,
+      "days_on_market": 7,
       "price_per_sqft": 318
     },
     {
@@ -99,7 +99,7 @@
       "status": "PENDING",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 137,
+      "days_on_market": 138,
       "price_per_sqft": null
     },
     {
@@ -124,7 +124,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 12,
+      "days_on_market": 13,
       "price_per_sqft": 461
     },
     {
@@ -149,33 +149,8 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 735,
+      "days_on_market": 736,
       "price_per_sqft": 377
-    },
-    {
-      "address": "433 Dawn Ct #18",
-      "city": "Pembroke",
-      "state": "NH",
-      "zip": "03275",
-      "list_price": 830012,
-      "beds": 3,
-      "baths": 2,
-      "sqft": 1920,
-      "year_built": 2026,
-      "property_type": "Condo",
-      "lot_acres": null,
-      "lot_sqft": 0,
-      "lat": 43.166938,
-      "lon": -71.442833,
-      "source_url": "https://www.movoto.com/pembroke-nh/433-dawn-ct-apt-18-pembroke-nh-03275-890_5087105/",
-      "source": "movoto",
-      "photo_url": "https://pi.movoto.com/p/890/5087105_0_EbeBZa_p.webp",
-      "mls_number": "5087105",
-      "status": "PENDING",
-      "postal_city": "Pembroke",
-      "town": "Pembroke",
-      "days_on_market": 181,
-      "price_per_sqft": null
     },
     {
       "address": "The Madison Plan",
@@ -199,7 +174,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 735,
+      "days_on_market": 736,
       "price_per_sqft": 412
     },
     {
@@ -224,7 +199,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 228,
+      "days_on_market": 229,
       "price_per_sqft": 354
     },
     {
@@ -249,7 +224,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 44,
+      "days_on_market": 45,
       "price_per_sqft": 245
     },
     {
@@ -274,7 +249,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 54,
+      "days_on_market": 55,
       "price_per_sqft": 447
     },
     {
@@ -299,7 +274,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 36,
+      "days_on_market": 37,
       "price_per_sqft": 447
     },
     {
@@ -312,19 +287,19 @@
       "baths": 2.0,
       "sqft": 1857,
       "year_built": 2025,
-      "property_type": "Single Family",
+      "property_type": "Condo",
       "lot_acres": null,
       "lot_sqft": 0,
       "lat": 43.1658937,
       "lon": -71.4486939,
       "source_url": "https://www.redfin.com/NH/Pembroke/441-Blane-Cir-03275/unit-12/home/194773625",
       "source": "movoto",
-      "photo_url": "https://ssl.cdn-redfin.com/photo/154/islphoto/698/genIslnoResize.5102698_0.webp",
-      "mls_number": "5102698",
+      "photo_url": "https://ssl.cdn-redfin.com/photo/154/islphoto/696/genIslnoResize.5102696_0.webp",
+      "mls_number": "5102696",
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 95,
+      "days_on_market": 96,
       "price_per_sqft": 425
     },
     {
@@ -349,7 +324,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 21,
+      "days_on_market": 22,
       "price_per_sqft": 357
     },
     {
@@ -374,7 +349,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 735,
+      "days_on_market": 736,
       "price_per_sqft": 349
     },
     {
@@ -399,7 +374,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 735,
+      "days_on_market": 736,
       "price_per_sqft": 351
     },
     {
@@ -424,7 +399,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 228,
+      "days_on_market": 229,
       "price_per_sqft": 395
     },
     {
@@ -449,7 +424,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 735,
+      "days_on_market": 736,
       "price_per_sqft": 394
     },
     {
@@ -474,7 +449,7 @@
       "status": "PENDING",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 27,
+      "days_on_market": 28,
       "price_per_sqft": null
     },
     {
@@ -499,7 +474,7 @@
       "status": "ACTIVE",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 35,
+      "days_on_market": 36,
       "price_per_sqft": null
     },
     {
@@ -524,7 +499,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 36,
+      "days_on_market": 37,
       "price_per_sqft": null
     },
     {
@@ -549,7 +524,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 119,
+      "days_on_market": 120,
       "price_per_sqft": 344
     },
     {
@@ -574,7 +549,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 228,
+      "days_on_market": 229,
       "price_per_sqft": 397
     },
     {
@@ -599,7 +574,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 735,
+      "days_on_market": 736,
       "price_per_sqft": 357
     },
     {
@@ -624,7 +599,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 735,
+      "days_on_market": 736,
       "price_per_sqft": 398
     },
     {
@@ -649,7 +624,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 12,
+      "days_on_market": 13,
       "price_per_sqft": 401
     },
     {
@@ -674,7 +649,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 12,
+      "days_on_market": 13,
       "price_per_sqft": 317
     },
     {
@@ -687,7 +662,7 @@
       "baths": 2.5,
       "sqft": 2639,
       "year_built": 2024,
-      "property_type": "Single Family",
+      "property_type": "Condo",
       "lot_acres": 1.18,
       "lot_sqft": 51400,
       "lat": 43.160243,
@@ -699,7 +674,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 78,
+      "days_on_market": 79,
       "price_per_sqft": 275
     },
     {
@@ -724,7 +699,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 94,
+      "days_on_market": 95,
       "price_per_sqft": 168
     },
     {
@@ -749,7 +724,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 735,
+      "days_on_market": 736,
       "price_per_sqft": 409
     },
     {
@@ -774,7 +749,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 118,
+      "days_on_market": 119,
       "price_per_sqft": 238
     },
     {
@@ -799,7 +774,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 735,
+      "days_on_market": 736,
       "price_per_sqft": 432
     },
     {
@@ -824,7 +799,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 735,
+      "days_on_market": 736,
       "price_per_sqft": 453
     },
     {
@@ -849,7 +824,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 735,
+      "days_on_market": 736,
       "price_per_sqft": 402
     },
     {
@@ -874,7 +849,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 735,
+      "days_on_market": 736,
       "price_per_sqft": 455
     },
     {
@@ -899,7 +874,7 @@
       "status": "Active",
       "postal_city": "Suncook",
       "town": "Pembroke",
-      "days_on_market": 735,
+      "days_on_market": 736,
       "price_per_sqft": 450
     },
     {
@@ -924,7 +899,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 15,
+      "days_on_market": 16,
       "price_per_sqft": 227
     },
     {
@@ -944,12 +919,12 @@
       "lon": -71.434794,
       "source_url": "https://www.movoto.com/suncook-nh/363-academy-rd-suncook-nh-03275/pid_96xlyf4nih/",
       "source": "movoto",
-      "photo_url": "https://pi.movoto.com/p/890/5105635_0_2EI2Qi_p.webp",
+      "photo_url": "https://pi.movoto.com/p/890/5105635_0_MbErUb_p.webp",
       "mls_number": "5105635",
       "status": "PENDING",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 75,
+      "days_on_market": 76,
       "price_per_sqft": null
     },
     {
@@ -958,24 +933,24 @@
       "state": "NH",
       "zip": "03275",
       "list_price": 550000,
-      "beds": 4,
-      "baths": 2.0,
+      "beds": null,
+      "baths": 2,
       "sqft": 2587,
       "year_built": 1888,
-      "property_type": "Townhouse",
+      "property_type": "Multifamily",
       "lot_acres": 0.12,
       "lot_sqft": 5227,
-      "lat": 43.131744,
-      "lon": -71.4512522,
-      "source_url": "https://www.redfin.com/NH/Pembroke/14-Church-St-03275/home/88235926",
-      "source": "redfin",
-      "photo_url": "https://ssl.cdn-redfin.com/photo/154/islphoto/063/genIslnoResize.5103063_2.webp",
+      "lat": 43.131725,
+      "lon": -71.45119,
+      "source_url": "https://www.movoto.com/pembroke-nh/12-14-church-st-pembroke-nh-03275-890_4668667/",
+      "source": "movoto",
+      "photo_url": "https://pi.movoto.com/p/890/5103063_0_qYm6re_p.webp",
       "mls_number": "5103063",
-      "status": "Active",
+      "status": "PENDING",
       "postal_city": "Pembroke",
       "town": "Pembroke",
       "days_on_market": 92,
-      "price_per_sqft": 213
+      "price_per_sqft": null
     },
     {
       "address": "643 4Th Range Rd",
@@ -999,7 +974,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 22,
+      "days_on_market": 23,
       "price_per_sqft": 309
     },
     {
@@ -1024,7 +999,7 @@
       "status": "PENDING",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 75,
+      "days_on_market": 76,
       "price_per_sqft": null
     },
     {
@@ -1049,7 +1024,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 70,
+      "days_on_market": 71,
       "price_per_sqft": 450
     },
     {
@@ -1074,7 +1049,7 @@
       "status": "PENDING",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 122,
+      "days_on_market": 123,
       "price_per_sqft": null
     },
     {
@@ -1099,7 +1074,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 102,
+      "days_on_market": 103,
       "price_per_sqft": 354
     },
     {
@@ -1124,7 +1099,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 35,
+      "days_on_market": 36,
       "price_per_sqft": 253
     },
     {
@@ -1149,7 +1124,7 @@
       "status": "PENDING",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 31,
+      "days_on_market": 32,
       "price_per_sqft": null
     },
     {
@@ -1174,7 +1149,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 5,
+      "days_on_market": 6,
       "price_per_sqft": 178
     },
     {
@@ -1199,7 +1174,7 @@
       "status": "PENDING",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 38,
+      "days_on_market": 39,
       "price_per_sqft": null
     },
     {
@@ -1224,7 +1199,7 @@
       "status": "PENDING",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 11,
+      "days_on_market": 12,
       "price_per_sqft": null
     },
     {
@@ -1249,7 +1224,7 @@
       "status": "ACTIVE",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 497,
+      "days_on_market": 498,
       "price_per_sqft": null
     },
     {
@@ -1274,7 +1249,7 @@
       "status": "Active",
       "postal_city": "Allenstown",
       "town": "Pembroke",
-      "days_on_market": 489,
+      "days_on_market": 490,
       "price_per_sqft": null
     },
     {
@@ -1299,7 +1274,7 @@
       "status": "PENDING",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 20,
+      "days_on_market": 21,
       "price_per_sqft": null
     },
     {
@@ -1324,7 +1299,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 5,
+      "days_on_market": 6,
       "price_per_sqft": 235
     },
     {
@@ -1349,7 +1324,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 20,
+      "days_on_market": 21,
       "price_per_sqft": 299
     },
     {
@@ -1374,7 +1349,7 @@
       "status": "PENDING",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 25,
+      "days_on_market": 26,
       "price_per_sqft": null
     },
     {
@@ -1399,7 +1374,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 55,
+      "days_on_market": 56,
       "price_per_sqft": 228
     },
     {
@@ -1424,7 +1399,7 @@
       "status": "Active",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 20,
+      "days_on_market": 21,
       "price_per_sqft": null
     },
     {
@@ -1449,7 +1424,7 @@
       "status": "PENDING",
       "postal_city": "Pembroke",
       "town": "Pembroke",
-      "days_on_market": 32,
+      "days_on_market": 33,
       "price_per_sqft": null
     }
   ],
@@ -1461,18 +1436,18 @@
       "redfin": {
         "status": 200,
         "requests": 3,
-        "raw_homes": 54,
-        "photos_matched": 54
+        "raw_homes": 53,
+        "photos_matched": 53
       },
       "movoto": {
         "status": 200,
-        "raw_listings": 40
+        "raw_listings": 39
       },
       "town_filter": {
         "method": "osm_boundary",
         "outside_boundary": 9,
         "no_coordinates": 0,
-        "kept": 58
+        "kept": 57
       }
     }
   }
