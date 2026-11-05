@@ -1,25 +1,14 @@
 {
- "generated_at": "2026-11-04T10:31:24.339812Z",
+ "generated_at": "2026-11-05T10:31:27.361081Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-11-04",
+ "today": "2026-11-05",
  "counts": {
-  "events": 28,
-  "meetings": 13,
+  "events": 27,
+  "meetings": 12,
   "other": 15,
   "errors": 0
  },
  "meetings": [
-  {
-   "date": "2026-11-04",
-   "time": "6:00 PM",
-   "all_day": false,
-   "title": "Select Board Meeting",
-   "eid": "500",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=500",
-   "is_meeting": true,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
   {
    "date": "2026-11-09",
    "time": "5:30 PM",

@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-04T10:30:37.589468+00:00",
+ "generated_at": "2026-11-05T10:30:37.569312+00:00",
  "source": "Current active listings (Redfin / Movoto) matched to Town of Pembroke property records",
- "count": 20,
+ "count": 21,
  "below_assessment_count": 4,
  "listings": [
   {
@@ -408,6 +408,37 @@
    "match_miles": 0.041
   },
   {
+   "address": "6 Donna Dr",
+   "city": "Pembroke",
+   "state": "NH",
+   "zip": "03275",
+   "list_price": 439000,
+   "assessed": 344500,
+   "difference": 94500,
+   "pct_of_assessed": 27.4,
+   "below_assessment": false,
+   "lat": 43.159723,
+   "lon": -71.4719748,
+   "beds": 3,
+   "baths": 2.0,
+   "sqft": 1688,
+   "property_type": "Single Family",
+   "year_built": 1986,
+   "lot_acres": 0.47,
+   "source_url": "https://www.redfin.com/NH/Pembroke/6-Donna-Dr-03275/home/108646885",
+   "source": "redfin",
+   "parcel_address": "6 DONNA DR",
+   "cama": "565-0081-045-000",
+   "town_use": "SINGLE FAM",
+   "town_beds": "2",
+   "town_baths": "2",
+   "town_sqft": "1304",
+   "town_year_built": "1986",
+   "town_acres": 0.469137,
+   "zone": "R-1A",
+   "match_miles": 0.005
+  },
+  {
    "address": "382 Perley Ave",
    "city": "Pembroke",
    "state": "NH",
@@ -625,7 +656,7 @@
    "match_miles": 0.004
   }
  ],
- "total_count": 56,
+ "total_count": 57,
  "unmatched_count": 36,
  "unmatched_listings": [
   {
@@ -1049,17 +1080,17 @@
    "no_assessment_reason": "new_construction"
   },
   {
-   "address": "220 Belknap Dr Unit A",
+   "address": "220 Belknap Dr #A",
    "city": "Pembroke",
    "state": "NH",
    "zip": "03275",
    "list_price": 439000,
    "beds": 2,
-   "baths": 2.5,
+   "baths": 3,
    "sqft": 1732,
    "property_type": "Condo",
-   "source_url": "https://www.redfin.com/NH/Pembroke/220-Belknap-Dr-03275/unit-A/home/108646773",
-   "source": "redfin",
+   "source_url": "https://www.movoto.com/suncook-nh/220-belknap-dr-a-suncook-nh-03275/pid_ejvlyf4nih/",
+   "source": "movoto",
    "no_assessment_reason": "condo_unit"
   },
   {

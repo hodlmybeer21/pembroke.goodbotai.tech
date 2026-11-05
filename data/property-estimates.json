@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-04T10:30:37.660927+00:00",
+ "generated_at": "2026-11-05T10:30:37.640141+00:00",
  "method": "Median of up to four comparable recent arm's-length sales in Pembroke, each adjusted to the home's square footage using the price per square foot fitted across all qualified sales in the pool. Homes with fewer than three comparable sales get no estimate. This is an estimate, not an appraisal.",
  "pool_size": 165,
  "price_per_sqft_slope": 140.21,
- "count": 331,
- "median_spread_pct": 24.3,
+ "count": 332,
+ "median_spread_pct": 24.4,
  "estimates": [
   {
    "address": "330A&B ACADEMY RD",
@@ -14509,6 +14509,50 @@
    "list_price": 470000.0,
    "assessed": 427200.0,
    "cama": "561-0002-000-000"
+  },
+  {
+   "address": "6 Donna Dr",
+   "kind": "listed",
+   "estimate": 528065,
+   "low": 473082,
+   "high": 659534,
+   "comps": [
+    {
+     "address": "424 TERRIE DR",
+     "price": 535000.0,
+     "date": "2025-11-06",
+     "sqft": 1768.0,
+     "beds": 3.0,
+     "miles": 0.1
+    },
+    {
+     "address": "446 TERRIE DR",
+     "price": 528000.0,
+     "date": "2025-07-02",
+     "sqft": 1657.0,
+     "beds": 3.0,
+     "miles": 0.1
+    },
+    {
+     "address": "412 DEERPATH LANE",
+     "price": 485000.0,
+     "date": "2026-01-14",
+     "sqft": 1773.0,
+     "beds": 3.0,
+     "miles": 0.35
+    },
+    {
+     "address": "492 WOODLAWN RIDGE RD",
+     "price": 650000.0,
+     "date": "2026-05-28",
+     "sqft": 1620.0,
+     "beds": 3.0,
+     "miles": 0.84
+    }
+   ],
+   "list_price": 439000.0,
+   "assessed": 344500.0,
+   "cama": "565-0081-045-000"
   },
   {
    "address": "382 Perley Ave",
