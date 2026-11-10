@@ -1,36 +1,14 @@
 {
- "generated_at": "2026-11-09T10:31:12.255853Z",
+ "generated_at": "2026-11-10T10:31:11.859885Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-11-09",
+ "today": "2026-11-10",
  "counts": {
-  "events": 28,
-  "meetings": 13,
+  "events": 26,
+  "meetings": 11,
   "other": 15,
   "errors": 0
  },
  "meetings": [
-  {
-   "date": "2026-11-09",
-   "time": "5:30 PM",
-   "all_day": false,
-   "title": "Roads Committee Meeting",
-   "eid": "539",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=539",
-   "is_meeting": true,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
-  {
-   "date": "2026-11-09",
-   "time": "7:00 PM",
-   "all_day": false,
-   "title": "Conservation Commission Meeting",
-   "eid": "540",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=540",
-   "is_meeting": true,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
   {
    "date": "2026-11-10",
    "time": "6:30 PM",
