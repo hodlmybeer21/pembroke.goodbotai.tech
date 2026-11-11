@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-10T10:31:11.859885Z",
+ "generated_at": "2026-11-11T10:31:10.005973Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-11-10",
+ "today": "2026-11-11",
  "counts": {
   "events": 26,
   "meetings": 11,
@@ -10,12 +10,12 @@
  },
  "meetings": [
   {
-   "date": "2026-11-10",
-   "time": "6:30 PM",
+   "date": "2026-11-16",
+   "time": "5:00 PM",
    "all_day": false,
-   "title": "Planning Board Workshop",
-   "eid": "440",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=440",
+   "title": "Energy Committee Meeting",
+   "eid": "541",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=541",
    "is_meeting": true,
    "last_meeting": null,
    "last_minutes_url": null
