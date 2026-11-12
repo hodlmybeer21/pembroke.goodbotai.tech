@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-11T10:31:10.005973Z",
+ "generated_at": "2026-11-12T10:31:10.443475Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-11-11",
+ "today": "2026-11-12",
  "counts": {
-  "events": 26,
+  "events": 25,
   "meetings": 11,
-  "other": 15,
+  "other": 14,
   "errors": 0
  },
  "meetings": [
@@ -132,17 +132,6 @@
   }
  ],
  "other": [
-  {
-   "date": "2026-11-11",
-   "time": "8:00 AM",
-   "all_day": false,
-   "title": "Veterans Day- Office Closed",
-   "eid": "404",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=404",
-   "is_meeting": false,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
   {
    "date": "2026-11-23",
    "time": "",
