@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-11-12T10:30:19.351294+00:00",
+ "generated_at": "2026-11-13T10:30:19.084360+00:00",
  "method": "Median of up to four comparable recent arm's-length sales in Pembroke, each adjusted to the home's square footage using the price per square foot fitted across all qualified sales in the pool. Homes with fewer than three comparable sales get no estimate. This is an estimate, not an appraisal.",
- "pool_size": 165,
- "price_per_sqft_slope": 140.21,
+ "pool_size": 163,
+ "price_per_sqft_slope": 139.76,
  "count": 332,
- "median_spread_pct": 24.4,
+ "median_spread_pct": 23.8,
  "estimates": [
   {
    "address": "330A&B ACADEMY RD",
    "kind": "sold",
-   "estimate": 507665,
+   "estimate": 507633,
    "low": 460000,
-   "high": 647334,
+   "high": 647390,
    "comps": [
     {
      "address": "320A&B ACADEMY RD",
@@ -54,9 +54,9 @@
   {
    "address": "338 NO PEMBROKE RD",
    "kind": "sold",
-   "estimate": 700865,
-   "low": 624439,
-   "high": 749734,
+   "estimate": 700854,
+   "low": 624441,
+   "high": 749448,
    "comps": [
     {
      "address": "611 NO PEMBROKE RD",
@@ -99,9 +99,9 @@
   {
    "address": "44 SHERWOOD MEADOWS",
    "kind": "sold",
-   "estimate": 459975,
-   "low": 385556,
-   "high": 512949,
+   "estimate": 460007,
+   "low": 385650,
+   "high": 512844,
    "comps": [
     {
      "address": "228 PEMBROKE HILL RD",
@@ -144,9 +144,9 @@
   {
    "address": "503 ASHLEY DR",
    "kind": "sold",
-   "estimate": 643836,
-   "low": 569139,
-   "high": 720288,
+   "estimate": 643760,
+   "low": 569397,
+   "high": 720143,
    "comps": [
     {
      "address": "507 ASHLEY DR",
@@ -189,9 +189,9 @@
   {
    "address": "147 TINA DR",
    "kind": "sold",
-   "estimate": 544135,
-   "low": 536920,
-   "high": 625418,
+   "estimate": 544146,
+   "low": 536834,
+   "high": 625465,
    "comps": [
     {
      "address": "214  DEARBORN RD",
@@ -234,9 +234,9 @@
   {
    "address": "42 MASON AVE",
    "kind": "sold",
-   "estimate": 486561,
-   "low": 475568,
-   "high": 521724,
+   "estimate": 486559,
+   "low": 475423,
+   "high": 521629,
    "comps": [
     {
      "address": "7 DONALD AVE",
@@ -279,9 +279,9 @@
   {
    "address": "8 UNION ST",
    "kind": "sold",
-   "estimate": 332217,
-   "low": 293037,
-   "high": 419430,
+   "estimate": 332266,
+   "low": 293043,
+   "high": 419623,
    "comps": [
     {
      "address": "6 CENTRAL ST",
@@ -324,9 +324,9 @@
   {
    "address": "383 ROWE AVE",
    "kind": "sold",
-   "estimate": 506097,
-   "low": 441737,
-   "high": 557947,
+   "estimate": 506017,
+   "low": 441572,
+   "high": 557890,
    "comps": [
     {
      "address": "357 PEMBROKE ST",
@@ -369,9 +369,9 @@
   {
    "address": "6-8 PLEASANT ST",
    "kind": "sold",
-   "estimate": 494445,
-   "low": 459054,
-   "high": 575936,
+   "estimate": 494477,
+   "low": 459281,
+   "high": 575901,
    "comps": [
     {
      "address": "14 HIGH ST",
@@ -414,9 +414,9 @@
   {
    "address": "163-165 MAIN ST",
    "kind": "sold",
-   "estimate": 488762,
-   "low": 413007,
-   "high": 538456,
+   "estimate": 488758,
+   "low": 413249,
+   "high": 538422,
    "comps": [
     {
      "address": "18 BROADWAY",
@@ -459,9 +459,9 @@
   {
    "address": "542 CROSS COUNTRY RD",
    "kind": "sold",
-   "estimate": 600986,
-   "low": 517840,
-   "high": 653082,
+   "estimate": 600887,
+   "low": 518054,
+   "high": 653120,
    "comps": [
     {
      "address": "634 BOROUGH RD",
@@ -504,9 +504,9 @@
   {
    "address": "238 ALEXANDER DR",
    "kind": "sold",
-   "estimate": 604002,
-   "low": 492384,
-   "high": 677015,
+   "estimate": 603869,
+   "low": 492376,
+   "high": 676897,
    "comps": [
     {
      "address": "331 CHURCH RD",
@@ -549,9 +549,9 @@
   {
    "address": "520 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 442504,
-   "low": 420086,
-   "high": 527662,
+   "estimate": 442517,
+   "low": 420245,
+   "high": 527701,
    "comps": [
     {
      "address": "526 PEMBROKE ST",
@@ -594,9 +594,9 @@
   {
    "address": "14 BRITTANY CIRCLE",
    "kind": "sold",
-   "estimate": 568203,
-   "low": 554392,
-   "high": 579582,
+   "estimate": 568153,
+   "low": 554410,
+   "high": 579535,
    "comps": [
     {
      "address": "214  DEARBORN RD",
@@ -639,9 +639,9 @@
   {
    "address": "435 TERRIE DR",
    "kind": "sold",
-   "estimate": 492574,
-   "low": 440582,
-   "high": 609059,
+   "estimate": 492587,
+   "low": 440535,
+   "high": 609190,
    "comps": [
     {
      "address": "43 DONNA DR",
@@ -684,9 +684,9 @@
   {
    "address": "10 LINDY ST",
    "kind": "sold",
-   "estimate": 317122,
-   "low": 253638,
-   "high": 389845,
+   "estimate": 317203,
+   "low": 253770,
+   "high": 389963,
    "comps": [
     {
      "address": "23 PLEASANT ST",
@@ -729,9 +729,9 @@
   {
    "address": "160 MAIN ST",
    "kind": "sold",
-   "estimate": 575896,
-   "low": 564831,
-   "high": 597020,
+   "estimate": 575669,
+   "low": 564850,
+   "high": 596806,
    "comps": [
     {
      "address": "9 PINE ST",
@@ -774,9 +774,9 @@
   {
    "address": "9 DONALD AVE",
    "kind": "sold",
-   "estimate": 512669,
-   "low": 432658,
-   "high": 573693,
+   "estimate": 512564,
+   "low": 432576,
+   "high": 573665,
    "comps": [
     {
      "address": "147 TINA DR",
@@ -819,9 +819,9 @@
   {
    "address": "6 CENTRAL ST",
    "kind": "sold",
-   "estimate": 342835,
-   "low": 319111,
-   "high": 359625,
+   "estimate": 342803,
+   "low": 319130,
+   "high": 359658,
    "comps": [
     {
      "address": "23 PLEASANT ST",
@@ -864,9 +864,9 @@
   {
    "address": "15 FAIRVIEW AVE",
    "kind": "sold",
-   "estimate": 453107,
-   "low": 397045,
-   "high": 478831,
+   "estimate": 453113,
+   "low": 397077,
+   "high": 478850,
    "comps": [
     {
      "address": "86 BROADWAY",
@@ -909,9 +909,9 @@
   {
    "address": "762 ROBINSON RD",
    "kind": "sold",
-   "estimate": 714844,
-   "low": 656306,
-   "high": 771597,
+   "estimate": 714685,
+   "low": 656165,
+   "high": 771432,
    "comps": [
     {
      "address": "890 WELLINGTON WAY",
@@ -954,9 +954,9 @@
   {
    "address": "19 WHITTEMORE RD",
    "kind": "sold",
-   "estimate": 591633,
-   "low": 462671,
-   "high": 608355,
+   "estimate": 591627,
+   "low": 462519,
+   "high": 608536,
    "comps": [
     {
      "address": "440 MICOL RD",
@@ -999,9 +999,9 @@
   {
    "address": "9 PINE ST",
    "kind": "sold",
-   "estimate": 533215,
-   "low": 496302,
-   "high": 623607,
+   "estimate": 533396,
+   "low": 496426,
+   "high": 623420,
    "comps": [
     {
      "address": "160 MAIN ST",
@@ -1044,9 +1044,9 @@
   {
    "address": "526 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 430738,
-   "low": 403534,
-   "high": 606956,
+   "estimate": 430742,
+   "low": 403504,
+   "high": 607093,
    "comps": [
     {
      "address": "203 BRICKETT HILL RD",
@@ -1089,9 +1089,9 @@
   {
    "address": "235 BUCK ST",
    "kind": "sold",
-   "estimate": 445393,
-   "low": 377429,
-   "high": 563591,
+   "estimate": 445450,
+   "low": 377453,
+   "high": 563611,
    "comps": [
     {
      "address": "244 BUCK ST",
@@ -1134,9 +1134,9 @@
   {
    "address": "365A&B PEMBROKE ST",
    "kind": "sold",
-   "estimate": 466798,
-   "low": 391865,
-   "high": 576357,
+   "estimate": 466824,
+   "low": 391939,
+   "high": 576321,
    "comps": [
     {
      "address": "422 DEERPATH LANE",
@@ -1179,9 +1179,9 @@
   {
    "address": "158A&B TINA DR",
    "kind": "sold",
-   "estimate": 584678,
-   "low": 456754,
-   "high": 709026,
+   "estimate": 584575,
+   "low": 456596,
+   "high": 708885,
    "comps": [
     {
      "address": "316 CHURCH RD",
@@ -1224,9 +1224,9 @@
   {
    "address": "12 LINDY ST",
    "kind": "sold",
-   "estimate": 382546,
-   "low": 346881,
-   "high": 481765,
+   "estimate": 382533,
+   "low": 346878,
+   "high": 481797,
    "comps": [
     {
      "address": "7 HIGH ST",
@@ -1269,9 +1269,9 @@
   {
    "address": "32 TURNPIKE ST",
    "kind": "sold",
-   "estimate": 389586,
-   "low": 329487,
-   "high": 557334,
+   "estimate": 389573,
+   "low": 329472,
+   "high": 557390,
    "comps": [
     {
      "address": "8 CENTRAL ST",
@@ -1314,9 +1314,9 @@
   {
    "address": "410 EAST VIEW DR",
    "kind": "sold",
-   "estimate": 509672,
-   "low": 444026,
-   "high": 670604,
+   "estimate": 509689,
+   "low": 443885,
+   "high": 670681,
    "comps": [
     {
      "address": "182-184 BUCK ST",
@@ -1359,9 +1359,9 @@
   {
    "address": "701 ELEY LANE",
    "kind": "sold",
-   "estimate": 412187,
-   "low": 376683,
-   "high": 618222,
+   "estimate": 412194,
+   "low": 376677,
+   "high": 618260,
    "comps": [
     {
      "address": "719 ELEY LANE",
@@ -1404,9 +1404,9 @@
   {
    "address": "7 HIGH ST",
    "kind": "sold",
-   "estimate": 394696,
+   "estimate": 394705,
    "low": 324860,
-   "high": 552707,
+   "high": 552778,
    "comps": [
     {
      "address": "8 CENTRAL ST",
@@ -1449,9 +1449,9 @@
   {
    "address": "448 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 416818,
-   "low": 405005,
-   "high": 448873,
+   "estimate": 416715,
+   "low": 404909,
+   "high": 448803,
    "comps": [
     {
      "address": "450 PEMBROKE ST",
@@ -1494,9 +1494,9 @@
   {
    "address": "492 WOODLAWN RIDGE RD",
    "kind": "sold",
-   "estimate": 518531,
-   "low": 473365,
-   "high": 553508,
+   "estimate": 518572,
+   "low": 473354,
+   "high": 553449,
    "comps": [
     {
      "address": "203 BRICKETT HILL RD",
@@ -1539,9 +1539,9 @@
   {
    "address": "225 MAIN ST",
    "kind": "sold",
-   "estimate": 361401,
-   "low": 341725,
-   "high": 399154,
+   "estimate": 361463,
+   "low": 341800,
+   "high": 399252,
    "comps": [
     {
      "address": "7 DONALD AVE",
@@ -1584,9 +1584,9 @@
   {
    "address": "647 CROSS COUNTRY RD",
    "kind": "sold",
-   "estimate": 418832,
-   "low": 388460,
-   "high": 521491,
+   "estimate": 418828,
+   "low": 388417,
+   "high": 521381,
    "comps": [
     {
      "address": "701 ELEY LANE",
@@ -1629,9 +1629,9 @@
   {
    "address": "190 BUCK ST",
    "kind": "sold",
-   "estimate": 369764,
-   "low": 333546,
-   "high": 401868,
+   "estimate": 369799,
+   "low": 333662,
+   "high": 401894,
    "comps": [
     {
      "address": "65 1/2 BROADWAY",
@@ -1674,9 +1674,9 @@
   {
    "address": "8 CENTRAL ST",
    "kind": "sold",
-   "estimate": 360326,
+   "estimate": 360356,
    "low": 346040,
-   "high": 427281,
+   "high": 427450,
    "comps": [
     {
      "address": "7 HIGH ST",
@@ -1719,9 +1719,9 @@
   {
    "address": "214  DEARBORN RD",
    "kind": "sold",
-   "estimate": 582082,
-   "low": 546810,
-   "high": 645608,
+   "estimate": 582035,
+   "low": 546874,
+   "high": 645590,
    "comps": [
     {
      "address": "14 BRITTANY CIRCLE",
@@ -1764,9 +1764,9 @@
   {
    "address": "12 MILLARD ST",
    "kind": "sold",
-   "estimate": 437923,
-   "low": 268923,
-   "high": 553598,
+   "estimate": 437874,
+   "low": 268959,
+   "high": 553602,
    "comps": [
     {
      "address": "47 BROADWAY",
@@ -1809,9 +1809,9 @@
   {
    "address": "169 TINA DR",
    "kind": "sold",
-   "estimate": 470581,
-   "low": 423265,
-   "high": 558543,
+   "estimate": 457233,
+   "low": 389754,
+   "high": 558579,
    "comps": [
     {
      "address": "365A&B PEMBROKE ST",
@@ -1820,14 +1820,6 @@
      "sqft": 1161.0,
      "beds": 4.0,
      "miles": 1.53
-    },
-    {
-     "address": "40 MASON AVE",
-     "price": 466500.0,
-     "date": "2023-11-13",
-     "sqft": 1196.0,
-     "beds": 4.0,
-     "miles": 0.63
     },
     {
      "address": "17 PLEASANT ST",
@@ -1844,6 +1836,14 @@
      "sqft": 1430.0,
      "beds": 4.0,
      "miles": 1.3
+    },
+    {
+     "address": "307 DEARBORN RD",
+     "price": 386400.0,
+     "date": "2025-12-11",
+     "sqft": 1056.0,
+     "beds": 3.0,
+     "miles": 0.33
     }
    ],
    "sale_date": "2026-05-11",
@@ -1854,9 +1854,9 @@
   {
    "address": "325 PEMBROKE HILL RD",
    "kind": "sold",
-   "estimate": 389078,
-   "low": 224439,
-   "high": 433917,
+   "estimate": 389082,
+   "low": 224441,
+   "high": 433923,
    "comps": [
     {
      "address": "243 BRICKETT HILL RD",
@@ -1899,9 +1899,9 @@
   {
    "address": "423 BUCK ST",
    "kind": "sold",
-   "estimate": 429066,
+   "estimate": 429053,
    "low": 386400,
-   "high": 487683,
+   "high": 487677,
    "comps": [
     {
      "address": "307 DEARBORN RD",
@@ -1944,9 +1944,9 @@
   {
    "address": "316 CHURCH RD",
    "kind": "sold",
-   "estimate": 603598,
-   "low": 525898,
-   "high": 713232,
+   "estimate": 603602,
+   "low": 525688,
+   "high": 713078,
    "comps": [
     {
      "address": "260 CHURCH RD",
@@ -1989,9 +1989,9 @@
   {
    "address": "481 WOODLAWN RIDGE RD",
    "kind": "sold",
-   "estimate": 534581,
-   "low": 418085,
-   "high": 666402,
+   "estimate": 534728,
+   "low": 418075,
+   "high": 666398,
    "comps": [
     {
      "address": "18 LINDY ST",
@@ -2034,9 +2034,9 @@
   {
    "address": "202 BEACON HILL RD",
    "kind": "sold",
-   "estimate": 411219,
-   "low": 274532,
-   "high": 485608,
+   "estimate": 411135,
+   "low": 274549,
+   "high": 485590,
    "comps": [
     {
      "address": "6 CENTRAL ST",
@@ -2079,9 +2079,9 @@
   {
    "address": "4 SIMPSON AVE",
    "kind": "sold",
-   "estimate": 362709,
-   "low": 327384,
-   "high": 429665,
+   "estimate": 362732,
+   "low": 327376,
+   "high": 429826,
    "comps": [
     {
      "address": "8 CENTRAL ST",
@@ -2124,9 +2124,9 @@
   {
    "address": "14 HIGH ST",
    "kind": "sold",
-   "estimate": 480683,
-   "low": 462372,
-   "high": 589677,
+   "estimate": 480762,
+   "low": 462603,
+   "high": 589598,
    "comps": [
     {
      "address": "17 PROSPECT ST",
@@ -2169,9 +2169,9 @@
   {
    "address": "3-5 BROADWAY",
    "kind": "sold",
-   "estimate": 552291,
-   "low": 498175,
-   "high": 646882,
+   "estimate": 552225,
+   "low": 498100,
+   "high": 646621,
    "comps": [
     {
      "address": "5-7 PLEASANT ST",
@@ -2214,9 +2214,9 @@
   {
    "address": "821 CROSS COUNTRY RD",
    "kind": "sold",
-   "estimate": 740112,
-   "low": 718263,
-   "high": 779838,
+   "estimate": 739744,
+   "low": 718042,
+   "high": 780270,
    "comps": [
     {
      "address": "927 BOROUGH RD",
@@ -2259,9 +2259,9 @@
   {
    "address": "260 CHURCH RD",
    "kind": "sold",
-   "estimate": 540652,
-   "low": 477666,
-   "high": 580974,
+   "estimate": 540690,
+   "low": 477610,
+   "high": 581115,
    "comps": [
     {
      "address": "316 CHURCH RD",
@@ -2304,9 +2304,9 @@
   {
    "address": "855 CROSS COUNTRY RD",
    "kind": "sold",
-   "estimate": 706598,
-   "low": 671970,
-   "high": 777906,
+   "estimate": 706346,
+   "low": 671820,
+   "high": 777722,
    "comps": [
     {
      "address": "316 CHURCH RD",
@@ -2349,9 +2349,9 @@
   {
    "address": "357 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 394946,
-   "low": 383132,
-   "high": 424672,
+   "estimate": 394912,
+   "low": 383106,
+   "high": 424689,
    "comps": [
     {
      "address": "377 PERLEY AVE",
@@ -2394,9 +2394,9 @@
   {
    "address": "182-184 BUCK ST",
    "kind": "sold",
-   "estimate": 479764,
-   "low": 439199,
-   "high": 564396,
+   "estimate": 479820,
+   "low": 439329,
+   "high": 564319,
    "comps": [
     {
      "address": "410 EAST VIEW DR",
@@ -2439,9 +2439,9 @@
   {
    "address": "259 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 464867,
-   "low": 373162,
-   "high": 508584,
+   "estimate": 464724,
+   "low": 373286,
+   "high": 508875,
    "comps": [
     {
      "address": "61A&B GLASS ST",
@@ -2476,9 +2476,9 @@
   {
    "address": "60-62 BROADWAY",
    "kind": "sold",
-   "estimate": 1046720,
-   "low": 968242,
-   "high": 1187196,
+   "estimate": 1046891,
+   "low": 967896,
+   "high": 1187205,
    "comps": [
     {
      "address": "1 MIDDLE ST",
@@ -2513,9 +2513,9 @@
   {
    "address": "611 NO PEMBROKE RD",
    "kind": "sold",
-   "estimate": 662915,
-   "low": 597964,
-   "high": 808142,
+   "estimate": 662925,
+   "low": 598127,
+   "high": 807924,
    "comps": [
     {
      "address": "338 NO PEMBROKE RD",
@@ -2558,9 +2558,9 @@
   {
    "address": "667 BOROUGH RD",
    "kind": "sold",
-   "estimate": 600564,
-   "low": 556858,
-   "high": 649762,
+   "estimate": 600491,
+   "low": 557076,
+   "high": 649843,
    "comps": [
     {
      "address": "834 BOROUGH RD",
@@ -2603,9 +2603,9 @@
   {
    "address": "111 GLASS ST",
    "kind": "sold",
-   "estimate": 520865,
-   "low": 461680,
-   "high": 597709,
+   "estimate": 520854,
+   "low": 461723,
+   "high": 597732,
    "comps": [
     {
      "address": "13-15 BROADWAY",
@@ -2648,9 +2648,9 @@
   {
    "address": "12-14 CHURCH ST",
    "kind": "sold",
-   "estimate": 517101,
-   "low": 368635,
-   "high": 566642,
+   "estimate": 517142,
+   "low": 368646,
+   "high": 566509,
    "comps": [
     {
      "address": "163-165 MAIN ST",
@@ -2693,9 +2693,9 @@
   {
    "address": "704 CROSS COUNTRY RD",
    "kind": "sold",
-   "estimate": 475934,
-   "low": 365668,
-   "high": 497999,
+   "estimate": 475947,
+   "low": 365394,
+   "high": 497830,
    "comps": [
     {
      "address": "94 BROADWAY",
@@ -2738,9 +2738,9 @@
   {
    "address": "412 DEERPATH LANE",
    "kind": "sold",
-   "estimate": 539983,
-   "low": 494817,
-   "high": 671452,
+   "estimate": 539956,
+   "low": 494738,
+   "high": 671384,
    "comps": [
     {
      "address": "424 TERRIE DR",
@@ -2783,9 +2783,9 @@
   {
    "address": "834 BOROUGH RD",
    "kind": "sold",
-   "estimate": 605772,
-   "low": 453700,
-   "high": 696956,
+   "estimate": 605746,
+   "low": 453529,
+   "high": 697093,
    "comps": [
     {
      "address": "667 BOROUGH RD",
@@ -2828,9 +2828,9 @@
   {
    "address": "203 BRICKETT HILL RD",
    "kind": "sold",
-   "estimate": 484911,
-   "low": 460183,
-   "high": 646635,
+   "estimate": 484823,
+   "low": 460262,
+   "high": 646646,
    "comps": [
     {
      "address": "492 WOODLAWN RIDGE RD",
@@ -2873,9 +2873,9 @@
   {
    "address": "440 MICOL RD",
    "kind": "sold",
-   "estimate": 538875,
-   "low": 439760,
-   "high": 593035,
+   "estimate": 538950,
+   "low": 439888,
+   "high": 592961,
    "comps": [
     {
      "address": "422 DEERPATH LANE",
@@ -2918,9 +2918,9 @@
   {
    "address": "398 WEST VIEW TERRACE",
    "kind": "sold",
-   "estimate": 514554,
-   "low": 412479,
-   "high": 584672,
+   "estimate": 514524,
+   "low": 412396,
+   "high": 584689,
    "comps": [
     {
      "address": "423 BUCK ST",
@@ -2963,9 +2963,9 @@
   {
    "address": "509 ASHLEY DR",
    "kind": "sold",
-   "estimate": 654373,
-   "low": 598037,
-   "high": 659712,
+   "estimate": 654430,
+   "low": 598043,
+   "high": 659857,
    "comps": [
     {
      "address": "503 ASHLEY DR",
@@ -3008,9 +3008,9 @@
   {
    "address": "1 MIDDLE ST",
    "kind": "sold",
-   "estimate": 971046,
-   "low": 847804,
-   "high": 1049525,
+   "estimate": 970691,
+   "low": 847795,
+   "high": 1049686,
    "comps": [
     {
      "address": "7-9 BROADWAY",
@@ -3045,9 +3045,9 @@
   {
    "address": "233 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 470209,
-   "low": 417101,
-   "high": 570984,
+   "estimate": 470232,
+   "low": 417142,
+   "high": 570933,
    "comps": [
     {
      "address": "94 BROADWAY",
@@ -3090,9 +3090,9 @@
   {
    "address": "307 DEARBORN RD",
    "kind": "sold",
-   "estimate": 440535,
-   "low": 412662,
-   "high": 487683,
+   "estimate": 440503,
+   "low": 412701,
+   "high": 487677,
    "comps": [
     {
      "address": "423 BUCK ST",
@@ -3135,9 +3135,9 @@
   {
    "address": "228 PEMBROKE HILL RD",
    "kind": "sold",
-   "estimate": 502778,
-   "low": 455240,
-   "high": 590661,
+   "estimate": 502825,
+   "low": 455112,
+   "high": 590531,
    "comps": [
     {
      "address": "405 DEERPATH LANE",
@@ -3180,9 +3180,9 @@
   {
    "address": "224 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 509380,
-   "low": 487110,
-   "high": 553237,
+   "estimate": 509166,
+   "low": 486960,
+   "high": 552987,
    "comps": [
     {
      "address": "49 BROADWAY",
@@ -3225,9 +3225,9 @@
   {
    "address": "634 BOROUGH RD",
    "kind": "sold",
-   "estimate": 607568,
-   "low": 516963,
-   "high": 620777,
+   "estimate": 607551,
+   "low": 516957,
+   "high": 620570,
    "comps": [
     {
      "address": "542 CROSS COUNTRY RD",
@@ -3270,9 +3270,9 @@
   {
    "address": "8 SKYVIEW TERRACE",
    "kind": "sold",
-   "estimate": 476356,
-   "low": 402934,
-   "high": 515889,
+   "estimate": 476343,
+   "low": 402947,
+   "high": 515870,
    "comps": [
     {
      "address": "15 FAIRVIEW AVE",
@@ -3315,9 +3315,9 @@
   {
    "address": "422 DEERPATH LANE",
    "kind": "sold",
-   "estimate": 483124,
-   "low": 414579,
-   "high": 592614,
+   "estimate": 483265,
+   "low": 414581,
+   "high": 592541,
    "comps": [
     {
      "address": "440 MICOL RD",
@@ -3360,9 +3360,9 @@
   {
    "address": "82 SHEEP DAVIS RD",
    "kind": "sold",
-   "estimate": 391861,
-   "low": 380048,
-   "high": 423915,
+   "estimate": 391837,
+   "low": 380031,
+   "high": 423925,
    "comps": [
     {
      "address": "450 PEMBROKE ST",
@@ -3405,9 +3405,9 @@
   {
    "address": "320 NO PEMBROKE RD",
    "kind": "sold",
-   "estimate": 454070,
-   "low": 378829,
-   "high": 595509,
+   "estimate": 454091,
+   "low": 378853,
+   "high": 595619,
    "comps": [
     {
      "address": "647 CROSS COUNTRY RD",
@@ -3450,9 +3450,9 @@
   {
    "address": "43 DONNA DR",
    "kind": "sold",
-   "estimate": 495483,
+   "estimate": 495541,
    "low": 426000,
-   "high": 525418,
+   "high": 525465,
    "comps": [
     {
      "address": "435 TERRIE DR",
@@ -3495,9 +3495,9 @@
   {
    "address": "331 CHURCH RD",
    "kind": "sold",
-   "estimate": 626286,
-   "low": 589023,
-   "high": 674632,
+   "estimate": 626274,
+   "low": 588931,
+   "high": 674521,
    "comps": [
     {
      "address": "214  DEARBORN RD",
@@ -3540,9 +3540,9 @@
   {
    "address": "13 HILLCREST AVE",
    "kind": "sold",
-   "estimate": 554025,
-   "low": 464634,
-   "high": 594078,
+   "estimate": 553865,
+   "low": 464476,
+   "high": 593826,
    "comps": [
     {
      "address": "212 PEMBROKE ST",
@@ -3585,9 +3585,9 @@
   {
    "address": "424 TERRIE DR",
    "kind": "sold",
-   "estimate": 552152,
-   "low": 484299,
-   "high": 670751,
+   "estimate": 552190,
+   "low": 484301,
+   "high": 670685,
    "comps": [
     {
      "address": "412 DEERPATH LANE",
@@ -3630,9 +3630,9 @@
   {
    "address": "189 BUCK ST",
    "kind": "sold",
-   "estimate": 416989,
-   "low": 368193,
-   "high": 503077,
+   "estimate": 416927,
+   "low": 368122,
+   "high": 503041,
    "comps": [
     {
      "address": "32 TURNPIKE ST",
@@ -3675,9 +3675,9 @@
   {
    "address": "17 PROSPECT ST",
    "kind": "sold",
-   "estimate": 466371,
-   "low": 437695,
-   "high": 503123,
+   "estimate": 466518,
+   "low": 438005,
+   "high": 503202,
    "comps": [
     {
      "address": "14 HIGH ST",
@@ -3720,9 +3720,9 @@
   {
    "address": "34-42 GLASS ST",
    "kind": "sold",
-   "estimate": 736758,
-   "low": 485697,
-   "high": 1078954,
+   "estimate": 737104,
+   "low": 485404,
+   "high": 1079309,
    "comps": [
     {
      "address": "1 MIDDLE ST",
@@ -3757,9 +3757,9 @@
   {
    "address": "927 BOROUGH RD",
    "kind": "sold",
-   "estimate": 822217,
-   "low": 775109,
-   "high": 1110162,
+   "estimate": 821667,
+   "low": 774790,
+   "high": 1109730,
    "comps": [
     {
      "address": "821 CROSS COUNTRY RD",
@@ -3794,9 +3794,9 @@
   {
    "address": "377 PERLEY AVE",
    "kind": "sold",
-   "estimate": 405622,
-   "low": 378923,
-   "high": 418868,
+   "estimate": 405618,
+   "low": 378959,
+   "high": 418894,
    "comps": [
     {
      "address": "357 PEMBROKE ST",
@@ -3839,9 +3839,9 @@
   {
    "address": "508 BUCK ST",
    "kind": "sold",
-   "estimate": 517765,
-   "low": 499824,
-   "high": 651415,
+   "estimate": 517605,
+   "low": 499601,
+   "high": 651425,
    "comps": [
     {
      "address": "424 DEERPATH LANE",
@@ -3884,9 +3884,9 @@
   {
    "address": "40 DONNA DR",
    "kind": "sold",
-   "estimate": 369951,
-   "low": 359297,
-   "high": 403164,
+   "estimate": 369991,
+   "low": 359347,
+   "high": 403240,
    "comps": [
     {
      "address": "377 PERLEY AVE",
@@ -3929,9 +3929,9 @@
   {
    "address": "316-318 BOROUGH RD",
    "kind": "sold",
-   "estimate": 373176,
-   "low": 326167,
-   "high": 415082,
+   "estimate": 373206,
+   "low": 326195,
+   "high": 415120,
    "comps": [
     {
      "address": "82 SHEEP DAVIS RD",
@@ -3974,9 +3974,9 @@
   {
    "address": "5-7 PLEASANT ST",
    "kind": "sold",
-   "estimate": 572926,
-   "low": 513234,
-   "high": 662305,
+   "estimate": 572785,
+   "low": 513418,
+   "high": 661995,
    "comps": [
     {
      "address": "3-5 BROADWAY",
@@ -4019,9 +4019,9 @@
   {
    "address": "23 PLEASANT ST",
    "kind": "sold",
-   "estimate": 353876,
-   "low": 269482,
-   "high": 405688,
+   "estimate": 353927,
+   "low": 269563,
+   "high": 405756,
    "comps": [
     {
      "address": "6 CENTRAL ST",
@@ -4064,9 +4064,9 @@
   {
    "address": "7 DONALD AVE",
    "kind": "sold",
-   "estimate": 391088,
-   "low": 372571,
-   "high": 432328,
+   "estimate": 391049,
+   "low": 372547,
+   "high": 432311,
    "comps": [
     {
      "address": "1 RENARL AVE",
@@ -4109,9 +4109,9 @@
   {
    "address": "440 OLD BOROUGH RD",
    "kind": "sold",
-   "estimate": 400651,
-   "low": 350787,
-   "high": 425466,
+   "estimate": 400713,
+   "low": 350944,
+   "high": 425496,
    "comps": [
     {
      "address": "526 PEMBROKE ST",
@@ -4154,9 +4154,9 @@
   {
    "address": "536 CROSS COUNTRY RD",
    "kind": "sold",
-   "estimate": 580490,
-   "low": 458928,
-   "high": 742944,
+   "estimate": 580512,
+   "low": 458868,
+   "high": 742935,
    "comps": [
     {
      "address": "667 BOROUGH RD",
@@ -4199,9 +4199,9 @@
   {
    "address": "65 1/2 BROADWAY",
    "kind": "sold",
-   "estimate": 398432,
-   "low": 372709,
-   "high": 426402,
+   "estimate": 398492,
+   "low": 372732,
+   "high": 426398,
    "comps": [
     {
      "address": "190 BUCK ST",
@@ -4245,8 +4245,8 @@
    "address": "224 CHURCH RD",
    "kind": "sold",
    "estimate": 537500,
-   "low": 465230,
-   "high": 611958,
+   "low": 465294,
+   "high": 612048,
    "comps": [
     {
      "address": "15 FAIRVIEW AVE",
@@ -4289,9 +4289,9 @@
   {
    "address": "8 DONALD AVE",
    "kind": "sold",
-   "estimate": 450254,
-   "low": 408974,
-   "high": 563923,
+   "estimate": 450309,
+   "low": 408902,
+   "high": 563959,
    "comps": [
     {
      "address": "12 LINDY ST",
@@ -4334,9 +4334,9 @@
   {
    "address": "229 ACADEMY RD",
    "kind": "sold",
-   "estimate": 328291,
-   "low": 294532,
-   "high": 360212,
+   "estimate": 328353,
+   "low": 294549,
+   "high": 360272,
    "comps": [
     {
      "address": "10 LINDY ST",
@@ -4379,9 +4379,9 @@
   {
    "address": "418 ROSS RD",
    "kind": "sold",
-   "estimate": 533369,
+   "estimate": 533371,
    "low": 480000,
-   "high": 631492,
+   "high": 631551,
    "comps": [
     {
      "address": "435 TERRIE DR",
@@ -4424,9 +4424,9 @@
   {
    "address": "25 PROSPECT ST",
    "kind": "sold",
-   "estimate": 436399,
-   "low": 330293,
-   "high": 517890,
+   "estimate": 436616,
+   "low": 330222,
+   "high": 518040,
    "comps": [
     {
      "address": "17 PROSPECT ST",
@@ -4469,9 +4469,9 @@
   {
    "address": "243 BRICKETT HILL RD",
    "kind": "sold",
-   "estimate": 442203,
+   "estimate": 442261,
    "low": 225000,
-   "high": 500741,
+   "high": 500867,
    "comps": [
     {
      "address": "325 PEMBROKE HILL RD",
@@ -4514,9 +4514,9 @@
   {
    "address": "312 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 539653,
-   "low": 389526,
-   "high": 587533,
+   "estimate": 539582,
+   "low": 389470,
+   "high": 587334,
    "comps": [
     {
      "address": "236 PEMBROKE ST",
@@ -4559,9 +4559,9 @@
   {
    "address": "564A&B THIRD RANGE RD",
    "kind": "sold",
-   "estimate": 666638,
-   "low": 632010,
-   "high": 720002,
+   "estimate": 666513,
+   "low": 631988,
+   "high": 719955,
    "comps": [
     {
      "address": "316 CHURCH RD",
@@ -4604,9 +4604,9 @@
   {
    "address": "338 CHURCH RD",
    "kind": "sold",
-   "estimate": 509961,
-   "low": 439249,
-   "high": 533270,
+   "estimate": 509894,
+   "low": 439315,
+   "high": 533291,
    "comps": [
     {
      "address": "435 TERRIE DR",
@@ -4649,9 +4649,9 @@
   {
    "address": "450 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 395928,
-   "low": 341029,
-   "high": 429944,
+   "estimate": 395868,
+   "low": 341010,
+   "high": 429935,
    "comps": [
     {
      "address": "357 PEMBROKE ST",
@@ -4694,9 +4694,9 @@
   {
    "address": "10 BOW LANE",
    "kind": "sold",
-   "estimate": 613818,
-   "low": 541728,
-   "high": 676963,
+   "estimate": 613758,
+   "low": 541754,
+   "high": 676957,
    "comps": [
     {
      "address": "424 DEERPATH LANE",
@@ -4739,9 +4739,9 @@
   {
    "address": "446 TERRIE DR",
    "kind": "sold",
-   "estimate": 539066,
-   "low": 468736,
-   "high": 655188,
+   "estimate": 539053,
+   "low": 468788,
+   "high": 655171,
    "comps": [
     {
      "address": "424 TERRIE DR",
@@ -4784,9 +4784,9 @@
   {
    "address": "11 BROADWAY",
    "kind": "sold",
-   "estimate": 444426,
-   "low": 395631,
-   "high": 507894,
+   "estimate": 444498,
+   "low": 395351,
+   "high": 507949,
    "comps": [
     {
      "address": "163-165 MAIN ST",
@@ -4829,9 +4829,9 @@
   {
    "address": "18 BROADWAY",
    "kind": "sold",
-   "estimate": 558325,
-   "low": 549021,
-   "high": 600993,
+   "estimate": 558186,
+   "low": 548976,
+   "high": 600751,
    "comps": [
     {
      "address": "163-165 MAIN ST",
@@ -4874,9 +4874,9 @@
   {
    "address": "86 BROADWAY",
    "kind": "sold",
-   "estimate": 474952,
-   "low": 394942,
-   "high": 554579,
+   "estimate": 474969,
+   "low": 394980,
+   "high": 554581,
    "comps": [
     {
      "address": "15 FAIRVIEW AVE",
@@ -4919,9 +4919,9 @@
   {
    "address": "741 NO PEMBROKE RD",
    "kind": "sold",
-   "estimate": 598953,
-   "low": 571324,
-   "high": 781502,
+   "estimate": 598861,
+   "low": 571572,
+   "high": 781369,
    "comps": [
     {
      "address": "611 NO PEMBROKE RD",
@@ -4964,9 +4964,9 @@
   {
    "address": "411 EAST MEADOW LANE",
    "kind": "sold",
-   "estimate": 660261,
-   "low": 653743,
-   "high": 674952,
+   "estimate": 660088,
+   "low": 653651,
+   "high": 674969,
    "comps": [
     {
      "address": "521A&B FOURTH RANGE RD",
@@ -5009,9 +5009,9 @@
   {
    "address": "104 GLASS ST",
    "kind": "sold",
-   "estimate": 496568,
-   "low": 459943,
-   "high": 535276,
+   "estimate": 496508,
+   "low": 460151,
+   "high": 535371,
    "comps": [
     {
      "address": "163-165 MAIN ST",
@@ -5054,8 +5054,8 @@
   {
    "address": "234 ACADEMY RD",
    "kind": "sold",
-   "estimate": 468623,
-   "low": 444111,
+   "estimate": 468595,
+   "low": 444130,
    "high": 510000,
    "comps": [
     {
@@ -5099,9 +5099,9 @@
   {
    "address": "439 TERRIE DR",
    "kind": "sold",
-   "estimate": 746471,
-   "low": 722108,
-   "high": 814891,
+   "estimate": 746020,
+   "low": 721877,
+   "high": 815210,
    "comps": [
     {
      "address": "316 CHURCH RD",
@@ -5144,9 +5144,9 @@
   {
    "address": "507 ASHLEY DR",
    "kind": "sold",
-   "estimate": 688233,
-   "low": 572433,
-   "high": 707669,
+   "estimate": 688206,
+   "low": 572362,
+   "high": 707564,
    "comps": [
     {
      "address": "503 ASHLEY DR",
@@ -5189,9 +5189,9 @@
   {
    "address": "12 MELISSA DR",
    "kind": "sold",
-   "estimate": 477992,
+   "estimate": 478051,
    "low": 426000,
-   "high": 525418,
+   "high": 525465,
    "comps": [
     {
      "address": "43 DONNA DR",
@@ -5234,9 +5234,9 @@
   {
    "address": "210 ACADEMY RD",
    "kind": "sold",
-   "estimate": 370639,
-   "low": 339862,
-   "high": 419758,
+   "estimate": 370598,
+   "low": 339815,
+   "high": 419934,
    "comps": [
     {
      "address": "32 TURNPIKE ST",
@@ -5279,9 +5279,9 @@
   {
    "address": "33 PLEASANT ST",
    "kind": "sold",
-   "estimate": 406231,
-   "low": 324426,
-   "high": 445143,
+   "estimate": 406143,
+   "low": 387641,
+   "high": 445094,
    "comps": [
     {
      "address": "7 DONALD AVE",
@@ -5300,20 +5300,20 @@
      "miles": 0.29
     },
     {
-     "address": "198 MAIN ST",
-     "price": 320500.0,
-     "date": "2023-11-13",
-     "sqft": 1184.0,
-     "beds": 2.0,
-     "miles": 0.34
-    },
-    {
      "address": "225 MAIN ST",
      "price": 375000.0,
      "date": "2026-05-22",
      "sqft": 884.0,
      "beds": 2.0,
      "miles": 0.48
+    },
+    {
+     "address": "4 HILLCREST AVE",
+     "price": 365000.0,
+     "date": "2023-12-14",
+     "sqft": 1050.0,
+     "beds": 2.0,
+     "miles": 0.41
     }
    ],
    "sale_date": "2025-04-30",
@@ -5324,9 +5324,9 @@
   {
    "address": "3 OLD BEAR BROOK RD",
    "kind": "sold",
-   "estimate": 453037,
-   "low": 398203,
-   "high": 454429,
+   "estimate": 452958,
+   "low": 398153,
+   "high": 454453,
    "comps": [
     {
      "address": "246 CHURCH RD",
@@ -5369,9 +5369,9 @@
   {
    "address": "94 BROADWAY",
    "kind": "sold",
-   "estimate": 471915,
-   "low": 299209,
-   "high": 510285,
+   "estimate": 471925,
+   "low": 299147,
+   "high": 510189,
    "comps": [
     {
      "address": "233 PEMBROKE ST",
@@ -5414,9 +5414,9 @@
   {
    "address": "724 CLOUGH MILL RD",
    "kind": "sold",
-   "estimate": 518009,
-   "low": 425375,
-   "high": 560796,
+   "estimate": 518119,
+   "low": 425342,
+   "high": 560762,
    "comps": [
     {
      "address": "634 BOROUGH RD",
@@ -5459,9 +5459,9 @@
   {
    "address": "5 FAIRVIEW AVE",
    "kind": "sold",
-   "estimate": 480422,
-   "low": 454066,
-   "high": 519955,
+   "estimate": 480397,
+   "low": 454053,
+   "high": 519923,
    "comps": [
     {
      "address": "15 FAIRVIEW AVE",
@@ -5504,9 +5504,9 @@
   {
    "address": "330 NO PEMBROKE RD",
    "kind": "sold",
-   "estimate": 595390,
-   "low": 483175,
-   "high": 692814,
+   "estimate": 595540,
+   "low": 483229,
+   "high": 692613,
    "comps": [
     {
      "address": "338 NO PEMBROKE RD",
@@ -5549,9 +5549,9 @@
   {
    "address": "719 ELEY LANE",
    "kind": "sold",
-   "estimate": 410504,
-   "low": 398317,
-   "high": 616540,
+   "estimate": 410517,
+   "low": 398323,
+   "high": 616583,
    "comps": [
     {
      "address": "701 ELEY LANE",
@@ -5594,9 +5594,9 @@
   {
    "address": "237 FOURTH RANGE RD",
    "kind": "sold",
-   "estimate": 560433,
-   "low": 540504,
-   "high": 623135,
+   "estimate": 560192,
+   "low": 540710,
+   "high": 623061,
    "comps": [
     {
      "address": "307 PEMBROKE ST",
@@ -5631,9 +5631,9 @@
   {
    "address": "49 BROADWAY",
    "kind": "sold",
-   "estimate": 466542,
-   "low": 444344,
-   "high": 506126,
+   "estimate": 466537,
+   "low": 444378,
+   "high": 506027,
    "comps": [
     {
      "address": "224 PEMBROKE ST",
@@ -5676,9 +5676,9 @@
   {
    "address": "44 HIGH ST",
    "kind": "sold",
-   "estimate": 341195,
-   "low": 310418,
-   "high": 409577,
+   "estimate": 341248,
+   "low": 310465,
+   "high": 409626,
    "comps": [
     {
      "address": "12 LINDY ST",
@@ -5721,9 +5721,9 @@
   {
    "address": "212 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 598451,
-   "low": 521590,
-   "high": 735801,
+   "estimate": 598599,
+   "low": 521569,
+   "high": 735671,
    "comps": [
     {
      "address": "44 SHERWOOD MEADOWS",
@@ -5766,9 +5766,9 @@
   {
    "address": "644 BOROUGH RD",
    "kind": "sold",
-   "estimate": 527480,
-   "low": 451778,
-   "high": 735794,
+   "estimate": 527416,
+   "low": 451740,
+   "high": 735807,
    "comps": [
     {
      "address": "667 BOROUGH RD",
@@ -5811,9 +5811,9 @@
   {
    "address": "17 FAIRVIEW AVE",
    "kind": "sold",
-   "estimate": 391027,
-   "low": 379439,
-   "high": 433132,
+   "estimate": 391055,
+   "low": 379441,
+   "high": 433106,
    "comps": [
     {
      "address": "65 1/2 BROADWAY",
@@ -5856,9 +5856,9 @@
   {
    "address": "325 DEARBORN RD",
    "kind": "sold",
-   "estimate": 408950,
-   "low": 367357,
-   "high": 423355,
+   "estimate": 408929,
+   "low": 367406,
+   "high": 423366,
    "comps": [
     {
      "address": "7 DONALD AVE",
@@ -5901,9 +5901,9 @@
   {
    "address": "203 MEADOW LARK LANE",
    "kind": "sold",
-   "estimate": 470909,
-   "low": 414857,
-   "high": 506397,
+   "estimate": 470954,
+   "low": 414906,
+   "high": 506489,
    "comps": [
     {
      "address": "15 FAIRVIEW AVE",
@@ -5946,9 +5946,9 @@
   {
    "address": "19 SHERWOOD MEADOWS",
    "kind": "sold",
-   "estimate": 590072,
-   "low": 504862,
-   "high": 689494,
+   "estimate": 590024,
+   "low": 504815,
+   "high": 689336,
    "comps": [
     {
      "address": "10 BOW LANE",
@@ -5991,9 +5991,9 @@
   {
    "address": "494 WOODLAWN RIDGE RD",
    "kind": "sold",
-   "estimate": 540321,
-   "low": 383593,
-   "high": 568085,
+   "estimate": 540383,
+   "low": 383693,
+   "high": 568075,
    "comps": [
     {
      "address": "365A&B PEMBROKE ST",
@@ -6036,9 +6036,9 @@
   {
    "address": "567 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 542627,
-   "low": 477536,
-   "high": 724171,
+   "estimate": 542419,
+   "low": 477288,
+   "high": 723934,
    "comps": [
     {
      "address": "492 WOODLAWN RIDGE RD",
@@ -6081,9 +6081,9 @@
   {
    "address": "47 BROADWAY",
    "kind": "sold",
-   "estimate": 423757,
-   "low": 388795,
-   "high": 491077,
+   "estimate": 423849,
+   "low": 388592,
+   "high": 491041,
    "comps": [
     {
      "address": "12 MILLARD ST",
@@ -6126,9 +6126,9 @@
   {
    "address": "178 MAIN ST",
    "kind": "sold",
-   "estimate": 478018,
-   "low": 408874,
-   "high": 529354,
+   "estimate": 477937,
+   "low": 408973,
+   "high": 529196,
    "comps": [
     {
      "address": "12 MILLARD ST",
@@ -6171,9 +6171,9 @@
   {
    "address": "513 JACKS DR",
    "kind": "sold",
-   "estimate": 732244,
-   "low": 665813,
-   "high": 785761,
+   "estimate": 732043,
+   "low": 665443,
+   "high": 785503,
    "comps": [
     {
      "address": "503 ASHLEY DR",
@@ -6216,9 +6216,9 @@
   {
    "address": "16 LINDY ST",
    "kind": "sold",
-   "estimate": 459276,
-   "low": 403214,
-   "high": 516169,
+   "estimate": 459263,
+   "low": 403226,
+   "high": 516150,
    "comps": [
     {
      "address": "15 FAIRVIEW AVE",
@@ -6261,9 +6261,9 @@
   {
    "address": "1 RENARL AVE",
    "kind": "sold",
-   "estimate": 407455,
-   "low": 315452,
-   "high": 438497,
+   "estimate": 424023,
+   "low": 378697,
+   "high": 438460,
    "comps": [
     {
      "address": "7 DONALD AVE",
@@ -6272,14 +6272,6 @@
      "sqft": 1104.0,
      "beds": 2.0,
      "miles": 0.07
-    },
-    {
-     "address": "198 MAIN ST",
-     "price": 320500.0,
-     "date": "2023-11-13",
-     "sqft": 1184.0,
-     "beds": 2.0,
-     "miles": 0.37
     },
     {
      "address": "357 PEMBROKE ST",
@@ -6296,6 +6288,14 @@
      "sqft": 1050.0,
      "beds": 2.0,
      "miles": 0.22
+    },
+    {
+     "address": "225 MAIN ST",
+     "price": 375000.0,
+     "date": "2026-05-22",
+     "sqft": 884.0,
+     "beds": 2.0,
+     "miles": 0.43
     }
    ],
    "sale_date": "2024-11-12",
@@ -6306,9 +6306,9 @@
   {
    "address": "424 DEERPATH LANE",
    "kind": "sold",
-   "estimate": 571986,
-   "low": 524679,
-   "high": 678085,
+   "estimate": 571995,
+   "low": 524553,
+   "high": 678075,
    "comps": [
     {
      "address": "10 BOW LANE",
@@ -6351,9 +6351,9 @@
   {
    "address": "301 DEARBORN RD",
    "kind": "sold",
-   "estimate": 512987,
-   "low": 431542,
-   "high": 539622,
+   "estimate": 513057,
+   "low": 431537,
+   "high": 539703,
    "comps": [
     {
      "address": "15 FAIRVIEW AVE",
@@ -6396,9 +6396,9 @@
   {
    "address": "244 BUCK ST",
    "kind": "sold",
-   "estimate": 537354,
-   "low": 407571,
-   "high": 634149,
+   "estimate": 537410,
+   "low": 407547,
+   "high": 634343,
    "comps": [
     {
      "address": "235 BUCK ST",
@@ -6441,9 +6441,9 @@
   {
    "address": "448 BUCK ST",
    "kind": "sold",
-   "estimate": 469648,
-   "low": 400556,
-   "high": 554439,
+   "estimate": 469673,
+   "low": 400650,
+   "high": 554441,
    "comps": [
     {
      "address": "12 MILLARD ST",
@@ -6486,9 +6486,9 @@
   {
    "address": "566 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 503983,
-   "low": 461447,
-   "high": 563571,
+   "estimate": 503763,
+   "low": 461475,
+   "high": 563547,
    "comps": [
     {
      "address": "203 BRICKETT HILL RD",
@@ -6531,9 +6531,9 @@
   {
    "address": "420 DEERPATH LANE",
    "kind": "sold",
-   "estimate": 634962,
-   "low": 531830,
-   "high": 685235,
+   "estimate": 634937,
+   "low": 531680,
+   "high": 685203,
    "comps": [
     {
      "address": "424 DEERPATH LANE",
@@ -6576,9 +6576,9 @@
   {
    "address": "3-5 CHURCH ST",
    "kind": "sold",
-   "estimate": 474057,
-   "low": 426668,
-   "high": 575375,
+   "estimate": 474235,
+   "low": 426822,
+   "high": 575342,
    "comps": [
     {
      "address": "17 PROSPECT ST",
@@ -6621,9 +6621,9 @@
   {
    "address": "401 BOROUGH RD",
    "kind": "sold",
-   "estimate": 456607,
-   "low": 419810,
-   "high": 646635,
+   "estimate": 456528,
+   "low": 419874,
+   "high": 646646,
    "comps": [
     {
      "address": "203 BRICKETT HILL RD",
@@ -6666,9 +6666,9 @@
   {
    "address": "428 TERRIE DR",
    "kind": "sold",
-   "estimate": 556989,
-   "low": 512577,
-   "high": 639765,
+   "estimate": 556927,
+   "low": 512626,
+   "high": 639797,
    "comps": [
     {
      "address": "435 TERRIE DR",
@@ -6711,9 +6711,9 @@
   {
    "address": "446 MICOL RD",
    "kind": "sold",
-   "estimate": 514531,
-   "low": 445986,
-   "high": 581407,
+   "estimate": 514572,
+   "low": 445887,
+   "high": 581307,
    "comps": [
     {
      "address": "19 WHITTEMORE RD",
@@ -6756,9 +6756,9 @@
   {
    "address": "401 GRANDVIEW RD",
    "kind": "sold",
-   "estimate": 543419,
-   "low": 502854,
-   "high": 585898,
+   "estimate": 543272,
+   "low": 502781,
+   "high": 585688,
    "comps": [
     {
      "address": "44 SHERWOOD MEADOWS",
@@ -6801,9 +6801,9 @@
   {
    "address": "124 SMITH AVE",
    "kind": "sold",
-   "estimate": 416521,
-   "low": 374929,
-   "high": 430926,
+   "estimate": 416476,
+   "low": 374953,
+   "high": 430913,
    "comps": [
     {
      "address": "7 DONALD AVE",
@@ -6846,9 +6846,9 @@
   {
    "address": "11-13 PROSPECT ST",
    "kind": "sold",
-   "estimate": 534337,
-   "low": 497424,
-   "high": 562852,
+   "estimate": 534515,
+   "low": 497544,
+   "high": 562740,
    "comps": [
     {
      "address": "160 MAIN ST",
@@ -6891,9 +6891,9 @@
   {
    "address": "674 THOMPSON RD",
    "kind": "sold",
-   "estimate": 516103,
-   "low": 416934,
-   "high": 585181,
+   "estimate": 516011,
+   "low": 416904,
+   "high": 585308,
    "comps": [
     {
      "address": "158A&B TINA DR",
@@ -6936,9 +6936,9 @@
   {
    "address": "4 KIMBALL ST",
    "kind": "sold",
-   "estimate": 446210,
-   "low": 352327,
-   "high": 492474,
+   "estimate": 446082,
+   "low": 415454,
+   "high": 492530,
    "comps": [
     {
      "address": "7 DONALD AVE",
@@ -6947,14 +6947,6 @@
      "sqft": 1104.0,
      "beds": 2.0,
      "miles": 0.48
-    },
-    {
-     "address": "198 MAIN ST",
-     "price": 320500.0,
-     "date": "2023-11-13",
-     "sqft": 1184.0,
-     "beds": 2.0,
-     "miles": 0.08
     },
     {
      "address": "1 RENARL AVE",
@@ -6971,6 +6963,14 @@
      "sqft": 1536.0,
      "beds": 3.0,
      "miles": 0.47
+    },
+    {
+     "address": "4 HILLCREST AVE",
+     "price": 365000.0,
+     "date": "2023-12-14",
+     "sqft": 1050.0,
+     "beds": 2.0,
+     "miles": 0.35
     }
    ],
    "sale_date": "2024-08-27",
@@ -6981,9 +6981,9 @@
   {
    "address": "13-15 BROADWAY",
    "kind": "sold",
-   "estimate": 478502,
-   "low": 315291,
-   "high": 491357,
+   "estimate": 478562,
+   "low": 315268,
+   "high": 491321,
    "comps": [
     {
      "address": "111 GLASS ST",
@@ -7026,9 +7026,9 @@
   {
    "address": "236 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 538719,
-   "low": 496268,
-   "high": 622065,
+   "estimate": 538635,
+   "low": 496507,
+   "high": 621883,
    "comps": [
     {
      "address": "312 PEMBROKE ST",
@@ -7071,9 +7071,9 @@
   {
    "address": "473 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 527357,
-   "low": 517369,
-   "high": 601865,
+   "estimate": 527390,
+   "low": 517125,
+   "high": 601939,
    "comps": [
     {
      "address": "469 PEMBROKE ST",
@@ -7116,9 +7116,9 @@
   {
    "address": "403 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 409490,
-   "low": 333926,
-   "high": 451396,
+   "estimate": 409404,
+   "low": 333913,
+   "high": 451319,
    "comps": [
     {
      "address": "33 PLEASANT ST",
@@ -7161,9 +7161,9 @@
   {
    "address": "359 THIRD RANGE RD",
    "kind": "sold",
-   "estimate": 609437,
-   "low": 576692,
-   "high": 695566,
+   "estimate": 609486,
+   "low": 576495,
+   "high": 695468,
    "comps": [
     {
      "address": "316 CHURCH RD",
@@ -7206,9 +7206,9 @@
   {
    "address": "18 LINDY ST",
    "kind": "sold",
-   "estimate": 527448,
-   "low": 517155,
-   "high": 598217,
+   "estimate": 527516,
+   "low": 517037,
+   "high": 598181,
    "comps": [
     {
      "address": "14 HIGH ST",
@@ -7251,9 +7251,9 @@
   {
    "address": "447 BRUSH RD",
    "kind": "sold",
-   "estimate": 490935,
-   "low": 425378,
-   "high": 643600,
+   "estimate": 490924,
+   "low": 425297,
+   "high": 643557,
    "comps": [
     {
      "address": "526 PEMBROKE ST",
@@ -7296,9 +7296,9 @@
   {
    "address": "14 BOW LANE",
    "kind": "sold",
-   "estimate": 548717,
-   "low": 504305,
-   "high": 631492,
+   "estimate": 548681,
+   "low": 504380,
+   "high": 631551,
    "comps": [
     {
      "address": "418 ROSS RD",
@@ -7341,9 +7341,9 @@
   {
    "address": "148 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 459718,
-   "low": 442429,
-   "high": 481402,
+   "estimate": 459743,
+   "low": 442453,
+   "high": 481398,
    "comps": [
     {
      "address": "12 MILLARD ST",
@@ -7386,9 +7386,9 @@
   {
    "address": "17 PLEASANT ST",
    "kind": "sold",
-   "estimate": 564698,
-   "low": 486971,
-   "high": 658265,
+   "estimate": 598407,
+   "low": 527701,
+   "high": 658382,
    "comps": [
     {
      "address": "182-184 BUCK ST",
@@ -7415,12 +7415,12 @@
      "miles": 1.9
     },
     {
-     "address": "40 MASON AVE",
-     "price": 466500.0,
-     "date": "2023-11-13",
-     "sqft": 1196.0,
+     "address": "365A&B PEMBROKE ST",
+     "price": 569900.0,
+     "date": "2026-06-23",
+     "sqft": 1161.0,
      "beds": 4.0,
-     "miles": 0.42
+     "miles": 1.7
     }
    ],
    "sale_date": "2024-07-11",
@@ -7431,9 +7431,9 @@
   {
    "address": "233 DEARBORN RD",
    "kind": "sold",
-   "estimate": 377357,
-   "low": 355554,
-   "high": 414625,
+   "estimate": 377406,
+   "low": 355652,
+   "high": 414658,
    "comps": [
     {
      "address": "190 BUCK ST",
@@ -7476,9 +7476,9 @@
   {
    "address": "25 SHERWOOD MEADOWS",
    "kind": "sold",
-   "estimate": 517808,
-   "low": 437291,
-   "high": 549021,
+   "estimate": 517812,
+   "low": 437268,
+   "high": 548976,
    "comps": [
     {
      "address": "15 FAIRVIEW AVE",
@@ -7521,9 +7521,9 @@
   {
    "address": "354 THIRD RANGE RD",
    "kind": "sold",
-   "estimate": 744989,
-   "low": 653125,
-   "high": 941069,
+   "estimate": 744734,
+   "low": 653115,
+   "high": 941178,
    "comps": [
     {
      "address": "316 CHURCH RD",
@@ -7566,9 +7566,9 @@
   {
    "address": "627 FOURTH RANGE RD",
    "kind": "sold",
-   "estimate": 557076,
-   "low": 420190,
-   "high": 666825,
+   "estimate": 557149,
+   "low": 420126,
+   "high": 666771,
    "comps": [
     {
      "address": "401 BOROUGH RD",
@@ -7611,9 +7611,9 @@
   {
    "address": "88 1/2 BROADWAY",
    "kind": "sold",
-   "estimate": 324646,
-   "low": 290886,
-   "high": 356567,
+   "estimate": 324719,
+   "low": 290915,
+   "high": 356638,
    "comps": [
     {
      "address": "10 LINDY ST",
@@ -7656,9 +7656,9 @@
   {
    "address": "11 DONNA DR",
    "kind": "sold",
-   "estimate": 504611,
+   "estimate": 504630,
    "low": 458000,
-   "high": 525418,
+   "high": 525465,
    "comps": [
     {
      "address": "435 TERRIE DR",
@@ -7701,9 +7701,9 @@
   {
    "address": "5 TURNPIKE ST",
    "kind": "sold",
-   "estimate": 612734,
-   "low": 580190,
-   "high": 665799,
+   "estimate": 612725,
+   "low": 580126,
+   "high": 665716,
    "comps": [
     {
      "address": "214  DEARBORN RD",
@@ -7746,9 +7746,9 @@
   {
    "address": "521A&B FOURTH RANGE RD",
    "kind": "sold",
-   "estimate": 666334,
-   "low": 611780,
-   "high": 723840,
+   "estimate": 666197,
+   "low": 611695,
+   "high": 723540,
    "comps": [
     {
      "address": "481 WOODLAWN RIDGE RD",
@@ -7791,9 +7791,9 @@
   {
    "address": "405 DEERPATH LANE",
    "kind": "sold",
-   "estimate": 477520,
-   "low": 451735,
-   "high": 587155,
+   "estimate": 477584,
+   "low": 451618,
+   "high": 587037,
    "comps": [
     {
      "address": "228 PEMBROKE HILL RD",
@@ -7836,9 +7836,9 @@
   {
    "address": "320A&B ACADEMY RD",
    "kind": "sold",
-   "estimate": 545884,
-   "low": 486870,
-   "high": 647334,
+   "estimate": 545961,
+   "low": 486848,
+   "high": 647390,
    "comps": [
     {
      "address": "260 CHURCH RD",
@@ -7881,9 +7881,9 @@
   {
    "address": "18 MAPLE ST",
    "kind": "sold",
-   "estimate": 618752,
-   "low": 571364,
-   "high": 656169,
+   "estimate": 618469,
+   "low": 571056,
+   "high": 656150,
    "comps": [
     {
      "address": "5-7 PLEASANT ST",
@@ -7926,9 +7926,9 @@
   {
    "address": "155A&B TINA DR",
    "kind": "sold",
-   "estimate": 558222,
-   "low": 499209,
-   "high": 659672,
+   "estimate": 558260,
+   "low": 499147,
+   "high": 659689,
    "comps": [
     {
      "address": "158A&B TINA DR",
@@ -7971,9 +7971,9 @@
   {
    "address": "480 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 442203,
+   "estimate": 442261,
    "low": 394000,
-   "high": 500741,
+   "high": 500867,
    "comps": [
     {
      "address": "243 BRICKETT HILL RD",
@@ -8016,9 +8016,9 @@
   {
    "address": "9 FAIRVIEW AVE",
    "kind": "sold",
-   "estimate": 405722,
-   "low": 382291,
-   "high": 433693,
+   "estimate": 405760,
+   "low": 382268,
+   "high": 433665,
    "comps": [
     {
      "address": "17 FAIRVIEW AVE",
@@ -8061,9 +8061,9 @@
   {
    "address": "246 CHURCH RD",
    "kind": "sold",
-   "estimate": 498741,
-   "low": 417571,
-   "high": 594767,
+   "estimate": 498697,
+   "low": 417547,
+   "high": 594752,
    "comps": [
     {
      "address": "7 DONALD AVE",
@@ -8106,9 +8106,9 @@
   {
    "address": "136 DUDLEY HILL RD",
    "kind": "sold",
-   "estimate": 598394,
-   "low": 486775,
-   "high": 671407,
+   "estimate": 598279,
+   "low": 486785,
+   "high": 671307,
    "comps": [
     {
      "address": "331 CHURCH RD",
@@ -8151,9 +8151,9 @@
   {
    "address": "51 WHITTEMORE RD",
    "kind": "sold",
-   "estimate": 638689,
-   "low": 549579,
-   "high": 684815,
+   "estimate": 638733,
+   "low": 549581,
+   "high": 684783,
    "comps": [
     {
      "address": "509 ASHLEY DR",
@@ -8196,9 +8196,9 @@
   {
    "address": "41 CHURCH ST",
    "kind": "sold",
-   "estimate": 354741,
-   "low": 322902,
-   "high": 399351,
+   "estimate": 380360,
+   "low": 322813,
+   "high": 399242,
    "comps": [
     {
      "address": "6 CENTRAL ST",
@@ -8207,14 +8207,6 @@
      "sqft": 1096.0,
      "beds": 2.0,
      "miles": 0.06
-    },
-    {
-     "address": "198 MAIN ST",
-     "price": 320500.0,
-     "date": "2023-11-13",
-     "sqft": 1184.0,
-     "beds": 2.0,
-     "miles": 0.18
     },
     {
      "address": "23 PLEASANT ST",
@@ -8231,6 +8223,14 @@
      "sqft": 1050.0,
      "beds": 2.0,
      "miles": 0.44
+    },
+    {
+     "address": "32 TURNPIKE ST",
+     "price": 370000.0,
+     "date": "2026-06-15",
+     "sqft": 1170.0,
+     "beds": 3.0,
+     "miles": 0.24
     }
    ],
    "sale_date": "2024-04-05",
@@ -8241,9 +8241,9 @@
   {
    "address": "11 LINDY ST",
    "kind": "sold",
-   "estimate": 574084,
-   "low": 537836,
-   "high": 636635,
+   "estimate": 574183,
+   "low": 537930,
+   "high": 636646,
    "comps": [
     {
      "address": "14 BRITTANY CIRCLE",
@@ -8286,9 +8286,9 @@
   {
    "address": "22 KIMBALL ST",
    "kind": "sold",
-   "estimate": 436797,
-   "low": 293039,
-   "high": 504116,
+   "estimate": 436847,
+   "low": 292998,
+   "high": 504039,
    "comps": [
     {
      "address": "12 MILLARD ST",
@@ -8331,9 +8331,9 @@
   {
    "address": "890 WELLINGTON WAY",
    "kind": "sold",
-   "estimate": 670538,
-   "low": 604694,
-   "high": 727291,
+   "estimate": 670521,
+   "low": 604835,
+   "high": 727268,
    "comps": [
     {
      "address": "762 ROBINSON RD",
@@ -8376,9 +8376,9 @@
   {
    "address": "220 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 477198,
-   "low": 450656,
-   "high": 548750,
+   "estimate": 477159,
+   "low": 450622,
+   "high": 548515,
    "comps": [
     {
      "address": "224 PEMBROKE ST",
@@ -8421,9 +8421,9 @@
   {
    "address": "7 SHERWOOD MEADOWS",
    "kind": "sold",
-   "estimate": 413434,
-   "low": 373598,
-   "high": 467212,
+   "estimate": 413447,
+   "low": 373602,
+   "high": 467272,
    "comps": [
     {
      "address": "65 1/2 BROADWAY",
@@ -8466,9 +8466,9 @@
   {
    "address": "430 OLD BOROUGH RD",
    "kind": "sold",
-   "estimate": 349323,
-   "low": 316492,
-   "high": 381243,
+   "estimate": 349317,
+   "low": 316551,
+   "high": 381236,
    "comps": [
     {
      "address": "82 SHEEP DAVIS RD",
@@ -8511,9 +8511,9 @@
   {
    "address": "441A&B SIXTH RANGE RD",
    "kind": "sold",
-   "estimate": 903503,
-   "low": 763612,
-   "high": 1098665,
+   "estimate": 903540,
+   "low": 763329,
+   "high": 1098270,
    "comps": [
     {
      "address": "821 CROSS COUNTRY RD",
@@ -8548,9 +8548,9 @@
   {
    "address": "4 HILLCREST AVE",
    "kind": "sold",
-   "estimate": 383517,
-   "low": 339068,
-   "high": 422429,
+   "estimate": 383502,
+   "low": 339008,
+   "high": 422453,
    "comps": [
     {
      "address": "7 DONALD AVE",
@@ -8593,9 +8593,9 @@
   {
    "address": "447 SIXTH RANGE RD",
    "kind": "sold",
-   "estimate": 569060,
-   "low": 450656,
-   "high": 676825,
+   "estimate": 569167,
+   "low": 450622,
+   "high": 676771,
    "comps": [
     {
      "address": "330 NO PEMBROKE RD",
@@ -8638,9 +8638,9 @@
   {
    "address": "40 MASON AVE",
    "kind": "sold",
-   "estimate": 553500,
-   "low": 439529,
-   "high": 581264,
+   "estimate": 553521,
+   "low": 439595,
+   "high": 581212,
    "comps": [
     {
      "address": "169 TINA DR",
@@ -8683,9 +8683,9 @@
   {
    "address": "198 MAIN ST",
    "kind": "sold",
-   "estimate": 385668,
-   "low": 357856,
-   "high": 443545,
+   "estimate": 385630,
+   "low": 357736,
+   "high": 443492,
    "comps": [
     {
      "address": "1 RENARL AVE",
@@ -8728,9 +8728,9 @@
   {
    "address": "441 MICOL RD",
    "kind": "sold",
-   "estimate": 475645,
-   "low": 417027,
-   "high": 516445,
+   "estimate": 475634,
+   "low": 417055,
+   "high": 516520,
    "comps": [
     {
      "address": "43 DONNA DR",
@@ -8773,9 +8773,9 @@
   {
    "address": "315 DEARBORN RD",
    "kind": "sold",
-   "estimate": 401374,
-   "low": 372940,
-   "high": 432010,
+   "estimate": 401387,
+   "low": 372983,
+   "high": 431988,
    "comps": [
     {
      "address": "307 DEARBORN RD",
@@ -8818,9 +8818,9 @@
   {
    "address": "414 EAST VIEW DR",
    "kind": "sold",
-   "estimate": 468831,
-   "low": 409810,
-   "high": 605703,
+   "estimate": 468764,
+   "low": 409874,
+   "high": 605653,
    "comps": [
     {
      "address": "338 CHURCH RD",
@@ -8863,9 +8863,9 @@
   {
    "address": "419 ROSS RD",
    "kind": "sold",
-   "estimate": 608046,
-   "low": 497899,
-   "high": 658455,
+   "estimate": 607969,
+   "low": 497858,
+   "high": 658508,
    "comps": [
     {
      "address": "446 TERRIE DR",
@@ -8908,9 +8908,9 @@
   {
    "address": "11 MAPLE ST",
    "kind": "sold",
-   "estimate": 481879,
-   "low": 368635,
-   "high": 566642,
+   "estimate": 481967,
+   "low": 368646,
+   "high": 566509,
    "comps": [
     {
      "address": "163-165 MAIN ST",
@@ -8953,9 +8953,9 @@
   {
    "address": "603 FOURTH RANGE RD",
    "kind": "sold",
-   "estimate": 713485,
-   "low": 703460,
-   "high": 723786,
+   "estimate": 713410,
+   "low": 703417,
+   "high": 723774,
    "comps": [
     {
      "address": "503 ASHLEY DR",
@@ -8998,9 +8998,9 @@
   {
    "address": "9 BRITTANY CIRCLE",
    "kind": "sold",
-   "estimate": 571987,
-   "low": 549905,
-   "high": 635513,
+   "estimate": 571972,
+   "low": 549937,
+   "high": 635528,
    "comps": [
     {
      "address": "14 BRITTANY CIRCLE",
@@ -9043,9 +9043,9 @@
   {
    "address": "279 CROSS RD",
    "kind": "sold",
-   "estimate": 775365,
-   "low": 687253,
-   "high": 927329,
+   "estimate": 775076,
+   "low": 687054,
+   "high": 927481,
    "comps": [
     {
      "address": "316 CHURCH RD",
@@ -9088,9 +9088,9 @@
   {
    "address": "3 MELISSA DR",
    "kind": "sold",
-   "estimate": 557129,
-   "low": 512717,
-   "high": 639905,
+   "estimate": 557067,
+   "low": 512766,
+   "high": 639937,
    "comps": [
     {
      "address": "418 ROSS RD",
@@ -9133,9 +9133,9 @@
   {
    "address": "13 PHEASANT RUN",
    "kind": "sold",
-   "estimate": 703579,
-   "low": 642022,
-   "high": 727631,
+   "estimate": 703496,
+   "low": 641761,
+   "high": 727351,
    "comps": [
     {
      "address": "214  DEARBORN RD",
@@ -9178,9 +9178,9 @@
   {
    "address": "68 SHEEP DAVIS RD",
    "kind": "sold",
-   "estimate": 360138,
-   "low": 306397,
-   "high": 371148,
+   "estimate": 360185,
+   "low": 306489,
+   "high": 371173,
    "comps": [
     {
      "address": "82 SHEEP DAVIS RD",
@@ -9223,9 +9223,9 @@
   {
    "address": "375 ROWE AVE",
    "kind": "sold",
-   "estimate": 470841,
-   "low": 441675,
-   "high": 531635,
+   "estimate": 470839,
+   "low": 441814,
+   "high": 531646,
    "comps": [
     {
      "address": "418 ROSS RD",
@@ -9268,9 +9268,9 @@
   {
    "address": "37 SHERWOOD MEADOWS",
    "kind": "sold",
-   "estimate": 522173,
-   "low": 466072,
-   "high": 535841,
+   "estimate": 522166,
+   "low": 466132,
+   "high": 535839,
    "comps": [
     {
      "address": "224 CHURCH RD",
@@ -9313,9 +9313,9 @@
   {
    "address": "29 PEASLEE DR",
    "kind": "sold",
-   "estimate": 524980,
-   "low": 469998,
-   "high": 539767,
+   "estimate": 525001,
+   "low": 470045,
+   "high": 539752,
    "comps": [
     {
      "address": "224 CHURCH RD",
@@ -9358,9 +9358,9 @@
   {
    "address": "231 PEMBROKE HILL RD",
    "kind": "sold",
-   "estimate": 500537,
-   "low": 450649,
-   "high": 568042,
+   "estimate": 500543,
+   "low": 450758,
+   "high": 567952,
    "comps": [
     {
      "address": "412 DEERPATH LANE",
@@ -9403,9 +9403,9 @@
   {
    "address": "31 TURNPIKE ST",
    "kind": "sold",
-   "estimate": 419232,
-   "low": 370437,
-   "high": 577243,
+   "estimate": 419163,
+   "low": 370358,
+   "high": 577236,
    "comps": [
     {
      "address": "32 TURNPIKE ST",
@@ -9448,9 +9448,9 @@
   {
    "address": "106A&B BROADWAY",
    "kind": "sold",
-   "estimate": 557101,
-   "low": 498087,
-   "high": 658550,
+   "estimate": 557142,
+   "low": 498029,
+   "high": 658571,
    "comps": [
     {
      "address": "260 CHURCH RD",
@@ -9493,9 +9493,9 @@
   {
    "address": "348 PEMBROKE HILL RD",
    "kind": "sold",
-   "estimate": 688985,
-   "low": 617514,
-   "high": 716697,
+   "estimate": 688717,
+   "low": 617698,
+   "high": 716404,
    "comps": [
     {
      "address": "316 CHURCH RD",
@@ -9538,9 +9538,9 @@
   {
    "address": "803 CROSS COUNTRY RD",
    "kind": "sold",
-   "estimate": 644205,
-   "low": 609577,
-   "high": 715513,
+   "estimate": 644152,
+   "low": 609626,
+   "high": 715528,
    "comps": [
     {
      "address": "542 CROSS COUNTRY RD",
@@ -9583,9 +9583,9 @@
   {
    "address": "468 FOURTH RANGE RD",
    "kind": "sold",
-   "estimate": 401901,
-   "low": 212662,
-   "high": 474222,
+   "estimate": 401942,
+   "low": 212701,
+   "high": 474260,
    "comps": [
     {
      "address": "325 PEMBROKE HILL RD",
@@ -9628,9 +9628,9 @@
   {
    "address": "433 MICOL RD",
    "kind": "sold",
-   "estimate": 617541,
-   "low": 609998,
-   "high": 631207,
+   "estimate": 617560,
+   "low": 610045,
+   "high": 631363,
    "comps": [
     {
      "address": "481 WOODLAWN RIDGE RD",
@@ -9673,9 +9673,9 @@
   {
    "address": "407 GIRARD AVE",
    "kind": "sold",
-   "estimate": 500514,
-   "low": 372096,
-   "high": 542994,
+   "estimate": 500505,
+   "low": 372233,
+   "high": 542921,
    "comps": [
     {
      "address": "44 SHERWOOD MEADOWS",
@@ -9718,9 +9718,9 @@
   {
    "address": "418 DEERPATH LANE",
    "kind": "sold",
-   "estimate": 465831,
-   "low": 399889,
-   "high": 506630,
+   "estimate": 465850,
+   "low": 399870,
+   "high": 506737,
    "comps": [
     {
      "address": "325 PEMBROKE HILL RD",
@@ -9763,9 +9763,9 @@
   {
    "address": "7 PEASLEE DR",
    "kind": "sold",
-   "estimate": 529788,
-   "low": 476087,
-   "high": 600235,
+   "estimate": 529813,
+   "low": 476029,
+   "high": 600203,
    "comps": [
     {
      "address": "435 TERRIE DR",
@@ -9808,9 +9808,9 @@
   {
    "address": "709 CLOUGH MILL RD",
    "kind": "sold",
-   "estimate": 390761,
-   "low": 351264,
-   "high": 400235,
+   "estimate": 390781,
+   "low": 351212,
+   "high": 400203,
    "comps": [
     {
      "address": "82 SHEEP DAVIS RD",
@@ -9853,9 +9853,9 @@
   {
    "address": "11 MELISSA DR",
    "kind": "sold",
-   "estimate": 468074,
-   "low": 409455,
-   "high": 508874,
+   "estimate": 468087,
+   "low": 409508,
+   "high": 508973,
    "comps": [
     {
      "address": "43 DONNA DR",
@@ -9898,9 +9898,9 @@
   {
    "address": "129 GLASS ST",
    "kind": "sold",
-   "estimate": 422925,
-   "low": 282342,
-   "high": 572051,
+   "estimate": 422828,
+   "low": 282424,
+   "high": 572156,
    "comps": [
     {
      "address": "111 GLASS ST",
@@ -9943,9 +9943,9 @@
   {
    "address": "60-62 FRONT ST",
    "kind": "sold",
-   "estimate": 449432,
-   "low": 381100,
-   "high": 529807,
+   "estimate": 449577,
+   "low": 381399,
+   "high": 529920,
    "comps": [
     {
      "address": "9 PINE ST",
@@ -9980,9 +9980,9 @@
   {
    "address": "420 TERRIE DR",
    "kind": "sold",
-   "estimate": 524510,
-   "low": 501732,
-   "high": 589301,
+   "estimate": 524488,
+   "low": 501663,
+   "high": 589256,
    "comps": [
     {
      "address": "19 WHITTEMORE RD",
@@ -10025,9 +10025,9 @@
   {
    "address": "5 HOWARD ST",
    "kind": "sold",
-   "estimate": 584900,
-   "low": 418757,
-   "high": 671029,
+   "estimate": 585028,
+   "low": 418721,
+   "high": 671010,
    "comps": [
     {
      "address": "158A&B TINA DR",
@@ -10070,9 +10070,9 @@
   {
    "address": "206 DEARBORN RD",
    "kind": "sold",
-   "estimate": 597813,
-   "low": 546533,
-   "high": 631029,
+   "estimate": 597636,
+   "low": 546719,
+   "high": 631010,
    "comps": [
     {
      "address": "237 FOURTH RANGE RD",
@@ -10115,9 +10115,9 @@
   {
    "address": "150 SMITH AVE",
    "kind": "sold",
-   "estimate": 495322,
-   "low": 447101,
-   "high": 510038,
+   "estimate": 495340,
+   "low": 447142,
+   "high": 510213,
    "comps": [
     {
      "address": "15 FAIRVIEW AVE",
@@ -10160,9 +10160,9 @@
   {
    "address": "570 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 464180,
-   "low": 455563,
-   "high": 515435,
+   "estimate": 464223,
+   "low": 455514,
+   "high": 515146,
    "comps": [
     {
      "address": "224 PEMBROKE ST",
@@ -10205,9 +10205,9 @@
   {
    "address": "412 GRANDVIEW RD",
    "kind": "sold",
-   "estimate": 469476,
-   "low": 403534,
-   "high": 510276,
+   "estimate": 469484,
+   "low": 403504,
+   "high": 510371,
    "comps": [
     {
      "address": "325 PEMBROKE HILL RD",
@@ -10250,9 +10250,9 @@
   {
    "address": "25 TURNPIKE ST",
    "kind": "sold",
-   "estimate": 484369,
-   "low": 442429,
-   "high": 536397,
+   "estimate": 484371,
+   "low": 442453,
+   "high": 536489,
    "comps": [
     {
      "address": "15 FAIRVIEW AVE",
@@ -10295,9 +10295,9 @@
   {
    "address": "194-196 MAIN ST",
    "kind": "sold",
-   "estimate": 729078,
-   "low": 500559,
-   "high": 751621,
+   "estimate": 728826,
+   "low": 500219,
+   "high": 751919,
    "comps": [
     {
      "address": "160 MAIN ST",
@@ -10333,8 +10333,8 @@
    "address": "15 LINDY ST",
    "kind": "sold",
    "estimate": 467780,
-   "low": 394116,
-   "high": 509526,
+   "low": 394039,
+   "high": 509470,
    "comps": [
     {
      "address": "15 FAIRVIEW AVE",
@@ -10377,9 +10377,9 @@
   {
    "address": "725 ELEY LANE",
    "kind": "sold",
-   "estimate": 404250,
-   "low": 373878,
-   "high": 615418,
+   "estimate": 404293,
+   "low": 373882,
+   "high": 615465,
    "comps": [
     {
      "address": "701 ELEY LANE",
@@ -10422,9 +10422,9 @@
   {
    "address": "471 FOURTH RANGE RD",
    "kind": "sold",
-   "estimate": 540443,
-   "low": 417524,
-   "high": 595558,
+   "estimate": 540458,
+   "low": 417516,
+   "high": 595476,
    "comps": [
     {
      "address": "422 DEERPATH LANE",
@@ -10467,9 +10467,9 @@
   {
    "address": "312 BRICKETT HILL RD",
    "kind": "sold",
-   "estimate": 440550,
-   "low": 408317,
-   "high": 528783,
+   "estimate": 440486,
+   "low": 408323,
+   "high": 528819,
    "comps": [
     {
      "address": "246 CHURCH RD",
@@ -10512,9 +10512,9 @@
   {
    "address": "935 BOROUGH RD",
    "kind": "sold",
-   "estimate": 692861,
-   "low": 674097,
-   "high": 930834,
+   "estimate": 692645,
+   "low": 674017,
+   "high": 930975,
    "comps": [
     {
      "address": "821 CROSS COUNTRY RD",
@@ -10557,9 +10557,9 @@
   {
    "address": "438 BOROUGH RD",
    "kind": "sold",
-   "estimate": 547955,
-   "low": 473270,
-   "high": 689532,
+   "estimate": 547923,
+   "low": 473291,
+   "high": 689549,
    "comps": [
     {
      "address": "724 CLOUGH MILL RD",
@@ -10602,9 +10602,9 @@
   {
    "address": "344 THIRD RANGE RD",
    "kind": "sold",
-   "estimate": 415361,
+   "estimate": 415359,
    "low": 386400,
-   "high": 487683,
+   "high": 487677,
    "comps": [
     {
      "address": "325 PEMBROKE HILL RD",
@@ -10647,9 +10647,9 @@
   {
    "address": "456 FAIRWAY DR",
    "kind": "sold",
-   "estimate": 524980,
-   "low": 469998,
-   "high": 587391,
+   "estimate": 525001,
+   "low": 470045,
+   "high": 587239,
    "comps": [
     {
      "address": "446 TERRIE DR",
@@ -10692,9 +10692,9 @@
   {
    "address": "668 NO PEMBROKE RD",
    "kind": "sold",
-   "estimate": 521210,
-   "low": 426816,
-   "high": 556222,
+   "estimate": 521317,
+   "low": 426953,
+   "high": 556090,
    "comps": [
     {
      "address": "644 BOROUGH RD",
@@ -10737,9 +10737,9 @@
   {
    "address": "83-85 GLASS ST",
    "kind": "sold",
-   "estimate": 528565,
-   "low": 475461,
-   "high": 624168,
+   "estimate": 528769,
+   "low": 475459,
+   "high": 623979,
    "comps": [
     {
      "address": "9 PINE ST",
@@ -10782,8 +10782,8 @@
   {
    "address": "38 SHERWOOD MEADOWS",
    "kind": "sold",
-   "estimate": 509320,
-   "low": 498259,
+   "estimate": 509362,
+   "low": 498303,
    "high": 535280,
    "comps": [
     {
@@ -10827,9 +10827,9 @@
   {
    "address": "506 BOROUGH RD",
    "kind": "sold",
-   "estimate": 644634,
-   "low": 588926,
-   "high": 700986,
+   "estimate": 644476,
+   "low": 588913,
+   "high": 700759,
    "comps": [
     {
      "address": "564A&B THIRD RANGE RD",
@@ -10872,9 +10872,9 @@
   {
    "address": "56 WHITTEMORE RD",
    "kind": "sold",
-   "estimate": 742437,
-   "low": 697711,
-   "high": 833572,
+   "estimate": 742101,
+   "low": 697559,
+   "high": 833162,
    "comps": [
     {
      "address": "513 JACKS DR",
@@ -10917,9 +10917,9 @@
   {
    "address": "52 WHITTEMORE RD",
    "kind": "sold",
-   "estimate": 742437,
-   "low": 697711,
-   "high": 833572,
+   "estimate": 742101,
+   "low": 697559,
+   "high": 833162,
    "comps": [
     {
      "address": "513 JACKS DR",
@@ -10962,9 +10962,9 @@
   {
    "address": "50 WHITTEMORE RD",
    "kind": "sold",
-   "estimate": 765193,
-   "low": 682849,
-   "high": 818710,
+   "estimate": 764887,
+   "low": 682744,
+   "high": 818347,
    "comps": [
     {
      "address": "513 JACKS DR",
@@ -11007,9 +11007,9 @@
   {
    "address": "706 ELEY LANE",
    "kind": "sold",
-   "estimate": 407896,
-   "low": 377524,
-   "high": 619064,
+   "estimate": 407926,
+   "low": 377516,
+   "high": 619099,
    "comps": [
     {
      "address": "701 ELEY LANE",
@@ -11052,9 +11052,9 @@
   {
    "address": "305 PEMBROKE HILL RD",
    "kind": "sold",
-   "estimate": 535153,
-   "low": 439346,
-   "high": 598973,
+   "estimate": 535082,
+   "low": 439333,
+   "high": 598945,
    "comps": [
     {
      "address": "435 TERRIE DR",
@@ -11097,9 +11097,9 @@
   {
    "address": "435 CROSS COUNTRY RD",
    "kind": "sold",
-   "estimate": 640096,
-   "low": 580133,
-   "high": 668365,
+   "estimate": 639976,
+   "low": 580276,
+   "high": 668354,
    "comps": [
     {
      "address": "542 CROSS COUNTRY RD",
@@ -11142,9 +11142,9 @@
   {
    "address": "710 ELEY LANE",
    "kind": "sold",
-   "estimate": 584340,
-   "low": 512476,
-   "high": 616290,
+   "estimate": 584382,
+   "low": 512484,
+   "high": 616098,
    "comps": [
     {
      "address": "634 BOROUGH RD",
@@ -11187,9 +11187,9 @@
   {
    "address": "732 NO PEMBROKE RD",
    "kind": "sold",
-   "estimate": 593625,
-   "low": 565996,
-   "high": 776174,
+   "estimate": 593550,
+   "low": 566261,
+   "high": 776059,
    "comps": [
     {
      "address": "667 BOROUGH RD",
@@ -11232,9 +11232,9 @@
   {
    "address": "429 NADINE RD",
    "kind": "sold",
-   "estimate": 544750,
-   "low": 520839,
-   "high": 656590,
+   "estimate": 544707,
+   "low": 520884,
+   "high": 656569,
    "comps": [
     {
      "address": "492 WOODLAWN RIDGE RD",
@@ -11277,9 +11277,9 @@
   {
    "address": "514 BUCK ST",
    "kind": "sold",
-   "estimate": 532781,
-   "low": 452148,
-   "high": 602899,
+   "estimate": 532693,
+   "low": 452173,
+   "high": 602858,
    "comps": [
     {
      "address": "423 BUCK ST",
@@ -11322,9 +11322,9 @@
   {
    "address": "446 FOURTH RANGE RD",
    "kind": "sold",
-   "estimate": 365324,
-   "low": 317386,
-   "high": 407230,
+   "estimate": 365379,
+   "low": 317330,
+   "high": 407294,
    "comps": [
     {
      "address": "10 LINDY ST",
@@ -11367,9 +11367,9 @@
   {
    "address": "447 TERRIE DR",
    "kind": "sold",
-   "estimate": 477992,
+   "estimate": 478051,
    "low": 426000,
-   "high": 525418,
+   "high": 525465,
    "comps": [
     {
      "address": "435 TERRIE DR",
@@ -11412,9 +11412,9 @@
   {
    "address": "208 BRICKETT HILL RD",
    "kind": "sold",
-   "estimate": 501052,
-   "low": 454539,
-   "high": 589960,
+   "estimate": 501048,
+   "low": 454413,
+   "high": 589832,
    "comps": [
     {
      "address": "228 PEMBROKE HILL RD",
@@ -11457,9 +11457,9 @@
   {
    "address": "380 PERLEY AVE",
    "kind": "sold",
-   "estimate": 499368,
+   "estimate": 499394,
    "low": 460280,
-   "high": 554301,
+   "high": 554256,
    "comps": [
     {
      "address": "435 TERRIE DR",
@@ -11502,9 +11502,9 @@
   {
    "address": "765 NO PEMBROKE RD",
    "kind": "sold",
-   "estimate": 595797,
-   "low": 552091,
-   "high": 735233,
+   "estimate": 595739,
+   "low": 552324,
+   "high": 735248,
    "comps": [
     {
      "address": "667 BOROUGH RD",
@@ -11547,9 +11547,9 @@
   {
    "address": "418 TERRIE DR",
    "kind": "sold",
-   "estimate": 511240,
-   "low": 471587,
-   "high": 554021,
+   "estimate": 511304,
+   "low": 471614,
+   "high": 553976,
    "comps": [
     {
      "address": "435 TERRIE DR",
@@ -11592,9 +11592,9 @@
   {
    "address": "9-2 OLD BEAR BROOK RD",
    "kind": "sold",
-   "estimate": 566826,
-   "low": 515594,
-   "high": 600043,
+   "estimate": 566749,
+   "low": 515308,
+   "high": 600122,
    "comps": [
     {
      "address": "259 PEMBROKE ST",
@@ -11637,9 +11637,9 @@
   {
    "address": "511 JACKS DR",
    "kind": "sold",
-   "estimate": 682918,
-   "low": 564161,
-   "high": 699396,
+   "estimate": 682965,
+   "low": 564116,
+   "high": 699319,
    "comps": [
     {
      "address": "503 ASHLEY DR",
@@ -11682,9 +11682,9 @@
   {
    "address": "729 ROBINSON RD",
    "kind": "sold",
-   "estimate": 620934,
-   "low": 602170,
-   "high": 636226,
+   "estimate": 620947,
+   "low": 602320,
+   "high": 635999,
    "comps": [
     {
      "address": "158A&B TINA DR",
@@ -11727,9 +11727,9 @@
   {
    "address": "404 NO PEMBROKE RD",
    "kind": "sold",
-   "estimate": 650836,
-   "low": 508413,
-   "high": 685238,
+   "estimate": 650930,
+   "low": 508386,
+   "high": 685157,
    "comps": [
     {
      "address": "338 NO PEMBROKE RD",
@@ -11772,9 +11772,9 @@
   {
    "address": "409 BUCK ST",
    "kind": "sold",
-   "estimate": 741818,
-   "low": 702700,
-   "high": 959437,
+   "estimate": 741908,
+   "low": 702529,
+   "high": 959486,
    "comps": [
     {
      "address": "316 CHURCH RD",
@@ -11817,9 +11817,9 @@
   {
    "address": "916 BOROUGH RD",
    "kind": "sold",
-   "estimate": 543716,
-   "low": 527947,
-   "high": 656169,
+   "estimate": 543704,
+   "low": 527890,
+   "high": 656150,
    "comps": [
     {
      "address": "834 BOROUGH RD",
@@ -11862,9 +11862,9 @@
   {
    "address": "373 FOURTH RANGE RD",
    "kind": "sold",
-   "estimate": 730589,
-   "low": 555758,
-   "high": 749724,
+   "estimate": 730484,
+   "low": 555548,
+   "high": 749629,
    "comps": [
     {
      "address": "503 ASHLEY DR",
@@ -11907,9 +11907,9 @@
   {
    "address": "425 BUCK ST",
    "kind": "sold",
-   "estimate": 526612,
-   "low": 424537,
-   "high": 596730,
+   "estimate": 526544,
+   "low": 424415,
+   "high": 596709,
    "comps": [
     {
      "address": "423 BUCK ST",
@@ -11952,9 +11952,9 @@
   {
    "address": "3 HAROLD AVE",
    "kind": "sold",
-   "estimate": 369057,
-   "low": 316855,
-   "high": 439899,
+   "estimate": 381996,
+   "low": 354102,
+   "high": 439858,
    "comps": [
     {
      "address": "1 RENARL AVE",
@@ -11963,14 +11963,6 @@
      "sqft": 1148.0,
      "beds": 2.0,
      "miles": 0.12
-    },
-    {
-     "address": "198 MAIN ST",
-     "price": 320500.0,
-     "date": "2023-11-13",
-     "sqft": 1184.0,
-     "beds": 2.0,
-     "miles": 0.35
     },
     {
      "address": "23 PLEASANT ST",
@@ -11987,6 +11979,14 @@
      "sqft": 1066.0,
      "beds": 2.0,
      "miles": 1.42
+    },
+    {
+     "address": "4 HILLCREST AVE",
+     "price": 365000.0,
+     "date": "2023-12-14",
+     "sqft": 1050.0,
+     "beds": 2.0,
+     "miles": 0.3
     }
    ],
    "sale_date": "2022-07-28",
@@ -11997,9 +11997,9 @@
   {
    "address": "546 CROSS COUNTRY RD",
    "kind": "sold",
-   "estimate": 750841,
-   "low": 656913,
-   "high": 991965,
+   "estimate": 750839,
+   "low": 656971,
+   "high": 991911,
    "comps": [
     {
      "address": "821 CROSS COUNTRY RD",
@@ -12042,9 +12042,9 @@
   {
    "address": "643 FOURTH RANGE RD",
    "kind": "sold",
-   "estimate": 490610,
-   "low": 425518,
-   "high": 672153,
+   "estimate": 490568,
+   "low": 425437,
+   "high": 672082,
    "comps": [
     {
      "address": "401 BOROUGH RD",
@@ -12087,9 +12087,9 @@
   {
    "address": "11 HILLCREST AVE",
    "kind": "sold",
-   "estimate": 507902,
-   "low": 427891,
-   "high": 568926,
+   "estimate": 507813,
+   "low": 427825,
+   "high": 568913,
    "comps": [
     {
      "address": "147 TINA DR",
@@ -12132,9 +12132,9 @@
   {
    "address": "409 GIRARD AVE",
    "kind": "sold",
-   "estimate": 400409,
-   "low": 229487,
-   "high": 491048,
+   "estimate": 400454,
+   "low": 229472,
+   "high": 491031,
    "comps": [
     {
      "address": "325 PEMBROKE HILL RD",
@@ -12177,9 +12177,9 @@
   {
    "address": "408 NO PEMBROKE RD",
    "kind": "sold",
-   "estimate": 649813,
-   "low": 615185,
-   "high": 721122,
+   "estimate": 649742,
+   "low": 615217,
+   "high": 721118,
    "comps": [
     {
      "address": "338 NO PEMBROKE RD",
@@ -12222,9 +12222,9 @@
   {
    "address": "174 MAIN ST",
    "kind": "sold",
-   "estimate": 521473,
-   "low": 491034,
-   "high": 552816,
+   "estimate": 521445,
+   "low": 490919,
+   "high": 552568,
    "comps": [
     {
      "address": "224 PEMBROKE ST",
@@ -12268,8 +12268,8 @@
    "address": "6 SKYVIEW TERRACE",
    "kind": "sold",
    "estimate": 397360,
-   "low": 348564,
-   "high": 483447,
+   "low": 348555,
+   "high": 483475,
    "comps": [
     {
      "address": "12 LINDY ST",
@@ -12312,9 +12312,9 @@
   {
    "address": "37 HIGH ST",
    "kind": "sold",
-   "estimate": 461774,
-   "low": 435418,
-   "high": 501307,
+   "estimate": 461808,
+   "low": 435465,
+   "high": 501335,
    "comps": [
     {
      "address": "15 FAIRVIEW AVE",
@@ -12357,9 +12357,9 @@
   {
    "address": "190 MAIN ST",
    "kind": "sold",
-   "estimate": 344191,
-   "low": 324762,
-   "high": 389387,
+   "estimate": 344296,
+   "low": 324843,
+   "high": 389501,
    "comps": [
     {
      "address": "225 MAIN ST",
@@ -12402,9 +12402,9 @@
   {
    "address": "210 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 678878,
-   "low": 651901,
-   "high": 737070,
+   "estimate": 678411,
+   "low": 651643,
+   "high": 736792,
    "comps": [
     {
      "address": "160 MAIN ST",
@@ -12447,9 +12447,9 @@
   {
    "address": "339 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 477761,
-   "low": 420226,
-   "high": 497761,
+   "estimate": 477673,
+   "low": 420385,
+   "high": 497673,
    "comps": [
     {
      "address": "202 BEACON HILL RD",
@@ -12492,9 +12492,9 @@
   {
    "address": "647 HALEIGHS COURT",
    "kind": "sold",
-   "estimate": 698019,
-   "low": 632175,
-   "high": 842353,
+   "estimate": 697914,
+   "low": 632229,
+   "high": 842026,
    "comps": [
     {
      "address": "503 ASHLEY DR",
@@ -12537,9 +12537,9 @@
   {
    "address": "214 PEMBROKE HILL RD",
    "kind": "sold",
-   "estimate": 382149,
-   "low": 371495,
-   "high": 415363,
+   "estimate": 382151,
+   "low": 371506,
+   "high": 415400,
    "comps": [
     {
      "address": "377 PERLEY AVE",
@@ -12582,9 +12582,9 @@
   {
    "address": "290 CROSS RD",
    "kind": "sold",
-   "estimate": 489206,
-   "low": 426635,
-   "high": 518175,
+   "estimate": 489193,
+   "low": 426646,
+   "high": 518229,
    "comps": [
     {
      "address": "234 ACADEMY RD",
@@ -12627,9 +12627,9 @@
   {
    "address": "623 BOROUGH RD",
    "kind": "sold",
-   "estimate": 530121,
-   "low": 456364,
-   "high": 672609,
+   "estimate": 530033,
+   "low": 456184,
+   "high": 672761,
    "comps": [
     {
      "address": "627 FOURTH RANGE RD",
@@ -12672,9 +12672,9 @@
   {
    "address": "6 BRITTANY CIRCLE",
    "kind": "sold",
-   "estimate": 534038,
-   "low": 518175,
-   "high": 595133,
+   "estimate": 534021,
+   "low": 518229,
+   "high": 595276,
    "comps": [
     {
      "address": "14 BRITTANY CIRCLE",
@@ -12717,9 +12717,9 @@
   {
    "address": "405 ELM ST",
    "kind": "sold",
-   "estimate": 420816,
-   "low": 410124,
-   "high": 502685,
+   "estimate": 420846,
+   "low": 410073,
+   "high": 502632,
    "comps": [
     {
      "address": "325 PEMBROKE HILL RD",
@@ -12762,9 +12762,9 @@
   {
    "address": "5 HILLCREST AVE",
    "kind": "sold",
-   "estimate": 355558,
-   "low": 312990,
-   "high": 396350,
+   "estimate": 355605,
+   "low": 313012,
+   "high": 396457,
    "comps": [
     {
      "address": "225 MAIN ST",
@@ -12807,9 +12807,9 @@
   {
    "address": "634 CROSS COUNTRY RD",
    "kind": "sold",
-   "estimate": 593809,
-   "low": 505471,
-   "high": 668683,
+   "estimate": 593789,
+   "low": 505405,
+   "high": 668847,
    "comps": [
     {
      "address": "644 BOROUGH RD",
@@ -12852,9 +12852,9 @@
   {
    "address": "71 FRONT ST",
    "kind": "sold",
-   "estimate": 492006,
-   "low": 348292,
-   "high": 576811,
+   "estimate": 491951,
+   "low": 348438,
+   "high": 577044,
    "comps": [
     {
      "address": "9 PINE ST",
@@ -12890,8 +12890,8 @@
    "address": "818 BACHELDER RD",
    "kind": "sold",
    "estimate": 460660,
-   "low": 385419,
-   "high": 493590,
+   "low": 385422,
+   "high": 493569,
    "comps": [
     {
      "address": "320 NO PEMBROKE RD",
@@ -12934,9 +12934,9 @@
   {
    "address": "443 DEERPATH LANE",
    "kind": "sold",
-   "estimate": 780625,
-   "low": 661397,
-   "high": 797258,
+   "estimate": 780272,
+   "low": 661360,
+   "high": 796963,
    "comps": [
     {
      "address": "513 JACKS DR",
@@ -12979,9 +12979,9 @@
   {
    "address": "449 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 461356,
-   "low": 446445,
-   "high": 623080,
+   "estimate": 461343,
+   "low": 446520,
+   "high": 623166,
    "comps": [
     {
      "address": "526 PEMBROKE ST",
@@ -13024,9 +13024,9 @@
   {
    "address": "155A&B BUCK ST",
    "kind": "sold",
-   "estimate": 505802,
-   "low": 470411,
-   "high": 587293,
+   "estimate": 505798,
+   "low": 470601,
+   "high": 587222,
    "comps": [
     {
      "address": "14 HIGH ST",
@@ -13069,9 +13069,9 @@
   {
    "address": "47 DONNA DR",
    "kind": "sold",
-   "estimate": 539842,
-   "low": 515932,
-   "high": 651683,
+   "estimate": 539816,
+   "low": 515992,
+   "high": 651677,
    "comps": [
     {
      "address": "492 WOODLAWN RIDGE RD",
@@ -13114,9 +13114,9 @@
   {
    "address": "638 FOURTH RANGE RD",
    "kind": "sold",
-   "estimate": 735175,
-   "low": 643310,
-   "high": 931255,
+   "estimate": 734951,
+   "low": 643331,
+   "high": 931394,
    "comps": [
     {
      "address": "821 CROSS COUNTRY RD",
@@ -13159,9 +13159,9 @@
   {
    "address": "28 DONNA DR",
    "kind": "sold",
-   "estimate": 509062,
-   "low": 440518,
-   "high": 575939,
+   "estimate": 509121,
+   "low": 440437,
+   "high": 575856,
    "comps": [
     {
      "address": "19 WHITTEMORE RD",
@@ -13204,9 +13204,9 @@
   {
    "address": "738 ROBINSON RD",
    "kind": "sold",
-   "estimate": 615479,
-   "low": 564199,
-   "high": 648695,
+   "estimate": 615246,
+   "low": 564329,
+   "high": 648620,
    "comps": [
     {
      "address": "237 FOURTH RANGE RD",
@@ -13249,9 +13249,9 @@
   {
    "address": "236 BUCK ST",
    "kind": "sold",
-   "estimate": 359949,
-   "low": 350561,
-   "high": 415185,
+   "estimate": 360015,
+   "low": 350559,
+   "high": 415217,
    "comps": [
     {
      "address": "190 BUCK ST",
@@ -13294,9 +13294,9 @@
   {
    "address": "415 BUCK ST",
    "kind": "sold",
-   "estimate": 743641,
-   "low": 704523,
-   "high": 961259,
+   "estimate": 743725,
+   "low": 704346,
+   "high": 961303,
    "comps": [
     {
      "address": "316 CHURCH RD",
@@ -13339,9 +13339,9 @@
   {
    "address": "234 BUCK ST",
    "kind": "sold",
-   "estimate": 385071,
-   "low": 378548,
-   "high": 414487,
+   "estimate": 385047,
+   "low": 378573,
+   "high": 414472,
    "comps": [
     {
      "address": "307 DEARBORN RD",
@@ -13384,9 +13384,9 @@
   {
    "address": "849A&B BOROUGH RD",
    "kind": "sold",
-   "estimate": 941640,
-   "low": 801749,
-   "high": 1136801,
+   "estimate": 941555,
+   "low": 801345,
+   "high": 1136285,
    "comps": [
     {
      "address": "927 BOROUGH RD",
@@ -13421,9 +13421,9 @@
   {
    "address": "449 BUCK ST",
    "kind": "sold",
-   "estimate": 431983,
-   "low": 394252,
-   "high": 495534,
+   "estimate": 431977,
+   "low": 394227,
+   "high": 495504,
    "comps": [
     {
      "address": "423 BUCK ST",
@@ -13466,9 +13466,9 @@
   {
    "address": "653 NO PEMBROKE RD",
    "kind": "sold",
-   "estimate": 585774,
-   "low": 558144,
-   "high": 768322,
+   "estimate": 585723,
+   "low": 558434,
+   "high": 768232,
    "comps": [
     {
      "address": "611 NO PEMBROKE RD",
@@ -13511,9 +13511,9 @@
   {
    "address": "10 GLASS ST",
    "kind": "sold",
-   "estimate": 555132,
-   "low": 478196,
-   "high": 595413,
+   "estimate": 555256,
+   "low": 478205,
+   "high": 595386,
    "comps": [
     {
      "address": "14 HIGH ST",
@@ -13556,9 +13556,9 @@
   {
    "address": "35 SHERWOOD MEADOWS",
    "kind": "sold",
-   "estimate": 467919,
-   "low": 428645,
-   "high": 517847,
+   "estimate": 467942,
+   "low": 428634,
+   "high": 517918,
    "comps": [
     {
      "address": "43 DONNA DR",
@@ -13601,9 +13601,9 @@
   {
    "address": "2 SIMPSON AVE",
    "kind": "sold",
-   "estimate": 464323,
-   "low": 408963,
-   "high": 495002,
+   "estimate": 464317,
+   "low": 408957,
+   "high": 494955,
    "comps": [
     {
      "address": "12 MILLARD ST",
@@ -13646,9 +13646,9 @@
   {
    "address": "237 BUCK ST",
    "kind": "sold",
-   "estimate": 493415,
-   "low": 422856,
-   "high": 672006,
+   "estimate": 493340,
+   "low": 422736,
+   "high": 672079,
    "comps": [
     {
      "address": "410 EAST VIEW DR",
@@ -13691,9 +13691,9 @@
   {
    "address": "442 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 375176,
-   "low": 363363,
-   "high": 407230,
+   "estimate": 375206,
+   "low": 363400,
+   "high": 407294,
    "comps": [
     {
      "address": "40 DONNA DR",
@@ -13736,9 +13736,9 @@
   {
    "address": "484 WOODLAWN RIDGE RD",
    "kind": "sold",
-   "estimate": 524139,
-   "low": 478973,
-   "high": 655608,
+   "estimate": 524163,
+   "low": 478945,
+   "high": 655590,
    "comps": [
     {
      "address": "492 WOODLAWN RIDGE RD",
@@ -13781,9 +13781,9 @@
   {
    "address": "652 BOROUGH RD",
    "kind": "sold",
-   "estimate": 430394,
-   "low": 359164,
-   "high": 476862,
+   "estimate": 430449,
+   "low": 359070,
+   "high": 476815,
    "comps": [
     {
      "address": "33 PLEASANT ST",
@@ -13826,9 +13826,9 @@
   {
    "address": "407 BUCK ST",
    "kind": "sold",
-   "estimate": 461445,
-   "low": 356653,
-   "high": 510333,
+   "estimate": 461520,
+   "low": 356497,
+   "high": 510220,
    "comps": [
     {
      "address": "104 GLASS ST",
@@ -13871,9 +13871,9 @@
   {
    "address": "608A&B FOURTH RANGE RD",
    "kind": "sold",
-   "estimate": 629904,
-   "low": 627331,
-   "high": 642284,
+   "estimate": 629767,
+   "low": 627436,
+   "high": 642404,
    "comps": [
     {
      "address": "521A&B FOURTH RANGE RD",
@@ -13908,9 +13908,9 @@
   {
    "address": "19 MELISSA DR",
    "kind": "sold",
-   "estimate": 539842,
-   "low": 515932,
-   "high": 651683,
+   "estimate": 539816,
+   "low": 515992,
+   "high": 651677,
    "comps": [
     {
      "address": "492 WOODLAWN RIDGE RD",
@@ -13953,9 +13953,9 @@
   {
    "address": "15 PINE ST",
    "kind": "sold",
-   "estimate": 435086,
-   "low": 330293,
-   "high": 483973,
+   "estimate": 435245,
+   "low": 330222,
+   "high": 483945,
    "comps": [
     {
      "address": "111 GLASS ST",
@@ -13998,9 +13998,9 @@
   {
    "address": "659 BOROUGH RD",
    "kind": "sold",
-   "estimate": 537025,
-   "low": 490463,
-   "high": 672419,
+   "estimate": 537186,
+   "low": 490542,
+   "high": 672635,
    "comps": [
     {
      "address": "834 BOROUGH RD",
@@ -14043,9 +14043,9 @@
   {
    "address": "417 PEMBROKE ST",
    "kind": "sold",
-   "estimate": 621172,
-   "low": 591630,
-   "high": 679862,
+   "estimate": 621104,
+   "low": 591737,
+   "high": 679815,
    "comps": [
     {
      "address": "260 CHURCH RD",
@@ -14088,9 +14088,9 @@
   {
    "address": "32A&B GLASS ST",
    "kind": "sold",
-   "estimate": 765290,
-   "low": 452607,
-   "high": 1045865,
+   "estimate": 765568,
+   "low": 452420,
+   "high": 1046325,
    "comps": [
     {
      "address": "52-54 FRONT ST",
@@ -14133,9 +14133,9 @@
   {
    "address": "311 Academy Rd",
    "kind": "listed",
-   "estimate": 944444,
-   "low": 804553,
-   "high": 1139606,
+   "estimate": 944350,
+   "low": 804140,
+   "high": 1139080,
    "comps": [
     {
      "address": "927 BOROUGH RD",
@@ -14169,9 +14169,9 @@
   {
    "address": "664 Borough Rd",
    "kind": "listed",
-   "estimate": 417058,
-   "low": 395471,
-   "high": 637010,
+   "estimate": 417020,
+   "low": 395405,
+   "high": 636988,
    "comps": [
     {
      "address": "701 ELEY LANE",
@@ -14213,9 +14213,9 @@
   {
    "address": "480 Woodlawn Ridge Rd",
    "kind": "listed",
-   "estimate": 657419,
-   "low": 613308,
-   "high": 712491,
+   "estimate": 657164,
+   "low": 613505,
+   "high": 712211,
    "comps": [
     {
      "address": "439 TERRIE DR",
@@ -14257,9 +14257,9 @@
   {
    "address": "412 Buck St",
    "kind": "listed",
-   "estimate": 623050,
-   "low": 571770,
-   "high": 656267,
+   "estimate": 622793,
+   "low": 571876,
+   "high": 656167,
    "comps": [
     {
      "address": "237 FOURTH RANGE RD",
@@ -14301,9 +14301,9 @@
   {
    "address": "363 Academy Rd",
    "kind": "listed",
-   "estimate": 621495,
-   "low": 564672,
-   "high": 707624,
+   "estimate": 621506,
+   "low": 564689,
+   "high": 707488,
    "comps": [
     {
      "address": "158A&B TINA DR",
@@ -14345,9 +14345,9 @@
   {
    "address": "643 4Th Range Rd",
    "kind": "listed",
-   "estimate": 490610,
-   "low": 425518,
-   "high": 672153,
+   "estimate": 490568,
+   "low": 425437,
+   "high": 672082,
    "comps": [
     {
      "address": "401 BOROUGH RD",
@@ -14389,9 +14389,9 @@
   {
    "address": "294 Cross Rd",
    "kind": "listed",
-   "estimate": 540787,
-   "low": 479299,
-   "high": 695561,
+   "estimate": 540944,
+   "low": 479301,
+   "high": 695559,
    "comps": [
     {
      "address": "228 PEMBROKE HILL RD",
@@ -14433,9 +14433,9 @@
   {
    "address": "386 Pembroke St",
    "kind": "listed",
-   "estimate": 516696,
-   "low": 446882,
-   "high": 590951,
+   "estimate": 516234,
+   "low": 446621,
+   "high": 590628,
    "comps": [
     {
      "address": "367 PEMBROKE ST",
@@ -14469,9 +14469,9 @@
   {
    "address": "632 4Th Range Rd",
    "kind": "listed",
-   "estimate": 488552,
-   "low": 422994,
-   "high": 641217,
+   "estimate": 488548,
+   "low": 422921,
+   "high": 641181,
    "comps": [
     {
      "address": "526 PEMBROKE ST",
@@ -14513,9 +14513,9 @@
   {
    "address": "6 Donna Dr",
    "kind": "listed",
-   "estimate": 528065,
-   "low": 473082,
-   "high": 659534,
+   "estimate": 528076,
+   "low": 473120,
+   "high": 659504,
    "comps": [
     {
      "address": "424 TERRIE DR",
@@ -14557,9 +14557,9 @@
   {
    "address": "382 Perley Ave",
    "kind": "listed",
-   "estimate": 543207,
-   "low": 488225,
-   "high": 564667,
+   "estimate": 543170,
+   "low": 488215,
+   "high": 564780,
    "comps": [
     {
      "address": "412 DEERPATH LANE",
@@ -14601,9 +14601,9 @@
   {
    "address": "241 Pembroke St",
    "kind": "listed",
-   "estimate": 414007,
-   "low": 269938,
-   "high": 504657,
+   "estimate": 414249,
+   "low": 270242,
+   "high": 504406,
    "comps": [
     {
      "address": "550 BUCK ST",
@@ -14637,9 +14637,9 @@
   {
    "address": "755 Robinson Rd",
    "kind": "listed",
-   "estimate": 564461,
-   "low": 520193,
-   "high": 587845,
+   "estimate": 564672,
+   "low": 520080,
+   "high": 587963,
    "comps": [
     {
      "address": "644 BOROUGH RD",
@@ -14681,9 +14681,9 @@
   {
    "address": "9 Pleasant St",
    "kind": "listed",
-   "estimate": 475680,
-   "low": 420320,
-   "high": 506359,
+   "estimate": 475638,
+   "low": 420277,
+   "high": 506275,
    "comps": [
     {
      "address": "12 MILLARD ST",
@@ -14725,9 +14725,9 @@
   {
    "address": "153 Buck St",
    "kind": "listed",
-   "estimate": 381735,
-   "low": 324164,
-   "high": 450556,
+   "estimate": 381618,
+   "low": 324070,
+   "high": 450650,
    "comps": [
     {
      "address": "6 CENTRAL ST",
@@ -14769,8 +14769,8 @@
   {
    "address": "88 Broadway St",
    "kind": "listed",
-   "estimate": 461331,
-   "low": 387666,
+   "estimate": 461350,
+   "low": 387610,
    "high": 575000,
    "comps": [
     {
