@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-14T10:31:15.115202Z",
+ "generated_at": "2026-11-15T09:41:56.533490Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-11-14",
+ "today": "2026-11-15",
  "counts": {
   "events": 25,
   "meetings": 11,
   "other": 14,
-  "errors": 0
+  "errors": 1
  },
  "meetings": [
   {
