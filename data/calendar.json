@@ -1,25 +1,14 @@
 {
- "generated_at": "2026-11-16T10:31:48.250802Z",
+ "generated_at": "2026-11-17T10:31:44.627538Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-11-16",
+ "today": "2026-11-17",
  "counts": {
-  "events": 26,
-  "meetings": 12,
+  "events": 27,
+  "meetings": 13,
   "other": 14,
   "errors": 0
  },
  "meetings": [
-  {
-   "date": "2026-11-16",
-   "time": "5:00 PM",
-   "all_day": false,
-   "title": "Energy Committee Meeting",
-   "eid": "541",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=541",
-   "is_meeting": true,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
   {
    "date": "2026-11-18",
    "time": "6:00 PM",
@@ -27,6 +16,28 @@
    "title": "Select Board Meeting",
    "eid": "505",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=505",
+   "is_meeting": true,
+   "last_meeting": null,
+   "last_minutes_url": null
+  },
+  {
+   "date": "2026-11-19",
+   "time": "6:30 PM",
+   "all_day": false,
+   "title": "Budget Committee Meeting",
+   "eid": "542",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=542",
+   "is_meeting": true,
+   "last_meeting": null,
+   "last_minutes_url": null
+  },
+  {
+   "date": "2026-11-24",
+   "time": "4:00 PM",
+   "all_day": false,
+   "title": "Supervisors of the Checklist Session",
+   "eid": "543",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=543",
    "is_meeting": true,
    "last_meeting": null,
    "last_minutes_url": null
