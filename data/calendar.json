@@ -1,25 +1,14 @@
 {
- "generated_at": "2026-11-18T10:31:45.415916Z",
+ "generated_at": "2026-11-19T10:31:49.879755Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-11-18",
+ "today": "2026-11-19",
  "counts": {
-  "events": 27,
-  "meetings": 13,
+  "events": 26,
+  "meetings": 12,
   "other": 14,
   "errors": 0
  },
  "meetings": [
-  {
-   "date": "2026-11-18",
-   "time": "6:00 PM",
-   "all_day": false,
-   "title": "Select Board Meeting",
-   "eid": "505",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=505",
-   "is_meeting": true,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
   {
    "date": "2026-11-19",
    "time": "6:30 PM",
@@ -46,7 +35,7 @@
    "date": "2026-11-24",
    "time": "6:30 PM",
    "all_day": false,
-   "title": "Planning Board Meeting",
+   "title": "CANCELLED Planning Board Meeting",
    "eid": "411",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=411",
    "is_meeting": true,
