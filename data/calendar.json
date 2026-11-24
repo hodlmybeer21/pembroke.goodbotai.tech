@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-23T10:31:50.547213Z",
+ "generated_at": "2026-11-24T10:31:48.518521Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-11-23",
+ "today": "2026-11-24",
  "counts": {
-  "events": 25,
+  "events": 24,
   "meetings": 11,
-  "other": 14,
+  "other": 13,
   "errors": 0
  },
  "meetings": [
@@ -132,17 +132,6 @@
   }
  ],
  "other": [
-  {
-   "date": "2026-11-23",
-   "time": "",
-   "all_day": true,
-   "title": "Pembroke Water Works- Thanksgiving Week- Office Closed",
-   "eid": "401",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
-   "is_meeting": false,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
   {
    "date": "2026-11-24",
    "time": "",
