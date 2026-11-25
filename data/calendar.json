@@ -1,36 +1,14 @@
 {
- "generated_at": "2026-11-24T10:31:48.518521Z",
+ "generated_at": "2026-11-25T10:31:50.148121Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-11-24",
+ "today": "2026-11-25",
  "counts": {
-  "events": 24,
-  "meetings": 11,
-  "other": 13,
+  "events": 21,
+  "meetings": 9,
+  "other": 12,
   "errors": 0
  },
  "meetings": [
-  {
-   "date": "2026-11-24",
-   "time": "4:00 PM",
-   "all_day": false,
-   "title": "Supervisors of the Checklist Session",
-   "eid": "543",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=543",
-   "is_meeting": true,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
-  {
-   "date": "2026-11-24",
-   "time": "6:30 PM",
-   "all_day": false,
-   "title": "CANCELLED Planning Board Meeting",
-   "eid": "411",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=411",
-   "is_meeting": true,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
   {
    "date": "2026-12-02",
    "time": "6:00 PM",
@@ -132,17 +110,6 @@
   }
  ],
  "other": [
-  {
-   "date": "2026-11-24",
-   "time": "",
-   "all_day": true,
-   "title": "Pembroke Water Works- Thanksgiving Week- Office Closed",
-   "eid": "401",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
-   "is_meeting": false,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
   {
    "date": "2026-11-25",
    "time": "",
