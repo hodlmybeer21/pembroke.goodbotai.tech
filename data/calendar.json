@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-25T10:31:50.148121Z",
+ "generated_at": "2026-11-26T10:31:49.055920Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-11-25",
+ "today": "2026-11-26",
  "counts": {
-  "events": 21,
-  "meetings": 9,
-  "other": 12,
+  "events": 23,
+  "meetings": 10,
+  "other": 13,
   "errors": 0
  },
  "meetings": [
@@ -16,6 +16,17 @@
    "title": "Select Board Meeting",
    "eid": "501",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=501",
+   "is_meeting": true,
+   "last_meeting": null,
+   "last_minutes_url": null
+  },
+  {
+   "date": "2026-12-04",
+   "time": "4:30 PM",
+   "all_day": false,
+   "title": "Supervisors of the Checklist Session",
+   "eid": "545",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=545",
    "is_meeting": true,
    "last_meeting": null,
    "last_minutes_url": null
@@ -111,17 +122,6 @@
  ],
  "other": [
   {
-   "date": "2026-11-25",
-   "time": "",
-   "all_day": true,
-   "title": "Pembroke Water Works- Thanksgiving Week- Office Closed",
-   "eid": "401",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
-   "is_meeting": false,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
-  {
    "date": "2026-11-26",
    "time": "",
    "all_day": true,
@@ -133,12 +133,34 @@
    "last_minutes_url": null
   },
   {
+   "date": "2026-11-26",
+   "time": "8:00 AM",
+   "all_day": false,
+   "title": "CLOSED Town Hall and Offices November 26-27, 2026 for Thanksgiving",
+   "eid": "544",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=544",
+   "is_meeting": false,
+   "last_meeting": null,
+   "last_minutes_url": null
+  },
+  {
    "date": "2026-11-27",
    "time": "",
    "all_day": true,
    "title": "Pembroke Water Works- Thanksgiving Week- Office Closed",
    "eid": "401",
    "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
+   "is_meeting": false,
+   "last_meeting": null,
+   "last_minutes_url": null
+  },
+  {
+   "date": "2026-11-27",
+   "time": "8:00 AM",
+   "all_day": false,
+   "title": "CLOSED Town Hall and Offices November 26-27, 2026 for Thanksgiving",
+   "eid": "544",
+   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=544",
    "is_meeting": false,
    "last_meeting": null,
    "last_minutes_url": null
