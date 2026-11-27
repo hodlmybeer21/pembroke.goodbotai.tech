@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-26T10:31:49.055920Z",
+ "generated_at": "2026-11-27T10:31:02.008856Z",
  "source": "https://www.pembroke-nh.com/calendar.aspx",
- "today": "2026-11-26",
+ "today": "2026-11-27",
  "counts": {
-  "events": 23,
+  "events": 21,
   "meetings": 10,
-  "other": 13,
+  "other": 11,
   "errors": 0
  },
  "meetings": [
@@ -121,28 +121,6 @@
   }
  ],
  "other": [
-  {
-   "date": "2026-11-26",
-   "time": "",
-   "all_day": true,
-   "title": "Pembroke Water Works- Thanksgiving Week- Office Closed",
-   "eid": "401",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=401",
-   "is_meeting": false,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
-  {
-   "date": "2026-11-26",
-   "time": "8:00 AM",
-   "all_day": false,
-   "title": "CLOSED Town Hall and Offices November 26-27, 2026 for Thanksgiving",
-   "eid": "544",
-   "url": "https://www.pembroke-nh.com/Calendar.aspx?EID=544",
-   "is_meeting": false,
-   "last_meeting": null,
-   "last_minutes_url": null
-  },
   {
    "date": "2026-11-27",
    "time": "",
